@@ -1,0 +1,21 @@
+% Table 10 of 2312.00752, rebuilt from arXiv's own rendering.
+% Not the author's source. The spans, the alignment and the rules are LaTeXML's reading of it.
+\begin{tabular}{lllllll}
+\hline
+Model & Params & NLL $\downarrow$ & FID $\downarrow$ & IS $\uparrow$ & mIS $\uparrow$ & AM $\downarrow$ \\
+\hline
+SampleRNN & 35.0M & 2.042 & 8.96 & 1.71 & 3.02 & 1.76 \\
+WaveNet & 4.2M & 1.925 & 5.08 & 2.27 & 5.80 & 1.47 \\
+SaShiMi & 5.8M & 1.873 & 1.99 & 5.13 & 42.57 & 0.74 \\
+\hline
+WaveGAN & 19.1M & - & 2.03 & 4.90 & 36.10 & 0.80 \\
+DiffWave & 24.1M & - & 1.92 & 5.26 & 51.21 & 0.68 \\
++ SaShiMi & 23.0M & - & 1.42 & 5.94 & 69.17 & 0.59 \\
+\hline
+\textbf{Mamba} & 6.1M & \textbf{1.852} & 0.94 & 6.26 & 88.54 & 0.52 \\
+\textbf{Mamba} & 24.3M & 1.860 & \textbf{0.67} & \textbf{7.33} & \textbf{144.9} & \textbf{0.36} \\
+\hline
+Train & - & - & $0.00$ & $8.56$ & $292.5$ & $0.16$ \\
+Test & - & - & $0.02$ & $8.33$ & $257.6$ & $0.19$ \\
+\hline
+\end{tabular}

@@ -72,15 +72,28 @@ jobs:
       # at v0.1.0 while the audit grew from eight rules to fifty six, so every
       # green tick for three releases meant eight rules passed.
       - name: install ax
-        run: go install github.com/tamnd/arxiv-reader/cmd/ax@v0.1.0
+        run: go install github.com/tamnd/arxiv-reader/cmd/ax@v0.2.0
 
-      - name: ax audit --hard
+      # Both planes, and not --hard, because a soft finding is still something
+      # somebody has to look at and a report that leaves it out says the corpus
+      # is clean when it is not. The build still fails on a hard rule only,
+      # which is what the two kinds of rule are for.
+      #
+      # Two runs and two reports because the planes have different costs. The
+      # metadata plane is one JSONL line per paper and runs over everything, and
+      # the content plane reads whole files and runs over the papers that have
+      # been extracted.
+      - name: ax audit, the metadata plane
         env:
           ARXIV_CORPUS: ${{ github.workspace }}
-        run: ax audit --hard
+        run: ax audit -report reports/audit.md
 
-      # The audit writes reports/ and those are committed, so a report that
-      # disagrees with the tree means somebody edited content without
-      # re-running the audit.
+      - name: ax audit, the content plane
+        env:
+          ARXIV_CORPUS: ${{ github.workspace }}
+        run: ax audit -plane content -report reports/audit-content.md
+
+      # The reports are committed, so a report that disagrees with the tree
+      # means somebody edited content without re-running the audit.
       - name: reports are current
         run: git diff --exit-code -- reports/

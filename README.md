@@ -7,8 +7,11 @@ This repository is the content, and it is the thing that has to be right.
 
 ## Status
 
-M0, which is the manifests and the shape.
-No paper has been extracted yet.
+M3, which is the first paper in the content plane.
+
+That paper is `2312.00752`, Mamba, extracted down the render path from arXiv's own HTML, with its figures, its tables, its bibliography and its permanent tags.
+It is CC BY, which is what makes any of this publishable, and the licence was read off the abs page for the version that was extracted rather than off a bulk surface that states one licence for a whole paper.
+The metadata plane holds the one month that paper is in, and the harvest that fills the rest of it is M1.
 The plan is in the issues, one per milestone, M0 through M11.
 
 ## Two planes
@@ -49,9 +52,14 @@ metadata/2106.jsonl          every paper submitted in June 2021, CC0, no gate
 content/en/2106/2106.09685/  the extraction, per paper, per language
 content/vi/2106/2106.09685/
 figures/2106/2106.09685/     figures, for open and share-alike papers only
-tags/2106/2106.09685.yaml    the permanent tag register for that paper
+tables/2106/2106.09685/      every table twice, as Markdown and as LaTeX
+tags/2106/2106.09685.tags    the permanent tag register for that paper
+tags/2106/2106.09685.runs    where one assignment stopped and the next began
 graph/2106.jsonl             edges whose source is a paper in that shard
 manifests/                   languages, typesetting, selection, graph, glossaries
+manifests/sources.yaml       what was fetched, from which URL, and what it hashed to
+manifests/figures/2106.yaml  what was decided about every figure of that month
+manifests/refs/2106/         one bibliography per paper, parsed and resolved
 reports/                     what the audit found, committed so it can be read in a diff
 ```
 
@@ -103,7 +111,23 @@ The audit is the real contract and it lives in the toolchain.
 
 ```sh
 go install github.com/tamnd/arxiv-reader/cmd/ax@latest
-ARXIV_CORPUS=$PWD ax audit --hard
+ARXIV_CORPUS=$PWD ax audit
+ARXIV_CORPUS=$PWD ax audit -plane content
+```
+
+Both planes are run in CI, and both write a report into `reports/` which is committed, so what the audit found is something you can read in a diff rather than something you have to run the audit to see.
+A soft rule that found something does not fail the build and is in the report all the same.
+
+```
+$ ARXIV_CORPUS=$PWD ax audit -plane content -q
+rule  state    checked  findings
+S01   pass     12
+S04   pass     1
+S07   pass     12
+S10   pass     12
+S12   pass     12
+...
+12 files over 1 paper, nothing found
 ```
 
 ## Related
