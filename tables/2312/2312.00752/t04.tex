@@ -1,0 +1,14 @@
+% Table 11 of 2312.00752, rebuilt from arXiv's own rendering.
+% Not the author's source. The spans, the alignment and the rules are LaTeXML's reading of it.
+\begin{tabular}{lllllll}
+\hline
+\textbf{Outer} & \textbf{Center} & \textbf{NLL $\downarrow$} & \textbf{FID $\downarrow$} & \textbf{IS $\uparrow$} & \textbf{mIS $\uparrow$} & \textbf{AM $\downarrow$} \\
+\hline
+S4+MLP & MHA+MLP & 1.859 & 1.45 & 5.06 & 47.03 & 0.70 \\
+S4+MLP & S4+MLP & 1.867 & 1.43 & 5.42 & 53.54 & 0.65 \\
+S4+MLP & Mamba & 1.859 & 1.42 & 5.71 & 56.51 & 0.64 \\
+Mamba & MHA+MLP & \textbf{1.850} & 1.37 & 5.63 & 58.23 & 0.62 \\
+Mamba & S4+MLP & 1.853 & 1.07 & 6.05 & 73.34 & 0.55 \\
+Mamba & Mamba & 1.852 & \textbf{0.94} & \textbf{6.26} & \textbf{88.54} & \textbf{0.52} \\
+\hline
+\end{tabular}
