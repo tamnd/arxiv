@@ -1,0 +1,62 @@
+# How a paper is chosen for extraction, which path it goes down, and which
+# audit rules each path is expected to satisfy.
+
+# The order the extractor tries the paths in, and what makes it give up on one.
+paths:
+  render:
+    # arXiv's own LaTeXML rendering at /html/<id>. No model, and the mathematics
+    # arrives as MathML with the original TeX in the alttext attribute.
+    enabled: true
+    reject_on: [".ltx_ERROR"]
+  source:
+    # The submitted TeX, compiled here. The highest trust path, because the
+    # author's own \label commands and .bbl survive it.
+    enabled: true
+    timeout_seconds: 300
+  native:
+    # pdftotext on a born digital PDF. No model, and no mathematics either,
+    # because the formulas come out as flattened prose.
+    enabled: true
+  vision:
+    # Page images read by a vision model. The fallback for scans.
+    enabled: true
+    dpi_ladder: [300, 400, 600]
+
+# A path that cannot produce a thing should not be audited as though it failed
+# to. A rule listed here is marked not applicable for that path rather than
+# passing, which is the difference between a rule that is working and a rule
+# that has nothing to look at.
+not_applicable:
+  native:
+    - M01
+    - M02
+    - M03
+    - M04
+    - M06
+    - M07
+    - M08
+    - M09
+    - M10
+    - M11
+    - M12
+    - C06
+  vision:
+    - X09
+
+# Why a paper is in the content plane. Every selected paper records one of
+# these, because a corpus that cannot say why it holds something cannot decide
+# what to hold next.
+reasons:
+  - seed
+  - cited-by-corpus
+  - cites-corpus
+  - category-canon
+  - requested
+  - collection
+
+# The first seed. Licence first, then citation weight within arXiv, spread
+# across categories rather than concentrated in one.
+seed:
+  size: 1000
+  licences: [cc0, cc-by, cc-by-sa, cc-by-nc-sa]
+  max_per_category: 120

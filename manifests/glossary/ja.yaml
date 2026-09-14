@@ -1,0 +1,58 @@
+# English to Japanese, scoped by field.
+#
+# Japanese has the hardest term policy of the three languages and it is settled
+# here rather than per file. A technical term in Japanese can be the English in
+# katakana, a kanji compound, or the English left in Latin script, and all three
+# are current in published Japanese mathematics and computer science. The
+# glossary picks one per term and the audit enforces it, because an
+# unconstrained model writes the same concept three ways in three sections.
+
+version: 0
+terms:
+  - en: theorem
+    ja: 定理
+  - en: lemma
+    ja: 補題
+  - en: corollary
+    ja: 系
+  - en: proposition
+    ja: 命題
+  - en: definition
+    ja: 定義
+  - en: proof
+    ja: 証明
+  - en: conjecture
+    ja: 予想
+  - en: assumption
+    ja: 仮定
+
+  - en: kernel
+    scope: math.FA
+    ja: 核
+    note: "the null space sense"
+  - en: kernel
+    scope: cs.LG
+    ja: カーネル関数
+  - en: kernel
+    scope: cs.OS
+    ja: カーネル
+
+  - en: embedding
+    scope: math.DG
+    ja: 埋め込み
+  - en: embedding
+    scope: cs.CL
+    ja: 埋め込み表現
+
+  - en: manifold
+    scope: math
+    ja: 多様体
+  - en: neural network
+    scope: cs
+    ja: ニューラルネットワーク
+  - en: gradient descent
+    scope: cs
+    ja: 勾配降下法
+  - en: attention
+    scope: cs.CL
+    ja: 注意機構

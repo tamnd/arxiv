@@ -1,0 +1,65 @@
+# English to Vietnamese, scoped by field.
+#
+# Scope is an arXiv category, an archive, or absent. The most specific scope
+# matching the paper's primary category wins, then the archive, then the group,
+# then an unscoped entry. A term with no entry at any level is passed through
+# untranslated and logged, and ax glossary gaps lists what came up most often.
+#
+# The scoping is the change from tamnd/papers, and arXiv's breadth forces it.
+# The same English word is three different technical terms in three different
+# archives, and a glossary that has to pick one is how a Vietnamese reader of a
+# functional analysis paper gets the machine learning term.
+#
+# This is a seed. It is the terms that come up everywhere plus the ones that
+# demonstrate why the scope column exists.
+
+version: 0
+terms:
+  - en: theorem
+    vi: định lý
+  - en: lemma
+    vi: bổ đề
+  - en: corollary
+    vi: hệ quả
+  - en: proposition
+    vi: mệnh đề
+  - en: definition
+    vi: định nghĩa
+  - en: proof
+    vi: chứng minh
+  - en: conjecture
+    vi: giả thuyết
+  - en: assumption
+    vi: giả thiết
+
+  - en: kernel
+    scope: math.FA
+    vi: hạt nhân
+    note: "the null space sense"
+  - en: kernel
+    scope: cs.LG
+    vi: hàm nhân
+    note: "the kernel method sense"
+  - en: kernel
+    scope: cs.OS
+    vi: nhân hệ điều hành
+
+  - en: embedding
+    scope: math.DG
+    vi: phép nhúng
+  - en: embedding
+    scope: cs.CL
+    vi: vector biểu diễn
+
+  - en: manifold
+    scope: math
+    vi: đa tạp
+  - en: neural network
+    scope: cs
+    vi: mạng nơ-ron
+  - en: gradient descent
+    scope: cs
+    vi: hạ gradient
+  - en: attention
+    scope: cs.CL
+    vi: cơ chế chú ý

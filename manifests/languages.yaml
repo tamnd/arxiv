@@ -1,0 +1,70 @@
+# The languages the corpus publishes, and what each one needs before it can.
+#
+# Adding a language is a row here plus five things: a glossary seed, a
+# typesetting profile, a normalisation rule, a spacing rule, and a route that
+# can actually translate into it. Nothing else changes, and no code changes at
+# all.
+#
+# status is what the reading app shows.
+#   seeded   a glossary exists and no content does
+#   partial  content exists, with a coverage number beside it
+#   full     coverage is over ninety per cent and the round trip report is clean
+#
+# spacing is none for languages that put spaces between words, and cjk for the
+# ones that do not, which inserts spacing around Latin runs and mathematics.
+
+languages:
+  - code: en
+    name: English
+    script: Latn
+    glossary: ""
+    typeset: profile-latin
+    spacing: none
+    normalisation: NFC
+    status: partial
+    reviewer: ""
+
+  - code: vi
+    name: Tiếng Việt
+    script: Latn
+    glossary: manifests/glossary/vi.yaml
+    typeset: profile-latin
+    spacing: none
+    normalisation: NFC
+    status: seeded
+    reviewer: ""
+
+  - code: zh-Hans
+    name: 简体中文
+    script: Hans
+    glossary: manifests/glossary/zh-Hans.yaml
+    typeset: profile-cjk-sc
+    spacing: cjk
+    normalisation: NFC
+    status: seeded
+    reviewer: ""
+
+  # Traditional Chinese is a conversion of the simplified text and not a second
+  # translation of the English. Converting is mechanical with a small exception
+  # list, and translating twice would produce two texts that drift apart and
+  # cost twice as much.
+  - code: zh-Hant
+    name: 繁體中文
+    script: Hant
+    glossary: manifests/glossary/zh-Hans.yaml
+    typeset: profile-cjk-tc
+    spacing: cjk
+    normalisation: NFC
+    status: seeded
+    converted_from: zh-Hans
+    reviewer: ""
+
+  - code: ja
+    name: 日本語
+    script: Jpan
+    glossary: manifests/glossary/ja.yaml
+    typeset: profile-cjk-jp
+    spacing: cjk
+    normalisation: NFC
+    status: seeded
+    reviewer: ""

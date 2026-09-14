@@ -1,0 +1,22 @@
+version: 2
+
+updates:
+  # Actions are pinned to a commit SHA with the tag in a comment, which is the
+  # only pin a workflow cannot be moved out from under. Dependabot understands
+  # that form and moves both the SHA and the comment together.
+  #
+  # This is the only ecosystem here. The corpus holds no code, and the one
+  # script it does have depends on PyYAML through a pip install line rather
+  # than a lockfile, because pinning a YAML parser is ceremony this repository
+  # does not need.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "ci"
+    labels:
+      - "type: ci"
+      - "dependencies"

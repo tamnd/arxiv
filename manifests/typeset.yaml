@@ -1,0 +1,44 @@
+# One typesetting profile per script, named by the language rows in
+# languages.yaml.
+#
+# A language with no profile can be published to the web and to EPUB and cannot
+# be published to PDF. That is an acceptable state to be in for a while and it
+# is better than a PDF full of empty boxes.
+#
+# The fonts are named rather than left to a fallback chain. A build that cannot
+# find the font it was told to use fails, because a PDF built against whatever
+# fonts a particular machine happens to have is not reproducible and will differ
+# from CI in ways nobody can explain afterwards.
+
+profiles:
+  - name: profile-latin
+    engine: lualatex
+    main: TeX Gyre Pagella
+    # Vietnamese needs a font that actually carries the stacked diacritics, and
+    # most do not. This one does.
+    fallback: Noto Serif
+    math: TeX Gyre Pagella Math
+    linebreak: default
+
+  - name: profile-cjk-sc
+    engine: lualatex
+    main: Noto Serif CJK SC
+    fallback: Noto Serif
+    # CJK mathematics stays in a Latin mathematics font, because that is what
+    # published Chinese and Japanese mathematics does.
+    math: Latin Modern Math
+    linebreak: cjk
+
+  - name: profile-cjk-tc
+    engine: lualatex
+    main: Noto Serif CJK TC
+    fallback: Noto Serif
+    math: Latin Modern Math
+    linebreak: cjk
+
+  - name: profile-cjk-jp
+    engine: lualatex
+    main: Noto Serif CJK JP
+    fallback: Noto Serif
+    math: Latin Modern Math
+    linebreak: japanese

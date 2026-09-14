@@ -1,0 +1,32 @@
+# The graph's thresholds and the locator patterns, kept as data so that a
+# threshold is lowered deliberately rather than drifted into.
+
+# The three confidences and what they mean.
+#
+#   certain  a fact arXiv published, or a citation resolved from an explicit
+#            arXiv id in the reference text. Nothing inferred is ever certain.
+#   high     a structural match: a DOI, a \ref LaTeXML resolved, an exact alias.
+#   medium   a match that could be wrong.
+#
+# There is no low. An edge that would be low is not stored, it goes to
+# reports/graph.md as a near miss with its score.
+confidences: [certain, high, medium]
+
+# Bibliography resolution, carried over from tamnd/papers where these numbers
+# were measured rather than guessed.
+resolution:
+  title_similarity: 0.92
+  year_slack: 1
+  surnames_required: 1
+
+# A locator is a kind word and a number next to a citation, and it is what turns
+# a paper level citation into a claim about one theorem. Matched by pattern and
+# never by a model, because a pattern that misfires can be read and fixed.
+#
+# Every field writes this differently, so the list grows. A locator that does
+# not resolve is recorded on the citation edge and never stored as a uses edge.
+locators:
+  - '(?i)\b(theorem|lemma|proposition|corollary|definition|remark|example|equation|section|table|figure|algorithm)\s+([0-9]+(?:\.[0-9]+)*)\s+of\s+\[([0-9]+)\]'
+  - '(?i)\[([0-9]+),\s*(theorem|lemma|proposition|corollary|definition|remark|example|equation|section|table|figure|algorithm)\s+([0-9]+(?:\.[0-9]+)*)\]'
+  - '(?i)\\cite\[(theorem|lemma|proposition|corollary|definition|remark|example|equation|section|table|figure|algorithm)\s+([0-9]+(?:\.[0-9]+)*)\]\{([^}]+)\}'
+  - '(?i)\bsee\s+\[([0-9]+),\s*([0-9]+(?:\.[0-9]+)*)\]'

@@ -1,0 +1,86 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  manifests:
+    name: manifests
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          # The PDF check reads the index rather than the working tree, so the
+          # checkout has to be a real repository and not a tarball.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.13'
+
+      - run: pip install --disable-pip-version-check pyyaml
+
+      # Languages, typesetting profiles, glossaries, selection paths, graph
+      # thresholds, and the rule that no PDF or EPUB is tracked here.
+      # Pure Python on purpose. This is the one check that works from the first
+      # commit, before any toolchain release exists to install.
+      - name: check manifests
+        run: python .github/scripts/check_manifests.py
+
+  audit:
+    name: audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    # The audit is the contract this corpus is held to and it lives in the
+    # toolchain repository, so CI installs the toolchain rather than keeping a
+    # second copy of a hundred rules here.
+    #
+    # It is off until the toolchain has a release to pin to, and it is gated on
+    # a repository variable rather than a silent skip so that the off state is
+    # something you can see in the settings instead of something you discover
+    # six months later. Set TOOLCHAIN_READY to true in M3 and never unset it.
+    if: vars.TOOLCHAIN_READY == 'true'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: stable
+
+      # Pinned to a release rather than to a branch. A branch would mean this
+      # corpus starts failing the moment somebody pushes to the toolchain,
+      # which is a change to a different repository breaking this one with no
+      # commit here to point at.
+      # The pin has to be moved when the toolchain releases, and moving it is
+      # part of the work of a release rather than an afterthought. Left alone
+      # it quietly does the opposite of its job: in tamnd/papers this pin sat
+      # at v0.1.0 while the audit grew from eight rules to fifty six, so every
+      # green tick for three releases meant eight rules passed.
+      - name: install ax
+        run: go install github.com/tamnd/arxiv-reader/cmd/ax@v0.1.0
+
+      - name: ax audit --hard
+        env:
+          ARXIV_CORPUS: ${{ github.workspace }}
+        run: ax audit --hard
+
+      # The audit writes reports/ and those are committed, so a report that
+      # disagrees with the tree means somebody edited content without
+      # re-running the audit.
+      - name: reports are current
+        run: git diff --exit-code -- reports/
