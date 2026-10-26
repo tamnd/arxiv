@@ -60,7 +60,7 @@
 | F10 | pass | 1 | 0 | 0 | every figure the paper numbers is present |
 | F11 | pass | 1 | 0 | 0 | every table exists twice, as <n>.md and as <n>.tex |
 | F12 | pass | 15 | 0 | 0 | a table's .md and .tex agree on row count, column count and every numeric cell |
-| R01 | pass | 1 | 0 | 0 | every arXiv id written down in this corpus names a paper the metadata plane has |
+| R01 | pass | 27 | 0 | 0 | every arXiv id written down in this corpus names a paper the metadata plane has |
 | R02 | pass | 12 | 0 | 0 | every citation in a body has an entry in that paper's bibliography |
 | R03 | pass | 1 | 0 | 0 | every paper's bibliography loads, and every entry in it keeps the line the paper printed |
 | R04 | not run | 0 | 0 | 0 | every resolved reference still resolves that way |
