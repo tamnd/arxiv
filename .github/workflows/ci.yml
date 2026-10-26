@@ -72,7 +72,7 @@ jobs:
       # at v0.1.0 while the audit grew from eight rules to fifty six, so every
       # green tick for three releases meant eight rules passed.
       - name: install ax
-        run: go install github.com/tamnd/arxiv-reader/cmd/ax@v0.2.0
+        run: go install github.com/tamnd/arxiv-reader/cmd/ax@v0.4.0
 
       # Both planes, and not --hard, because a soft finding is still something
       # somebody has to look at and a report that leaves it out says the corpus
@@ -92,6 +92,11 @@ jobs:
         env:
           ARXIV_CORPUS: ${{ github.workspace }}
         run: ax audit -plane content -report reports/audit-content.md
+
+      - name: ax audit, the analysis plane
+        env:
+          ARXIV_CORPUS: ${{ github.workspace }}
+        run: ax audit -group D -report reports/audit-analysis.md
 
       # The reports are committed, so a report that disagrees with the tree
       # means somebody edited content without re-running the audit.
