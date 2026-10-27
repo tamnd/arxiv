@@ -97,9 +97,26 @@ publish() {
 	log "$name: merged $url"
 }
 
-# The tools are the latest releases.
-GOBIN="$dir/bin" go install github.com/tamnd/arxiv-reader/cmd/ax@latest
-GOBIN="$dir/bin" go install github.com/tamnd/math2-agent/cmd/m2@latest
+# tool installs the binary of the latest release of a tool, which has the version of the release in it. The records name that version as the extractor.
+# Arguments: the repository and the name of the binary.
+tool() {
+	tag=$(gh release view -R "tamnd/$1" --json tagName -q .tagName)
+	if [ -x "$dir/bin/$2" ] && [ "$(cat "$dir/bin/$2.tag" 2>/dev/null)" = "$tag" ]; then
+		return 0
+	fi
+	t=$(mktemp -d "$dir/run/tool.XXXXXX")
+	gh release download "$tag" -R "tamnd/$1" -p "${2}_${tag}_linux_amd64.tar.gz" -p checksums.txt -D "$t"
+	a="${2}_${tag}_linux_amd64"
+	(cd "$t" && grep -E "  (\./)?$a.tar.gz\$" checksums.txt | sha256sum -c -) >/dev/null || block "the checksum of $2 $tag does not match"
+	tar -xzf "$t/$a.tar.gz" -C "$t" "$a/$2"
+	mv "$t/$a/$2" "$dir/bin/$2"
+	echo "$tag" >"$dir/bin/$2.tag"
+	rm -f "$t/$a.tar.gz" "$t/checksums.txt"
+	rmdir "$t/$a" "$t"
+	log "installed $2 $tag"
+}
+tool arxiv-reader ax
+tool math2-agent m2
 axv=$(ax version | head -1)
 m2v=$(m2 version | head -1)
 
@@ -159,6 +176,9 @@ title="Import the arXiv mentions of tamnd/arxiv at $arxiv"
 commit math2 "$title" || { log "the run is done"; exit 0; }
 mchecks=pass
 m2 check >"$dir/run/check-$stamp.out" 2>&1 || mchecks=fail
+for v in volumes/*.yaml; do
+	m2 pack -check -q "$v" >>"$dir/run/check-$stamp.out" 2>&1 || mchecks=fail
+done
 m2 audit -changed -base origin/main >"$dir/run/audit-$stamp.out" 2>&1 || mchecks=fail
 # The audit writes its report into the tree. The report of a run of -changed is not committed.
 rm -f "$dir/math2/reports/audit/changed.txt" "$dir/math2/reports/audit/changed.json"
@@ -171,9 +191,9 @@ body="$dir/run/math2-$stamp.md"
 	echo '```'
 	echo
 	if [ "$mchecks" = pass ]; then
-		echo "\`m2 check\` and \`m2 audit -changed\` pass."
+		echo "\`m2 check\`, \`m2 pack -check\` and \`m2 audit -changed\` pass."
 	else
-		echo "\`m2 check\` or \`m2 audit -changed\` has a finding, so this pull request stays open. The output is in $dir/run on the build server."
+		echo "\`m2 check\`, \`m2 pack -check\` or \`m2 audit -changed\` has a finding, so this pull request stays open. The output is in $dir/run on the build server."
 	fi
 } >"$body"
 publish math2 "$title" "$body" "$mchecks" "type: content" "area: inventory"
