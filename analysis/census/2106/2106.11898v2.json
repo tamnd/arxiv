@@ -1,0 +1,1040 @@
+{
+ "paper": "2106.11898",
+ "version": 2,
+ "extractor": "ax/v0.5.17",
+ "main": [
+  "paper.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "inputenc",
+  "fullpage",
+  "babel",
+  "fontenc",
+  "lmodern",
+  "graphicx",
+  "url",
+  "amsmath",
+  "amsthm",
+  "amsfonts",
+  "amssymb",
+  "mathrsfs",
+  "tikz-cd",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: paper.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 55 commands, 0 environments",
+  "tree: 172 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "mythm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mythm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mycor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "mythm",
+   "shared": "mythm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mylemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "mythm",
+   "shared": "mythm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mythmintro",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "myquest",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "shared": "mythm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mydef",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "mythm",
+   "shared": "mythm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mynotation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "mythm",
+   "shared": "mythm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "myhyp",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "mythm",
+   "shared": "mythm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "myconj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "mythm",
+   "shared": "mythm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "myexample",
+   "title": "Example",
+   "item": "example",
+   "counter": "mythm",
+   "shared": "mythm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "myremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "mythm",
+   "shared": "mythm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 38,
+  "label": 29,
+  "proof": 6,
+  "textref": 55
+ },
+ "matched": {
+  "env": 38,
+  "label": 29,
+  "proof": 6
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 37,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 49,
+  "unresolved": 6
+ },
+ "outside": {
+  "theoremsearch": 22
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2106.11898v2#textref-5",
+   "message": "the text names Notation \\ref{def:local-fourier-transform} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2106.11898v2#textref-13",
+   "message": "the text names Notation \\ref{notation:F_v(T,0)} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2106.11898v2#textref-20",
+   "message": "the text names Proposition 6.3.5.3 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2106.11898v2#textref-29",
+   "message": "the text names Notation \\ref{notation:F_v(T,0)} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2106.11898v2#textref-33",
+   "message": "the text names Notation \\ref{notation:F_v(T,xi)} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2106.11898v2#textref-43",
+   "message": "the text names Notation \\ref{notation:F_v(T,0)} and the census has no such item (no-label)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2106.11898v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "mythmintro",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "pos": {
+    "file": "paper.tex",
+    "line": 258
+   },
+   "last": 266,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "mynotation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "mythm",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "def:euler-product"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 455
+   },
+   "last": 467,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "1.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 471
+   },
+   "last": 488,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "1.3",
+   "number_from": "counter",
+   "labels": [
+    "proposition:euler-product:multiplicativity"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 492
+   },
+   "last": 502,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "mydef",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "mythm",
+   "number": "1.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 533
+   },
+   "last": 535,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "1.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 720
+   },
+   "last": 724,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "1.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 759
+   },
+   "last": 765,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "mydef",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "mythm",
+   "number": "1.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 789
+   },
+   "last": 795,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "proposition:properties-of-the-weight"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 828
+   },
+   "last": 849,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "mydef",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "mythm",
+   "number": "2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 856
+   },
+   "last": 861,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "mydef",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "mythm",
+   "number": "2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 868
+   },
+   "last": 874,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "mylemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "mythm",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "lemma:weight-convergence-product-stability"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 931
+   },
+   "last": 962,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2106.11898v2#env-12",
+   "pos": {
+    "file": "paper.tex",
+    "line": 937
+   },
+   "last": 961,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "mylemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "mythm",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "lemma:negligible-terms"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 964
+   },
+   "last": 1020,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2106.11898v2#env-13",
+   "pos": {
+    "file": "paper.tex",
+    "line": 980
+   },
+   "last": 1019,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "2.6",
+   "number_from": "counter",
+   "labels": [
+    "proposition:linear-conv-criterion"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1023
+   },
+   "last": 1074,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2106.11898v2#env-14",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1054
+   },
+   "last": 1073,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "mydef",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "mythm",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "def:refined-zeta-function",
+    "equation:Z(T)-rewritten-with-M-n-beta"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1281
+   },
+   "last": 1299,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "myremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "mythm",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "remark:refined-corse-specialisation"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1301
+   },
+   "last": 1307,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "myremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "mythm",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "remark:dependance-of-local-factors"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1425
+   },
+   "last": 1433,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "mynotation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "mythm",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "notation:F_v(T,0)"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1448
+   },
+   "last": 1452,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "proposition:convergence-residue-of-Zeta-0"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1469
+   },
+   "last": 1477,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "inequality:weight-of-polynomial-P(xi)"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1480
+   },
+   "last": 1548,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "myremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "mythm",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "remark:interpretation-local-term-volume"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1550
+   },
+   "last": 1573,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "mynotation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "mythm",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "notation:F_v(T,xi)"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1586
+   },
+   "last": 1591,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "proposition:convergence-residue-of-Zeta-xi"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1592
+   },
+   "last": 1598,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1600
+   },
+   "last": 1703,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "myremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "mythm",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "remark:uniform-convergence-finite-stratum"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1706
+   },
+   "last": 1713,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1892
+   },
+   "last": 1927,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "4.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1986
+   },
+   "last": 1996,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "4.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2066
+   },
+   "last": 2098,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "propisition:result-any-curve-decomposition-H"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2164
+   },
+   "last": 2174,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "mylemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "mythm",
+   "number": "4.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2206
+   },
+   "last": 2208,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "equation:F-points-of-intersections"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2209
+   },
+   "last": 2246,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "myremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "mythm",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "remark:maximal-faces-canonical-choice"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2248
+   },
+   "last": 2250,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "myremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "mythm",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "remark:maximal-faces-value-polynomial"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2269
+   },
+   "last": 2302,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "proposition:general-case-Z-tilde-xi=0"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2404
+   },
+   "last": 2438,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "4.9",
+   "number_from": "counter",
+   "labels": [
+    "proposition:general-case-H-A"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2455
+   },
+   "last": 2467,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "4.10",
+   "number_from": "counter",
+   "labels": [
+    "proposition:Zs(T-xi)-without-indeterminacies"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2483
+   },
+   "last": 2489,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "4.11",
+   "number_from": "counter",
+   "labels": [
+    "proposition:general-case-xi-neq-zero"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2532
+   },
+   "last": 2561,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "myptn",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mythm",
+   "number": "4.12",
+   "number_from": "counter",
+   "labels": [
+    "ptn:final-result"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2621
+   },
+   "last": 2641,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "myremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "mythm",
+   "number": "4.13",
+   "number_from": "counter",
+   "labels": [
+    "remark:interpretation-local-term-volume-integral-points"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2643
+   },
+   "last": 2683,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "myremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "mythm",
+   "number": "4.14",
+   "number_from": "counter",
+   "labels": [
+    "remark:moduli-space-curves-max-faces"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2686
+   },
+   "last": 2699,
+   "result": "matched"
+  },
+  {
+   "id": "2106.11898v2#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "mythm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mythm",
+   "number": "4.15",
+   "number_from": "counter",
+   "labels": [
+    "thm:final-result"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2703
+   },
+   "last": 2720,
+   "result": "matched"
+  }
+ ]
+}
