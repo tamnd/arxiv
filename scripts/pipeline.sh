@@ -130,7 +130,7 @@ tool() {
 }
 tool arxiv-reader ax
 tool math2-agent m2
-axv=$(ax version | head -1)
+axv="ax $(ax version | head -1)"
 m2v=$(m2 version | head -1)
 
 clone arxiv
@@ -160,10 +160,14 @@ log "the batch of $from: $done extracted, $stopped stopped"
 ax tags analysis -all >"$dir/run/tags-$stamp.out" 2>&1 || log "ax tags analysis exited with $?"
 ax census report >/dev/null 2>&1 || log "ax census report exited with $?"
 ax graph report >/dev/null 2>&1 || log "ax graph report exited with $?"
+# The metadata audit, the content audit and the structural rules of the analysis plane stop the run. The other rules of group D measure the quality of the extraction (AX-M3). The run writes and commits their report, and lists their findings in the pull request, but they do not stop it.
+gate=D01,D02,D04,D06,D10,D13
 checks=pass
-ax audit -report reports/audit.md >/dev/null 2>&1 || checks=fail
-ax audit -plane content -report reports/audit-content.md >/dev/null 2>&1 || checks=fail
-ax audit -group D -report reports/audit-analysis.md >/dev/null 2>&1 || checks=fail
+ax audit -q -report reports/audit.md >"$dir/run/audit-meta-$stamp.out" 2>&1 || checks=fail
+ax audit -q -plane content -report reports/audit-content.md >"$dir/run/audit-content-$stamp.out" 2>&1 || checks=fail
+ax audit -q -group D -report reports/audit-analysis.md >"$dir/run/audit-analysis-$stamp.out" 2>&1 || true
+ax audit -q -group D -rules "$gate" >"$dir/run/audit-gate-$stamp.out" 2>&1 || checks=fail
+quality=$(grep -E '^\| D[0-9]+ \| fail \|' reports/audit-analysis.md | awk -F'|' '{gsub(/ /, "", $2); gsub(/ /, "", $6); printf "%s%s %s", sep, $2, $6; sep=", "}')
 
 body="$dir/run/arxiv-$stamp.md"
 cat >"$body" <<EOF
@@ -173,7 +177,9 @@ The pipeline on the build server ran $axv on the next papers of $from.
 - Papers stopped: $stopped
 - The run: $stamp
 
-It also ran \`ax tags analysis -all\`, the census report, the graph report and the three audits of the CI. The audits $( [ "$checks" = pass ] && echo pass || echo "have a hard finding, so this pull request stays open" ).
+It also ran \`ax tags analysis -all\`, the census report, the graph report and the three audits of the CI. The metadata audit, the content audit and the rules $gate of the analysis plane $( [ "$checks" = pass ] && echo pass || echo "have a hard finding, so this pull request stays open. The output is in $dir/run on the build server" ).
+
+The quality rules of the analysis plane with findings: ${quality:-none}. They are the work of AX-M3 and do not stop the pipeline. The full list is in reports/audit-analysis.md.
 EOF
 if commit arxiv "Add the census of $done papers of $from"; then
 	publish arxiv "Add the census of $done papers of $from" "$body" "$checks" "type: feature" "area: corpus"
