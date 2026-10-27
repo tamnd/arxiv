@@ -17,7 +17,8 @@ list=${AX_LIST:-manifests/gold/x-v1.txt}
 scope=${AX_SCOPE:-math}
 # The run stops before the batch when the disk has less free space than this, in MB.
 reserve=${AX_RESERVE_MB:-3000}
-export PATH="$dir/bin:/usr/local/go/bin:$PATH"
+# Cron gives a short PATH, and gh is in /usr/local/bin.
+export PATH="$dir/bin:/usr/local/go/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 # A cache of its own, because other jobs on the server clean the shared one.
 export GOCACHE="$dir/gocache"
 
