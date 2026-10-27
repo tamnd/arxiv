@@ -130,6 +130,18 @@ S12   pass     12
 12 files over 1 paper, nothing found
 ```
 
+## The pipeline
+
+`scripts/pipeline.sh` runs the pipeline on a build server from cron, each hour. One run does these steps:
+
+1. It installs the latest releases of `ax` and `m2`.
+2. It runs `ax census batch` on at most 100 papers. The papers come from gold set X (`manifests/gold/x-v1.txt`) first, and then from the open and share-alike papers of the scope `math`, in the order of AX2.6.
+3. It runs `ax tags analysis -all`, the census report, the graph report and the three audits of the CI.
+4. It opens a pull request on this repository with the result, and merges it when the audits pass.
+5. It imports the arXiv mentions into tamnd/math2 with `m2 corpus import -source arxiv` and `m2 corpus cluster -source arxiv`, runs `m2 check` and `m2 audit -changed`, and opens and merges a pull request there in the same way.
+
+A run rebases its commit on main before it pushes. When the rebase has a conflict, or a check fails, or a merge fails, the run leaves the pull request open and writes the reason to `blocked` in the pipeline directory. The later runs do nothing until a person reads the reason and removes that file. Only one run can go at a time, and the pipeline must be the only process that fetches from arXiv. The head of the script says how to install it.
+
 ## Related
 
 - [tamnd/arxiv-reader](https://github.com/tamnd/arxiv-reader), the toolchain
