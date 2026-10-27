@@ -1,7 +1,7 @@
 {
  "paper": "2304.02722",
  "version": 2,
- "extractor": "ax/v0.5.19",
+ "extractor": "ax/v0.5.26",
  "main": [
   "main.tex"
  ],
@@ -174,10 +174,10 @@
  "waivers": [],
  "numbers": {
   "from_aux": 0,
-  "from_render": 0,
-  "from_counter": 64,
+  "from_render": 64,
+  "from_counter": 0,
   "from_head": 0,
-  "agree": 0,
+  "agree": 64,
   "disagree": 0,
   "contiguity_gaps": 0
  },
@@ -186,48 +186,11 @@
   "unresolved": 1
  },
  "render": {
-  "theorems": 9,
-  "proofs": 2,
-  "agree": false,
+  "theorems": 64,
+  "proofs": 35,
+  "agree": true,
   "source_theorems": 64,
-  "source_proofs": 35,
-  "envs": [
-   {
-    "env": "corollary",
-    "source": 2,
-    "render": 0
-   },
-   {
-    "env": "definition",
-    "source": 10,
-    "render": 0
-   },
-   {
-    "env": "lemma",
-    "source": 20,
-    "render": 0
-   },
-   {
-    "env": "proposition",
-    "source": 11,
-    "render": 2
-   },
-   {
-    "env": "question",
-    "source": 5,
-    "render": 3
-   },
-   {
-    "env": "remark",
-    "source": 8,
-    "render": 1
-   },
-   {
-    "env": "theorem",
-    "source": 8,
-    "render": 3
-   }
-  ]
+  "source_proofs": 35
  },
  "outside": {
   "theoremsearch": 41
@@ -237,13 +200,9 @@
    "rule": "D09",
    "occurrence": "2304.02722v2#textref-129",
    "message": "the text names Proposition \\ref{prop:C1,1_regularity} and the census has no such item (no-label)"
-  },
-  {
-   "rule": "D08",
-   "message": "the source has 64 theorem environments and the render has 9"
   }
  ],
- "strength": "normal",
+ "strength": "strong",
  "items": [
   {
    "id": "2304.02722v2#env-1",
@@ -254,7 +213,7 @@
    "item": "statement/theorem",
    "counter": "theorem",
    "number": "1.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "thm:main_isotopy_regularity",
     "eqn:main_isotopy_problem"
@@ -275,7 +234,7 @@
    "item": "remark",
    "counter": "theorem",
    "number": "1.2",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 158
@@ -292,7 +251,7 @@
    "item": "problem",
    "counter": "theorem",
    "number": "1.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "quest:yau"
    ],
@@ -312,7 +271,7 @@
    "item": "problem",
    "counter": "theorem",
    "number": "1.4",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "quest:sphere1"
    ],
@@ -332,7 +291,7 @@
    "item": "statement/theorem",
    "counter": "theorem",
    "number": "1.5",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "thm:PMC_in_sphere"
    ],
@@ -352,7 +311,7 @@
    "item": "problem",
    "counter": "theorem",
    "number": "1.6",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "quest:sphere2"
    ],
@@ -372,7 +331,7 @@
    "item": "statement/theorem",
    "counter": "theorem",
    "number": "1.7",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "thm:CMC_in_sphere"
    ],
@@ -392,7 +351,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "3.1",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 332
@@ -423,7 +382,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "3.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "eqn:min_problem"
    ],
@@ -457,7 +416,7 @@
    "item": "remark",
    "counter": "theorem",
    "number": "4.1",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 459
@@ -474,7 +433,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "4.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:thin_isoperimetric_MSY",
     "eqn:isoperimetric_smallness_assumption",
@@ -497,7 +456,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "4.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:area_comparison",
     "eqn:area_comparison_isoperimetric_assumption",
@@ -542,7 +501,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "5.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "prop:fill-in",
     "eqn:rel_current"
@@ -577,7 +536,7 @@
    "item": "definition",
    "counter": "theorem",
    "number": "5.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "def:fill-in",
     "eqn:fill-in_h"
@@ -598,7 +557,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "5.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "prop:fill-in_properties",
     "eqn:fill-in_antisym",
@@ -634,7 +593,7 @@
    "item": "problem",
    "counter": "theorem",
    "number": "5.4",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "question:main",
     "eqn:min_seq_setup_disk"
@@ -655,7 +614,7 @@
    "item": "statement/theorem",
    "counter": "theorem",
    "number": "6.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "thm:compactness",
     "eqn:min_seq_compactness",
@@ -694,7 +653,7 @@
    "item": "definition",
    "counter": "theorem",
    "number": "7.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "def:Lip_disks"
    ],
@@ -714,7 +673,7 @@
    "item": "remark",
    "counter": "theorem",
    "number": "7.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "rmk:submanifold"
    ],
@@ -734,7 +693,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "7.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:resolution"
    ],
@@ -768,7 +727,7 @@
    "item": "remark",
    "counter": "theorem",
    "number": "7.4",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 852
@@ -785,7 +744,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "7.5",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:y0",
     "eqn:y0_conclusion",
@@ -823,7 +782,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "7.6",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:resolution_iso_collapse",
     "eqn:resolution_iso_collapse_subset",
@@ -860,7 +819,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "7.7",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:resolution_stacked_one",
     "eqn:resolution_stacked_one_subset",
@@ -903,7 +862,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "7.8",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:resolution_decompose_one",
     "eqn:resolution_1-stack_subset",
@@ -940,7 +899,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "7.9",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:resolution_decompose_two",
     "eqn:resolution_2-stacks_subset",
@@ -980,7 +939,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "8.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "prop:iso+PMC_controls_area",
     "eqn:iso",
@@ -1016,7 +975,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "8.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:replacement",
     "eqn:replace_subset",
@@ -1062,7 +1021,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "9.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:filigree",
     "eqn:filigree_area_assumption",
@@ -1101,7 +1060,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "10.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:rectifiability",
     "eqn:min_seq_rectifiability"
@@ -1136,7 +1095,7 @@
    "item": "statement/theorem",
    "counter": "theorem",
    "number": "10.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "thm:local_regularity",
     "eqn:min_seq_regularity"
@@ -1204,7 +1163,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "10.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:flatness"
    ],
@@ -1243,7 +1202,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "11.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "prop:C1,1_regularity"
    ],
@@ -1277,7 +1236,7 @@
    "item": "statement/corollary",
    "counter": "theorem",
    "number": "11.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "cor:estimate"
    ],
@@ -1297,7 +1256,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "11.3",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 1828
@@ -1328,7 +1287,7 @@
    "item": "problem",
    "counter": "theorem",
    "number": "12.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "question:main_isotopy",
     "eqn:min_seq_setup_isotopy"
@@ -1349,7 +1308,7 @@
    "item": "definition",
    "counter": "theorem",
    "number": "13.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "def:gamma_reduction"
    ],
@@ -1369,7 +1328,7 @@
    "item": "definition",
    "counter": "theorem",
    "number": "13.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "def:strong_gamma_reduction"
    ],
@@ -1389,7 +1348,7 @@
    "item": "statement/theorem",
    "counter": "theorem",
    "number": "13.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "thm:gamma_reduction"
    ],
@@ -1409,7 +1368,7 @@
    "item": "remark",
    "counter": "theorem",
    "number": "13.4",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "rem:bubbles"
    ],
@@ -1429,7 +1388,7 @@
    "item": "remark",
    "counter": "theorem",
    "number": "13.5",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "rem:ac_to_vol",
     "eqn:area_gamma_red"
@@ -1481,7 +1440,7 @@
    "item": "definition",
    "counter": "theorem",
    "number": "15.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "def:meets_transversally"
    ],
@@ -1501,7 +1460,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "15.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:wedge"
    ],
@@ -1521,7 +1480,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "15.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "prop:convex_hull"
    ],
@@ -1555,7 +1514,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "15.4",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:boundary_monotonicity_prelim"
    ],
@@ -1589,7 +1548,7 @@
    "item": "remark",
    "counter": "theorem",
    "number": "16.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "rmk:extend_Lip"
    ],
@@ -1609,7 +1568,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "16.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:small_curv_graph"
    ],
@@ -1643,7 +1602,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "16.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:Geo_AA"
    ],
@@ -1677,7 +1636,7 @@
    "item": "definition",
    "counter": "theorem",
    "number": "17.1",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 2441
@@ -1694,7 +1653,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "17.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "prop:second_variation",
     "eqn:second_variation"
@@ -1729,7 +1688,7 @@
    "item": "statement/theorem",
    "counter": "theorem",
    "number": "17.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "thm:main_estimate"
    ],
@@ -1766,7 +1725,7 @@
    "item": "statement/theorem",
    "counter": "theorem",
    "number": "18.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "thm:min-max"
    ],
@@ -1786,7 +1745,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "19.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "prop:min_max_area_upper_bound"
    ],
@@ -1820,7 +1779,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "19.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:willmore_monotone"
    ],
@@ -1854,7 +1813,7 @@
    "item": "statement/proposition",
    "counter": "theorem",
    "number": "19.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "prop:min_max_area_lower_bound"
    ],
@@ -1888,7 +1847,7 @@
    "item": "statement/corollary",
    "counter": "theorem",
    "number": "19.4",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "cor:density_one"
    ],
@@ -1922,7 +1881,7 @@
    "item": "definition",
    "counter": "theorem",
    "number": "20.1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "def:weak_replacement"
    ],
@@ -1942,7 +1901,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "20.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:regularity_weak_replacement"
    ],
@@ -1979,7 +1938,7 @@
    "item": "definition",
    "counter": "theorem",
    "number": "20.3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "def:strong_replacement"
    ],
@@ -1999,7 +1958,7 @@
    "item": "remark",
    "counter": "theorem",
    "number": "20.4",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 2716
@@ -2016,7 +1975,7 @@
    "item": "definition",
    "counter": "theorem",
    "number": "20.5",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 2720
@@ -2033,7 +1992,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "20.6",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:regularity_strong_replacement"
    ],
@@ -2067,7 +2026,7 @@
    "item": "definition",
    "counter": "theorem",
    "number": "A.1",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 2766
@@ -2087,7 +2046,7 @@
    "item": "statement/lemma",
    "counter": "theorem",
    "number": "A.2",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:maximum_principle"
    ],

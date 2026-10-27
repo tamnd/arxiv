@@ -1,7 +1,7 @@
 {
  "paper": "2601.01076",
  "version": 1,
- "extractor": "ax/v0.5.19",
+ "extractor": "ax/v0.5.26",
  "main": [
   "main.tex"
  ],
@@ -47,70 +47,157 @@
    "numbered": true,
    "from": "paper",
    "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "class:jmlr"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "class:jmlr"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "class:jmlr"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "class:jmlr"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "class:jmlr"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "class:jmlr"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "class:jmlr"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "class:jmlr"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "class:jmlr"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:jmlr"
   }
  ],
  "occurrences": {
-  "env": 2,
-  "label": 2
+  "env": 7,
+  "label": 9,
+  "proof": 2,
+  "textref": 4
  },
  "matched": {
-  "env": 2,
-  "label": 2
+  "env": 7,
+  "label": 9,
+  "proof": 2
  },
  "gaps": [],
  "waivers": [],
  "numbers": {
   "from_aux": 0,
-  "from_render": 2,
+  "from_render": 7,
   "from_counter": 0,
   "from_head": 0,
-  "agree": 2,
+  "agree": 7,
   "disagree": 0,
   "contiguity_gaps": 0
  },
  "textrefs": {
-  "resolved": 0,
+  "resolved": 4,
   "unresolved": 0
  },
  "render": {
   "theorems": 7,
   "proofs": 2,
-  "agree": false,
-  "source_theorems": 2,
-  "source_proofs": 0,
-  "envs": [
-   {
-    "env": "lemma",
-    "source": 0,
-    "render": 2
-   },
-   {
-    "env": "proposition",
-    "source": 0,
-    "render": 1
-   },
-   {
-    "env": "theorem",
-    "source": 0,
-    "render": 2
-   }
-  ]
+  "agree": true,
+  "source_theorems": 7,
+  "source_proofs": 2
  },
  "outside": {
   "theoremgraph": 5
  },
- "findings": [
-  {
-   "rule": "D08",
-   "message": "the source has 2 theorem environments and the render has 7"
-  }
- ],
- "strength": "normal",
+ "strength": "strong",
  "items": [
   {
    "id": "2601.01076v1#env-1",
    "type": "env",
    "k": 1,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "thm:cg_robustness"
+   ],
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 27
+   },
+   "last": 31,
+   "result": "matched"
+  },
+  {
+   "id": "2601.01076v1#env-2",
+   "type": "env",
+   "k": 2,
    "env": "problem",
    "title": "Problem",
    "item": "problem",
@@ -128,9 +215,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.01076v1#env-2",
+   "id": "2601.01076v1#env-3",
    "type": "env",
-   "k": 2,
+   "k": 3,
    "env": "problem",
    "title": "Problem",
    "item": "problem",
@@ -145,6 +232,116 @@
     "line": 8
    },
    "last": 10,
+   "result": "matched"
+  },
+  {
+   "id": "2601.01076v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "lem:koopman_containment"
+   ],
+   "pos": {
+    "file": "methodology.tex",
+    "line": 65
+   },
+   "last": 70,
+   "result": "matched"
+  },
+  {
+   "id": "2601.01076v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "thm:ckrs_coverage",
+    "eq:conformal_inflation"
+   ],
+   "pos": {
+    "file": "methodology.tex",
+    "line": 109
+   },
+   "last": 119,
+   "result": "matched"
+  },
+  {
+   "id": "2601.01076v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "lem:koopman_containment"
+   ],
+   "pos": {
+    "file": "appendix.tex",
+    "line": 8
+   },
+   "last": 12,
+   "result": "matched"
+  },
+  {
+   "id": "2601.01076v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 14
+   },
+   "last": 38,
+   "result": "matched"
+  },
+  {
+   "id": "2601.01076v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "thm:ckrs_coverage",
+    "eq:conformal_inflation"
+   ],
+   "pos": {
+    "file": "appendix.tex",
+    "line": 41
+   },
+   "last": 52,
+   "result": "matched"
+  },
+  {
+   "id": "2601.01076v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 54
+   },
+   "last": 76,
    "result": "matched"
   }
  ]

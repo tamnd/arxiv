@@ -1,0 +1,833 @@
+{
+ "paper": "2610.20302",
+ "version": 1,
+ "extractor": "ax/v0.5.26",
+ "main": [
+  "Heavy_Tailed_Homogenization.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "geometry",
+  "amsmath",
+  "amssymb",
+  "amsthm",
+  "mathtools",
+  "bm",
+  "booktabs",
+  "array",
+  "enumitem",
+  "microtype",
+  "xcolor",
+  "tikz",
+  "centernot",
+  "mathrsfs",
+  "graphicx",
+  "float",
+  "pgfplots",
+  "authblk",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: Heavy_Tailed_Homogenization.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 15 commands, 0 environments",
+  "tree: 177 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 23,
+  "head": 1,
+  "label": 57,
+  "proof": 10,
+  "textref": 66
+ },
+ "matched": {
+  "env": 23,
+  "head": 1,
+  "label": 57,
+  "proof": 10
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 23,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 23,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 66,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 23,
+  "proofs": 10,
+  "agree": true,
+  "source_theorems": 23,
+  "source_proofs": 10
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.20302v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Notation",
+   "item": "definition/notation",
+   "labels": [
+    "par:notation"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 120
+   },
+   "last": 122,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.20302v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "ass:local_activity"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 142
+   },
+   "last": 146,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "ass:level_C",
+    "eq:regular_variation"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 148
+   },
+   "last": 166,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "ass:semigroup_lipschitz"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 252
+   },
+   "last": 254,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "def:bernstein",
+    "eq:bernstein_rep"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 261
+   },
+   "last": 269,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "thm:clock_limit",
+    "eq:regenerative_clock_limit"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 328
+   },
+   "last": 339,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:reward_laplace_limit",
+    "eq:deterministic_cycle_fdds",
+    "eq:renewal_sandwich",
+    "eq:boundary_band"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 341
+   },
+   "last": 428,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "rem:burst_interpretation",
+    "eq:cycle_duration_bound"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 432
+   },
+   "last": 441,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "ass:slow_coefficients"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 729
+   },
+   "last": 733,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "ass:decoupling"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 742
+   },
+   "last": 745,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "thm:full_homogenization",
+    "eq:main_fdd_limit",
+    "eq:main_operator_limits",
+    "eq:full_effective_gen"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 833
+   },
+   "last": 850,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "eq:proved_resolvent_convergence"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 853
+   },
+   "last": 864,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "sec:topology",
+    "eq:main_extended_path_limit"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 867
+   },
+   "last": 876,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "4.6",
+   "number_from": "render",
+   "labels": [
+    "ass:uniform_ellipticity",
+    "eq:uniform_elliptic_activity"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 887
+   },
+   "last": 895,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.7",
+   "number_from": "render",
+   "labels": [
+    "cor:fractional_homog",
+    "eq:fractional_generator",
+    "eq:local_stable_kernel_bounds"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 927
+   },
+   "last": 942,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.8",
+   "number_from": "render",
+   "labels": [
+    "rem:stable_brownian_specialization",
+    "eq:fractional_laplacian"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 946
+   },
+   "last": 957,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.9",
+   "number_from": "render",
+   "labels": [
+    "thm:phase_transition",
+    "tab:phase_transition"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 961
+   },
+   "last": 982,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.10",
+   "number_from": "render",
+   "labels": [
+    "rem:volatility_discussion"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1079
+   },
+   "last": 1082,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "thm:truncated_evolution",
+    "eq:finite_burst_semigroup",
+    "eq:gen_eta"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1133
+   },
+   "last": 1148,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1150
+   },
+   "last": 1258,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "prop:extended_clocks"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1286
+   },
+   "last": 1288,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1289
+   },
+   "last": 1291,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "lem:inverse_clock_convergence"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1299
+   },
+   "last": 1302,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1303
+   },
+   "last": 1315,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "lem:extended_estimates",
+    "eq:extended_moments"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1329
+   },
+   "last": 1345,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1346
+   },
+   "last": 1412,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "render",
+   "labels": [
+    "prop:extended_stability",
+    "eq:extended_stability"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1424
+   },
+   "last": 1432,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:uniform_euler_error1",
+    "eq:uniform_euler_error2"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1433
+   },
+   "last": 1510,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "lem:physical_extended_representation"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1514
+   },
+   "last": 1523,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1524
+   },
+   "last": 1526,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:coupled_extended_path_convergence",
+    "eq:coupled_fdd_convergence",
+    "eq:strong_annealed_convergence",
+    "eq:proved_effective_operator",
+    "eq:cauchy_bound"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1536
+   },
+   "last": 1708,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:elliptic_gaussian_bounds",
+    "eq:Levy bound",
+    "eq:absV",
+    "eq:absRf"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1717
+   },
+   "last": 1853,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "lem:measure_clock_continuity",
+    "eq:clock_fdd_from_measure"
+   ],
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1879
+   },
+   "last": 1893,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.20302v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Heavy_Tailed_Homogenization.tex",
+    "line": 1894
+   },
+   "last": 1905,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

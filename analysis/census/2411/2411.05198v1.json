@@ -1,7 +1,7 @@
 {
  "paper": "2411.05198",
  "version": 1,
- "extractor": "ax/v0.5.19",
+ "extractor": "ax/v0.5.26",
  "main": [
   "arxiv-main.tex"
  ],
@@ -31,7 +31,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 19 decided, 0 flag tests decided, 0 kept",
   "macros: 98 commands, 0 environments",
-  "tree: 168 nodes"
+  "drop: 1 uses of commands that print nothing",
+  "tree: 166 nodes"
  ],
  "declarations": [
   {
@@ -141,16 +142,26 @@
    "numbered": true,
    "from": "local:macros.sty",
    "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
   }
  ],
  "occurrences": {
   "env": 32,
-  "label": 32,
+  "label": 44,
+  "proof": 16,
   "textref": 63
  },
  "matched": {
   "env": 32,
-  "label": 32
+  "label": 44,
+  "proof": 16
  },
  "gaps": [],
  "waivers": [],
@@ -170,15 +181,15 @@
  "render": {
   "theorems": 32,
   "proofs": 16,
-  "agree": false,
+  "agree": true,
   "source_theorems": 32,
-  "source_proofs": 0
+  "source_proofs": 16
  },
  "outside": {
   "theoremgraph": 32,
   "theoremsearch": 20
  },
- "strength": "normal",
+ "strength": "strong",
  "items": [
   {
    "id": "2411.05198v1#env-1",
@@ -461,6 +472,23 @@
    "result": "matched"
   },
   {
+   "id": "2411.05198v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Neurips/Sections/appendix.tex",
+    "line": 7
+   },
+   "last": 21,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
    "id": "2411.05198v1#env-15",
    "type": "env",
    "k": 15,
@@ -478,6 +506,23 @@
     "line": 24
    },
    "last": 26,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2411.05198v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Neurips/Sections/appendix.tex",
+    "line": 28
+   },
+   "last": 50,
    "flags": [
     "appendix"
    ],
@@ -507,6 +552,23 @@
    "result": "matched"
   },
   {
+   "id": "2411.05198v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Neurips/Sections/appendix.tex",
+    "line": 57
+   },
+   "last": 67,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
    "id": "2411.05198v1#env-17",
    "type": "env",
    "k": 17,
@@ -524,6 +586,23 @@
     "line": 3
    },
    "last": 6,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2411.05198v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Neurips/Sections/app-nonEuc-recursive-regularization.tex",
+    "line": 7
+   },
+   "last": 24,
    "flags": [
     "appendix"
    ],
@@ -601,6 +680,70 @@
    "result": "matched"
   },
   {
+   "id": "2411.05198v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:EF",
+    "eq:E-F-G",
+    "eq:p2-derivation-ssp"
+   ],
+   "pos": {
+    "file": "Neurips/Sections/app-nonEuc-recursive-regularization.tex",
+    "line": 66
+   },
+   "last": 123,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2411.05198v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:error-to-final-min",
+    "eq:gap-grad-bound",
+    "eq:final-gap-bound"
+   ],
+   "pos": {
+    "file": "Neurips/Sections/app-nonEuc-recursive-regularization.tex",
+    "line": 127
+   },
+   "last": 187,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2411.05198v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:Et-bound-relative-acc"
+   ],
+   "pos": {
+    "file": "Neurips/Sections/app-nonEuc-recursive-regularization.tex",
+    "line": 191
+   },
+   "last": 218,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
    "id": "2411.05198v1#env-21",
    "type": "env",
    "k": 21,
@@ -670,6 +813,40 @@
    "result": "matched"
   },
   {
+   "id": "2411.05198v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Neurips/Sections/app-dp-rates.tex",
+    "line": 45
+   },
+   "last": 51,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2411.05198v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Neurips/Sections/app-dp-rates.tex",
+    "line": 54
+   },
+   "last": 85,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
    "id": "2411.05198v1#env-24",
    "type": "env",
    "k": 24,
@@ -687,6 +864,23 @@
     "line": 28
    },
    "last": 30,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2411.05198v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Neurips/Sections/app-extensions.tex",
+    "line": 31
+   },
+   "last": 39,
    "flags": [
     "appendix"
    ],
@@ -759,6 +953,23 @@
    "result": "matched"
   },
   {
+   "id": "2411.05198v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Neurips/Sections/app-extensions.tex",
+    "line": 74
+   },
+   "last": 80,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
    "id": "2411.05198v1#env-28",
    "type": "env",
    "k": 28,
@@ -778,6 +989,68 @@
     "line": 85
    },
    "last": 91,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2411.05198v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:EF-vi",
+    "eq:E-F-G-vi"
+   ],
+   "pos": {
+    "file": "Neurips/Sections/app-extensions.tex",
+    "line": 92
+   },
+   "last": 172,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2411.05198v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:error-to-final-min-vi",
+    "eq:final-gap-bound-vi"
+   ],
+   "pos": {
+    "file": "Neurips/Sections/app-extensions.tex",
+    "line": 176
+   },
+   "last": 235,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2411.05198v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:Et-bound-relative-acc-vi"
+   ],
+   "pos": {
+    "file": "Neurips/Sections/app-extensions.tex",
+    "line": 239
+   },
+   "last": 265,
    "flags": [
     "appendix"
    ],
@@ -830,6 +1103,23 @@
    "result": "matched"
   },
   {
+   "id": "2411.05198v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Neurips/Sections/app-extensions.tex",
+    "line": 285
+   },
+   "last": 303,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
    "id": "2411.05198v1#env-31",
    "type": "env",
    "k": 31,
@@ -844,6 +1134,23 @@
     "line": 5
    },
    "last": 7,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2411.05198v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Neurips/Sections/svi-lower-bound.tex",
+    "line": 8
+   },
+   "last": 15,
    "flags": [
     "appendix"
    ],

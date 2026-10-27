@@ -1,7 +1,7 @@
 {
  "paper": "2510.07095",
  "version": 1,
- "extractor": "ax/v0.5.19",
+ "extractor": "ax/v0.5.26",
  "main": [
   "main.tex"
  ],
@@ -84,10 +84,10 @@
  "waivers": [],
  "numbers": {
   "from_aux": 0,
-  "from_render": 0,
-  "from_counter": 5,
+  "from_render": 5,
+  "from_counter": 0,
   "from_head": 0,
-  "agree": 0,
+  "agree": 5,
   "disagree": 0,
   "contiguity_gaps": 0
  },
@@ -96,45 +96,17 @@
   "unresolved": 0
  },
  "render": {
-  "theorems": 0,
-  "proofs": 0,
-  "agree": false,
+  "theorems": 5,
+  "proofs": 4,
+  "agree": true,
   "source_theorems": 5,
-  "source_proofs": 4,
-  "envs": [
-   {
-    "env": "cor",
-    "source": 1,
-    "render": 0
-   },
-   {
-    "env": "lem",
-    "source": 2,
-    "render": 0
-   },
-   {
-    "env": "prop",
-    "source": 1,
-    "render": 0
-   },
-   {
-    "env": "thm",
-    "source": 1,
-    "render": 0
-   }
-  ]
+  "source_proofs": 4
  },
  "outside": {
   "theoremgraph": 5,
   "theoremsearch": 5
  },
- "findings": [
-  {
-   "rule": "D08",
-   "message": "the source has 5 theorem environments and the render has 0"
-  }
- ],
- "strength": "normal",
+ "strength": "strong",
  "items": [
   {
    "id": "2510.07095v1#env-1",
@@ -145,7 +117,7 @@
    "item": "statement/lemma",
    "counter": "thm",
    "number": "1",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "lem:rna"
    ],
@@ -179,7 +151,7 @@
    "item": "statement/proposition",
    "counter": "thm",
    "number": "2",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 117
@@ -196,7 +168,7 @@
    "item": "statement/lemma",
    "counter": "thm",
    "number": "3",
-   "number_from": "counter",
+   "number_from": "render",
    "labels": [
     "generic"
    ],
@@ -230,7 +202,7 @@
    "item": "statement/theorem",
    "counter": "thm",
    "number": "4",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 146
@@ -261,7 +233,7 @@
    "item": "statement/corollary",
    "counter": "thm",
    "number": "5",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "main.tex",
     "line": 169
