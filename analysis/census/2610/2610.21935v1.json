@@ -1,0 +1,829 @@
+{
+ "paper": "2610.21935",
+ "version": 1,
+ "extractor": "ax/v0.5.24",
+ "main": [
+  "ifacconf.tex"
+ ],
+ "class": "ifacconf",
+ "packages": [
+  "natbib",
+  "hyperref",
+  "graphicx",
+  "mathtools",
+  "amssymb",
+  "amsmath",
+  "bm",
+  "amsfonts",
+  "xcolor",
+  "balance",
+  "subcaption",
+  "enumitem",
+  "chngcntr"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: ifacconf.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 485 commands, 4 environments",
+  "aliases: 6 uses of commands that stand for \\begin or \\end",
+  "tree: 108 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hypo",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assum",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "crit",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exmp",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prob",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prin",
+   "title": "Principle",
+   "item": "statement/principle",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "alg",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "alg",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "note",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summ",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "summ",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "case",
+   "numbered": true,
+   "from": "local:ifacconf.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 16,
+  "head": 1,
+  "label": 37,
+  "proof": 7,
+  "textref": 32
+ },
+ "matched": {
+  "env": 16,
+  "head": 1,
+  "label": 37,
+  "proof": 7
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 16,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 11,
+  "disagree": 5,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 32,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 16,
+  "proofs": 7,
+  "agree": false,
+  "source_theorems": 16,
+  "source_proofs": 0
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2610.21935v1#env-1",
+   "message": "the counter model gives Assumption 0 and the second witness gives 1"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.21935v1#env-3",
+   "message": "the counter model gives Assumption 0 and the second witness gives 2"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.21935v1#env-4",
+   "message": "the counter model gives Assumption 0 and the second witness gives 3"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.21935v1#env-5",
+   "message": "the counter model gives Assumption 0 and the second witness gives 4"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.21935v1#env-7",
+   "message": "the counter model gives Assumption 0 and the second witness gives 5"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.21935v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Notation",
+   "item": "definition/notation",
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 134
+   },
+   "last": 134,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.21935v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "as:fullcolumn1"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 158
+   },
+   "last": 163,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "markov",
+    "gstar"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 170
+   },
+   "last": 176,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "stability"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 191
+   },
+   "last": 193,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "maxnorm"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 196
+   },
+   "last": 200,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "null"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 203
+   },
+   "last": 207,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "alphabetabound"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 230
+   },
+   "last": 236,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "as:fullcolumn"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 241
+   },
+   "last": 248,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "assumptionequivalence"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 253
+   },
+   "last": 262,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "K_lowerbound",
+    "KU_T"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 296
+   },
+   "last": 306,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1",
+   "number_from": "render",
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 308
+   },
+   "last": 310,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "minnormbound"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 319
+   },
+   "last": 329,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "lem:psi_lower_bound",
+    "f_T_K_Q",
+    "eq:T_condition_psi",
+    "psi_lowerbound"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 356
+   },
+   "last": 375,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "lem:universallowerbound",
+    "final_timebound",
+    "goal"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 379
+   },
+   "last": 390,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "thm:main",
+    "final_timebound2"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 398
+   },
+   "last": 408,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "alphalower",
+    "psitkbar",
+    "case1",
+    "case2"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 410
+   },
+   "last": 452,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "2",
+   "number_from": "render",
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 471
+   },
+   "last": 473,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "rem:filter_scaling"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 475
+   },
+   "last": 478,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "xtsums",
+    "xt123",
+    "betatsum",
+    "alphatsum"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 567
+   },
+   "last": 595,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 600
+   },
+   "last": 632,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "KUlipschitz"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 637
+   },
+   "last": 673,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 676
+   },
+   "last": 686,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "1-2plower",
+    "eq:X_concentration",
+    "eq:B_choice",
+    "ft_lowerbound"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 690
+   },
+   "last": 735,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.21935v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:psi_lipschitz",
+    "Kinterbound"
+   ],
+   "pos": {
+    "file": "ifacconf.tex",
+    "line": 739
+   },
+   "last": 788,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

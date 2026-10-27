@@ -1,0 +1,1613 @@
+{
+ "paper": "2610.21632",
+ "version": 1,
+ "extractor": "ax/v0.5.24",
+ "main": [
+  "Characerisation_for_CE.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "geometry",
+  "hyperref",
+  "amsfonts",
+  "amssymb",
+  "verbatim",
+  "latexsym",
+  "mathrsfs",
+  "stmaryrd",
+  "xspace",
+  "enumerate",
+  "paralist",
+  "graphicx",
+  "xy",
+  "extarrows",
+  "tabu",
+  "accents",
+  "tensor",
+  "enumitem",
+  "color",
+  "txfonts",
+  "pxfonts",
+  "amsmath",
+  "mathtools",
+  "amsthm",
+  "thmtools"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: Characerisation_for_CE.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 47 commands, 0 environments",
+  "tree: 169 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "propprime",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "prop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conv",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "introdefn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "introthm",
+   "shared": "introthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "introprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "introthm",
+   "shared": "introthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "introcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "introthm",
+   "shared": "introthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainthm",
+   "title": "Main Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ques",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 44,
+  "label": 79,
+  "proof": 28,
+  "textref": 94
+ },
+ "matched": {
+  "env": 44,
+  "label": 79,
+  "proof": 28
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 44,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 44,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 94,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 44,
+  "proofs": 28,
+  "agree": true,
+  "source_theorems": 44,
+  "source_proofs": 28
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.21632v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "introdefn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "introthm",
+   "number": "A",
+   "number_from": "render",
+   "labels": [
+    "defn:escaping quasi-local coupling"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 201
+   },
+   "last": 212,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "number": "B",
+   "number_from": "render",
+   "labels": [
+    "thm:esc and ql coupling"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 218
+   },
+   "last": 220,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "number": "C",
+   "number_from": "render",
+   "labels": [
+    "introcor:ghost proj are compact"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 225
+   },
+   "last": 236,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "number": "D",
+   "number_from": "render",
+   "labels": [
+    "thm:char by multiplier"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 258
+   },
+   "last": 267,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "introdefn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "introthm",
+   "number": "E",
+   "number_from": "render",
+   "labels": [
+    "defn:ONSL"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 292
+   },
+   "last": 294,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "number": "F",
+   "number_from": "render",
+   "labels": [
+    "thm:CE and ONL"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 299
+   },
+   "last": 301,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "defn:ppg and quasi-local"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 374
+   },
+   "last": 384,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "defn:Roe and quasi-local algebra"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 388
+   },
+   "last": 395,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "defn:ghost"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 404
+   },
+   "last": 406,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "defn:generalised expanders",
+    "EQ:generalised expander"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 431
+   },
+   "last": 443,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "prop:tessera-general"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 448
+   },
+   "last": 450,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "prop:sparse-reduction"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 455
+   },
+   "last": 457,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:sparse-source-energy",
+    "eq:sparse-buffer-choice",
+    "eq:sparse-anchor-bound"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 459
+   },
+   "last": 578,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "prop:Tessera_generalised_expander"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 583
+   },
+   "last": 585,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tessera-global",
+    "eq:withinmass",
+    "EQ:pnKn"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 589
+   },
+   "last": 657,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "lem:comparison",
+    "eq:comparison-hyp",
+    "eq:second-moment",
+    "eq:dirichlet-domination"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 664
+   },
+   "last": 679,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:homogenized",
+    "eq:eta-from-p"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 681
+   },
+   "last": 742,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "prop:matrix-obstruction"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 747
+   },
+   "last": 756,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "lem:weighted Schur test"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 760
+   },
+   "last": 762,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 764
+   },
+   "last": 771,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:weights",
+    "eq:matrix-form"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 773
+   },
+   "last": 837,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "lem:cuts"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 861
+   },
+   "last": 866,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "EQ:norm of w",
+    "eq:l1cuts",
+    "EQ:p ell",
+    "EQ:cut estimate compute"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 868
+   },
+   "last": 926,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "cor:cuts"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 934
+   },
+   "last": 939,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 941
+   },
+   "last": 943,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "lem:ql-approx",
+    "EQ:phi t",
+    "eq:matrix-coefficient-schur"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1005
+   },
+   "last": 1016,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:color-representation-schur",
+    "eq:cut-representation-schur",
+    "EQ:Sj",
+    "EQ:estimate of P"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1019
+   },
+   "last": 1119,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "cor:ql-approx",
+    "eq:ql-approx"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1124
+   },
+   "last": 1130,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.1",
+   "number_from": "render",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1154
+   },
+   "last": 1156,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "lem:generalised expander implies coupling"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1180
+   },
+   "last": 1182,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1184
+   },
+   "last": 1195,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:coupling-as-coefficient",
+    "eq:coupling-from-schur",
+    "EQ:calculation coupling",
+    "eq:coupling-kernel-vanishes"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1269
+   },
+   "last": 1322,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "cor:coupling-cdu"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1327
+   },
+   "last": 1329,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1331
+   },
+   "last": 1333,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "prop:ghost proj are compact"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1340
+   },
+   "last": 1356,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.5",
+   "number_from": "render",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1358
+   },
+   "last": 1361,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "lem:ghost projeciton elementary"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1368
+   },
+   "last": 1377,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1379
+   },
+   "last": 1403,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.7",
+   "number_from": "render",
+   "labels": [
+    "prop:general ghost compact distance"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1408
+   },
+   "last": 1423,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1425
+   },
+   "last": 1436,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.8",
+   "number_from": "render",
+   "labels": [
+    "prop:traceratio",
+    "eq:trbound"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1443
+   },
+   "last": 1449,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.9",
+   "number_from": "render",
+   "labels": [
+    "lem:trace coupling"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1453
+   },
+   "last": 1466,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1468
+   },
+   "last": 1496,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1499
+   },
+   "last": 1512,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1521
+   },
+   "last": 1530,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.10",
+   "number_from": "render",
+   "labels": [
+    "prop:ghost proj are compact converse"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1538
+   },
+   "last": 1540,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.11",
+   "number_from": "render",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1542
+   },
+   "last": 1544,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.12",
+   "number_from": "render",
+   "labels": [
+    "lem:cutoff of quasi-local operators"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1554
+   },
+   "last": 1559,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "EQ:averaging"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1561
+   },
+   "last": 1592,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.13",
+   "number_from": "render",
+   "labels": [
+    "lem:covering maps ghosts to ghosts"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1597
+   },
+   "last": 1603,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "EQ:chi y V"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1606
+   },
+   "last": 1634,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1652
+   },
+   "last": 1666,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "6.1",
+   "number_from": "render",
+   "labels": [
+    "lem:SC implies ghost"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1701
+   },
+   "last": 1703,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1705
+   },
+   "last": 1733,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1739
+   },
+   "last": 1786,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "6.2",
+   "number_from": "render",
+   "labels": [
+    "lem:same-module"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1807
+   },
+   "last": 1809,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1811
+   },
+   "last": 1818,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "6.3",
+   "number_from": "render",
+   "labels": [
+    "def:EHaagerup"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1832
+   },
+   "last": 1839,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "6.4",
+   "number_from": "render",
+   "labels": [
+    "thm:relative_Haagerup"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1844
+   },
+   "last": 1846,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "6.5",
+   "number_from": "render",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1848
+   },
+   "last": 1850,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "6.6",
+   "number_from": "render",
+   "labels": [
+    "lem:Schur extended to compact"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1855
+   },
+   "last": 1862,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:module-vector-decay"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1864
+   },
+   "last": 1907,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:offdiag-hi"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1911
+   },
+   "last": 1941,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "6.7",
+   "number_from": "render",
+   "labels": [
+    "thm:lp and l2"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1956
+   },
+   "last": 1963,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "6.8",
+   "number_from": "render",
+   "labels": [
+    "rem:RR and SP"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1965
+   },
+   "last": 1969,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 1971
+   },
+   "last": 1990,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "EQ:estimate in ONSL",
+    "eq:onsl-lower",
+    "EQ:upper control on trace"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 2045
+   },
+   "last": 2114,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "lem:ONL and rank one"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 2123
+   },
+   "last": 2125,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 2127
+   },
+   "last": 2143,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "7.2",
+   "number_from": "render",
+   "labels": [
+    "prop:ONL and bounded rank"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 2148
+   },
+   "last": 2150,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "EQ:bdd geom",
+    "EQ:diam of Zi"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 2152
+   },
+   "last": 2199,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21632v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "7.3",
+   "number_from": "render",
+   "labels": [
+    "cor:ONSL with bdd rank"
+   ],
+   "pos": {
+    "file": "Characerisation_for_CE.tex",
+    "line": 2203
+   },
+   "last": 2205,
+   "result": "matched"
+  }
+ ]
+}
