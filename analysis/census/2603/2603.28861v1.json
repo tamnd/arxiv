@@ -1,0 +1,1649 @@
+{
+ "paper": "2603.28861",
+ "version": 1,
+ "extractor": "ax/v0.5.19",
+ "main": [
+  "arXiv_CSF_paper_II.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "geometry",
+  "amsmath",
+  "amsthm",
+  "amsfonts",
+  "amssymb",
+  "euscript",
+  "mathtools",
+  "enumitem",
+  "bm",
+  "graphicx",
+  "caption",
+  "subcaption",
+  "float",
+  "color",
+  "slashed",
+  "mathrsfs",
+  "upgreek",
+  "pifont",
+  "bbm",
+  "hyperref",
+  "xcolor",
+  "xargs",
+  "todonotes",
+  "amsaddr"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: arXiv_CSF_paper_II.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 58 commands, 0 environments",
+  "tree: 581 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "proposition*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture*",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption*",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition*",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "condition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thmx",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thmx",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjx",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thmx",
+   "shared": "thmx",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 41,
+  "label": 140,
+  "proof": 27,
+  "textref": 118
+ },
+ "matched": {
+  "env": 41,
+  "label": 140,
+  "proof": 27
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 41,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 41,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 118,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 41,
+  "proofs": 27,
+  "agree": true,
+  "source_theorems": 41,
+  "source_proofs": 27
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2603.28861v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "thm:introtails",
+    "eq:introasympPsiinfty1",
+    "eq:introasympPsiinfty2",
+    "eq:introasympPsiinfty3",
+    "eq:introasympPsiinfty4",
+    "eq:introasympPsiinfty5",
+    "eq:introasympPsiinfty6"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 212
+   },
+   "last": 242,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "thm:introinst",
+    "eq:introlowboundbetanonzeroRNhor",
+    "eq:introlowboundzerobetaRNhor",
+    "eq:introlowboundbetanonzeroRNinf",
+    "eq:introlowboundzerobetaRNinf",
+    "eq:introenblowup1",
+    "eq:introendecy1",
+    "eq:introenblowup2"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 244
+   },
+   "last": 272,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "lm:metricest"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 741
+   },
+   "last": 748,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "prop:mainequations",
+    "eq:maineqradfield",
+    "eq:maineqradfieldconf",
+    "eq:maineqradfieldconfhor",
+    "eq:maineqradfieldhor"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 932
+   },
+   "last": 961,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "eq:poincares2"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 980
+   },
+   "last": 997,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2603.28861v1#env-5",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 994
+   },
+   "last": 996,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "thm:gwp"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1029
+   },
+   "last": 1039,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "thm:iedpaper1",
+    "eq:iedpaper1"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1065
+   },
+   "last": 1079,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "condition",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "cond:quantmodestabp2",
+    "eq:radialODE"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1083
+   },
+   "last": 1109,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "2.1",
+   "number_from": "render",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1111
+   },
+   "last": 1113,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "prop:statsol",
+    "eq:alphaminplusratiobetaim",
+    "eq:alphaminplusratiobetazero"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1121
+   },
+   "last": 1163,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:relevanteqforstatsoln"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1164
+   },
+   "last": 1280,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "3.1",
+   "number_from": "render",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1282
+   },
+   "last": 1284,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "cor:kappanotsmallstatsoln",
+    "eq:condimagbeta",
+    "eq:condzerobeta"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1286
+   },
+   "last": 1295,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1296
+   },
+   "last": 1318,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "thm:mainthmpoint",
+    "eq:mainthmpoint1",
+    "eq:mainthmpoint2",
+    "eq:defPisinfty0full"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1326
+   },
+   "last": 1448,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "thm:mainthmenergy"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1451
+   },
+   "last": 1475,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "thm:mainpointwinst",
+    "eq:estenergyPsi1",
+    "eq:estenergyPsi2",
+    "eq:estenergyPsi1inf",
+    "eq:estenergyPsi2inf",
+    "eq:lowboundbetanonzeroRNhor",
+    "eq:lowboundzerobetaRNhor",
+    "eq:lowboundbetanonzeroRNinf",
+    "eq:lowboundzerobetaRNinf"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1480
+   },
+   "last": 1508,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "eq:maineqradfieldhoinf",
+    "eq:maineqradfieldhohor"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1526
+   },
+   "last": 1548,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1549
+   },
+   "last": 1567,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "prop:horpest",
+    "eq:horpest"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1569
+   },
+   "last": 1580,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:keyhorpest"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1581
+   },
+   "last": 1615,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "eq:horpestrmin1pest"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1619
+   },
+   "last": 1629,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "render",
+   "labels": [
+    "prop:edecay",
+    "eq:energydecay"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1634
+   },
+   "last": 1645,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:TKvsZ",
+    "eq:mainestedecay",
+    "eq:firstedecayest",
+    "eq:firstedecayestpart2",
+    "eq:edecaystep2",
+    "eq:edecaystep2b"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1646
+   },
+   "last": 1812,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "render",
+   "labels": [
+    "prop:edecaygeneralp",
+    "eq:energydecayp"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1814
+   },
+   "last": 1825,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:TKvsZv2"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1826
+   },
+   "last": 1846,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "prop:estinhomG",
+    "eq:erroresteqforPsiinf",
+    "eq:erroresteqforPsihor"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1949
+   },
+   "last": 1962,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:maineqerror"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 1963
+   },
+   "last": 2000,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "render",
+   "labels": [
+    "eq:defBinf",
+    "eq:defBhor"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2002
+   },
+   "last": 2012,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2013
+   },
+   "last": 2015,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "rm:nonvanishingB"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2017
+   },
+   "last": 2020,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "8.1",
+   "number_from": "render",
+   "labels": [
+    "prop:timeinvffixedmodeconstr"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2056
+   },
+   "last": 2077,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:maineqcheckpsi1",
+    "eq:vanishingtildeG"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2078
+   },
+   "last": 2149,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "8.2",
+   "number_from": "render",
+   "labels": [
+    "cor:timeinvffixedmodeconstrhor"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2151
+   },
+   "last": 2172,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2173
+   },
+   "last": 2175,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "8.3",
+   "number_from": "render",
+   "labels": [
+    "prop:ellipticesthighfreq",
+    "eq:ellipticenergy1",
+    "eq:ellipticenergy2"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2202
+   },
+   "last": 2211,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:degelliptic",
+    "eq:degelliptic2",
+    "eq:degelliptic3",
+    "eq:ellipticpart1"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2212
+   },
+   "last": 2288,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "8.4",
+   "number_from": "render",
+   "labels": [
+    "cor:elliptichighfreq",
+    "eq:ellipticenergy1ho",
+    "eq:ellipticenergy2ho"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2290
+   },
+   "last": 2301,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2302
+   },
+   "last": 2304,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "8.5",
+   "number_from": "render",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2306
+   },
+   "last": 2315,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2316
+   },
+   "last": 2333,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "8.6",
+   "number_from": "render",
+   "labels": [
+    "prop:boundedangelliptic",
+    "eq:ellipticenergy1boundl",
+    "eq:ellipticenergy2boundl"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2337
+   },
+   "last": 2347,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2348
+   },
+   "last": 2365,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "9.1",
+   "number_from": "render",
+   "labels": [
+    "prop:energydecayptieminv",
+    "eq:energydecayptieminv",
+    "eq:energydecayptieminvmin1",
+    "eq:energydecayptieminvfaster",
+    "eq:energydecayptieminvfasterDT"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2400
+   },
+   "last": 2421,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2422
+   },
+   "last": 2494,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "10.1",
+   "number_from": "render",
+   "labels": [
+    "prop:tails",
+    "eq:mainpointwisedecay",
+    "eq:mainpointwisedecaysubext"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2543
+   },
+   "last": 2558,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:auxpointwest"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2559
+   },
+   "last": 2612,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "10.2",
+   "number_from": "render",
+   "labels": [
+    "cor:Bconstnonzero"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2615
+   },
+   "last": 2618,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2619
+   },
+   "last": 2623,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "11.1",
+   "number_from": "render",
+   "labels": [
+    "prop:transinstb"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2656
+   },
+   "last": 2663,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2664
+   },
+   "last": 2735,
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "lm:solnminkhypg"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2772
+   },
+   "last": 2796,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:CSFminkrhotau"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2797
+   },
+   "last": 2828,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "A.2",
+   "number_from": "render",
+   "labels": [
+    "prop:hypgeomrealbeta",
+    "eq:Psi0infimbeta",
+    "eq:divisionwimproveddec0",
+    "eq:divisionwimproveddec1",
+    "eq:divisionwimproveddec2"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2830
+   },
+   "last": 2859,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:hypgeomasymp",
+    "eq:hypgeomasymp2"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2860
+   },
+   "last": 2906,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.3",
+   "number_from": "render",
+   "labels": [
+    "lm:unifomestnhypgeom",
+    "eq:boundedrhoFnestho",
+    "eq:boundedrhoFnesthoplus",
+    "eq:largerhoFnestho1",
+    "eq:largerhoFnestho2"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2909
+   },
+   "last": 2934,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 2935
+   },
+   "last": 3037,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "A.4",
+   "number_from": "render",
+   "labels": [
+    "prop:imaginarybetatail",
+    "eq:condzeta",
+    "eq:psiinftyimbetapos",
+    "eq:divisionwimproveddecim0",
+    "eq:divisionwimproveddecim1",
+    "eq:divisionwimproveddecim2"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 3040
+   },
+   "last": 3070,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 3071
+   },
+   "last": 3091,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "A.5",
+   "number_from": "render",
+   "labels": [
+    "prop:hypgeombeta0",
+    "eq:defPsiinftybeta0",
+    "eq:condeta",
+    "eq:divisionwimproveddec0beta0",
+    "eq:divisionwimproveddec1beta0",
+    "eq:divisionwimproveddec2beta0"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 3094
+   },
+   "last": 3125,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:keysplitFrhoxbeta0"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 3126
+   },
+   "last": 3207,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "A.6",
+   "number_from": "render",
+   "labels": [
+    "eq:asymptPsiinfty0"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 3209
+   },
+   "last": 3233,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 3234
+   },
+   "last": 3275,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "A.7",
+   "number_from": "render",
+   "labels": [
+    "prop:Psi0inftygrowthdecay",
+    "eq:lowboundrealbeta",
+    "eq:lowboundimbeta1",
+    "eq:lowboundimbeta2",
+    "eq:lowboundzerobeta",
+    "eq:enboundrealbeta",
+    "eq:enboundimbeta1",
+    "eq:enboundimbeta2",
+    "eq:enboundzerobeta"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 3277
+   },
+   "last": 3326,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:expvaluePsi0infest",
+    "eq:limsupid"
+   ],
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 3327
+   },
+   "last": 3445,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "A.8",
+   "number_from": "render",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 3448
+   },
+   "last": 3451,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2603.28861v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_CSF_paper_II.tex",
+    "line": 3452
+   },
+   "last": 3454,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
