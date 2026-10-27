@@ -161,7 +161,7 @@ redo="$dir/redo.txt"
 if [ -s "$redo" ]; then
 	head -n "$limit" "$redo" >"$dir/run/redo-$stamp.txt"
 	n=$(wc -l <"$dir/run/redo-$stamp.txt")
-	if ax census batch -redo -keep -list "$dir/run/redo-$stamp.txt" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err"; then
+	if ax census batch -redo -accept -keep -list "$dir/run/redo-$stamp.txt" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err"; then
 		sed -i "1,${n}d" "$redo"
 	else
 		log "the batch of the redo list exited with $?"
