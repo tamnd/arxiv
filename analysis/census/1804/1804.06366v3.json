@@ -1,0 +1,1155 @@
+{
+ "paper": "1804.06366",
+ "version": 3,
+ "extractor": "ax/v0.5.8",
+ "main": [
+  "sigma18-094.tex"
+ ],
+ "class": "sigma",
+ "packages": [
+  "ifpdf",
+  "enumerate",
+  "xy"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: sigma18-094.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 58 commands, 1 environments",
+  "tree: 104 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "numbered": true,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "numbered": true,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "numbered": true,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "conjecture",
+   "numbered": true,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture*",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "numbered": false,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example*",
+   "title": "Example",
+   "item": "example",
+   "numbered": false,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "note",
+   "numbered": true,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note*",
+   "title": "Note",
+   "item": "remark",
+   "numbered": false,
+   "from": "local:sigma.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "THM",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "THM",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "COR",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "THM",
+   "shared": "THM",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "LEM",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "THM",
+   "shared": "THM",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "PROP",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "THM",
+   "shared": "THM",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "QUE",
+   "title": "Question",
+   "item": "problem",
+   "counter": "THM",
+   "shared": "THM",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "shared": "THM",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "EX",
+   "title": "Example",
+   "item": "example",
+   "counter": "THM",
+   "shared": "THM",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "REM",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "THM",
+   "shared": "THM",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "",
+   "item": "unknown",
+   "numbered": false,
+   "from": "wrapper",
+   "form": "titled",
+   "title_arg": true
+  }
+ ],
+ "occurrences": {
+  "env": 45,
+  "label": 43,
+  "textref": 45
+ },
+ "matched": {
+  "env": 45,
+  "label": 43
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 35,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 45,
+  "unresolved": 0
+ },
+ "outside": {
+  "theoremgraph": 33
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "1804.06366v3#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "REM",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "THM",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "rhf97hf93h8f9j3fj0"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 101
+   },
+   "last": 103,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "rfh89hf98hf8030"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 111
+   },
+   "last": 112,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "rhrhf8938fj30fj03"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 116
+   },
+   "last": 118,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "THM",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "THM",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "groeiveytvdbno",
+    "rhf894h98ffj093j03",
+    "kfjvbtbrnnvoir"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 125
+   },
+   "last": 140,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "rfhhf983fj390f3"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 153
+   },
+   "last": 154,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "THM",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "THM",
+   "number": "2.6",
+   "number_from": "counter",
+   "labels": [
+    "rh9r8h984hf89jf0fj3"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 158
+   },
+   "last": 162,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "2.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 167
+   },
+   "last": 168,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "QUE",
+   "title": "Question",
+   "item": "problem",
+   "counter": "THM",
+   "number": "2.8",
+   "number_from": "counter",
+   "labels": [
+    "rfiufh498fj894fj0409"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 172
+   },
+   "last": 173,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "PROP",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "THM",
+   "number": "2.9",
+   "number_from": "counter",
+   "labels": [
+    "rjf984jf894jf90f903k0"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 177
+   },
+   "last": 183,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "2.10",
+   "number_from": "counter",
+   "labels": [
+    "rhf94h98h489fj90fk903k"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 191
+   },
+   "last": 196,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "2.11",
+   "number_from": "counter",
+   "labels": [
+    "rjfi4fj04kf0kf03kf3"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 200
+   },
+   "last": 202,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "THM",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "THM",
+   "number": "2.12",
+   "number_from": "counter",
+   "labels": [
+    "4fh984fj8jf093j303kf"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 206
+   },
+   "last": 207,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "proof",
+   "title": "A",
+   "item": "unknown",
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 209
+   },
+   "last": 210,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "3.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 219
+   },
+   "last": 220,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "hf894f894jfj09f30"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 222
+   },
+   "last": 223,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "rfh479f74hf893jf038jf93"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 227
+   },
+   "last": 228,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "3.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 230
+   },
+   "last": 231,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "THM",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "THM",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "rh94hf94hf984jf9j093"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 238
+   },
+   "last": 239,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "rfh974hf9h389fj3"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 243
+   },
+   "last": 244,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "QUE",
+   "title": "Question",
+   "item": "problem",
+   "counter": "THM",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "rfh89hf98j3f09j039f3"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 248
+   },
+   "last": 249,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "rfn4ufh4f8jf039j903jrrr"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 256
+   },
+   "last": 262,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "LEM",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "THM",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "4hf84hf89hf8998f3j"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 271
+   },
+   "last": 272,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "proof",
+   "title": "\\sloppy",
+   "item": "unknown",
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 274
+   },
+   "last": 275,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "PROP",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "THM",
+   "number": "3.10",
+   "number_from": "counter",
+   "labels": [
+    "tyhryg7hfiujfoiej"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 279
+   },
+   "last": 281,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proof",
+   "title": "S",
+   "item": "unknown",
+   "labels": [
+    "rhf794hf89hf03j93",
+    "fh784hfhf983jfj30"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 283
+   },
+   "last": 292,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "REM",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "THM",
+   "number": "3.11",
+   "number_from": "counter",
+   "labels": [
+    "rhf984hf89hf893h8"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 294
+   },
+   "last": 296,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "DEF",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "THM",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "rh89hf89jf093j9f0fj03"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 302
+   },
+   "last": 303,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "LEM",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "THM",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "futhirhhiofoirjfoi"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 307
+   },
+   "last": 308,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "THM",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "THM",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "ruihf8h98f983jfj30f"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 312
+   },
+   "last": 318,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "proof",
+   "title": "F",
+   "item": "unknown",
+   "labels": [
+    "tuirguhf74hf84fjo",
+    "rj984h98f8jj903jf903",
+    "rfh49fh948fj984jf0"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 320
+   },
+   "last": 348,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "REM",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "THM",
+   "number": "4.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 350
+   },
+   "last": 351,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "LEM",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "THM",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "fufh48hf89j4f09j09f3p",
+    "rjf9804jf93jf903jf093j03"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 357
+   },
+   "last": 365,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "PROP",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "THM",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "rhf4hf84hf89jf893"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 375
+   },
+   "last": 376,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "proof",
+   "title": "I",
+   "item": "unknown",
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 378
+   },
+   "last": 383,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "THM",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "THM",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "rfh794hf984f98j"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 388
+   },
+   "last": 389,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "LEM",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "THM",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "rhf84h94h89484409"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 397
+   },
+   "last": 398,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "proof",
+   "item": "unknown",
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 402
+   },
+   "last": 417,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "THM",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "THM",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "hf78hf984f8j40f094"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 421
+   },
+   "last": 426,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "proof",
+   "title": "\\looseness",
+   "item": "unknown",
+   "labels": [
+    "rfj984hf894jf90f903",
+    "rfh784hfhf983jf9030"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 428
+   },
+   "last": 451,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "PROP",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "THM",
+   "number": "5.6",
+   "number_from": "counter",
+   "labels": [
+    "rhf98hf74hf984fj039"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 456
+   },
+   "last": 461,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "proof",
+   "title": "I",
+   "item": "unknown",
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 463
+   },
+   "last": 464,
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "proof",
+   "item": "unknown",
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 472
+   },
+   "last": 473,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "PROP",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "THM",
+   "number": "A.1",
+   "number_from": "counter",
+   "labels": [
+    "rfg784gf98hf89j3f03"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 485
+   },
+   "last": 486,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "LEM",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "THM",
+   "number": "A.2",
+   "number_from": "counter",
+   "labels": [
+    "rfu4f9h38f03jf93jf93j"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 490
+   },
+   "last": 491,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "1804.06366v3#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "proof",
+   "item": "unknown",
+   "labels": [
+    "rhf894hf8h09fj30jf930",
+    "rhf893h8j30fj390"
+   ],
+   "pos": {
+    "file": "sigma18-094.tex",
+    "line": 493
+   },
+   "last": 506,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

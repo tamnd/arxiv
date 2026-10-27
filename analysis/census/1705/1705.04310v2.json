@@ -1,0 +1,1360 @@
+{
+ "paper": "1705.04310",
+ "version": 2,
+ "extractor": "ax/v0.5.8",
+ "main": [
+  "ALV1-lmcs.tex"
+ ],
+ "class": "lmcs",
+ "packages": [
+  "lastpage",
+  "inputenc",
+  "fontenc",
+  "lmodern",
+  "xy",
+  "xspace",
+  "etoolbox",
+  "xifthen",
+  "footmisc",
+  "pigpen"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: ALV1-lmcs.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 126 commands, 6 environments",
+  "tree: 99 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "slem",
+   "title": "Sublemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "asm",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rems",
+   "title": "Remarks",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exa",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exas",
+   "title": "Examples",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conv",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prob",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "oprob",
+   "title": "Open Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "oprobs",
+   "title": "Open Problems",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "algo",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "desc",
+   "title": "Description",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "qu",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "oqu",
+   "title": "Open Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "pty",
+   "title": "Property",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "clm",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "nota",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "com",
+   "title": "Comment",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "coms",
+   "title": "Comments",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defiC",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thmC",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "propC",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemC",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:lmcs.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "constrInternal",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 46,
+  "label": 41,
+  "textref": 28
+ },
+ "matched": {
+  "env": 46,
+  "label": 41
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 44,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 27,
+  "unresolved": 1
+ },
+ "outside": {
+  "theoremgraph": 17,
+  "theoremsearch": 5
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "1705.04310v2#textref-28",
+   "message": "the text names construction A and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "1705.04310v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "def:cwf.fiore",
+    "item:cwf.presheaves",
+    "item:cwf.fiber-rep",
+    "item:cwf.first",
+    "item:cwf.last"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 409
+   },
+   "last": 436,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 438
+   },
+   "last": 440,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 442
+   },
+   "last": 446,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "def:split.type.cat"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 452
+   },
+   "last": 490,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 525
+   },
+   "last": 539,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "def:cartesian.generator"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 541
+   },
+   "last": 553,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "prob:weq-cwf-regrouped"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 555
+   },
+   "last": 557,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "constr:weq-cwf-regrouped"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 559
+   },
+   "last": 563,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "def:cartesian.q.mors"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 565
+   },
+   "last": 591,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "problem:weq-typecat-regrouped"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 593
+   },
+   "last": 595,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "3.10",
+   "number_from": "counter",
+   "labels": [
+    "constr:weq-typecat-regrouped"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 597
+   },
+   "last": 599,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.11",
+   "number_from": "counter",
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 607
+   },
+   "last": 613,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "3.12",
+   "number_from": "counter",
+   "labels": [
+    "problem:term-to-compatible-qmor"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 616
+   },
+   "last": 618,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "3.13",
+   "number_from": "counter",
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 620
+   },
+   "last": 631,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "3.14",
+   "number_from": "counter",
+   "labels": [
+    "problem:qmor-to-compatible-term"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 633
+   },
+   "last": 635,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "3.15",
+   "number_from": "counter",
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 637
+   },
+   "last": 645,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "3.16",
+   "number_from": "counter",
+   "labels": [
+    "problem:weq-term-qmor"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 647
+   },
+   "last": 654,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "3.17",
+   "number_from": "counter",
+   "labels": [
+    "construction:weq-term-qmor"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 656
+   },
+   "last": 663,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "3.18",
+   "number_from": "counter",
+   "labels": [
+    "problem:equiv_sty_cwf"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 665
+   },
+   "last": 668,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "3.19",
+   "number_from": "counter",
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 670
+   },
+   "last": 677,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.20",
+   "number_from": "counter",
+   "labels": [
+    "ex:no-bijec-in-zf"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 688
+   },
+   "last": 714,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "def:rel.univ.comp.struct"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 735
+   },
+   "last": 749,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "def:rel.univ.struct"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 751
+   },
+   "last": 760,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 767
+   },
+   "last": 784,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:pb.univ.isaprop"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 787
+   },
+   "last": 794,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "cor:weq.relu.relwku"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 802
+   },
+   "last": 804,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "problem:universe.transfer.concrete"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 816
+   },
+   "last": 835,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "constr:universe.transfer.concrete"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 837
+   },
+   "last": 872,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "problem:universe.struct.on"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 874
+   },
+   "last": 885,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "constr:universe.struct.on"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 887
+   },
+   "last": 893,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.9",
+   "number_from": "counter",
+   "labels": [
+    "lemma:transfer_relwku"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 895
+   },
+   "last": 905,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.10",
+   "number_from": "counter",
+   "labels": [
+    "lemma:transfer_relwku_equiv"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 915
+   },
+   "last": 918,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "4.11",
+   "number_from": "counter",
+   "labels": [
+    "problem:weq.wkrelu.transfer"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 949
+   },
+   "last": 958,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "4.12",
+   "number_from": "counter",
+   "labels": [
+    "constr:weq.wkrelu.transfer"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 960
+   },
+   "last": 964,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "def:rep_map"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 991
+   },
+   "last": 997,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "lemma:map_cwf_rep_equiv"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1003
+   },
+   "last": 1007,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "problem:equiv_cwf_relu"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1024
+   },
+   "last": 1026,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "construction:equiv_cwf_relu"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1028
+   },
+   "last": 1032,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "problem:equiv_rep_relwku"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1034
+   },
+   "last": 1036,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "5.6",
+   "number_from": "counter",
+   "labels": [
+    "construction:equiv_rep_relwku"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1038
+   },
+   "last": 1040,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "5.7",
+   "number_from": "counter",
+   "labels": [
+    "problem:transfer_cwf"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1046
+   },
+   "last": 1048,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "5.8",
+   "number_from": "counter",
+   "labels": [
+    "construction:transfer_cwf"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1050
+   },
+   "last": 1077,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "5.9",
+   "number_from": "counter",
+   "labels": [
+    "problem:transfer_rep"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1079
+   },
+   "last": 1081,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "5.10",
+   "number_from": "counter",
+   "labels": [
+    "construction:transfer_rep"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1083
+   },
+   "last": 1085,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "number": "5.11",
+   "number_from": "counter",
+   "labels": [
+    "problem:weq_cwf_reprc"
+   ],
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1089
+   },
+   "last": 1091,
+   "result": "matched"
+  },
+  {
+   "id": "1705.04310v2#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "5.12",
+   "number_from": "counter",
+   "pos": {
+    "file": "ALV1-lmcs.tex",
+    "line": 1093
+   },
+   "last": 1099,
+   "result": "matched"
+  }
+ ]
+}

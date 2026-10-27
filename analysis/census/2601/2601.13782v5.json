@@ -1,0 +1,995 @@
+{
+ "paper": "2601.13782",
+ "version": 5,
+ "extractor": "ax/v0.5.8",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "inputenc",
+  "babel",
+  "setspace",
+  "appendix",
+  "hyperref",
+  "natbib",
+  "graphicx",
+  "pgfplots",
+  "float",
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "mathrsfs",
+  "dsfont",
+  "authblk",
+  "thmtools",
+  "thm-restate",
+  "tikz",
+  "xcolor",
+  "geometry",
+  "amsfonts"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 5 commands, 0 environments",
+  "tree: 166 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "prop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theoremUn",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "coro",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ob",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "ob",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 27,
+  "label": 69,
+  "proof": 13,
+  "textref": 69
+ },
+ "matched": {
+  "env": 27,
+  "label": 69,
+  "proof": 13
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 27,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 27,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 58,
+  "unresolved": 11
+ },
+ "render": {
+  "theorems": 27,
+  "proofs": 13,
+  "agree": true
+ },
+ "outside": {
+  "theoremgraph": 37
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-31",
+   "message": "the text names lemma 3.6 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-32",
+   "message": "the text names lemma 3.7 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-33",
+   "message": "the text names lemma 3.10 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-34",
+   "message": "the text names lemma 3.6 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-37",
+   "message": "the text names lemma 3.7 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-40",
+   "message": "the text names lemma 3.6 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-43",
+   "message": "the text names lemma 3.10 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-52",
+   "message": "the text names lemma 3.11 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-53",
+   "message": "the text names lemma 3.11 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-55",
+   "message": "the text names lemma 3.11 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2601.13782v5#textref-67",
+   "message": "the text names Theorem 3.12 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2601.13782v5#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 95
+   },
+   "last": 107,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "h-delta-condition -levin"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 109
+   },
+   "last": 114,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "theorem of order of probability"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 157
+   },
+   "last": 164,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 165
+   },
+   "last": 167,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "mainResultEqProb",
+    "main_result"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 171
+   },
+   "last": 186,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "thm:local-smoothness",
+    "theorem of smoothness"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 192
+   },
+   "last": 205,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "cone_cond"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 222
+   },
+   "last": 229,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 231
+   },
+   "last": 233,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "NicelyDef"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 239
+   },
+   "last": 243,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "Order in probability of h_n"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 247
+   },
+   "last": 253,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "2",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 255
+   },
+   "last": 257,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "gamma\u003e2eps",
+    "Vershynin_prop",
+    "gamma\u003e2epsFinal",
+    "eps.n.d",
+    "lower bound eps"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 259
+   },
+   "last": 324,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "Order in probability of delta_n"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 326
+   },
+   "last": 332,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "3",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 334
+   },
+   "last": 336,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "delta\u003ceps",
+    "eps_exact"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 338
+   },
+   "last": 403,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "coro",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "Failure of Quasi-corollary"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 405
+   },
+   "last": 408,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "convergence rate of sample size growth"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 414
+   },
+   "last": 426,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "lower bound inequality ENDn",
+    "upper bound inequality ENDn",
+    "the probability of expected number of samples in D_n"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 428
+   },
+   "last": 469,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "main_result_assisting"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 487
+   },
+   "last": 495,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "coro",
+   "number": "2",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 497
+   },
+   "last": 501,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "explicitly a*_i",
+    "gram system",
+    "eq:polynomial basis",
+    "A_nab in main proof",
+    "gram normalized relation",
+    "eta normalized",
+    "E_(F_n,X_n)",
+    "taylor reminder",
+    "bound_on_dE",
+    "bound_on_dp-df",
+    "probability _bound_on_da*",
+    "bound on da* with E_I"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 503
+   },
+   "last": 620,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 622
+   },
+   "last": 675,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "4",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 681
+   },
+   "last": 687,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "lemma 3.6 davoud -bound on dA"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 689
+   },
+   "last": 696,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "poly_basis",
+    "mls_as_sum",
+    "b_n-alpha",
+    "Anab",
+    "definition of w(xi-x)",
+    "const of Anw_An",
+    "eq:bernstein inequality",
+    "convergence A to Aw",
+    "bounded w(x)",
+    "eq. 3.6 of Davoud"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 698
+   },
+   "last": 820,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "bound of weight fun"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 824
+   },
+   "last": 828,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 830
+   },
+   "last": 856,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "7",
+   "number_from": "render",
+   "labels": [
+    "lemma 3.7 davoud - lambda_min"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 861
+   },
+   "last": 868,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "bound of EQ_n",
+    "pi*",
+    "eq:mean-pd",
+    "eq:entry-conc"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 870
+   },
+   "last": 979,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "8",
+   "number_from": "render",
+   "labels": [
+    "lemma 3.10 davoud - bound a^-1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 982
+   },
+   "last": 989,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:result lemma 5 in lemma 8",
+    "norm 2 of A_n^-1",
+    "inductive assumption",
+    "derivative identity"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 991
+   },
+   "last": 1052,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "9",
+   "number_from": "render",
+   "labels": [
+    "lemma 3.11 davoud-bound shape function"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1058
+   },
+   "last": 1065,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "a_i^* in lemma 3.11",
+    "eq:bound on eta",
+    "eq: point-wise lemma 9"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1067
+   },
+   "last": 1117,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:shape-via-gram",
+    "eq:gram-lambda-min"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1127
+   },
+   "last": 1211,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "coro",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "cor:local-shapefun"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1213
+   },
+   "last": 1220,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:lambdamin-ball"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1222
+   },
+   "last": 1242,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "rem:global-cost"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1244
+   },
+   "last": 1254,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "rem:noise"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1256
+   },
+   "last": 1268,
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "def_of_O_p"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1311
+   },
+   "last": 1321,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2601.13782v5#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "def_of_Omega_p"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1323
+   },
+   "last": 1333,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

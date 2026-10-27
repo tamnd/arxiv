@@ -1,0 +1,1031 @@
+{
+ "paper": "2110.12380",
+ "version": 1,
+ "extractor": "ax/v0.5.8",
+ "main": [
+  "paper.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amsfonts",
+  "amsmath",
+  "amssymb",
+  "geometry",
+  "mathrsfs",
+  "hyperref",
+  "xy",
+  "inputenc",
+  "slashed",
+  "cleveref",
+  "mathtools",
+  "enumerate",
+  "tgadventor",
+  "biblatex"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: paper.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 9 commands, 1 environments",
+  "tree: 123 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "innercustomthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innercustomthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "property",
+   "title": "Property",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conclusion",
+   "title": "Conclusion",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "criterion",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summary",
+   "title": "Summary",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 28,
+  "label": 61,
+  "proof": 12,
+  "textref": 45
+ },
+ "matched": {
+  "env": 28,
+  "label": 61,
+  "proof": 12
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 28,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 44,
+  "unresolved": 1
+ },
+ "outside": {
+  "theoremgraph": 27,
+  "theoremsearch": 13
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2110.12380v1#textref-2",
+   "message": "the text names Theorem 4.2.7 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2110.12380v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "def.Hs-norm",
+    "mol"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 255
+   },
+   "last": 273,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "prop.pos.a",
+    "prop.pos.a.claim"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 282
+   },
+   "last": 288,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Re0,sch",
+    "energy.est",
+    "et=e0",
+    "pu.1.est",
+    "Ru.1.est",
+    "pu.2.est",
+    "Ru.2.est",
+    "heat.eq2",
+    "sol.Duh",
+    "lem1.last.est",
+    "prop1.l2-est"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 289
+   },
+   "last": 358,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "prop.pos.b",
+    "prop.pos.b.claim"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 360
+   },
+   "last": 367,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "prop2.Hold",
+    "prop2.hold1",
+    "emb",
+    "EQ:prop.pos.b.est1",
+    "EQ:prop.pos.b.est2"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 368
+   },
+   "last": 401,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "prop.neg.a",
+    "prop.neg.a.claim"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 403
+   },
+   "last": 410,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Re=0,2",
+    "prop2.any.sob",
+    "before.G"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 412
+   },
+   "last": 433,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "rem.any.sob"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 434
+   },
+   "last": 440,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 481
+   },
+   "last": 494,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "rem:e'"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 495
+   },
+   "last": 497,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "prop.e'"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 501
+   },
+   "last": 507,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "defn.negl",
+    "def.cond.negl"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 511
+   },
+   "last": 523,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "def.vws.pos"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 540
+   },
+   "last": 548,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "def.vws.any"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 550
+   },
+   "last": 558,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "th.ex.heat.pos"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 565
+   },
+   "last": 570,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 572
+   },
+   "last": 590,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "th.ex.heat.any"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 592
+   },
+   "last": 596,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 597
+   },
+   "last": 618,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.9",
+   "number_from": "counter",
+   "labels": [
+    "cor.any.sob"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 620
+   },
+   "last": 622,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 623
+   },
+   "last": 625,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 626
+   },
+   "last": 632,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.11",
+   "number_from": "counter",
+   "labels": [
+    "defn.uniq.heat.pos"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 659
+   },
+   "last": 668,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.12",
+   "number_from": "counter",
+   "labels": [
+    "defn/uniq.any"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 670
+   },
+   "last": 673,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.13",
+   "number_from": "counter",
+   "labels": [
+    "rem.negl"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 676
+   },
+   "last": 678,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.14",
+   "number_from": "counter",
+   "labels": [
+    "mex"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 680
+   },
+   "last": 698,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.15",
+   "number_from": "counter",
+   "labels": [
+    "techn.lem",
+    "en.est"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 741
+   },
+   "last": 748,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 749
+   },
+   "last": 759,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.16",
+   "number_from": "counter",
+   "labels": [
+    "thm.un.pos.1"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 761
+   },
+   "last": 768,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "forU1",
+    "hom.Ve",
+    "duh.prin",
+    "mink"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 769
+   },
+   "last": 820,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.17",
+   "number_from": "counter",
+   "labels": [
+    "thm.un.pos2"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 823
+   },
+   "last": 830,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 831
+   },
+   "last": 845,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.18",
+   "number_from": "counter",
+   "labels": [
+    "thm.un.any"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 849
+   },
+   "last": 851,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "EQ:thm.un.3a",
+    "EQ:thm.un.3b"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 853
+   },
+   "last": 885,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 896
+   },
+   "last": 901,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "rem.Linfty"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 904
+   },
+   "last": 909,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "thm.consis.pos.1",
+    "itm1",
+    "itm2"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 914
+   },
+   "last": 922,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq.m=0",
+    "cons.thm1.heat",
+    "duh.e.0"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 924
+   },
+   "last": 966,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "thm.consis.2"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 970
+   },
+   "last": 972,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 982
+   },
+   "last": 989,
+   "result": "matched"
+  },
+  {
+   "id": "2110.12380v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "finrem"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 992
+   },
+   "last": 994,
+   "result": "matched"
+  }
+ ]
+}
