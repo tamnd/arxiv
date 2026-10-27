@@ -112,12 +112,21 @@ tool() {
 		return 0
 	fi
 	t=$(mktemp -d "$dir/run/tool.XXXXXX")
-	# A new release has no binaries until its workflow is done. The run then keeps the binary that it has.
+	# A new release has no binaries until its workflow is done, and the runners can be slow. The run then builds the tag from its source, with the flags of the release workflow. When that fails too, it keeps the binary that it has.
 	if ! gh release download "$tag" -R "tamnd/$1" -p "${2}_${tag}_linux_amd64.tar.gz" -p checksums.txt -D "$t" 2>/dev/null; then
 		rm -f "$t/${2}_${tag}_linux_amd64.tar.gz" "$t/checksums.txt"
+		if git clone -q --depth 1 -b "$tag" "https://github.com/tamnd/$1.git" "$t/src" 2>/dev/null && (cd "$t/src" && CGO_ENABLED=0 go build -trimpath -ldflags "-s -w -X main.Version=$tag" -o "$t/$2" "./cmd/$2"); then
+			mv "$t/$2" "$dir/bin/$2"
+			echo "$tag" >"$dir/bin/$2.tag"
+			log "built $2 $tag from its source, because the release has no linux binary yet"
+		else
+			[ -x "$dir/bin/$2" ] || block "the release $tag of $2 has no linux binary, and its source does not build"
+			log "the release $tag of $2 has no linux binary yet and its source does not build, so the run uses $(cat "$dir/bin/$2.tag" 2>/dev/null)"
+		fi
+		# $t is the temporary directory of this call, so only the clone of this call goes.
+		case "$t" in "$dir"/run/tool.*) if [ -d "$t/src" ]; then rm -rf "$t/src"; fi ;; esac
+		rm -f "$t/$2"
 		rmdir "$t"
-		[ -x "$dir/bin/$2" ] || block "the release $tag of $2 has no linux binary"
-		log "the release $tag of $2 has no linux binary yet, so the run uses $(cat "$dir/bin/$2.tag" 2>/dev/null)"
 		return 0
 	fi
 	a="${2}_${tag}_linux_amd64"
