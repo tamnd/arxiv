@@ -1,0 +1,1926 @@
+{
+ "paper": "1902.04230",
+ "version": 3,
+ "extractor": "ax/v0.5.8",
+ "main": [
+  "ASStmf3_final.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "lscape",
+  "xcolor",
+  "graphicx",
+  "mathrsfs",
+  "stmaryrd",
+  "verbatim",
+  "rotating",
+  "tikz-cd",
+  "amsrefs",
+  "hyperref",
+  "euscript",
+  "todonotes",
+  "subcaption",
+  "sseq"
+ ],
+ "steps": [
+  "unpack: 8 files",
+  "main: ASStmf3_final.tex",
+  "include: 8 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 84 commands, 0 environments",
+  "tree: 167 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "not*",
+   "title": "Notation",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exs",
+   "title": "Examples",
+   "item": "example",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ex*",
+   "title": "Example",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exs*",
+   "title": "Examples",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conventions",
+   "title": "Conventions",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 64,
+  "label": 33,
+  "proof": 28,
+  "textref": 37
+ },
+ "matched": {
+  "env": 64,
+  "label": 33,
+  "proof": 28
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 64,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 10
+ },
+ "textrefs": {
+  "resolved": 37,
+  "unresolved": 0
+ },
+ "outside": {
+  "theoremgraph": 63,
+  "theoremsearch": 48
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "1902.04230v3#env-1",
+   "message": "Definition 2.2 is the first in its scope of counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "1902.04230v3#env-6",
+   "message": "Lemma 3.3 comes after 3.1 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "1902.04230v3#env-32",
+   "message": "Remark 6.6 comes after 6.4 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "1902.04230v3#env-35",
+   "message": "Proposition 6.10 comes after 6.8 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "1902.04230v3#env-36",
+   "message": "Proposition 6.12 comes after 6.10 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "1902.04230v3#env-37",
+   "message": "Corollary 6.15 comes after 6.12 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "1902.04230v3#env-38",
+   "message": "Proposition 6.17 comes after 6.15 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "1902.04230v3#env-39",
+   "message": "Corollary 6.19 comes after 6.17 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "1902.04230v3#env-40",
+   "message": "Remark 6.21 comes after 6.19 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "1902.04230v3#env-56",
+   "message": "Proposition 6.38 comes after 6.36 in counter equation"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "1902.04230v3#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "homologytmf.tex",
+    "line": 37
+   },
+   "last": 43,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "homologytmf.tex",
+    "line": 45
+   },
+   "last": 55,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "homologytmf.tex",
+    "line": 59
+   },
+   "last": 64,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "2.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "homologytmf.tex",
+    "line": 68
+   },
+   "last": 73,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "prop: hopf extension"
+   ],
+   "pos": {
+    "file": "cohomologyGamma.tex",
+    "line": 12
+   },
+   "last": 19,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "cohomologyGamma.tex",
+    "line": 45
+   },
+   "last": 47,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "cohomologyGamma.tex",
+    "line": 48
+   },
+   "last": 54,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "3.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "cohomologyGamma.tex",
+    "line": 56
+   },
+   "last": 62,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "prop: Ext of A(1)"
+   ],
+   "pos": {
+    "file": "cohomologyGamma.tex",
+    "line": 115
+   },
+   "last": 128,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "3.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "cohomologyGamma.tex",
+    "line": 197
+   },
+   "last": 202,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "cohomologyGamma.tex",
+    "line": 203
+   },
+   "last": 240,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 141
+   },
+   "last": 143,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "prop: algcSS differentials"
+   ],
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 152
+   },
+   "last": 158,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "4.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 162
+   },
+   "last": 164,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "rmk: pattern terminology"
+   ],
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 195
+   },
+   "last": 197,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "prop: hidden extn v0(v2^2alpha2) = v2b4c6alpha1"
+   ],
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 214
+   },
+   "last": 223,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "4.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 225
+   },
+   "last": 227,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "lem: Massey prod"
+   ],
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 243
+   },
+   "last": 249,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "4.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 253
+   },
+   "last": 264,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "4.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 266
+   },
+   "last": 268,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 272
+   },
+   "last": 277,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 281
+   },
+   "last": 289,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "4.11",
+   "number_from": "counter",
+   "labels": [
+    "rmk: May Convergence in alg'c SS and CESS"
+   ],
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 291
+   },
+   "last": 293,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "4.12",
+   "number_from": "counter",
+   "labels": [
+    "cor: massey prod c6alpha1"
+   ],
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 297
+   },
+   "last": 302,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 306
+   },
+   "last": 318,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "4.13",
+   "number_from": "counter",
+   "labels": [
+    "cor: hidden extn v0 v_1alpha2 = b4c6alpha1"
+   ],
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 322
+   },
+   "last": 331,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsE2.tex",
+    "line": 332
+   },
+   "last": 341,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "rational.tex",
+    "line": 27
+   },
+   "last": 32,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "thm: edge homomorphism"
+   ],
+   "pos": {
+    "file": "rational.tex",
+    "line": 36
+   },
+   "last": 42,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "5.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "rational.tex",
+    "line": 44
+   },
+   "last": 46,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "cor: rational homotopy of tmf"
+   ],
+   "pos": {
+    "file": "rational.tex",
+    "line": 48
+   },
+   "last": 53,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "prop: v_1^3 detects c6"
+   ],
+   "pos": {
+    "file": "rational.tex",
+    "line": 57
+   },
+   "last": 59,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "rational.tex",
+    "line": 60
+   },
+   "last": 62,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "6.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 7
+   },
+   "last": 9,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "6.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 12
+   },
+   "last": 14,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 29
+   },
+   "last": 31,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.4",
+   "number_from": "counter",
+   "labels": [
+    "prop: d2b4",
+    "eq: d2b4"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 37
+   },
+   "last": 42,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 43
+   },
+   "last": 45,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 46
+   },
+   "last": 68,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "6.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 70
+   },
+   "last": 72,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "6.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 76
+   },
+   "last": 86,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 87
+   },
+   "last": 95,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.8",
+   "number_from": "counter",
+   "labels": [
+    "eq: d2v0v2"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 97
+   },
+   "last": 102,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 103
+   },
+   "last": 105,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 107
+   },
+   "last": 109,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.10",
+   "number_from": "counter",
+   "labels": [
+    "eq:d2v2alpha2"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 114
+   },
+   "last": 119,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 121
+   },
+   "last": 127,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 129
+   },
+   "last": 135,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.12",
+   "number_from": "counter",
+   "labels": [
+    "eq: d2b4v2^2",
+    "eq:d2v0b4v2^2"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 139
+   },
+   "last": 148,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 149
+   },
+   "last": 151,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 153
+   },
+   "last": 163,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "6.15",
+   "number_from": "counter",
+   "labels": [
+    "eq: d2v2^2b4alpha2"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 168
+   },
+   "last": 173,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 174
+   },
+   "last": 192,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.17",
+   "number_from": "counter",
+   "labels": [
+    "prop: Adams E3"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 298
+   },
+   "last": 311,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "6.19",
+   "number_from": "counter",
+   "labels": [
+    "eq: Delta cubed decomposition"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 349
+   },
+   "last": 354,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "6.21",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 356
+   },
+   "last": 358,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "6.22",
+   "number_from": "counter",
+   "labels": [
+    "rmk: partition of M"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 360
+   },
+   "last": 370,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.23",
+   "number_from": "counter",
+   "labels": [
+    "prop: pattern 2' are pc"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 379
+   },
+   "last": 381,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 382
+   },
+   "last": 386,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.24",
+   "number_from": "counter",
+   "labels": [
+    "prop: d3 v2cubed = b4v2beta2alpha1"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 398
+   },
+   "last": 403,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 404
+   },
+   "last": 406,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "6.25",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 409
+   },
+   "last": 411,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.26",
+   "number_from": "counter",
+   "labels": [
+    "prop: d4 b4v2"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 413
+   },
+   "last": 418,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 419
+   },
+   "last": 428,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "6.27",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 430
+   },
+   "last": 432,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "6.28",
+   "number_from": "counter",
+   "labels": [
+    "rmk: no d4 differential on b4v2^4"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 452
+   },
+   "last": 458,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "6.29",
+   "number_from": "counter",
+   "labels": [
+    "lem: toda bracket for b"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 462
+   },
+   "last": 468,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 469
+   },
+   "last": 471,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.30",
+   "number_from": "counter",
+   "labels": [
+    "prop: hidden extension b alpha1 = beta cubed"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 473
+   },
+   "last": 478,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 479
+   },
+   "last": 484,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "6.31",
+   "number_from": "counter",
+   "labels": [
+    "cor: d6 differential"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 486
+   },
+   "last": 491,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 492
+   },
+   "last": 498,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "6.32",
+   "number_from": "counter",
+   "labels": [
+    "lem: b_4v_2^4 pc"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 506
+   },
+   "last": 508,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 509
+   },
+   "last": 511,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.33",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 514
+   },
+   "last": 523,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 524
+   },
+   "last": 526,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.34",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 530
+   },
+   "last": 540,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 541
+   },
+   "last": 551,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.35",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 553
+   },
+   "last": 558,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.36",
+   "number_from": "counter",
+   "labels": [
+    "prop: v_2^9 is a pc"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 583
+   },
+   "last": 585,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 586
+   },
+   "last": 603,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.38",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 628
+   },
+   "last": 630,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 631
+   },
+   "last": 639,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.39",
+   "number_from": "counter",
+   "labels": [
+    "lem: v0b4 detects c4"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 678
+   },
+   "last": 680,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 681
+   },
+   "last": 683,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.40",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 687
+   },
+   "last": 689,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "6.41",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 691
+   },
+   "last": 693,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "6.42",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 699
+   },
+   "last": 701,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "6.43",
+   "number_from": "counter",
+   "labels": [
+    "cor: detecting powers of Delta"
+   ],
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 705
+   },
+   "last": 707,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "6.44",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 711
+   },
+   "last": 720,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.45",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 727
+   },
+   "last": 732,
+   "result": "matched"
+  },
+  {
+   "id": "1902.04230v3#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "6.46",
+   "number_from": "counter",
+   "pos": {
+    "file": "AdamsDiffs.tex",
+    "line": 736
+   },
+   "last": 738,
+   "result": "matched"
+  }
+ ]
+}

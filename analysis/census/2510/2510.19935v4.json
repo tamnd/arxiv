@@ -1,0 +1,89 @@
+{
+ "paper": "2510.19935",
+ "version": 4,
+ "extractor": "ax/v0.5.8",
+ "main": [
+  "main_v4.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "jheppub",
+  "graphicx",
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "tikz",
+  "tikz-cd",
+  "mathtools",
+  "caption",
+  "subcaption",
+  "pifont",
+  "dsfont",
+  "url",
+  "stmaryrd",
+  "footmisc",
+  "sectsty",
+  "customprelude"
+ ],
+ "steps": [
+  "unpack: 3 files",
+  "main: main_v4.tex",
+  "include: 1 files read, 0 not found",
+  "local: 2 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 190 commands, 1 environments",
+  "tree: 345 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "myrule",
+   "title": "Rule",
+   "item": "statement/principle",
+   "counter": "myrule",
+   "numbered": true,
+   "from": "local:customprelude.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "local:customprelude.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {},
+ "matched": {},
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 0,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 0,
+  "proofs": 0,
+  "agree": true
+ },
+ "strength": "strong"
+}

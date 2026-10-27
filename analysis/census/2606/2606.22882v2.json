@@ -1,0 +1,746 @@
+{
+ "paper": "2606.22882",
+ "version": 2,
+ "extractor": "ax/v0.5.8",
+ "main": [
+  "bilinear_approach_II_v3.tex"
+ ],
+ "class": "amsproc",
+ "packages": [
+  "geometry",
+  "setspace",
+  "fullpage",
+  "graphicx",
+  "nicefrac",
+  "amssymb",
+  "multirow",
+  "array",
+  "amsmath",
+  "amsthm",
+  "amscd",
+  "mathrsfs",
+  "latexsym",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: bilinear_approach_II_v3.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 10 commands, 0 environments",
+  "tree: 148 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "criterion",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "algorithm",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "exercise",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "obs",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summary",
+   "title": "Summary",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "acknowledgment",
+   "title": "Acknowledgment",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conclusion",
+   "title": "Conclusion",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsproc"
+  }
+ ],
+ "occurrences": {
+  "env": 16,
+  "label": 59,
+  "proof": 5,
+  "textref": 27
+ },
+ "matched": {
+  "env": 16,
+  "label": 59,
+  "proof": 5
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 16,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 16,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 26,
+  "unresolved": 1
+ },
+ "render": {
+  "theorems": 16,
+  "proofs": 5,
+  "agree": true
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2606.22882v2#textref-2",
+   "message": "the text names Lemma 5.2 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2606.22882v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "thm:prime-main"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 92
+   },
+   "last": 97,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "thm:six-main"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 103
+   },
+   "last": 109,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "lem:slice",
+    "eq:slice"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 137
+   },
+   "last": 142,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "lem:eps-removal",
+    "eq:restricted",
+    "eq:strong-type"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 148
+   },
+   "last": 157,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "lem:rect",
+    "eq:rect-CS",
+    "eq:rect-vinh"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 169
+   },
+   "last": 179,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "lem:rect-prime",
+    "eq:rect-prime"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 183
+   },
+   "last": 188,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "lem:regular",
+    "eq:reg-T",
+    "eq:reg-R"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 196
+   },
+   "last": 205,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "prop:bilinear-ineq",
+    "eq:BiMT",
+    "eq:linear",
+    "eq:bilinear"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 227
+   },
+   "last": 240,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "prop:general-B",
+    "eq:general-B"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 259
+   },
+   "last": 264,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "lem:LPV",
+    "eq:LPV"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 309
+   },
+   "last": 314,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "lem:vinh",
+    "eq:vinh-inc"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 322
+   },
+   "last": 327,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "lem:directional-energy",
+    "eq:dir-energy"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 331
+   },
+   "last": 336,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:directional-low-high-split",
+    "eq:low-rich",
+    "eq:class-cross-terms",
+    "eq:class-energy",
+    "eq:incidence-lower",
+    "eq:LPV-class",
+    "eq:LPV-vinh-combined",
+    "eq:few-dir",
+    "eq:many-dir"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 338
+   },
+   "last": 422,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "prop:prime-B",
+    "eq:prime-B"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 426
+   },
+   "last": 431,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:three-parts",
+    "eq:frame-energy",
+    "eq:mixed",
+    "eq:mixed-bounds"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 433
+   },
+   "last": 516,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "lem:hybrid-rectangle",
+    "eq:hybrid-rectangle"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 520
+   },
+   "last": 529,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:rich-SdZ",
+    "eq:rich-vinh",
+    "eq:rect-low-rich",
+    "eq:rect-rich-classes"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 531
+   },
+   "last": 591,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "cor:hybrid-B",
+    "eq:hybrid-B"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 593
+   },
+   "last": 604,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 606
+   },
+   "last": 619,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "prop:six-bilinear",
+    "eq:six-bilinear-one-sided",
+    "eq:six-bilinear-symmetric",
+    "eq:six-parseval"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 918
+   },
+   "last": 931,
+   "result": "matched"
+  },
+  {
+   "id": "2606.22882v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:six-holder",
+    "eq:six-slice",
+    "eq:six-L4",
+    "eq:six-hK",
+    "eq:six-hK2"
+   ],
+   "pos": {
+    "file": "bilinear_approach_II_v3.tex",
+    "line": 933
+   },
+   "last": 963,
+   "result": "matched"
+  }
+ ]
+}

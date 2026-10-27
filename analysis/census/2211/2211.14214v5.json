@@ -1,0 +1,2680 @@
+{
+ "paper": "2211.14214",
+ "version": 5,
+ "extractor": "ax/v0.5.8",
+ "main": [
+  "c12-arxiv.tex"
+ ],
+ "class": "lipics-v2021margins",
+ "packages": [
+  "microtype",
+  "amsthm",
+  "xypic",
+  "nicefrac",
+  "comment",
+  "enumerate",
+  "boxedminipage",
+  "hyperref",
+  "amssymb",
+  "amsmath",
+  "slashbox",
+  "fontenc",
+  "graphicx",
+  "twoopt",
+  "tikz"
+ ],
+ "steps": [
+  "unpack: 6 files",
+  "main: c12-arxiv.tex",
+  "include: 1 files read, 0 not found",
+  "local: 4 style files",
+  "clean: comments, verbatim and 1 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 372 commands, 6 environments",
+  "tree: 225 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note*",
+   "title": "Note",
+   "item": "remark",
+   "numbered": false,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "local:lipics-v2021margins.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "open",
+   "title": "Open Problem",
+   "item": "problem",
+   "counter": "open",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "fact",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "subclaim*",
+   "title": "Subclaim",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 61,
+  "label": 56,
+  "proof": 49,
+  "textref": 99
+ },
+ "matched": {
+  "env": 61,
+  "label": 56,
+  "proof": 49
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 59,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 4,
+  "disagree": 55,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 99,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 60,
+  "proofs": 48,
+  "agree": true
+ },
+ "outside": {
+  "theoremsearch": 47
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-1",
+   "message": "the counter model gives Theorem 1.1 and the second witness gives 1"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-2",
+   "message": "the counter model gives Theorem 1.2 and the second witness gives 2"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-3",
+   "message": "the counter model gives Theorem 1.3 and the second witness gives 3"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-4",
+   "message": "the counter model gives Theorem 1.4 and the second witness gives 4"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-5",
+   "message": "the counter model gives Theorem 1.5 and the second witness gives 5"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-6",
+   "message": "the counter model gives Theorem 2.1 and the second witness gives 6"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-7",
+   "message": "the counter model gives Claim 2.2 and the second witness gives 7"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-8",
+   "message": "the counter model gives Claim 2.3 and the second witness gives 8"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-9",
+   "message": "the counter model gives Claim 2.4 and the second witness gives 9"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-10",
+   "message": "the counter model gives Claim 2.5 and the second witness gives 10"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-11",
+   "message": "the counter model gives Claim 2.6 and the second witness gives 11"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-12",
+   "message": "the counter model gives Claim 2.7 and the second witness gives 12"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-13",
+   "message": "the counter model gives Theorem 3.1 and the second witness gives 13"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-14",
+   "message": "the counter model gives Theorem 3.2 and the second witness gives 14"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-15",
+   "message": "the counter model gives Theorem 3.3 and the second witness gives 15"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-16",
+   "message": "the counter model gives Lemma 4.1 and the second witness gives 16"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-17",
+   "message": "the counter model gives Theorem 4.2 and the second witness gives 17"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-18",
+   "message": "the counter model gives Theorem 4.3 and the second witness gives 18"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-19",
+   "message": "the counter model gives Theorem 5.1 and the second witness gives 19"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-20",
+   "message": "the counter model gives Theorem 5.2 and the second witness gives 20"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-21",
+   "message": "the counter model gives Theorem A.1 and the second witness gives 21"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-22",
+   "message": "the counter model gives Proposition A.2 and the second witness gives 22"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-23",
+   "message": "the counter model gives Proposition B.1 and the second witness gives 23"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-24",
+   "message": "the counter model gives Proposition B.2 and the second witness gives 24"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-25",
+   "message": "the counter model gives Proposition B.3 and the second witness gives 25"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-26",
+   "message": "the counter model gives Proposition B.4 and the second witness gives 26"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-27",
+   "message": "the counter model gives Proposition C.1 and the second witness gives 27"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-28",
+   "message": "the counter model gives Theorem D.1 and the second witness gives 28"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-29",
+   "message": "the counter model gives Proposition D.2 and the second witness gives 29"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-30",
+   "message": "the counter model gives Proposition D.3 and the second witness gives 30"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-31",
+   "message": "the counter model gives Theorem E.1 and the second witness gives 31"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-32",
+   "message": "the counter model gives Proposition F.1 and the second witness gives 32"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-33",
+   "message": "the counter model gives Theorem J.1 and the second witness gives 33"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-34",
+   "message": "the counter model gives Lemma J.2 and the second witness gives 34"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-36",
+   "message": "the counter model gives Lemma K.1 and the second witness gives 35"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-38",
+   "message": "the counter model gives Lemma K.2 and the second witness gives 36"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-40",
+   "message": "the counter model gives Proposition K.3 and the second witness gives 37"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-41",
+   "message": "the counter model gives Proposition K.4 and the second witness gives 38"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-42",
+   "message": "the counter model gives Lemma K.5 and the second witness gives 39"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-44",
+   "message": "the counter model gives Claim K.6 and the second witness gives 40"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-45",
+   "message": "the counter model gives Claim K.7 and the second witness gives 41"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-46",
+   "message": "the counter model gives Proposition K.8 and the second witness gives 42"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-47",
+   "message": "the counter model gives Lemma K.9 and the second witness gives 43"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-49",
+   "message": "the counter model gives Lemma K.10 and the second witness gives 44"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-50",
+   "message": "the counter model gives Claim K.11 and the second witness gives 45"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-51",
+   "message": "the counter model gives Claim K.12 and the second witness gives 46"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-53",
+   "message": "the counter model gives Claim K.13 and the second witness gives 47"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-54",
+   "message": "the counter model gives Lemma L.1 and the second witness gives 48"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-55",
+   "message": "the counter model gives Lemma L.2 and the second witness gives 49"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-56",
+   "message": "the counter model gives Lemma L.3 and the second witness gives 50"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-57",
+   "message": "the counter model gives Lemma L.4 and the second witness gives 51"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-58",
+   "message": "the counter model gives Lemma L.5 and the second witness gives 52"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-59",
+   "message": "the counter model gives Lemma L.6 and the second witness gives 53"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-60",
+   "message": "the counter model gives Proposition M.1 and the second witness gives 54"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2211.14214v5#env-61",
+   "message": "the counter model gives Theorem M.2 and the second witness gives 55"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2211.14214v5#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "t-dicho"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 209
+   },
+   "last": 211,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "thm:main-hamilton"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 352
+   },
+   "last": 355,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "thm:main-kIDP"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 357
+   },
+   "last": 361,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "thm:main-C5-col"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 363
+   },
+   "last": 366,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "thm:main-star"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 368
+   },
+   "last": 370,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "t-hhh"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 380
+   },
+   "last": 382,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "fig:diamond",
+    "fig:butterfly"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 384
+   },
+   "last": 941,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "7",
+   "number_from": "render",
+   "parent": "2211.14214v5#proof-1",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 476
+   },
+   "last": 479,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-1",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 481
+   },
+   "last": 533,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "8",
+   "number_from": "render",
+   "labels": [
+    "c-butterfly"
+   ],
+   "parent": "2211.14214v5#proof-1",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 608
+   },
+   "last": 611,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "9",
+   "number_from": "render",
+   "labels": [
+    "claim:ld"
+   ],
+   "parent": "2211.14214v5#proof-1",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 619
+   },
+   "last": 623,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "10",
+   "number_from": "render",
+   "labels": [
+    "claim:2"
+   ],
+   "parent": "2211.14214v5#proof-1",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 630
+   },
+   "last": 632,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-1",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 634
+   },
+   "last": 677,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "11",
+   "number_from": "render",
+   "labels": [
+    "l-11"
+   ],
+   "parent": "2211.14214v5#proof-1",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 700
+   },
+   "last": 702,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-1",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 704
+   },
+   "last": 842,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "12",
+   "number_from": "render",
+   "labels": [
+    "lem:key"
+   ],
+   "parent": "2211.14214v5#proof-1",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 881
+   },
+   "last": 887,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-1",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 889
+   },
+   "last": 920,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "13",
+   "number_from": "render",
+   "labels": [
+    "t-kip"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 947
+   },
+   "last": 949,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "14",
+   "number_from": "render",
+   "labels": [
+    "t-kip2"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 954
+   },
+   "last": 956,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "head",
+   "title": "\\sffamily\\textcolorlipicsGrayProof sketch",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 958
+   },
+   "last": 973,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2211.14214v5#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "15",
+   "number_from": "render",
+   "labels": [
+    "t-khard"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 994
+   },
+   "last": 996,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "16",
+   "number_from": "render",
+   "labels": [
+    "l-5"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1005
+   },
+   "last": 1008,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "17",
+   "number_from": "render",
+   "labels": [
+    "thm:C5-char"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1066
+   },
+   "last": 1076,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "18",
+   "number_from": "render",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1081
+   },
+   "last": 1083,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1085
+   },
+   "last": 1088,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "19",
+   "number_from": "render",
+   "labels": [
+    "t-bipartite"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1102
+   },
+   "last": 1104,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "20",
+   "number_from": "render",
+   "labels": [
+    "t-general"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1109
+   },
+   "last": 1111,
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "21",
+   "number_from": "render",
+   "labels": [
+    "t-g"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1330
+   },
+   "last": 1332,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "22",
+   "number_from": "render",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1337
+   },
+   "last": 1339,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "23",
+   "number_from": "render",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1345
+   },
+   "last": 1347,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1349
+   },
+   "last": 1351,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "24",
+   "number_from": "render",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1353
+   },
+   "last": 1355,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1357
+   },
+   "last": 1359,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "25",
+   "number_from": "render",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1361
+   },
+   "last": 1363,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1365
+   },
+   "last": 1374,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "26",
+   "number_from": "render",
+   "labels": [
+    "p-sc3"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1376
+   },
+   "last": 1378,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1380
+   },
+   "last": 1385,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "27",
+   "number_from": "render",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1391
+   },
+   "last": 1393,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1395
+   },
+   "last": 1397,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "28",
+   "number_from": "render",
+   "labels": [
+    "t-bi"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1404
+   },
+   "last": 1406,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "29",
+   "number_from": "render",
+   "labels": [
+    "p-h"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1411
+   },
+   "last": 1413,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1415
+   },
+   "last": 1418,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "30",
+   "number_from": "render",
+   "labels": [
+    "p-h2"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1423
+   },
+   "last": 1425,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1427
+   },
+   "last": 1431,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "31",
+   "number_from": "render",
+   "labels": [
+    "t-s3c"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1437
+   },
+   "last": 1439,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1441
+   },
+   "last": 1445,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "32",
+   "number_from": "render",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1452
+   },
+   "last": 1454,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1456
+   },
+   "last": 1459,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1471
+   },
+   "last": 1484,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1496
+   },
+   "last": 1522,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1534
+   },
+   "last": 1541,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "33",
+   "number_from": "render",
+   "labels": [
+    "t-iii"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1605
+   },
+   "last": 1607,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "fig:2IDP-literal",
+    "fig:2IDP-clause",
+    "fig:2IDP-variable",
+    "fig:2IDP-omission-cases"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1609
+   },
+   "last": 1770,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "34",
+   "number_from": "render",
+   "labels": [
+    "l-i"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1840
+   },
+   "last": 1844,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1846
+   },
+   "last": 1861,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1871
+   },
+   "last": 1873,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "fact",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "fact:critical"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1904
+   },
+   "last": 1915,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1916
+   },
+   "last": 1919,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "35",
+   "number_from": "render",
+   "labels": [
+    "lem:Ear"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1924
+   },
+   "last": 1927,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "fact",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "fact:H3"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1939
+   },
+   "last": 1941,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "36",
+   "number_from": "render",
+   "labels": [
+    "lem:c4"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1947
+   },
+   "last": 1953,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1954
+   },
+   "last": 1961,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "fact",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "fact:saturated"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1966
+   },
+   "last": 1968,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1969
+   },
+   "last": 1971,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "37",
+   "number_from": "render",
+   "labels": [
+    "prop:C5-char-1"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1977
+   },
+   "last": 1979,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1980
+   },
+   "last": 1987,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "38",
+   "number_from": "render",
+   "labels": [
+    "prop:C5-char-2"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1993
+   },
+   "last": 1994,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "39",
+   "number_from": "render",
+   "labels": [
+    "lem:c5"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 1998
+   },
+   "last": 2005,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2006
+   },
+   "last": 2013,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "fact",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "fact:saturated-2"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2037
+   },
+   "last": 2039,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2040
+   },
+   "last": 2045,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "fig:BB"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2049
+   },
+   "last": 2154,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "40",
+   "number_from": "render",
+   "parent": "2211.14214v5#proof-29",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2083
+   },
+   "last": 2085,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-29",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2086
+   },
+   "last": 2120,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "41",
+   "number_from": "render",
+   "labels": [
+    "cl:B2"
+   ],
+   "parent": "2211.14214v5#proof-29",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2124
+   },
+   "last": 2126,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-29",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2127
+   },
+   "last": 2142,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "42",
+   "number_from": "render",
+   "labels": [
+    "prop:C5-char-3"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2160
+   },
+   "last": 2162,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "43",
+   "number_from": "render",
+   "labels": [
+    "lem:c4b"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2166
+   },
+   "last": 2168,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2169
+   },
+   "last": 2200,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "parent": "2211.14214v5#proof-32",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2174
+   },
+   "last": 2176,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-32",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2177
+   },
+   "last": 2195,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "44",
+   "number_from": "render",
+   "labels": [
+    "lem:BB'"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2204
+   },
+   "last": 2212,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2214
+   },
+   "last": 2218,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2222
+   },
+   "last": 2334,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "45",
+   "number_from": "render",
+   "labels": [
+    "cl:k33"
+   ],
+   "parent": "2211.14214v5#proof-35",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2227
+   },
+   "last": 2229,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-35",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2230
+   },
+   "last": 2232,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "46",
+   "number_from": "render",
+   "labels": [
+    "cl:k23"
+   ],
+   "parent": "2211.14214v5#proof-35",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2234
+   },
+   "last": 2236,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-35",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2237
+   },
+   "last": 2274,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "subclaim*",
+   "title": "Subclaim",
+   "item": "unknown",
+   "parent": "2211.14214v5#proof-37",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2259
+   },
+   "last": 2261,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-37",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2262
+   },
+   "last": 2269,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "47",
+   "number_from": "render",
+   "parent": "2211.14214v5#proof-35",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2282
+   },
+   "last": 2283,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.14214v5#proof-35",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2284
+   },
+   "last": 2287,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "48",
+   "number_from": "render",
+   "labels": [
+    "lem:s3c-c4-simple"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2341
+   },
+   "last": 2343,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2345
+   },
+   "last": 2347,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "49",
+   "number_from": "render",
+   "labels": [
+    "l-not"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2362
+   },
+   "last": 2364,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2366
+   },
+   "last": 2378,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "50",
+   "number_from": "render",
+   "labels": [
+    "lem:bipartite-star-3-col-many"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2383
+   },
+   "last": 2385,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-42",
+   "type": "proof",
+   "k": 42,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2387
+   },
+   "last": 2406,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "51",
+   "number_from": "render",
+   "labels": [
+    "lem:bipartite-star-3-col-two"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2631
+   },
+   "last": 2634,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-43",
+   "type": "proof",
+   "k": 43,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2636
+   },
+   "last": 2644,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-44",
+   "type": "proof",
+   "k": 44,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2654
+   },
+   "last": 2656,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "52",
+   "number_from": "render",
+   "labels": [
+    "lem:general-star-3-col-many"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2672
+   },
+   "last": 2674,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-45",
+   "type": "proof",
+   "k": 45,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2676
+   },
+   "last": 2702,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "53",
+   "number_from": "render",
+   "labels": [
+    "lem:general-star-3-col-few"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2707
+   },
+   "last": 2709,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-46",
+   "type": "proof",
+   "k": 46,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2711
+   },
+   "last": 2715,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-47",
+   "type": "proof",
+   "k": 47,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2725
+   },
+   "last": 2728,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "54",
+   "number_from": "render",
+   "labels": [
+    "p-acyclic"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2740
+   },
+   "last": 2742,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-48",
+   "type": "proof",
+   "k": 48,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2744
+   },
+   "last": 2748,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "55",
+   "number_from": "render",
+   "labels": [
+    "thm:main-acyclic"
+   ],
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2752
+   },
+   "last": 2754,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.14214v5#proof-49",
+   "type": "proof",
+   "k": 49,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "c12-arxiv.tex",
+    "line": 2756
+   },
+   "last": 2758,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
