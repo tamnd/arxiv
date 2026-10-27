@@ -1,7 +1,7 @@
 {
  "paper": "2405.09294",
  "version": 1,
- "extractor": "ax/v0.5.9",
+ "extractor": "ax/v0.5.19",
  "main": [
   "sample-BSPM.tex"
  ],
@@ -161,7 +161,7 @@
   {
    "env": "Summ",
    "title": "Summary",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "Summ",
    "numbered": true,
    "from": "local:BSPMsample.sty",
@@ -203,7 +203,7 @@
   {
    "env": "summ",
    "title": "Summary",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "Summ",
    "shared": "Summ",
    "numbered": true,
@@ -213,8 +213,9 @@
   {
    "env": "pf*",
    "title": "",
-   "item": "unknown",
+   "item": "proof",
    "numbered": false,
+   "proof": true,
    "from": "wrapper",
    "form": "titled",
    "title_arg": true
@@ -244,10 +245,10 @@
  "waivers": [],
  "numbers": {
   "from_aux": 0,
-  "from_render": 34,
-  "from_counter": 4,
+  "from_render": 38,
+  "from_counter": 0,
   "from_head": 0,
-  "agree": 33,
+  "agree": 37,
   "disagree": 0,
   "contiguity_gaps": 0
  },
@@ -258,7 +259,9 @@
  "render": {
   "theorems": 38,
   "proofs": 0,
-  "agree": false
+  "agree": false,
+  "source_theorems": 38,
+  "source_proofs": 19
  },
  "outside": {
   "theoremsearch": 24
@@ -456,7 +459,7 @@
    "item": "example",
    "counter": "Exmp",
    "number": "3.1",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "sample-BSPM.tex",
     "line": 147
@@ -473,7 +476,7 @@
    "item": "example",
    "counter": "Exmp",
    "number": "3.2",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "sample-BSPM.tex",
     "line": 151
@@ -490,7 +493,7 @@
    "item": "example",
    "counter": "Exmp",
    "number": "3.3",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "sample-BSPM.tex",
     "line": 155
@@ -872,7 +875,7 @@
    "item": "example",
    "counter": "Exmp",
    "number": "4.1",
-   "number_from": "counter",
+   "number_from": "render",
    "pos": {
     "file": "sample-BSPM.tex",
     "line": 613

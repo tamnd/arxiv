@@ -1,7 +1,7 @@
 {
  "paper": "math/0406514",
  "version": 2,
- "extractor": "ax/v0.5.17",
+ "extractor": "ax/v0.5.19",
  "main": [
   "paper.tex"
  ],
@@ -17,7 +17,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 136 commands, 0 environments",
-  "tree: 261 nodes"
+  "aliases: 371 uses of commands that stand for \\begin or \\end",
+  "tree: 465 nodes"
  ],
  "declarations": [
   {
@@ -212,43 +213,32 @@
   }
  ],
  "occurrences": {
-  "env": 146,
-  "head": 8,
-  "label": 1,
-  "proof": 172,
+  "env": 290,
+  "head": 9,
+  "label": 2,
+  "proof": 186,
   "textref": 124
  },
  "matched": {
-  "env": 146,
-  "head": 8,
-  "label": 1,
-  "proof": 172
+  "env": 290,
+  "head": 9,
+  "label": 2,
+  "proof": 186
  },
  "gaps": [],
- "phantoms": [
-  "head-37",
-  "head-38",
-  "head-39",
-  "head-40",
-  "head-41",
-  "head-42",
-  "head-43",
-  "head-44",
-  "head-45"
- ],
  "waivers": [],
  "numbers": {
   "from_aux": 0,
   "from_render": 0,
-  "from_counter": 146,
+  "from_counter": 290,
   "from_head": 4,
   "agree": 0,
   "disagree": 0,
   "contiguity_gaps": 0
  },
  "textrefs": {
-  "resolved": 5,
-  "unresolved": 119
+  "resolved": 6,
+  "unresolved": 118
  },
  "findings": [
   {
@@ -593,11 +583,6 @@
   },
   {
    "rule": "D09",
-   "occurrence": "math/0406514v2#textref-73",
-   "message": "the text names Remark \\ref{macaulay} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
    "occurrence": "math/0406514v2#textref-74",
    "message": "the text names Lemma \\ref{moveall-tl} and the census has no such item (no-label)"
   },
@@ -878,20 +863,37 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 426
+    "line": 380
    },
-   "last": 427,
+   "last": 385,
    "result": "matched"
   },
   {
    "id": "math/0406514v2#env-3",
    "type": "env",
    "k": 3,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 426
+   },
+   "last": 427,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-4",
+   "type": "env",
+   "k": 4,
    "env": "thm",
    "title": "Theorem",
    "item": "statement/theorem",
    "counter": "lem",
-   "number": "0.3",
+   "number": "0.4",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -901,37 +903,20 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-4",
+   "id": "math/0406514v2#env-5",
    "type": "env",
-   "k": 4,
+   "k": 5,
    "env": "cor",
    "title": "Corollary",
    "item": "statement/corollary",
    "counter": "lem",
-   "number": "0.4",
+   "number": "0.5",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
     "line": 485
    },
    "last": 488,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-5",
-   "type": "env",
-   "k": 5,
-   "env": "thm",
-   "title": "Theorem",
-   "item": "statement/theorem",
-   "counter": "lem",
-   "number": "0.5",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 508
-   },
-   "last": 509,
    "result": "matched"
   },
   {
@@ -946,9 +931,9 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 556
+    "line": 508
    },
-   "last": 558,
+   "last": 509,
    "result": "matched"
   },
   {
@@ -963,9 +948,9 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 563
+    "line": 556
    },
-   "last": 565,
+   "last": 558,
    "result": "matched"
   },
   {
@@ -978,6 +963,23 @@
    "counter": "lem",
    "number": "0.8",
    "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 563
+   },
+   "last": 565,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "lem",
+   "number": "0.9",
+   "number_from": "counter",
    "labels": [
     "finite-simple"
    ],
@@ -986,6 +988,23 @@
     "line": 579
    },
    "last": 584,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 988
+   },
+   "last": 1000,
    "result": "matched"
   },
   {
@@ -1004,14 +1023,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-9",
+   "id": "math/0406514v2#env-11",
    "type": "env",
-   "k": 9,
+   "k": 11,
    "env": "notation",
    "title": "Notation",
    "item": "definition/notation",
    "counter": "lem",
-   "number": "0.9",
+   "number": "0.11",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1021,14 +1040,14 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-10",
+   "id": "math/0406514v2#env-12",
    "type": "env",
-   "k": 10,
+   "k": 12,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.10",
+   "number": "0.12",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1053,14 +1072,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-11",
+   "id": "math/0406514v2#env-13",
    "type": "env",
-   "k": 11,
+   "k": 13,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.11",
+   "number": "0.13",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1085,14 +1104,14 @@
    "confidence": "medium"
   },
   {
-   "id": "math/0406514v2#env-12",
+   "id": "math/0406514v2#env-14",
    "type": "env",
-   "k": 12,
+   "k": 14,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.12",
+   "number": "0.14",
    "number_from": "counter",
    "parent": "math/0406514v2#proof-3",
    "pos": {
@@ -1118,14 +1137,14 @@
    "confidence": "medium"
   },
   {
-   "id": "math/0406514v2#env-13",
+   "id": "math/0406514v2#env-15",
    "type": "env",
-   "k": 13,
+   "k": 15,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.13",
+   "number": "0.15",
    "number_from": "counter",
    "parent": "math/0406514v2#proof-4",
    "pos": {
@@ -1151,14 +1170,14 @@
    "confidence": "medium"
   },
   {
-   "id": "math/0406514v2#env-14",
+   "id": "math/0406514v2#env-16",
    "type": "env",
-   "k": 14,
+   "k": 16,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.14",
+   "number": "0.16",
    "number_from": "counter",
    "parent": "math/0406514v2#proof-5",
    "pos": {
@@ -1184,14 +1203,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-15",
+   "id": "math/0406514v2#env-17",
    "type": "env",
-   "k": 15,
+   "k": 17,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.15",
+   "number": "0.17",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1216,6 +1235,23 @@
    "confidence": "high"
   },
   {
+   "id": "math/0406514v2#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.18",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1130
+   },
+   "last": 1134,
+   "result": "matched"
+  },
+  {
    "id": "math/0406514v2#proof-8",
    "type": "proof",
    "k": 8,
@@ -1229,6 +1265,23 @@
    "last": 1144,
    "result": "matched",
    "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.19",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1147
+   },
+   "last": 1148,
+   "result": "matched"
   },
   {
    "id": "math/0406514v2#proof-9",
@@ -1246,6 +1299,23 @@
    "confidence": "high"
   },
   {
+   "id": "math/0406514v2#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.20",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1164
+   },
+   "last": 1165,
+   "result": "matched"
+  },
+  {
    "id": "math/0406514v2#proof-10",
    "type": "proof",
    "k": 10,
@@ -1259,6 +1329,73 @@
    "last": 1170,
    "result": "matched",
    "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.21",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1193
+   },
+   "last": 1194,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.22",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1291
+   },
+   "last": 1292,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "sta",
+   "item": "unknown",
+   "counter": "lem",
+   "number": "0.23",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1428
+   },
+   "last": 1428,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.24",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1452
+   },
+   "last": 1457,
+   "result": "matched"
   },
   {
    "id": "math/0406514v2#proof-11",
@@ -1276,6 +1413,23 @@
    "confidence": "high"
   },
   {
+   "id": "math/0406514v2#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.25",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1489
+   },
+   "last": 1493,
+   "result": "matched"
+  },
+  {
    "id": "math/0406514v2#proof-12",
    "type": "proof",
    "k": 12,
@@ -1289,6 +1443,23 @@
    "last": 1508,
    "result": "matched",
    "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.26",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1518
+   },
+   "last": 1520,
+   "result": "matched"
   },
   {
    "id": "math/0406514v2#proof-13",
@@ -1306,14 +1477,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-16",
+   "id": "math/0406514v2#env-27",
    "type": "env",
-   "k": 16,
+   "k": 27,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
    "counter": "lem",
-   "number": "0.16",
+   "number": "0.27",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1323,14 +1494,14 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-17",
+   "id": "math/0406514v2#env-28",
    "type": "env",
-   "k": 17,
+   "k": 28,
    "env": "notation",
    "title": "Notation",
    "item": "definition/notation",
    "counter": "lem",
-   "number": "0.17",
+   "number": "0.28",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1340,14 +1511,14 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-18",
+   "id": "math/0406514v2#env-29",
    "type": "env",
-   "k": 18,
+   "k": 29,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.18",
+   "number": "0.29",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1357,14 +1528,14 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-19",
+   "id": "math/0406514v2#env-30",
    "type": "env",
-   "k": 19,
+   "k": 30,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
    "counter": "lem",
-   "number": "0.19",
+   "number": "0.30",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1374,14 +1545,14 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-20",
+   "id": "math/0406514v2#env-31",
    "type": "env",
-   "k": 20,
+   "k": 31,
    "env": "notation",
    "title": "Notation",
    "item": "definition/notation",
    "counter": "lem",
-   "number": "0.20",
+   "number": "0.31",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1391,14 +1562,14 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-21",
+   "id": "math/0406514v2#env-32",
    "type": "env",
-   "k": 21,
+   "k": 32,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
    "counter": "lem",
-   "number": "0.21",
+   "number": "0.32",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1408,14 +1579,14 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-22",
+   "id": "math/0406514v2#env-33",
    "type": "env",
-   "k": 22,
+   "k": 33,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
    "counter": "lem",
-   "number": "0.22",
+   "number": "0.33",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1425,20 +1596,37 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-23",
+   "id": "math/0406514v2#env-34",
    "type": "env",
-   "k": 23,
+   "k": 34,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
    "counter": "lem",
-   "number": "0.23",
+   "number": "0.34",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
     "line": 1915
    },
    "last": 1926,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.35",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1928
+   },
+   "last": 1931,
    "result": "matched"
   },
   {
@@ -1457,14 +1645,14 @@
    "confidence": "medium"
   },
   {
-   "id": "math/0406514v2#env-24",
+   "id": "math/0406514v2#env-36",
    "type": "env",
-   "k": 24,
+   "k": 36,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.24",
+   "number": "0.36",
    "number_from": "counter",
    "parent": "math/0406514v2#proof-14",
    "pos": {
@@ -1490,14 +1678,14 @@
    "confidence": "medium"
   },
   {
-   "id": "math/0406514v2#env-25",
+   "id": "math/0406514v2#env-37",
    "type": "env",
-   "k": 25,
+   "k": 37,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
    "counter": "lem",
-   "number": "0.25",
+   "number": "0.37",
    "number_from": "counter",
    "parent": "math/0406514v2#proof-15",
    "pos": {
@@ -1508,14 +1696,14 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-26",
+   "id": "math/0406514v2#env-38",
    "type": "env",
-   "k": 26,
+   "k": 38,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
    "counter": "lem",
-   "number": "0.26",
+   "number": "0.38",
    "number_from": "counter",
    "parent": "math/0406514v2#proof-15",
    "pos": {
@@ -1523,6 +1711,24 @@
     "line": 1983
    },
    "last": 1983,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.39",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-15",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2057
+   },
+   "last": 2058,
    "result": "matched"
   },
   {
@@ -1571,14 +1777,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-27",
+   "id": "math/0406514v2#env-40",
    "type": "env",
-   "k": 27,
+   "k": 40,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.27",
+   "number": "0.40",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1603,14 +1809,31 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-28",
+   "id": "math/0406514v2#env-41",
    "type": "env",
-   "k": 28,
+   "k": 41,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.41",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2123
+   },
+   "last": 2125,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-42",
+   "type": "env",
+   "k": 42,
    "env": "prop",
    "title": "Proposition",
    "item": "statement/proposition",
    "counter": "lem",
-   "number": "0.28",
+   "number": "0.42",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1650,6 +1873,23 @@
    "confidence": "high"
   },
   {
+   "id": "math/0406514v2#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.43",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2208
+   },
+   "last": 2212,
+   "result": "matched"
+  },
+  {
    "id": "math/0406514v2#proof-22",
    "type": "proof",
    "k": 22,
@@ -1665,14 +1905,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-29",
+   "id": "math/0406514v2#env-44",
    "type": "env",
-   "k": 29,
+   "k": 44,
    "env": "cor",
    "title": "Corollary",
    "item": "statement/corollary",
    "counter": "lem",
-   "number": "0.29",
+   "number": "0.44",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1697,14 +1937,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-30",
+   "id": "math/0406514v2#env-45",
    "type": "env",
-   "k": 30,
+   "k": 45,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.30",
+   "number": "0.45",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1729,14 +1969,32 @@
    "confidence": "medium"
   },
   {
-   "id": "math/0406514v2#env-31",
+   "id": "math/0406514v2#env-46",
    "type": "env",
-   "k": 31,
+   "k": 46,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.46",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-24",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2257
+   },
+   "last": 2259,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-47",
+   "type": "env",
+   "k": 47,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
    "counter": "lem",
-   "number": "0.31",
+   "number": "0.47",
    "number_from": "counter",
    "parent": "math/0406514v2#proof-24",
    "pos": {
@@ -1747,14 +2005,14 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-32",
+   "id": "math/0406514v2#env-48",
    "type": "env",
-   "k": 32,
+   "k": 48,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.32",
+   "number": "0.48",
    "number_from": "counter",
    "parent": "math/0406514v2#proof-24",
    "pos": {
@@ -1780,14 +2038,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-33",
+   "id": "math/0406514v2#env-49",
    "type": "env",
-   "k": 33,
+   "k": 49,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
    "counter": "lem",
-   "number": "0.33",
+   "number": "0.49",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1797,20 +2055,37 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-34",
+   "id": "math/0406514v2#env-50",
    "type": "env",
-   "k": 34,
+   "k": 50,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.34",
+   "number": "0.50",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
     "line": 2298
    },
    "last": 2306,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.51",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2354
+   },
+   "last": 2361,
    "result": "matched"
   },
   {
@@ -1829,6 +2104,23 @@
    "confidence": "high"
   },
   {
+   "id": "math/0406514v2#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.52",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2368
+   },
+   "last": 2371,
+   "result": "matched"
+  },
+  {
    "id": "math/0406514v2#proof-27",
    "type": "proof",
    "k": 27,
@@ -1844,14 +2136,14 @@
    "confidence": "medium"
   },
   {
-   "id": "math/0406514v2#env-35",
+   "id": "math/0406514v2#env-53",
    "type": "env",
-   "k": 35,
+   "k": 53,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
    "counter": "lem",
-   "number": "0.35",
+   "number": "0.53",
    "number_from": "counter",
    "parent": "math/0406514v2#proof-27",
    "pos": {
@@ -1862,14 +2154,14 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-36",
+   "id": "math/0406514v2#env-54",
    "type": "env",
-   "k": 36,
+   "k": 54,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.36",
+   "number": "0.54",
    "number_from": "counter",
    "parent": "math/0406514v2#proof-27",
    "pos": {
@@ -1895,14 +2187,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-37",
+   "id": "math/0406514v2#env-55",
    "type": "env",
-   "k": 37,
+   "k": 55,
    "env": "rem",
    "title": "Remark",
    "item": "remark",
    "counter": "lem",
-   "number": "0.37",
+   "number": "0.55",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1912,9 +2204,58 @@
    "result": "matched"
   },
   {
+   "id": "math/0406514v2#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.56",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2445
+   },
+   "last": 2449,
+   "result": "matched"
+  },
+  {
    "id": "math/0406514v2#proof-29",
    "type": "proof",
    "k": 29,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2450
+   },
+   "last": 2452,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.57",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2485
+   },
+   "last": 2487,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-30",
+   "type": "proof",
+   "k": 30,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -1927,16 +2268,34 @@
    "confidence": "medium"
   },
   {
-   "id": "math/0406514v2#env-38",
+   "id": "math/0406514v2#env-58",
    "type": "env",
-   "k": 38,
+   "k": 58,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.58",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-30",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2492
+   },
+   "last": 2493,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-59",
+   "type": "env",
+   "k": 59,
    "env": "lemdef",
    "title": "Lemma and Definition",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.38",
+   "number": "0.59",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-29",
+   "parent": "math/0406514v2#proof-30",
    "pos": {
     "file": "paper.tex",
     "line": 2514
@@ -1945,9 +2304,9 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-30",
+   "id": "math/0406514v2#proof-31",
    "type": "proof",
-   "k": 30,
+   "k": 31,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -1960,14 +2319,31 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-39",
+   "id": "math/0406514v2#env-60",
    "type": "env",
-   "k": 39,
+   "k": 60,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.60",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2621
+   },
+   "last": 2623,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-61",
+   "type": "env",
+   "k": 61,
    "env": "rem",
    "title": "Remark",
    "item": "remark",
    "counter": "lem",
-   "number": "0.39",
+   "number": "0.61",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1977,9 +2353,9 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-31",
+   "id": "math/0406514v2#proof-32",
    "type": "proof",
-   "k": 31,
+   "k": 32,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -1992,14 +2368,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-40",
+   "id": "math/0406514v2#env-62",
    "type": "env",
-   "k": 40,
+   "k": 62,
    "env": "cor",
    "title": "Corollary",
    "item": "statement/corollary",
    "counter": "lem",
-   "number": "0.40",
+   "number": "0.62",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -2009,9 +2385,9 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-32",
+   "id": "math/0406514v2#proof-33",
    "type": "proof",
-   "k": 32,
+   "k": 33,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -2024,9 +2400,9 @@
    "confidence": "medium"
   },
   {
-   "id": "math/0406514v2#proof-33",
+   "id": "math/0406514v2#proof-34",
    "type": "proof",
-   "k": 33,
+   "k": 34,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -2039,9 +2415,60 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#proof-34",
+   "id": "math/0406514v2#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.63",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2698
+   },
+   "last": 2700,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.64",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2724
+   },
+   "last": 2737,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.65",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2774
+   },
+   "last": 2775,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-35",
    "type": "proof",
-   "k": 34,
+   "k": 35,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -2054,9 +2481,26 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#proof-35",
+   "id": "math/0406514v2#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.66",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2787
+   },
+   "last": 2788,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-36",
    "type": "proof",
-   "k": 35,
+   "k": 36,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -2069,9 +2513,26 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#proof-36",
+   "id": "math/0406514v2#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.67",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2821
+   },
+   "last": 2823,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-37",
    "type": "proof",
-   "k": 36,
+   "k": 37,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -2084,214 +2545,37 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-41",
+   "id": "math/0406514v2#env-68",
    "type": "env",
-   "k": 41,
+   "k": 68,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
    "counter": "lem",
-   "number": "0.41",
+   "number": "0.68",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
     "line": 2827
    },
-   "last": 3432,
+   "last": 2830,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-42",
+   "id": "math/0406514v2#env-69",
    "type": "env",
-   "k": 42,
+   "k": 69,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
    "counter": "lem",
-   "number": "0.42",
+   "number": "0.69",
    "number_from": "counter",
-   "parent": "math/0406514v2#env-41",
    "pos": {
     "file": "paper.tex",
     "line": 2834
    },
    "last": 2840,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-43",
-   "type": "env",
-   "k": 43,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
-   "counter": "lem",
-   "number": "0.43",
-   "number_from": "counter",
-   "parent": "math/0406514v2#env-41",
-   "pos": {
-    "file": "paper.tex",
-    "line": 2923
-   },
-   "last": 2925,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-44",
-   "type": "env",
-   "k": 44,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
-   "counter": "lem",
-   "number": "0.44",
-   "number_from": "counter",
-   "parent": "math/0406514v2#env-41",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3043
-   },
-   "last": 3051,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-45",
-   "type": "env",
-   "k": 45,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
-   "counter": "lem",
-   "number": "0.45",
-   "number_from": "counter",
-   "parent": "math/0406514v2#env-41",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3062
-   },
-   "last": 3067,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-46",
-   "type": "env",
-   "k": 46,
-   "env": "definition",
-   "title": "Definition",
-   "item": "definition",
-   "counter": "lem",
-   "number": "0.46",
-   "number_from": "counter",
-   "parent": "math/0406514v2#env-41",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3106
-   },
-   "last": 3113,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-47",
-   "type": "env",
-   "k": 47,
-   "env": "definition",
-   "title": "Definition",
-   "item": "definition",
-   "counter": "lem",
-   "number": "0.47",
-   "number_from": "counter",
-   "parent": "math/0406514v2#env-41",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3161
-   },
-   "last": 3161,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-48",
-   "type": "env",
-   "k": 48,
-   "env": "definition",
-   "title": "Definition",
-   "item": "definition",
-   "counter": "lem",
-   "number": "0.48",
-   "number_from": "counter",
-   "parent": "math/0406514v2#env-41",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3206
-   },
-   "last": 3212,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-49",
-   "type": "env",
-   "k": 49,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
-   "counter": "lem",
-   "number": "0.49",
-   "number_from": "counter",
-   "parent": "math/0406514v2#env-41",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3221
-   },
-   "last": 3243,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-50",
-   "type": "env",
-   "k": 50,
-   "env": "remark",
-   "title": "Remark",
-   "item": "remark",
-   "counter": "lem",
-   "number": "0.50",
-   "number_from": "counter",
-   "parent": "math/0406514v2#env-41",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3414
-   },
-   "last": 3418,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-37",
-   "type": "proof",
-   "k": 37,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3457
-   },
-   "last": 3457,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#env-51",
-   "type": "env",
-   "k": 51,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
-   "counter": "lem",
-   "number": "0.51",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3461
-   },
-   "last": 3481,
    "result": "matched"
   },
   {
@@ -2303,1359 +2587,9 @@
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 3482
+    "line": 2842
    },
-   "last": 3522,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#env-52",
-   "type": "env",
-   "k": 52,
-   "env": "remark",
-   "title": "Remark",
-   "item": "remark",
-   "counter": "lem",
-   "number": "0.52",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3565
-   },
-   "last": 3565,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-53",
-   "type": "env",
-   "k": 53,
-   "env": "definition",
-   "title": "Definition",
-   "item": "definition",
-   "counter": "lem",
-   "number": "0.53",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3581
-   },
-   "last": 3595,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-54",
-   "type": "env",
-   "k": 54,
-   "env": "example",
-   "title": "Example",
-   "item": "example",
-   "counter": "lem",
-   "number": "0.54",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3606
-   },
-   "last": 3606,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-55",
-   "type": "env",
-   "k": 55,
-   "env": "prop",
-   "title": "Proposition",
-   "item": "statement/proposition",
-   "counter": "lem",
-   "number": "0.55",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3619
-   },
-   "last": 3634,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-39",
-   "type": "proof",
-   "k": 39,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3638
-   },
-   "last": 3657,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#env-56",
-   "type": "env",
-   "k": 56,
-   "env": "rem",
-   "title": "Remark",
-   "item": "remark",
-   "counter": "lem",
-   "number": "0.56",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3665
-   },
-   "last": 3679,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-40",
-   "type": "proof",
-   "k": 40,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3681
-   },
-   "last": 3691,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#env-57",
-   "type": "env",
-   "k": 57,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
-   "counter": "lem",
-   "number": "0.57",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3706
-   },
-   "last": 3711,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-41",
-   "type": "proof",
-   "k": 41,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3714
-   },
-   "last": 3729,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#head-1",
-   "type": "head",
-   "k": 1,
-   "env": "head",
-   "title": "Claim",
-   "item": "statement/claim",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3730
-   },
-   "last": 3733,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#env-58",
-   "type": "env",
-   "k": 58,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
-   "counter": "lem",
-   "number": "0.58",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3765
-   },
-   "last": 3766,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-42",
-   "type": "proof",
-   "k": 42,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3768
-   },
-   "last": 3789,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#env-59",
-   "type": "env",
-   "k": 59,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
-   "counter": "lem",
-   "number": "0.59",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3795
-   },
-   "last": 3798,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-43",
-   "type": "proof",
-   "k": 43,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3799
-   },
-   "last": 3800,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-44",
-   "type": "proof",
-   "k": 44,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3842
-   },
-   "last": 3850,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-45",
-   "type": "proof",
-   "k": 45,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 3859
-   },
-   "last": 3865,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-46",
-   "type": "proof",
-   "k": 46,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4031
-   },
-   "last": 4034,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-47",
-   "type": "proof",
-   "k": 47,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4080
-   },
-   "last": 4088,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-48",
-   "type": "proof",
-   "k": 48,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4132
-   },
-   "last": 4133,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-49",
-   "type": "proof",
-   "k": 49,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4196
-   },
-   "last": 4203,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-50",
-   "type": "proof",
-   "k": 50,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4211
-   },
-   "last": 4245,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-51",
-   "type": "proof",
-   "k": 51,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4253
-   },
-   "last": 4258,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-52",
-   "type": "proof",
-   "k": 52,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4273
-   },
-   "last": 4286,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-53",
-   "type": "proof",
-   "k": 53,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4307
-   },
-   "last": 4315,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-54",
-   "type": "proof",
-   "k": 54,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4365
-   },
-   "last": 4385,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-55",
-   "type": "proof",
-   "k": 55,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4442
-   },
-   "last": 4460,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-56",
-   "type": "proof",
-   "k": 56,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4481
-   },
-   "last": 4489,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-57",
-   "type": "proof",
-   "k": 57,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4534
-   },
-   "last": 4553,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-58",
-   "type": "proof",
-   "k": 58,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4554
-   },
-   "last": 4561,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-59",
-   "type": "proof",
-   "k": 59,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4562
-   },
-   "last": 4582,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-60",
-   "type": "proof",
-   "k": 60,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4607
-   },
-   "last": 4633,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-61",
-   "type": "proof",
-   "k": 61,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4661
-   },
-   "last": 4663,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-62",
-   "type": "proof",
-   "k": 62,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4677
-   },
-   "last": 4681,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-63",
-   "type": "proof",
-   "k": 63,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4694
-   },
-   "last": 4706,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-64",
-   "type": "proof",
-   "k": 64,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4738
-   },
-   "last": 4754,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-65",
-   "type": "proof",
-   "k": 65,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4802
-   },
-   "last": 4848,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-66",
-   "type": "proof",
-   "k": 66,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4855
-   },
-   "last": 4868,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-67",
-   "type": "proof",
-   "k": 67,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4918
-   },
-   "last": 4962,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-68",
-   "type": "proof",
-   "k": 68,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 4970
-   },
-   "last": 4997,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-69",
-   "type": "proof",
-   "k": 69,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5042
-   },
-   "last": 5104,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-70",
-   "type": "proof",
-   "k": 70,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5105
-   },
-   "last": 5119,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-71",
-   "type": "proof",
-   "k": 71,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5159
-   },
-   "last": 5181,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-72",
-   "type": "proof",
-   "k": 72,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5188
-   },
-   "last": 5195,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-73",
-   "type": "proof",
-   "k": 73,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5196
-   },
-   "last": 5229,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-74",
-   "type": "proof",
-   "k": 74,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5255
-   },
-   "last": 5270,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-75",
-   "type": "proof",
-   "k": 75,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5317
-   },
-   "last": 5332,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-76",
-   "type": "proof",
-   "k": 76,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5357
-   },
-   "last": 5406,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-77",
-   "type": "proof",
-   "k": 77,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5480
-   },
-   "last": 5487,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-78",
-   "type": "proof",
-   "k": 78,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5503
-   },
-   "last": 5521,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-79",
-   "type": "proof",
-   "k": 79,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5721
-   },
-   "last": 5740,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#head-2",
-   "type": "head",
-   "k": 2,
-   "env": "head",
-   "title": "Claim",
-   "item": "statement/claim",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5741
-   },
-   "last": 5741,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-80",
-   "type": "proof",
-   "k": 80,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5743
-   },
-   "last": 5749,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-81",
-   "type": "proof",
-   "k": 81,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5795
-   },
-   "last": 5814,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-82",
-   "type": "proof",
-   "k": 82,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5850
-   },
-   "last": 5893,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-83",
-   "type": "proof",
-   "k": 83,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5894
-   },
-   "last": 5914,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#head-3",
-   "type": "head",
-   "k": 3,
-   "env": "head",
-   "title": "Claim",
-   "item": "statement/claim",
-   "number": "1",
-   "number_from": "head",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5915
-   },
-   "last": 5916,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-84",
-   "type": "proof",
-   "k": 84,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5918
-   },
-   "last": 5923,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#head-4",
-   "type": "head",
-   "k": 4,
-   "env": "head",
-   "title": "Claim",
-   "item": "statement/claim",
-   "number": "2",
-   "number_from": "head",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5924
-   },
-   "last": 5925,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-85",
-   "type": "proof",
-   "k": 85,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5927
-   },
-   "last": 5931,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#head-5",
-   "type": "head",
-   "k": 5,
-   "env": "head",
-   "title": "Claim",
-   "item": "statement/claim",
-   "number": "3",
-   "number_from": "head",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5932
-   },
-   "last": 5933,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-86",
-   "type": "proof",
-   "k": 86,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5935
-   },
-   "last": 5940,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#head-6",
-   "type": "head",
-   "k": 6,
-   "env": "head",
-   "title": "Claim",
-   "item": "statement/claim",
-   "number": "4",
-   "number_from": "head",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5941
-   },
-   "last": 5941,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-87",
-   "type": "proof",
-   "k": 87,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5943
-   },
-   "last": 5945,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-88",
-   "type": "proof",
-   "k": 88,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5953
-   },
-   "last": 5959,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-89",
-   "type": "proof",
-   "k": 89,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 5974
-   },
-   "last": 6003,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-90",
-   "type": "proof",
-   "k": 90,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6095
-   },
-   "last": 6109,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-91",
-   "type": "proof",
-   "k": 91,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6110
-   },
-   "last": 6121,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#env-60",
-   "type": "env",
-   "k": 60,
-   "env": "remark",
-   "title": "Remark",
-   "item": "remark",
-   "counter": "lem",
-   "number": "0.60",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6124
-   },
-   "last": 6124,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-92",
-   "type": "proof",
-   "k": 92,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6155
-   },
-   "last": 6305,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-93",
-   "type": "proof",
-   "k": 93,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6306
-   },
-   "last": 6325,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-94",
-   "type": "proof",
-   "k": 94,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6399
-   },
-   "last": 6477,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#env-61",
-   "type": "env",
-   "k": 61,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
-   "counter": "lem",
-   "number": "0.61",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6510
-   },
-   "last": 6513,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-95",
-   "type": "proof",
-   "k": 95,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6514
-   },
-   "last": 6518,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#env-62",
-   "type": "env",
-   "k": 62,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
-   "counter": "lem",
-   "number": "0.62",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6520
-   },
-   "last": 6521,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-96",
-   "type": "proof",
-   "k": 96,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6523
-   },
-   "last": 6528,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#env-63",
-   "type": "env",
-   "k": 63,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
-   "counter": "lem",
-   "number": "0.63",
-   "number_from": "counter",
-   "parent": "math/0406514v2#proof-96",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6525
-   },
-   "last": 6527,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-97",
-   "type": "proof",
-   "k": 97,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6529
-   },
-   "last": 6533,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#env-64",
-   "type": "env",
-   "k": 64,
-   "env": "definition",
-   "title": "Definition",
-   "item": "definition",
-   "counter": "lem",
-   "number": "0.64",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6535
-   },
-   "last": 6538,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-65",
-   "type": "env",
-   "k": 65,
-   "env": "rem",
-   "title": "Remark",
-   "item": "remark",
-   "counter": "lem",
-   "number": "0.65",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6554
-   },
-   "last": 6554,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-66",
-   "type": "env",
-   "k": 66,
-   "env": "rem",
-   "title": "Remark",
-   "item": "remark",
-   "counter": "lem",
-   "number": "0.66",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6560
-   },
-   "last": 6560,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-67",
-   "type": "env",
-   "k": 67,
-   "env": "notation",
-   "title": "Notation",
-   "item": "definition/notation",
-   "counter": "lem",
-   "number": "0.67",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6582
-   },
-   "last": 6587,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-68",
-   "type": "env",
-   "k": 68,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
-   "counter": "lem",
-   "number": "0.68",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6611
-   },
-   "last": 6630,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#head-7",
-   "type": "head",
-   "k": 7,
-   "env": "head",
-   "title": "Remark",
-   "item": "remark",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6632
-   },
-   "last": 6637,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-98",
-   "type": "proof",
-   "k": 98,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6641
-   },
-   "last": 6655,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-99",
-   "type": "proof",
-   "k": 99,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6656
-   },
-   "last": 6673,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#env-69",
-   "type": "env",
-   "k": 69,
-   "env": "example",
-   "title": "Example",
-   "item": "example",
-   "counter": "lem",
-   "number": "0.69",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6749
-   },
-   "last": 6765,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-100",
-   "type": "proof",
-   "k": 100,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6767
-   },
-   "last": 6783,
+   "last": 2854,
    "result": "matched",
    "confidence": "high"
   },
@@ -3671,57 +2605,27 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 6787
+    "line": 2859
    },
-   "last": 6792,
+   "last": 2863,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-101",
-   "type": "proof",
-   "k": 101,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6794
-   },
-   "last": 6813,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-71",
    "type": "env",
    "k": 71,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.71",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 6817
+    "line": 2905
    },
-   "last": 6820,
+   "last": 2908,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-102",
-   "type": "proof",
-   "k": 102,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6822
-   },
-   "last": 6830,
-   "result": "matched",
-   "confidence": "medium"
   },
   {
    "id": "math/0406514v2#env-72",
@@ -3733,28 +2637,27 @@
    "counter": "lem",
    "number": "0.72",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-102",
    "pos": {
     "file": "paper.tex",
-    "line": 6827
+    "line": 2923
    },
-   "last": 6829,
+   "last": 2925,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-103",
+   "id": "math/0406514v2#proof-39",
    "type": "proof",
-   "k": 103,
+   "k": 39,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 6831
+    "line": 2927
    },
-   "last": 6842,
+   "last": 2932,
    "result": "matched",
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-73",
@@ -3766,59 +2669,72 @@
    "counter": "lem",
    "number": "0.73",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-103",
    "pos": {
     "file": "paper.tex",
-    "line": 6837
+    "line": 2949
    },
-   "last": 6841,
+   "last": 2954,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-104",
+   "id": "math/0406514v2#proof-40",
    "type": "proof",
-   "k": 104,
+   "k": 40,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 6843
+    "line": 2967
    },
-   "last": 6862,
+   "last": 2976,
    "result": "matched",
-   "confidence": "medium"
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3009
+   },
+   "last": 3011,
+   "result": "matched",
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-74",
    "type": "env",
    "k": 74,
-   "env": "remark",
-   "title": "Remark",
-   "item": "remark",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.74",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-104",
    "pos": {
     "file": "paper.tex",
-    "line": 6859
+    "line": 3043
    },
-   "last": 6861,
+   "last": 3051,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-105",
+   "id": "math/0406514v2#proof-42",
    "type": "proof",
-   "k": 105,
+   "k": 42,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 6863
+    "line": 3053
    },
-   "last": 6866,
+   "last": 3059,
    "result": "matched",
    "confidence": "high"
   },
@@ -3826,31 +2742,31 @@
    "id": "math/0406514v2#env-75",
    "type": "env",
    "k": 75,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.75",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 6869
+    "line": 3062
    },
-   "last": 6878,
+   "last": 3067,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-106",
+   "id": "math/0406514v2#proof-43",
    "type": "proof",
-   "k": 106,
+   "k": 43,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 6881
+    "line": 3069
    },
-   "last": 6883,
+   "last": 3079,
    "result": "matched",
    "confidence": "high"
   },
@@ -3858,33 +2774,18 @@
    "id": "math/0406514v2#env-76",
    "type": "env",
    "k": 76,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
    "counter": "lem",
    "number": "0.76",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 6895
+    "line": 3093
    },
-   "last": 6902,
+   "last": 3093,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-107",
-   "type": "proof",
-   "k": 107,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6904
-   },
-   "last": 6939,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-77",
@@ -3898,136 +2799,91 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 6957
+    "line": 3106
    },
-   "last": 6962,
+   "last": 3113,
    "result": "matched"
   },
   {
    "id": "math/0406514v2#env-78",
    "type": "env",
    "k": 78,
-   "env": "definition",
-   "title": "Definition",
-   "item": "definition",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.78",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 6965
+    "line": 3117
    },
-   "last": 6971,
+   "last": 3123,
    "result": "matched"
   },
   {
    "id": "math/0406514v2#env-79",
    "type": "env",
    "k": 79,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
    "counter": "lem",
    "number": "0.79",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 6973
+    "line": 3161
    },
-   "last": 6978,
+   "last": 3161,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-108",
-   "type": "proof",
-   "k": 108,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 6981
-   },
-   "last": 7005,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-109",
-   "type": "proof",
-   "k": 109,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7006
-   },
-   "last": 7013,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-80",
    "type": "env",
    "k": 80,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
    "counter": "lem",
    "number": "0.80",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 7087
+    "line": 3206
    },
-   "last": 7094,
+   "last": 3212,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-110",
-   "type": "proof",
-   "k": 110,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7096
-   },
-   "last": 7146,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-81",
    "type": "env",
    "k": 81,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.81",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 7149
+    "line": 3221
    },
-   "last": 7155,
+   "last": 3243,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-111",
+   "id": "math/0406514v2#proof-44",
    "type": "proof",
-   "k": 111,
+   "k": 44,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 7157
+    "line": 3245
    },
-   "last": 7171,
+   "last": 3287,
    "result": "matched",
    "confidence": "high"
   },
@@ -4035,131 +2891,114 @@
    "id": "math/0406514v2#env-82",
    "type": "env",
    "k": 82,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.82",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 7177
+    "line": 3300
    },
-   "last": 7183,
+   "last": 3317,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-112",
-   "type": "proof",
-   "k": 112,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7187
-   },
-   "last": 7232,
-   "result": "matched",
-   "confidence": "medium"
   },
   {
    "id": "math/0406514v2#env-83",
    "type": "env",
    "k": 83,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.83",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-112",
    "pos": {
     "file": "paper.tex",
-    "line": 7215
+    "line": 3357
    },
-   "last": 7230,
+   "last": 3371,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-113",
+   "id": "math/0406514v2#proof-45",
    "type": "proof",
-   "k": 113,
+   "k": 45,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 7233
+    "line": 3374
    },
-   "last": 7246,
+   "last": 3384,
    "result": "matched",
    "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Caution",
+   "item": "remark",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3386
+   },
+   "last": 3387,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "math/0406514v2#env-84",
    "type": "env",
    "k": 84,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
    "counter": "lem",
    "number": "0.84",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 7250
+    "line": 3414
    },
-   "last": 7254,
+   "last": 3418,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-114",
+   "id": "math/0406514v2#proof-46",
    "type": "proof",
-   "k": 114,
+   "k": 46,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 7255
+    "line": 3419
    },
-   "last": 7322,
+   "last": 3424,
    "result": "matched",
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-85",
    "type": "env",
    "k": 85,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
    "counter": "lem",
    "number": "0.85",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-114",
    "pos": {
     "file": "paper.tex",
-    "line": 7317
+    "line": 3427
    },
-   "last": 7321,
+   "last": 3432,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-115",
-   "type": "proof",
-   "k": 115,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7323
-   },
-   "last": 7339,
-   "result": "matched",
-   "confidence": "medium"
   },
   {
    "id": "math/0406514v2#env-86",
@@ -4171,28 +3010,27 @@
    "counter": "lem",
    "number": "0.86",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-115",
    "pos": {
     "file": "paper.tex",
-    "line": 7331
+    "line": 3454
    },
-   "last": 7339,
+   "last": 3455,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-116",
+   "id": "math/0406514v2#proof-47",
    "type": "proof",
-   "k": 116,
+   "k": 47,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 7340
+    "line": 3457
    },
-   "last": 7376,
+   "last": 3457,
    "result": "matched",
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-87",
@@ -4204,170 +3042,108 @@
    "counter": "lem",
    "number": "0.87",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-116",
    "pos": {
     "file": "paper.tex",
-    "line": 7360
+    "line": 3461
    },
-   "last": 7374,
+   "last": 3481,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-117",
+   "id": "math/0406514v2#proof-48",
    "type": "proof",
-   "k": 117,
+   "k": 48,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 7377
+    "line": 3482
    },
-   "last": 7435,
+   "last": 3522,
    "result": "matched",
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-88",
    "type": "env",
    "k": 88,
-   "env": "notation",
-   "title": "Notation",
-   "item": "definition/notation",
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
    "counter": "lem",
    "number": "0.88",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-117",
    "pos": {
     "file": "paper.tex",
-    "line": 7407
+    "line": 3565
    },
-   "last": 7422,
+   "last": 3565,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-118",
-   "type": "proof",
-   "k": 118,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7499
-   },
-   "last": 7509,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-119",
-   "type": "proof",
-   "k": 119,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7510
-   },
-   "last": 7558,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-120",
-   "type": "proof",
-   "k": 120,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7601
-   },
-   "last": 7646,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#head-8",
-   "type": "head",
-   "k": 8,
-   "env": "head",
-   "title": "Claim",
-   "item": "statement/claim",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7687
-   },
-   "last": 7688,
-   "result": "matched",
-   "confidence": "medium"
   },
   {
    "id": "math/0406514v2#env-89",
    "type": "env",
    "k": 89,
-   "env": "notation",
-   "title": "Notation",
-   "item": "definition/notation",
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
    "counter": "lem",
    "number": "0.89",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 7745
+    "line": 3581
    },
-   "last": 7774,
+   "last": 3595,
    "result": "matched"
   },
   {
    "id": "math/0406514v2#env-90",
    "type": "env",
    "k": 90,
-   "env": "notation",
-   "title": "Notation",
-   "item": "definition/notation",
+   "env": "example",
+   "title": "Example",
+   "item": "example",
    "counter": "lem",
    "number": "0.90",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 7777
+    "line": 3606
    },
-   "last": 7785,
+   "last": 3606,
    "result": "matched"
   },
   {
    "id": "math/0406514v2#env-91",
    "type": "env",
    "k": 91,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
    "counter": "lem",
    "number": "0.91",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 7800
+    "line": 3619
    },
-   "last": 7811,
+   "last": 3634,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-121",
+   "id": "math/0406514v2#proof-49",
    "type": "proof",
-   "k": 121,
+   "k": 49,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 7813
+    "line": 3638
    },
-   "last": 7827,
+   "last": 3657,
    "result": "matched",
    "confidence": "high"
   },
@@ -4375,82 +3151,95 @@
    "id": "math/0406514v2#env-92",
    "type": "env",
    "k": 92,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
    "counter": "lem",
    "number": "0.92",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 7837
+    "line": 3661
    },
-   "last": 7842,
+   "last": 3662,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-122",
-   "type": "proof",
-   "k": 122,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7844
-   },
-   "last": 7890,
-   "result": "matched",
-   "confidence": "medium"
   },
   {
    "id": "math/0406514v2#env-93",
    "type": "env",
    "k": 93,
-   "env": "notation",
-   "title": "Notation",
-   "item": "definition/notation",
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
    "counter": "lem",
    "number": "0.93",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-122",
    "pos": {
     "file": "paper.tex",
-    "line": 7873
+    "line": 3665
    },
-   "last": 7882,
+   "last": 3679,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-94",
-   "type": "env",
-   "k": 94,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
-   "counter": "lem",
-   "number": "0.94",
-   "number_from": "counter",
-   "parent": "math/0406514v2#proof-122",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7885
-   },
-   "last": 7889,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-123",
+   "id": "math/0406514v2#proof-50",
    "type": "proof",
-   "k": 123,
+   "k": 50,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 7891
+    "line": 3681
    },
-   "last": 7911,
+   "last": 3691,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-94",
+   "type": "env",
+   "k": 94,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.94",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3706
+   },
+   "last": 3711,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-51",
+   "type": "proof",
+   "k": 51,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3714
+   },
+   "last": 3729,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3730
+   },
+   "last": 3733,
    "result": "matched",
    "confidence": "medium"
   },
@@ -4458,32 +3247,31 @@
    "id": "math/0406514v2#env-95",
    "type": "env",
    "k": 95,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.95",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-123",
    "pos": {
     "file": "paper.tex",
-    "line": 7908
+    "line": 3765
    },
-   "last": 7911,
+   "last": 3766,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-124",
+   "id": "math/0406514v2#proof-52",
    "type": "proof",
-   "k": 124,
+   "k": 52,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 7912
+    "line": 3768
    },
-   "last": 7917,
+   "last": 3789,
    "result": "matched",
    "confidence": "high"
   },
@@ -4491,67 +3279,82 @@
    "id": "math/0406514v2#env-96",
    "type": "env",
    "k": 96,
-   "env": "notation",
-   "title": "Notation",
-   "item": "definition/notation",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.96",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 7948
+    "line": 3795
    },
-   "last": 7956,
+   "last": 3798,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-97",
-   "type": "env",
-   "k": 97,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
-   "counter": "lem",
-   "number": "0.97",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 7977
-   },
-   "last": 7989,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-125",
+   "id": "math/0406514v2#proof-53",
    "type": "proof",
-   "k": 125,
+   "k": 53,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 7991
+    "line": 3799
    },
-   "last": 8041,
+   "last": 3800,
    "result": "matched",
    "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-97",
+   "type": "env",
+   "k": 97,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.97",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3822
+   },
+   "last": 3823,
+   "result": "matched"
   },
   {
    "id": "math/0406514v2#env-98",
    "type": "env",
    "k": 98,
-   "env": "notation",
-   "title": "Notation",
-   "item": "definition/notation",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.98",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8072
+    "line": 3832
    },
-   "last": 8107,
+   "last": 3839,
    "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-54",
+   "type": "proof",
+   "k": 54,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3842
+   },
+   "last": 3850,
+   "result": "matched",
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-99",
@@ -4565,23 +3368,23 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8166
+    "line": 3852
    },
-   "last": 8167,
+   "last": 3856,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-126",
+   "id": "math/0406514v2#proof-55",
    "type": "proof",
-   "k": 126,
+   "k": 55,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 8169
+    "line": 3859
    },
-   "last": 8260,
+   "last": 3865,
    "result": "matched",
    "confidence": "high"
   },
@@ -4589,66 +3392,51 @@
    "id": "math/0406514v2#env-100",
    "type": "env",
    "k": 100,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
    "counter": "lem",
    "number": "0.100",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8393
+    "line": 3878
    },
-   "last": 8400,
+   "last": 3882,
    "result": "matched"
   },
   {
    "id": "math/0406514v2#env-101",
    "type": "env",
    "k": 101,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
    "counter": "lem",
    "number": "0.101",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8412
+    "line": 3884
    },
-   "last": 8419,
+   "last": 3924,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-127",
-   "type": "proof",
-   "k": 127,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 8422
-   },
-   "last": 8458,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-102",
    "type": "env",
    "k": 102,
-   "env": "rem",
-   "title": "Remark",
-   "item": "remark",
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
    "counter": "lem",
    "number": "0.102",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8461
+    "line": 3933
    },
-   "last": 8461,
+   "last": 3933,
    "result": "matched"
   },
   {
@@ -4663,41 +3451,42 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8479
+    "line": 3948
    },
-   "last": 8488,
+   "last": 3971,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-128",
-   "type": "proof",
-   "k": 128,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 8490
-   },
-   "last": 8500,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-104",
    "type": "env",
    "k": 104,
-   "env": "sta",
-   "item": "unknown",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.104",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8509
+    "line": 4028
    },
-   "last": 8513,
+   "last": 4029,
    "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-56",
+   "type": "proof",
+   "k": 56,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4031
+   },
+   "last": 4034,
+   "result": "matched",
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-105",
@@ -4711,23 +3500,23 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8523
+    "line": 4070
    },
-   "last": 8543,
+   "last": 4078,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-129",
+   "id": "math/0406514v2#proof-57",
    "type": "proof",
-   "k": 129,
+   "k": 57,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 8545
+    "line": 4080
    },
-   "last": 8578,
+   "last": 4088,
    "result": "matched",
    "confidence": "high"
   },
@@ -4735,80 +3524,80 @@
    "id": "math/0406514v2#env-106",
    "type": "env",
    "k": 106,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.106",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8583
+    "line": 4099
    },
-   "last": 8585,
+   "last": 4104,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-130",
-   "type": "proof",
-   "k": 130,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 8587
-   },
-   "last": 8602,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-107",
    "type": "env",
    "k": 107,
-   "env": "remark",
-   "title": "Remark",
-   "item": "remark",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.107",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8604
+    "line": 4129
    },
-   "last": 8604,
+   "last": 4130,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#env-108",
-   "type": "env",
-   "k": 108,
-   "env": "lemnot",
-   "title": "Lemma-Notation",
-   "item": "definition/notation",
-   "counter": "lem",
-   "number": "0.108",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 8644
-   },
-   "last": 8655,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-131",
+   "id": "math/0406514v2#proof-58",
    "type": "proof",
-   "k": 131,
+   "k": 58,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 8657
+    "line": 4132
    },
-   "last": 8701,
+   "last": 4133,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-108",
+   "type": "env",
+   "k": 108,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.108",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4155
+   },
+   "last": 4168,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-59",
+   "type": "proof",
+   "k": 59,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4169
+   },
+   "last": 4189,
    "result": "matched",
    "confidence": "high"
   },
@@ -4816,50 +3605,63 @@
    "id": "math/0406514v2#env-109",
    "type": "env",
    "k": 109,
-   "env": "thm",
-   "title": "Theorem",
-   "item": "statement/theorem",
-   "counter": "lem",
-   "number": "0.109",
-   "number_from": "counter",
-   "parent": "math/0406514v2#proof-131",
-   "pos": {
-    "file": "paper.tex",
-    "line": 8675
-   },
-   "last": 8684,
-   "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#env-110",
-   "type": "env",
-   "k": 110,
    "env": "example",
    "title": "Example",
    "item": "example",
    "counter": "lem",
-   "number": "0.110",
+   "number": "0.109",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-131",
    "pos": {
     "file": "paper.tex",
-    "line": 8687
+    "line": 4192
    },
-   "last": 8687,
+   "last": 4194,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-132",
+   "id": "math/0406514v2#proof-60",
    "type": "proof",
-   "k": 132,
+   "k": 60,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 8715
+    "line": 4196
    },
-   "last": 8750,
+   "last": 4203,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-110",
+   "type": "env",
+   "k": 110,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.110",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4206
+   },
+   "last": 4209,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-61",
+   "type": "proof",
+   "k": 61,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4211
+   },
+   "last": 4245,
    "result": "matched",
    "confidence": "high"
   },
@@ -4875,58 +3677,106 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8770
+    "line": 4248
    },
-   "last": 8777,
+   "last": 4248,
    "result": "matched"
   },
   {
    "id": "math/0406514v2#env-112",
    "type": "env",
    "k": 112,
-   "env": "sta",
-   "item": "unknown",
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
    "counter": "lem",
    "number": "0.112",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8785
+    "line": 4250
    },
-   "last": 8788,
+   "last": 4251,
    "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-62",
+   "type": "proof",
+   "k": 62,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4253
+   },
+   "last": 4258,
+   "result": "matched",
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-113",
    "type": "env",
    "k": 113,
-   "env": "sta",
-   "item": "unknown",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.113",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8792
+    "line": 4262
    },
-   "last": 8795,
+   "last": 4271,
    "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-63",
+   "type": "proof",
+   "k": 63,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4273
+   },
+   "last": 4286,
+   "result": "matched",
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-114",
    "type": "env",
    "k": 114,
-   "env": "sta",
-   "item": "unknown",
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
    "counter": "lem",
    "number": "0.114",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8805
+    "line": 4295
    },
-   "last": 8812,
+   "last": 4304,
    "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-64",
+   "type": "proof",
+   "k": 64,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4307
+   },
+   "last": 4315,
+   "result": "matched",
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-115",
@@ -4940,23 +3790,23 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8825
+    "line": 4350
    },
-   "last": 8833,
+   "last": 4362,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-133",
+   "id": "math/0406514v2#proof-65",
    "type": "proof",
-   "k": 133,
+   "k": 65,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 8835
+    "line": 4365
    },
-   "last": 8860,
+   "last": 4385,
    "result": "matched",
    "confidence": "high"
   },
@@ -4972,23 +3822,23 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8863
+    "line": 4435
    },
-   "last": 8875,
+   "last": 4440,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-134",
+   "id": "math/0406514v2#proof-66",
    "type": "proof",
-   "k": 134,
+   "k": 66,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 8877
+    "line": 4442
    },
-   "last": 8904,
+   "last": 4460,
    "result": "matched",
    "confidence": "high"
   },
@@ -4996,128 +3846,127 @@
    "id": "math/0406514v2#env-117",
    "type": "env",
    "k": 117,
-   "env": "prop",
-   "title": "Proposition",
-   "item": "statement/proposition",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.117",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8911
+    "line": 4473
    },
-   "last": 8916,
+   "last": 4478,
    "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-67",
+   "type": "proof",
+   "k": 67,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4481
+   },
+   "last": 4489,
+   "result": "matched",
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-118",
    "type": "env",
    "k": 118,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
+   "env": "example",
+   "title": "Example",
+   "item": "example",
    "counter": "lem",
    "number": "0.118",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 8953
+    "line": 4498
    },
-   "last": 8961,
+   "last": 4501,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-135",
-   "type": "proof",
-   "k": 135,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 8963
-   },
-   "last": 8993,
-   "result": "matched",
-   "confidence": "medium"
   },
   {
    "id": "math/0406514v2#env-119",
    "type": "env",
    "k": 119,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "example",
+   "title": "Example",
+   "item": "example",
    "counter": "lem",
    "number": "0.119",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-135",
    "pos": {
     "file": "paper.tex",
-    "line": 8988
+    "line": 4511
    },
-   "last": 8990,
+   "last": 4511,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-136",
-   "type": "proof",
-   "k": 136,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 8994
-   },
-   "last": 9003,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-137",
-   "type": "proof",
-   "k": 137,
-   "env": "head",
-   "title": "proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 9011
-   },
-   "last": 9022,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-120",
    "type": "env",
    "k": 120,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
    "counter": "lem",
    "number": "0.120",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 9029
+    "line": 4525
    },
-   "last": 9036,
+   "last": 4532,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-138",
+   "id": "math/0406514v2#proof-68",
    "type": "proof",
-   "k": 138,
+   "k": 68,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 9038
+    "line": 4534
    },
-   "last": 9059,
+   "last": 4553,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-69",
+   "type": "proof",
+   "k": 69,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4554
+   },
+   "last": 4561,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-70",
+   "type": "proof",
+   "k": 70,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4562
+   },
+   "last": 4582,
    "result": "matched",
    "confidence": "high"
   },
@@ -5125,138 +3974,48 @@
    "id": "math/0406514v2#env-121",
    "type": "env",
    "k": 121,
-   "env": "prop",
-   "title": "Proposition",
-   "item": "statement/proposition",
+   "env": "example",
+   "title": "Example",
+   "item": "example",
    "counter": "lem",
    "number": "0.121",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 9119
+    "line": 4587
    },
-   "last": 9121,
+   "last": 4589,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-139",
-   "type": "proof",
-   "k": 139,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 9274
-   },
-   "last": 9331,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-140",
-   "type": "proof",
-   "k": 140,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 9349
-   },
-   "last": 9369,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-141",
-   "type": "proof",
-   "k": 141,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 9381
-   },
-   "last": 9399,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-142",
-   "type": "proof",
-   "k": 142,
-   "env": "head",
-   "title": "proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 9456
-   },
-   "last": 9469,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-143",
-   "type": "proof",
-   "k": 143,
-   "env": "head",
-   "title": "proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 9469
-   },
-   "last": 9477,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-144",
-   "type": "proof",
-   "k": 144,
-   "env": "head",
-   "title": "proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 9482
-   },
-   "last": 9503,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-122",
    "type": "env",
    "k": 122,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.122",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 9506
+    "line": 4600
    },
-   "last": 9510,
+   "last": 4604,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-145",
+   "id": "math/0406514v2#proof-71",
    "type": "proof",
-   "k": 145,
+   "k": 71,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 9512
+    "line": 4607
    },
-   "last": 9515,
+   "last": 4633,
    "result": "matched",
    "confidence": "high"
   },
@@ -5264,31 +4023,31 @@
    "id": "math/0406514v2#env-123",
    "type": "env",
    "k": 123,
-   "env": "thm",
-   "title": "Theorem",
-   "item": "statement/theorem",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.123",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 9520
+    "line": 4652
    },
-   "last": 9525,
+   "last": 4659,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-146",
+   "id": "math/0406514v2#proof-72",
    "type": "proof",
-   "k": 146,
+   "k": 72,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 9528
+    "line": 4661
    },
-   "last": 9534,
+   "last": 4663,
    "result": "matched",
    "confidence": "high"
   },
@@ -5296,46 +4055,31 @@
    "id": "math/0406514v2#env-124",
    "type": "env",
    "k": 124,
-   "env": "fact",
-   "title": "Fact",
-   "item": "statement/fact",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.124",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 9587
+    "line": 4672
    },
-   "last": 9590,
+   "last": 4675,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-147",
+   "id": "math/0406514v2#proof-73",
    "type": "proof",
-   "k": 147,
+   "k": 73,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 9594
+    "line": 4677
    },
-   "last": 9623,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-148",
-   "type": "proof",
-   "k": 148,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 9686
-   },
-   "last": 9706,
+   "last": 4681,
    "result": "matched",
    "confidence": "high"
   },
@@ -5351,23 +4095,23 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 9791
+    "line": 4685
    },
-   "last": 9806,
+   "last": 4690,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-149",
+   "id": "math/0406514v2#proof-74",
    "type": "proof",
-   "k": 149,
+   "k": 74,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 9808
+    "line": 4694
    },
-   "last": 9819,
+   "last": 4706,
    "result": "matched",
    "confidence": "high"
   },
@@ -5383,73 +4127,57 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 9822
+    "line": 4708
    },
-   "last": 9822,
+   "last": 4708,
    "result": "matched"
   },
   {
    "id": "math/0406514v2#env-127",
    "type": "env",
    "k": 127,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
+   "env": "example",
+   "title": "Example",
+   "item": "example",
    "counter": "lem",
    "number": "0.127",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 9862
+    "line": 4716
    },
-   "last": 9868,
+   "last": 4716,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-150",
-   "type": "proof",
-   "k": 150,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 9870
-   },
-   "last": 9916,
-   "result": "matched",
-   "confidence": "medium"
   },
   {
    "id": "math/0406514v2#env-128",
    "type": "env",
    "k": 128,
-   "env": "thm",
-   "title": "Theorem",
-   "item": "statement/theorem",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.128",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-150",
    "pos": {
     "file": "paper.tex",
-    "line": 9906
+    "line": 4727
    },
-   "last": 9913,
+   "last": 4736,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-151",
+   "id": "math/0406514v2#proof-75",
    "type": "proof",
-   "k": 151,
+   "k": 75,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 9916
+    "line": 4738
    },
-   "last": 9945,
+   "last": 4754,
    "result": "matched",
    "confidence": "high"
   },
@@ -5465,38 +4193,23 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 9954
+    "line": 4790
    },
-   "last": 9976,
+   "last": 4797,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-152",
+   "id": "math/0406514v2#proof-76",
    "type": "proof",
-   "k": 152,
+   "k": 76,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 10026
+    "line": 4802
    },
-   "last": 10051,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-153",
-   "type": "proof",
-   "k": 153,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 10063
-   },
-   "last": 10090,
+   "last": 4848,
    "result": "matched",
    "confidence": "high"
   },
@@ -5504,61 +4217,31 @@
    "id": "math/0406514v2#env-130",
    "type": "env",
    "k": 130,
-   "env": "prop",
-   "title": "Proposition",
-   "item": "statement/proposition",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.130",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 10127
+    "line": 4852
    },
-   "last": 10136,
+   "last": 4853,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-154",
+   "id": "math/0406514v2#proof-77",
    "type": "proof",
-   "k": 154,
+   "k": 77,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 10138
+    "line": 4855
    },
-   "last": 10150,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "math/0406514v2#proof-155",
-   "type": "proof",
-   "k": 155,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 10210
-   },
-   "last": 10218,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "math/0406514v2#proof-156",
-   "type": "proof",
-   "k": 156,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 10219
-   },
-   "last": 10232,
+   "last": 4868,
    "result": "matched",
    "confidence": "high"
   },
@@ -5566,64 +4249,63 @@
    "id": "math/0406514v2#env-131",
    "type": "env",
    "k": 131,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.131",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 10309
+    "line": 4887
    },
-   "last": 10312,
+   "last": 4916,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-157",
+   "id": "math/0406514v2#proof-78",
    "type": "proof",
-   "k": 157,
+   "k": 78,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 10314
+    "line": 4918
    },
-   "last": 10343,
+   "last": 4962,
    "result": "matched",
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-132",
    "type": "env",
    "k": 132,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
    "counter": "lem",
    "number": "0.132",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-157",
    "pos": {
     "file": "paper.tex",
-    "line": 10339
+    "line": 4964
    },
-   "last": 10342,
+   "last": 4968,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-158",
+   "id": "math/0406514v2#proof-79",
    "type": "proof",
-   "k": 158,
+   "k": 79,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 10344
+    "line": 4970
    },
-   "last": 10352,
+   "last": 4997,
    "result": "matched",
    "confidence": "high"
   },
@@ -5631,69 +4313,83 @@
    "id": "math/0406514v2#env-133",
    "type": "env",
    "k": 133,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "example",
+   "title": "Example",
+   "item": "example",
    "counter": "lem",
    "number": "0.133",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 10357
+    "line": 5001
    },
-   "last": 10362,
+   "last": 5001,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-159",
-   "type": "proof",
-   "k": 159,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 10364
-   },
-   "last": 10445,
-   "result": "matched",
-   "confidence": "medium"
   },
   {
    "id": "math/0406514v2#env-134",
    "type": "env",
    "k": 134,
-   "env": "note",
-   "title": "Note",
-   "item": "remark",
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
    "counter": "lem",
    "number": "0.134",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-159",
    "pos": {
     "file": "paper.tex",
-    "line": 10392
+    "line": 5028
    },
-   "last": 10392,
+   "last": 5033,
    "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-80",
+   "type": "proof",
+   "k": 80,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5042
+   },
+   "last": 5104,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "math/0406514v2#env-135",
    "type": "env",
    "k": 135,
-   "env": "notation",
-   "title": "Notation",
-   "item": "definition/notation",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.135",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-159",
+   "parent": "math/0406514v2#proof-80",
    "pos": {
     "file": "paper.tex",
-    "line": 10425
+    "line": 5103
    },
-   "last": 10432,
+   "last": 5103,
    "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-81",
+   "type": "proof",
+   "k": 81,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5105
+   },
+   "last": 5119,
+   "result": "matched",
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-136",
@@ -5705,28 +4401,27 @@
    "counter": "lem",
    "number": "0.136",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-159",
    "pos": {
     "file": "paper.tex",
-    "line": 10437
+    "line": 5129
    },
-   "last": 10444,
+   "last": 5132,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-160",
+   "id": "math/0406514v2#proof-82",
    "type": "proof",
-   "k": 160,
+   "k": 82,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 10446
+    "line": 5133
    },
-   "last": 10456,
+   "last": 5148,
    "result": "matched",
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-137",
@@ -5738,63 +4433,90 @@
    "counter": "lem",
    "number": "0.137",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-160",
    "pos": {
     "file": "paper.tex",
-    "line": 10454
+    "line": 5152
    },
-   "last": 10455,
+   "last": 5157,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-161",
+   "id": "math/0406514v2#proof-83",
    "type": "proof",
-   "k": 161,
+   "k": 83,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 10457
+    "line": 5159
    },
-   "last": 10719,
+   "last": 5181,
    "result": "matched",
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-138",
    "type": "env",
    "k": 138,
-   "env": "remark",
-   "title": "Remark",
-   "item": "remark",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.138",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-161",
    "pos": {
     "file": "paper.tex",
-    "line": 10480
+    "line": 5184
    },
-   "last": 10480,
+   "last": 5186,
    "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-84",
+   "type": "proof",
+   "k": 84,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5188
+   },
+   "last": 5195,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-85",
+   "type": "proof",
+   "k": 85,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5196
+   },
+   "last": 5229,
+   "result": "matched",
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-139",
    "type": "env",
    "k": 139,
-   "env": "definition",
-   "title": "Definition",
-   "item": "definition",
+   "env": "example",
+   "title": "Example",
+   "item": "example",
    "counter": "lem",
    "number": "0.139",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-161",
    "pos": {
     "file": "paper.tex",
-    "line": 10654
+    "line": 5234
    },
-   "last": 10660,
+   "last": 5234,
    "result": "matched"
   },
   {
@@ -5807,61 +4529,44 @@
    "counter": "lem",
    "number": "0.140",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-161",
    "pos": {
     "file": "paper.tex",
-    "line": 10709
+    "line": 5249
    },
-   "last": 10718,
+   "last": 5253,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-162",
+   "id": "math/0406514v2#proof-86",
    "type": "proof",
-   "k": 162,
+   "k": 86,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 10720
+    "line": 5255
    },
-   "last": 10770,
+   "last": 5270,
    "result": "matched",
-   "confidence": "medium"
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-141",
    "type": "env",
    "k": 141,
-   "env": "lem",
-   "title": "Lemma",
-   "item": "statement/lemma",
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
    "counter": "lem",
    "number": "0.141",
    "number_from": "counter",
-   "parent": "math/0406514v2#proof-162",
    "pos": {
     "file": "paper.tex",
-    "line": 10759
+    "line": 5274
    },
-   "last": 10768,
+   "last": 5278,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-163",
-   "type": "proof",
-   "k": 163,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 10771
-   },
-   "last": 10781,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-142",
@@ -5875,23 +4580,23 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 10783
+    "line": 5311
    },
-   "last": 10792,
+   "last": 5315,
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-164",
+   "id": "math/0406514v2#proof-87",
    "type": "proof",
-   "k": 164,
+   "k": 87,
    "env": "head",
    "title": "Proof",
    "item": "proof",
    "pos": {
     "file": "paper.tex",
-    "line": 10794
+    "line": 5317
    },
-   "last": 10801,
+   "last": 5332,
    "result": "matched",
    "confidence": "high"
   },
@@ -5899,50 +4604,50 @@
    "id": "math/0406514v2#env-143",
    "type": "env",
    "k": 143,
-   "env": "cor",
-   "title": "Corollary",
-   "item": "statement/corollary",
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
    "counter": "lem",
    "number": "0.143",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 10803
+    "line": 5334
    },
-   "last": 10809,
+   "last": 5334,
    "result": "matched"
-  },
-  {
-   "id": "math/0406514v2#proof-165",
-   "type": "proof",
-   "k": 165,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 10811
-   },
-   "last": 10811,
-   "result": "matched",
-   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-144",
    "type": "env",
    "k": 144,
-   "env": "note",
-   "title": "Note",
-   "item": "remark",
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "lem",
    "number": "0.144",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 10813
+    "line": 5352
    },
-   "last": 10813,
+   "last": 5355,
    "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-88",
+   "type": "proof",
+   "k": 88,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5357
+   },
+   "last": 5406,
+   "result": "matched",
+   "confidence": "high"
   },
   {
    "id": "math/0406514v2#env-145",
@@ -5956,15 +4661,3837 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 10878
+    "line": 5429
    },
-   "last": 10880,
+   "last": 5434,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-146",
+   "type": "env",
+   "k": 146,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.146",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5446
+   },
+   "last": 5446,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-147",
+   "type": "env",
+   "k": 147,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.147",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5458
+   },
+   "last": 5460,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-148",
+   "type": "env",
+   "k": 148,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.148",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5472
+   },
+   "last": 5478,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-89",
+   "type": "proof",
+   "k": 89,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5480
+   },
+   "last": 5487,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-149",
+   "type": "env",
+   "k": 149,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.149",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5494
+   },
+   "last": 5501,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-90",
+   "type": "proof",
+   "k": 90,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5503
+   },
+   "last": 5521,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-150",
+   "type": "env",
+   "k": 150,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.150",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5580
+   },
+   "last": 5608,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-151",
+   "type": "env",
+   "k": 151,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.151",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5622
+   },
+   "last": 5644,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-152",
+   "type": "env",
+   "k": 152,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.152",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5665
+   },
+   "last": 5672,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-153",
+   "type": "env",
+   "k": 153,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.153",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5677
+   },
+   "last": 5689,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-154",
+   "type": "env",
+   "k": 154,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.154",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5691
+   },
+   "last": 5693,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-155",
+   "type": "env",
+   "k": 155,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.155",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5707
+   },
+   "last": 5719,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-91",
+   "type": "proof",
+   "k": 91,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5721
+   },
+   "last": 5740,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5741
+   },
+   "last": 5741,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-92",
+   "type": "proof",
+   "k": 92,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5743
+   },
+   "last": 5749,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-156",
+   "type": "env",
+   "k": 156,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.156",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5783
+   },
+   "last": 5792,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-93",
+   "type": "proof",
+   "k": 93,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5795
+   },
+   "last": 5814,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-157",
+   "type": "env",
+   "k": 157,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.157",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5821
+   },
+   "last": 5828,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-158",
+   "type": "env",
+   "k": 158,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.158",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5834
+   },
+   "last": 5848,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-94",
+   "type": "proof",
+   "k": 94,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5850
+   },
+   "last": 5893,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-159",
+   "type": "env",
+   "k": 159,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.159",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-94",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5854
+   },
+   "last": 5859,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-160",
+   "type": "env",
+   "k": 160,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.160",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-94",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5883
+   },
+   "last": 5891,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-95",
+   "type": "proof",
+   "k": 95,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5894
+   },
+   "last": 5914,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#head-4",
+   "type": "head",
+   "k": 4,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "number": "1",
+   "number_from": "head",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5915
+   },
+   "last": 5916,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-96",
+   "type": "proof",
+   "k": 96,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5918
+   },
+   "last": 5923,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#head-5",
+   "type": "head",
+   "k": 5,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "number": "2",
+   "number_from": "head",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5924
+   },
+   "last": 5925,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-97",
+   "type": "proof",
+   "k": 97,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5927
+   },
+   "last": 5931,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#head-6",
+   "type": "head",
+   "k": 6,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "number": "3",
+   "number_from": "head",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5932
+   },
+   "last": 5933,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-98",
+   "type": "proof",
+   "k": 98,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5935
+   },
+   "last": 5940,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#head-7",
+   "type": "head",
+   "k": 7,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "number": "4",
+   "number_from": "head",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5941
+   },
+   "last": 5941,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-99",
+   "type": "proof",
+   "k": 99,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5943
+   },
+   "last": 5945,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-161",
+   "type": "env",
+   "k": 161,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.161",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5951
+   },
+   "last": 5951,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-100",
+   "type": "proof",
+   "k": 100,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5953
+   },
+   "last": 5959,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-162",
+   "type": "env",
+   "k": 162,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.162",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5966
+   },
+   "last": 5972,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-101",
+   "type": "proof",
+   "k": 101,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 5974
+   },
+   "last": 6003,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-163",
+   "type": "env",
+   "k": 163,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.163",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6083
+   },
+   "last": 6084,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-164",
+   "type": "env",
+   "k": 164,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.164",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6090
+   },
+   "last": 6091,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-102",
+   "type": "proof",
+   "k": 102,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6095
+   },
+   "last": 6109,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-103",
+   "type": "proof",
+   "k": 103,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6110
+   },
+   "last": 6121,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-165",
+   "type": "env",
+   "k": 165,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.165",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6124
+   },
+   "last": 6124,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-166",
+   "type": "env",
+   "k": 166,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.166",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6152
+   },
+   "last": 6153,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-104",
+   "type": "proof",
+   "k": 104,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6155
+   },
+   "last": 6305,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-167",
+   "type": "env",
+   "k": 167,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.167",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-104",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6184
+   },
+   "last": 6198,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-168",
+   "type": "env",
+   "k": 168,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.168",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-104",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6256
+   },
+   "last": 6263,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-169",
+   "type": "env",
+   "k": 169,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.169",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-104",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6268
+   },
+   "last": 6268,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-170",
+   "type": "env",
+   "k": 170,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.170",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-104",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6298
+   },
+   "last": 6304,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-105",
+   "type": "proof",
+   "k": 105,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6306
+   },
+   "last": 6325,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-171",
+   "type": "env",
+   "k": 171,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.171",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6352
+   },
+   "last": 6372,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-106",
+   "type": "proof",
+   "k": 106,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6399
+   },
+   "last": 6477,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-172",
+   "type": "env",
+   "k": 172,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.172",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6510
+   },
+   "last": 6513,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-107",
+   "type": "proof",
+   "k": 107,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6514
+   },
+   "last": 6518,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-173",
+   "type": "env",
+   "k": 173,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.173",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6520
+   },
+   "last": 6521,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-108",
+   "type": "proof",
+   "k": 108,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6523
+   },
+   "last": 6528,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-174",
+   "type": "env",
+   "k": 174,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.174",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-108",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6525
+   },
+   "last": 6527,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-109",
+   "type": "proof",
+   "k": 109,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6529
+   },
+   "last": 6533,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-175",
+   "type": "env",
+   "k": 175,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.175",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6535
+   },
+   "last": 6538,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-176",
+   "type": "env",
+   "k": 176,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.176",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6554
+   },
+   "last": 6554,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-177",
+   "type": "env",
+   "k": 177,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.177",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6560
+   },
+   "last": 6560,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-178",
+   "type": "env",
+   "k": 178,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "lem",
+   "number": "0.178",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6582
+   },
+   "last": 6587,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-179",
+   "type": "env",
+   "k": 179,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.179",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6611
+   },
+   "last": 6630,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#head-8",
+   "type": "head",
+   "k": 8,
+   "env": "head",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6632
+   },
+   "last": 6637,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-110",
+   "type": "proof",
+   "k": 110,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6641
+   },
+   "last": 6655,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-111",
+   "type": "proof",
+   "k": 111,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6656
+   },
+   "last": 6673,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-180",
+   "type": "env",
+   "k": 180,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.180",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6749
+   },
+   "last": 6765,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-112",
+   "type": "proof",
+   "k": 112,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6767
+   },
+   "last": 6783,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-181",
+   "type": "env",
+   "k": 181,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.181",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6787
+   },
+   "last": 6792,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-113",
+   "type": "proof",
+   "k": 113,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6794
+   },
+   "last": 6813,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-182",
+   "type": "env",
+   "k": 182,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.182",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6817
+   },
+   "last": 6820,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-114",
+   "type": "proof",
+   "k": 114,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6822
+   },
+   "last": 6830,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-183",
+   "type": "env",
+   "k": 183,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.183",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-114",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6827
+   },
+   "last": 6829,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-115",
+   "type": "proof",
+   "k": 115,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6831
+   },
+   "last": 6842,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-184",
+   "type": "env",
+   "k": 184,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.184",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-115",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6837
+   },
+   "last": 6841,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-116",
+   "type": "proof",
+   "k": 116,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6843
+   },
+   "last": 6862,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-185",
+   "type": "env",
+   "k": 185,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.185",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-116",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6859
+   },
+   "last": 6861,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-117",
+   "type": "proof",
+   "k": 117,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6863
+   },
+   "last": 6866,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-186",
+   "type": "env",
+   "k": 186,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.186",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6869
+   },
+   "last": 6878,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-118",
+   "type": "proof",
+   "k": 118,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6881
+   },
+   "last": 6883,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-187",
+   "type": "env",
+   "k": 187,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.187",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6895
+   },
+   "last": 6902,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-119",
+   "type": "proof",
+   "k": 119,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6904
+   },
+   "last": 6939,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-188",
+   "type": "env",
+   "k": 188,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.188",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6957
+   },
+   "last": 6962,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-189",
+   "type": "env",
+   "k": 189,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.189",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6965
+   },
+   "last": 6971,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-190",
+   "type": "env",
+   "k": 190,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.190",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6973
+   },
+   "last": 6978,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-120",
+   "type": "proof",
+   "k": 120,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 6981
+   },
+   "last": 7005,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-121",
+   "type": "proof",
+   "k": 121,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7006
+   },
+   "last": 7013,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-191",
+   "type": "env",
+   "k": 191,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.191",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7087
+   },
+   "last": 7094,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-122",
+   "type": "proof",
+   "k": 122,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7096
+   },
+   "last": 7146,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-192",
+   "type": "env",
+   "k": 192,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.192",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7149
+   },
+   "last": 7155,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-123",
+   "type": "proof",
+   "k": 123,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7157
+   },
+   "last": 7171,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-193",
+   "type": "env",
+   "k": 193,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.193",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7177
+   },
+   "last": 7183,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-124",
+   "type": "proof",
+   "k": 124,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7187
+   },
+   "last": 7232,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-194",
+   "type": "env",
+   "k": 194,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.194",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-124",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7215
+   },
+   "last": 7230,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-125",
+   "type": "proof",
+   "k": 125,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7233
+   },
+   "last": 7246,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-195",
+   "type": "env",
+   "k": 195,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.195",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7250
+   },
+   "last": 7254,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-126",
+   "type": "proof",
+   "k": 126,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7255
+   },
+   "last": 7322,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-196",
+   "type": "env",
+   "k": 196,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.196",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-126",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7317
+   },
+   "last": 7321,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-127",
+   "type": "proof",
+   "k": 127,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7323
+   },
+   "last": 7339,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-197",
+   "type": "env",
+   "k": 197,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.197",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-127",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7331
+   },
+   "last": 7339,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-128",
+   "type": "proof",
+   "k": 128,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7340
+   },
+   "last": 7376,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-198",
+   "type": "env",
+   "k": 198,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.198",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-128",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7360
+   },
+   "last": 7374,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-129",
+   "type": "proof",
+   "k": 129,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7377
+   },
+   "last": 7435,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-199",
+   "type": "env",
+   "k": 199,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "lem",
+   "number": "0.199",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-129",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7407
+   },
+   "last": 7422,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-200",
+   "type": "env",
+   "k": 200,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.200",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7487
+   },
+   "last": 7497,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-130",
+   "type": "proof",
+   "k": 130,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7499
+   },
+   "last": 7509,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-131",
+   "type": "proof",
+   "k": 131,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7510
+   },
+   "last": 7558,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-201",
+   "type": "env",
+   "k": 201,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.201",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7584
+   },
+   "last": 7599,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-132",
+   "type": "proof",
+   "k": 132,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7601
+   },
+   "last": 7646,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-202",
+   "type": "env",
+   "k": 202,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.202",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7651
+   },
+   "last": 7664,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-133",
+   "type": "proof",
+   "k": 133,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7665
+   },
+   "last": 7686,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#head-9",
+   "type": "head",
+   "k": 9,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7687
+   },
+   "last": 7688,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-203",
+   "type": "env",
+   "k": 203,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.203",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7720
+   },
+   "last": 7720,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-204",
+   "type": "env",
+   "k": 204,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "lem",
+   "number": "0.204",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7745
+   },
+   "last": 7774,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-205",
+   "type": "env",
+   "k": 205,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "lem",
+   "number": "0.205",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7777
+   },
+   "last": 7785,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-206",
+   "type": "env",
+   "k": 206,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.206",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7800
+   },
+   "last": 7811,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-134",
+   "type": "proof",
+   "k": 134,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7813
+   },
+   "last": 7827,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-207",
+   "type": "env",
+   "k": 207,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.207",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7837
+   },
+   "last": 7842,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-135",
+   "type": "proof",
+   "k": 135,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7844
+   },
+   "last": 7890,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-208",
+   "type": "env",
+   "k": 208,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "lem",
+   "number": "0.208",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-135",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7873
+   },
+   "last": 7882,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-209",
+   "type": "env",
+   "k": 209,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.209",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-135",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7885
+   },
+   "last": 7889,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-136",
+   "type": "proof",
+   "k": 136,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7891
+   },
+   "last": 7911,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-210",
+   "type": "env",
+   "k": 210,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.210",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-136",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7908
+   },
+   "last": 7911,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-137",
+   "type": "proof",
+   "k": 137,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7912
+   },
+   "last": 7917,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-211",
+   "type": "env",
+   "k": 211,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "lem",
+   "number": "0.211",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7948
+   },
+   "last": 7956,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-212",
+   "type": "env",
+   "k": 212,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.212",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7977
+   },
+   "last": 7989,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-138",
+   "type": "proof",
+   "k": 138,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 7991
+   },
+   "last": 8041,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-213",
+   "type": "env",
+   "k": 213,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "lem",
+   "number": "0.213",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8072
+   },
+   "last": 8107,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-214",
+   "type": "env",
+   "k": 214,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.214",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8166
+   },
+   "last": 8167,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-139",
+   "type": "proof",
+   "k": 139,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8169
+   },
+   "last": 8260,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-215",
+   "type": "env",
+   "k": 215,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.215",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-139",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8228
+   },
+   "last": 8231,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-216",
+   "type": "env",
+   "k": 216,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.216",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8267
+   },
+   "last": 8273,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-217",
+   "type": "env",
+   "k": 217,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.217",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8365
+   },
+   "last": 8365,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-218",
+   "type": "env",
+   "k": 218,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.218",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8388
+   },
+   "last": 8390,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-219",
+   "type": "env",
+   "k": 219,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.219",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8393
+   },
+   "last": 8400,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-220",
+   "type": "env",
+   "k": 220,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.220",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8412
+   },
+   "last": 8419,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-140",
+   "type": "proof",
+   "k": 140,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8422
+   },
+   "last": 8458,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-221",
+   "type": "env",
+   "k": 221,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.221",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8461
+   },
+   "last": 8461,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-222",
+   "type": "env",
+   "k": 222,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.222",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8479
+   },
+   "last": 8488,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-141",
+   "type": "proof",
+   "k": 141,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8490
+   },
+   "last": 8500,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-223",
+   "type": "env",
+   "k": 223,
+   "env": "sta",
+   "item": "unknown",
+   "counter": "lem",
+   "number": "0.223",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8509
+   },
+   "last": 8513,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-224",
+   "type": "env",
+   "k": 224,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.224",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8523
+   },
+   "last": 8543,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-142",
+   "type": "proof",
+   "k": 142,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8545
+   },
+   "last": 8578,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-225",
+   "type": "env",
+   "k": 225,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.225",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8583
+   },
+   "last": 8585,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-143",
+   "type": "proof",
+   "k": 143,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8587
+   },
+   "last": 8602,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-226",
+   "type": "env",
+   "k": 226,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.226",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8604
+   },
+   "last": 8604,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-227",
+   "type": "env",
+   "k": 227,
+   "env": "lemnot",
+   "title": "Lemma-Notation",
+   "item": "definition/notation",
+   "counter": "lem",
+   "number": "0.227",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8644
+   },
+   "last": 8655,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-144",
+   "type": "proof",
+   "k": 144,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8657
+   },
+   "last": 8701,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-228",
+   "type": "env",
+   "k": 228,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "lem",
+   "number": "0.228",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-144",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8675
+   },
+   "last": 8684,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-229",
+   "type": "env",
+   "k": 229,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.229",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-144",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8687
+   },
+   "last": 8687,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-230",
+   "type": "env",
+   "k": 230,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.230",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8707
+   },
+   "last": 8713,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-145",
+   "type": "proof",
+   "k": 145,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8715
+   },
+   "last": 8750,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-231",
+   "type": "env",
+   "k": 231,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "lem",
+   "number": "0.231",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8770
+   },
+   "last": 8777,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-232",
+   "type": "env",
+   "k": 232,
+   "env": "sta",
+   "item": "unknown",
+   "counter": "lem",
+   "number": "0.232",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8785
+   },
+   "last": 8788,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-233",
+   "type": "env",
+   "k": 233,
+   "env": "sta",
+   "item": "unknown",
+   "counter": "lem",
+   "number": "0.233",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8792
+   },
+   "last": 8795,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-234",
+   "type": "env",
+   "k": 234,
+   "env": "sta",
+   "item": "unknown",
+   "counter": "lem",
+   "number": "0.234",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8805
+   },
+   "last": 8812,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-235",
+   "type": "env",
+   "k": 235,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.235",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8825
+   },
+   "last": 8833,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-146",
+   "type": "proof",
+   "k": 146,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8835
+   },
+   "last": 8860,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-236",
+   "type": "env",
+   "k": 236,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.236",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8863
+   },
+   "last": 8875,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-147",
+   "type": "proof",
+   "k": 147,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8877
+   },
+   "last": 8904,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-237",
+   "type": "env",
+   "k": 237,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.237",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8911
+   },
+   "last": 8916,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-238",
+   "type": "env",
+   "k": 238,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.238",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8953
+   },
+   "last": 8961,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-148",
+   "type": "proof",
+   "k": 148,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8963
+   },
+   "last": 8993,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-239",
+   "type": "env",
+   "k": 239,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.239",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-148",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8988
+   },
+   "last": 8990,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-149",
+   "type": "proof",
+   "k": 149,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 8994
+   },
+   "last": 9003,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#proof-150",
+   "type": "proof",
+   "k": 150,
+   "env": "head",
+   "title": "proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9011
+   },
+   "last": 9022,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-240",
+   "type": "env",
+   "k": 240,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.240",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9029
+   },
+   "last": 9036,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-151",
+   "type": "proof",
+   "k": 151,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9038
+   },
+   "last": 9059,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-241",
+   "type": "env",
+   "k": 241,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.241",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9119
+   },
+   "last": 9121,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-242",
+   "type": "env",
+   "k": 242,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.242",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9238
+   },
+   "last": 9242,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-243",
+   "type": "env",
+   "k": 243,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.243",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9254
+   },
+   "last": 9256,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-244",
+   "type": "env",
+   "k": 244,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.244",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9260
+   },
+   "last": 9261,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-152",
+   "type": "proof",
+   "k": 152,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9262
+   },
+   "last": 9262,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-245",
+   "type": "env",
+   "k": 245,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.245",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9266
+   },
+   "last": 9269,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-153",
+   "type": "proof",
+   "k": 153,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9274
+   },
+   "last": 9331,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-246",
+   "type": "env",
+   "k": 246,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.246",
+   "number_from": "counter",
+   "labels": [
+    "macaulay"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 9342
+   },
+   "last": 9343,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-247",
+   "type": "env",
+   "k": 247,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.247",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9345
+   },
+   "last": 9346,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-154",
+   "type": "proof",
+   "k": 154,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9349
+   },
+   "last": 9369,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-248",
+   "type": "env",
+   "k": 248,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.248",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9375
+   },
+   "last": 9378,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-155",
+   "type": "proof",
+   "k": 155,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9381
+   },
+   "last": 9399,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#proof-156",
+   "type": "proof",
+   "k": 156,
+   "env": "head",
+   "title": "proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9456
+   },
+   "last": 9469,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#proof-157",
+   "type": "proof",
+   "k": 157,
+   "env": "head",
+   "title": "proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9469
+   },
+   "last": 9477,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#proof-158",
+   "type": "proof",
+   "k": 158,
+   "env": "head",
+   "title": "proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9482
+   },
+   "last": 9503,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-249",
+   "type": "env",
+   "k": 249,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.249",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9506
+   },
+   "last": 9510,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-159",
+   "type": "proof",
+   "k": 159,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9512
+   },
+   "last": 9515,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-250",
+   "type": "env",
+   "k": 250,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "lem",
+   "number": "0.250",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9520
+   },
+   "last": 9525,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-160",
+   "type": "proof",
+   "k": 160,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9528
+   },
+   "last": 9534,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-251",
+   "type": "env",
+   "k": 251,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "lem",
+   "number": "0.251",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9587
+   },
+   "last": 9590,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-161",
+   "type": "proof",
+   "k": 161,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9594
+   },
+   "last": 9623,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#proof-162",
+   "type": "proof",
+   "k": 162,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9686
+   },
+   "last": 9706,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-252",
+   "type": "env",
+   "k": 252,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.252",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9791
+   },
+   "last": 9806,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-163",
+   "type": "proof",
+   "k": 163,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9808
+   },
+   "last": 9819,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-253",
+   "type": "env",
+   "k": 253,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.253",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9822
+   },
+   "last": 9822,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-254",
+   "type": "env",
+   "k": 254,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.254",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9862
+   },
+   "last": 9868,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-164",
+   "type": "proof",
+   "k": 164,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9870
+   },
+   "last": 9916,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-255",
+   "type": "env",
+   "k": 255,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "lem",
+   "number": "0.255",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-164",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9906
+   },
+   "last": 9913,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-165",
+   "type": "proof",
+   "k": 165,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9916
+   },
+   "last": 9945,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-256",
+   "type": "env",
+   "k": 256,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.256",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 9954
+   },
+   "last": 9976,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-257",
+   "type": "env",
+   "k": 257,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.257",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10023
+   },
+   "last": 10023,
    "result": "matched"
   },
   {
    "id": "math/0406514v2#proof-166",
    "type": "proof",
    "k": 166,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10026
+   },
+   "last": 10051,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-258",
+   "type": "env",
+   "k": 258,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "lem",
+   "number": "0.258",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10055
+   },
+   "last": 10059,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-167",
+   "type": "proof",
+   "k": 167,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10063
+   },
+   "last": 10090,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-259",
+   "type": "env",
+   "k": 259,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.259",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10094
+   },
+   "last": 10101,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-260",
+   "type": "env",
+   "k": 260,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.260",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10127
+   },
+   "last": 10136,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-168",
+   "type": "proof",
+   "k": 168,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10138
+   },
+   "last": 10150,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-261",
+   "type": "env",
+   "k": 261,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.261",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10153
+   },
+   "last": 10156,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-262",
+   "type": "env",
+   "k": 262,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.262",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10167
+   },
+   "last": 10172,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-263",
+   "type": "env",
+   "k": 263,
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "lem",
+   "number": "0.263",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10175
+   },
+   "last": 10176,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-264",
+   "type": "env",
+   "k": 264,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.264",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10197
+   },
+   "last": 10201,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-265",
+   "type": "env",
+   "k": 265,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.265",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10203
+   },
+   "last": 10208,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-169",
+   "type": "proof",
+   "k": 169,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10210
+   },
+   "last": 10218,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-266",
+   "type": "env",
+   "k": 266,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.266",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-169",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10212
+   },
+   "last": 10217,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-170",
+   "type": "proof",
+   "k": 170,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10219
+   },
+   "last": 10232,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-267",
+   "type": "env",
+   "k": 267,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.267",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10309
+   },
+   "last": 10312,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-171",
+   "type": "proof",
+   "k": 171,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10314
+   },
+   "last": 10343,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-268",
+   "type": "env",
+   "k": 268,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.268",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-171",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10339
+   },
+   "last": 10342,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-172",
+   "type": "proof",
+   "k": 172,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10344
+   },
+   "last": 10352,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-269",
+   "type": "env",
+   "k": 269,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.269",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10357
+   },
+   "last": 10362,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-173",
+   "type": "proof",
+   "k": 173,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10364
+   },
+   "last": 10445,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-270",
+   "type": "env",
+   "k": 270,
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.270",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-173",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10392
+   },
+   "last": 10392,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-271",
+   "type": "env",
+   "k": 271,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "lem",
+   "number": "0.271",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-173",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10425
+   },
+   "last": 10432,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-272",
+   "type": "env",
+   "k": 272,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.272",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-173",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10437
+   },
+   "last": 10444,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-174",
+   "type": "proof",
+   "k": 174,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10446
+   },
+   "last": 10456,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-273",
+   "type": "env",
+   "k": 273,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.273",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-174",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10454
+   },
+   "last": 10455,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-175",
+   "type": "proof",
+   "k": 175,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10457
+   },
+   "last": 10719,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-274",
+   "type": "env",
+   "k": 274,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.274",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-175",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10480
+   },
+   "last": 10480,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-275",
+   "type": "env",
+   "k": 275,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.275",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-175",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10654
+   },
+   "last": 10660,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-276",
+   "type": "env",
+   "k": 276,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lem",
+   "number": "0.276",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-175",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10709
+   },
+   "last": 10718,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-176",
+   "type": "proof",
+   "k": 176,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10720
+   },
+   "last": 10770,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "math/0406514v2#env-277",
+   "type": "env",
+   "k": 277,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.277",
+   "number_from": "counter",
+   "parent": "math/0406514v2#proof-176",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10759
+   },
+   "last": 10768,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-177",
+   "type": "proof",
+   "k": 177,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10771
+   },
+   "last": 10781,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-278",
+   "type": "env",
+   "k": 278,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.278",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10783
+   },
+   "last": 10792,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-178",
+   "type": "proof",
+   "k": 178,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10794
+   },
+   "last": 10801,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-279",
+   "type": "env",
+   "k": 279,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lem",
+   "number": "0.279",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10803
+   },
+   "last": 10809,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-179",
+   "type": "proof",
+   "k": 179,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10811
+   },
+   "last": 10811,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "math/0406514v2#env-280",
+   "type": "env",
+   "k": 280,
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.280",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10813
+   },
+   "last": 10813,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-281",
+   "type": "env",
+   "k": 281,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.281",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10878
+   },
+   "last": 10880,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-180",
+   "type": "proof",
+   "k": 180,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -5977,14 +8504,14 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#env-146",
+   "id": "math/0406514v2#env-282",
    "type": "env",
-   "k": 146,
+   "k": 282,
    "env": "example",
    "title": "Example",
    "item": "example",
    "counter": "lem",
-   "number": "0.146",
+   "number": "0.282",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -5994,9 +8521,60 @@
    "result": "matched"
   },
   {
-   "id": "math/0406514v2#proof-167",
+   "id": "math/0406514v2#env-283",
+   "type": "env",
+   "k": 283,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "lem",
+   "number": "0.283",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10970
+   },
+   "last": 10981,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-284",
+   "type": "env",
+   "k": 284,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.284",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 10987
+   },
+   "last": 10987,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#env-285",
+   "type": "env",
+   "k": 285,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "lem",
+   "number": "0.285",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 11003
+   },
+   "last": 11007,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-181",
    "type": "proof",
-   "k": 167,
+   "k": 181,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -6009,9 +8587,26 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#proof-168",
+   "id": "math/0406514v2#env-286",
+   "type": "env",
+   "k": 286,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.286",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 11059
+   },
+   "last": 11060,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-182",
    "type": "proof",
-   "k": 168,
+   "k": 182,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -6024,9 +8619,26 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#proof-169",
+   "id": "math/0406514v2#env-287",
+   "type": "env",
+   "k": 287,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "lem",
+   "number": "0.287",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 11068
+   },
+   "last": 11071,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-183",
    "type": "proof",
-   "k": 169,
+   "k": 183,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -6039,9 +8651,26 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#proof-170",
+   "id": "math/0406514v2#env-288",
+   "type": "env",
+   "k": 288,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.288",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 11103
+   },
+   "last": 11107,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-184",
    "type": "proof",
-   "k": 170,
+   "k": 184,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -6054,9 +8683,26 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#proof-171",
+   "id": "math/0406514v2#env-289",
+   "type": "env",
+   "k": 289,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.289",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 11134
+   },
+   "last": 11138,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-185",
    "type": "proof",
-   "k": 171,
+   "k": 185,
    "env": "head",
    "title": "Proof",
    "item": "proof",
@@ -6069,9 +8715,26 @@
    "confidence": "high"
   },
   {
-   "id": "math/0406514v2#proof-172",
+   "id": "math/0406514v2#env-290",
+   "type": "env",
+   "k": 290,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "0.290",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 11145
+   },
+   "last": 11165,
+   "result": "matched"
+  },
+  {
+   "id": "math/0406514v2#proof-186",
    "type": "proof",
-   "k": 172,
+   "k": 186,
    "env": "head",
    "title": "Proof",
    "item": "proof",

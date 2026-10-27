@@ -1,0 +1,811 @@
+{
+ "paper": "2403.16388",
+ "version": 5,
+ "extractor": "ax/v0.5.19",
+ "main": [
+  "MFPS.tex"
+ ],
+ "class": "entics",
+ "packages": [
+  "enticsmacro",
+  "stmaryrd",
+  "mathtools",
+  "amsmath",
+  "cleveref",
+  "quiver",
+  "xstring"
+ ],
+ "steps": [
+  "unpack: 5 files",
+  "main: MFPS.tex",
+  "include: 2 files read, 0 not found",
+  "local: 3 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 560 commands, 21 environments",
+  "tree: 118 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hypo",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assum",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "crit",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exmp",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prob",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prin",
+   "title": "Principle",
+   "item": "statement/principle",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "alg",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "alg",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "const",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "const",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "note",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summ",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "summ",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "case",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "shared": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "criterion",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "const",
+   "shared": "const",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "summary",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "summ",
+   "shared": "summ",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proof*",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 21,
+  "head": 1,
+  "label": 9,
+  "textref": 5
+ },
+ "matched": {
+  "env": 21,
+  "head": 1,
+  "label": 9
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 21,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 5,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 20,
+  "proofs": 0,
+  "agree": true,
+  "source_theorems": 21,
+  "source_proofs": 0
+ },
+ "outside": {
+  "theoremgraph": 15,
+  "theoremsearch": 1
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2403.16388v5#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Notation",
+   "item": "definition/notation",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 109
+   },
+   "last": 111,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2403.16388v5#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "def:fiber"
+   ],
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 167
+   },
+   "last": 169,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "def:cart-arr"
+   ],
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 174
+   },
+   "last": 191,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 193
+   },
+   "last": 221,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 226
+   },
+   "last": 243,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "ex:fibs",
+    "eq:fam"
+   ],
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 249
+   },
+   "last": 321,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 323
+   },
+   "last": 330,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "eq:carversq"
+   ],
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 347
+   },
+   "last": 373,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "const",
+   "number": "1",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 375
+   },
+   "last": 412,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "def:lens"
+   ],
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 486
+   },
+   "last": 490,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "def:dc"
+   ],
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 507
+   },
+   "last": 523,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "def:actegories"
+   ],
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 537
+   },
+   "last": 542,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "def:preoptics"
+   ],
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 550
+   },
+   "last": 556,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "3.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 562
+   },
+   "last": 565,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 597
+   },
+   "last": 600,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 654
+   },
+   "last": 660,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 694
+   },
+   "last": 709,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "4.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 713
+   },
+   "last": 715,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "4.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 717
+   },
+   "last": 719,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "4.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 721
+   },
+   "last": 724,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 800
+   },
+   "last": 803,
+   "result": "matched"
+  },
+  {
+   "id": "2403.16388v5#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "4.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "MFPS.tex",
+    "line": 811
+   },
+   "last": 866,
+   "result": "matched"
+  }
+ ]
+}

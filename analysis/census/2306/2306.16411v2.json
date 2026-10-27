@@ -1,7 +1,7 @@
 {
  "paper": "2306.16411",
  "version": 2,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.19",
  "main": [
   "sigma23-103.tex"
  ],
@@ -264,21 +264,24 @@
   {
    "env": "proof",
    "title": "",
-   "item": "unknown",
+   "item": "proof",
    "numbered": false,
+   "proof": true,
    "from": "wrapper",
    "form": "titled",
    "title_arg": true
   }
  ],
  "occurrences": {
-  "env": 15,
+  "env": 10,
   "label": 40,
+  "proof": 5,
   "textref": 39
  },
  "matched": {
-  "env": 15,
-  "label": 40
+  "env": 10,
+  "label": 40,
+  "proof": 5
  },
  "gaps": [],
  "waivers": [],
@@ -298,18 +301,14 @@
  "render": {
   "theorems": 10,
   "proofs": 5,
-  "agree": false
+  "agree": true,
+  "source_theorems": 10,
+  "source_proofs": 5
  },
  "outside": {
   "theoremgraph": 9
  },
- "findings": [
-  {
-   "rule": "D08",
-   "message": "the source has 15 theorem environments and the render has 10"
-  }
- ],
- "strength": "normal",
+ "strength": "strong",
  "items": [
   {
    "id": "2306.16411v2#env-1",
@@ -396,11 +395,12 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-5",
-   "type": "env",
-   "k": 5,
+   "id": "2306.16411v2#proof-1",
+   "type": "proof",
+   "k": 1,
    "env": "proof",
-   "item": "unknown",
+   "title": "Proof of Theorem \\refthm:mainsieved",
+   "item": "proof",
    "labels": [
     "eq:rec1a",
     "eq:rec1b",
@@ -416,9 +416,9 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-6",
+   "id": "2306.16411v2#env-5",
    "type": "env",
-   "k": 6,
+   "k": 5,
    "env": "Example",
    "title": "Example",
    "item": "example",
@@ -438,9 +438,9 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-7",
+   "id": "2306.16411v2#env-6",
    "type": "env",
-   "k": 7,
+   "k": 6,
    "env": "Theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -458,9 +458,9 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-8",
+   "id": "2306.16411v2#env-7",
    "type": "env",
-   "k": 8,
+   "k": 7,
    "env": "Theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -478,9 +478,9 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-9",
+   "id": "2306.16411v2#env-8",
    "type": "env",
-   "k": 9,
+   "k": 8,
    "env": "Lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -498,12 +498,12 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-10",
-   "type": "env",
-   "k": 10,
+   "id": "2306.16411v2#proof-2",
+   "type": "proof",
+   "k": 2,
    "env": "proof",
-   "title": "(",
-   "item": "unknown",
+   "title": "\\proofname",
+   "item": "proof",
    "pos": {
     "file": "sigma23-103.tex",
     "line": 361
@@ -512,9 +512,9 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-11",
+   "id": "2306.16411v2#env-9",
    "type": "env",
-   "k": 11,
+   "k": 9,
    "env": "Lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -533,12 +533,12 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-12",
-   "type": "env",
-   "k": 12,
+   "id": "2306.16411v2#proof-3",
+   "type": "proof",
+   "k": 3,
    "env": "proof",
-   "title": "D",
-   "item": "unknown",
+   "title": "\\proofname",
+   "item": "proof",
    "pos": {
     "file": "sigma23-103.tex",
     "line": 411
@@ -547,11 +547,12 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-13",
-   "type": "env",
-   "k": 13,
+   "id": "2306.16411v2#proof-4",
+   "type": "proof",
+   "k": 4,
    "env": "proof",
-   "item": "unknown",
+   "title": "Proof of Theorem \\refthm:mainsievedaveraging",
+   "item": "proof",
    "labels": [
     "eq:centralequation",
     "eq:centrallemmafirst",
@@ -565,11 +566,12 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-14",
-   "type": "env",
-   "k": 14,
+   "id": "2306.16411v2#proof-5",
+   "type": "proof",
+   "k": 5,
    "env": "proof",
-   "item": "unknown",
+   "title": "Proof of Theorem \\refthm:mainsievedaskeywilson",
+   "item": "proof",
    "labels": [
     "eq:productrulespecial",
     "eq:kappaind",
@@ -596,9 +598,9 @@
    "result": "matched"
   },
   {
-   "id": "2306.16411v2#env-15",
+   "id": "2306.16411v2#env-10",
    "type": "env",
-   "k": 15,
+   "k": 10,
    "env": "Remark",
    "title": "Remark",
    "item": "remark",

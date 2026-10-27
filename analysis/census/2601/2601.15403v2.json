@@ -1,7 +1,7 @@
 {
  "paper": "2601.15403",
  "version": 2,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.19",
  "main": [
   "F_Purity.tex"
  ],
@@ -38,7 +38,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 284 commands, 0 environments",
-  "tree: 424 nodes"
+  "aliases: 266 uses of commands that stand for \\begin or \\end",
+  "tree: 557 nodes"
  ],
  "declarations": [
   {
@@ -170,7 +171,7 @@
   {
    "env": "conc",
    "title": "Conclusion",
-   "item": "unknown",
+   "item": "other/section",
    "numbered": false,
    "from": "paper",
    "form": "newtheorem"
@@ -280,35 +281,37 @@
   }
  ],
  "occurrences": {
-  "env": 16,
-  "label": 22,
-  "proof": 7,
+  "env": 95,
+  "label": 142,
+  "proof": 61,
   "textref": 196
  },
  "matched": {
-  "env": 16,
-  "label": 22,
-  "proof": 7
+  "env": 95,
+  "label": 142,
+  "proof": 61
  },
  "gaps": [],
  "waivers": [],
  "numbers": {
   "from_aux": 0,
-  "from_render": 14,
-  "from_counter": 2,
+  "from_render": 94,
+  "from_counter": 1,
   "from_head": 0,
-  "agree": 7,
+  "agree": 87,
   "disagree": 7,
-  "contiguity_gaps": 5
+  "contiguity_gaps": 1
  },
  "textrefs": {
-  "resolved": 31,
-  "unresolved": 165
+  "resolved": 196,
+  "unresolved": 0
  },
  "render": {
   "theorems": 96,
   "proofs": 61,
-  "agree": false
+  "agree": true,
+  "source_theorems": 95,
+  "source_proofs": 61
  },
  "outside": {
   "theoremgraph": 11
@@ -316,892 +319,43 @@
  "findings": [
   {
    "rule": "D07",
-   "occurrence": "2601.15403v2#env-5",
-   "message": "Lemma 4.2 is the first in its scope of counter thrm"
+   "occurrence": "2601.15403v2#env-34",
+   "message": "Lemma 6.2 is the first in its scope of counter thrm"
   },
   {
    "rule": "D07",
-   "occurrence": "2601.15403v2#env-9",
-   "message": "Lemma 4.7 comes after 4.5 in counter thrm"
+   "occurrence": "2601.15403v2#env-34",
+   "message": "the counter model gives Lemma 6.1 and the second witness gives 6.2"
   },
   {
    "rule": "D07",
-   "occurrence": "2601.15403v2#env-10",
-   "message": "Proposition 4.6 comes after 4.7 in counter thrm"
+   "occurrence": "2601.15403v2#env-35",
+   "message": "the counter model gives Lemma 6.2 and the second witness gives 6.3"
   },
   {
    "rule": "D07",
-   "occurrence": "2601.15403v2#env-15",
-   "message": "Setup 9.9 comes after 9.1 in counter thrm"
+   "occurrence": "2601.15403v2#env-36",
+   "message": "the counter model gives Lemma 6.3 and the second witness gives 6.4"
   },
   {
    "rule": "D07",
-   "occurrence": "2601.15403v2#env-16",
-   "message": "Setup 9.23 comes after 9.9 in counter thrm"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-1",
-   "message": "the text names Definition \\ref{defn:weakly_closed} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-2",
-   "message": "the text names Theorem \\ref{thm:weakly_closed_are_F_pure} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-3",
-   "message": "the text names Theorem \\ref{thm:weakly_closed_are_F_pure} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-6",
-   "message": "the text names Lemma \\ref{lem:F_split_descends_to_induced_subgraph} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-7",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-8",
-   "message": "the text names Theorem \\ref{prop:reduction_matsuda_to_finite_list} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-9",
-   "message": "the text names Proposition \\ref{prop:reduction_matsuda_to_finite_list} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-13",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-19",
-   "message": "the text names Corollary \\ref{cor:unmixed_Konig_type_are_wc} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-20",
-   "message": "the text names Proposition \\ref{prop:wc_preserved_under_completion_deletion} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-21",
-   "message": "the text names Proposition \\ref{prop:min_primes_binomial_edge_ideal} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-22",
-   "message": "the text names Theorem \\ref{thm:fedder_criterion} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-23",
-   "message": "the text names Theorem \\ref{thm:fedder_criterion} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-24",
-   "message": "the text names Lemma \\ref{lem:F_split_descends_to_induced_subgraph} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-25",
-   "message": "the text names Theorem \\ref{thm:fedder_criterion} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-26",
-   "message": "the text names Proposition \\ref{prop:min_primes_binomial_edge_ideal} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-31",
-   "message": "the text names Theorem \\ref{thm_Lucas} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-38",
-   "message": "the text names Theorem \\ref{thm:non_F_purity} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-39",
-   "message": "the text names Theorem \\ref{thm:forbidden_subgraph_AT_free} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-40",
-   "message": "the text names Theorem \\ref{thm:forbidden_subgraph_AT_free} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-41",
-   "message": "the text names Theorem \\ref{thm:forbidden_subgraph_AT_free} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-42",
-   "message": "the text names Theorem \\ref{thm:forbidden_subgraph_AT_free} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-43",
-   "message": "the text names Theorem \\ref{thm:forbidden_subgraph_AT_free} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-44",
-   "message": "the text names Theorem \\ref{thm:non_F_purity} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-45",
-   "message": "the text names Theorem \\ref{thm:forbidden_subgraph_AT_free} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-46",
-   "message": "the text names Lemma \\ref{lem:F_split_descends_to_induced_subgraph} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-49",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-50",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-52",
-   "message": "the text names Theorem \\ref{thm:weakly_closed_are_F_pure} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-53",
-   "message": "the text names Theorem \\ref{thm:closed_graphs} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-54",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-55",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-57",
-   "message": "the text names Theorem \\ref{thm:weakly_closed_are_F_pure} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-59",
-   "message": "the text names Theorem \\ref{thm:weakly_closed_equivalent_co_comparable} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-60",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-61",
-   "message": "the text names Lemma \\ref{lem:F_split_descends_to_induced_subgraph} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-62",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-63",
-   "message": "the text names Theorem \\ref{thm:forbidden_subgraph_AT_free} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-64",
-   "message": "the text names Corollary \\ref{cor:at_triple_implies_non_f_purity} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-65",
-   "message": "the text names Theorem \\ref{thm:Cn_not_F_pure} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-66",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-68",
-   "message": "the text names Proposition \\ref{prop:reduction_matsuda_to_finite_list} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-69",
-   "message": "the text names Corollary \\ref{cor:at_triple_implies_non_f_purity} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-70",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-71",
-   "message": "the text names Theorem \\ref{thm:weakly_closed_equivalent_co_comparable} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-72",
-   "message": "the text names Theorem \\ref{thm:weakly_closed_are_F_pure} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-73",
-   "message": "the text names Theorem \\ref{thrm:colon_minl_prime} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-74",
-   "message": "the text names Lemma \\ref{lem:descent} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-75",
-   "message": "the text names Lemma \\ref{lem:colon_computation_T_empty} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-76",
-   "message": "the text names Lemma \\ref{lem:descent} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-77",
-   "message": "the text names Lemma \\ref{lem:descent} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-78",
-   "message": "the text names Lemma \\ref{lem:descent} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-79",
-   "message": "the text names Lemma \\ref{lem:reduction_of_colon_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-80",
-   "message": "the text names Lemma \\ref{lem:colon_computation_T_empty} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-81",
-   "message": "the text names Lemma \\ref{lem:intersection_ideals} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-82",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-83",
-   "message": "the text names Theorem \\ref{thm:fedder_criterion} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-84",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-85",
-   "message": "the text names Theorem \\ref{thm:Cn_not_F_pure} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-86",
-   "message": "the text names Proposition \\ref{prop:min_primes_binomial_edge_ideal} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-87",
-   "message": "the text names Lemma \\ref{lem:minimal_primes_anti_hole} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-88",
-   "message": "the text names Theorem \\ref{thrm:colon_minl_prime} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-89",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-90",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-91",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-92",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-93",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-94",
-   "message": "the text names Lemma \\ref{lem:r_in_P_div_by_omega_S} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-95",
-   "message": "the text names Lemma \\ref{lem:r_in_P_div_by_omega_S} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-96",
-   "message": "the text names Lemma \\ref{lem:r_in_P_div_by_omega_S} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-97",
-   "message": "the text names Lemma \\ref{lem:anti_hole_bad_terms_char} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-98",
-   "message": "the text names Lemma \\ref{lem:anti_hole_bad_elts_in_pairs} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-99",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-100",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-101",
-   "message": "the text names Proposition \\ref{prop:J_contained_in_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-102",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-103",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-104",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-105",
-   "message": "the text names Lemma \\ref{lem:minimal_primes_anti_hole} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-106",
-   "message": "the text names Proposition \\ref{prop:min_primes_binomial_edge_ideal} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-107",
-   "message": "the text names Theorem \\ref{thrm:colon_minl_prime} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-108",
-   "message": "the text names Theorem \\ref{thrm:colon_minl_prime} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-109",
-   "message": "the text names Theorem \\ref{thrm:colon_minl_prime} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-110",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-111",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-112",
-   "message": "the text names Lemma \\ref{lem:Jn_m_in_Supp_f} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-113",
-   "message": "the text names Lemma \\ref{lem:cycling_via_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-114",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-115",
-   "message": "the text names Lemma \\ref{lem:forbiddn_support_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-116",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-117",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-118",
-   "message": "the text names Lemma \\ref{lem:elements_in_supp_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-119",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-120",
-   "message": "the text names Lemma \\ref{lem:forbiddn_support_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-121",
-   "message": "the text names Lemma \\ref{lem:elements_in_supp_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-122",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-123",
-   "message": "the text names Lemma \\ref{lem:r_in_P_div_by_omega_S} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-124",
-   "message": "the text names Lemma \\ref{lem:supp_Q_div_bin_supp} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-125",
-   "message": "the text names Corollary \\ref{cor:restrictions_supp_r} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-126",
-   "message": "the text names Lemma \\ref{lem:r_in_P_div_by_omega_S} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-127",
-   "message": "the text names Corollary \\ref{cor:Jn_restrictions_elements_in_support_of_colon} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-128",
-   "message": "the text names Lemma \\ref{lem:jn_leftover_elements_not_killed_modulo_ideal} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-129",
-   "message": "the text names Lemma \\ref{lem:jn_leftover_elements_not_killed_modulo_ideal} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-130",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-131",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-132",
-   "message": "the text names Proposition \\ref{prop:Jn_J_contained_in_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-133",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-134",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-135",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-136",
-   "message": "the text names Theorem \\ref{thm:Jn_not_F_pure} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-137",
-   "message": "the text names Lemma \\ref{lem:F_split_descends_to_induced_subgraph} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-138",
-   "message": "the text names Definition \\ref{defn:Jn2} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-139",
-   "message": "the text names Lemma \\ref{lem:Jn_min_primes} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-140",
-   "message": "the text names Theorem \\ref{thrm:colon_minl_prime} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-141",
-   "message": "the text names Theorem \\ref{thrm:colon_minl_prime} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-142",
-   "message": "the text names Theorem \\ref{thrm:colon_minl_prime} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-143",
-   "message": "the text names Lemma \\ref{lem:forbiddn_support_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-144",
-   "message": "the text names Lemma \\ref{lem:forbiddn_support_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-145",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-146",
-   "message": "the text names Lemma \\ref{lem:forbiddn_support_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-147",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-148",
-   "message": "the text names Lemma \\ref{lem:supp_Q_div_bin_supp} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-149",
-   "message": "the text names Lemma \\ref{lem:supp_Q_div_bin_supp} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-150",
-   "message": "the text names Lemma \\ref{lem:forbiddn_support_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-151",
-   "message": "the text names Lemma \\ref{lem:forbiddn_support_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-152",
-   "message": "the text names Lemma \\ref{lem:r_in_P_div_by_omega_S} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-153",
-   "message": "the text names Lemma \\ref{lem:r_in_P_div_by_omega_S} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-154",
-   "message": "the text names Lemma \\ref{lem:supp_Q_div_bin_supp} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-155",
-   "message": "the text names Lemma \\ref{cor:Jn2_restrictions_supp_r} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-156",
-   "message": "the text names Lemma \\ref{lem:r_in_P_div_by_omega_S} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-157",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-158",
-   "message": "the text names Lemma \\ref{lem:supp_Q_div_bin_supp} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-159",
-   "message": "the text names Lemma \\ref{lem:Jn2_restriction_r'_numerator} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-160",
-   "message": "the text names Lemma \\ref{lem:supp_Q_div_bin_supp} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-161",
-   "message": "the text names Corollary \\ref{cor:Jn2_structure_or_r'} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-162",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-163",
-   "message": "the text names Lemma \\ref{lem:r_in_P_div_by_omega_S} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-164",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-165",
-   "message": "the text names Lemma \\ref{lem:supp_Q_div_bin_supp} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-166",
-   "message": "the text names Lemma \\ref{lem:elements_in_supp_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-167",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-168",
-   "message": "the text names Lemma \\ref{lem:Jn2_supp_r_divisibility} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-169",
-   "message": "the text names Lemma \\ref{lem:elements_in_supp_of_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-170",
-   "message": "the text names Lemma \\ref{lem:Jn2_supp_r_divisibility} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-171",
-   "message": "the text names Lemma \\ref{lem:Jn_m_in_Supp_f} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-172",
-   "message": "the text names Lemma \\ref{lem:cycling} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-173",
-   "message": "the text names Lemma \\ref{lem:Jn2_supp_r_divisibility} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-174",
-   "message": "the text names Lemma \\ref{lem:Jn2_supp_r_divisibility} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-175",
-   "message": "the text names Lemma \\ref{lem:Jn2_supp_r_divisibility} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-176",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-177",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-178",
-   "message": "the text names Proposition \\ref{prop:Jn2_J_contained_in_Q} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-179",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-180",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-181",
-   "message": "the text names Proposition \\ref{prop:reduction_step_fedder_computation} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-183",
-   "message": "the text names Theorem \\ref{thm:bei_konig_type} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-185",
-   "message": "the text names Theorem \\ref{thm:fedder_criterion} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-186",
-   "message": "the text names Proposition \\ref{prop:min_primes_binomial_edge_ideal} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-187",
-   "message": "the text names Proposition \\ref{prop:konig_unmixed_bei_F_pure} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-189",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-190",
-   "message": "the text names Theorem \\ref{thm:gallai} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-191",
-   "message": "the text names Corollary \\ref{cor:unmixed_Konig_type_are_wc} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-192",
-   "message": "the text names Theorem \\ref{thm:weakly_closed_are_F_pure} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-193",
-   "message": "the text names Lemma \\ref{lem:F_pure_preserved_vertex_deletion_completion} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2601.15403v2#textref-195",
-   "message": "the text names theorem \\ref{thm:weakly_closed_are_F_pure} and the census has no such item (not-an-item)"
+   "occurrence": "2601.15403v2#env-37",
+   "message": "the counter model gives Lemma 6.4 and the second witness gives 6.5"
   },
   {
    "rule": "D07",
-   "occurrence": "2601.15403v2#env-5",
-   "message": "the counter model gives Lemma 4.1 and the second witness gives 4.2"
+   "occurrence": "2601.15403v2#env-38",
+   "message": "the counter model gives Lemma 6.5 and the second witness gives 6.6"
   },
   {
    "rule": "D07",
-   "occurrence": "2601.15403v2#env-6",
-   "message": "the counter model gives Lemma 4.2 and the second witness gives 4.3"
+   "occurrence": "2601.15403v2#env-39",
+   "message": "the counter model gives Remark 6.6 and the second witness gives 6.7"
   },
   {
    "rule": "D07",
-   "occurrence": "2601.15403v2#env-7",
-   "message": "the counter model gives Lemma 4.3 and the second witness gives 4.4"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2601.15403v2#env-8",
-   "message": "the counter model gives Lemma 4.4 and the second witness gives 4.5"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2601.15403v2#env-9",
-   "message": "the counter model gives Lemma 4.5 and the second witness gives 4.7"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2601.15403v2#env-15",
-   "message": "the counter model gives Setup 9.2 and the second witness gives 9.9"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2601.15403v2#env-16",
-   "message": "the counter model gives Setup 9.3 and the second witness gives 9.23"
-  },
-  {
-   "rule": "D08",
-   "message": "the source has 16 theorem environments and the render has 96"
+   "occurrence": "2601.15403v2#env-40",
+   "message": "the counter model gives Theorem 6.7 and the second witness gives 6.8"
   }
  ],
  "strength": "normal",
@@ -1290,6 +444,234 @@
    "id": "2601.15403v2#env-5",
    "type": "env",
    "k": 5,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thrm",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "defn:F_pure"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 434
+   },
+   "last": 441,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "thm:fedder_criterion"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 445
+   },
+   "last": 452,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thrm",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "defn:f_split"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 455
+   },
+   "last": 458,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thrm",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "prop:min_primes_binomial_edge_ideal",
+    "item:min_primes_3"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 469
+   },
+   "last": 482,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thrm",
+   "number": "2.5",
+   "number_from": "render",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 484
+   },
+   "last": 486,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "lem:reduction_to_Z_mod_2"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 509
+   },
+   "last": 512,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:lem:reduction_to_Z_mod_2_1",
+    "eqn:lem:reduction_to_Z_mod_2_2"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 514
+   },
+   "last": 526,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "lem:F_split_descends_to_induced_subgraph"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 530
+   },
+   "last": 533,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 535
+   },
+   "last": 555,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "lem:F_pure_preserved_vertex_deletion_completion"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 559
+   },
+   "last": 562,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:F_pure_preserved_vertex_deletion_completion_0",
+    "eqn:F_pure_preserved_vertex_deletion_completion_1"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 564
+   },
+   "last": 598,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "thm_Lucas"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 610
+   },
+   "last": 617,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-14",
+   "type": "env",
+   "k": 14,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -1307,9 +689,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#proof-1",
+   "id": "2601.15403v2#proof-4",
    "type": "proof",
-   "k": 1,
+   "k": 4,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1321,9 +703,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-6",
+   "id": "2601.15403v2#env-15",
    "type": "env",
-   "k": 6,
+   "k": 15,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -1341,9 +723,29 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-7",
+   "id": "2601.15403v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:switching_terms_1",
+    "eqn:switching_terms_1.5",
+    "eqn:switching_terms_2",
+    "eqn:switching_terms_3"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 642
+   },
+   "last": 664,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-16",
    "type": "env",
-   "k": 7,
+   "k": 16,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -1361,9 +763,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#proof-2",
+   "id": "2601.15403v2#proof-6",
    "type": "proof",
-   "k": 2,
+   "k": 6,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1375,9 +777,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-8",
+   "id": "2601.15403v2#env-17",
    "type": "env",
-   "k": 8,
+   "k": 17,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -1395,9 +797,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#proof-3",
+   "id": "2601.15403v2#proof-7",
    "type": "proof",
-   "k": 3,
+   "k": 7,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1409,9 +811,29 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-9",
+   "id": "2601.15403v2#env-18",
    "type": "env",
-   "k": 9,
+   "k": 18,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thrm",
+   "number": "4.6",
+   "number_from": "render",
+   "labels": [
+    "defn_minimal_vertex_isolators"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 704
+   },
+   "last": 715,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-19",
+   "type": "env",
+   "k": 19,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -1429,9 +851,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#proof-4",
+   "id": "2601.15403v2#proof-8",
    "type": "proof",
-   "k": 4,
+   "k": 8,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1443,15 +865,15 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-10",
+   "id": "2601.15403v2#env-20",
    "type": "env",
-   "k": 10,
+   "k": 20,
    "env": "prop",
    "title": "Proposition",
    "item": "statement/proposition",
    "counter": "thrm",
-   "number": "4.6",
-   "number_from": "counter",
+   "number": "4.8",
+   "number_from": "render",
    "labels": [
     "prop:reg:sequence"
    ],
@@ -1463,9 +885,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#proof-5",
+   "id": "2601.15403v2#proof-9",
    "type": "proof",
-   "k": 5,
+   "k": 9,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1477,9 +899,29 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#proof-6",
+   "id": "2601.15403v2#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "4.9",
+   "number_from": "render",
+   "labels": [
+    "thm:non_F_purity"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 747
+   },
+   "last": 750,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-10",
    "type": "proof",
-   "k": 6,
+   "k": 10,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1500,15 +942,268 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-11",
+   "id": "2601.15403v2#env-22",
    "type": "env",
-   "k": 11,
+   "k": 22,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thrm",
+   "number": "4.10",
+   "number_from": "render",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 779
+   },
+   "last": 781,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "4.11",
+   "number_from": "render",
+   "labels": [
+    "thm:forbidden_subgraph_AT_free"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 785
+   },
+   "last": 811,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thrm",
+   "number": "4.12",
+   "number_from": "render",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 813
+   },
+   "last": 816,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-25",
+   "type": "env",
+   "k": 25,
    "env": "cor",
    "title": "Corollary",
    "item": "statement/corollary",
    "counter": "thrm",
+   "number": "4.13",
+   "number_from": "render",
+   "labels": [
+    "cor:at_triple_implies_non_f_purity"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2028
+   },
+   "last": 2031,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2033
+   },
+   "last": 2035,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "4.14",
+   "number_from": "render",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2037
+   },
+   "last": 2039,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
    "number": "5.1",
-   "number_from": "counter",
+   "number_from": "render",
+   "labels": [
+    "thm:closed_graphs"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2051
+   },
+   "last": 2060,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thrm",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "defn:weakly_closed"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2064
+   },
+   "last": 2067,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "thm:weakly_closed_are_F_pure"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2069
+   },
+   "last": 2072,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "thm:weakly_closed_equivalent_co_comparable"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2084
+   },
+   "last": 2087,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "5.5",
+   "number_from": "render",
+   "labels": [
+    "thm:gallai"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2092
+   },
+   "last": 2128,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thrm",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "prop:reduction_matsuda_to_finite_list"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2133
+   },
+   "last": 2136,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2138
+   },
+   "last": 2140,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2145
+   },
+   "last": 2149,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "5.7",
+   "number_from": "render",
    "labels": [
     "cor:char_F_pure_bei"
    ],
@@ -1520,9 +1215,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#proof-7",
+   "id": "2601.15403v2#proof-14",
    "type": "proof",
-   "k": 7,
+   "k": 14,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1534,9 +1229,246 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-12",
+   "id": "2601.15403v2#env-34",
    "type": "env",
-   "k": 12,
+   "k": 34,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "6.2",
+   "number_from": "render",
+   "labels": [
+    "lem:descent"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2191
+   },
+   "last": 2209,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:descent_0"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2211
+   },
+   "last": 2222,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "6.3",
+   "number_from": "render",
+   "labels": [
+    "lem:colon_computation_T_empty",
+    "eqn:colon_ideal_of_minl_prime_one_comp_w_graph_0"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2224
+   },
+   "last": 2238,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:colon_ideal_of_minl_prime_one_comp_w_graph_1",
+    "eqn:colon_computation_T_empty_mixed_case_0",
+    "eqn:colon_computation_T_empty_mixed_case",
+    "eqn:colon_computation_T_empty_mixed_case_2",
+    "eqn:colon_computation_T_empty_mixed_case_3",
+    "eqn:colon_computation_T_empty_mixed_case_4"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2240
+   },
+   "last": 2334,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "6.4",
+   "number_from": "render",
+   "labels": [
+    "lem:intersection_ideals"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2336
+   },
+   "last": 2342,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2344
+   },
+   "last": 2350,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "6.5",
+   "number_from": "render",
+   "labels": [
+    "lem:reduction_of_colon_computation"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2352
+   },
+   "last": 2358,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2360
+   },
+   "last": 2362,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "6.6",
+   "number_from": "render",
+   "labels": [
+    "lem:colon_three_binomials",
+    "eqn:colon_three_binomials_1",
+    "eqn:colon_three_binomials_2"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2364
+   },
+   "last": 2376,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2378
+   },
+   "last": 2380,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thrm",
+   "number": "6.7",
+   "number_from": "render",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2382
+   },
+   "last": 2384,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "6.8",
+   "number_from": "render",
+   "labels": [
+    "thrm:colon_minl_prime",
+    "eqn:colon_minl_prime_1",
+    "eqn:colon_minl_prime_2"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2386
+   },
+   "last": 2406,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2408
+   },
+   "last": 2422,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-41",
+   "type": "env",
+   "k": 41,
    "env": "setup",
    "title": "Setup",
    "item": "context/hypothesis",
@@ -1551,9 +1483,267 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-13",
+   "id": "2601.15403v2#env-42",
    "type": "env",
-   "k": 13,
+   "k": 42,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "7.2",
+   "number_from": "render",
+   "labels": [
+    "lem:cycling"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2440
+   },
+   "last": 2450,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:f_in_P_i_i+2",
+    "eqn:new_monomial"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2452
+   },
+   "last": 2473,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "7.3",
+   "number_from": "render",
+   "labels": [
+    "lem:Jn_m_in_Supp_f"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2476
+   },
+   "last": 2487,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:Jn_m_in_Supp_f",
+    "eqn:exp_prod_one",
+    "eqn:exp_prod_two"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2490
+   },
+   "last": 2576,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "7.4",
+   "number_from": "render",
+   "labels": [
+    "lem:cycling_via_Q",
+    "eqn:cycling_via_Q_1"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2578
+   },
+   "last": 2586,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:cycling_via_Q_2"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2588
+   },
+   "last": 2644,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "7.5",
+   "number_from": "render",
+   "labels": [
+    "lem:forbiddn_support_of_Q"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2646
+   },
+   "last": 2666,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2668
+   },
+   "last": 2684,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "7.6",
+   "number_from": "render",
+   "labels": [
+    "lem:elements_in_supp_of_Q"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2686
+   },
+   "last": 2697,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:elements_in_supp_of_Q_1",
+    "eqn:elements_in_supp_of_Q_2"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2699
+   },
+   "last": 2747,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "7.7",
+   "number_from": "render",
+   "labels": [
+    "lem:r_in_P_div_by_omega_S"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2749
+   },
+   "last": 2762,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2764
+   },
+   "last": 2771,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "7.8",
+   "number_from": "render",
+   "labels": [
+    "lem:supp_Q_div_bin_supp"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2773
+   },
+   "last": 2787,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:supp_Q_div_bin_supp_1"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2789
+   },
+   "last": 2798,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-49",
+   "type": "env",
+   "k": 49,
    "env": "setup",
    "title": "Setup",
    "item": "context/hypothesis",
@@ -1571,9 +1761,113 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-14",
+   "id": "2601.15403v2#env-50",
    "type": "env",
-   "k": 14,
+   "k": 50,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "8.2",
+   "number_from": "render",
+   "labels": [
+    "lem:distributivity_intersection_w_sum"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2812
+   },
+   "last": 2818,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2820
+   },
+   "last": 2832,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "8.3",
+   "number_from": "render",
+   "labels": [
+    "lem:reduction_Q_n_to_Q_5"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2835
+   },
+   "last": 2841,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2843
+   },
+   "last": 2861,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thrm",
+   "number": "8.4",
+   "number_from": "render",
+   "labels": [
+    "prop:reduction_step_fedder_computation",
+    "eqn:reduction_step_fedder_computation_assumption_1",
+    "eqn:reduction_step_fedder_computation_assumption_2"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2863
+   },
+   "last": 2876,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2878
+   },
+   "last": 2889,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-53",
+   "type": "env",
+   "k": 53,
    "env": "setup",
    "title": "Setup",
    "item": "context/hypothesis",
@@ -1591,9 +1885,235 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-15",
+   "id": "2601.15403v2#env-54",
    "type": "env",
-   "k": 15,
+   "k": 54,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.2",
+   "number_from": "render",
+   "labels": [
+    "lem:minimal_primes_anti_hole"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2919
+   },
+   "last": 2926,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2928
+   },
+   "last": 2930,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "9.3",
+   "number_from": "render",
+   "labels": [
+    "lem:colon_ideal_of_anti_hole_minl_prime"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2938
+   },
+   "last": 2944,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2946
+   },
+   "last": 2948,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.4",
+   "number_from": "render",
+   "labels": [
+    "lem:anti_hole_bad_elts_in_pairs"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2950
+   },
+   "last": 2958,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:anti_hole_bad_elts_in_pairs_1",
+    "eqn:anti_hole_bad_elts_in_pairs_2",
+    "eqn:anti_hole_bad_elts_in_pairs_3"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2960
+   },
+   "last": 2995,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.5",
+   "number_from": "render",
+   "labels": [
+    "lem:anti_hole_bad_terms_char"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 2997
+   },
+   "last": 3022,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3024
+   },
+   "last": 3032,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thrm",
+   "number": "9.6",
+   "number_from": "render",
+   "labels": [
+    "prop:J_contained_in_Q"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3034
+   },
+   "last": 3040,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3042
+   },
+   "last": 3059,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "9.7",
+   "number_from": "render",
+   "labels": [
+    "thm:Cn_not_F_pure"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3061
+   },
+   "last": 3064,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3066
+   },
+   "last": 3076,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thrm",
+   "number": "9.8",
+   "number_from": "render",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3081
+   },
+   "last": 3087,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-61",
+   "type": "env",
+   "k": 61,
    "env": "setup",
    "title": "Setup",
    "item": "context/hypothesis",
@@ -1611,9 +2131,419 @@
    "result": "matched"
   },
   {
-   "id": "2601.15403v2#env-16",
+   "id": "2601.15403v2#env-62",
    "type": "env",
-   "k": 16,
+   "k": 62,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.10",
+   "number_from": "render",
+   "labels": [
+    "lem:Jn_min_primes"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3169
+   },
+   "last": 3176,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3178
+   },
+   "last": 3184,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.11",
+   "number_from": "render",
+   "labels": [
+    "lem:colon_minimal_primes_Jn"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3186
+   },
+   "last": 3199,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3201
+   },
+   "last": 3203,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "9.12",
+   "number_from": "render",
+   "labels": [
+    "cor:Jn_degree_two_monomial_in_Supp"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3206
+   },
+   "last": 3219,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3221
+   },
+   "last": 3239,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "9.13",
+   "number_from": "render",
+   "labels": [
+    "cor:Jn_cycling_xi_by_yi",
+    "eqn:Jn_cycling_xi_by_yi_1"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3242
+   },
+   "last": 3250,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3252
+   },
+   "last": 3266,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "9.14",
+   "number_from": "render",
+   "labels": [
+    "cor:Jn_restrictions_elements_in_support_of_colon"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3269
+   },
+   "last": 3275,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3277
+   },
+   "last": 3283,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "9.15",
+   "number_from": "render",
+   "labels": [
+    "cor:restrictions_supp_r"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3286
+   },
+   "last": 3292,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-42",
+   "type": "proof",
+   "k": 42,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:elt_in_supp_r",
+    "eqn:elt_in_supp_r_2",
+    "eqn:elt_in_supp_r_3",
+    "eqn:elt_in_supp_r_4"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3294
+   },
+   "last": 3330,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.16",
+   "number_from": "render",
+   "labels": [
+    "lem:jn_leftover_elements_not_killed_modulo_ideal"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3333
+   },
+   "last": 3358,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-43",
+   "type": "proof",
+   "k": 43,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:Jn_r'_divisibility_1"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3360
+   },
+   "last": 3399,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thrm",
+   "number": "9.17",
+   "number_from": "render",
+   "labels": [
+    "prop:Jn_J_contained_in_Q"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3403
+   },
+   "last": 3409,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-44",
+   "type": "proof",
+   "k": 44,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:Jn_reln_1"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3411
+   },
+   "last": 3434,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "9.18",
+   "number_from": "render",
+   "labels": [
+    "thm:Jn_not_F_pure"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3436
+   },
+   "last": 3439,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-45",
+   "type": "proof",
+   "k": 45,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3441
+   },
+   "last": 3447,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thrm",
+   "number": "9.19",
+   "number_from": "render",
+   "labels": [
+    "defn:Jn1"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3452
+   },
+   "last": 3460,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "9.20",
+   "number_from": "render",
+   "labels": [
+    "thm:Jn1_not_F_pure"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3534
+   },
+   "last": 3537,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-46",
+   "type": "proof",
+   "k": 46,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3539
+   },
+   "last": 3541,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thrm",
+   "number": "9.21",
+   "number_from": "render",
+   "labels": [
+    "defn:Jn2"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3546
+   },
+   "last": 3553,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thrm",
+   "number": "9.22",
+   "number_from": "render",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3620
+   },
+   "last": 3622,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-75",
+   "type": "env",
+   "k": 75,
    "env": "setup",
    "title": "Setup",
    "item": "context/hypothesis",
@@ -1628,6 +2558,621 @@
     "line": 3626
    },
    "last": 3646,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.24",
+   "number_from": "render",
+   "labels": [
+    "lem:jn2_min_primes"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3648
+   },
+   "last": 3655,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-47",
+   "type": "proof",
+   "k": 47,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3657
+   },
+   "last": 3659,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.25",
+   "number_from": "render",
+   "labels": [
+    "lem:colon_minl_primes_J_n_2"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3662
+   },
+   "last": 3675,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-48",
+   "type": "proof",
+   "k": 48,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3677
+   },
+   "last": 3679,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-78",
+   "type": "env",
+   "k": 78,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "9.26",
+   "number_from": "render",
+   "labels": [
+    "cor:Jn2_restrictions_supp_r"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3710
+   },
+   "last": 3716,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-49",
+   "type": "proof",
+   "k": 49,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3718
+   },
+   "last": 3733,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-79",
+   "type": "env",
+   "k": 79,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "9.27",
+   "number_from": "render",
+   "labels": [
+    "cor:Jn2_structure_or_r'"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3735
+   },
+   "last": 3742,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-50",
+   "type": "proof",
+   "k": 50,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3744
+   },
+   "last": 3750,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-80",
+   "type": "env",
+   "k": 80,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.28",
+   "number_from": "render",
+   "labels": [
+    "lem:Jn2_restriction_r'"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3752
+   },
+   "last": 3758,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-51",
+   "type": "proof",
+   "k": 51,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3760
+   },
+   "last": 3766,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-81",
+   "type": "env",
+   "k": 81,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.29",
+   "number_from": "render",
+   "labels": [
+    "lem:Jn2_restriction_r'_numerator"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3768
+   },
+   "last": 3774,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-52",
+   "type": "proof",
+   "k": 52,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3776
+   },
+   "last": 3806,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-82",
+   "type": "env",
+   "k": 82,
+   "env": "nota",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "thrm",
+   "number": "9.30",
+   "number_from": "counter",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3808
+   },
+   "last": 3814,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-83",
+   "type": "env",
+   "k": 83,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.31",
+   "number_from": "render",
+   "labels": [
+    "lem:Jn2_supp_r_divisibility"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3816
+   },
+   "last": 3847,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-53",
+   "type": "proof",
+   "k": 53,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:Jn2_supp_r_divisibility_set",
+    "eqn:Jn2_supp_r_divisibility_impossibility",
+    "eqn:Jn2_supp_r_divisibility_d_prime_case_3"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3849
+   },
+   "last": 3929,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-84",
+   "type": "env",
+   "k": 84,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.32",
+   "number_from": "render",
+   "labels": [
+    "lem:Jn2_two_elts_in_supp_r"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3933
+   },
+   "last": 3939,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-54",
+   "type": "proof",
+   "k": 54,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:Jn2_two_elts_in_supp_r_0"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3941
+   },
+   "last": 3981,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-85",
+   "type": "env",
+   "k": 85,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thrm",
+   "number": "9.33",
+   "number_from": "render",
+   "labels": [
+    "lem:Jn2_three_elts_in_supp_r"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3983
+   },
+   "last": 3993,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-55",
+   "type": "proof",
+   "k": 55,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 3995
+   },
+   "last": 4019,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-86",
+   "type": "env",
+   "k": 86,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "9.34",
+   "number_from": "render",
+   "labels": [
+    "cor:Jn2_supp_r_exclusivity"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4021
+   },
+   "last": 4027,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-56",
+   "type": "proof",
+   "k": 56,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4029
+   },
+   "last": 4047,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-87",
+   "type": "env",
+   "k": 87,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thrm",
+   "number": "9.35",
+   "number_from": "render",
+   "labels": [
+    "prop:Jn2_J_contained_in_Q"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4049
+   },
+   "last": 4055,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-57",
+   "type": "proof",
+   "k": 57,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:Jn2_reln_1",
+    "eqn:Jn2_reln_2",
+    "eqn:Jn2_reln_3"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4057
+   },
+   "last": 4090,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-88",
+   "type": "env",
+   "k": 88,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "9.36",
+   "number_from": "render",
+   "labels": [
+    "thm:Jn2_not_F_pure"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4092
+   },
+   "last": 4095,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-58",
+   "type": "proof",
+   "k": 58,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4097
+   },
+   "last": 4103,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-89",
+   "type": "env",
+   "k": 89,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thrm",
+   "number": "10.1",
+   "number_from": "render",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4113
+   },
+   "last": 4117,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-90",
+   "type": "env",
+   "k": 90,
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thrm",
+   "number": "10.2",
+   "number_from": "render",
+   "labels": [
+    "thm:bei_konig_type"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4120
+   },
+   "last": 4126,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-91",
+   "type": "env",
+   "k": 91,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thrm",
+   "number": "10.3",
+   "number_from": "render",
+   "labels": [
+    "prop:konig_unmixed_bei_F_pure"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4130
+   },
+   "last": 4133,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-59",
+   "type": "proof",
+   "k": 59,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4135
+   },
+   "last": 4145,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-92",
+   "type": "env",
+   "k": 92,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thrm",
+   "number": "10.4",
+   "number_from": "render",
+   "labels": [
+    "cor:unmixed_Konig_type_are_wc"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4147
+   },
+   "last": 4150,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-60",
+   "type": "proof",
+   "k": 60,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4152
+   },
+   "last": 4154,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-93",
+   "type": "env",
+   "k": 93,
+   "env": "ques",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thrm",
+   "number": "10.5",
+   "number_from": "render",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4158
+   },
+   "last": 4160,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-94",
+   "type": "env",
+   "k": 94,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thrm",
+   "number": "10.6",
+   "number_from": "render",
+   "labels": [
+    "lem:exact_sequence_binomial_edge_ideal",
+    "eqn:ses_binomial_edge_ideal"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4168
+   },
+   "last": 4176,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#env-95",
+   "type": "env",
+   "k": 95,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thrm",
+   "number": "10.7",
+   "number_from": "render",
+   "labels": [
+    "prop:wc_preserved_under_completion_deletion"
+   ],
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4180
+   },
+   "last": 4183,
+   "result": "matched"
+  },
+  {
+   "id": "2601.15403v2#proof-61",
+   "type": "proof",
+   "k": 61,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "F_Purity.tex",
+    "line": 4185
+   },
+   "last": 4187,
    "result": "matched"
   }
  ]
