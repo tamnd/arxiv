@@ -1,0 +1,1604 @@
+{
+ "paper": "2610.21507",
+ "version": 1,
+ "extractor": "ax/v0.5.24",
+ "main": [
+  "Q_shaped_recollement_revised1014.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amsthm",
+  "amsmath",
+  "amssymb",
+  "amsfonts",
+  "latexsym",
+  "xy",
+  "hyperref",
+  "eucal",
+  "xcolor",
+  "tikz",
+  "wasysym",
+  "mathrsfs"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: Q_shaped_recollement_revised1014.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 43 commands, 5 environments",
+  "tree: 131 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "inttcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "inttcor",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "intque*",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "intexa*",
+   "title": "Example",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "res",
+   "title": "",
+   "item": "unknown",
+   "counter": "res",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "res*",
+   "title": "",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "bfhpg",
+   "title": "",
+   "item": "unknown",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "bfhpg*",
+   "title": "",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prp*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "que",
+   "title": "Question",
+   "item": "problem",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "que*",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "dfn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "dfn*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exa",
+   "title": "Example",
+   "item": "example",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exa*",
+   "title": "Example",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "setup",
+   "title": "Setup",
+   "item": "context/hypothesis",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "setup*",
+   "title": "Setup",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "nota",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "nota*",
+   "title": "Notation",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mexa",
+   "title": "Example",
+   "item": "example",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ipg",
+   "title": "",
+   "item": "unknown",
+   "counter": "res",
+   "shared": "res",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  },
+  {
+   "env": "prf*",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 44,
+  "label": 41,
+  "proof": 27,
+  "textref": 87
+ },
+ "matched": {
+  "env": 44,
+  "label": 41,
+  "proof": 27
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 2,
+  "from_counter": 42,
+  "from_head": 0,
+  "agree": 2,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 87,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 44,
+  "proofs": 27,
+  "agree": true,
+  "source_theorems": 44,
+  "source_proofs": 27
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.21507v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "number": "A",
+   "number_from": "render",
+   "labels": [
+    "intro:recollement",
+    "thm:intro-main"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 366
+   },
+   "last": 388,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "number": "B",
+   "number_from": "render",
+   "labels": [
+    "thm:B"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 419
+   },
+   "last": 456,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "setup",
+   "title": "Setup",
+   "item": "context/hypothesis",
+   "counter": "res",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "setup:standing"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 492
+   },
+   "last": 526,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "bfhpg",
+   "item": "unknown",
+   "counter": "res",
+   "number": "2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 528
+   },
+   "last": 616,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "ipg",
+   "item": "unknown",
+   "counter": "res",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "adjoint triple"
+   ],
+   "parent": "2610.21507v1#env-4",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 543
+   },
+   "last": 566,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "res",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:ext-adjunction"
+   ],
+   "parent": "2610.21507v1#env-4",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 577
+   },
+   "last": 586,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "bfhpg",
+   "item": "unknown",
+   "counter": "res",
+   "number": "2.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 618
+   },
+   "last": 694,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "bfhpg",
+   "item": "unknown",
+   "counter": "res",
+   "number": "2.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 696
+   },
+   "last": 771,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "dfn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "res",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "dfn:cotorsion"
+   ],
+   "parent": "2610.21507v1#env-8",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 703
+   },
+   "last": 747,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "dfn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "res",
+   "number": "2.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 779
+   },
+   "last": 806,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "prp:contractible"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 849
+   },
+   "last": 882,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 884
+   },
+   "last": 978,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "dfn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "res",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "dfn:contractible-Q-module"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 980
+   },
+   "last": 983,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "res",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "rmk:contractible-complexes"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 985
+   },
+   "last": 1007,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "res",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "cor:contractible-stable-zero"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1009
+   },
+   "last": 1024,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1026
+   },
+   "last": 1046,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "res",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:canonical-I"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1058
+   },
+   "last": 1062,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1064
+   },
+   "last": 1101,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "prp:I-Frobenius"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1103
+   },
+   "last": 1111,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1113
+   },
+   "last": 1157,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "res",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:factor-ideal"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1159
+   },
+   "last": 1161,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1162
+   },
+   "last": 1175,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "prp:stable-I"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1177
+   },
+   "last": 1185,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1187
+   },
+   "last": 1193,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "res",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "lem:Ext-comparison"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1195
+   },
+   "last": 1202,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1204
+   },
+   "last": 1222,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "3.10",
+   "number_from": "counter",
+   "labels": [
+    "prp:right-adjoint"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1234
+   },
+   "last": 1243,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1244
+   },
+   "last": 1266,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "dfn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "res",
+   "number": "3.11",
+   "number_from": "counter",
+   "labels": [
+    "dfn:acyclic-I"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1268
+   },
+   "last": 1277,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "3.12",
+   "number_from": "counter",
+   "labels": [
+    "prp:EI-Frobenius"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1282
+   },
+   "last": 1293,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1295
+   },
+   "last": 1325,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "3.13",
+   "number_from": "counter",
+   "labels": [
+    "prp:right-orthogonal"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1344
+   },
+   "last": 1351,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1353
+   },
+   "last": 1375,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "3.14",
+   "number_from": "counter",
+   "labels": [
+    "prp:two-cotorsion"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1395
+   },
+   "last": 1408,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1410
+   },
+   "last": 1463,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "3.15",
+   "number_from": "counter",
+   "labels": [
+    "prp:restricted-cotorsion"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1495
+   },
+   "last": 1499,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1501
+   },
+   "last": 1559,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "dfn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "res",
+   "number": "3.16",
+   "number_from": "counter",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1561
+   },
+   "last": 1570,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "res",
+   "number": "3.17",
+   "number_from": "counter",
+   "labels": [
+    "cor:bousfield-pair"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1573
+   },
+   "last": 1577,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1579
+   },
+   "last": 1586,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "res",
+   "number": "3.18",
+   "number_from": "counter",
+   "labels": [
+    "thm:left-equivalence"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1588
+   },
+   "last": 1594,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1595
+   },
+   "last": 1617,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "3.19",
+   "number_from": "counter",
+   "labels": [
+    "prp:left-adjoint"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1624
+   },
+   "last": 1631,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1632
+   },
+   "last": 1648,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "res",
+   "number": "3.20",
+   "number_from": "counter",
+   "labels": [
+    "thm:recollement"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1655
+   },
+   "last": 1666,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1667
+   },
+   "last": 1670,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "dfn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "res",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "dfn:compact-object"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1681
+   },
+   "last": 1693,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "dfn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "res",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "dfn:compact-generation"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1695
+   },
+   "last": 1725,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "res",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:locally-noetherian"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1738
+   },
+   "last": 1755,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1757
+   },
+   "last": 1803,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "res",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:coproducts-T"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1805
+   },
+   "last": 1807,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1808
+   },
+   "last": 1816,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "prp:Hom-Ext-rho"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1828
+   },
+   "last": 1834,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "prp:Hom-Ext-rho.se1"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1835
+   },
+   "last": 1860,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "res",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "thm:compact-I"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1863
+   },
+   "last": 1876,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1878
+   },
+   "last": 1916,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "res",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:radical-filtration"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1936
+   },
+   "last": 1940,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1941
+   },
+   "last": 1987,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "res",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "thm:stalk-generators"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 1989
+   },
+   "last": 2006,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2008
+   },
+   "last": 2059,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "res",
+   "number": "4.9",
+   "number_from": "counter",
+   "labels": [
+    "thm:compact-acyclic"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2064
+   },
+   "last": 2072,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2073
+   },
+   "last": 2090,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "4.10",
+   "number_from": "counter",
+   "labels": [
+    "prp:sigma-preenvelope"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2102
+   },
+   "last": 2118,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2120
+   },
+   "last": 2161,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "4.11",
+   "number_from": "counter",
+   "labels": [
+    "prp:rho-L"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2166
+   },
+   "last": 2180,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2182
+   },
+   "last": 2227,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "res",
+   "number": "4.12",
+   "number_from": "counter",
+   "labels": [
+    "thm:compact-quotient"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2230
+   },
+   "last": 2253,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2255
+   },
+   "last": 2323,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "prp",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "res",
+   "number": "4.13",
+   "number_from": "counter",
+   "labels": [
+    "prp:finite-gldim"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2331
+   },
+   "last": 2338,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2339
+   },
+   "last": 2349,
+   "result": "matched"
+  },
+  {
+   "id": "2610.21507v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "exa",
+   "title": "Example",
+   "item": "example",
+   "counter": "res",
+   "number": "4.14",
+   "number_from": "counter",
+   "labels": [
+    "exa:ordinary"
+   ],
+   "pos": {
+    "file": "Q_shaped_recollement_revised1014.tex",
+    "line": 2352
+   },
+   "last": 2515,
+   "result": "matched"
+  }
+ ]
+}
