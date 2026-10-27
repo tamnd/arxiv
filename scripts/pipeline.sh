@@ -5,13 +5,15 @@
 #
 # The server needs git, Go, gh and flock, and an SSH key that can push to both repositories. The file $AX_PIPELINE/github.env must set GH_TOKEN for gh. Keep it at mode 600.
 #
-# The papers come from the list $AX_LIST first (gold set X). When the list has no paper left to do, they come from the scope $AX_SCOPE in the order of AX2.6. Each run does at most $AX_LIMIT papers. Only one run can go at a time, and the pipeline must be the only process that fetches from arXiv.
+# Each run does at most $AX_REDO_LIMIT papers of the redo list, and then at most $AX_LIMIT new papers. The new papers come from the list $AX_LIST first (gold set X). When the list has fewer papers left, the scope $AX_SCOPE gives the rest in the order of AX2.6. Only one run can go at a time, and the pipeline must be the only process that fetches from arXiv.
 #
 # A run merges its pull request only when the checks pass and the branch rebases on main with no conflict. Otherwise it leaves the pull request open, writes the reason to $AX_PIPELINE/blocked, and the later runs do nothing until a person removes that file.
 set -eu
 
 dir=${AX_PIPELINE:-$HOME/arxiv-pipeline}
 limit=${AX_LIMIT:-100}
+# The papers of the redo list that one run does before the new papers.
+redolimit=${AX_REDO_LIMIT:-25}
 pace=${AX_PACE:-15s}
 list=${AX_LIST:-manifests/gold/x-v1.txt}
 scope=${AX_SCOPE:-math}
@@ -152,32 +154,41 @@ if [ "$free" -lt "$reserve" ]; then
 	block "the disk has $free MB free, and a run needs $reserve MB"
 fi
 
-# The batch: the list first, then the scope.
+# The batches: the redo list, then the new papers of the list and of the scope.
 export ARXIV_CORPUS="$dir/arxiv"
 cd "$dir/arxiv"
 out="$dir/run/batch-$stamp.out"
-# The papers to do again after a fix to ax come first. They are in $dir/redo.txt, one id at the start of each line. A run takes the first $limit of them and keeps their sources in work/, so that a finding can be traced. It removes them from the file when the batch ends with no error.
+# The papers to do again after a fix to ax come first. They are in $dir/redo.txt, one id at the start of each line. A run takes the first $redolimit of them and keeps their sources in work/, so that a finding can be traced. It removes them from the file when the batch ends with no error. The batches run one after the other, so only one process fetches at a time.
+# count gives the number of papers of a batch output with a state, as extracted.
+count() { grep -Ec "^[0-9]+/[0-9]+ [^ ]+ $2" "$1" || true; }
 redo="$dir/redo.txt"
+done=0 stopped=0 from=""
 if [ -s "$redo" ]; then
-	head -n "$limit" "$redo" >"$dir/run/redo-$stamp.txt"
+	head -n "$redolimit" "$redo" >"$dir/run/redo-$stamp.txt"
 	n=$(wc -l <"$dir/run/redo-$stamp.txt")
-	if ax census batch -redo -accept -keep -list "$dir/run/redo-$stamp.txt" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err"; then
+	if ax census batch -redo -accept -keep -list "$dir/run/redo-$stamp.txt" -pace "$pace" >"$out.redo" 2>"$dir/run/batch-$stamp.err.redo"; then
 		sed -i "1,${n}d" "$redo"
 	else
 		log "the batch of the redo list exited with $?"
 	fi
-	from="the redo list"
-else
-	ax census batch -list "$list" -limit "$limit" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err" || log "the batch of the list exited with $?"
-	from="the list $list"
-	if ! grep -Eq '^[0-9]+/[0-9]+ [^ ]+ (extracted|stopped)' "$out"; then
-		ax census batch -scope "$scope" -limit "$limit" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err" || log "the batch of the scope exited with $?"
-		from="the scope $scope"
-	fi
+	r=$(count "$out.redo" extracted)
+	s=$(count "$out.redo" stopped)
+	log "the batch of the redo list: $r extracted, $s stopped"
+	done=$((done + r)) stopped=$((stopped + s)) from="the redo list, "
 fi
-done=$(grep -Ec '^[0-9]+/[0-9]+ [^ ]+ extracted' "$out" || true)
-stopped=$(grep -Ec '^[0-9]+/[0-9]+ [^ ]+ stopped' "$out" || true)
-log "the batch of $from: $done extracted, $stopped stopped"
+# The new papers. The list gives at most $limit of them, and the scope gives the rest.
+ax census batch -list "$list" -limit "$limit" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err" || log "the batch of the list exited with $?"
+r=$(count "$out" extracted)
+s=$(count "$out" stopped)
+log "the batch of the list $list: $r extracted, $s stopped"
+done=$((done + r)) stopped=$((stopped + s)) from="${from}the list $list"
+if [ $((r + s)) -lt "$limit" ]; then
+	ax census batch -scope "$scope" -limit $((limit - r - s)) -pace "$pace" >"$out.scope" 2>"$dir/run/batch-$stamp.err.scope" || log "the batch of the scope exited with $?"
+	r=$(count "$out.scope" extracted)
+	s=$(count "$out.scope" stopped)
+	log "the batch of the scope $scope: $r extracted, $s stopped"
+	done=$((done + r)) stopped=$((stopped + s)) from="$from and the scope $scope"
+fi
 
 # The tags, the reports and the audits, as the CI of tamnd/arxiv runs them.
 ax tags analysis -all >"$dir/run/tags-$stamp.out" 2>&1 || log "ax tags analysis exited with $?"
