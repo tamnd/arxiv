@@ -1,7 +1,7 @@
 {
  "paper": "2604.02249",
  "version": 2,
- "extractor": "ax/v0.5.19",
+ "extractor": "ax/v0.5.26",
  "main": [
   "root.tex"
  ],
@@ -100,15 +100,25 @@
    "numbered": true,
    "from": "paper",
    "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
   }
  ],
  "occurrences": {
   "env": 2,
-  "label": 3
+  "label": 16,
+  "proof": 2
  },
  "matched": {
   "env": 2,
-  "label": 3
+  "label": 16,
+  "proof": 2
  },
  "gaps": [],
  "waivers": [],
@@ -128,9 +138,9 @@
  "render": {
   "theorems": 2,
   "proofs": 2,
-  "agree": false,
+  "agree": true,
   "source_theorems": 2,
-  "source_proofs": 0
+  "source_proofs": 2
  },
  "findings": [
   {
@@ -167,6 +177,31 @@
    "result": "matched"
   },
   {
+   "id": "2604.02249v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:xi2",
+    "eq:xi1",
+    "eq:xi2_dot",
+    "eq:inserted_ansatz",
+    "eq:opt_inserted_ansatz",
+    "eq:r_arc",
+    "eq:r_solution_ansatz",
+    "eq:e_dot",
+    "eq:r_inserted"
+   ],
+   "pos": {
+    "file": "root.tex",
+    "line": 255
+   },
+   "last": 323,
+   "result": "matched"
+  },
+  {
    "id": "2604.02249v2#env-2",
    "type": "env",
    "k": 2,
@@ -185,6 +220,26 @@
     "line": 325
    },
    "last": 365,
+   "result": "matched"
+  },
+  {
+   "id": "2604.02249v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:consistency_condition_order2_simp",
+    "eq:sationary_condition_order1_simp",
+    "eq:xi2_ddot_off_manifold",
+    "fig:f2_h2"
+   ],
+   "pos": {
+    "file": "root.tex",
+    "line": 398
+   },
+   "last": 486,
    "result": "matched"
   }
  ]

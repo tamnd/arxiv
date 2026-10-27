@@ -1,0 +1,604 @@
+{
+ "paper": "2610.20798",
+ "version": 1,
+ "extractor": "ax/v0.5.26",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "geometry",
+  "amsmath",
+  "amssymb",
+  "amsthm",
+  "mathtools",
+  "bm",
+  "graphicx",
+  "xcolor",
+  "enumitem",
+  "natbib",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 10 commands, 0 environments",
+  "tree: 206 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 14,
+  "label": 67,
+  "proof": 5,
+  "textref": 60
+ },
+ "matched": {
+  "env": 14,
+  "label": 67,
+  "proof": 5
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 14,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 10,
+  "disagree": 4,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 60,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 14,
+  "proofs": 5,
+  "agree": true,
+  "source_theorems": 14,
+  "source_proofs": 5
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2610.20798v1#env-5",
+   "message": "the counter model gives Remark 2.1 and the second witness gives 1"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.20798v1#env-7",
+   "message": "the counter model gives Lemma 3.1 and the second witness gives 1"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.20798v1#env-8",
+   "message": "the counter model gives Lemma 3.2 and the second witness gives 2"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.20798v1#env-9",
+   "message": "the counter model gives Lemma 3.3 and the second witness gives 3"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.20798v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "prop: FP existence and uniqueness"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 218
+   },
+   "last": 221,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "example: LS",
+    "eq: least square fixed point"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 229
+   },
+   "last": 237,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "thm: dist convergence of huber mean",
+    "eq: transformed coordinates",
+    "eq: asymptotic risk Huber estimator"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 250
+   },
+   "last": 260,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "cor: asymptotic characterization",
+    "eq: asymptotic risk convergence"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 263
+   },
+   "last": 268,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 289
+   },
+   "last": 291,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "prop: state evolution of beta0",
+    "eq: main theorem  result equation"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 580
+   },
+   "last": 587,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "lemma: AMP FP to Huber"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 643
+   },
+   "last": 645,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "lem: vanishing increments",
+    "eq: increment vanish beta",
+    "eq: increment vanish residual"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 685
+   },
+   "last": 697,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "lem: mse convergence Huber and AMP at stationarity",
+    "eq: mse convergence Huber and AMP at stationarity"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 729
+   },
+   "last": 735,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "def: wasserstein distance"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 853
+   },
+   "last": 863,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "A.2",
+   "number_from": "render",
+   "labels": [
+    "def: wasserstein",
+    "eq: polynomial growth"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 867
+   },
+   "last": 879,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "lem: wasserstein convergence of matrix AMP",
+    "eq: wasserstein convergence 1",
+    "eq: wasserstein convergence 2",
+    "eq: GB_covariance",
+    "eq: Gtheta_covariance"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 883
+   },
+   "last": 899,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "rem: det_vs_empirical"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 901
+   },
+   "last": 903,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "A.2",
+   "number_from": "render",
+   "labels": [
+    "lem: inliers near AMP iterate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 906
+   },
+   "last": 910,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: FP equation b",
+    "eq:f1_def",
+    "eq:f2_def",
+    "eq:f2_T_def",
+    "eq:Tvar_decomp",
+    "eq:cond_second_mom_decomp",
+    "eq:var_poincare_bound",
+    "eq:second_mom_T_bound",
+    "eq:f2_bound",
+    "eq:b1_bound",
+    "eq:LB_tail_prob",
+    "eq:UB_tail_prob",
+    "eq: T choice"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 919
+   },
+   "last": 1013,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: proximal estimating equations",
+    "eq: X orthogonal to residual",
+    "eq: proximal at stationarity"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1019
+   },
+   "last": 1046,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: beta three term split",
+    "eq: R three term split",
+    "eq: betak norm",
+    "eq: thetak norm",
+    "eq: Bk_Bk1",
+    "eq: Zk_Zk1",
+    "eq: GB_k_k1",
+    "eq: Hdef",
+    "eq: hat check exp",
+    "eq: hat check coeffs",
+    "eq: mcH def",
+    "eq: Hq supporting line ineq"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1049
+   },
+   "last": 1207,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: prop proof R1 1",
+    "eq: prop proof proximal expansion",
+    "eq: inlier residual expression 1",
+    "eq: inlier indicator inequality",
+    "eq: inliear second term vanish"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1212
+   },
+   "last": 1269,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.20798v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: gradient definition",
+    "eq: prop proof proximal equivalence",
+    "eq: prop proof R1 2",
+    "eq: gradient control no psi",
+    "eq: lemma 3 gradient as to 0",
+    "eq: lemma 3 local gradient bound",
+    "eq: gradient inequality",
+    "eq: gradient at boundary"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1277
+   },
+   "last": 1384,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

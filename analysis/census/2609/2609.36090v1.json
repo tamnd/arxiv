@@ -1,7 +1,7 @@
 {
  "paper": "2609.36090",
  "version": 1,
- "extractor": "ax/v0.5.19",
+ "extractor": "ax/v0.5.26",
  "main": [
   "main.tex"
  ],
@@ -39,6 +39,7 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 482 commands, 3 environments",
+  "aliases: 1 uses of commands that stand for \\begin or \\end",
   "tree: 152 nodes"
  ],
  "declarations": [
@@ -291,16 +292,26 @@
    "numbered": true,
    "from": "paper",
    "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
   }
  ],
  "occurrences": {
   "env": 20,
   "label": 18,
+  "proof": 4,
   "textref": 29
  },
  "matched": {
   "env": 20,
-  "label": 18
+  "label": 18,
+  "proof": 4
  },
  "gaps": [],
  "waivers": [],
@@ -320,9 +331,9 @@
  "render": {
   "theorems": 20,
   "proofs": 4,
-  "agree": false,
+  "agree": true,
   "source_theorems": 20,
-  "source_proofs": 0
+  "source_proofs": 4
  },
  "findings": [
   {
@@ -564,6 +575,20 @@
    "result": "matched"
   },
   {
+   "id": "2609.36090v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 541
+   },
+   "last": 552,
+   "result": "matched"
+  },
+  {
    "id": "2609.36090v1#env-7",
    "type": "env",
    "k": 7,
@@ -624,6 +649,20 @@
    "result": "matched"
   },
   {
+   "id": "2609.36090v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 578
+   },
+   "last": 583,
+   "result": "matched"
+  },
+  {
    "id": "2609.36090v1#env-10",
    "type": "env",
    "k": 10,
@@ -661,6 +700,20 @@
     "line": 657
    },
    "last": 662,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36090v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 663
+   },
+   "last": 671,
    "result": "matched"
   },
   {
@@ -837,6 +890,23 @@
     "line": 1403
    },
    "last": 1409,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.36090v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1410
+   },
+   "last": 1413,
    "flags": [
     "appendix"
    ],

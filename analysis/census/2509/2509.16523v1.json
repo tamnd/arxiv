@@ -1,7 +1,7 @@
 {
  "paper": "2509.16523",
  "version": 1,
- "extractor": "ax/v0.5.19",
+ "extractor": "ax/v0.5.26",
  "main": [
   "generating_sets.tex"
  ],
@@ -132,16 +132,26 @@
    "numbered": true,
    "from": "local:style.sty",
    "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
   }
  ],
  "occurrences": {
   "env": 9,
-  "label": 4,
+  "label": 5,
+  "proof": 5,
   "textref": 1
  },
  "matched": {
   "env": 9,
-  "label": 4
+  "label": 5,
+  "proof": 5
  },
  "gaps": [],
  "waivers": [],
@@ -161,37 +171,15 @@
  "render": {
   "theorems": 9,
   "proofs": 5,
-  "agree": false,
+  "agree": true,
   "source_theorems": 9,
-  "source_proofs": 0,
-  "envs": [
-   {
-    "env": "conjecture",
-    "source": 1,
-    "render": 2
-   },
-   {
-    "env": "conjecture*",
-    "source": 1,
-    "render": 0
-   },
-   {
-    "env": "proposition",
-    "source": 2,
-    "render": 3
-   },
-   {
-    "env": "proposition*",
-    "source": 1,
-    "render": 0
-   }
-  ]
+  "source_proofs": 5
  },
  "outside": {
   "theoremgraph": 9,
   "theoremsearch": 4
  },
- "strength": "normal",
+ "strength": "strong",
  "items": [
   {
    "id": "2509.16523v1#env-1",
@@ -274,6 +262,34 @@
    "result": "matched"
   },
   {
+   "id": "2509.16523v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "generating_sets.tex",
+    "line": 36
+   },
+   "last": 44,
+   "result": "matched"
+  },
+  {
+   "id": "2509.16523v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "generating_sets.tex",
+    "line": 47
+   },
+   "last": 74,
+   "result": "matched"
+  },
+  {
    "id": "2509.16523v1#env-5",
    "type": "env",
    "k": 5,
@@ -285,6 +301,23 @@
     "line": 77
    },
    "last": 79,
+   "result": "matched"
+  },
+  {
+   "id": "2509.16523v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:irreducible-bound"
+   ],
+   "pos": {
+    "file": "generating_sets.tex",
+    "line": 94
+   },
+   "last": 111,
    "result": "matched"
   },
   {
@@ -336,6 +369,20 @@
    "result": "matched"
   },
   {
+   "id": "2509.16523v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "generating_sets.tex",
+    "line": 163
+   },
+   "last": 185,
+   "result": "matched"
+  },
+  {
    "id": "2509.16523v1#env-9",
    "type": "env",
    "k": 9,
@@ -350,6 +397,20 @@
     "line": 191
    },
    "last": 194,
+   "result": "matched"
+  },
+  {
+   "id": "2509.16523v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "generating_sets.tex",
+    "line": 196
+   },
+   "last": 217,
    "result": "matched"
   }
  ]

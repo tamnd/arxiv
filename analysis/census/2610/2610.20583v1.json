@@ -1,0 +1,863 @@
+{
+ "paper": "2610.20583",
+ "version": 1,
+ "extractor": "ax/v0.5.26",
+ "main": [
+  "Ising.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "amsfonts",
+  "amsthm",
+  "amsmath",
+  "amssymb",
+  "amscd",
+  "mathrsfs",
+  "eucal",
+  "graphicx",
+  "epstopdf",
+  "pict2e",
+  "epic",
+  "xcolor",
+  "float",
+  "mathtools",
+  "centernot",
+  "bbm",
+  "cite",
+  "hyperref",
+  "inputenc",
+  "fontenc",
+  "lmodern",
+  "dsfont",
+  "indentfirst",
+  "geometry"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: Ising.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 18 commands, 0 environments",
+  "tree: 113 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "Thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Thm",
+   "shared": "Thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Thm",
+   "shared": "Thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Thm",
+   "shared": "Thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Question",
+   "title": "Open problem",
+   "item": "problem",
+   "counter": "Question",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Thm",
+   "shared": "Thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Qu",
+   "title": "Question",
+   "item": "problem",
+   "counter": "Thm",
+   "shared": "Thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Thm",
+   "shared": "Thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Pb",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "Thm",
+   "shared": "Thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "Thm",
+   "shared": "Thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Not",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "Thm",
+   "shared": "Thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Acknowledgements",
+   "title": "Acknowledgements",
+   "item": "other/section",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Notationsandconventions",
+   "title": "Notations",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 25,
+  "label": 46,
+  "proof": 8,
+  "textref": 49
+ },
+ "matched": {
+  "env": 25,
+  "label": 46,
+  "proof": 8
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 25,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 25,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 49,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 25,
+  "proofs": 8,
+  "agree": true,
+  "source_theorems": 25,
+  "source_proofs": 8
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.20583v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "Thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Thm",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "thm:unique_currents",
+    "eq:unique_currents"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 180
+   },
+   "last": 185,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Thm",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "rem:2D local uniqueness"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 189
+   },
+   "last": 192,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "Coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Thm",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "coro: truncated",
+    "eq:truncated",
+    "eq:truncated_pt_to_pt"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 220
+   },
+   "last": 232,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Thm",
+   "number": "1.4",
+   "number_from": "render",
+   "labels": [
+    "rem: free even mixing"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 234
+   },
+   "last": 236,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "Coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Thm",
+   "number": "1.5",
+   "number_from": "render",
+   "labels": [
+    "cor: ising mixing"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 238
+   },
+   "last": 243,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Thm",
+   "number": "1.6",
+   "number_from": "render",
+   "pos": {
+    "file": "Ising.tex",
+    "line": 245
+   },
+   "last": 247,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "Coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Thm",
+   "number": "1.7",
+   "number_from": "render",
+   "labels": [
+    "cor: perco ratio mixing",
+    "eq:ratio-mixing-currents",
+    "eq:ratio-mixing-FK"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 253
+   },
+   "last": 262,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Thm",
+   "number": "1.8",
+   "number_from": "render",
+   "pos": {
+    "file": "Ising.tex",
+    "line": 264
+   },
+   "last": 266,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Thm",
+   "number": "1.9",
+   "number_from": "render",
+   "pos": {
+    "file": "Ising.tex",
+    "line": 268
+   },
+   "last": 270,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Thm",
+   "number": "1.10",
+   "number_from": "render",
+   "pos": {
+    "file": "Ising.tex",
+    "line": 273
+   },
+   "last": 275,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Thm",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "prop: Griffiths"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 308
+   },
+   "last": 313,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Thm",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "prop:consequencegriffiths",
+    "eq:monot Griffiths"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 315
+   },
+   "last": 319,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Thm",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "prop:FKG"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 323
+   },
+   "last": 328,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Thm",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "prop: lebowitz"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 332
+   },
+   "last": 338,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Thm",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "rem:twist of lebowitz"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 339
+   },
+   "last": 340,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "Coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Thm",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "cor: ES correlations",
+    "eq: es cor: 3",
+    "eq: edwards-sokal-genA"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 374
+   },
+   "last": 387,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Thm",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "prop: supercritical sharpness FK-Ising"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 390
+   },
+   "last": 396,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Thm",
+   "number": "2.8",
+   "number_from": "render",
+   "labels": [
+    "rem: connectivity fk"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 398
+   },
+   "last": 402,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "Lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Thm",
+   "number": "2.9",
+   "number_from": "render",
+   "labels": [
+    "lem:switching"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 418
+   },
+   "last": 423,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "Coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Thm",
+   "number": "2.10",
+   "number_from": "render",
+   "labels": [
+    "coro:expression truncated switching"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 430
+   },
+   "last": 434,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Thm",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "prop:coupling"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 458
+   },
+   "last": 460,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Thm",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "prop:uniform connectivity"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 464
+   },
+   "last": 469,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Thm",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "prop:uniqueness with sprinkling"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 479
+   },
+   "last": 484,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Ising.tex",
+    "line": 489
+   },
+   "last": 502,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:currents equality",
+    "eq: p_1\u003ep_2"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 511
+   },
+   "last": 562,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Thm",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "prop:connectivity_old"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 570
+   },
+   "last": 574,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "Lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Thm",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "lem:weak weak mix",
+    "eq:wwmixing"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 583
+   },
+   "last": 586,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:collapsed_dc1",
+    "eq:k",
+    "eq:kk"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 595
+   },
+   "last": 636,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:current monotonicity",
+    "eq:prob cluster"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 640
+   },
+   "last": 671,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:uniqueness with sprinkling"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 681
+   },
+   "last": 692,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:truncated proof",
+    "eq:truncated_proof",
+    "eq: Lebowitz",
+    "eq: target",
+    "eq:last equ proof trunc"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 697
+   },
+   "last": 755,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: increasing"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 761
+   },
+   "last": 783,
+   "result": "matched"
+  },
+  {
+   "id": "2610.20583v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:mix_current_1",
+    "eq:mix_current_2"
+   ],
+   "pos": {
+    "file": "Ising.tex",
+    "line": 787
+   },
+   "last": 813,
+   "result": "matched"
+  }
+ ]
+}

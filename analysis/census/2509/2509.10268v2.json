@@ -1,7 +1,7 @@
 {
  "paper": "2509.10268",
  "version": 2,
- "extractor": "ax/v0.5.19",
+ "extractor": "ax/v0.5.26",
  "main": [
   "arXiv.tex"
  ],
@@ -110,16 +110,26 @@
    "numbered": true,
    "from": "local:mycommands.sty",
    "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
   }
  ],
  "occurrences": {
   "env": 42,
-  "label": 36,
-  "textref": 67
+  "label": 39,
+  "proof": 14,
+  "textref": 65
  },
  "matched": {
   "env": 42,
-  "label": 36
+  "label": 39,
+  "proof": 14
  },
  "gaps": [],
  "waivers": [],
@@ -133,15 +143,15 @@
   "contiguity_gaps": 0
  },
  "textrefs": {
-  "resolved": 65,
+  "resolved": 63,
   "unresolved": 2
  },
  "render": {
   "theorems": 42,
   "proofs": 14,
-  "agree": false,
+  "agree": true,
   "source_theorems": 42,
-  "source_proofs": 0
+  "source_proofs": 14
  },
  "outside": {
   "theoremgraph": 42,
@@ -159,7 +169,7 @@
    "message": "the text names Lemma 4.1 and the census has no such item (no-item)"
   }
  ],
- "strength": "normal",
+ "strength": "strong",
  "items": [
   {
    "id": "2509.10268v2#env-1",
@@ -747,6 +757,37 @@
    "result": "matched"
   },
   {
+   "id": "2509.10268v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:ineq"
+   ],
+   "pos": {
+    "file": "proofs.tex",
+    "line": 46
+   },
+   "last": 60,
+   "result": "matched"
+  },
+  {
+   "id": "2509.10268v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "proofs.tex",
+    "line": 63
+   },
+   "last": 65,
+   "result": "matched"
+  },
+  {
    "id": "2509.10268v2#env-32",
    "type": "env",
    "k": 32,
@@ -764,6 +805,48 @@
     "line": 79
    },
    "last": 85,
+   "result": "matched"
+  },
+  {
+   "id": "2509.10268v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "proofs.tex",
+    "line": 87
+   },
+   "last": 89,
+   "result": "matched"
+  },
+  {
+   "id": "2509.10268v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "proofs.tex",
+    "line": 92
+   },
+   "last": 95,
+   "result": "matched"
+  },
+  {
+   "id": "2509.10268v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "proofs.tex",
+    "line": 123
+   },
+   "last": 140,
    "result": "matched"
   },
   {
@@ -787,6 +870,34 @@
    "result": "matched"
   },
   {
+   "id": "2509.10268v2#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "proofs.tex",
+    "line": 162
+   },
+   "last": 167,
+   "result": "matched"
+  },
+  {
+   "id": "2509.10268v2#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "proofs.tex",
+    "line": 169
+   },
+   "last": 175,
+   "result": "matched"
+  },
+  {
    "id": "2509.10268v2#env-34",
    "type": "env",
    "k": 34,
@@ -804,6 +915,34 @@
     "line": 178
    },
    "last": 184,
+   "result": "matched"
+  },
+  {
+   "id": "2509.10268v2#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "proofs.tex",
+    "line": 185
+   },
+   "last": 198,
+   "result": "matched"
+  },
+  {
+   "id": "2509.10268v2#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "proofs.tex",
+    "line": 200
+   },
+   "last": 216,
    "result": "matched"
   },
   {
@@ -853,6 +992,27 @@
    "result": "matched"
   },
   {
+   "id": "2509.10268v2#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:altcond",
+    "eq:integral-prob"
+   ],
+   "pos": {
+    "file": "lemma-proofs.tex",
+    "line": 16
+   },
+   "last": 74,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
    "id": "2509.10268v2#env-37",
    "type": "env",
    "k": 37,
@@ -892,6 +1052,40 @@
     "line": 85
    },
    "last": 86,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2509.10268v2#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lemma-proofs.tex",
+    "line": 88
+   },
+   "last": 142,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2509.10268v2#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lemma-proofs.tex",
+    "line": 144
+   },
+   "last": 146,
    "flags": [
     "appendix"
    ],
@@ -945,6 +1139,23 @@
    "result": "matched"
   },
   {
+   "id": "2509.10268v2#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lemma-proofs.tex",
+    "line": 172
+   },
+   "last": 192,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
    "id": "2509.10268v2#env-41",
    "type": "env",
    "k": 41,
@@ -982,6 +1193,23 @@
     "line": 214
    },
    "last": 223,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2509.10268v2#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "calculation-sigma.tex",
+    "line": 226
+   },
+   "last": 297,
    "flags": [
     "appendix"
    ],

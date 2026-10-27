@@ -1,7 +1,7 @@
 {
  "paper": "2502.17203",
  "version": 2,
- "extractor": "ax/v0.5.19",
+ "extractor": "ax/v0.5.26",
  "main": [
   "ex_article.tex"
  ],
@@ -39,6 +39,7 @@
    "item": "proof",
    "counter": "proof",
    "numbered": true,
+   "proof": true,
    "from": "local:siamart220329.cls",
    "form": "newtheorem"
   },
@@ -50,16 +51,6 @@
    "numbered": true,
    "from": "local:siamart220329.cls",
    "form": "newtheorem"
-  },
-  {
-   "env": "claim",
-   "title": "Claim",
-   "item": "statement/claim",
-   "counter": "theorem",
-   "shared": "theorem",
-   "numbered": true,
-   "from": "paper",
-   "form": "macro:\\newsiamthm"
   },
   {
    "env": "remark",
@@ -80,22 +71,74 @@
    "numbered": true,
    "from": "paper",
    "form": "macro:\\newsiamremark"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "macro:\\newsiamthm"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:siamart220329.cls",
+   "form": "macro:\\newsiamthm"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:siamart220329.cls",
+   "form": "macro:\\newsiamthm"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:siamart220329.cls",
+   "form": "macro:\\newsiamthm"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:siamart220329.cls",
+   "form": "macro:\\newsiamthm"
   }
  ],
  "occurrences": {
   "env": 5,
-  "label": 6
+  "label": 11,
+  "proof": 3
  },
  "matched": {
   "env": 5,
-  "label": 6
+  "label": 11,
+  "proof": 3
  },
  "gaps": [],
  "waivers": [],
  "numbers": {
   "from_aux": 0,
-  "from_render": 2,
-  "from_counter": 3,
+  "from_render": 5,
+  "from_counter": 0,
   "from_head": 0,
   "agree": 0,
   "disagree": 0,
@@ -108,38 +151,44 @@
  "render": {
   "theorems": 5,
   "proofs": 3,
-  "agree": false,
+  "agree": true,
   "source_theorems": 5,
-  "source_proofs": 0,
-  "envs": [
-   {
-    "env": "proof",
-    "source": 3,
-    "render": 0
-   },
-   {
-    "env": "proposition",
-    "source": 0,
-    "render": 3
-   }
-  ]
+  "source_proofs": 3
  },
  "outside": {
   "theoremgraph": 5,
   "theoremsearch": 4
  },
- "strength": "normal",
+ "strength": "strong",
  "items": [
   {
    "id": "2502.17203v2#env-1",
    "type": "env",
    "k": 1,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "prop:converge"
+   ],
+   "pos": {
+    "file": "ex_article.tex",
+    "line": 372
+   },
+   "last": 375,
+   "result": "matched"
+  },
+  {
+   "id": "2502.17203v2#proof-1",
+   "type": "proof",
+   "k": 1,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "1",
-   "number_from": "counter",
    "labels": [
     "equ:es_expand",
     "equ:inequality",
@@ -173,12 +222,31 @@
    "id": "2502.17203v2#env-3",
    "type": "env",
    "k": 3,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "prop:posteriori",
+    "equ:posteriori"
+   ],
+   "pos": {
+    "file": "ex_article.tex",
+    "line": 443
+   },
+   "last": 450,
+   "result": "matched"
+  },
+  {
+   "id": "2502.17203v2#proof-2",
+   "type": "proof",
+   "k": 2,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "2",
-   "number_from": "counter",
    "pos": {
     "file": "ex_article.tex",
     "line": 452
@@ -190,12 +258,31 @@
    "id": "2502.17203v2#env-4",
    "type": "env",
    "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "prop:exp_converge",
+    "equ:converge"
+   ],
+   "pos": {
+    "file": "ex_article.tex",
+    "line": 472
+   },
+   "last": 479,
+   "result": "matched"
+  },
+  {
+   "id": "2502.17203v2#proof-3",
+   "type": "proof",
+   "k": 3,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "3",
-   "number_from": "counter",
    "labels": [
     "equ:error_reduce",
     "equ:error_assumption"

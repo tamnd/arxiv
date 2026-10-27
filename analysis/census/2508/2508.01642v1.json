@@ -1,7 +1,7 @@
 {
  "paper": "2508.01642",
  "version": 1,
- "extractor": "ax/v0.5.19",
+ "extractor": "ax/v0.5.26",
  "main": [
   "onBayesianity1.tex"
  ],
@@ -204,16 +204,26 @@
    "numbered": false,
    "from": "wrapper",
    "form": "newenvironment"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
   }
  ],
  "occurrences": {
   "env": 17,
   "label": 9,
+  "proof": 4,
   "textref": 18
  },
  "matched": {
   "env": 17,
-  "label": 9
+  "label": 9,
+  "proof": 4
  },
  "gaps": [],
  "waivers": [],
@@ -233,16 +243,9 @@
  "render": {
   "theorems": 11,
   "proofs": 4,
-  "agree": false,
-  "source_theorems": 17,
-  "source_proofs": 0,
-  "envs": [
-   {
-    "env": "Technical",
-    "source": 6,
-    "render": 0
-   }
-  ]
+  "agree": true,
+  "source_theorems": 11,
+  "source_proofs": 4
  },
  "outside": {
   "theoremgraph": 4,
@@ -278,13 +281,9 @@
    "rule": "D09",
    "occurrence": "2508.01642v1#textref-11",
    "message": "the text names Technical Discussion \\ref{Technical:uhdModelSelection} and the census has no such item (no-label)"
-  },
-  {
-   "rule": "D08",
-   "message": "the source has 17 theorem environments and the render has 11"
   }
  ],
- "strength": "normal",
+ "strength": "strong",
  "items": [
   {
    "id": "2508.01642v1#env-1",
@@ -534,6 +533,21 @@
    "result": "matched"
   },
   {
+   "id": "2508.01642v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2508.01642v1#env-12",
+   "pos": {
+    "file": "onBayesianity1.tex",
+    "line": 550
+   },
+   "last": 560,
+   "result": "matched"
+  },
+  {
    "id": "2508.01642v1#env-14",
    "type": "env",
    "k": 14,
@@ -594,6 +608,21 @@
    "result": "matched"
   },
   {
+   "id": "2508.01642v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2508.01642v1#env-15",
+   "pos": {
+    "file": "onBayesianity1.tex",
+    "line": 598
+   },
+   "last": 607,
+   "result": "matched"
+  },
+  {
    "id": "2508.01642v1#env-17",
    "type": "env",
    "k": 17,
@@ -608,6 +637,40 @@
     "line": 619
    },
    "last": 664,
+   "result": "matched"
+  },
+  {
+   "id": "2508.01642v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "onBayesianity1.tex",
+    "line": 814
+   },
+   "last": 831,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2508.01642v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "onBayesianity1.tex",
+    "line": 835
+   },
+   "last": 867,
+   "flags": [
+    "appendix"
+   ],
    "result": "matched"
   }
  ]
