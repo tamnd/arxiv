@@ -1,27 +1,27 @@
 # The audit
 
-46555 records over 539 papers of the analysis plane, 2172 findings, and the build fails.
+55107 records over 627 papers of the analysis plane, 2710 findings, and the build fails.
 
 | Group | Rules | Pass | Fail | Not run | N/A | Findings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Analysis | 12 | 6 | 6 | 0 | 0 | 2172 |
+| Analysis | 12 | 6 | 6 | 0 | 0 | 2710 |
 
 ## The rules
 
 | ID | State | Checked | Skipped | Findings | Rule |
 | --- | --- | ---: | ---: | ---: | --- |
-| D01 | pass | 19 | 0 | 0 | each paper in scope (AX1.2) has a paper state: a stage of the ladder of 2166-04, or a reason why it stops |
-| D02 | pass | 1133 | 0 | 0 | each extracted version has a census record, and the census record names the extractor version |
-| D03 | fail | 603 | 0 | 1 | each counted occurrence of a theorem-like environment, proof or manual head in the census has an object record, or a waiver with a reason |
-| D04 | pass | 9125 | 0 | 0 | each statement object has a proof_status, and a proof_status of here has a proves edge from a proof object |
-| D06 | pass | 20395 | 0 | 0 | no object record from a version of class record holds text of the paper, in any field |
-| D07 | fail | 603 | 0 | 553 | a counter whose numbers have a gap that the census does not explain |
-| D08 | fail | 603 | 0 | 34 | a paper whose source and render counts differ by more than the threshold of AX4.5 |
-| D09 | fail | 603 | 0 | 1074 | an in-paper reference to a theorem-like number or label that resolves to no object |
-| D10 | pass | 25538 | 0 | 0 | each edge has a method and a confidence from the closed lists of AX6.1, and no edge whose method is model has the confidence certain or high |
-| D13 | pass | 20395 | 0 | 0 | each object record names its path, its extractor version and its confidence |
-| D15 | fail | 603 | 0 | 496 | an environment name or title that manifests/environments.yaml does not map |
-| D19 | fail | 427 | 0 | 14 | a cycle in the in-paper uses graph (AX6.3) |
+| D01 | pass | 24 | 0 | 0 | each paper in scope (AX1.2) has a paper state: a stage of the ladder of 2166-04, or a reason why it stops |
+| D02 | pass | 1317 | 0 | 0 | each extracted version has a census record, and the census record names the extractor version |
+| D03 | fail | 698 | 0 | 1 | each counted occurrence of a theorem-like environment, proof or manual head in the census has an object record, or a waiver with a reason |
+| D04 | pass | 10777 | 0 | 0 | each statement object has a proof_status, and a proof_status of here has a proves edge from a proof object |
+| D06 | pass | 23991 | 0 | 0 | no object record from a version of class record holds text of the paper, in any field |
+| D07 | fail | 698 | 0 | 695 | a counter whose numbers have a gap that the census does not explain |
+| D08 | fail | 698 | 0 | 45 | a paper whose source and render counts differ by more than the threshold of AX4.5 |
+| D09 | fail | 698 | 0 | 1379 | an in-paper reference to a theorem-like number or label that resolves to no object |
+| D10 | pass | 30394 | 0 | 0 | each edge has a method and a confidence from the closed lists of AX6.1, and no edge whose method is model has the confidence certain or high |
+| D13 | pass | 23991 | 0 | 0 | each object record names its path, its extractor version and its confidence |
+| D15 | fail | 698 | 0 | 573 | an environment name or title that manifests/environments.yaml does not map |
+| D19 | fail | 511 | 0 | 17 | a cycle in the in-paper uses graph (AX6.3) |
 
 ## The findings
 
@@ -92,7 +92,7 @@ analysis/census/1802/1802.02910v3.json: 1802.02910v3: 1802.02910v3#env-31: Fait 
 analysis/census/1802/1802.02910v3.json: 1802.02910v3: 1802.02910v3#env-32: Fait 013 comes after 011 in counter equation
 ```
 
-And 503 more findings, not listed.
+And 645 more findings, not listed.
 
 ### D08
 
@@ -108,23 +108,34 @@ analysis/census/2208/2208.04502v2.json: 2208.04502v2: the render has 35 theorems
 analysis/census/2304/2304.02722v2.json: 2304.02722v2: the source has 64 theorem environments and the render has 9
 analysis/census/2306/2306.00590v2.json: 2306.00590v2: the source has 16 theorem environments and the render has 11
 analysis/census/2306/2306.16411v2.json: 2306.16411v2: the source has 15 theorem environments and the render has 10
+analysis/census/2404/2404.06445v3.json: 2404.06445v3: the source has 73 theorem environments and the render has 76
 analysis/census/2404/2404.18704v2.json: 2404.18704v2: the render has 24 theorems and 3 proofs, and the source counts do not agree
 analysis/census/2405/2405.05684v1.json: 2405.05684v1: the source has 106 theorem environments and the render has 13
+analysis/census/2405/2405.09294v1.json: 2405.09294v1: the render has 38 theorems and 0 proofs, and the source counts do not agree
 analysis/census/2405/2405.14678v2.json: 2405.14678v2: the source has 35 theorem environments and the render has 146
+analysis/census/2407/2407.07642v1.json: 2407.07642v1: the source has 1 theorem environments and the render has 16
 analysis/census/2409/2409.17318v1.json: 2409.17318v1: the render has 23 theorems and 17 proofs, and the source counts do not agree
 analysis/census/2410/2410.01436v2.json: 2410.01436v2: the source has 20 theorem environments and the render has 11
+analysis/census/2411/2411.00562v1.json: 2411.00562v1: the render has 97 theorems and 58 proofs, and the source counts do not agree
 analysis/census/2411/2411.05198v1.json: 2411.05198v1: the render has 32 theorems and 16 proofs, and the source counts do not agree
+analysis/census/2411/2411.10658v2.json: 2411.10658v2: the render has 14 theorems and 6 proofs, and the source counts do not agree
 analysis/census/2411/2411.16022v1.json: 2411.16022v1: the source has 52 theorem environments and the render has 49
 analysis/census/2412/2412.12141v1.json: 2412.12141v1: the source has 0 theorem environments and the render has 36
 analysis/census/2502/2502.17203v2.json: 2502.17203v2: the render has 5 theorems and 3 proofs, and the source counts do not agree
+analysis/census/2503/2503.05873v1.json: 2503.05873v1: the source has 18 theorem environments and the render has 16
+analysis/census/2503/2503.22636v2.json: 2503.22636v2: the source has 49 theorem environments and the render has 52
 analysis/census/2505/2505.10801v1.json: 2505.10801v1: the render has 43 theorems and 0 proofs, and the source counts do not agree
+analysis/census/2506/2506.21337v2.json: 2506.21337v2: the source has 39 theorem environments and the render has 33
+analysis/census/2507/2507.13548v1.json: 2507.13548v1: the render has 26 theorems and 8 proofs, and the source counts do not agree
 analysis/census/2509/2509.10268v2.json: 2509.10268v2: the render has 42 theorems and 14 proofs, and the source counts do not agree
 analysis/census/2509/2509.16523v1.json: 2509.16523v1: the render has 9 theorems and 5 proofs, and the source counts do not agree
 analysis/census/2510/2510.07095v1.json: 2510.07095v1: the source has 5 theorem environments and the render has 0
 analysis/census/2512/2512.07470v2.json: 2512.07470v2: the source has 20 theorem environments and the render has 12
 analysis/census/2601/2601.01076v1.json: 2601.01076v1: the source has 2 theorem environments and the render has 7
 analysis/census/2601/2601.15403v2.json: 2601.15403v2: the source has 16 theorem environments and the render has 96
+analysis/census/2602/2602.07485v1.json: 2602.07485v1: the render has 50 theorems and 0 proofs, and the source counts do not agree
 analysis/census/2602/2602.15812v2.json: 2602.15812v2: the source has 45 theorem environments and the render has 0
+analysis/census/2604/2604.02249v2.json: 2604.02249v2: the render has 2 theorems and 2 proofs, and the source counts do not agree
 analysis/census/2604/2604.07243v3.json: 2604.07243v3: the source has 19 theorem environments and the render has 0
 analysis/census/2605/2605.10911v1.json: 2605.10911v1: the render has 21 theorems and 10 proofs, and the source counts do not agree
 analysis/census/2606/2606.21391v1.json: 2606.21391v1: the source has 46 theorem environments and the render has 30
@@ -192,7 +203,7 @@ analysis/census/0406/math-0406514v2.json: math/0406514v2: math/0406514v2#textref
 analysis/census/0406/math-0406514v2.json: math/0406514v2: math/0406514v2#textref-14: the text names Lemma \ref{dim-alg} and the census has no such item (no-label)
 ```
 
-And 1024 more findings, not listed.
+And 1329 more findings, not listed.
 
 ### D15
 
@@ -251,7 +262,7 @@ analysis/census/0805/0805.4273v2.json: 0805.4273v2: occurrence 0805.4273v2#env-8
 analysis/census/0805/0805.4273v2.json: 0805.4273v2: occurrence 0805.4273v2#env-9 of setup with the title "" has no item kind
 ```
 
-And 446 more findings, not listed.
+And 523 more findings, not listed.
 
 ### D19
 
@@ -273,5 +284,8 @@ analysis/edges/2405/2405.05684.jsonl: 2405.05684v1: 6 uses edges are in a cycle
 analysis/edges/2405/2405.10580.jsonl: 2405.10580v1: 3 uses edges are in a cycle
 analysis/edges/2407/2407.20385.jsonl: 2407.20385v4: 2 uses edges are in a cycle
 analysis/edges/2411/2411.16655.jsonl: 2411.16655v1: 7 uses edges are in a cycle
+analysis/edges/2412/2412.14956.jsonl: 2412.14956v3: 15 uses edges are in a cycle
+analysis/edges/2412/2412.20238.jsonl: 2412.20238v1: 8 uses edges are in a cycle
+analysis/edges/2504/2504.14383.jsonl: 2504.14383v2: 6 uses edges are in a cycle
 analysis/edges/2601/2601.13782.jsonl: 2601.13782v5: 2 uses edges are in a cycle
 ```
