@@ -1,6 +1,6 @@
 # The graph of the analysis plane
 
-784 versions have edges, and the edges total 50,634. 73.5% of the statements have an incoming uses or proves edge, and 35.1% of the proofs use nothing. 35 versions have a cycle in the in-paper uses graph.
+784 versions have edges, and the edges total 50,675. 73.5% of the statements have an incoming uses or proves edge, and 35.1% of the proofs use nothing. 35 versions have a cycle in the in-paper uses graph.
 Counted on 27 October 2026 from analysis/edges and analysis/objects. These are the checks of AX6.7.
 
 ## The methods
@@ -8,29 +8,29 @@ Counted on 27 October 2026 from analysis/edges and analysis/objects. These are t
 | Method | Edges | Share |
 | --- | ---: | ---: |
 | ref | 21,487 | 42.4% |
-| text | 566 | 1.1% |
+| text | 567 | 1.1% |
 | scope | 914 | 1.8% |
 | cite | 9,638 | 19.0% |
 | position | 205 | 0.4% |
 | term | 8,601 | 17.0% |
-| attach | 9,223 | 18.2% |
+| attach | 9,263 | 18.3% |
 
 ## The confidences
 
 | Confidence | Edges | Share |
 | --- | ---: | ---: |
-| certain | 30,710 | 60.7% |
+| certain | 30,750 | 60.7% |
 | high | 6,090 | 12.0% |
-| medium | 13,834 | 27.3% |
+| medium | 13,835 | 27.3% |
 | low | 0 | 0.0% |
 
 ## The predicates
 
 | Predicate | Edges | Share |
 | --- | ---: | ---: |
-| uses | 26,283 | 51.9% |
-| proves | 9,141 | 18.1% |
-| refers-to | 7,268 | 14.4% |
+| uses | 26,284 | 51.9% |
+| proves | 9,181 | 18.1% |
+| refers-to | 7,268 | 14.3% |
 | restates | 82 | 0.2% |
 | cites-result | 4,747 | 9.4% |
 | cites | 3,045 | 6.0% |
@@ -66,7 +66,7 @@ Counted on 27 October 2026 from analysis/edges and analysis/objects. These are t
 | math.CO | 54 | 3,122 | 67.9% | 33.4% | 1 | 45.1% | 0.7% | 12.1% | 18.9% | 73.7% |
 | math.CT | 19 | 2,073 | 73.4% | 38.9% | 0 | 32.2% | 0.2% | 18.2% | 32.7% | 56.2% |
 | math.CV | 25 | 1,479 | 70.6% | 30.2% | 2 | 42.8% | 1.8% | 23.3% | 14.9% | 70.0% |
-| math.DG | 32 | 2,136 | 71.2% | 33.4% | 3 | 42.5% | 0.2% | 23.3% | 13.2% | 74.6% |
+| math.DG | 32 | 2,177 | 71.4% | 33.2% | 3 | 41.7% | 0.2% | 22.9% | 12.9% | 75.0% |
 | math.DS | 32 | 2,169 | 79.9% | 30.8% | 1 | 45.3% | 1.1% | 16.4% | 20.5% | 71.0% |
 | math.FA | 29 | 1,326 | 80.2% | 32.9% | 2 | 41.9% | 1.5% | 27.7% | 4.6% | 84.5% |
 | math.GM | 15 | 318 | 66.3% | 52.1% | 0 | 29.2% | 3.8% | 22.6% | 10.1% | 69.2% |
@@ -100,7 +100,7 @@ Counted on 27 October 2026 from analysis/edges and analysis/objects. These are t
 | 1994-09 | 1 | 24 | 60.0% | 25.0% | 0 | 45.8% | 0.0% | 8.3% | 29.2% | 62.5% |
 | 1996-12 | 1 | 22 | 23.1% | 57.1% | 0 | 63.6% | 0.0% | 36.4% | 0.0% | 68.2% |
 | 1998-01 | 1 | 19 | 72.7% | 50.0% | 0 | 52.6% | 0.0% | 5.3% | 0.0% | 94.7% |
-| 1999-02 | 1 | 16 | 28.6% | 95.6% | 0 | 12.5% | 0.0% | 81.2% | 0.0% | 62.5% |
+| 1999-02 | 1 | 57 | 68.9% | 93.3% | 0 | 3.5% | 1.8% | 22.8% | 0.0% | 87.7% |
 | 2000-03 | 1 | 1,246 | 57.5% | 6.2% | 0 | 15.5% | 0.1% | 0.6% | 81.1% | 18.1% |
 | 2000-08 | 1 | 22 | 84.6% | 50.0% | 0 | 40.9% | 4.5% | 9.1% | 0.0% | 90.9% |
 | 2000-09 | 1 | 4 | 25.0% | 100.0% | 0 | 0.0% | 0.0% | 50.0% | 0.0% | 100.0% |
