@@ -147,11 +147,24 @@ fi
 export ARXIV_CORPUS="$dir/arxiv"
 cd "$dir/arxiv"
 out="$dir/run/batch-$stamp.out"
-ax census batch -list "$list" -limit "$limit" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err" || log "the batch of the list exited with $?"
-from="the list $list"
-if ! grep -Eq '^[0-9]+/[0-9]+ [^ ]+ (extracted|stopped)' "$out"; then
-	ax census batch -scope "$scope" -limit "$limit" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err" || log "the batch of the scope exited with $?"
-	from="the scope $scope"
+# The papers to do again after a fix to ax come first. They are in $dir/redo.txt, one id at the start of each line. A run takes the first $limit of them and keeps their sources in work/, so that a finding can be traced. It removes them from the file when the batch ends with no error.
+redo="$dir/redo.txt"
+if [ -s "$redo" ]; then
+	head -n "$limit" "$redo" >"$dir/run/redo-$stamp.txt"
+	n=$(wc -l <"$dir/run/redo-$stamp.txt")
+	if ax census batch -redo -keep -list "$dir/run/redo-$stamp.txt" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err"; then
+		sed -i "1,${n}d" "$redo"
+	else
+		log "the batch of the redo list exited with $?"
+	fi
+	from="the redo list"
+else
+	ax census batch -list "$list" -limit "$limit" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err" || log "the batch of the list exited with $?"
+	from="the list $list"
+	if ! grep -Eq '^[0-9]+/[0-9]+ [^ ]+ (extracted|stopped)' "$out"; then
+		ax census batch -scope "$scope" -limit "$limit" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err" || log "the batch of the scope exited with $?"
+		from="the scope $scope"
+	fi
 fi
 done=$(grep -Ec '^[0-9]+/[0-9]+ [^ ]+ extracted' "$out" || true)
 stopped=$(grep -Ec '^[0-9]+/[0-9]+ [^ ]+ stopped' "$out" || true)
