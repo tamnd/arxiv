@@ -1,27 +1,27 @@
 # The audit
 
-82016 records over 809 papers of the analysis plane, 3148 findings.
+85892 records over 832 papers of the analysis plane, 3179 findings.
 
 | Group | Rules | Pass | Fail | Not run | N/A | Findings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Analysis | 12 | 7 | 5 | 0 | 0 | 3148 |
+| Analysis | 12 | 7 | 5 | 0 | 0 | 3179 |
 
 ## The rules
 
 | ID | State | Checked | Skipped | Findings | Rule |
 | --- | --- | ---: | ---: | ---: | --- |
 | D01 | pass | 28 | 0 | 0 | each paper in scope (AX1.2) has a paper state: a stage of the ladder of 2166-04, or a reason why it stops |
-| D02 | pass | 1695 | 0 | 0 | each extracted version has a census record, and the census record names the extractor version |
-| D03 | pass | 894 | 0 | 0 | each counted occurrence of a theorem-like environment, proof or manual head in the census has an object record, or a waiver with a reason |
-| D04 | pass | 14796 | 0 | 0 | each statement object has a proof_status, and a proof_status of here has a proves edge from a proof object |
-| D06 | pass | 33183 | 0 | 0 | no object record from a version of class record holds text of the paper, in any field |
-| D07 | fail | 894 | 0 | 1051 | a counter whose numbers have a gap that the census does not explain |
-| D08 | fail | 894 | 0 | 46 | a paper whose source and render counts differ by more than the threshold of AX4.5 |
-| D09 | fail | 894 | 0 | 1465 | an in-paper reference to a theorem-like number or label that resolves to no object |
-| D10 | pass | 47911 | 0 | 0 | each edge has a method and a confidence from the closed lists of AX6.1, and no edge whose method is model has the confidence certain or high |
-| D13 | pass | 33183 | 0 | 0 | each object record names its path, its extractor version and its confidence |
-| D15 | fail | 894 | 0 | 554 | an environment name or title that manifests/environments.yaml does not map |
-| D19 | fail | 737 | 0 | 32 | a cycle in the in-paper uses graph (AX6.3) |
+| D02 | pass | 1741 | 0 | 0 | each extracted version has a census record, and the census record names the extractor version |
+| D03 | pass | 917 | 0 | 0 | each counted occurrence of a theorem-like environment, proof or manual head in the census has an object record, or a waiver with a reason |
+| D04 | pass | 15265 | 0 | 0 | each statement object has a proof_status, and a proof_status of here has a proves edge from a proof object |
+| D06 | pass | 34335 | 0 | 0 | no object record from a version of class record holds text of the paper, in any field |
+| D07 | fail | 917 | 0 | 1041 | a counter whose numbers have a gap that the census does not explain |
+| D08 | fail | 917 | 0 | 47 | a paper whose source and render counts differ by more than the threshold of AX4.5 |
+| D09 | fail | 917 | 0 | 1416 | an in-paper reference to a theorem-like number or label that resolves to no object |
+| D10 | pass | 50612 | 0 | 0 | each edge has a method and a confidence from the closed lists of AX6.1, and no edge whose method is model has the confidence certain or high |
+| D13 | pass | 34335 | 0 | 0 | each object record names its path, its extractor version and its confidence |
+| D15 | fail | 917 | 0 | 640 | an environment name or title that manifests/environments.yaml does not map |
+| D19 | fail | 784 | 0 | 35 | a cycle in the in-paper uses graph (AX6.3) |
 
 ## The findings
 
@@ -82,7 +82,7 @@ analysis/census/1802/1802.02910v3.json: 1802.02910v3: 1802.02910v3#env-31: Fait 
 analysis/census/1802/1802.02910v3.json: 1802.02910v3: 1802.02910v3#env-32: Fait 013 comes after 011 in counter equation
 ```
 
-And 1001 more findings, not listed.
+And 991 more findings, not listed.
 
 ### D08
 
@@ -131,8 +131,9 @@ analysis/census/2605/2605.10911v1.json: 2605.10911v1: the render has 21 theorems
 analysis/census/2606/2606.21391v1.json: 2606.21391v1: the source has 46 theorem environments and the render has 30
 analysis/census/2606/2606.23841v1.json: 2606.23841v1: the render has 7 theorems and 0 proofs, and the source has 7 and 8
 analysis/census/2609/2609.36090v1.json: 2609.36090v1: the render has 20 theorems and 4 proofs, and the source has 20 and 0
+analysis/census/2610/2610.22153v1.json: 2610.22153v1: the render has 8 theorems and 3 proofs, and the source has 8 and 0
+analysis/census/2610/2610.22238v1.json: 2610.22238v1: the source has 0 theorem environments and the render has 11
 analysis/census/9409/hep-th-9409063v2.json: hep-th/9409063v2: the source has 18 theorem environments and the render has 16
-analysis/census/9612/dg-ga-9612010v3.json: dg-ga/9612010v3: the source has 8 theorem environments and the render has 33
 analysis/census/9801/math-9801068v3.json: math/9801068v3: the source has 13 theorem environments and the render has 11
 analysis/census/9902/math-9902147v2.json: math/9902147v2: the source has 7 theorem environments and the render has 66
 ```
@@ -194,7 +195,7 @@ analysis/census/0406/math-0406514v2.json: math/0406514v2: math/0406514v2#textref
 analysis/census/0406/math-0406514v2.json: math/0406514v2: math/0406514v2#textref-14: the text names Lemma \ref{dim-alg} and the census has no such item (no-label)
 ```
 
-And 1415 more findings, not listed.
+And 1366 more findings, not listed.
 
 ### D15
 
@@ -246,14 +247,14 @@ analysis/census/0906/0906.2853v5.json: 0906.2853v5: occurrence 0906.2853v5#env-2
 analysis/census/0906/0906.2853v5.json: 0906.2853v5: occurrence 0906.2853v5#env-21 of subsec with the title "" has no item kind
 analysis/census/1003/1003.2117v2.json: 1003.2117v2: environment statement with the title "Statement" has no item kind
 analysis/census/1004/1004.4564v1.json: 1004.4564v1: environment application* with the title "Application" has no item kind
-analysis/census/1004/1004.4564v1.json: 1004.4564v1: environment proofsubclaim with the title "Subclaim" has no item kind
-analysis/census/1006/1006.4470v1.json: 1006.4470v1: environment summary with the title "Summary" has no item kind
 analysis/census/1008/1008.4254v3.json: 1008.4254v3: environment argument with the title "Argument" has no item kind
 analysis/census/1008/1008.4254v3.json: 1008.4254v3: environment subsec with the title "" has no item kind
 analysis/census/1008/1008.4254v3.json: 1008.4254v3: occurrence 1008.4254v3#env-28 of subsec with the title "" has no item kind
+analysis/census/1008/1008.4254v3.json: 1008.4254v3: occurrence 1008.4254v3#env-29 of subsec with the title "" has no item kind
+analysis/census/1008/1008.4254v3.json: 1008.4254v3: occurrence 1008.4254v3#env-30 of subsec with the title "" has no item kind
 ```
 
-And 504 more findings, not listed.
+And 590 more findings, not listed.
 
 ### D19
 
@@ -293,5 +294,8 @@ analysis/edges/2601/2601.13782.jsonl: 2601.13782v5: 2 uses edges are in a cycle
 analysis/edges/2609/2609.01324.jsonl: 2609.01324v2: 12 uses edges are in a cycle
 analysis/edges/2609/2609.18777.jsonl: 2609.18777v2: 2 uses edges are in a cycle
 analysis/edges/2609/2609.29326.jsonl: 2609.29326v1: 9 uses edges are in a cycle
+analysis/edges/2610/2610.22082.jsonl: 2610.22082v1: 7 uses edges are in a cycle
+analysis/edges/2610/2610.22107.jsonl: 2610.22107v1: 5 uses edges are in a cycle
+analysis/edges/2610/2610.22170.jsonl: 2610.22170v1: 2 uses edges are in a cycle
 analysis/edges/2610/2610.22345.jsonl: 2610.22345v1: 3 uses edges are in a cycle
 ```

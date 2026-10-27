@@ -1,7 +1,7 @@
 {
  "paper": "math/9902147",
  "version": 2,
- "extractor": "ax/v0.5.2",
+ "extractor": "ax/v0.5.21",
  "main": [
   "6438396.tex",
   "ca.tex"
@@ -19,7 +19,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 166 commands, 8 environments",
-  "tree: 139 nodes"
+  "aliases: 147 uses of commands that stand for \\begin or \\end",
+  "tree: 182 nodes"
  ],
  "declarations": [
   {
@@ -161,7 +162,7 @@
   {
    "env": "hyp",
    "title": "Hypotheses",
-   "item": "unknown",
+   "item": "context/hypothesis",
    "counter": "hyp",
    "numbered": true,
    "from": "paper",
@@ -170,7 +171,7 @@
   {
    "env": "ack",
    "title": "Acknowledgment",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "ack",
    "numbered": true,
    "from": "paper",
@@ -268,14 +269,14 @@
  ],
  "occurrences": {
   "env": 7,
-  "label": 10,
-  "proof": 2,
+  "label": 32,
+  "proof": 45,
   "textref": 7
  },
  "matched": {
   "env": 7,
-  "label": 10,
-  "proof": 2
+  "label": 32,
+  "proof": 45
  },
  "gaps": [],
  "waivers": [],
@@ -295,7 +296,49 @@
  "render": {
   "theorems": 66,
   "proofs": 45,
-  "agree": false
+  "agree": false,
+  "source_theorems": 7,
+  "source_proofs": 45,
+  "envs": [
+   {
+    "env": "Cor",
+    "source": 0,
+    "render": 18
+   },
+   {
+    "env": "Lem",
+    "source": 1,
+    "render": 27
+   },
+   {
+    "env": "MainCor",
+    "source": 0,
+    "render": 1
+   },
+   {
+    "env": "MainThm",
+    "source": 0,
+    "render": 4
+   },
+   {
+    "env": "Prop",
+    "source": 1,
+    "render": 3
+   },
+   {
+    "env": "Rem",
+    "source": 0,
+    "render": 5
+   },
+   {
+    "env": "Thm",
+    "source": 2,
+    "render": 5
+   }
+  ]
+ },
+ "outside": {
+  "theoremgraph": 1
  },
  "findings": [
   {
@@ -351,6 +394,275 @@
    "result": "matched"
   },
   {
+   "id": "math/9902147v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 921
+   },
+   "last": 928,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 966
+   },
+   "last": 977,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:bfZ0+bfB0"
+   ],
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1072
+   },
+   "last": 1086,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1093
+   },
+   "last": 1097,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1111
+   },
+   "last": 1127,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1179
+   },
+   "last": 1182,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1194
+   },
+   "last": 1214,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1245
+   },
+   "last": 1274,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1282
+   },
+   "last": 1282,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1290
+   },
+   "last": 1292,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1304
+   },
+   "last": 1304,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1328
+   },
+   "last": 1329,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1386
+   },
+   "last": 1386,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1400
+   },
+   "last": 1437,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1457
+   },
+   "last": 1457,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1463
+   },
+   "last": 1464,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1472
+   },
+   "last": 1475,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1481
+   },
+   "last": 1491,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1497
+   },
+   "last": 1515,
+   "result": "matched"
+  },
+  {
    "id": "math/9902147v2#env-3",
    "type": "env",
    "k": 3,
@@ -368,6 +680,367 @@
     "line": 1589
    },
    "last": 1596,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1708
+   },
+   "last": 1710,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1722
+   },
+   "last": 1725,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:A/ker d"
+   ],
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1745
+   },
+   "last": 1761,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1921
+   },
+   "last": 1927,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1935
+   },
+   "last": 1962,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 1992
+   },
+   "last": 1999,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2012
+   },
+   "last": 2012,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:ker rho",
+    "e:rho",
+    "e:im rho",
+    "e:C'K"
+   ],
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2027
+   },
+   "last": 2081,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:C''K"
+   ],
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2090
+   },
+   "last": 2109,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:ker and im of d1",
+    "e:ker and im of dl"
+   ],
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2199
+   },
+   "last": 2228,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:zk+...=calHk oplus bk-1+...",
+    "e:z1=calH1 oplus ..."
+   ],
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2245
+   },
+   "last": 2288,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2353
+   },
+   "last": 2370,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2380
+   },
+   "last": 2396,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:Pi2 d10 Q alphai lar gamma"
+   ],
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2398
+   },
+   "last": 2422,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:piu+a,v-a+1 d(omega+alphai) lar0",
+    "e:Ql-2 piu+l,v-l+1 d(omega+alphai) lar0",
+    "e:Pil piu+l,v-l+1 d(omega+alphai) lar0",
+    "e:Pi1 d1,0 sigmai1 = P1 ...",
+    "e:d0,1 sigmai0 + P0 d1,0 sigmai1 - P0... lar0",
+    "e:piu+l-m+a,v-l+m-a+1 d(sigmaim + tauim) lar0",
+    "e:piu+l,v-l+1 d(sigmaim + tauim) - Pm ... lar0"
+   ],
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2427
+   },
+   "last": 2532,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:widetilde calHl.,v=overline calB.,v/calAl-1.,v-l"
+   ],
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2559
+   },
+   "last": 2583,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2599
+   },
+   "last": 2654,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e:alpha'' in ...",
+    "e:d(alpha''+alpha''')"
+   ],
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2662
+   },
+   "last": 2750,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2769
+   },
+   "last": 2777,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2784
+   },
+   "last": 2800,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2837
+   },
+   "last": 2843,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2850
+   },
+   "last": 2871,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-42",
+   "type": "proof",
+   "k": 42,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2892
+   },
+   "last": 2897,
    "result": "matched"
   },
   {
@@ -391,9 +1064,23 @@
    "result": "matched"
   },
   {
-   "id": "math/9902147v2#proof-1",
+   "id": "math/9902147v2#proof-43",
    "type": "proof",
-   "k": 1,
+   "k": 43,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "6438396.tex",
+    "line": 2937
+   },
+   "last": 2964,
+   "result": "matched"
+  },
+  {
+   "id": "math/9902147v2#proof-44",
+   "type": "proof",
+   "k": 44,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -406,10 +1093,7 @@
     "file": "6438396.tex",
     "line": 2966
    },
-   "last": 3381,
-   "flags": [
-    "unclosed"
-   ],
+   "last": 3073,
    "result": "matched"
   },
   {
@@ -425,7 +1109,7 @@
    "labels": [
     "claim:omega'"
    ],
-   "parent": "math/9902147v2#proof-1",
+   "parent": "math/9902147v2#proof-44",
    "pos": {
     "file": "6438396.tex",
     "line": 3024
@@ -434,21 +1118,17 @@
    "result": "matched"
   },
   {
-   "id": "math/9902147v2#proof-2",
+   "id": "math/9902147v2#proof-45",
    "type": "proof",
-   "k": 2,
+   "k": 45,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
-   "parent": "math/9902147v2#proof-1",
    "pos": {
     "file": "6438396.tex",
     "line": 3076
    },
-   "last": 3381,
-   "flags": [
-    "unclosed"
-   ],
+   "last": 3101,
    "result": "matched"
   },
   {
@@ -465,7 +1145,6 @@
     "claim:frakH2",
     "e:frakH2"
    ],
-   "parent": "math/9902147v2#proof-2",
    "pos": {
     "file": "6438396.tex",
     "line": 3112
@@ -479,11 +1158,10 @@
    "k": 7,
    "env": "ack",
    "title": "Acknowledgment",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "ack",
    "number": "Acknowledgment",
    "number_from": "render",
-   "parent": "math/9902147v2#proof-2",
    "pos": {
     "file": "6438396.tex",
     "line": 3181
