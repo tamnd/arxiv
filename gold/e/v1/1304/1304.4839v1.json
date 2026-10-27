@@ -1,0 +1,123 @@
+{
+  "set": "E",
+  "set_version": "v1",
+  "paper": "1304.4839",
+  "version": 1,
+  "group": "2011-2020",
+  "state": "proposed",
+  "proposed_by": "ax/v0.5.14",
+  "marks": [
+    {
+      "id": "conj-1",
+      "kind": "problem",
+      "subkind": "conjecture",
+      "number": "1.1",
+      "label": "con1",
+      "file": "paper.tex",
+      "from": 40,
+      "to": 42,
+      "proof_status": "none"
+    },
+    {
+      "id": "thm-1",
+      "kind": "statement",
+      "subkind": "theorem",
+      "number": "1.2",
+      "label": "thm1",
+      "file": "paper.tex",
+      "from": 54,
+      "to": 56,
+      "proof_status": "none"
+    },
+    {
+      "id": "lem-1",
+      "kind": "statement",
+      "subkind": "lemma",
+      "number": "2.1",
+      "file": "paper.tex",
+      "from": 75,
+      "to": 87,
+      "parts": [
+        "1.",
+        "2.",
+        "3.",
+        "4.",
+        "5.",
+        "6."
+      ],
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-1",
+      "kind": "proof",
+      "file": "paper.tex",
+      "from": 88,
+      "to": 92,
+      "proves": "lem-1"
+    },
+    {
+      "id": "lem-2",
+      "kind": "statement",
+      "subkind": "lemma",
+      "number": "2.2",
+      "label": "l1",
+      "file": "paper.tex",
+      "from": 93,
+      "to": 100,
+      "parts": [
+        "1.",
+        "2."
+      ],
+      "proof_status": "cited"
+    },
+    {
+      "id": "thm-2",
+      "kind": "statement",
+      "subkind": "theorem",
+      "number": "2.3",
+      "label": "l3",
+      "file": "paper.tex",
+      "from": 102,
+      "to": 105,
+      "proof_status": "cited"
+    },
+    {
+      "id": "thm-3",
+      "kind": "statement",
+      "subkind": "theorem",
+      "number": "2.4",
+      "label": "t1",
+      "file": "paper.tex",
+      "from": 107,
+      "to": 109,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-2",
+      "kind": "proof",
+      "file": "paper.tex",
+      "from": 110,
+      "to": 116,
+      "proves": "thm-3"
+    },
+    {
+      "id": "cor-1",
+      "kind": "statement",
+      "subkind": "corollary",
+      "number": "2.5",
+      "label": "cor1",
+      "file": "paper.tex",
+      "from": 117,
+      "to": 119,
+      "proof_status": "cited"
+    }
+  ],
+  "uses": [
+    {
+      "proof": "proof-2",
+      "to": "lem-2",
+      "file": "paper.tex",
+      "line": 115
+    }
+  ]
+}
