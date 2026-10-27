@@ -74,13 +74,19 @@ commit() {
 }
 
 # publish opens a pull request with the commit of a clone and merges it when the checks passed.
-# Arguments: the repository, the title, the body file, the result of the checks (pass or fail), and two labels.
+# Arguments: the repository, the title, the body file, the result of the checks (pass or fail), two labels, and "redo" when the commit is generated data that the run can make again on the new main.
+# With "redo", a commit that does not rebase on main gives the return code 2 and no pull request. Otherwise the run blocks.
 publish() {
 	name=$1 title=$2 body=$3 checks=$4
 	r="$dir/$name"
 	git -C "$r" fetch -q origin main
 	git -C "$r" rebase -q origin/main || {
 		git -C "$r" rebase --abort
+		if [ "${7:-}" = redo ]; then
+			log "$name: the commit does not rebase on main, so the run makes it again"
+			git -C "$r" checkout -q -B pipeline origin/main
+			return 2
+		fi
 		block "$name: the commit does not rebase on main"
 	}
 	branch="pipeline/$stamp"
@@ -105,7 +111,14 @@ tool() {
 		return 0
 	fi
 	t=$(mktemp -d "$dir/run/tool.XXXXXX")
-	gh release download "$tag" -R "tamnd/$1" -p "${2}_${tag}_linux_amd64.tar.gz" -p checksums.txt -D "$t"
+	# A new release has no binaries until its workflow is done. The run then keeps the binary that it has.
+	if ! gh release download "$tag" -R "tamnd/$1" -p "${2}_${tag}_linux_amd64.tar.gz" -p checksums.txt -D "$t" 2>/dev/null; then
+		rm -f "$t/${2}_${tag}_linux_amd64.tar.gz" "$t/checksums.txt"
+		rmdir "$t"
+		[ -x "$dir/bin/$2" ] || block "the release $tag of $2 has no linux binary"
+		log "the release $tag of $2 has no linux binary yet, so the run uses $(cat "$dir/bin/$2.tag" 2>/dev/null)"
+		return 0
+	fi
 	a="${2}_${tag}_linux_amd64"
 	(cd "$t" && grep -E "  (\./)?$a.tar.gz\$" checksums.txt | sha256sum -c -) >/dev/null || block "the checksum of $2 $tag does not match"
 	tar -xzf "$t/$a.tar.gz" -C "$t" "$a/$2"
@@ -166,35 +179,48 @@ if commit arxiv "Add the census of $done papers of $from"; then
 	publish arxiv "Add the census of $done papers of $from" "$body" "$checks" "type: feature" "area: corpus"
 fi
 
-# The import into tamnd/math2.
-start math2
-cd "$dir/math2"
-m2 corpus import -source arxiv -corpus "$dir/arxiv" -root "$dir/math2" >"$dir/run/import-$stamp.out" 2>&1 || block "m2 corpus import failed, see $dir/run/import-$stamp.out"
-m2 corpus cluster -source arxiv -root "$dir/math2" >"$dir/run/cluster-$stamp.out" 2>&1 || block "m2 corpus cluster failed, see $dir/run/cluster-$stamp.out"
-arxiv=$(git -C "$dir/arxiv" rev-parse --short HEAD)
-title="Import the arXiv mentions of tamnd/arxiv at $arxiv"
-commit math2 "$title" || { log "the run is done"; exit 0; }
-mchecks=pass
-m2 check >"$dir/run/check-$stamp.out" 2>&1 || mchecks=fail
-for v in volumes/*.yaml; do
-	m2 pack -check -q "$v" >>"$dir/run/check-$stamp.out" 2>&1 || mchecks=fail
-done
-m2 audit -changed -base origin/main >"$dir/run/audit-$stamp.out" 2>&1 || mchecks=fail
-# The audit writes its report into the tree. The report of a run of -changed is not committed.
-rm -f "$dir/math2/reports/audit/changed.txt" "$dir/math2/reports/audit/changed.json"
-body="$dir/run/math2-$stamp.md"
-{
-	echo "The pipeline on the build server imported the arXiv mentions of tamnd/arxiv at $arxiv with $m2v, and grouped them into rows again."
-	echo
-	echo '```'
-	cat "$dir/run/import-$stamp.out" "$dir/run/cluster-$stamp.out"
-	echo '```'
-	echo
-	if [ "$mchecks" = pass ]; then
-		echo "\`m2 check\`, \`m2 pack -check\` and \`m2 audit -changed\` pass."
+# The import into tamnd/math2. It is generated data, so when main changes under it, the run makes it again on the new main, at most two times.
+# importmath2 makes the commit and the body of the pull request. It fails when the import gives no change.
+importmath2() {
+	start math2
+	cd "$dir/math2"
+	m2 corpus import -source arxiv -corpus "$dir/arxiv" -root "$dir/math2" >"$dir/run/import-$stamp.out" 2>&1 || block "m2 corpus import failed, see $dir/run/import-$stamp.out"
+	m2 corpus cluster -source arxiv -root "$dir/math2" >"$dir/run/cluster-$stamp.out" 2>&1 || block "m2 corpus cluster failed, see $dir/run/cluster-$stamp.out"
+	arxiv=$(git -C "$dir/arxiv" rev-parse --short HEAD)
+	title="Import the arXiv mentions of tamnd/arxiv at $arxiv"
+	commit math2 "$title" || return 1
+	mchecks=pass
+	m2 check >"$dir/run/check-$stamp.out" 2>&1 || mchecks=fail
+	for v in volumes/*.yaml; do
+		m2 pack -check -q "$v" >>"$dir/run/check-$stamp.out" 2>&1 || mchecks=fail
+	done
+	m2 audit -changed -base origin/main >"$dir/run/audit-$stamp.out" 2>&1 || mchecks=fail
+	# The audit writes its report into the tree. The report of a run of -changed is not committed.
+	rm -f "$dir/math2/reports/audit/changed.txt" "$dir/math2/reports/audit/changed.json"
+	body="$dir/run/math2-$stamp.md"
+	{
+		echo "The pipeline on the build server imported the arXiv mentions of tamnd/arxiv at $arxiv with $m2v, and grouped them into rows again."
+		echo
+		echo '```'
+		cat "$dir/run/import-$stamp.out" "$dir/run/cluster-$stamp.out"
+		echo '```'
+		echo
+		if [ "$mchecks" = pass ]; then
+			echo "\`m2 check\`, \`m2 pack -check\` and \`m2 audit -changed\` pass."
+		else
+			echo "\`m2 check\`, \`m2 pack -check\` or \`m2 audit -changed\` has a finding, so this pull request stays open. The output is in $dir/run on the build server."
+		fi
+	} >"$body"
+}
+
+for try in 1 2 3; do
+	importmath2 || { log "the run is done"; exit 0; }
+	rc=0
+	if [ "$try" -lt 3 ]; then
+		publish math2 "$title" "$body" "$mchecks" "type: content" "area: inventory" redo || rc=$?
 	else
-		echo "\`m2 check\`, \`m2 pack -check\` or \`m2 audit -changed\` has a finding, so this pull request stays open. The output is in $dir/run on the build server."
+		publish math2 "$title" "$body" "$mchecks" "type: content" "area: inventory"
 	fi
-} >"$body"
-publish math2 "$title" "$body" "$mchecks" "type: content" "area: inventory"
+	[ "$rc" -eq 2 ] || break
+done
 log "the run is done"
