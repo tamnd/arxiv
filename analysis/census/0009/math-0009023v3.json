@@ -1,7 +1,7 @@
 {
  "paper": "math/0009023",
  "version": 3,
- "extractor": "ax/v0.5.2",
+ "extractor": "ax/v0.5.17",
  "main": [
   "paper.tex"
  ],
@@ -91,23 +91,24 @@
   {
    "env": "proofof",
    "title": "",
-   "item": "unknown",
+   "item": "proof",
    "numbered": false,
+   "proof": true,
    "from": "wrapper",
    "form": "titled",
    "title_arg": true
   }
  ],
  "occurrences": {
-  "env": 14,
+  "env": 12,
   "label": 1,
-  "proof": 2,
+  "proof": 4,
   "textref": 14
  },
  "matched": {
-  "env": 14,
+  "env": 12,
   "label": 1,
-  "proof": 2
+  "proof": 4
  },
  "gaps": [],
  "waivers": [],
@@ -127,7 +128,20 @@
  "render": {
   "theorems": 14,
   "proofs": 0,
-  "agree": false
+  "agree": false,
+  "source_theorems": 12,
+  "source_proofs": 4,
+  "envs": [
+   {
+    "env": "proof",
+    "source": 0,
+    "render": 2
+   }
+  ]
+ },
+ "outside": {
+  "theoremgraph": 10,
+  "theoremsearch": 8
  },
  "findings": [
   {
@@ -212,8 +226,12 @@
   },
   {
    "rule": "D07",
-   "occurrence": "math/0009023v3#env-12",
+   "occurrence": "math/0009023v3#env-10",
    "message": "the counter model gives Theorem 3 and the second witness gives 4.1"
+  },
+  {
+   "rule": "D08",
+   "message": "the source has 12 theorem environments and the render has 14"
   }
  ],
  "strength": "normal",
@@ -372,9 +390,9 @@
    "result": "matched"
   },
   {
-   "id": "math/0009023v3#env-9",
-   "type": "env",
-   "k": 9,
+   "id": "math/0009023v3#proof-2",
+   "type": "proof",
+   "k": 2,
    "env": "proofof",
    "title": "Proof of Theorem \\protect\\refq-reg classic",
    "item": "proof",
@@ -386,9 +404,9 @@
    "result": "matched"
   },
   {
-   "id": "math/0009023v3#env-10",
-   "type": "env",
-   "k": 10,
+   "id": "math/0009023v3#proof-3",
+   "type": "proof",
+   "k": 3,
    "env": "proofof",
    "title": "Proof of Lemma \\protect\\refswitch",
    "item": "proof",
@@ -400,9 +418,9 @@
    "result": "matched"
   },
   {
-   "id": "math/0009023v3#env-11",
+   "id": "math/0009023v3#env-9",
    "type": "env",
-   "k": 11,
+   "k": 9,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -417,9 +435,9 @@
    "result": "matched"
   },
   {
-   "id": "math/0009023v3#env-12",
+   "id": "math/0009023v3#env-10",
    "type": "env",
-   "k": 12,
+   "k": 10,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -434,9 +452,9 @@
    "result": "matched"
   },
   {
-   "id": "math/0009023v3#proof-2",
+   "id": "math/0009023v3#proof-4",
    "type": "proof",
-   "k": 2,
+   "k": 4,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -448,9 +466,9 @@
    "result": "matched"
   },
   {
-   "id": "math/0009023v3#env-13",
+   "id": "math/0009023v3#env-11",
    "type": "env",
-   "k": 13,
+   "k": 11,
    "env": "example",
    "title": "Example",
    "item": "example",
@@ -465,9 +483,9 @@
    "result": "matched"
   },
   {
-   "id": "math/0009023v3#env-14",
+   "id": "math/0009023v3#env-12",
    "type": "env",
-   "k": 14,
+   "k": 12,
    "env": "example",
    "title": "Example",
    "item": "example",
