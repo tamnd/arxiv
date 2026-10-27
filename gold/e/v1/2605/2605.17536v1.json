@@ -1,0 +1,226 @@
+{
+  "set": "E",
+  "set_version": "v1",
+  "paper": "2605.17536",
+  "version": 1,
+  "group": "2021-2026",
+  "state": "proposed",
+  "proposed_by": "ax/v0.5.14",
+  "marks": [
+    {
+      "id": "theorem-1",
+      "kind": "statement",
+      "subkind": "theorem",
+      "number": "1.1",
+      "label": "main",
+      "file": "main_3.tex",
+      "from": 265,
+      "to": 293,
+      "proof_status": "none"
+    },
+    {
+      "id": "lemma-1",
+      "kind": "statement",
+      "subkind": "lemma",
+      "number": "2.1",
+      "label": "existenemin",
+      "file": "main_3.tex",
+      "from": 356,
+      "to": 360,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-1",
+      "kind": "proof",
+      "file": "main_3.tex",
+      "from": 361,
+      "to": 403,
+      "proves": "lemma-1"
+    },
+    {
+      "id": "lemma-2",
+      "kind": "statement",
+      "subkind": "lemma",
+      "number": "2.2",
+      "label": "nonempty",
+      "file": "main_3.tex",
+      "from": 406,
+      "to": 414,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-2",
+      "kind": "proof",
+      "file": "main_3.tex",
+      "from": 415,
+      "to": 479,
+      "proves": "lemma-2"
+    },
+    {
+      "id": "lemma-3",
+      "kind": "statement",
+      "subkind": "lemma",
+      "number": "2.3",
+      "label": "energyestimate",
+      "file": "main_3.tex",
+      "from": 502,
+      "to": 510,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-3",
+      "kind": "proof",
+      "file": "main_3.tex",
+      "from": 511,
+      "to": 601,
+      "proves": "lemma-3"
+    },
+    {
+      "id": "lemma-4",
+      "kind": "statement",
+      "subkind": "lemma",
+      "number": "2.4",
+      "label": "dualestimate",
+      "file": "main_3.tex",
+      "from": 704,
+      "to": 712,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-4",
+      "kind": "proof",
+      "label": "EL1",
+      "file": "main_3.tex",
+      "from": 713,
+      "to": 804,
+      "proves": "lemma-4"
+    },
+    {
+      "id": "theorem-2",
+      "kind": "statement",
+      "subkind": "theorem",
+      "number": "2.5",
+      "label": "globalenergyineq1",
+      "file": "main_3.tex",
+      "from": 965,
+      "to": 973,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-5",
+      "kind": "proof",
+      "file": "main_3.tex",
+      "from": 974,
+      "to": 977,
+      "proves": "theorem-2"
+    },
+    {
+      "id": "lemma-5",
+      "kind": "statement",
+      "subkind": "lemma",
+      "number": "2.6",
+      "label": "sharp_est0",
+      "file": "main_3.tex",
+      "from": 983,
+      "to": 993,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-6",
+      "kind": "proof",
+      "label": "I-est",
+      "file": "main_3.tex",
+      "from": 994,
+      "to": 1076,
+      "proves": "lemma-5"
+    },
+    {
+      "id": "lemma-6",
+      "kind": "statement",
+      "subkind": "lemma",
+      "number": "3.1",
+      "label": "dualestimate2",
+      "file": "main_3.tex",
+      "from": 1256,
+      "to": 1265,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-7",
+      "kind": "proof",
+      "file": "main_3.tex",
+      "from": 1266,
+      "to": 1306,
+      "proves": "lemma-6"
+    },
+    {
+      "id": "lemma-7",
+      "kind": "statement",
+      "subkind": "lemma",
+      "number": "3.2",
+      "label": "energyineq2",
+      "file": "main_3.tex",
+      "from": 1357,
+      "to": 1367,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-8",
+      "kind": "proof",
+      "file": "main_3.tex",
+      "from": 1368,
+      "to": 1407,
+      "proves": "lemma-7"
+    }
+  ],
+  "uses": [
+    {
+      "proof": "proof-3",
+      "to": "bib:Serra-Tilli2012",
+      "part": "Proposition 3.1",
+      "file": "main_3.tex",
+      "line": 512
+    },
+    {
+      "proof": "proof-4",
+      "to": "bib:Serra-Tilli2012",
+      "part": "Theorem 4.2",
+      "file": "main_3.tex",
+      "line": 719
+    },
+    {
+      "proof": "proof-5",
+      "to": "bib:Serra-Tilli2012",
+      "part": "pages 1572-1573",
+      "file": "main_3.tex",
+      "line": 976
+    },
+    {
+      "proof": "proof-6",
+      "to": "lemma-2",
+      "part": "energy_ineq1",
+      "file": "main_3.tex",
+      "line": 999
+    },
+    {
+      "proof": "proof-6",
+      "to": "lemma-4",
+      "part": "dual_est",
+      "file": "main_3.tex",
+      "line": 1035
+    },
+    {
+      "proof": "proof-7",
+      "to": "lemma-4",
+      "file": "main_3.tex",
+      "line": 1274
+    },
+    {
+      "proof": "proof-8",
+      "to": "lemma-6",
+      "part": "dual_est2",
+      "file": "main_3.tex",
+      "line": 1395
+    }
+  ]
+}

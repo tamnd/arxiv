@@ -1,0 +1,79 @@
+{
+  "set": "E",
+  "set_version": "v1",
+  "paper": "2607.27246",
+  "version": 1,
+  "group": "2021-2026",
+  "state": "proposed",
+  "proposed_by": "ax/v0.5.14",
+  "marks": [
+    {
+      "id": "theorem-1",
+      "kind": "statement",
+      "subkind": "theorem",
+      "number": "1",
+      "label": "thm:main",
+      "file": "paper.tex",
+      "from": 86,
+      "to": 91,
+      "proof_status": "here"
+    },
+    {
+      "id": "lemma-1",
+      "kind": "statement",
+      "subkind": "lemma",
+      "number": "2",
+      "label": "lem:polynomial",
+      "file": "paper.tex",
+      "from": 98,
+      "to": 118,
+      "parts": [
+        "1.",
+        "2.",
+        "3."
+      ],
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-1",
+      "kind": "proof",
+      "label": "eq:dependence",
+      "file": "paper.tex",
+      "from": 120,
+      "to": 155,
+      "proves": "lemma-1"
+    },
+    {
+      "id": "proof-2",
+      "kind": "proof",
+      "file": "paper.tex",
+      "from": 159,
+      "to": 281,
+      "proves": "theorem-1"
+    },
+    {
+      "id": "remark-1",
+      "kind": "remark",
+      "number": "3",
+      "file": "paper.tex",
+      "from": 283,
+      "to": 286
+    },
+    {
+      "id": "remark-2",
+      "kind": "remark",
+      "number": "4",
+      "file": "paper.tex",
+      "from": 288,
+      "to": 291
+    }
+  ],
+  "uses": [
+    {
+      "proof": "proof-2",
+      "to": "lemma-1",
+      "file": "paper.tex",
+      "line": 225
+    }
+  ]
+}

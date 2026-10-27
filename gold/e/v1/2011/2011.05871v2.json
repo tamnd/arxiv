@@ -1,0 +1,105 @@
+{
+  "set": "E",
+  "set_version": "v1",
+  "paper": "2011.05871",
+  "version": 2,
+  "group": "2011-2020",
+  "state": "proposed",
+  "proposed_by": "ax/v0.5.14",
+  "marks": [
+    {
+      "id": "dfn-1",
+      "kind": "definition",
+      "number": "1",
+      "label": "def1",
+      "file": "paper.tex",
+      "from": 349,
+      "to": 360
+    },
+    {
+      "id": "teo-1",
+      "kind": "statement",
+      "subkind": "theorem",
+      "number": "1",
+      "label": "tsamp1",
+      "file": "paper.tex",
+      "from": 362,
+      "to": 368,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-1",
+      "kind": "proof",
+      "file": "paper.tex",
+      "from": 369,
+      "to": 371,
+      "proves": "teo-1"
+    },
+    {
+      "id": "dfn-2",
+      "kind": "definition",
+      "number": "2",
+      "label": "def2",
+      "file": "paper.tex",
+      "from": 534,
+      "to": 545
+    },
+    {
+      "id": "teo-2",
+      "kind": "statement",
+      "subkind": "theorem",
+      "number": "2",
+      "label": "tsamp2",
+      "file": "paper.tex",
+      "from": 547,
+      "to": 562,
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-2",
+      "kind": "proof",
+      "file": "paper.tex",
+      "from": 563,
+      "to": 580,
+      "proves": "teo-2"
+    },
+    {
+      "id": "cor-1",
+      "kind": "statement",
+      "subkind": "corollary",
+      "number": "3",
+      "file": "paper.tex",
+      "from": 582,
+      "to": 597,
+      "parts": [
+        "1.",
+        "2."
+      ],
+      "proof_status": "here"
+    },
+    {
+      "id": "proof-3",
+      "kind": "proof",
+      "file": "paper.tex",
+      "from": 598,
+      "to": 601,
+      "proves": "cor-1"
+    }
+  ],
+  "uses": [
+    {
+      "proof": "proof-1",
+      "to": "dfn-1",
+      "part": "rieszcondition",
+      "file": "paper.tex",
+      "line": 370
+    },
+    {
+      "proof": "proof-2",
+      "to": "bib:ole:16",
+      "part": "Lemma 6.3.2",
+      "file": "paper.tex",
+      "line": 578
+    }
+  ]
+}

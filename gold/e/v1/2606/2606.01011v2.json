@@ -1,0 +1,116 @@
+{
+  "set": "E",
+  "set_version": "v1",
+  "paper": "2606.01011",
+  "version": 2,
+  "group": "2021-2026",
+  "state": "proposed",
+  "proposed_by": "ax/v0.5.14",
+  "marks": [
+    {
+      "id": "pro-1",
+      "kind": "statement",
+      "subkind": "proposition",
+      "number": "1",
+      "label": "prop:space",
+      "file": "semi-ci-test.tex",
+      "from": 406,
+      "to": 427,
+      "proof_status": "here"
+    },
+    {
+      "id": "pro-2",
+      "kind": "statement",
+      "subkind": "proposition",
+      "number": "2",
+      "label": "prop:ortho-comp",
+      "file": "semi-ci-test.tex",
+      "from": 435,
+      "to": 446,
+      "proof_status": "here"
+    },
+    {
+      "id": "pro-3",
+      "kind": "statement",
+      "subkind": "proposition",
+      "number": "3",
+      "label": "prop:eif",
+      "file": "semi-ci-test.tex",
+      "from": 455,
+      "to": 469,
+      "proof_status": "here"
+    },
+    {
+      "id": "th-1",
+      "kind": "statement",
+      "subkind": "theorem",
+      "number": "1",
+      "label": "thm:rho2-if",
+      "file": "semi-ci-test.tex",
+      "from": 558,
+      "to": 571,
+      "proof_status": "here"
+    },
+    {
+      "id": "rem-1",
+      "kind": "remark",
+      "number": "1",
+      "label": "rem:reg-bias",
+      "file": "semi-ci-test.tex",
+      "from": 576,
+      "to": 589
+    },
+    {
+      "id": "th-2",
+      "kind": "statement",
+      "subkind": "theorem",
+      "number": "2",
+      "label": "thm:asymp-dist",
+      "file": "semi-ci-test.tex",
+      "from": 599,
+      "to": 604,
+      "proof_status": "none"
+    },
+    {
+      "id": "proof-1",
+      "kind": "proof",
+      "file": "semi-ci-test.tex",
+      "from": 899,
+      "to": 948,
+      "proves": "pro-1"
+    },
+    {
+      "id": "proof-2",
+      "kind": "proof",
+      "file": "semi-ci-test.tex",
+      "from": 950,
+      "to": 1091,
+      "proves": "pro-2"
+    },
+    {
+      "id": "proof-3",
+      "kind": "proof",
+      "file": "semi-ci-test.tex",
+      "from": 1093,
+      "to": 1209,
+      "proves": "pro-3"
+    },
+    {
+      "id": "proof-4",
+      "kind": "proof",
+      "label": "eq:rho2-decomp",
+      "file": "semi-ci-test.tex",
+      "from": 1211,
+      "to": 1413,
+      "proves": "th-1"
+    }
+  ],
+  "uses": [
+    {
+      "proof": "proof-4",
+      "to": "pro-3",
+      "file": "semi-ci-test.tex",
+      "line": 1389
+    }
+  ]
+}
