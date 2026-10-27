@@ -226,6 +226,8 @@ importmath2() {
 	cd "$dir/math2"
 	m2 corpus import -source arxiv -corpus "$dir/arxiv" -root "$dir/math2" >"$dir/run/import-$stamp.out" 2>&1 || block "m2 corpus import failed, see $dir/run/import-$stamp.out"
 	m2 corpus cluster -source arxiv -root "$dir/math2" >"$dir/run/cluster-$stamp.out" 2>&1 || block "m2 corpus cluster failed, see $dir/run/cluster-$stamp.out"
+	# The report of the research layer (AX-M8). It does not stop the run when it fails.
+	m2 corpus status -layer research -corpus "$dir/arxiv" -root "$dir/math2" -write >"$dir/run/research-$stamp.out" 2>&1 || log "m2 corpus status -layer research failed, see $dir/run/research-$stamp.out"
 	arxiv=$(git -C "$dir/arxiv" rev-parse --short HEAD)
 	title="Import the arXiv mentions of tamnd/arxiv at $arxiv"
 	commit math2 "$title" || return 1
