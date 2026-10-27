@@ -1,7 +1,7 @@
 {
  "paper": "1006.4617",
  "version": 1,
- "extractor": "ax/v0.5.2",
+ "extractor": "ax/v0.5.21",
  "main": [
   "Treeslmp.tex"
  ],
@@ -30,7 +30,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 51 commands, 0 environments",
-  "tree: 61 nodes"
+  "aliases: 38 uses of commands that stand for \\begin or \\end",
+  "tree: 80 nodes"
  ],
  "declarations": [
   {
@@ -95,11 +96,13 @@
  "occurrences": {
   "env": 6,
   "label": 2,
+  "proof": 1,
   "textref": 1
  },
  "matched": {
   "env": 6,
-  "label": 2
+  "label": 2,
+  "proof": 1
  },
  "gaps": [],
  "waivers": [],
@@ -115,6 +118,9 @@
  "textrefs": {
   "resolved": 0,
   "unresolved": 1
+ },
+ "outside": {
+  "theoremgraph": 5
  },
  "findings": [
   {
@@ -161,6 +167,21 @@
    },
    "last": 183,
    "result": "matched"
+  },
+  {
+   "id": "1006.4617v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Treeslmp.tex",
+    "line": 184
+   },
+   "last": 187,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "1006.4617v1#env-3",

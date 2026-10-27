@@ -1,7 +1,7 @@
 {
  "paper": "dg-ga/9612010",
  "version": 3,
- "extractor": "ax/v0.5.2",
+ "extractor": "ax/v0.5.21",
  "main": [
   "6438370.tex",
   "ch.tex"
@@ -15,7 +15,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 38 commands, 0 environments",
-  "tree: 30 nodes"
+  "aliases: 124 uses of commands that stand for \\begin or \\end",
+  "tree: 92 nodes"
  ],
  "declarations": [
   {
@@ -71,7 +72,7 @@
   {
    "env": "hyp",
    "title": "Hypotheses",
-   "item": "unknown",
+   "item": "context/hypothesis",
    "counter": "thm",
    "shared": "thm",
    "numbered": true,
@@ -149,7 +150,7 @@
   {
    "env": "ack",
    "title": "Acknowledgment",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "ack",
    "numbered": true,
    "from": "paper",
@@ -157,181 +158,47 @@
   }
  ],
  "occurrences": {
-  "env": 8,
-  "label": 9,
+  "env": 33,
+  "label": 35,
   "proof": 7,
   "textref": 77
  },
  "matched": {
-  "env": 8,
-  "label": 9,
+  "env": 33,
+  "label": 35,
   "proof": 7
  },
  "gaps": [],
  "waivers": [],
  "numbers": {
   "from_aux": 0,
-  "from_render": 8,
+  "from_render": 33,
   "from_counter": 0,
   "from_head": 0,
-  "agree": 0,
-  "disagree": 7,
-  "contiguity_gaps": 3
+  "agree": 32,
+  "disagree": 0,
+  "contiguity_gaps": 0
  },
  "textrefs": {
-  "resolved": 2,
-  "unresolved": 75
+  "resolved": 67,
+  "unresolved": 10
  },
  "render": {
   "theorems": 33,
   "proofs": 0,
-  "agree": false
+  "agree": true,
+  "source_theorems": 33,
+  "source_proofs": 0
+ },
+ "outside": {
+  "theoremgraph": 1,
+  "theoremsearch": 1
  },
  "findings": [
-  {
-   "rule": "D07",
-   "occurrence": "dg-ga/9612010v3#env-2",
-   "message": "Remark 2.9 is the first in its scope of counter thm"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "dg-ga/9612010v3#env-4",
-   "message": "Remark 3.5 is the first in its scope of counter thm"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "dg-ga/9612010v3#env-7",
-   "message": "Remark 7.5 is the first in its scope of counter thm"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-1",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-2",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-3",
-   "message": "the text names Proposition \\ref{p:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-4",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-5",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-6",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-7",
-   "message": "the text names Corollary \\ref{c:de Rham} and the census has no such item (not-an-item)"
-  },
   {
    "rule": "D09",
    "occurrence": "dg-ga/9612010v3#textref-8",
    "message": "the text names Problem 4.12 and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-9",
-   "message": "the text names Corollary \\ref{c:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-10",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-11",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-12",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-13",
-   "message": "the text names Theorem \\ref{t:E2} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-14",
-   "message": "the text names Corollary \\ref{c:E2} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-15",
-   "message": "the text names Corollary \\ref{c:E2} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-16",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-17",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-19",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-20",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-21",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-22",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-23",
-   "message": "the text names Proposition 1.4 and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-24",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-25",
-   "message": "the text names Proposition \\ref{p:finite time} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-26",
-   "message": "the text names Lemma \\ref{l:key'} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-27",
-   "message": "the text names Lemma \\ref{l:key'} and the census has no such item (not-an-item)"
   },
   {
    "rule": "D09",
@@ -342,21 +209,6 @@
    "rule": "D09",
    "occurrence": "dg-ga/9612010v3#textref-29",
    "message": "the text names Lemma \\ref{l:[A,e]} and the census has no such item (no-label)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-30",
-   "message": "the text names Lemma \\ref{l:ADe+-De} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-31",
-   "message": "the text names Lemma \\ref{l:key'} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-32",
-   "message": "the text names Lemma \\ref{l:Duhamel} and the census has no such item (not-an-item)"
   },
   {
    "rule": "D09",
@@ -375,63 +227,8 @@
   },
   {
    "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-36",
-   "message": "the text names Corollary \\ref{c:bounded Pi} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-37",
-   "message": "the text names Proposition \\ref{p:finite time} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-38",
-   "message": "the text names Lemma \\ref{l:key'} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-39",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-40",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
    "occurrence": "dg-ga/9612010v3#textref-41",
    "message": "the text names Corollary \\ref{c:[A+B,Pi]} and the census has no such item (no-label)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-42",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-43",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-45",
-   "message": "the text names Proposition \\ref{p:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-46",
-   "message": "the text names Lemma \\ref{l:*} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-47",
-   "message": "the text names Lemma \\ref{l:*} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-48",
-   "message": "the text names Proposition \\ref{p:de Rham} and the census has no such item (not-an-item)"
   },
   {
    "rule": "D09",
@@ -440,193 +237,166 @@
   },
   {
    "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-50",
-   "message": "the text names Proposition \\ref{p:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-51",
-   "message": "the text names Proposition \\ref{p:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-52",
-   "message": "the text names Theorem \\ref{t:general} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-53",
-   "message": "the text names Lemma \\ref{l:key'} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-54",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-55",
-   "message": "the text names Proposition \\ref{p:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
    "occurrence": "dg-ga/9612010v3#textref-56",
    "message": "the text names Corollary \\ref{c:[A,Pi]} and the census has no such item (no-label)"
   },
   {
    "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-57",
-   "message": "the text names Corollary \\ref{c:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-58",
-   "message": "the text names Corollary \\ref{c:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-59",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-60",
-   "message": "the text names Corollary \\ref{c:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-61",
-   "message": "the text names Corollary \\ref{c:bundle-like metrics} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-62",
-   "message": "the text names Corollary \\ref{c:bundle-like metrics} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-63",
-   "message": "the text names Corollary \\ref{c:bundle-like metrics} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-64",
-   "message": "the text names Corollary \\ref{c:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-65",
-   "message": "the text names Corollary \\ref{c:harmonic forms} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-66",
-   "message": "the text names Corollary \\ref{c:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-67",
-   "message": "the text names Theorem \\ref{t:E2} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-68",
-   "message": "the text names Corollary \\ref{c:E2} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
    "occurrence": "dg-ga/9612010v3#textref-69",
    "message": "the text names Remark \\ref{rem:[Dperp,Pi]} and the census has no such item (no-label)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-70",
-   "message": "the text names Proposition \\ref{p:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-71",
-   "message": "the text names Lemma \\ref{l:Sobolev} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-72",
-   "message": "the text names Corollary \\ref{c:Sobolev} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-73",
-   "message": "the text names Lemma \\ref{l:self-adjoint} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-74",
-   "message": "the text names Theorem \\ref{t:E2} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-75",
-   "message": "the text names Lemma \\ref{l:B/Z} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-76",
-   "message": "the text names Theorem \\ref{t:de Rham} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "dg-ga/9612010v3#textref-77",
-   "message": "the text names Corollary \\ref{c:E2} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "dg-ga/9612010v3#env-2",
-   "message": "the counter model gives Remark 2.1 and the second witness gives 2.9"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "dg-ga/9612010v3#env-3",
-   "message": "the counter model gives Remark 2.2 and the second witness gives 2.10"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "dg-ga/9612010v3#env-4",
-   "message": "the counter model gives Remark 3.1 and the second witness gives 3.5"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "dg-ga/9612010v3#env-5",
-   "message": "the counter model gives Remark 3.2 and the second witness gives 3.6"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "dg-ga/9612010v3#env-6",
-   "message": "the counter model gives Remark 3.3 and the second witness gives 3.7"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "dg-ga/9612010v3#env-7",
-   "message": "the counter model gives Remark 7.1 and the second witness gives 7.5"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "dg-ga/9612010v3#env-8",
-   "message": "the counter model gives Remark 7.2 and the second witness gives 7.6"
-  },
-  {
-   "rule": "D08",
-   "message": "the source has 8 theorem environments and the render has 33"
   }
  ],
- "strength": "normal",
+ "strength": "strong",
  "items": [
   {
    "id": "dg-ga/9612010v3#env-1",
    "type": "env",
    "k": 1,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "t:general",
+    "e:key"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 150
+   },
+   "last": 166,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "t:de Rham",
+    "e:leafwise Hodge"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 223
+   },
+   "last": 235,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "c:de Rham"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 307
+   },
+   "last": 322,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "1.4",
+   "number_from": "render",
+   "labels": [
+    "c:bundle-like metrics"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 337
+   },
+   "last": 343,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "1.5",
+   "number_from": "render",
+   "labels": [
+    "c:harmonic forms"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 348
+   },
+   "last": 354,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.6",
+   "number_from": "render",
+   "labels": [
+    "t:E2"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 413
+   },
+   "last": 429,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "1.7",
+   "number_from": "render",
+   "labels": [
+    "c:E2"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 435
+   },
+   "last": 439,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-8",
+   "type": "env",
+   "k": 8,
    "env": "ack",
    "title": "Acknowledgment",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "ack",
    "number": "Acknowledgment",
    "number_from": "render",
@@ -635,6 +405,26 @@
     "line": 488
    },
    "last": 495,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "p:finite time"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 519
+   },
+   "last": 529,
    "result": "matched"
   },
   {
@@ -651,6 +441,86 @@
    "last": 589,
    "result": "matched",
    "confidence": "high"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "l:key'"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 598
+   },
+   "last": 605,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "l:Duhamel"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 622
+   },
+   "last": 627,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "l:[A,e]"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 632
+   },
+   "last": 637,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "l:ADe+-De"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 675
+   },
+   "last": 681,
+   "result": "matched"
   },
   {
    "id": "dg-ga/9612010v3#proof-2",
@@ -698,6 +568,26 @@
    "confidence": "high"
   },
   {
+   "id": "dg-ga/9612010v3#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "l:[A+B,e]"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 767
+   },
+   "last": 772,
+   "result": "matched"
+  },
+  {
    "id": "dg-ga/9612010v3#proof-5",
    "type": "proof",
    "k": 5,
@@ -718,6 +608,46 @@
    "last": 918,
    "result": "matched",
    "confidence": "high"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "c:bounded Pi"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 920
+   },
+   "last": 922,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "2.8",
+   "number_from": "render",
+   "labels": [
+    "c:[A+B,Pi]"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 929
+   },
+   "last": 931,
+   "result": "matched"
   },
   {
    "id": "dg-ga/9612010v3#proof-6",
@@ -750,9 +680,9 @@
    "confidence": "high"
   },
   {
-   "id": "dg-ga/9612010v3#env-2",
+   "id": "dg-ga/9612010v3#env-17",
    "type": "env",
-   "k": 2,
+   "k": 17,
    "env": "rem",
    "title": "Remark",
    "item": "remark",
@@ -770,9 +700,9 @@
    "result": "matched"
   },
   {
-   "id": "dg-ga/9612010v3#env-3",
+   "id": "dg-ga/9612010v3#env-18",
    "type": "env",
-   "k": 3,
+   "k": 18,
    "env": "rem",
    "title": "Remark",
    "item": "remark",
@@ -790,9 +720,109 @@
    "result": "matched"
   },
   {
-   "id": "dg-ga/9612010v3#env-4",
+   "id": "dg-ga/9612010v3#env-19",
    "type": "env",
-   "k": 4,
+   "k": 19,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "2.11",
+   "number_from": "render",
+   "labels": [
+    "c:[A,Pi]"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 1036
+   },
+   "last": 1040,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "p:de Rham"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 1050
+   },
+   "last": 1056,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "l:*"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 1069
+   },
+   "last": 1074,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "l:[theta,delta0-1]"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 1128
+   },
+   "last": 1138,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "l:d01,del0-1"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 1159
+   },
+   "last": 1167,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-24",
+   "type": "env",
+   "k": 24,
    "env": "rem",
    "title": "Remark",
    "item": "remark",
@@ -810,9 +840,9 @@
    "result": "matched"
   },
   {
-   "id": "dg-ga/9612010v3#env-5",
+   "id": "dg-ga/9612010v3#env-25",
    "type": "env",
-   "k": 5,
+   "k": 25,
    "env": "rem",
    "title": "Remark",
    "item": "remark",
@@ -827,9 +857,9 @@
    "result": "matched"
   },
   {
-   "id": "dg-ga/9612010v3#env-6",
+   "id": "dg-ga/9612010v3#env-26",
    "type": "env",
-   "k": 6,
+   "k": 26,
    "env": "rem",
    "title": "Remark",
    "item": "remark",
@@ -847,9 +877,106 @@
    "result": "matched"
   },
   {
-   "id": "dg-ga/9612010v3#env-7",
+   "id": "dg-ga/9612010v3#env-27",
    "type": "env",
-   "k": 7,
+   "k": 27,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.1",
+   "number_from": "render",
+   "pos": {
+    "file": "6438370.tex",
+    "line": 1303
+   },
+   "last": 1306,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "l:self-adjoint"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 1351
+   },
+   "last": 1353,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "7.2",
+   "number_from": "render",
+   "labels": [
+    "l:Sobolev"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 1367
+   },
+   "last": 1379,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "7.3",
+   "number_from": "render",
+   "labels": [
+    "c:Sobolev"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 1440
+   },
+   "last": 1449,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "7.4",
+   "number_from": "render",
+   "labels": [
+    "l:B/Z"
+   ],
+   "pos": {
+    "file": "6438370.tex",
+    "line": 1492
+   },
+   "last": 1494,
+   "result": "matched"
+  },
+  {
+   "id": "dg-ga/9612010v3#env-32",
+   "type": "env",
+   "k": 32,
    "env": "rem",
    "title": "Remark",
    "item": "remark",
@@ -864,9 +991,9 @@
    "result": "matched"
   },
   {
-   "id": "dg-ga/9612010v3#env-8",
+   "id": "dg-ga/9612010v3#env-33",
    "type": "env",
-   "k": 8,
+   "k": 33,
    "env": "rem",
    "title": "Remark",
    "item": "remark",
