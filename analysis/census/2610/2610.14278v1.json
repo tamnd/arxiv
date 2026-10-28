@@ -1,0 +1,2663 @@
+{
+ "paper": "2610.14278",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "RepHomInv_v2.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "ptdiagrams",
+  "amscd",
+  "eucal",
+  "amsfonts",
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "latexsym",
+  "tikz-cd",
+  "textcomp",
+  "tabularx",
+  "array",
+  "xy"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: RepHomInv_v2.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 151 commands, 1 environments",
+  "aliases: 14 uses of commands that stand for \\begin or \\end",
+  "tree: 294 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "conjecture",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "problem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "T1a",
+   "title": "Theorem~\\ref{T1a}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "houainv",
+   "title": "Theorem~\\ref{houainv}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hosym",
+   "title": "Corollary~\\ref{hosym}",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hougl",
+   "title": "Corollary~\\ref{hougl}",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Tgroups",
+   "title": "Theorem~\\ref{Tgroups}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Cgroups",
+   "title": "Corollary~\\ref{Cgroups}",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 76,
+  "proof": 41,
+  "textref": 116
+ },
+ "matched": {
+  "env": 76,
+  "proof": 41
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 70,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 2,
+  "unresolved": 114
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-1",
+   "message": "the text names Remark 1.4 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-2",
+   "message": "the text names Proposition \\ref{factorTr} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-3",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-4",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-5",
+   "message": "the text names Definition \\ref{iliealg} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-6",
+   "message": "the text names Theorem \\ref{houainv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-7",
+   "message": "the text names Theorem \\ref{houainv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-8",
+   "message": "the text names Corollary \\ref{hosym} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-9",
+   "message": "the text names Theorem \\ref{houainv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-10",
+   "message": "the text names Corollary \\ref{hougl} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-11",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-12",
+   "message": "the text names Theorem \\ref{Tgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-13",
+   "message": "the text names Theorem \\ref{Tgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-14",
+   "message": "the text names Proposition \\ref{grcomp} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-15",
+   "message": "the text names Theorem \\ref{Tgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-16",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-17",
+   "message": "the text names Corollary \\ref{Cgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-18",
+   "message": "the text names Proposition \\ref{simp} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-19",
+   "message": "the text names Theorem \\ref{invmain} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-20",
+   "message": "the text names Proposition \\ref{factorTr} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-21",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-22",
+   "message": "the text names Proposition \\ref{pC} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-23",
+   "message": "the text names Theorem \\ref{houainv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-24",
+   "message": "the text names Corollary \\ref{hosym} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-25",
+   "message": "the text names Corollary \\ref{hougl} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-26",
+   "message": "the text names Theorem \\ref{Tgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-27",
+   "message": "the text names Corollary \\ref{Cgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-28",
+   "message": "the text names Theorem \\ref{invmain} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-29",
+   "message": "the text names Theorem \\ref{Tgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-30",
+   "message": "the text names Lemma \\ref{prep1} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-31",
+   "message": "the text names lemma \\ref{freeprod} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-32",
+   "message": "the text names Lemma \\ref{eqcat} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-33",
+   "message": "the text names Proposition \\ref{prep} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-34",
+   "message": "the text names Lemma \\ref{prep1} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-35",
+   "message": "the text names Proposition \\ref{prep} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-36",
+   "message": "the text names Lemma \\ref{S2L9} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-37",
+   "message": "the text names Proposition \\ref{dgproper} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-38",
+   "message": "the text names Theorem \\ref{trep} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-39",
+   "message": "the text names Proposition \\ref{dgproper} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-40",
+   "message": "the text names Theorem \\ref{hopushout} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-41",
+   "message": "the text names Theorem \\ref{trep} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-42",
+   "message": "the text names Proposition \\ref{lhom} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-43",
+   "message": "the text names Lemma A.2 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-44",
+   "message": "the text names Proposition \\ref{lhom} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-45",
+   "message": "the text names Proposition \\ref{lhom} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-46",
+   "message": "the text names Theorem \\ref{inv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-47",
+   "message": "the text names Proposition \\ref{prep} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-48",
+   "message": "the text names Proposition \\ref{simp} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-49",
+   "message": "the text names Lemma \\ref{prep1} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-51",
+   "message": "the text names Proposition \\ref{lhom} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-52",
+   "message": "the text names Theorem \\ref{inv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-53",
+   "message": "the text names Proposition \\ref{lhom} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-54",
+   "message": "the text names Lemma \\ref{goodhom} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-55",
+   "message": "the text names Theorem \\ref{mordih} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-56",
+   "message": "the text names Lemma \\ref{LtP} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-57",
+   "message": "the text names Lemma \\ref{3.2} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-58",
+   "message": "the text names Lemma \\ref{3.3} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-59",
+   "message": "the text names Lemma \\ref{3.2} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-60",
+   "message": "the text names Theorem \\ref{t3.3} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-61",
+   "message": "the text names Proposition \\ref{S2P1} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-62",
+   "message": "the text names Corollary \\ref{t3.3c} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-63",
+   "message": "the text names Proposition \\ref{zerohom} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-64",
+   "message": "the text names Theorem \\ref{inv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-65",
+   "message": "the text names Theorem \\ref{invmain} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-67",
+   "message": "the text names Lemma \\ref{invHom} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-68",
+   "message": "the text names Theorem \\ref{kosdualinv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-69",
+   "message": "the text names Lemma \\ref{twbijinv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-70",
+   "message": "the text names Lemma \\ref{invHom} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-71",
+   "message": "the text names Proposition \\ref{simpadj} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-72",
+   "message": "the text names Lemma \\ref{hc0} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-73",
+   "message": "the text names Lemma \\ref{algstr} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-74",
+   "message": "the text names Proposition \\ref{factorTr} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-75",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-76",
+   "message": "the text names Lemma 33 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-77",
+   "message": "the text names Proposition \\ref{pC} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-78",
+   "message": "the text names Proposition \\ref{factorTr} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-79",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-80",
+   "message": "the text names Proposition \\ref{simp} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-81",
+   "message": "the text names Definition \\ref{defsrep} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-82",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-83",
+   "message": "the text names Proposition \\ref{skinvtoinv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-84",
+   "message": "the text names Theorem \\ref{kosdualinv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-85",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-86",
+   "message": "the text names Theorem \\ref{invmain} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-87",
+   "message": "the text names Proposition \\ref{tA} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-88",
+   "message": "the text names Theorem \\ref{houainv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-89",
+   "message": "the text names Corollary \\ref{hosym} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-90",
+   "message": "the text names Corollary \\ref{hosym} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-91",
+   "message": "the text names Theorem \\ref{houainv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-92",
+   "message": "the text names Theorem \\ref{Tgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-93",
+   "message": "the text names Corollary \\ref{Cgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-94",
+   "message": "the text names Remark \\ref{grrational} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-95",
+   "message": "the text names Example \\ref{grex} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-96",
+   "message": "the text names Definition \\ref{grchardef} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-97",
+   "message": "the text names Proposition \\ref{grcomp} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-98",
+   "message": "the text names Theorem \\ref{Tgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-99",
+   "message": "the text names Proposition \\ref{grlift} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-100",
+   "message": "the text names Definition \\ref{defho} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-101",
+   "message": "the text names Lemma \\ref{grPsihyp} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-102",
+   "message": "the text names Theorem \\ref{Tgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-103",
+   "message": "the text names Theorem \\ref{Tgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-104",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-105",
+   "message": "the text names Proposition \\ref{grcomp} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-106",
+   "message": "the text names Corollary \\ref{grchar0} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-107",
+   "message": "the text names Corollary \\ref{grspaces} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-108",
+   "message": "the text names Proposition \\ref{grcomp} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-109",
+   "message": "the text names Proposition \\ref{pC} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-110",
+   "message": "the text names Corollary \\ref{Cgroups} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-111",
+   "message": "the text names Theorem \\ref{houainv} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-112",
+   "message": "the text names Theorem \\ref{T1a} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-113",
+   "message": "the text names Proposition \\ref{grcomp} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-114",
+   "message": "the text names Remark \\ref{grrational} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-115",
+   "message": "the text names Proposition \\ref{grcomp} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.14278v1#textref-116",
+   "message": "the text names Example \\ref{grtraces} and the census has no such item (no-label)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.14278v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "T1a",
+   "title": "Theorem~\\ref{T1a}",
+   "item": "statement/theorem",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 440
+   },
+   "last": 445,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "houainv",
+   "title": "Theorem~\\ref{houainv}",
+   "item": "statement/theorem",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 450
+   },
+   "last": 458,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "hosym",
+   "title": "Corollary~\\ref{hosym}",
+   "item": "statement/corollary",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 463
+   },
+   "last": 467,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "hougl",
+   "title": "Corollary~\\ref{hougl}",
+   "item": "statement/corollary",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 477
+   },
+   "last": 484,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "Tgroups",
+   "title": "Theorem~\\ref{Tgroups}",
+   "item": "statement/theorem",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 524
+   },
+   "last": 537,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "Cgroups",
+   "title": "Corollary~\\ref{Cgroups}",
+   "item": "statement/corollary",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 575
+   },
+   "last": 583,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "2.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 679
+   },
+   "last": 681,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "2.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 709
+   },
+   "last": 711,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 713
+   },
+   "last": 735,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 739
+   },
+   "last": 743,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 745
+   },
+   "last": 763,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "2.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 778
+   },
+   "last": 785,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 787
+   },
+   "last": 800,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 805
+   },
+   "last": 814,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 821
+   },
+   "last": 828,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 832
+   },
+   "last": 834,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 839
+   },
+   "last": 852,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 854
+   },
+   "last": 857,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 859
+   },
+   "last": 864,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 898
+   },
+   "last": 912,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "2.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 914
+   },
+   "last": 928,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 930
+   },
+   "last": 952,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 955
+   },
+   "last": 1031,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1035
+   },
+   "last": 1045,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1047
+   },
+   "last": 1076,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "2.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1083
+   },
+   "last": 1085,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1087
+   },
+   "last": 1105,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1120
+   },
+   "last": 1133,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1135
+   },
+   "last": 1139,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1158
+   },
+   "last": 1162,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1164
+   },
+   "last": 1179,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1185
+   },
+   "last": 1189,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1193
+   },
+   "last": 1199,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1201
+   },
+   "last": 1203,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "2.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1205
+   },
+   "last": 1207,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "2.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1211
+   },
+   "last": 1214,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1216
+   },
+   "last": 1242,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "3.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1279
+   },
+   "last": 1284,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1286
+   },
+   "last": 1315,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1320
+   },
+   "last": 1324,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1326
+   },
+   "last": 1334,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1341
+   },
+   "last": 1344,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1354
+   },
+   "last": 1364,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1366
+   },
+   "last": 1394,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "3.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1396
+   },
+   "last": 1400,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1402
+   },
+   "last": 1415,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "3.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1417
+   },
+   "last": 1419,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1421
+   },
+   "last": 1437,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1441
+   },
+   "last": 1445,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1447
+   },
+   "last": 1449,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1453
+   },
+   "last": 1456,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "3.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1589
+   },
+   "last": 1591,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1593
+   },
+   "last": 1617,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1658
+   },
+   "last": 1668,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1678
+   },
+   "last": 1680,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1684
+   },
+   "last": 1689,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1717
+   },
+   "last": 1719,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1721
+   },
+   "last": 1800,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1808
+   },
+   "last": 1810,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1812
+   },
+   "last": 1822,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1829
+   },
+   "last": 1834,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1836
+   },
+   "last": 1862,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1866
+   },
+   "last": 1875,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1909
+   },
+   "last": 1915,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 1917
+   },
+   "last": 1939,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2003
+   },
+   "last": 2009,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2024
+   },
+   "last": 2029,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2031
+   },
+   "last": 2033,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2073
+   },
+   "last": 2075,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2077
+   },
+   "last": 2089,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2094
+   },
+   "last": 2112,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2114
+   },
+   "last": 2149,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2169
+   },
+   "last": 2172,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2176
+   },
+   "last": 2185,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2189
+   },
+   "last": 2220,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2224
+   },
+   "last": 2232,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "5.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2240
+   },
+   "last": 2246,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2248
+   },
+   "last": 2279,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2287
+   },
+   "last": 2291,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2295
+   },
+   "last": 2297,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "5.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2299
+   },
+   "last": 2301,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2303
+   },
+   "last": 2306,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2310
+   },
+   "last": 2318,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2320
+   },
+   "last": 2334,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2337
+   },
+   "last": 2387,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "parent": "2610.14278v1#env-54",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2340
+   },
+   "last": 2343,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.14278v1#env-54",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2345
+   },
+   "last": 2351,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "5.2",
+   "number_from": "counter",
+   "parent": "2610.14278v1#env-54",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2353
+   },
+   "last": 2385,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2389
+   },
+   "last": 2416,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "counter",
+   "parent": "2610.14278v1#env-57",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2395
+   },
+   "last": 2402,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.14278v1#env-57",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2403
+   },
+   "last": 2415,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "6.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2460
+   },
+   "last": 2463,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2465
+   },
+   "last": 2487,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "6.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2504
+   },
+   "last": 2510,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2512
+   },
+   "last": 2514,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "6.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2516
+   },
+   "last": 2520,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "6.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2524
+   },
+   "last": 2526,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "6.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2535
+   },
+   "last": 2541,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2543
+   },
+   "last": 2550,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "6.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2552
+   },
+   "last": 2557,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "6.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2569
+   },
+   "last": 2592,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2643
+   },
+   "last": 2653,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2655
+   },
+   "last": 2689,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2691
+   },
+   "last": 2697,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "6.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2707
+   },
+   "last": 2711,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "6.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2719
+   },
+   "last": 2737,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2739
+   },
+   "last": 2741,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "6.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2743
+   },
+   "last": 2747,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "6.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2754
+   },
+   "last": 2760,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2762
+   },
+   "last": 2768,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2776
+   },
+   "last": 2783,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2785
+   },
+   "last": 2787,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2797
+   },
+   "last": 2803,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2805
+   },
+   "last": 2807,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "6.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2809
+   },
+   "last": 2815,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "6.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2817
+   },
+   "last": 2829,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14278v1#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "6.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "RepHomInv_v2.tex",
+    "line": 2831
+   },
+   "last": 2833,
+   "result": "matched"
+  }
+ ]
+}

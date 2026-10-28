@@ -1,0 +1,816 @@
+{
+ "paper": "2610.14086",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "arxiv-manuscript.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "fontenc",
+  "lmodern",
+  "geometry",
+  "amsmath",
+  "amssymb",
+  "amsthm",
+  "mathtools",
+  "microtype",
+  "booktabs",
+  "needspace",
+  "natbib",
+  "hyperref",
+  "cleveref"
+ ],
+ "steps": [
+  "unpack: 3 files",
+  "main: arxiv-manuscript.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 18 commands, 1 environments",
+  "tree: 118 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  },
+  {
+   "env": "proofof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 19,
+  "label": 61,
+  "proof": 17
+ },
+ "matched": {
+  "env": 19,
+  "label": 61,
+  "proof": 17
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 19,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 19,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 0,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 19,
+  "proofs": 17,
+  "agree": true,
+  "source_theorems": 19,
+  "source_proofs": 17
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.14086v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "thm:stability",
+    "eq:stability"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 126
+   },
+   "last": 135,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "thm:arithmetic",
+    "eq:arithmetic-lower",
+    "eq:arithmetic-upper"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 159
+   },
+   "last": 177,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "thm:planar",
+    "eq:planar-main"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 188
+   },
+   "last": 195,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "prop:finite",
+    "eq:finite-dom"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 256
+   },
+   "last": 265,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:BL",
+    "eq:gap-integral",
+    "eq:pair-tail"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 267
+   },
+   "last": 314,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "prop:compact-equality",
+    "eq:equality"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 316
+   },
+   "last": 322,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 324
+   },
+   "last": 340,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "lem:compactness",
+    "eq:Lipschitz"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 342
+   },
+   "last": 351,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 353
+   },
+   "last": 371,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "lem:masses",
+    "eq:mass-bound"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 379
+   },
+   "last": 391,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 393
+   },
+   "last": 406,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "lem:centers",
+    "eq:center-bound",
+    "eq:cluster-radius"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 408
+   },
+   "last": 422,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:variance"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 424
+   },
+   "last": 454,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "prop:local",
+    "eq:local"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 462
+   },
+   "last": 468,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:new-basis-distance",
+    "eq:tangent",
+    "eq:box",
+    "eq:gain-pointwise",
+    "eq:beta",
+    "eq:gain-expectation",
+    "eq:baseline-centers"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 470
+   },
+   "last": 552,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proofof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 554
+   },
+   "last": 563,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "prop:sharpness"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 565
+   },
+   "last": 571,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 573
+   },
+   "last": 594,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "lem:integer",
+    "eq:integer-radius"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 636
+   },
+   "last": 641,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 643
+   },
+   "last": 654,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "prop:construction",
+    "eq:construction-bound"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 663
+   },
+   "last": 670,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:construction-parameters",
+    "eq:construction-vectors"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 672
+   },
+   "last": 718,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "number": "6.1",
+   "number_from": "render",
+   "labels": [
+    "cor:blocks",
+    "eq:block-directions",
+    "eq:block-masses",
+    "eq:block-within",
+    "eq:block-between",
+    "eq:block-threshold"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 731
+   },
+   "last": 752,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 754
+   },
+   "last": 772,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "lem:planar-expansion",
+    "eq:perimeter-expansion"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 788
+   },
+   "last": 802,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 804
+   },
+   "last": 816,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proofof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:planar-small",
+    "eq:range-variance",
+    "eq:planar-defect",
+    "eq:planar-objective",
+    "eq:planar-construction",
+    "eq:planar-exact"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 818
+   },
+   "last": 906,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "cor:planar-rigidity",
+    "eq:planar-limit-law"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 910
+   },
+   "last": 925,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 927
+   },
+   "last": 952,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "7.1",
+   "number_from": "render",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 954
+   },
+   "last": 959,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "8.1",
+   "number_from": "render",
+   "labels": [
+    "lem:first-variation",
+    "eq:first-variation"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 1020
+   },
+   "last": 1026,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 1028
+   },
+   "last": 1046,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "8.1",
+   "number_from": "render",
+   "labels": [
+    "prop:tangent-limits",
+    "eq:limiting-moments",
+    "eq:limiting-objective"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 1048
+   },
+   "last": 1062,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 1064
+   },
+   "last": 1076,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "8.2",
+   "number_from": "render",
+   "labels": [
+    "prop:relaxation",
+    "eq:relaxation-bound"
+   ],
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 1086
+   },
+   "last": 1092,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14086v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-manuscript.tex",
+    "line": 1094
+   },
+   "last": 1117,
+   "result": "matched"
+  }
+ ]
+}
