@@ -1,0 +1,1622 @@
+{
+ "paper": "2610.18335",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "geometry",
+  "setspace",
+  "authblk",
+  "inputenc",
+  "color",
+  "soul",
+  "yhmath",
+  "xcolor",
+  "bm",
+  "graphicx",
+  "hyperref",
+  "natbib",
+  "bbm",
+  "amsmath",
+  "amssymb",
+  "booktabs",
+  "multirow",
+  "tabularx",
+  "enumitem",
+  "cancel"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 129 commands, 0 environments",
+  "tree: 660 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "acknowledgement",
+   "title": "Acknowledgement",
+   "item": "other/section",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "algorithm",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conclusion",
+   "title": "Conclusion",
+   "item": "other/section",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "criterion",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "solution",
+   "title": "Solution",
+   "item": "other/solution",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summary",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  }
+ ],
+ "occurrences": {
+  "env": 30,
+  "label": 259,
+  "proof": 23,
+  "textref": 140
+ },
+ "matched": {
+  "env": 30,
+  "label": 259,
+  "proof": 23
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 30,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 30,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 136,
+  "unresolved": 4
+ },
+ "render": {
+  "theorems": 30,
+  "proofs": 0,
+  "agree": true,
+  "source_theorems": 30,
+  "source_proofs": 0
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.18335v1#textref-15",
+   "message": "the text names Algorithm \\ref{alg:projection} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.18335v1#textref-16",
+   "message": "the text names Algorithm \\ref{alg:projection} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.18335v1#textref-24",
+   "message": "the text names Algorithm \\ref{alg:bootstrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.18335v1#textref-28",
+   "message": "the text names Algorithm \\ref{alg:projection} and the census has no such item (not-an-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.18335v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "remark1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 336
+   },
+   "last": 338,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "thm:identification"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 392
+   },
+   "last": 394,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "remark2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 405
+   },
+   "last": 434,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "remark3"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 550
+   },
+   "last": 553,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "remark:global_common_alignment"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 556
+   },
+   "last": 565,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "remark:reference_group"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 567
+   },
+   "last": 569,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "remark:E1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 715
+   },
+   "last": 717,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "thm:main_effect"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 726
+   },
+   "last": 740,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "thm:initial_A1m"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 761
+   },
+   "last": 775,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "thm:A2m_alphatm"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 777
+   },
+   "last": 806,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "thm:A1m_alphat"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 809
+   },
+   "last": 840,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "corollary:simplified_main_effect_rates"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 846
+   },
+   "last": 855,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7",
+   "number_from": "render",
+   "labels": [
+    "thm:common_comp_global_local_init"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 899
+   },
+   "last": 977,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "8",
+   "number_from": "render",
+   "labels": [
+    "thm:common_comp_global"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 985
+   },
+   "last": 1028,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "9",
+   "number_from": "render",
+   "labels": [
+    "thm:global_factor_detection",
+    "eqn:active_set",
+    "eqn:S_G"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1052
+   },
+   "last": 1071,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "10",
+   "number_from": "render",
+   "labels": [
+    "thm:rank_estimation"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1078
+   },
+   "last": 1098,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "7",
+   "number_from": "render",
+   "labels": [
+    "remark:bootstrap"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1181
+   },
+   "last": 1183,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:main_effects",
+    "eqn: Omega_population",
+    "eqn:S_A2m",
+    "eqn: tildeY_vv_tildeY"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1758
+   },
+   "last": 1839,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:left_right_multiply_ones_MMEFM",
+    "eqn:sum_of_error_rate",
+    "eqn:row_main_effect_rate",
+    "eqn:column_main_effect_rate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1841
+   },
+   "last": 1896,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:S_A1",
+    "eqn:S_A1_hat",
+    "eqn:Omega_A1",
+    "eqn:projected_Omega_A1_zero",
+    "eqn:Omega_A1_A1_D1",
+    "eqn:Omega_A1_full_decomposition",
+    "eqn:Omega_A1_projected_bound",
+    "eqn:A1_projected_rotation",
+    "eqn:A1_minus_A1H_times_D",
+    "eqn:A1_projector_rate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1910
+   },
+   "last": 2006,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:S_A2",
+    "eqn:Omega_A2_sample",
+    "eqn:Omega_A2_population",
+    "eqn:projected_Omega_A2_zero",
+    "eqn:Omega_A2_A2_D2",
+    "eqn:A2_projected_rotation",
+    "eqn:A2_minus_A2H_times_D",
+    "eqn:bound_Omega_A2_hat_minus_Omega",
+    "eqn:A2_projector_rate",
+    "eqn:local_gram_perturbation",
+    "eqn:local_gram_inverse_perturbation",
+    "eqn:local_numerator_perturbation",
+    "eqn:L_alpha_perturbation",
+    "eqn:local_alpha_decomposition",
+    "eqn:local_alpha_explicit_rate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2009
+   },
+   "last": 2220,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:Z_alpham",
+    "eqn:global_alpha_local_reconstruction",
+    "eqn:global_alpha_score_bound",
+    "eqn:projected_group_temporal",
+    "eqn:global_alpha_group_projector",
+    "eqn:global_alpha_group_projector_row",
+    "eqn:global_alpha_projected_eigen",
+    "eqn:final_A1_exact",
+    "eqn:final_A1_cross_moment",
+    "eqn:final_A1_residual_energy"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2223
+   },
+   "last": 2477,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2479
+   },
+   "last": 2480,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn: local_C_decomp_components",
+    "eqn:XCm-decomposition",
+    "eqn: local_C_J1_pop",
+    "eqn: local_C_projection_perturbation",
+    "eqn: local_C_J1_perturbation",
+    "eqn: local_C_J1_perturbation_rate",
+    "eqn: local_C_J1_eigenvalues",
+    "eqn: local_C_J2",
+    "eqn: local_C_J5",
+    "eqn: local_C_Q_perp_bound",
+    "eqn: local_C_J6",
+    "eqn: local_C_J3",
+    "eqn: local_C_J9",
+    "eqn: local_F_L_properties",
+    "eqn: local_F_decomp",
+    "eqn: local_F_K1_rate",
+    "eqn: local_F_K2_expansion",
+    "eqn: local_F_E_rate_row",
+    "eqn: local_F_E_rate_col",
+    "eqn: local_F_K2_rate",
+    "eqn: local_F_K3"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2486
+   },
+   "last": 2887,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn: Gt_m0_pop",
+    "eqn: XiQ_G_XiJ_pop",
+    "eqn: wh_Gt_m",
+    "eqn: Z_Gm_est_rate",
+    "eqn: global_Gram_inv",
+    "eqn: global_hat_Xi_expansion",
+    "eqn: global_Xi_error_1",
+    "eqn: global_Xi_error_2",
+    "eqn: global_cross_Xi",
+    "eqn: ZZ_diff_inv_gram_pert",
+    "eqn: global_Bm_bound",
+    "eqn: global_inv_gram_term",
+    "eqn: global_hat_Xi_rate",
+    "eqn: global_R_Xi_perturbation",
+    "eqn: sigma_Xi_m_pop",
+    "eqn: global_product_alignment",
+    "eqn: global_final_start",
+    "eqn: global_final_decomp",
+    "eqn: global_final_I1",
+    "eqn: global_final_I2_decomp",
+    "eqn: global_final_I21",
+    "eqn: global_final_I22",
+    "eqn: reloading_kron_target",
+    "eqn: reloading_U_decomp",
+    "eqn: reloading_Utm_rate1",
+    "eqn: reloading_Utm_rate2",
+    "eqn: reloading_Um_rate",
+    "eqn: reloading_UTG_entry",
+    "eqn: reloading_UTG_decomp",
+    "eqn: reloading_UTG_rot",
+    "eqn: reloading_UTG_noise_entry",
+    "eqn: reloading_UTG_local_entry",
+    "eqn: reloading_UTG_final",
+    "eqn: reloading_decomp",
+    "eqn: reloading_inv",
+    "eqn: reloading_term1",
+    "eqn: reloading_term2",
+    "eqn: reloading_final_rate",
+    "eqn: reloading_SVD_hat",
+    "eqn: reloading_SVD_pop",
+    "eqn: reloading_sigma_perturbation",
+    "eqn: reloading_singular_vectors_rate",
+    "eqn: reloading_Q_rate",
+    "eqn: reloading_J_rate",
+    "eqn: reloading_final_individual"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2895
+   },
+   "last": 3827,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:Thm9-1",
+    "eqn:Thm9-eta_QJ",
+    "eqn:Thm9-2",
+    "eqn:Thm9-3",
+    "eqn:Thm9-I0",
+    "eqn:Thm9-d33",
+    "eqn:Thm9-d34",
+    "eqn:Thm9-d35"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3830
+   },
+   "last": 3914,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:Thm10-1",
+    "eqn:Thm10-2",
+    "eqn:Thm10-3",
+    "eqn:Thm10-4",
+    "eqn:Thm10-5",
+    "eqn:Thm10-6",
+    "eqn:Thm10-7",
+    "eqn:Thm10-8",
+    "eqn:Thm10-9"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3917
+   },
+   "last": 4100,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "prop:projector_prop",
+    "eqn:projector_contraction",
+    "eqn:Mn_properties",
+    "eqn:Mn_l1_lmax_norms"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4111
+   },
+   "last": 4132,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4133
+   },
+   "last": 4151,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "lemma:correlation_Etm",
+    "eqn:error_cov_summable",
+    "eqn:error_cov_uniform",
+    "eqn:error_product_cov"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4154
+   },
+   "last": 4180,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:lag_kernel_bound",
+    "eqn:Et_decomposition",
+    "eqn:EtEt",
+    "eqn:four_global_error_bound",
+    "eqn:four_local_error_bound",
+    "eqn:four_idiosyncratic_error_bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4181
+   },
+   "last": 4431,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.18335v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "lemma:prop_piecewise",
+    "eqn:uniform_second_moment_G",
+    "eqn:sample_covariance_G",
+    "eqn:sample_cross_moment_G"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4533
+   },
+   "last": 4553,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:sample_covariance_variance_expansion",
+    "eqn:segment_pair_covariance",
+    "eqn:segment_filter_bound",
+    "eqn:segment_covariance_long_pointwise",
+    "eqn:segment_covariance_long_memory_bound",
+    "eqn:segment_covariance_edge_pointwise",
+    "eqn:segment_covariance_edge_point_bound",
+    "eqn:segment_covariance_absolute_sum",
+    "eqn:segment_covariance_square_sum",
+    "eqn:cov_uuuu",
+    "eqn:cumulant_sum_G",
+    "eqn:first_covariance_product_G",
+    "eqn:shifted_covariance_product_G",
+    "eqn:product_covariance_sum_G",
+    "eqn:sample_cross_moment_variance",
+    "eqn:cross_covariance_decay",
+    "eqn:cross_covariance_short_sum"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4554
+   },
+   "last": 4949,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "lemma:bound_Delta",
+    "eqn:E1u",
+    "eqn:Em11En",
+    "eqn:Em11Em",
+    "eqn:weighted_row_error"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4953
+   },
+   "last": 4969,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:E_inner_rho_bound",
+    "eqn:u_cov_uniform_bound",
+    "eqn:zeta_cross_zero"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4970
+   },
+   "last": 5273,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "lemma:rotation_orthogonality"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5275
+   },
+   "last": 5291,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5293
+   },
+   "last": 5362,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.18335v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "lemma:bound_S_A1_Delta_A1",
+    "eqn:S_A1_bound",
+    "eqn:Delta_A1_oP",
+    "eqn:Delta_A1_projected_bound"
+   ],
+   "parent": "2610.18335v1#proof-15",
+   "pos": {
+    "file": "main.tex",
+    "line": 5347
+   },
+   "last": 5362,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:I_A1_1_full",
+    "eqn:I_A1_1_projected",
+    "eqn:I_A1_2_full",
+    "eqn:I_A1_2_projected",
+    "eqn:I_A1_3_full",
+    "eqn:I_A1_3_projected",
+    "eqn:I_A1_4_full",
+    "eqn:I_A1_4_projected",
+    "eqn:Delta_A1_bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5363
+   },
+   "last": 5543,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "lemma:bound_D_A1",
+    "eqn:D_A1_inv"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5546
+   },
+   "last": 5554,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5555
+   },
+   "last": 5592,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "7",
+   "number_from": "render",
+   "labels": [
+    "lemma:bound_S_A2_Delta_A2",
+    "eqn:S_A2_bound",
+    "eqn:Delta_A2_oP",
+    "eqn:Delta_A2_projected_bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5594
+   },
+   "last": 5614,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:Delta_A2_decomposition",
+    "eqn:sample_cov_a_m",
+    "eqn:S_A2_rep",
+    "eqn:A1_projector_explicit_rate",
+    "eqn:I_A2_1_full",
+    "eqn:I_A2_1_projected",
+    "eqn:I_A2_2_full",
+    "eqn:I_A2_2_projected",
+    "eqn:I_A2_3_full",
+    "eqn:I_A2_3_projected",
+    "eqn:I_A2_4_full",
+    "eqn:I_A2_4_projected",
+    "eqn:Delta_A2_bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5615
+   },
+   "last": 5799,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "8",
+   "number_from": "render",
+   "labels": [
+    "lemma:bound_D_A2",
+    "eqn:D_A2_inv"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5801
+   },
+   "last": 5809,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5810
+   },
+   "last": 5858,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "9",
+   "number_from": "render",
+   "labels": [
+    "lemma: common_comp_global_local_init"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5868
+   },
+   "last": 5905,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn: long_run_cov_vec_fac",
+    "eqn: check_Yt_m_simplify",
+    "eqn: decomp_hat_S_Q_mn",
+    "eqn: GG_var",
+    "eqn: cI_Q_mn",
+    "eqn: cII_Q_mn",
+    "eqn: cIV_Q_mn",
+    "eqn: cV_Q_mn",
+    "eqn: unit_vector_error_bound",
+    "eqn: factor_vector_second_moments",
+    "eqn: cIII_expansion",
+    "eqn: cIII_factor_expectation_bound",
+    "eqn: cIII_error_expectation_bound",
+    "eqn: cIII_Q_mn",
+    "eqn: cVI_Q_mn",
+    "eqn: cVII_Q_mn",
+    "eqn: cVIII_Q_mn",
+    "eqn: cIX_Q_mn",
+    "eqn: S_Q_mn_simplify",
+    "eqn: w_mn_order",
+    "eqn: S_Q_mn_bound",
+    "eqn: Omega_Q_m_simplify",
+    "eqn: G_Q_m_lower_rayleigh",
+    "eqn: lambda_min_G_Q_m",
+    "eqn: Omega_Q_m_krth_eigenvalue_lower"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5906
+   },
+   "last": 6277,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "10",
+   "number_from": "render",
+   "labels": [
+    "lemma: aligned_projected_cores"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6284
+   },
+   "last": 6312,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn: projected_core_decomp",
+    "eqn: aligned_core_norm_properties",
+    "eqn: aligned_core_RE_rate",
+    "eqn: aligned_core_local_error_bound",
+    "eqn: aligned_core_Rlocal_rate",
+    "eqn: aligned_core_RQ_rate",
+    "eqn: aligned_core_RJ_rate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6313
+   },
+   "last": 6498,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "11",
+   "number_from": "render",
+   "labels": [
+    "lemma: alignment_equality"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6504
+   },
+   "last": 6511,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6512
+   },
+   "last": 6520,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2610.18335v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "12",
+   "number_from": "render",
+   "labels": [
+    "lemma: aligned_projected_cores_rot_rate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6528
+   },
+   "last": 6541,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18335v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6542
+   },
+   "last": 6571,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "high"
+  }
+ ]
+}

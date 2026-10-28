@@ -1,0 +1,2185 @@
+{
+ "paper": "2610.15217",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "main.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "geometry",
+  "amsmath",
+  "amsfonts",
+  "amssymb",
+  "xy",
+  "color",
+  "setspace",
+  "comment",
+  "centernot",
+  "microtype",
+  "bm",
+  "inconsolata",
+  "lucide-icons",
+  "amsthm",
+  "stmaryrd",
+  "mathrsfs",
+  "graphicx",
+  "enumerate",
+  "xparse",
+  "expl3",
+  "ulem",
+  "url",
+  "hyperref",
+  "aliascnt",
+  "cleveref"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: main.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 138 commands, 0 environments",
+  "tree: 192 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "proposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "corollary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "claim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "conjecture",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "question",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "example",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "convention",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "convention",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "note",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "notation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summary",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "theorem",
+   "shared": "summary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "acknowledgement",
+   "title": "Acknowledgement",
+   "item": "other/section",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 91,
+  "label": 31,
+  "proof": 17,
+  "textref": 3
+ },
+ "matched": {
+  "env": 91,
+  "label": 31,
+  "proof": 17
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 91,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 91,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 0,
+  "unresolved": 3
+ },
+ "render": {
+  "theorems": 91,
+  "proofs": 17,
+  "agree": true,
+  "source_theorems": 91,
+  "source_proofs": 17
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.15217v1#textref-1",
+   "message": "the text names Claim 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.15217v1#textref-2",
+   "message": "the text names Claim 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.15217v1#textref-3",
+   "message": "the text names Claim 1 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.15217v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 215
+   },
+   "last": 217,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 229
+   },
+   "last": 231,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 344
+   },
+   "last": 365,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 371
+   },
+   "last": 404,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "convention",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 408
+   },
+   "last": 410,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "Invariant diagram definition"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 419
+   },
+   "last": 444,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 449
+   },
+   "last": 463,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "Invariant system definition"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 471
+   },
+   "last": 494,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.7",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 499
+   },
+   "last": 515,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.8",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 522
+   },
+   "last": 533,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.9",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 539
+   },
+   "last": 541,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.10",
+   "number_from": "render",
+   "labels": [
+    "Density theory definition"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 556
+   },
+   "last": 576,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.11",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 582
+   },
+   "last": 584,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.12",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 587
+   },
+   "last": 589,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.13",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 591
+   },
+   "last": 593,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.14",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 595
+   },
+   "last": 597,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.15",
+   "number_from": "render",
+   "labels": [
+    "Back and forth system definition"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 610
+   },
+   "last": 634,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.16",
+   "number_from": "render",
+   "labels": [
+    "Countably many equiv-beta classes implies no perfect set"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 642
+   },
+   "last": 645,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 646
+   },
+   "last": 650,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.17",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 660
+   },
+   "last": 671,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.18",
+   "number_from": "render",
+   "labels": [
+    "Knight systems imply equiv-beta equivalence"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 678
+   },
+   "last": 690,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 691
+   },
+   "last": 707,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.19",
+   "number_from": "render",
+   "labels": [
+    "Weak Knight systems and perfect sets of models"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 712
+   },
+   "last": 726,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 727
+   },
+   "last": 737,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.20",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 749
+   },
+   "last": 753,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.21",
+   "number_from": "render",
+   "labels": [
+    "Nice tuples definition"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 755
+   },
+   "last": 767,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.22",
+   "number_from": "render",
+   "labels": [
+    "Main theorem about niceness"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 771
+   },
+   "last": 774,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 775
+   },
+   "last": 779,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.23",
+   "number_from": "render",
+   "labels": [
+    "Knight system definition"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 783
+   },
+   "last": 796,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.24",
+   "number_from": "render",
+   "labels": [
+    "Knight class definition"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 800
+   },
+   "last": 803,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.25",
+   "number_from": "render",
+   "labels": [
+    "Knight classes have omega_1 many models"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 808
+   },
+   "last": 816,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 817
+   },
+   "last": 827,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.26",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 830
+   },
+   "last": 832,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.27",
+   "number_from": "render",
+   "labels": [
+    "Knight sentences are counterexamples to Vaught's conjecture"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 836
+   },
+   "last": 839,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 861
+   },
+   "last": 876,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 882
+   },
+   "last": 884,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 888
+   },
+   "last": 897,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 902
+   },
+   "last": 914,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 918
+   },
+   "last": 920,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 924
+   },
+   "last": 936,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 938
+   },
+   "last": 950,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.8",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 954
+   },
+   "last": 958,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "3.9",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 968
+   },
+   "last": 979,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.10",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 983
+   },
+   "last": 990,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.11",
+   "number_from": "render",
+   "labels": [
+    "Full trees have structure preserved by invariants"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 993
+   },
+   "last": 1008,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.12",
+   "number_from": "render",
+   "labels": [
+    "beta-truncation function"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1015
+   },
+   "last": 1025,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.13",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1029
+   },
+   "last": 1034,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.14",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1038
+   },
+   "last": 1040,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.15",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1046
+   },
+   "last": 1051,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.16",
+   "number_from": "render",
+   "labels": [
+    "Characterizing labels cut off"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1054
+   },
+   "last": 1062,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.17",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1067
+   },
+   "last": 1074,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.18",
+   "number_from": "render",
+   "labels": [
+    "Characterize beta-density",
+    "Characterize beta-density: Equation 1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1079
+   },
+   "last": 1092,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1093
+   },
+   "last": 1112,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.19",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1116
+   },
+   "last": 1130,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1131
+   },
+   "last": 1138,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.20",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1150
+   },
+   "last": 1152,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.21",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1156
+   },
+   "last": 1158,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.22",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1162
+   },
+   "last": 1173,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.23",
+   "number_from": "render",
+   "labels": [
+    "Maximal models in labeled geometric trees"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1178
+   },
+   "last": 1181,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1182
+   },
+   "last": 1196,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.24",
+   "number_from": "render",
+   "labels": [
+    "Full geometric trees are nice"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1199
+   },
+   "last": 1202,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1203
+   },
+   "last": 1209,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.25",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1213
+   },
+   "last": 1215,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1216
+   },
+   "last": 1218,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1245
+   },
+   "last": 1252,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1256
+   },
+   "last": 1260,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1265
+   },
+   "last": 1269,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1274
+   },
+   "last": 1278,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.5",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1282
+   },
+   "last": 1286,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.6",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1291
+   },
+   "last": 1305,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.7",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1310
+   },
+   "last": 1321,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.8",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1328
+   },
+   "last": 1344,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.9",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1352
+   },
+   "last": 1354,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.10",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1357
+   },
+   "last": 1359,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.11",
+   "number_from": "render",
+   "labels": [
+    "Template system definition"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1364
+   },
+   "last": 1394,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.12",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1412
+   },
+   "last": 1414,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.13",
+   "number_from": "render",
+   "labels": [
+    "Theory describing plans"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1417
+   },
+   "last": 1447,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.14",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1452
+   },
+   "last": 1454,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.15",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1458
+   },
+   "last": 1460,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.16",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1465
+   },
+   "last": 1468,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.17",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1476
+   },
+   "last": 1478,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.18",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1482
+   },
+   "last": 1492,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.19",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1495
+   },
+   "last": 1497,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.20",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1501
+   },
+   "last": 1507,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.21",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1512
+   },
+   "last": 1522,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.22",
+   "number_from": "render",
+   "labels": [
+    "Knight sentence from template system"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1527
+   },
+   "last": 1562,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.23",
+   "number_from": "render",
+   "labels": [
+    "K[T] is weak Knight system over sigma[T]"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1569
+   },
+   "last": 1572,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1573
+   },
+   "last": 1588,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-78",
+   "type": "env",
+   "k": 78,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "4.24",
+   "number_from": "render",
+   "parent": "2610.15217v1#proof-11",
+   "pos": {
+    "file": "main.tex",
+    "line": 1575
+   },
+   "last": 1577,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.15217v1#proof-11",
+   "pos": {
+    "file": "main.tex",
+    "line": 1578
+   },
+   "last": 1586,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-79",
+   "type": "env",
+   "k": 79,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.25",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1592
+   },
+   "last": 1594,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1595
+   },
+   "last": 1597,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-80",
+   "type": "env",
+   "k": 80,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.26",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1610
+   },
+   "last": 1626,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-81",
+   "type": "env",
+   "k": 81,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.27",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1628
+   },
+   "last": 1649,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-82",
+   "type": "env",
+   "k": 82,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.28",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1653
+   },
+   "last": 1678,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-83",
+   "type": "env",
+   "k": 83,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.29",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1680
+   },
+   "last": 1696,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-84",
+   "type": "env",
+   "k": 84,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.30",
+   "number_from": "render",
+   "labels": [
+    "Legal templates form a template system"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1701
+   },
+   "last": 1709,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1710
+   },
+   "last": 1732,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-85",
+   "type": "env",
+   "k": 85,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.31",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 1738
+   },
+   "last": 1745,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-86",
+   "type": "env",
+   "k": 86,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.32",
+   "number_from": "render",
+   "labels": [
+    "Charts have (HP) (JEP) (AP)"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1748
+   },
+   "last": 1758,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-87",
+   "type": "env",
+   "k": 87,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.33",
+   "number_from": "render",
+   "labels": [
+    "Fraisse limits exist"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1760
+   },
+   "last": 1779,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1780
+   },
+   "last": 1783,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-88",
+   "type": "env",
+   "k": 88,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.34",
+   "number_from": "render",
+   "labels": [
+    "Properties of legal template system"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1787
+   },
+   "last": 1798,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-89",
+   "type": "env",
+   "k": 89,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.35",
+   "number_from": "render",
+   "labels": [
+    "Only countably many maximal structures at each level"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1802
+   },
+   "last": 1805,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-90",
+   "type": "env",
+   "k": 90,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.36",
+   "number_from": "render",
+   "labels": [
+    "Knight sentence from legal template system"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1809
+   },
+   "last": 1812,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1813
+   },
+   "last": 1837,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#env-91",
+   "type": "env",
+   "k": 91,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "4.37",
+   "number_from": "render",
+   "labels": [
+    "Knight sentence from legal template system: Claim 1"
+   ],
+   "parent": "2610.15217v1#proof-16",
+   "pos": {
+    "file": "main.tex",
+    "line": 1816
+   },
+   "last": 1819,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15217v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.15217v1#proof-16",
+   "pos": {
+    "file": "main.tex",
+    "line": 1820
+   },
+   "last": 1834,
+   "result": "matched"
+  }
+ ]
+}

@@ -1,0 +1,1979 @@
+{
+ "paper": "2610.16225",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "halo-mult-one-or-two.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amsfonts",
+  "fullpage",
+  "multirow",
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "stmaryrd",
+  "mathrsfs",
+  "hhline",
+  "mathdots",
+  "pgf",
+  "tikz",
+  "tikz-cd",
+  "url",
+  "mathtools",
+  "float",
+  "hyperref",
+  "xy"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: halo-mult-one-or-two.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 228 commands, 0 environments",
+  "tree: 212 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "caveat",
+   "title": "Caveat",
+   "item": "remark",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "caution",
+   "title": "Caution",
+   "item": "remark",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition-proposition",
+   "title": "Definition-Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hypothesis",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "application",
+   "title": "Application",
+   "item": "unknown",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "convention",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "subsection",
+   "shared": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 62,
+  "label": 61,
+  "proof": 26,
+  "textref": 146
+ },
+ "matched": {
+  "env": 62,
+  "label": 61,
+  "proof": 26
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 62,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 62,
+  "disagree": 0,
+  "contiguity_gaps": 15
+ },
+ "textrefs": {
+  "resolved": 145,
+  "unresolved": 1
+ },
+ "render": {
+  "theorems": 62,
+  "proofs": 26,
+  "agree": true,
+  "source_theorems": 62,
+  "source_proofs": 26
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-1",
+   "message": "Theorem 1.2 is the first in its scope of counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-3",
+   "message": "Definition 1.5 comes after 1.3 in counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-9",
+   "message": "Proposition 1.12 comes after 1.10 in counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-12",
+   "message": "Theorem 2.2 is the first in its scope of counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-14",
+   "message": "Theorem 2.5 comes after 2.3 in counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-15",
+   "message": "Lemma 2.7 comes after 2.5 in counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-18",
+   "message": "Definition 2.11 comes after 2.9 in counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-24",
+   "message": "Definition 3.2 is the first in its scope of counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-29",
+   "message": "Notation 3.8 comes after 3.6 in counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-35",
+   "message": "Proposition 3.15 comes after 3.13 in counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-39",
+   "message": "Theorem 4.2 is the first in its scope of counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-43",
+   "message": "Notation 4.7 comes after 4.5 in counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-47",
+   "message": "Definition 4.12 comes after 4.10 in counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-52",
+   "message": "Proposition 4.18 comes after 4.16 in counter subsection"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.16225v1#env-56",
+   "message": "Remark 4.23 comes after 4.21 in counter subsection"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.16225v1#textref-106",
+   "message": "the text names observation A and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.16225v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "subsection",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "thm-BM-intro"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 387
+   },
+   "last": 399,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "subsection",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "question-1"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 405
+   },
+   "last": 413,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "subsection",
+   "number": "1.5",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 432
+   },
+   "last": 448,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "subsection",
+   "number": "1.6",
+   "number_from": "render",
+   "labels": [
+    "thm-Main-results"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 452
+   },
+   "last": 473,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "1.7",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 474
+   },
+   "last": 490,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "1.8",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 492
+   },
+   "last": 500,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "subsection",
+   "number": "1.9",
+   "number_from": "render",
+   "labels": [
+    "cor-BM-cycles-intro"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 522
+   },
+   "last": 534,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "1.10",
+   "number_from": "render",
+   "labels": [
+    "rmk-0"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 536
+   },
+   "last": 548,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "number": "1.12",
+   "number_from": "render",
+   "labels": [
+    "prop-mult=mult-intro"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 571
+   },
+   "last": 579,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "1.13",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 603
+   },
+   "last": 611,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "number": "1.14",
+   "number_from": "render",
+   "labels": [
+    "prop-split-intro"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 650
+   },
+   "last": 662,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "subsection",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "thm-Kisin"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 788
+   },
+   "last": 792,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "2.3",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 794
+   },
+   "last": 799,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "subsection",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "thm-BM"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 831
+   },
+   "last": 841,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "lem-inequality-of-mult"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 878
+   },
+   "last": 886,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 888
+   },
+   "last": 892,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "subsection",
+   "number": "2.8",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 894
+   },
+   "last": 899,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "2.9",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 907
+   },
+   "last": 911,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "subsection",
+   "number": "2.11",
+   "number_from": "render",
+   "labels": [
+    "def-types-and-rho"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 919
+   },
+   "last": 943,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "2.12",
+   "number_from": "render",
+   "labels": [
+    "lem-type-Serre-wt"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 950
+   },
+   "last": 995,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 997
+   },
+   "last": 1010,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "number": "2.13",
+   "number_from": "render",
+   "labels": [
+    "prop-halo-mult"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1025
+   },
+   "last": 1045,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq4",
+    "eq1"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1047
+   },
+   "last": 1147,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "2.14",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1148
+   },
+   "last": 1177,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "2.15",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1178
+   },
+   "last": 1222,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "2.16",
+   "number_from": "render",
+   "labels": [
+    "lem-rep1",
+    "eq-lem1"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1224
+   },
+   "last": 1234,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1236
+   },
+   "last": 1273,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "subsection",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "def-slope-of-rep"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1350
+   },
+   "last": 1365,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "lem-crystabelline-slopes"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1370
+   },
+   "last": 1375,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq-proof1"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1377
+   },
+   "last": 1405,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "prop-slope-map"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1412
+   },
+   "last": 1421,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1423
+   },
+   "last": 1442,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "subsection",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "cor-naive-lower-bound",
+    "eq-proof2"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1444
+   },
+   "last": 1461,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1463
+   },
+   "last": 1476,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "subsection",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "rmk-1"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1483
+   },
+   "last": 1503,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1504
+   },
+   "last": 1509,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "subsection",
+   "number": "3.8",
+   "number_from": "render",
+   "labels": [
+    "notation-1",
+    "eq-1"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1517
+   },
+   "last": 1551,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "subsection",
+   "number": "3.9",
+   "number_from": "render",
+   "labels": [
+    "def-halo-slopes"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1567
+   },
+   "last": 1603,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "number": "3.10",
+   "number_from": "render",
+   "labels": [
+    "prop-halo-slopes"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1605
+   },
+   "last": 1614,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1616
+   },
+   "last": 1618,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "3.11",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1620
+   },
+   "last": 1631,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "number": "3.12",
+   "number_from": "render",
+   "labels": [
+    "prop-crystabelline-slopes"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1638
+   },
+   "last": 1662,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1664
+   },
+   "last": 1691,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "3.13",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1692
+   },
+   "last": 1697,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "number": "3.15",
+   "number_from": "render",
+   "labels": [
+    "prop-BM-mult=halo-mult"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1713
+   },
+   "last": 1718,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq-pf-1",
+    "tab-halo-slopes-at-e"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1720
+   },
+   "last": 1904,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "3.16",
+   "number_from": "render",
+   "labels": [
+    "rmk-2"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1906
+   },
+   "last": 1920,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "3.17",
+   "number_from": "render",
+   "labels": [
+    "lem-multiplicity-difference"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1926
+   },
+   "last": 1974,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1976
+   },
+   "last": 1995,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "subsection",
+   "number": "3.18",
+   "number_from": "render",
+   "labels": [
+    "cor-split-compare-mult"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 1999
+   },
+   "last": 2037,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2039
+   },
+   "last": 2042,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "subsection",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "thm-BM=1-non-split"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2063
+   },
+   "last": 2068,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2069
+   },
+   "last": 2076,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "subsection",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "def-decomp-of-Min(R)",
+    "eq-decomp-of-Min(R)"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2080
+   },
+   "last": 2091,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "subsection",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "thm-main-thm-split"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2094
+   },
+   "last": 2105,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "rmk-7"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2107
+   },
+   "last": 2112,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "subsection",
+   "number": "4.7",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2117
+   },
+   "last": 2124,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "4.8",
+   "number_from": "render",
+   "labels": [
+    "lem-1",
+    "eq-pf-2"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2139
+   },
+   "last": 2161,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2163
+   },
+   "last": 2226,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "4.9",
+   "number_from": "render",
+   "labels": [
+    "rmk-3"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2227
+   },
+   "last": 2237,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "4.10",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2240
+   },
+   "last": 2250,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "subsection",
+   "number": "4.12",
+   "number_from": "render",
+   "labels": [
+    "def-reducible-type"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2275
+   },
+   "last": 2300,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "number": "4.13",
+   "number_from": "render",
+   "labels": [
+    "prop:kisin rings relation"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2303
+   },
+   "last": 2326,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2327
+   },
+   "last": 2329,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "4.14",
+   "number_from": "render",
+   "labels": [
+    "rmk-4",
+    "eq-3"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2331
+   },
+   "last": 2373,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "4.15",
+   "number_from": "render",
+   "labels": [
+    "lem-relation-slope-and-reducible-type",
+    "eq-4"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2376
+   },
+   "last": 2394,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq-5"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2395
+   },
+   "last": 2450,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "4.16",
+   "number_from": "render",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2451
+   },
+   "last": 2459,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "number": "4.18",
+   "number_from": "render",
+   "labels": [
+    "prop-key-irreducible"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2483
+   },
+   "last": 2490,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2491
+   },
+   "last": 2513,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "subsection",
+   "number": "4.19",
+   "number_from": "render",
+   "labels": [
+    "cor-component-injection-1"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2514
+   },
+   "last": 2517,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2518
+   },
+   "last": 2520,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "subsection",
+   "number": "4.20",
+   "number_from": "render",
+   "labels": [
+    "prop-key-reducible"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2530
+   },
+   "last": 2537,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2538
+   },
+   "last": 2587,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "subsection",
+   "number": "4.21",
+   "number_from": "render",
+   "labels": [
+    "cor-component-injection-2"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2588
+   },
+   "last": 2591,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2592
+   },
+   "last": 2594,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "4.23",
+   "number_from": "render",
+   "labels": [
+    "rmk-5"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2738
+   },
+   "last": 2763,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "subsection",
+   "number": "4.24",
+   "number_from": "render",
+   "labels": [
+    "rmk-6"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2765
+   },
+   "last": 2795,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "lem-ca1"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2806
+   },
+   "last": 2815,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2817
+   },
+   "last": 2823,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "A.2",
+   "number_from": "render",
+   "labels": [
+    "lem:mult leq 2"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2825
+   },
+   "last": 2840,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2842
+   },
+   "last": 2853,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "A.3",
+   "number_from": "render",
+   "labels": [
+    "lem comm alg2"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2859
+   },
+   "last": 2868,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2870
+   },
+   "last": 2923,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "A.4",
+   "number_from": "render",
+   "labels": [
+    "lem multiplicity-components"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2925
+   },
+   "last": 2940,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2942
+   },
+   "last": 2950,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "subsection",
+   "number": "A.5",
+   "number_from": "render",
+   "labels": [
+    "lem-minimal-primes"
+   ],
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2952
+   },
+   "last": 2961,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16225v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "halo-mult-one-or-two.tex",
+    "line": 2962
+   },
+   "last": 2982,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

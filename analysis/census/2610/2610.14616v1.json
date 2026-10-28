@@ -1,0 +1,2166 @@
+{
+ "paper": "2610.14616",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "Poisson_CT_v5.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amssymb",
+  "amsmath",
+  "amsthm",
+  "mathtools",
+  "mathrsfs",
+  "fontenc",
+  "inputenc",
+  "fourier",
+  "babel",
+  "dsfont",
+  "enumitem",
+  "graphicx",
+  "placeins",
+  "float",
+  "caption",
+  "tikz",
+  "geometry",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: Poisson_CT_v5.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 4 decided, 0 flag tests decided, 3 kept",
+  "macros: 70 commands, 2 environments",
+  "tree: 387 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 63,
+  "label": 111,
+  "proof": 48,
+  "textref": 274
+ },
+ "matched": {
+  "env": 63,
+  "label": 111,
+  "proof": 48
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 63,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 63,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 274,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 63,
+  "proofs": 48,
+  "agree": true,
+  "source_theorems": 63,
+  "source_proofs": 48
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.14616v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "def: histogram"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 367
+   },
+   "last": 377,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "A",
+   "number_from": "render",
+   "labels": [
+    "assumption: bounded_cost"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 422
+   },
+   "last": 425,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "B",
+   "number_from": "render",
+   "labels": [
+    "assumption: margins_weak_convergence"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 427
+   },
+   "last": 430,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "C",
+   "number_from": "render",
+   "labels": [
+    "assumption: L^1_limits_margins"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 432
+   },
+   "last": 438,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "ex: continuous_kappa"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 443
+   },
+   "last": 446,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "thm: conditioned_model_weak_as_limit_no_rate",
+    "eq: log_parition_limit"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 490
+   },
+   "last": 502,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "thm: conditioned_model_weak_as_limit",
+    "eq: rate_bound"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 506
+   },
+   "last": 514,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "thm: permuton_partition_det_limit",
+    "eq: def_S_operator",
+    "eq: permuton_partition_limit_statement"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 528
+   },
+   "last": 541,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "cor: enumeration",
+    "eq: enumeration_identity"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 557
+   },
+   "last": 565,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "def: cell_average"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 575
+   },
+   "last": 581,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.8",
+   "number_from": "render",
+   "labels": [
+    "def: fluctuation_fields",
+    "eq: def_fluctuation_field"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 588
+   },
+   "last": 596,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.9",
+   "number_from": "render",
+   "labels": [
+    "def: SB_white_noise",
+    "eq:covariance_mx_Xi"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 610
+   },
+   "last": 617,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.10",
+   "number_from": "render",
+   "labels": [
+    "thm: CLT"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 621
+   },
+   "last": 628,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.11",
+   "number_from": "render",
+   "labels": [
+    "def: Xi_hat"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 647
+   },
+   "last": 650,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.12",
+   "number_from": "render",
+   "labels": [
+    "thm: functional_limits"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 655
+   },
+   "last": 662,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.13",
+   "number_from": "render",
+   "labels": [
+    "cor: KS"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 666
+   },
+   "last": 673,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.14",
+   "number_from": "render",
+   "labels": [
+    "cor: product_case"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 677
+   },
+   "last": 684,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.15",
+   "number_from": "render",
+   "labels": [
+    "cor: mallows",
+    "eq: mallows_partition",
+    "eq: mallows_pal",
+    "eq: mallows_tripathi",
+    "eq: mallows_CLT_continuous",
+    "eq: mallows_CLT"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 703
+   },
+   "last": 734,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.16",
+   "number_from": "render",
+   "labels": [
+    "thm: ESD_limit"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 796
+   },
+   "last": 802,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.17",
+   "number_from": "render",
+   "labels": [
+    "rem: ESD_permutations"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 809
+   },
+   "last": 812,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "prop: permutation_CT_coupling"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 891
+   },
+   "last": 902,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "lem: quantile_properties",
+    "eq: preimage_of_cell",
+    "eq: permuton_mass_of_cell"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 953
+   },
+   "last": 965,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 967
+   },
+   "last": 969,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: block_weight",
+    "eq: permutation_count",
+    "eq: block_count_law"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 973
+   },
+   "last": 998,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "thm: transference"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1005
+   },
+   "last": 1012,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: ind_model_lower_bd_pf_1"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1014
+   },
+   "last": 1035,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "lem: pythagorean",
+    "eq: pythagorean"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1050
+   },
+   "last": 1058,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1060
+   },
+   "last": 1066,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "lem: density_bounds"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1068
+   },
+   "last": 1074,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1076
+   },
+   "last": 1082,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "def: sum_space",
+    "eq: def_sum_space"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1086
+   },
+   "last": 1094,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "lem: sum_space",
+    "eq: normal_equations"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1096
+   },
+   "last": 1104,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1106
+   },
+   "last": 1108,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "render",
+   "labels": [
+    "lem: typical_table_bridge",
+    "eq: typical_table_density"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1113
+   },
+   "last": 1120,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1122
+   },
+   "last": 1128,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "lem: COV_permuton_to_EOT",
+    "eq: pushforward_EOT_equivalence"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1134
+   },
+   "last": 1142,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1145
+   },
+   "last": 1151,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.7",
+   "number_from": "render",
+   "labels": [
+    "lem: permuton_coordinates",
+    "eq: permuton_coordinates"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1157
+   },
+   "last": 1167,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1169
+   },
+   "last": 1183,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.8",
+   "number_from": "render",
+   "labels": [
+    "thm: permutations_LDP"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1192
+   },
+   "last": 1195,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.9",
+   "number_from": "render",
+   "labels": [
+    "lem: Varadhan_generalization",
+    "eq: exponential_UI"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1202
+   },
+   "last": 1215,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: pf_varadhan_generalization_2"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1217
+   },
+   "last": 1240,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.10",
+   "number_from": "render",
+   "labels": [
+    "lem: gibbs_permuton_form"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1246
+   },
+   "last": 1249,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: gibbs_weight_product"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1251
+   },
+   "last": 1262,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.11",
+   "number_from": "render",
+   "labels": [
+    "lem: convergence_of_pushfowards"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1266
+   },
+   "last": 1273,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: pushfwd_weak_convergence_pf_2"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1275
+   },
+   "last": 1300,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: varadhan_limit",
+    "eq: pf_permuton_weak_convergence_2"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1305
+   },
+   "last": 1333,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "render",
+   "labels": [
+    "lem: Poisson_Berstein"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1347
+   },
+   "last": 1353,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1355
+   },
+   "last": 1357,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "render",
+   "labels": [
+    "lem: weak_concentration_random_hist",
+    "eq: independence_model_histogram_concentration",
+    "eq: conditioned_model_histogram_concentration"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1361
+   },
+   "last": 1374,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1376
+   },
+   "last": 1386,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.3",
+   "number_from": "render",
+   "labels": [
+    "prop: hellinger_stability",
+    "eq: hellinger_stability"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1403
+   },
+   "last": 1414,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1416
+   },
+   "last": 1462,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1469
+   },
+   "last": 1482,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "lem: grid_step_identity",
+    "eq: grid_step_identity"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1500
+   },
+   "last": 1507,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: D_is_scaling"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1509
+   },
+   "last": 1520,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "render",
+   "labels": [
+    "thm: mccullogh_permanent_expansion"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1527
+   },
+   "last": 1538,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "7.3",
+   "number_from": "render",
+   "labels": [
+    "cor: uniform_mccullagh",
+    "eq:uniform_mccullagh"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1548
+   },
+   "last": 1554,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.4",
+   "number_from": "render",
+   "labels": [
+    "lem: EOT_operator_spectral_radius"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1558
+   },
+   "last": 1561,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1563
+   },
+   "last": 1572,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1575
+   },
+   "last": 1577,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.5",
+   "number_from": "render",
+   "labels": [
+    "lem: partition_fredholm"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1581
+   },
+   "last": 1588,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1590
+   },
+   "last": 1596,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "7.6",
+   "number_from": "render",
+   "labels": [
+    "prop: uniform_partition_bounds"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1598
+   },
+   "last": 1604,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1606
+   },
+   "last": 1612,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.7",
+   "number_from": "render",
+   "labels": [
+    "lem: TV_cost_stability",
+    "eq: TV_cost_stability"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1619
+   },
+   "last": 1626,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1628
+   },
+   "last": 1634,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.8",
+   "number_from": "render",
+   "labels": [
+    "lem: operator_HS_convergence"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1638
+   },
+   "last": 1641,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1643
+   },
+   "last": 1662,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1664
+   },
+   "last": 1680,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1684
+   },
+   "last": 1690,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "8.1",
+   "number_from": "render",
+   "labels": [
+    "lem: laplace_identity",
+    "eq: laplace_identity"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1714
+   },
+   "last": 1721,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1723
+   },
+   "last": 1729,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "8.2",
+   "number_from": "render",
+   "labels": [
+    "lem: quadratic_lower_bound"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1731
+   },
+   "last": 1737,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1739
+   },
+   "last": 1747,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "8.3",
+   "number_from": "render",
+   "labels": [
+    "thm: smooth_cost_perturbations",
+    "eq: EOT_derivatives"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1756
+   },
+   "last": 1763,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "8.4",
+   "number_from": "render",
+   "labels": [
+    "lem: variance_continuity"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1769
+   },
+   "last": 1775,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1777
+   },
+   "last": 1802,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "8.5",
+   "number_from": "render",
+   "labels": [
+    "prop: exp_moments"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1808
+   },
+   "last": 1814,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1816
+   },
+   "last": 1818,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "8.6",
+   "number_from": "render",
+   "labels": [
+    "cor: moments"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1820
+   },
+   "last": 1826,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1828
+   },
+   "last": 1834,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "8.7",
+   "number_from": "render",
+   "labels": [
+    "prop: cloned_CLT"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1841
+   },
+   "last": 1844,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: taylor_entropic"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1846
+   },
+   "last": 1863,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "8.8",
+   "number_from": "render",
+   "labels": [
+    "lem: transported_cell_averages"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1872
+   },
+   "last": 1879,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1881
+   },
+   "last": 1889,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1891
+   },
+   "last": 1906,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1914
+   },
+   "last": 1948,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "8.9",
+   "number_from": "render",
+   "labels": [
+    "prop: limiting_field",
+    "eq: pillow_covariance"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1956
+   },
+   "last": 1967,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: Xi_variance_bound",
+    "eq: pillow_increment"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1969
+   },
+   "last": 1989,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "8.10",
+   "number_from": "render",
+   "labels": [
+    "rem: conditioning_representation"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 1991
+   },
+   "last": 1994,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "8.11",
+   "number_from": "render",
+   "labels": [
+    "cor: pillow_increments"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2004
+   },
+   "last": 2010,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2012
+   },
+   "last": 2018,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2021
+   },
+   "last": 2030,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "8.12",
+   "number_from": "render",
+   "labels": [
+    "rem: Hs_convergence"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2033
+   },
+   "last": 2045,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2048
+   },
+   "last": 2050,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2052
+   },
+   "last": 2056,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "8.13",
+   "number_from": "render",
+   "labels": [
+    "lem: IPFT_Justification_Phi",
+    "eq: cost_to_margins_derivative",
+    "eq: potentials_to_margins_derivative"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2077
+   },
+   "last": 2088,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2090
+   },
+   "last": 2103,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-42",
+   "type": "proof",
+   "k": 42,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: schrodinger_derivative_integral_system",
+    "eq: potential_derivative_projection"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2116
+   },
+   "last": 2139,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "9.1",
+   "number_from": "render",
+   "labels": [
+    "prop: spectral_concentration"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2158
+   },
+   "last": 2166,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "9.2",
+   "number_from": "render",
+   "labels": [
+    "lem:LSI_concentration"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2176
+   },
+   "last": 2190,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-43",
+   "type": "proof",
+   "k": 43,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2192
+   },
+   "last": 2198,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "9.3",
+   "number_from": "render",
+   "labels": [
+    "lem: spectral_gradient"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2209
+   },
+   "last": 2215,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-44",
+   "type": "proof",
+   "k": 44,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2217
+   },
+   "last": 2237,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-45",
+   "type": "proof",
+   "k": 45,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: gram_vs_dilation"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2241
+   },
+   "last": 2254,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "9.4",
+   "number_from": "render",
+   "labels": [
+    "lem: dyson_continuity"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2271
+   },
+   "last": 2279,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-46",
+   "type": "proof",
+   "k": 46,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2281
+   },
+   "last": 2307,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "9.5",
+   "number_from": "render",
+   "labels": [
+    "lem: bridge_density_stability"
+   ],
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2316
+   },
+   "last": 2323,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-47",
+   "type": "proof",
+   "k": 47,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2325
+   },
+   "last": 2329,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14616v1#proof-48",
+   "type": "proof",
+   "k": 48,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poisson_CT_v5.tex",
+    "line": 2333
+   },
+   "last": 2348,
+   "result": "matched"
+  }
+ ]
+}

@@ -1,0 +1,983 @@
+{
+ "paper": "2610.18632",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "a4wide",
+  "scalerel",
+  "url",
+  "xcolor",
+  "tikz",
+  "algorithm",
+  "caption",
+  "algpseudocode",
+  "enumitem",
+  "footmisc"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: main.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 18 commands, 0 environments",
+  "tree: 75 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 27,
+  "head": 2,
+  "label": 27,
+  "proof": 17,
+  "textref": 28
+ },
+ "matched": {
+  "env": 27,
+  "head": 2,
+  "label": 27,
+  "proof": 17
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 27,
+  "from_counter": 0,
+  "from_head": 2,
+  "agree": 21,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 26,
+  "unresolved": 2
+ },
+ "render": {
+  "theorems": 27,
+  "proofs": 17,
+  "agree": true,
+  "source_theorems": 27,
+  "source_proofs": 17
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.18632v1#textref-21",
+   "message": "the text names lemma 4 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.18632v1#textref-25",
+   "message": "the text names definition 3.7.2 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.18632v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "number": "Definition",
+   "number_from": "render",
+   "labels": [
+    "def:semimeasure"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 71
+   },
+   "last": 75,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "number": "Question",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 119
+   },
+   "last": 122,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "th:main_exponential"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 137
+   },
+   "last": 148,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "th:main_L1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 161
+   },
+   "last": 166,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "th:classifiers_upper"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 229
+   },
+   "last": 236,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "1.4",
+   "number_from": "render",
+   "labels": [
+    "cor:classifiers_lower"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 242
+   },
+   "last": 248,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Example",
+   "item": "example",
+   "number": "1",
+   "number_from": "head",
+   "pos": {
+    "file": "main.tex",
+    "line": 286
+   },
+   "last": 288,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.18632v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Example",
+   "item": "example",
+   "number": "2",
+   "number_from": "head",
+   "pos": {
+    "file": "main.tex",
+    "line": 292
+   },
+   "last": 296,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.18632v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "lem:game2thm_1tree"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 318
+   },
+   "last": 326,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "lem:MdomP"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 330
+   },
+   "last": 336,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 339
+   },
+   "last": 358,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "lem:game2thm"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 362
+   },
+   "last": 370,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 372
+   },
+   "last": 377,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "lem:game_lowerbound",
+    "eq:winning"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 393
+   },
+   "last": 405,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 408
+   },
+   "last": 416,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "lem:weightflow2flowflow_Bob"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 465
+   },
+   "last": 468,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 470
+   },
+   "last": 494,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "lem:weightflow2flowflow_Alice"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 497
+   },
+   "last": 500,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 503
+   },
+   "last": 540,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "lem:upper_bound_eps"
+   ],
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 5
+   },
+   "last": 7,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "lem:weightflow_easy"
+   ],
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 27
+   },
+   "last": 29,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 31
+   },
+   "last": 68,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 72
+   },
+   "last": 121,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "lem:upper_bound_gamma1"
+   ],
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 124
+   },
+   "last": 126,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 129
+   },
+   "last": 170,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 174
+   },
+   "last": 179,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "lem:BobWinsClassificationGame"
+   ],
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 197
+   },
+   "last": 201,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 203
+   },
+   "last": 213,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "number": "Definition",
+   "number_from": "render",
+   "labels": [
+    "def:"
+   ],
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 228
+   },
+   "last": 230,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "number": "Definition",
+   "number_from": "render",
+   "labels": [
+    "def:"
+   ],
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 235
+   },
+   "last": 242,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "lem:flowflow2weightflow_Bob_manyTrees"
+   ],
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 245
+   },
+   "last": 249,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 254
+   },
+   "last": 327,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "number": "Definition",
+   "number_from": "render",
+   "labels": [
+    "def:"
+   ],
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 499
+   },
+   "last": 505,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "lem:getForests"
+   ],
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 516
+   },
+   "last": 520,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "render",
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 570
+   },
+   "last": 572,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 574
+   },
+   "last": 594,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "upperbounds.tex",
+    "line": 596
+   },
+   "last": 615,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "lem:lowerbound_strategy",
+    "eq:winning"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 550
+   },
+   "last": 557,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 559
+   },
+   "last": 562,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 624
+   },
+   "last": 675,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 677
+   },
+   "last": 684,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "number": "Definition",
+   "number_from": "render",
+   "labels": [
+    "def:evenSemimeasure"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 707
+   },
+   "last": 715,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "prop:algorithmicOnlineProbability"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 721
+   },
+   "last": 725,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.2",
+   "number_from": "render",
+   "labels": [
+    "prop:errorOnlineClassification"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 764
+   },
+   "last": 766,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "A.3",
+   "number_from": "render",
+   "labels": [
+    "cor:classifiers_difference"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 772
+   },
+   "last": 780,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.18632v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 784
+   },
+   "last": 817,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

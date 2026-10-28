@@ -1,0 +1,1902 @@
+{
+ "paper": "2610.17135",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "BCEL-non-log-concavity.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "geometry",
+  "amsmath",
+  "amsxtra",
+  "amsthm",
+  "amsfonts",
+  "amssymb",
+  "mathtools",
+  "booktabs",
+  "longtable",
+  "pdflscape",
+  "array",
+  "rotating",
+  "mathrsfs",
+  "graphicx",
+  "url",
+  "xcolor",
+  "bbm",
+  "bm",
+  "multicol",
+  "tikz-cd",
+  "tikz",
+  "mathalfa",
+  "float",
+  "comment",
+  "enumitem",
+  "relsize",
+  "stmaryrd",
+  "xy",
+  "fontenc",
+  "hyperref",
+  "cleveref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: BCEL-non-log-concavity.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 1 kept",
+  "macros: 1321 commands, 0 environments",
+  "tree: 233 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "maintheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "deflemma",
+   "title": "Definition/Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "nonexample",
+   "title": "Non-example",
+   "item": "example/nonexample",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conditions",
+   "title": "Conditions",
+   "item": "context/hypothesis",
+   "counter": "conditions",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "convention",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "warning",
+   "title": "Warning",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "idea",
+   "title": "Idea",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "introcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "introthm",
+   "shared": "introthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 56,
+  "label": 66,
+  "proof": 33,
+  "textref": 13
+ },
+ "matched": {
+  "env": 56,
+  "label": 66,
+  "proof": 33
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 56,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 56,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 13,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 56,
+  "proofs": 33,
+  "agree": true,
+  "source_theorems": 56,
+  "source_proofs": 33
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.17135v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "conj:chow"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1710
+   },
+   "last": 1713,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "conj:augmented-chow"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1719
+   },
+   "last": 1721,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "conj:chain"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1726
+   },
+   "last": 1728,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "number": "A",
+   "number_from": "render",
+   "labels": [
+    "thm:zeta-intro"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1759
+   },
+   "last": 1771,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "number": "B",
+   "number_from": "render",
+   "labels": [
+    "thm:zeta-families"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1803
+   },
+   "last": 1839,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "1.4",
+   "number_from": "render",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1841
+   },
+   "last": 1881,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "1.5",
+   "number_from": "render",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1890
+   },
+   "last": 1911,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "1.6",
+   "number_from": "render",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1913
+   },
+   "last": 1920,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "number": "C",
+   "number_from": "render",
+   "labels": [
+    "thm:E"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1935
+   },
+   "last": 1955,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "introcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "introthm",
+   "number": "D",
+   "number_from": "render",
+   "labels": [
+    "cor:D"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1957
+   },
+   "last": 1959,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1961
+   },
+   "last": 1966,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "number": "E",
+   "number_from": "render",
+   "labels": [
+    "thm:graph-intro"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 1989
+   },
+   "last": 2000,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "eq:zeta-chain-defect"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2107
+   },
+   "last": 2116,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "lem:zeta-LC-failure-direct-sum"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2123
+   },
+   "last": 2131,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2133
+   },
+   "last": 2145,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "prop:zeta-chain"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2196
+   },
+   "last": 2206,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2208
+   },
+   "last": 2222,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "prop:zeta-chow",
+    "eq:zeta-chow-powers"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2271
+   },
+   "last": 2283,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2285
+   },
+   "last": 2288,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "lem:constant-terms-multichain"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2291
+   },
+   "last": 2303,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2305
+   },
+   "last": 2336,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "prop:zeta-amplification",
+    "eq:zeta-amplification"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2338
+   },
+   "last": 2354,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2356
+   },
+   "last": 2381,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "lem:chow-coefficient-error"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2383
+   },
+   "last": 2393,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2395
+   },
+   "last": 2440,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.8",
+   "number_from": "render",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2443
+   },
+   "last": 2445,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2447
+   },
+   "last": 2463,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.9",
+   "number_from": "render",
+   "labels": [
+    "amp:height",
+    "amp:height-series"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2512
+   },
+   "last": 2531,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2533
+   },
+   "last": 2560,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.10",
+   "number_from": "render",
+   "labels": [
+    "amp:wedge-product"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2597
+   },
+   "last": 2604,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2606
+   },
+   "last": 2611,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.11",
+   "number_from": "render",
+   "labels": [
+    "amp:layers",
+    "amp:layer-series"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2627
+   },
+   "last": 2644,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2646
+   },
+   "last": 2683,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2.12",
+   "number_from": "render",
+   "labels": [
+    "amp:exact-wedge",
+    "amp:wedge-formula"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2685
+   },
+   "last": 2694,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2696
+   },
+   "last": 2708,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2.13",
+   "number_from": "render",
+   "labels": [
+    "amp:error",
+    "amp:error-bound"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2726
+   },
+   "last": 2736,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2738
+   },
+   "last": 2759,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2.14",
+   "number_from": "render",
+   "labels": [
+    "amp:amplification",
+    "amp:certificate"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2761
+   },
+   "last": 2778,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2780
+   },
+   "last": 2796,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.15",
+   "number_from": "render",
+   "labels": [
+    "lem:rank7-criteria",
+    "eq:rank7-delta"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2842
+   },
+   "last": 2861,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2863
+   },
+   "last": 2866,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "render",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2876
+   },
+   "last": 2886,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "lem:trunc"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2889
+   },
+   "last": 2897,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "render",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2913
+   },
+   "last": 2939,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "fig:U34-coal-123"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 2941
+   },
+   "last": 3000,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.5",
+   "number_from": "render",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3003
+   },
+   "last": 3014,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "fig:crapo-rank-3",
+    "fig:crapo-rank-3-detruncations"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3019
+   },
+   "last": 3342,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "lem:coalescence",
+    "eq:coalescence-rank"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3345
+   },
+   "last": 3366,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3368
+   },
+   "last": 3383,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.8",
+   "number_from": "render",
+   "labels": [
+    "prop:coalescence-zeta",
+    "cor:coalescence-zeta",
+    "eq:coalescence-zeta"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3387
+   },
+   "last": 3393,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.9",
+   "number_from": "render",
+   "labels": [
+    "lem:coalescence-flags",
+    "eq:coalescence-flags"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3396
+   },
+   "last": 3405,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3407
+   },
+   "last": 3409,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.10",
+   "number_from": "render",
+   "labels": [
+    "lem:coalescence-chow",
+    "prop:coalescence-chow",
+    "prop:local-polynomials",
+    "eq:coalescence-chow"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3411
+   },
+   "last": 3417,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3419
+   },
+   "last": 3442,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3444
+   },
+   "last": 3454,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.11",
+   "number_from": "render",
+   "labels": [
+    "prop:absorption-coalescence",
+    "eq:absorption-rank"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3472
+   },
+   "last": 3504,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3512
+   },
+   "last": 3534,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "lem:affine-intersections"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3589
+   },
+   "last": 3605,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3607
+   },
+   "last": 3613,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "fig:affine-spaces-giving-spreads"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3615
+   },
+   "last": 3661,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "lem:elliptic-sections"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3724
+   },
+   "last": 3737,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3739
+   },
+   "last": 3756,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "cons:klein"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3786
+   },
+   "last": 3815,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "lem:klein-design"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3817
+   },
+   "last": 3820,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3822
+   },
+   "last": 3854,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.6",
+   "number_from": "render",
+   "labels": [
+    "lem:elliptic-involution"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3856
+   },
+   "last": 3860,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3862
+   },
+   "last": 3889,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.7",
+   "number_from": "render",
+   "labels": [
+    "def:Mq"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3893
+   },
+   "last": 3919,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.8",
+   "number_from": "render",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3921
+   },
+   "last": 3927,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.9",
+   "number_from": "render",
+   "labels": [
+    "prop:flats-Mq"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3929
+   },
+   "last": 3950,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3952
+   },
+   "last": 3965,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.10",
+   "number_from": "render",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 3968
+   },
+   "last": 3974,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "4.11",
+   "number_from": "render",
+   "labels": [
+    "cor:flag-Mq"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4008
+   },
+   "last": 4026,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4028
+   },
+   "last": 4049,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.12",
+   "number_from": "render",
+   "labels": [
+    "def:projective-absorption"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4082
+   },
+   "last": 4100,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.13",
+   "number_from": "render",
+   "labels": [
+    "prop:structure"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4102
+   },
+   "last": 4125,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4127
+   },
+   "last": 4150,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "4.14",
+   "number_from": "render",
+   "labels": [
+    "cor:flag-projective"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4202
+   },
+   "last": 4218,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4220
+   },
+   "last": 4268,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.15",
+   "number_from": "render",
+   "labels": [
+    "def:projective-family"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4692
+   },
+   "last": 4710,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.16",
+   "number_from": "render",
+   "labels": [
+    "prop:projective-flags"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4771
+   },
+   "last": 4785,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4787
+   },
+   "last": 4793,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:zeta-three-values"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4799
+   },
+   "last": 4866,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4870
+   },
+   "last": 4946,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "bridge:definition"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 4965
+   },
+   "last": 4995,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "bridge:matrix",
+    "bridge:count"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 5187
+   },
+   "last": 5195,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 5197
+   },
+   "last": 5216,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "cert:theorem"
+   ],
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 5295
+   },
+   "last": 5307,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17135v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "BCEL-non-log-concavity.tex",
+    "line": 5358
+   },
+   "last": 5398,
+   "result": "matched"
+  }
+ ]
+}
