@@ -1,0 +1,2429 @@
+{
+ "paper": "2610.12054",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "maintex.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "inputenc",
+  "amsmath",
+  "amssymb",
+  "amsfonts",
+  "amsthm",
+  "mathabx",
+  "bbold",
+  "comment",
+  "geometry",
+  "hyperref",
+  "babel",
+  "enumitem",
+  "stmaryrd",
+  "sansmathfonts",
+  "atkinson",
+  "fontenc",
+  "graphicx",
+  "subfig",
+  "adjustbox",
+  "svg",
+  "xcolor",
+  "color"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: maintex.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 70 commands, 4 environments",
+  "tree: 210 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "indentedlemma",
+   "title": "Lemme",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Theorem",
+   "shared": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Th",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Th",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "shared": "Th",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Facts",
+   "title": "Facts",
+   "item": "statement/fact",
+   "counter": "Th",
+   "shared": "Th",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Cr",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Th",
+   "shared": "Th",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "shared": "Th",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defprop",
+   "title": "Definition-Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "shared": "Th",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Th*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "Th",
+   "shared": "Th",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "Fact",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "shared": "Th",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Setting",
+   "title": "Setting",
+   "item": "context/hypothesis",
+   "counter": "Th",
+   "shared": "Th",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "Th",
+   "shared": "Th",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "shared": "Th",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Rems",
+   "title": "Remarks",
+   "item": "remark",
+   "counter": "Rems",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Def*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Exs",
+   "title": "Examples",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "manualtheoreminner",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "manualtheoreminner",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "manualpropinner",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "manualpropinner",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "manualcorinner",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "manualcorinner",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "manualexerinner",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "manualexerinner",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  },
+  {
+   "env": "manualtheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "manualtheoreminner",
+   "shared": "manualtheoreminner",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "manualprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "manualpropinner",
+   "shared": "manualpropinner",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "manualcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "manualcorinner",
+   "shared": "manualcorinner",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "manualexer",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "manualexerinner",
+   "shared": "manualexerinner",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 79,
+  "label": 85,
+  "proof": 30,
+  "textref": 204
+ },
+ "matched": {
+  "env": 79,
+  "label": 85,
+  "proof": 30
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 79,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 75,
+  "disagree": 4,
+  "contiguity_gaps": 3
+ },
+ "textrefs": {
+  "resolved": 192,
+  "unresolved": 12
+ },
+ "render": {
+  "theorems": 79,
+  "proofs": 30,
+  "agree": true,
+  "source_theorems": 79,
+  "source_proofs": 30
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2610.12054v1#env-75",
+   "message": "Corollary 2 is the first in its scope of counter manualcorinner"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.12054v1#env-76",
+   "message": "Corollary 4 comes after 2 in counter manualcorinner"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.12054v1#env-77",
+   "message": "Corollary 3 comes after 4 in counter manualcorinner"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-1",
+   "message": "the text names examples A and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-23",
+   "message": "the text names Lemma \\ref{lemma n(g,p)} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-24",
+   "message": "the text names Lemma \\ref{lemma n(g,p)} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-39",
+   "message": "the text names Lemma \\ref{lemma A,B in F2 nonamenable} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-42",
+   "message": "the text names lemma A and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-43",
+   "message": "the text names lemma B and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-49",
+   "message": "the text names Lemma \\ref{lemma A,B in F2 nonamenable} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-52",
+   "message": "the text names Corollary \\ref{if IA or T everywhere, then amen. If nonamen then IN somewhere} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-56",
+   "message": "the text names Definition \\ref{def mapping class group, subgroups of subsurfaces, modz def} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-70",
+   "message": "the text names Proposition \\ref{lemma A,B in F2 nonamenable} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-93",
+   "message": "the text names Corollary \\ref{if IA or T everywhere, then amen. If nonamen then IN somewhere} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.12054v1#textref-150",
+   "message": "the text names Corollary \\ref{if IA or T everywhere, then amen. If nonamen then IN somewhere} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.12054v1#env-74",
+   "message": "the counter model gives Theorem #1 and the second witness gives 1"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.12054v1#env-75",
+   "message": "the counter model gives Corollary #1 and the second witness gives 2"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.12054v1#env-76",
+   "message": "the counter model gives Corollary #1 and the second witness gives 4"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.12054v1#env-77",
+   "message": "the counter model gives Corollary #1 and the second witness gives 3"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.12054v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "Theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "main thm"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 241
+   },
+   "last": 245,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "Corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Theorem",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "cr biembedability"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 248
+   },
+   "last": 252,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "Corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Theorem",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "cr OE rigidity"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 256
+   },
+   "last": 259,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "Corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Theorem",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "cr monotonicity of complexity"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 262
+   },
+   "last": 264,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "def mapping class group, subgroups of subsurfaces, modz def"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 336
+   },
+   "last": 347,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "Th",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Th",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "modz th"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 351
+   },
+   "last": 355,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "1.3",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 356
+   },
+   "last": 358,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "Th",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Th",
+   "number": "1.4",
+   "number_from": "render",
+   "labels": [
+    "th ivanov"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 362
+   },
+   "last": 368,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "1.5",
+   "number_from": "render",
+   "labels": [
+    "denh twist prop",
+    "intersection formula dehn twists",
+    "dehn twists injectivity",
+    "dehn twists squared give free groups"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 381
+   },
+   "last": 389,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "1.6",
+   "number_from": "render",
+   "labels": [
+    "nonsep dehn twists are not in modz"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 392
+   },
+   "last": 394,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 395
+   },
+   "last": 399,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "Cr",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Th",
+   "number": "1.7",
+   "number_from": "render",
+   "labels": [
+    "prop in modz all twists are free groups"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 401
+   },
+   "last": 403,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 404
+   },
+   "last": 406,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "1.8",
+   "number_from": "render",
+   "labels": [
+    "def dual graph"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 419
+   },
+   "last": 426,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "1.9",
+   "number_from": "render",
+   "labels": [
+    "rem equation star",
+    "equation star"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 428
+   },
+   "last": 438,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "1.10",
+   "number_from": "render",
+   "labels": [
+    "lemma n(g,p)"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 442
+   },
+   "last": 457,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 461
+   },
+   "last": 468,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "1.11",
+   "number_from": "render",
+   "labels": [
+    "rem si decompo est un arbre à petites composantes alors cest maximal"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 470
+   },
+   "last": 480,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "Ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "Th",
+   "number": "1.12",
+   "number_from": "render",
+   "labels": [
+    "exemple de decompo pour sphere n trous",
+    "fig decompo sphere n trous"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 482
+   },
+   "last": 495,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "1.13",
+   "number_from": "render",
+   "labels": [
+    "def kmax decompo"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 500
+   },
+   "last": 502,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "1.14",
+   "number_from": "render",
+   "labels": [
+    "lemma structure of k max decopos",
+    "point 1 lemma structure of k max decopos",
+    "point 2 lemma structure of k max decopos"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 513
+   },
+   "last": 518,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 521
+   },
+   "last": 531,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "1.15",
+   "number_from": "render",
+   "labels": [
+    "def types de courbes"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 536
+   },
+   "last": 544,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "1.16",
+   "number_from": "render",
+   "labels": [
+    "lemma strongly sep curves into decompo"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 548
+   },
+   "last": 550,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 553
+   },
+   "last": 559,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "1.17",
+   "number_from": "render",
+   "labels": [
+    "prop D les decompos particulieres avec g+p/3"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 563
+   },
+   "last": 567,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 568
+   },
+   "last": 626,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "Claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "Th",
+   "number": "1.18",
+   "number_from": "render",
+   "labels": [
+    "claim subcase 2a 2b"
+   ],
+   "parent": "2610.12054v1#proof-6",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 579
+   },
+   "last": 581,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "fig l leaf curves"
+   ],
+   "parent": "2610.12054v1#proof-6",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 591
+   },
+   "last": 626,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.1",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 633
+   },
+   "last": 661,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.2",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 665
+   },
+   "last": 667,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.3",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 671
+   },
+   "last": 673,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.4",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 677
+   },
+   "last": 679,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.5",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 685
+   },
+   "last": 689,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.6",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 698
+   },
+   "last": 700,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "rem trivial kernel infinite-type groupoid to infinite group"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 702
+   },
+   "last": 704,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.8",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 706
+   },
+   "last": 708,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "2.9",
+   "number_from": "render",
+   "labels": [
+    "cocycles from pmp actions are action-type"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 714
+   },
+   "last": 716,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.10",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 718
+   },
+   "last": 721,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.11",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 726
+   },
+   "last": 729,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.12",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 731
+   },
+   "last": 734,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "2.13",
+   "number_from": "render",
+   "labels": [
+    "lemma if groups normalise then groupoids normalise"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 737
+   },
+   "last": 739,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "2.14",
+   "number_from": "render",
+   "labels": [
+    "lemma triv kernel cocycle amenable group amenable groupoid"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 743
+   },
+   "last": 747,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.15",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 751
+   },
+   "last": 753,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "2.16",
+   "number_from": "render",
+   "labels": [
+    "lemme action-type groupe non moyennable donne groupoide non moyennable"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 755
+   },
+   "last": 759,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "2.17",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 767
+   },
+   "last": 776,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "2.18",
+   "number_from": "render",
+   "labels": [
+    "lemma measurable embedding provides groupoid and cocycles"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 778
+   },
+   "last": 787,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 789
+   },
+   "last": 833,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "2.19",
+   "number_from": "render",
+   "labels": [
+    "alg embedding is meas embedding"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 836
+   },
+   "last": 838,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "2.20",
+   "number_from": "render",
+   "labels": [
+    "rem amen is preserved by meas emb"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 841
+   },
+   "last": 842,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "2.21",
+   "number_from": "render",
+   "labels": [
+    "remark finite indices in me couplings"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 845
+   },
+   "last": 851,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "2.22",
+   "number_from": "render",
+   "labels": [
+    "transitivité du plongement ME"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 854
+   },
+   "last": 857,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 858
+   },
+   "last": 874,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "2.23",
+   "number_from": "render",
+   "labels": [
+    "prop adams maximal map",
+    "1support",
+    "2maximality",
+    "3uniqueness"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 886
+   },
+   "last": 895,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 896
+   },
+   "last": 899,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "2.24",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 901
+   },
+   "last": 903,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "2.25",
+   "number_from": "render",
+   "labels": [
+    "lemma A,B in F2 nonamenable"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 905
+   },
+   "last": 909,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 911
+   },
+   "last": 927,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "2.26",
+   "number_from": "render",
+   "labels": [
+    "lemma free product into direct product"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 931
+   },
+   "last": 938,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 940
+   },
+   "last": 958,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "3.1",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 967
+   },
+   "last": 972,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "3.2",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 974
+   },
+   "last": 981,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "canonical reduction set exists"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 985
+   },
+   "last": 989,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "rem we can always choose U for the canonical multicurve to exist"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 991
+   },
+   "last": 994,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "lemma multicurve is canonical"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 998
+   },
+   "last": 1003,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Th",
+   "number": "3.6",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1010
+   },
+   "last": 1021,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "reducible nontrivial implies existence of canonical curve"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1028
+   },
+   "last": 1032,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1033
+   },
+   "last": 1039,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "3.8",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1042
+   },
+   "last": 1049,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "3.9",
+   "number_from": "render",
+   "labels": [
+    "map to product of boundaries of curve graphs of components"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1059
+   },
+   "last": 1063,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "Cr",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Th",
+   "number": "3.10",
+   "number_from": "render",
+   "labels": [
+    "if IA or T everywhere, then amen. If nonamen then IN somewhere"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1067
+   },
+   "last": 1069,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "3.11",
+   "number_from": "render",
+   "labels": [
+    "amen is red or IA"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1073
+   },
+   "last": 1077,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1078
+   },
+   "last": 1082,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "3.12",
+   "number_from": "render",
+   "labels": [
+    "if H normalises A then its reducible or IA"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1085
+   },
+   "last": 1091,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1092
+   },
+   "last": 1099,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "Setting",
+   "title": "Setting",
+   "item": "context/hypothesis",
+   "counter": "Th",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "setting for thm"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1105
+   },
+   "last": 1111,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "adjacency curves in groupoidal terms"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1124
+   },
+   "last": 1130,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1131
+   },
+   "last": 1139,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "lemma b intersects S"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1144
+   },
+   "last": 1153,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1154
+   },
+   "last": 1186,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Th",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "lemma max decompo are sent to max decompo",
+    "i max decompos",
+    "ii max decompos",
+    "iii max decompos"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1195
+   },
+   "last": 1221,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "Rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Th",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "rem on equality or not of S and S'"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1224
+   },
+   "last": 1226,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "fig five curves",
+    "1 proof",
+    "2 proof",
+    "3 proof",
+    "4 proof",
+    "5 proof",
+    "inequality on card V",
+    "inequality on sum complexities",
+    "ineq kappa"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1228
+   },
+   "last": 1359,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "4.6",
+   "number_from": "render",
+   "labels": [
+    "prop recap courbes dans courbes"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1367
+   },
+   "last": 1370,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "4.7",
+   "number_from": "render",
+   "labels": [
+    "prop leaf type curves"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1378
+   },
+   "last": 1381,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "def de sigma nl"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1382
+   },
+   "last": 1468,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "Claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "Th",
+   "number": "4.8",
+   "number_from": "render",
+   "labels": [
+    "claim at most one leaf curve"
+   ],
+   "parent": "2610.12054v1#proof-19",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1385
+   },
+   "last": 1387,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.12054v1#proof-19",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1388
+   },
+   "last": 1402,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "Claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "Th",
+   "number": "4.9",
+   "number_from": "render",
+   "labels": [
+    "claim g_j' at least two curves"
+   ],
+   "parent": "2610.12054v1#proof-19",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1434
+   },
+   "last": 1436,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.12054v1#proof-19",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1437
+   },
+   "last": 1455,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "4.10",
+   "number_from": "render",
+   "labels": [
+    "nonsep curves prop"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1478
+   },
+   "last": 1483,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1484
+   },
+   "last": 1529,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "Prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Th",
+   "number": "4.11",
+   "number_from": "render",
+   "labels": [
+    "separating curves prop"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1534
+   },
+   "last": 1537,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1538
+   },
+   "last": 1556,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "Th",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Th",
+   "number": "4.12",
+   "number_from": "render",
+   "labels": [
+    "irmak th"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1567
+   },
+   "last": 1569,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "Th",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Th",
+   "number": "4.13",
+   "number_from": "render",
+   "labels": [
+    "thm existence of tautening map"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1573
+   },
+   "last": 1576,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "equivariance of theta",
+    "U",
+    "BU",
+    "application of equivariance"
+   ],
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1579
+   },
+   "last": 1658,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "manualtheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "manualtheoreminner",
+   "number": "1",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1664
+   },
+   "last": 1666,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1667
+   },
+   "last": 1671,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "manualcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "manualcorinner",
+   "number": "2",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1675
+   },
+   "last": 1677,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1679
+   },
+   "last": 1681,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "manualcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "manualcorinner",
+   "number": "4",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1686
+   },
+   "last": 1688,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1689
+   },
+   "last": 1693,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "manualcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "manualcorinner",
+   "number": "3",
+   "number_from": "render",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1698
+   },
+   "last": 1701,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1702
+   },
+   "last": 1752,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-78",
+   "type": "env",
+   "k": 78,
+   "env": "Claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "Th",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "claim HDelta is conull in Omega"
+   ],
+   "parent": "2610.12054v1#proof-28",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1716
+   },
+   "last": 1718,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.12054v1#proof-28",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1719
+   },
+   "last": 1739,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#env-79",
+   "type": "env",
+   "k": 79,
+   "env": "Claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "Th",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "claim almost every x"
+   ],
+   "parent": "2610.12054v1#proof-28",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1741
+   },
+   "last": 1743,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12054v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.12054v1#proof-28",
+   "pos": {
+    "file": "maintex.tex",
+    "line": 1744
+   },
+   "last": 1746,
+   "result": "matched"
+  }
+ ]
+}

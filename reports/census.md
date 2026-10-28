@@ -1,6 +1,6 @@
 # The census of the analysis plane
 
-1,871 versions have a census record, and 32 are stopped. 0.0% of the papers with a census have a gap, and 100.0% are strong or normal.
+2,009 versions have a census record, and 32 are stopped. 0.0% of the papers with a census have a gap, and 100.0% are strong or normal.
 Counted on 28 October 2026 from analysis/census, analysis/objects and analysis/stopped.
 
 ## The open papers in scope
@@ -9,9 +9,9 @@ AX-M3 is done when each open and share-alike paper in scope has the state extrac
 
 | State | Papers | Share |
 | --- | ---: | ---: |
-| extracted | 1,869 | 1.3% |
+| extracted | 2,007 | 1.4% |
 | stopped | 21 | 0.0% |
-| not yet | 139,831 | 98.7% |
+| not yet | 139,693 | 98.6% |
 | all | 141,721 | 100.0% |
 
 The other 653,166 papers in scope are verbatim or record, and the corpus does not read their text. TheoremGraph gives the structure of 433,731 of them (66.4%), which is way R1 of AX2.5. The rest are stopped with the reason licence until AQ01 is settled.
@@ -30,16 +30,16 @@ These are the measures of AX11.4. A new extractor version may not raise any of t
 | ax/v0.5.26 | 150 | 0.0% | 0.0% | 14.0% | 6.0% | 26.7% | 24.0% | 5.7% | 0.3% |
 | ax/v0.5.27 | 67 | 0.0% | 0.0% | 26.9% | 0.0% | 22.4% | 30.7% | 18.1% | 0.7% |
 | ax/v0.5.28 | 548 | 0.0% | 0.0% | 6.8% | 3.8% | 24.8% | 21.0% | 6.0% | 0.3% |
-| ax/v0.5.29 | 288 | 0.0% | 0.0% | 5.9% | 2.4% | 25.3% | 19.5% | 5.9% | 1.5% |
-| ax/v0.5.8 | 381 | 0.0% | 0.0% | 2.1% | 0.0% | 18.9% | 34.6% | 8.0% | 1.3% |
-| ax/v0.5.9 | 73 | 0.0% | 0.0% | 8.2% | 0.0% | 24.7% | 31.0% | 6.3% | 1.6% |
+| ax/v0.5.29 | 476 | 0.0% | 0.0% | 6.5% | 2.7% | 24.8% | 20.7% | 6.3% | 1.1% |
+| ax/v0.5.8 | 358 | 0.0% | 0.0% | 2.2% | 0.0% | 18.2% | 34.9% | 7.7% | 1.3% |
+| ax/v0.5.9 | 46 | 0.0% | 0.0% | 2.2% | 0.0% | 23.9% | 33.1% | 4.3% | 1.3% |
 
 ## The strength
 
 | Strength | Papers | Share |
 | --- | ---: | ---: |
-| strong | 1,274 | 68.1% |
-| normal | 597 | 31.9% |
+| strong | 1,396 | 69.5% |
+| normal | 613 | 30.5% |
 | weak | 0 | 0.0% |
 | none | 0 | 0.0% |
 
@@ -59,7 +59,7 @@ TheoremSearch and TheoremGraph are a third count (AX4.5). They are not ground tr
 
 | Index | Versions in both | Same count | Index has more | Index has fewer | Excess over 1 | Other version |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| theoremgraph | 551 | 43.7% | 3.4% | 52.8% | 14 | 0 |
+| theoremgraph | 551 | 43.9% | 3.4% | 52.6% | 14 | 0 |
 | theoremsearch | 489 | 7.2% | 1.0% | 91.8% | 3 | 31 |
 
 ### census-diff from theoremgraph
@@ -99,8 +99,8 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 
 | Part | Files | Bytes | Estimate for the open papers in scope |
 | --- | ---: | ---: | ---: |
-| census | 1,871 | 30.3 MB | 2.24 GB |
-| objects | 1,744 | 166.1 MB | 12.28 GB |
+| census | 2,009 | 32.7 MB | 2.25 GB |
+| objects | 1,878 | 179.6 MB | 12.37 GB |
 | stopped | 32 | 6 KB | - |
 | witness | 669 | 119.1 MB | - |
 
@@ -297,7 +297,7 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | 2026-07 | 13 | 526 | 0 | 0 | 0 | 0 | 2 | 100.0% |
 | 2026-08 | 11 | 524 | 0 | 0 | 3 | 0 | 1 | 100.0% |
 | 2026-09 | 27 | 1,170 | 0 | 0 | 2 | 0 | 9 | 100.0% |
-| 2026-10 | 994 | 42,652 | 0 | 0 | 70 | 37 | 245 | 100.0% |
+| 2026-10 | 1,132 | 48,702 | 0 | 0 | 79 | 43 | 276 | 100.0% |
 
 ## By code
 
@@ -305,8 +305,8 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | alg-geom | 2 | 165 | 0 | 0 | 1 | 0 | 1 | 100.0% |
 | cond-mat.stat-mech | 5 | 184 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| cond-mat.str-el | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| cs.AI | 5 | 67 | 0 | 0 | 0 | 0 | 1 | 100.0% |
+| cond-mat.str-el | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 100.0% |
+| cs.AI | 6 | 131 | 0 | 0 | 1 | 0 | 1 | 100.0% |
 | cs.CC | 3 | 118 | 0 | 0 | 1 | 0 | 1 | 100.0% |
 | cs.CE | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.CG | 4 | 78 | 0 | 0 | 0 | 0 | 3 | 100.0% |
@@ -314,11 +314,11 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | cs.CV | 1 | 11 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.DC | 1 | 358 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.DM | 5 | 265 | 0 | 0 | 2 | 1 | 2 | 100.0% |
-| cs.DS | 11 | 427 | 0 | 0 | 2 | 1 | 2 | 100.0% |
+| cs.DS | 13 | 498 | 0 | 0 | 2 | 1 | 3 | 100.0% |
 | cs.GR | 1 | 47 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.GT | 1 | 35 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| cs.IT | 76 | 1,521 | 0 | 0 | 4 | 2 | 5 | 100.0% |
-| cs.LG | 47 | 1,330 | 0 | 0 | 4 | 4 | 9 | 100.0% |
+| cs.IT | 83 | 1,605 | 0 | 0 | 4 | 2 | 6 | 100.0% |
+| cs.LG | 52 | 1,728 | 0 | 0 | 5 | 4 | 10 | 100.0% |
 | cs.LO | 3 | 101 | 0 | 0 | 1 | 0 | 0 | 100.0% |
 | cs.MS | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.PF | 2 | 60 | 0 | 0 | 0 | 1 | 0 | 100.0% |
@@ -329,38 +329,38 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | eess.SP | 3 | 21 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | eess.SY | 22 | 198 | 0 | 0 | 2 | 0 | 3 | 100.0% |
 | gr-qc | 3 | 68 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| hep-th | 34 | 175 | 0 | 0 | 0 | 0 | 1 | 100.0% |
-| math-ph | 49 | 1,536 | 0 | 0 | 2 | 2 | 10 | 100.0% |
+| hep-th | 38 | 326 | 0 | 0 | 0 | 1 | 2 | 100.0% |
+| math-ph | 51 | 1,602 | 0 | 0 | 2 | 2 | 10 | 100.0% |
 | math.AC | 38 | 1,740 | 0 | 0 | 4 | 2 | 3 | 100.0% |
-| math.AG | 80 | 4,334 | 0 | 0 | 10 | 3 | 26 | 100.0% |
-| math.AP | 131 | 5,870 | 0 | 0 | 4 | 0 | 29 | 100.0% |
-| math.AT | 35 | 2,862 | 0 | 0 | 6 | 0 | 15 | 100.0% |
-| math.CA | 53 | 1,936 | 0 | 0 | 3 | 1 | 17 | 100.0% |
-| math.CO | 132 | 5,669 | 0 | 0 | 8 | 4 | 32 | 100.0% |
-| math.CT | 22 | 1,795 | 0 | 0 | 2 | 0 | 6 | 100.0% |
+| math.AG | 81 | 4,478 | 0 | 0 | 10 | 3 | 27 | 100.0% |
+| math.AP | 145 | 6,284 | 0 | 0 | 4 | 0 | 32 | 100.0% |
+| math.AT | 36 | 2,901 | 0 | 0 | 6 | 0 | 15 | 100.0% |
+| math.CA | 54 | 1,952 | 0 | 0 | 3 | 1 | 18 | 100.0% |
+| math.CO | 145 | 6,222 | 0 | 0 | 9 | 5 | 34 | 100.0% |
+| math.CT | 23 | 2,163 | 0 | 0 | 2 | 0 | 6 | 100.0% |
 | math.CV | 41 | 1,455 | 0 | 0 | 4 | 0 | 18 | 100.0% |
-| math.DG | 74 | 3,249 | 0 | 0 | 6 | 1 | 21 | 100.0% |
-| math.DS | 60 | 2,789 | 0 | 0 | 2 | 1 | 11 | 100.0% |
-| math.FA | 59 | 2,289 | 0 | 0 | 5 | 1 | 12 | 100.0% |
-| math.GM | 22 | 476 | 0 | 0 | 1 | 0 | 5 | 100.0% |
+| math.DG | 84 | 3,640 | 0 | 0 | 6 | 1 | 21 | 100.0% |
+| math.DS | 64 | 3,066 | 0 | 0 | 2 | 2 | 13 | 100.0% |
+| math.FA | 64 | 2,540 | 0 | 0 | 6 | 1 | 13 | 100.0% |
+| math.GM | 23 | 491 | 0 | 0 | 1 | 0 | 6 | 100.0% |
 | math.GN | 13 | 644 | 0 | 0 | 0 | 0 | 4 | 100.0% |
-| math.GR | 55 | 3,080 | 0 | 0 | 3 | 2 | 18 | 100.0% |
+| math.GR | 60 | 3,457 | 0 | 0 | 4 | 2 | 20 | 100.0% |
 | math.GT | 41 | 2,089 | 0 | 0 | 3 | 0 | 16 | 100.0% |
 | math.HO | 8 | 23 | 0 | 0 | 0 | 0 | 1 | 100.0% |
 | math.KT | 2 | 255 | 0 | 0 | 1 | 0 | 0 | 100.0% |
 | math.LO | 43 | 3,414 | 0 | 0 | 0 | 1 | 17 | 100.0% |
-| math.MG | 38 | 1,464 | 0 | 0 | 1 | 0 | 9 | 100.0% |
-| math.NA | 79 | 1,478 | 0 | 0 | 7 | 2 | 13 | 100.0% |
-| math.NT | 110 | 3,945 | 0 | 0 | 2 | 1 | 34 | 100.0% |
-| math.OA | 27 | 1,757 | 0 | 0 | 2 | 0 | 9 | 100.0% |
-| math.OC | 93 | 2,508 | 0 | 0 | 11 | 1 | 20 | 100.0% |
-| math.PR | 83 | 4,040 | 0 | 0 | 5 | 4 | 27 | 100.0% |
-| math.QA | 12 | 569 | 0 | 0 | 3 | 0 | 2 | 100.0% |
-| math.RA | 45 | 2,339 | 0 | 0 | 4 | 2 | 8 | 100.0% |
-| math.RT | 31 | 1,696 | 0 | 0 | 2 | 1 | 7 | 100.0% |
-| math.SG | 4 | 226 | 0 | 0 | 1 | 2 | 1 | 100.0% |
-| math.SP | 12 | 442 | 0 | 0 | 1 | 0 | 2 | 100.0% |
-| math.ST | 45 | 1,502 | 0 | 0 | 3 | 0 | 16 | 100.0% |
+| math.MG | 41 | 1,575 | 0 | 0 | 1 | 0 | 9 | 100.0% |
+| math.NA | 85 | 1,635 | 0 | 0 | 7 | 2 | 13 | 100.0% |
+| math.NT | 120 | 4,500 | 0 | 0 | 2 | 2 | 37 | 100.0% |
+| math.OA | 29 | 1,857 | 0 | 0 | 2 | 0 | 11 | 100.0% |
+| math.OC | 102 | 2,802 | 0 | 0 | 12 | 1 | 20 | 100.0% |
+| math.PR | 89 | 4,265 | 0 | 0 | 5 | 4 | 28 | 100.0% |
+| math.QA | 14 | 689 | 0 | 0 | 4 | 0 | 3 | 100.0% |
+| math.RA | 46 | 2,374 | 0 | 0 | 4 | 2 | 8 | 100.0% |
+| math.RT | 33 | 1,790 | 0 | 0 | 2 | 1 | 7 | 100.0% |
+| math.SG | 6 | 288 | 0 | 0 | 2 | 3 | 2 | 100.0% |
+| math.SP | 14 | 465 | 0 | 0 | 1 | 0 | 3 | 100.0% |
+| math.ST | 52 | 1,820 | 0 | 0 | 4 | 1 | 20 | 100.0% |
 | nlin.AO | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | nlin.SI | 4 | 45 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | physics.app-ph | 1 | 16 | 0 | 0 | 0 | 0 | 0 | 100.0% |
@@ -369,11 +369,12 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | physics.soc-ph | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | q-bio.NC | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | q-bio.PE | 5 | 55 | 0 | 0 | 0 | 0 | 0 | 100.0% |
+| q-fin.CP | 1 | 35 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | q-fin.PM | 1 | 33 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| quant-ph | 38 | 1,294 | 0 | 0 | 3 | 1 | 7 | 100.0% |
+| quant-ph | 41 | 1,319 | 0 | 0 | 3 | 1 | 7 | 100.0% |
 | stat.CO | 3 | 87 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | stat.ME | 8 | 240 | 0 | 0 | 1 | 0 | 2 | 100.0% |
-| stat.ML | 22 | 684 | 0 | 0 | 0 | 1 | 5 | 100.0% |
+| stat.ML | 26 | 901 | 0 | 0 | 0 | 1 | 6 | 100.0% |
 | unknown | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 
 ## The gap patterns
