@@ -1,0 +1,924 @@
+{
+ "paper": "2610.14080",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "arxiv-zeros.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "eurosym",
+  "amsfonts",
+  "amsmath",
+  "tikz",
+  "pgfplots",
+  "float",
+  "booktabs",
+  "amssymb",
+  "latexsym",
+  "enumerate",
+  "hyperref",
+  "amsbsy",
+  "amscd",
+  "graphicx",
+  "epsfig",
+  "tabularx",
+  "adjustbox",
+  "fancyhdr",
+  "changepage",
+  "longtable",
+  "subcaption",
+  "epstopdf",
+  "capt-of",
+  "placeins",
+  "amsthm"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: arxiv-zeros.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 8 commands, 0 environments",
+  "tree: 86 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "conjecture",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "criterion",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "criterion",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assertion",
+   "title": "Assertion",
+   "item": "statement/claim",
+   "counter": "assertion",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "condition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "problem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "exercise",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "algorithm",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "algorithm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "axiom",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "property",
+   "title": "Property",
+   "item": "statement/fact",
+   "counter": "property",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hypothesis",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "hypothesis",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "note",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "notation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summary",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "summary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "acknowledgment",
+   "title": "Acknowledgment",
+   "item": "other/section",
+   "counter": "acknowledgment",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "case",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conclusion",
+   "title": "Conclusion",
+   "item": "other/section",
+   "counter": "conclusion",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 18,
+  "label": 39,
+  "proof": 14,
+  "textref": 29
+ },
+ "matched": {
+  "env": 18,
+  "label": 39,
+  "proof": 14
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 18,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 18,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 28,
+  "unresolved": 1
+ },
+ "render": {
+  "theorems": 18,
+  "proofs": 14,
+  "agree": true,
+  "source_theorems": 18,
+  "source_proofs": 14
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.14080v1#textref-29",
+   "message": "the text names Algorithm 23 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.14080v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "thm:even-no-real"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 344
+   },
+   "last": 347,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 349
+   },
+   "last": 360,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "thm:odd-real"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 362
+   },
+   "last": 365,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:classification-odd-expansion"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 367
+   },
+   "last": 403,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "thm:positive-root-bounds",
+    "eq:classification-positive-bounds"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 405
+   },
+   "last": 425,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:positive-root-fibonacci-value"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 427
+   },
+   "last": 541,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "cor:positive-root-asymptotics",
+    "eq:positive-root-asymptotic"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 542
+   },
+   "last": 567,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 569
+   },
+   "last": 656,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "thm:odd-no-imaginary"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 657
+   },
+   "last": 660,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 662
+   },
+   "last": 677,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "thm:even-all-imaginary"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 690
+   },
+   "last": 704,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 706
+   },
+   "last": 813,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "cor:odd-remaining-zeros"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 814
+   },
+   "last": 820,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 822
+   },
+   "last": 833,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "lem:fp-equivalence",
+    "eq:fp-trig"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 860
+   },
+   "last": 875,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:fp-trigonometric-representation"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 877
+   },
+   "last": 948,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "thm:fp-contraction",
+    "eq:fp-lipschitz"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 949
+   },
+   "last": 976,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:fp-argument-bound",
+    "eq:fp-derivative"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 978
+   },
+   "last": 1108,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "thm:fp-convergence",
+    "eq:fp-iteration",
+    "eq:fp-error"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1110
+   },
+   "last": 1141,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1143
+   },
+   "last": 1183,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "thm:fp-all-zeros"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1184
+   },
+   "last": 1206,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1207
+   },
+   "last": 1256,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1",
+   "number_from": "render",
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1257
+   },
+   "last": 1265,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "prop:fp-symmetry",
+    "eq:fp-branch-symmetry"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1266
+   },
+   "last": 1301,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:fp-map-symmetry"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1303
+   },
+   "last": 1409,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "rem:fp-symmetry-computation"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1410
+   },
+   "last": 1472,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "thm:fp-strip",
+    "eq:fp-strip"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1484
+   },
+   "last": 1501,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1503
+   },
+   "last": 1527,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "cor:fp-aposteriori",
+    "eq:fp-aposteriori-angle",
+    "eq:fp-aposteriori-root",
+    "eq:fp-stopping-root-error"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1528
+   },
+   "last": 1582,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1584
+   },
+   "last": 1652,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "ex:numerical-le5",
+    "eq:numerical-le5-iteration",
+    "tab:numerical-le5",
+    "fig:numerical-le5"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1716
+   },
+   "last": 1855,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14080v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "ex:numerical-le8",
+    "tab:numerical-le8",
+    "fig:numerical-le8"
+   ],
+   "pos": {
+    "file": "arxiv-zeros.tex",
+    "line": 1857
+   },
+   "last": 1974,
+   "result": "matched"
+  }
+ ]
+}

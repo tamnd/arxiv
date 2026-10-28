@@ -1,0 +1,2084 @@
+{
+ "paper": "2610.12633",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "CleanedMain.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "geometry",
+  "tikz-cd",
+  "float",
+  "amsmath",
+  "amsfonts",
+  "amsthm",
+  "enumitem",
+  "dsfont",
+  "array",
+  "longtable",
+  "amssymb",
+  "pifont",
+  "mathtools",
+  "comment",
+  "graphicx",
+  "caption",
+  "spectralsequences",
+  "fontenc",
+  "inputenc",
+  "epigraph",
+  "pinlabel",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: CleanedMain.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 12 commands, 0 environments",
+  "tree: 184 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "T1",
+   "title": "Theorem \\ref{space homological stability unordered}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "T2",
+   "title": "Theorem \\ref{first homology of height 2 box}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exam",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "const",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "quest",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "quest*",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact*",
+   "title": "Fact",
+   "item": "statement/fact",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 66,
+  "label": 72,
+  "proof": 34,
+  "textref": 143
+ },
+ "matched": {
+  "env": 66,
+  "label": 72,
+  "proof": 34
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 66,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 64,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 142,
+  "unresolved": 1
+ },
+ "render": {
+  "theorems": 66,
+  "proofs": 34,
+  "agree": true,
+  "source_theorems": 66,
+  "source_proofs": 34
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.12633v1#textref-73",
+   "message": "the text names Corollary \\ref{First homology for w,h ge 3} and the census has no such item (no-label)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.12633v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "quest",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "how much space quest"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 149
+   },
+   "last": 151,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "quest",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "topology of thick braids quest"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 152
+   },
+   "last": 154,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "1.3",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 158
+   },
+   "last": 161,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "1.4",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 170
+   },
+   "last": 173,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.5",
+   "number_from": "render",
+   "labels": [
+    "space homological stability unordered"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 184
+   },
+   "last": 186,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "1.6",
+   "number_from": "render",
+   "labels": [
+    "First homology for w,h ge 3"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 192
+   },
+   "last": 202,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.7",
+   "number_from": "render",
+   "labels": [
+    "first homology of height 2 box"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 209
+   },
+   "last": 211,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "1.8",
+   "number_from": "render",
+   "labels": [
+    "different braid groups height 2"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 215
+   },
+   "last": 220,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "rightmost config space unordered"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 326
+   },
+   "last": 331,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.2",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 333
+   },
+   "last": 335,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "arc complex defn"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 342
+   },
+   "last": 359,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.4",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 370
+   },
+   "last": 374,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "augmented right MVSS has trivial abutment"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 453
+   },
+   "last": 455,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 457
+   },
+   "last": 463,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "connected unordered square configuration spaces one rightmost"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 473
+   },
+   "last": 475,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 477
+   },
+   "last": 486,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "V sets for slide ss"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 515
+   },
+   "last": 524,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.8",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 526
+   },
+   "last": 532,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.9",
+   "number_from": "render",
+   "labels": [
+    "Vl is SCp2"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 620
+   },
+   "last": 622,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "T2",
+   "title": "Theorem \\ref{first homology of height 2 box}",
+   "item": "statement/theorem",
+   "number": "1.7",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 639
+   },
+   "last": 641,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "Orbiting Square Classes",
+    "Embedded Orbiting Pair Class"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 681
+   },
+   "last": 712,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 714
+   },
+   "last": 721,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "spectral sequence d2 differential"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 725
+   },
+   "last": 736,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Orbitingpairsquaredifferential1",
+    "Orbitingpairsquaredifferential2"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 738
+   },
+   "last": 767,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "SCnRwh two components"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 793
+   },
+   "last": 795,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "ComponentsofSCnRw211"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 797
+   },
+   "last": 811,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "intersection of V1 and V2 h=2"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 816
+   },
+   "last": 818,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "V1intersectV2"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 820
+   },
+   "last": 834,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "E2 entry of slide spectral sequence h=2"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 840
+   },
+   "last": 842,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "slide spectral sequence for SC h=2 n s=1 p=1 simplfied"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 844
+   },
+   "last": 996,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "rung A prop"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1001
+   },
+   "last": 1012,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1014
+   },
+   "last": 1024,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.8",
+   "number_from": "render",
+   "labels": [
+    "rung B prop"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1026
+   },
+   "last": 1036,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1038
+   },
+   "last": 1061,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.9",
+   "number_from": "render",
+   "labels": [
+    "rung C prop"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1063
+   },
+   "last": 1074,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1076
+   },
+   "last": 1078,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "3.10",
+   "number_from": "render",
+   "labels": [
+    "ladder remark"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1080
+   },
+   "last": 1086,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.11",
+   "number_from": "render",
+   "labels": [
+    "first homology height 2 for 2w-1"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1095
+   },
+   "last": 1101,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Gamma42"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1103
+   },
+   "last": 1114,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.12",
+   "number_from": "render",
+   "labels": [
+    "first homology height 2 for 2w-2"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1123
+   },
+   "last": 1129,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "GeneratorsH1SC6R4211",
+    "ClassinH1SC6R4221anditsimage",
+    "ClassesinH1SC6R422anditsimage",
+    "GeneratorsH1SC6R421"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1131
+   },
+   "last": 1215,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.13",
+   "number_from": "render",
+   "labels": [
+    "orbiting triple classes are sums of squares"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1223
+   },
+   "last": 1225,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Decomposetripletosumofsquares"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1227
+   },
+   "last": 1237,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.14",
+   "number_from": "render",
+   "labels": [
+    "first homology height 2 for 2w-3"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1239
+   },
+   "last": 1245,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "ClassinV1intersectV2anditsimage",
+    "ClassinH1SC5R4221anditsimage",
+    "ClassinH1SC5R422anditsimage"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1247
+   },
+   "last": 1320,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.15",
+   "number_from": "render",
+   "labels": [
+    "first homology height 2 for n le 2w-4"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1331
+   },
+   "last": 1337,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "ClassinH1SC4R422anditsimage"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1339
+   },
+   "last": 1401,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1405
+   },
+   "last": 1409,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "T1",
+   "title": "Theorem \\ref{space homological stability unordered}",
+   "item": "statement/theorem",
+   "number": "1.5",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1418
+   },
+   "last": 1420,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "connected unordered square configuration spaces two rightmost"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1492
+   },
+   "last": 1503,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1505
+   },
+   "last": 1550,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "E201 entry of augmeneted right Mayer Vietoris ss"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1555
+   },
+   "last": 1558,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1560
+   },
+   "last": 1587,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "H1 SC(1p1)"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1595
+   },
+   "last": 1607,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "connected intersection of Vs n-p-1 \u003c (w-1)h"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1612
+   },
+   "last": 1622,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1624
+   },
+   "last": 1644,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "nerve complex is contractible"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1649
+   },
+   "last": 1652,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1654
+   },
+   "last": 1661,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.6",
+   "number_from": "render",
+   "labels": [
+    "H1 SC(1p1) for n-p-1=(w-1)h",
+    "exotic class",
+    "exotic class single rightmost"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1669
+   },
+   "last": 1694,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1698
+   },
+   "last": 1717,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.7",
+   "number_from": "render",
+   "labels": [
+    "generated by orbiting pairs"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1727
+   },
+   "last": 1729,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.8",
+   "number_from": "render",
+   "labels": [
+    "intermediate generated by orbiting square classes"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1746
+   },
+   "last": 1749,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1751
+   },
+   "last": 1768,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.9",
+   "number_from": "render",
+   "labels": [
+    "3 by 3 rectangle generated by orbiting pairs"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1772
+   },
+   "last": 1774,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1776
+   },
+   "last": 1778,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.10",
+   "number_from": "render",
+   "labels": [
+    "generated by orbiting square classes"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1782
+   },
+   "last": 1784,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1786
+   },
+   "last": 1797,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.11",
+   "number_from": "render",
+   "labels": [
+    "d1 on exotic classes is 0"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1801
+   },
+   "last": 1803,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "trivial exotic class"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1805
+   },
+   "last": 1822,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1826
+   },
+   "last": 1829,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.12",
+   "number_from": "render",
+   "labels": [
+    "location of square classes does not matter"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1838
+   },
+   "last": 1840,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.13",
+   "number_from": "render",
+   "labels": [
+    "Orbiting Pair Classes"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1844
+   },
+   "last": 1859,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.14",
+   "number_from": "render",
+   "labels": [
+    "2 squares in P is homotopy equivalent to 2 squares in R22",
+    "PPentomino"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1863
+   },
+   "last": 1875,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1877
+   },
+   "last": 1880,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.15",
+   "number_from": "render",
+   "labels": [
+    "orbiting square class is homologous to orbiting t class"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1885
+   },
+   "last": 1888,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1890
+   },
+   "last": 1896,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Adjacent Orbiting Pair Classes"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1900
+   },
+   "last": 1919,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1925
+   },
+   "last": 1932,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "higher differentials"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1949
+   },
+   "last": 1960,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.2",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1971
+   },
+   "last": 1989,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "ArcResHorDiff"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 1993
+   },
+   "last": 2005,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "right MV is Arc"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2009
+   },
+   "last": 2011,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2013
+   },
+   "last": 2019,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.5",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2037
+   },
+   "last": 2040,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.6",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2042
+   },
+   "last": 2045,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.7",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2050
+   },
+   "last": 2067,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.8",
+   "number_from": "render",
+   "labels": [
+    "Leibniz rule for arc resolution"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2071
+   },
+   "last": 2081,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2083
+   },
+   "last": 2085,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.9",
+   "number_from": "render",
+   "labels": [
+    "PureTwists",
+    "MixedTwists"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2087
+   },
+   "last": 2114,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.10",
+   "number_from": "render",
+   "labels": [
+    "derivation prop"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2124
+   },
+   "last": 2130,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2132
+   },
+   "last": 2145,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.11",
+   "number_from": "render",
+   "labels": [
+    "zigzag of An"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2149
+   },
+   "last": 2154,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "SuccessiveZs"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2156
+   },
+   "last": 2217,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2221
+   },
+   "last": 2270,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "number": "5.12",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2406
+   },
+   "last": 2408,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "number": "5.13",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2417
+   },
+   "last": 2419,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "number": "5.14",
+   "number_from": "render",
+   "labels": [
+    "n le 2w-5 spherical conjecture"
+   ],
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2428
+   },
+   "last": 2430,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "number": "5.15",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2439
+   },
+   "last": 2441,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "quest",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "number": "5.16",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2449
+   },
+   "last": 2451,
+   "result": "matched"
+  },
+  {
+   "id": "2610.12633v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "quest",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "number": "5.17",
+   "number_from": "render",
+   "pos": {
+    "file": "CleanedMain.tex",
+    "line": 2453
+   },
+   "last": 2455,
+   "result": "matched"
+  }
+ ]
+}

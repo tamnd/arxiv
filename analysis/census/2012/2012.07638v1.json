@@ -1,7 +1,7 @@
 {
  "paper": "2012.07638",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.29",
  "main": [
   "paper.tex"
  ],
@@ -19,7 +19,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 17 commands, 0 environments",
-  "tree: 9 nodes"
+  "aliases: 20 uses of commands that stand for \\begin or \\end",
+  "tree: 19 nodes"
  ],
  "declarations": [
   {
@@ -86,12 +87,14 @@
   }
  ],
  "occurrences": {
-  "label": 6,
+  "env": 1,
+  "label": 7,
   "proof": 1,
   "textref": 4
  },
  "matched": {
-  "label": 6,
+  "env": 1,
+  "label": 7,
   "proof": 1
  },
  "gaps": [],
@@ -99,7 +102,7 @@
  "numbers": {
   "from_aux": 0,
   "from_render": 0,
-  "from_counter": 0,
+  "from_counter": 1,
   "from_head": 0,
   "agree": 0,
   "disagree": 0,
@@ -116,26 +119,46 @@
   {
    "rule": "D09",
    "occurrence": "2012.07638v1#textref-1",
-   "message": "the text names Theorem A and the census has no such item (no-numbers)"
+   "message": "the text names Theorem A and the census has no such item (no-item)"
   },
   {
    "rule": "D09",
    "occurrence": "2012.07638v1#textref-2",
-   "message": "the text names Theorem B and the census has no such item (no-numbers)"
+   "message": "the text names Theorem B and the census has no such item (no-item)"
   },
   {
    "rule": "D09",
    "occurrence": "2012.07638v1#textref-3",
-   "message": "the text names Theorem A and the census has no such item (no-numbers)"
+   "message": "the text names Theorem A and the census has no such item (no-item)"
   },
   {
    "rule": "D09",
    "occurrence": "2012.07638v1#textref-4",
-   "message": "the text names Theorem B and the census has no such item (no-numbers)"
+   "message": "the text names Theorem B and the census has no such item (no-item)"
   }
  ],
  "strength": "normal",
  "items": [
+  {
+   "id": "2012.07638v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "th 1"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 180
+   },
+   "last": 192,
+   "result": "matched"
+  },
   {
    "id": "2012.07638v1#proof-1",
    "type": "proof",

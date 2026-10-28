@@ -1,0 +1,3233 @@
+{
+ "paper": "2610.13222",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "lebesgue_constant_v6_ems.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "ems-journal",
+  "mathrsfs",
+  "longtable"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: lebesgue_constant_v6_ems.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 274 commands, 7 environments",
+  "tree: 403 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "s m o m o",
+   "title": "\\IfBooleanTF{#1}\r\n          { \\__mystyle_orig_newtheorem*{#2}{#4} }\r\n          {\r\n            \\IfValueTF{#3}\r\n              {\r\n                \\__mystyle_orig_newtheorem{#2}[#3]{#4}\r\n                \\AddToHook{env/#2/begin}\r\n                  { \\cs_if_exist:NT \\crefalias { \\crefalias{#3}{#2} } }\r\n              }\r\n              {\r\n                \\IfValueTF{#5}\r\n                  { \\__mystyle_orig_newtheorem{#2}{#4}[#5] }\r\n                  { \\__mystyle_orig_newtheorem{#2}{#4} }\r\n              }\r\n          }",
+   "item": "unknown",
+   "counter": "s m o m o",
+   "numbered": true,
+   "from": "local:ems-journal.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "funding",
+   "title": "",
+   "item": "unknown",
+   "numbered": false,
+   "from": "wrapper",
+   "form": "titled",
+   "title_arg": true
+  },
+  {
+   "env": "ack",
+   "title": "",
+   "item": "unknown",
+   "numbered": false,
+   "from": "wrapper",
+   "form": "titled",
+   "title_arg": true
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
+  }
+ ],
+ "occurrences": {
+  "env": 90,
+  "label": 162,
+  "proof": 75,
+  "textref": 576
+ },
+ "matched": {
+  "env": 90,
+  "label": 162,
+  "proof": 75
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 90,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 90,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 576,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 90,
+  "proofs": 75,
+  "agree": true,
+  "source_theorems": 90,
+  "source_proofs": 75
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.13222v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "eq:basis_func"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 109
+   },
+   "last": 114,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "def:collocation",
+    "eq:square_system"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 125
+   },
+   "last": 132,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "def:spaces"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 146
+   },
+   "last": 149,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "ass:unisolvence"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 151
+   },
+   "last": 154,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "def:lebesgue"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 166
+   },
+   "last": 173,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "def:two_constants",
+    "eq:two_constants"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 181
+   },
+   "last": 189,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "lem:chebyshev_variable",
+    "eq:chebyshev_norms",
+    "eq:node_measure"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 208
+   },
+   "last": 220,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 221
+   },
+   "last": 223,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.8",
+   "number_from": "render",
+   "labels": [
+    "thm:representation",
+    "eq:representation"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 260
+   },
+   "last": 266,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.9",
+   "number_from": "render",
+   "labels": [
+    "cor:error",
+    "eq:error_bound"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 268
+   },
+   "last": 276,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.10",
+   "number_from": "render",
+   "labels": [
+    "prop:impossibility"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 278
+   },
+   "last": 281,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.11",
+   "number_from": "render",
+   "labels": [
+    "prop:unisolvence_poisson"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 285
+   },
+   "last": 288,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.12",
+   "number_from": "render",
+   "labels": [
+    "thm:rates",
+    "eq:rates"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 297
+   },
+   "last": 306,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.13",
+   "number_from": "render",
+   "labels": [
+    "cor:exponent",
+    "eq:exponent"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 308
+   },
+   "last": 314,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.14",
+   "number_from": "render",
+   "labels": [
+    "prop:duality"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 316
+   },
+   "last": 319,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.15",
+   "number_from": "render",
+   "labels": [
+    "thm:poisson_illcond"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 321
+   },
+   "last": 324,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.16",
+   "number_from": "render",
+   "labels": [
+    "thm:two_constant",
+    "eq:two_constant_bound"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 333
+   },
+   "last": 339,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.17",
+   "number_from": "render",
+   "labels": [
+    "cor:regimes_two_constant",
+    "eq:lu_bound"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 343
+   },
+   "last": 356,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.18",
+   "number_from": "render",
+   "labels": [
+    "prop:apriori",
+    "eq:apriori_lu"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 360
+   },
+   "last": 366,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.19",
+   "number_from": "render",
+   "labels": [
+    "prop:classical",
+    "eq:classical",
+    "eq:classical_lu",
+    "eq:endpoint_law"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 368
+   },
+   "last": 390,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.20",
+   "number_from": "render",
+   "labels": [
+    "thm:competitor"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 399
+   },
+   "last": 407,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.21",
+   "number_from": "render",
+   "labels": [
+    "cor:unconditional",
+    "eq:unconditional",
+    "eq:unconditional_floor"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 409
+   },
+   "last": 427,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.22",
+   "number_from": "render",
+   "labels": [
+    "def:equilibrium"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 453
+   },
+   "last": 456,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.23",
+   "number_from": "render",
+   "labels": [
+    "prop:equilibrium"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 460
+   },
+   "last": 469,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.24",
+   "number_from": "render",
+   "labels": [
+    "thm:tail_law",
+    "eq:tail_limit"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 477
+   },
+   "last": 483,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.25",
+   "number_from": "render",
+   "labels": [
+    "prop:tail_properties",
+    "eq:tail_law_bounds"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 487
+   },
+   "last": 494,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.26",
+   "number_from": "render",
+   "labels": [
+    "cor:lebesgue_rate"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 498
+   },
+   "last": 504,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.27",
+   "number_from": "render",
+   "labels": [
+    "thm:tail_duality",
+    "eq:tail_duality"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 508
+   },
+   "last": 514,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.28",
+   "number_from": "render",
+   "labels": [
+    "cor:self_dual"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 518
+   },
+   "last": 521,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.29",
+   "number_from": "render",
+   "labels": [
+    "prop:critical"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 525
+   },
+   "last": 528,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.30",
+   "number_from": "render",
+   "labels": [
+    "thm:initial_slope",
+    "eq:initial_slope"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 530
+   },
+   "last": 536,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.31",
+   "number_from": "render",
+   "labels": [
+    "cor:critical"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 544
+   },
+   "last": 551,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.32",
+   "number_from": "render",
+   "labels": [
+    "cor:layer"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 555
+   },
+   "last": 558,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.33",
+   "number_from": "render",
+   "labels": [
+    "def:configuration",
+    "eq:envelope"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 565
+   },
+   "last": 581,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.34",
+   "number_from": "render",
+   "labels": [
+    "thm:tail_lower",
+    "eq:tail_quotient"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 583
+   },
+   "last": 590,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.35",
+   "number_from": "render",
+   "labels": [
+    "def:interp_configuration",
+    "eq:interp_envelope"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 596
+   },
+   "last": 613,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.36",
+   "number_from": "render",
+   "labels": [
+    "thm:dual",
+    "eq:dual_bound",
+    "eq:dual_rate"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 615
+   },
+   "last": 625,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.37",
+   "number_from": "render",
+   "labels": [
+    "cor:sharpness",
+    "eq:sharpness"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 629
+   },
+   "last": 636,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "lem:dimensions"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 680
+   },
+   "last": 683,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 684
+   },
+   "last": 686,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "lem:unisolvence",
+    "eq:unisolvence_criterion"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 688
+   },
+   "last": 694,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 695
+   },
+   "last": 701,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 709
+   },
+   "last": 711,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 717
+   },
+   "last": 719,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "lem:phase",
+    "eq:phase"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 728
+   },
+   "last": 734,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 735
+   },
+   "last": 737,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "rem:peclet"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 739
+   },
+   "last": 742,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "rem:variable_k"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 744
+   },
+   "last": 747,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 752
+   },
+   "last": 754,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "rem:divergence",
+    "eq:perturbed_data"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 758
+   },
+   "last": 765,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "cor:greens",
+    "eq:GN_entries"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 769
+   },
+   "last": 779,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 780
+   },
+   "last": 782,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.8",
+   "number_from": "render",
+   "labels": [
+    "rem:mass"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 784
+   },
+   "last": 787,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "lem:clausen",
+    "eq:U_closed",
+    "eq:U_values"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 796
+   },
+   "last": 809,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 810
+   },
+   "last": 840,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "lem:lebesgue_condition_link"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 842
+   },
+   "last": 845,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 846
+   },
+   "last": 848,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "prop:lagrange_norms",
+    "eq:lagrange_norms"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 852
+   },
+   "last": 862,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 864
+   },
+   "last": 871,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 873
+   },
+   "last": 875,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 879
+   },
+   "last": 881,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 883
+   },
+   "last": 903,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "lem:sigma_min"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 911
+   },
+   "last": 914,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 915
+   },
+   "last": 917,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 919
+   },
+   "last": 922,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "prop:backward",
+    "eq:backward"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 937
+   },
+   "last": 943,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 944
+   },
+   "last": 946,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 959
+   },
+   "last": 961,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 963
+   },
+   "last": 965,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 969
+   },
+   "last": 971,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "lem:cheb_ellipse",
+    "eq:cheb_ellipse"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 982
+   },
+   "last": 988,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 989
+   },
+   "last": 991,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:bk_bound"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 993
+   },
+   "last": 1018,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1020
+   },
+   "last": 1022,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "render",
+   "labels": [
+    "lem:cheb",
+    "eq:cheb"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1042
+   },
+   "last": 1049,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1050
+   },
+   "last": 1056,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "render",
+   "labels": [
+    "lem:minimum"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1058
+   },
+   "last": 1061,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1062
+   },
+   "last": 1066,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:bathtub",
+    "eq:pointwise",
+    "eq:two_sided"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1068
+   },
+   "last": 1092,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.3",
+   "number_from": "render",
+   "labels": [
+    "lem:construction"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1107
+   },
+   "last": 1120,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1121
+   },
+   "last": 1133,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.4",
+   "number_from": "render",
+   "labels": [
+    "lem:correction",
+    "eq:alpha_bound"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1139
+   },
+   "last": 1151,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:lagrange_mirror"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1152
+   },
+   "last": 1174,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1176
+   },
+   "last": 1178,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1180
+   },
+   "last": 1187,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1193
+   },
+   "last": 1210,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.5",
+   "number_from": "render",
+   "labels": [
+    "lem:two_forms"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1212
+   },
+   "last": 1223,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1224
+   },
+   "last": 1230,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6.6",
+   "number_from": "render",
+   "labels": [
+    "cor:either_or",
+    "eq:either_or"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1234
+   },
+   "last": 1240,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1241
+   },
+   "last": 1247,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6.7",
+   "number_from": "render",
+   "labels": [
+    "cor:no_power_law"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1249
+   },
+   "last": 1252,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1253
+   },
+   "last": 1255,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:dual_core"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1264
+   },
+   "last": 1278,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6.8",
+   "number_from": "render",
+   "labels": [
+    "cor:certified",
+    "eq:certified_interval"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1280
+   },
+   "last": 1287,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1288
+   },
+   "last": 1290,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.9",
+   "number_from": "render",
+   "labels": [
+    "prop:extremal",
+    "eq:reduced_problem",
+    "eq:reduced_constraints"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1299
+   },
+   "last": 1310,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1314
+   },
+   "last": 1316,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1318
+   },
+   "last": 1324,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.10",
+   "number_from": "render",
+   "labels": [
+    "lem:monotone",
+    "eq:monotone"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1326
+   },
+   "last": 1332,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1333
+   },
+   "last": 1335,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.11",
+   "number_from": "render",
+   "labels": [
+    "lem:discretize"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1337
+   },
+   "last": 1340,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1341
+   },
+   "last": 1347,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1349
+   },
+   "last": 1357,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-42",
+   "type": "proof",
+   "k": 42,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1359
+   },
+   "last": 1365,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-43",
+   "type": "proof",
+   "k": 43,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1367
+   },
+   "last": 1377,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-44",
+   "type": "proof",
+   "k": 44,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1385
+   },
+   "last": 1387,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-45",
+   "type": "proof",
+   "k": 45,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1389
+   },
+   "last": 1391,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-46",
+   "type": "proof",
+   "k": 46,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:profile",
+    "eq:f0_inner"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1400
+   },
+   "last": 1455,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-47",
+   "type": "proof",
+   "k": 47,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1457
+   },
+   "last": 1459,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-48",
+   "type": "proof",
+   "k": 48,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1461
+   },
+   "last": 1463,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "def:mz",
+    "eq:mz"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1472
+   },
+   "last": 1478,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "render",
+   "labels": [
+    "thm:regularized",
+    "eq:regularized_bound"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1482
+   },
+   "last": 1492,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "7.3",
+   "number_from": "render",
+   "labels": [
+    "cor:regimes",
+    "eq:interp_l2"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1494
+   },
+   "last": 1508,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-49",
+   "type": "proof",
+   "k": 49,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1514
+   },
+   "last": 1521,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-50",
+   "type": "proof",
+   "k": 50,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1523
+   },
+   "last": 1525,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "8.1",
+   "number_from": "render",
+   "labels": [
+    "thm:d_dim_instability"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1533
+   },
+   "last": 1535,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-51",
+   "type": "proof",
+   "k": 51,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1536
+   },
+   "last": 1542,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "8.2",
+   "number_from": "render",
+   "labels": [
+    "thm:representation_d",
+    "eq:error_bound_d"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1547
+   },
+   "last": 1557,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-52",
+   "type": "proof",
+   "k": 52,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1558
+   },
+   "last": 1560,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "8.3",
+   "number_from": "render",
+   "labels": [
+    "rem:relocation"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1564
+   },
+   "last": 1567,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "9.1",
+   "number_from": "render",
+   "labels": [
+    "rem:pitfall"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1576
+   },
+   "last": 1579,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "9.2",
+   "number_from": "render",
+   "labels": [
+    "cor:certified_instances"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1713
+   },
+   "last": 1720,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-53",
+   "type": "proof",
+   "k": 53,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1721
+   },
+   "last": 1723,
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "lem:dirichlet_1d",
+    "eq:green_general"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1782
+   },
+   "last": 1797,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-54",
+   "type": "proof",
+   "k": 54,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1798
+   },
+   "last": 1808,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "A.2",
+   "number_from": "render",
+   "labels": [
+    "prop:continuous_greens",
+    "eq:GP",
+    "eq:GCD"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1810
+   },
+   "last": 1819,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-55",
+   "type": "proof",
+   "k": 55,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1820
+   },
+   "last": 1822,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.3",
+   "number_from": "render",
+   "labels": [
+    "lem:dirichlet_box"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1824
+   },
+   "last": 1832,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-56",
+   "type": "proof",
+   "k": 56,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1833
+   },
+   "last": 1839,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.4",
+   "number_from": "render",
+   "labels": [
+    "lem:cl2"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1841
+   },
+   "last": 1850,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-57",
+   "type": "proof",
+   "k": 57,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1851
+   },
+   "last": 1868,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.5",
+   "number_from": "render",
+   "labels": [
+    "lem:tsvd",
+    "eq:tsvd_ineq"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1870
+   },
+   "last": 1877,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-58",
+   "type": "proof",
+   "k": 58,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1878
+   },
+   "last": 1880,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.1",
+   "number_from": "render",
+   "labels": [
+    "lem:riemann"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1889
+   },
+   "last": 1897,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-59",
+   "type": "proof",
+   "k": 59,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:riemann_split"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1898
+   },
+   "last": 1924,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.2",
+   "number_from": "render",
+   "labels": [
+    "lem:discrete_potential"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1926
+   },
+   "last": 1933,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-60",
+   "type": "proof",
+   "k": 60,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1934
+   },
+   "last": 1947,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-78",
+   "type": "env",
+   "k": 78,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.3",
+   "number_from": "render",
+   "labels": [
+    "lem:lagrange_polynomials"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1949
+   },
+   "last": 1956,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-61",
+   "type": "proof",
+   "k": 61,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:log_lagrange",
+    "eq:node_distance"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1957
+   },
+   "last": 1974,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-79",
+   "type": "env",
+   "k": 79,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.4",
+   "number_from": "render",
+   "labels": [
+    "lem:U_modulus",
+    "eq:U_modulus"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1976
+   },
+   "last": 1982,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-62",
+   "type": "proof",
+   "k": 62,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1983
+   },
+   "last": 1985,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-63",
+   "type": "proof",
+   "k": 63,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 1987
+   },
+   "last": 1996,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-80",
+   "type": "env",
+   "k": 80,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.1",
+   "number_from": "render",
+   "labels": [
+    "lem:nodal_sines",
+    "eq:nodal_sines"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2008
+   },
+   "last": 2014,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-64",
+   "type": "proof",
+   "k": 64,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2015
+   },
+   "last": 2029,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-81",
+   "type": "env",
+   "k": 81,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.2",
+   "number_from": "render",
+   "labels": [
+    "lem:column_norms",
+    "eq:column_norms"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2031
+   },
+   "last": 2037,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-65",
+   "type": "proof",
+   "k": 65,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2038
+   },
+   "last": 2050,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-66",
+   "type": "proof",
+   "k": 66,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2052
+   },
+   "last": 2058,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-82",
+   "type": "env",
+   "k": 82,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.1",
+   "number_from": "render",
+   "labels": [
+    "lem:riemann_arc"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2067
+   },
+   "last": 2074,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-67",
+   "type": "proof",
+   "k": 67,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2075
+   },
+   "last": 2077,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-83",
+   "type": "env",
+   "k": 83,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.2",
+   "number_from": "render",
+   "labels": [
+    "lem:E_modulus",
+    "eq:arc_derivative",
+    "eq:E_modulus"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2079
+   },
+   "last": 2090,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-68",
+   "type": "proof",
+   "k": 68,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2091
+   },
+   "last": 2093,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-84",
+   "type": "env",
+   "k": 84,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.3",
+   "number_from": "render",
+   "labels": [
+    "lem:env"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2095
+   },
+   "last": 2104,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-69",
+   "type": "proof",
+   "k": 69,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2105
+   },
+   "last": 2115,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-85",
+   "type": "env",
+   "k": 85,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.4",
+   "number_from": "render",
+   "labels": [
+    "lem:coefficient_norm"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2117
+   },
+   "last": 2124,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-70",
+   "type": "proof",
+   "k": 70,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2125
+   },
+   "last": 2127,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-86",
+   "type": "env",
+   "k": 86,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.5",
+   "number_from": "render",
+   "labels": [
+    "lem:test_norm"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2131
+   },
+   "last": 2137,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-71",
+   "type": "proof",
+   "k": 71,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2138
+   },
+   "last": 2148,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-87",
+   "type": "env",
+   "k": 87,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.6",
+   "number_from": "render",
+   "labels": [
+    "lem:bump"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2150
+   },
+   "last": 2153,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-72",
+   "type": "proof",
+   "k": 72,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2154
+   },
+   "last": 2156,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-88",
+   "type": "env",
+   "k": 88,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.7",
+   "number_from": "render",
+   "labels": [
+    "lem:lattice_lagrange",
+    "eq:lattice_lagrange"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2160
+   },
+   "last": 2172,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-73",
+   "type": "proof",
+   "k": 73,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:lattice_sum",
+    "eq:lattice_upper",
+    "eq:point_distance",
+    "eq:lattice_lower"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2173
+   },
+   "last": 2195,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-89",
+   "type": "env",
+   "k": 89,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "E.1",
+   "number_from": "render",
+   "labels": [
+    "lem:inner"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2360
+   },
+   "last": 2368,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-74",
+   "type": "proof",
+   "k": 74,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:W_boundary"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2369
+   },
+   "last": 2401,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#env-90",
+   "type": "env",
+   "k": 90,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "E.2",
+   "number_from": "render",
+   "labels": [
+    "lem:shape"
+   ],
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2403
+   },
+   "last": 2414,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.13222v1#proof-75",
+   "type": "proof",
+   "k": 75,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "lebesgue_constant_v6_ems.tex",
+    "line": 2415
+   },
+   "last": 2426,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
