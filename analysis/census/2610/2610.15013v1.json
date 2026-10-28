@@ -1,0 +1,620 @@
+{
+ "paper": "2610.15013",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "stab-revised1.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "epsfig",
+  "amscd",
+  "a4wide",
+  "amssymb",
+  "amsthm",
+  "comment",
+  "amsmath",
+  "bm",
+  "latexsym",
+  "geometry",
+  "upref",
+  "enumerate",
+  "xcolor",
+  "mathtools",
+  "hyperref",
+  "amsaddr",
+  "ulem",
+  "cancel"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: stab-revised1.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 61 commands, 0 environments",
+  "tree: 269 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 15,
+  "label": 56,
+  "proof": 8,
+  "textref": 25
+ },
+ "matched": {
+  "env": 15,
+  "label": 56,
+  "proof": 8
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 15,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 15,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 25,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 15,
+  "proofs": 8,
+  "agree": true,
+  "source_theorems": 15,
+  "source_proofs": 8
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.15013v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "main theorem",
+    "Def: extra condition",
+    "main result 1",
+    "main result 2"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 209
+   },
+   "last": 228,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 229
+   },
+   "last": 231,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "Theorem:well_posedness",
+    "regularity"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 257
+   },
+   "last": 262,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "gov_eqn_for_u1",
+    "gov_eqn_for_u2",
+    "Existence: u_1",
+    "energy_estimate_u1",
+    "bilinear_map",
+    "Bilinear_is_bdd",
+    "bilinear_coercivity",
+    "H1_estimate_for_u2",
+    "integral_identity_1",
+    "integral_identity_A1",
+    "integral_identity_A2",
+    "L2_norm_normal_derivative",
+    "Existence: u_2"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 263
+   },
+   "last": 399,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "Theorem: Boundary Carleman estimate",
+    "boundary carleman estimate"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 407
+   },
+   "last": 420,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Def:Norm conjugated operator",
+    "Bound: J_1",
+    "Bound: I3"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 422
+   },
+   "last": 506,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "boundary carleman estimate--1"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 508
+   },
+   "last": 514,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "proposition for GO sol 1",
+    "GO solution for without adjoint operator"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 548
+   },
+   "last": 571,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "Lemma for GO sol"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 573
+   },
+   "last": 578,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Def: operator S",
+    "exist1",
+    "exist2",
+    "equation for GO solution",
+    "exist3",
+    "remainder"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 579
+   },
+   "last": 645,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "proposition for GO sol 2",
+    "GO solution for adjoint operator"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 651
+   },
+   "last": 673,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "propintid",
+    "Def: adjoint probelm",
+    "integral identity for stability"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 709
+   },
+   "last": 724,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "IBVP for u (defined as differences of solution)",
+    "integral identity 1"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 726
+   },
+   "last": 740,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "first estimate for matrix potential",
+    "first stability estimate"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 877
+   },
+   "last": 886,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "choice for constant K",
+    "first stability estimate-01"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 887
+   },
+   "last": 906,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "existence of delta lambda0",
+    "second stability estimate:01"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 943
+   },
+   "last": 949,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "integral in CJ and exponential"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 950
+   },
+   "last": 981,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "existence of a cone",
+    "Fourier estimates along ray"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 997
+   },
+   "last": 1003,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 1004
+   },
+   "last": 1028,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "render",
+   "labels": [
+    "set of equation and bound for G",
+    "unit vector"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 1039
+   },
+   "last": 1070,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "existence of independent vectors"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 1079
+   },
+   "last": 1081,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.7",
+   "number_from": "render",
+   "labels": [
+    "matrix potential estimate in cone"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 1094
+   },
+   "last": 1097,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15013v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "system1",
+    "oncone"
+   ],
+   "pos": {
+    "file": "stab-revised1.tex",
+    "line": 1098
+   },
+   "last": 1143,
+   "result": "matched"
+  }
+ ]
+}

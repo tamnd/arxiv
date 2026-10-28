@@ -1,0 +1,1569 @@
+{
+ "paper": "2610.18094",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "degree_growth_arxiv_v1.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "fontenc",
+  "babel",
+  "geometry",
+  "mathtools",
+  "amssymb",
+  "mathrsfs",
+  "amscd",
+  "comment",
+  "times",
+  "microtype",
+  "enumitem",
+  "tikz-cd",
+  "xcolor",
+  "thmtools",
+  "hyperref",
+  "cleveref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: degree_growth_arxiv_v1.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 244 commands, 1 environments",
+  "tree: 179 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj*",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thmx",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thmx",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation*",
+   "title": "Notation",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "convention*",
+   "title": "Convention",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "settinginner",
+   "title": "Setting",
+   "item": "context/hypothesis",
+   "counter": "settinginner",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "fact",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "step",
+   "title": "Step",
+   "item": "other/case",
+   "counter": "step",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "case",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  },
+  {
+   "env": "setting",
+   "title": "Setting",
+   "item": "context/hypothesis",
+   "counter": "settinginner",
+   "shared": "settinginner",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 39,
+  "label": 90,
+  "proof": 24,
+  "textref": 7
+ },
+ "matched": {
+  "env": 39,
+  "label": 90,
+  "proof": 24
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 39,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 37,
+  "disagree": 2,
+  "contiguity_gaps": 2
+ },
+ "textrefs": {
+  "resolved": 7,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 39,
+  "proofs": 24,
+  "agree": true,
+  "source_theorems": 39,
+  "source_proofs": 24
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2610.18094v1#env-1",
+   "message": "Setting P is the first in its scope of counter settinginner"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.18094v1#env-2",
+   "message": "Setting K comes after P in counter settinginner"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.18094v1#env-1",
+   "message": "the counter model gives Setting (#1) and the second witness gives P"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.18094v1#env-2",
+   "message": "the counter model gives Setting (#1) and the second witness gives K"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.18094v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "setting",
+   "title": "Setting",
+   "item": "context/hypothesis",
+   "counter": "settinginner",
+   "number": "P",
+   "number_from": "render",
+   "labels": [
+    "setting:projective"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 443
+   },
+   "last": 445,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "setting",
+   "title": "Setting",
+   "item": "context/hypothesis",
+   "counter": "settinginner",
+   "number": "K",
+   "number_from": "render",
+   "labels": [
+    "setting:kahler"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 447
+   },
+   "last": 449,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "thm:affine-interval-growth",
+    "eq:affine-interval-growth",
+    "eq:global-polynomial-growth",
+    "eq:global-log-growth"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 501
+   },
+   "last": 515,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "cor:no-intermediate-growth",
+    "eq:zero-entropy-polynomial-bound"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 530
+   },
+   "last": 538,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "eq:Silverman-ell-f"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 540
+   },
+   "last": 553,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.4",
+   "number_from": "render",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 555
+   },
+   "last": 566,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.5",
+   "number_from": "render",
+   "labels": [
+    "thm:strict-break-asymptotics",
+    "eq:main-asymptotic",
+    "eq:constant-C-exp-sum"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 590
+   },
+   "last": 601,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.6",
+   "number_from": "render",
+   "labels": [
+    "rmk:strict-break-sharpness"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 607
+   },
+   "last": 615,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.7",
+   "number_from": "render",
+   "labels": [
+    "rmk:strict-break-consequences"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 617
+   },
+   "last": 626,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.8",
+   "number_from": "render",
+   "labels": [
+    "thm:degree-log-laplacian",
+    "eq:degree-log-laplacian"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 630
+   },
+   "last": 637,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.9",
+   "number_from": "render",
+   "labels": [
+    "rmk:proof-outline"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 643
+   },
+   "last": 658,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "def:ordered-HL",
+    "def:ordered-HL-i",
+    "def:ordered-HL-ii"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 692
+   },
+   "last": 707,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "prop:geometric-HL"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 716
+   },
+   "last": 741,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 743
+   },
+   "last": 768,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "lemma:Ptolemy",
+    "eq:four-point-Ptolemy"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 775
+   },
+   "last": 781,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 783
+   },
+   "last": 818,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "prop:Ptolemy-estimate-unit-square",
+    "eq:comparison-A0A1-B0B1",
+    "eq:uniform-Ptolemy-unit-square"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 837
+   },
+   "last": 849,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:comparison-AsA0A1-BtB0B1",
+    "eq:log-hessian",
+    "eq:log-hessian-2",
+    "eq:Ptolemy-A01B01",
+    "eq:AsBt-comparison"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 851
+   },
+   "last": 927,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 929
+   },
+   "last": 932,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "thm:abstract-log-laplacian",
+    "thm:abstract-log-laplacian-comparison",
+    "thm:abstract-log-laplacian-two-time-shift",
+    "eq:abstract-log-laplacian"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 942
+   },
+   "last": 970,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:abstract-moving-degree-comparison",
+    "eq:abstract-uniform-unit-square"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 972
+   },
+   "last": 1023,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "lemma:projective-pullback-positivity"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1054
+   },
+   "last": 1058,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "lemma:projective-two-time-shift",
+    "eq:projective-two-time-shift"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1116
+   },
+   "last": 1121,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:projective-two-time-shift-diagram"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1123
+   },
+   "last": 1169,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "lemma:projective-adjacent-comparison",
+    "eq:projective-adjacent-comparison"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1173
+   },
+   "last": 1178,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:projective-adjacent-comparison-Y1"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1180
+   },
+   "last": 1203,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "prop:projective-log-laplacian",
+    "eq:projective-log-laplacian"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1207
+   },
+   "last": 1215,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1217
+   },
+   "last": 1248,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "lemma:kahler-pullback-positivity"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1272
+   },
+   "last": 1280,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1282
+   },
+   "last": 1315,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "lemma:kahler-two-time-shift",
+    "eq:kahler-two-time-shift"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1390
+   },
+   "last": 1395,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:kahler-pi-varphi"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1397
+   },
+   "last": 1443,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "lemma:kahler-adjacent-comparison",
+    "eq:kahler-adjacent-comparison"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1445
+   },
+   "last": 1450,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:kahler-fixed-graph-comparison",
+    "eq:kahler-comparison-on-WmN"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1452
+   },
+   "last": 1493,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.8",
+   "number_from": "render",
+   "labels": [
+    "prop:kahler-log-laplacian",
+    "eq:kahler-log-laplacian"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1495
+   },
+   "last": 1503,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1505
+   },
+   "last": 1535,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1537
+   },
+   "last": 1539,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "lemma:discrete-integration",
+    "eq:abstract-kappa-bound"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1551
+   },
+   "last": 1571,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1573
+   },
+   "last": 1614,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1616
+   },
+   "last": 1644,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "rmk:C-f-omega-i-limits"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1646
+   },
+   "last": 1652,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "lemma:two-variable-maximum-principle",
+    "lemma:two-variable-maximum-principle-infinitesimal",
+    "eq:affine-interval-root-limit",
+    "lemma:two-variable-maximum-principle-temporal-estimate",
+    "eq:affine-interval-temporal-estimate",
+    "lemma:two-variable-maximum-principle-bounded",
+    "eq:affine-interval-bounded",
+    "eq:affine-interval-conclusion"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1665
+   },
+   "last": 1692,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:C2",
+    "eq:C3"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1694
+   },
+   "last": 1746,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1748
+   },
+   "last": 1787,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1789
+   },
+   "last": 1793,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "cor:volume-growth",
+    "eq:volume-growth"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1818
+   },
+   "last": 1830,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:volume-gap",
+    "eq:Xiao-rKT",
+    "eq:volume-convolution"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1832
+   },
+   "last": 1886,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "render",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1888
+   },
+   "last": 1902,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "cor:quotient"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1907
+   },
+   "last": 1916,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1918
+   },
+   "last": 1924,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "cor:generating-series",
+    "eq:generating-series"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1926
+   },
+   "last": 1941,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1943
+   },
+   "last": 1959,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "render",
+   "labels": [
+    "rmk:BDJ-Nguyen",
+    "eq:general-product-degree"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 1961
+   },
+   "last": 2010,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "prop:abelian-endpoint-failure",
+    "eq:abelian-endpoint-asymptotic"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 2017
+   },
+   "last": 2038,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 2040
+   },
+   "last": 2177,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "5.7",
+   "number_from": "render",
+   "labels": [
+    "claim:degrees-matrix-norm",
+    "eq:abelian-matrix-degree"
+   ],
+   "parent": "2610.18094v1#proof-21",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 2066
+   },
+   "last": 2076,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.18094v1#proof-21",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 2078
+   },
+   "last": 2099,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.8",
+   "number_from": "render",
+   "labels": [
+    "lemma:endpoint-criterion",
+    "eq:adjacent-growth-condition"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 2182
+   },
+   "last": 2191,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 2193
+   },
+   "last": 2211,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.9",
+   "number_from": "render",
+   "labels": [
+    "cor:surface-endpoint",
+    "cor:surface-endpoint-strict-break",
+    "cor:surface-endpoint-resonant"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 2213
+   },
+   "last": 2227,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 2229
+   },
+   "last": 2248,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "number": "5.10",
+   "number_from": "render",
+   "labels": [
+    "question:polynomial-dyn-deg"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 2280
+   },
+   "last": 2300,
+   "result": "matched"
+  },
+  {
+   "id": "2610.18094v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.11",
+   "number_from": "render",
+   "labels": [
+    "rmk:polynomial-dyn-deg-known"
+   ],
+   "pos": {
+    "file": "degree_growth_arxiv_v1.tex",
+    "line": 2302
+   },
+   "last": 2325,
+   "result": "matched"
+  }
+ ]
+}

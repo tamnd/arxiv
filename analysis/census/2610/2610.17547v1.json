@@ -1,0 +1,1851 @@
+{
+ "paper": "2610.17547",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "SRPnonstatDSR.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amssymb",
+  "amsmath",
+  "amsfonts",
+  "amsthm",
+  "mathtools",
+  "latexsym",
+  "ifthen",
+  "bezier",
+  "graphicx",
+  "amsxtra",
+  "xspace",
+  "url",
+  "babel",
+  "etoolbox",
+  "enumitem"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: SRPnonstatDSR.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 475 commands, 4 environments",
+  "tree: 122 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "statement",
+   "title": "Statement",
+   "item": "statement/claim",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "genericthm",
+   "title": "\\thistheoremname",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainthm",
+   "title": "Main Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  },
+  {
+   "env": "namedthm",
+   "title": "\\thistheoremname",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 58,
+  "head": 4,
+  "label": 76,
+  "proof": 26,
+  "textref": 69
+ },
+ "matched": {
+  "env": 58,
+  "head": 4,
+  "label": 76,
+  "proof": 26
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 58,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 58,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 69,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 58,
+  "proofs": 26,
+  "agree": true,
+  "source_theorems": 58,
+  "source_proofs": 26
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.17547v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "defn:DiagonalReflection"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 636
+   },
+   "last": 650,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "fact:PointOfExactness"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 656
+   },
+   "last": 659,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "thm",
+   "number": "2.3",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 663
+   },
+   "last": 666,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "def:OSR"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 668
+   },
+   "last": 671,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "defn:ProjectionsAndLiftings"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 679
+   },
+   "last": 690,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "def:P_S"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 694
+   },
+   "last": 698,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "fact:P_SisCountablyDistributiveAndExhaustive",
+    "item:GenericSequenceHasLengthOmega1",
+    "item:UnionOfGenericIsExhaustive",
+    "item:CountablyDistributive"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 702
+   },
+   "last": 716,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.8",
+   "number_from": "render",
+   "labels": [
+    "def:FragmentsOfSRPandForcingAxioms"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 718
+   },
+   "last": 727,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "2.9",
+   "number_from": "render",
+   "labels": [
+    "fact:LarsonsSeparation"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 738
+   },
+   "last": 741,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.10",
+   "number_from": "render",
+   "labels": [
+    "def:Full"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 745
+   },
+   "last": 748,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.11",
+   "number_from": "render",
+   "labels": [
+    "def:(infinity-)subcompleteness",
+    "item:AgreementOnParameters",
+    "item:LiftingCondition"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 752
+   },
+   "last": 770,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.12",
+   "number_from": "render",
+   "labels": [
+    "def:ForcingClasses"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 775
+   },
+   "last": 778,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.13",
+   "number_from": "render",
+   "labels": [
+    "def:ProjectiveStationarity"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 784
+   },
+   "last": 790,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "2.14",
+   "number_from": "render",
+   "labels": [
+    "fact:Feng-Jech"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 792
+   },
+   "last": 795,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.15",
+   "number_from": "render",
+   "labels": [
+    "def:SpreadOut"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 799
+   },
+   "last": 804,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "2.16",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 808
+   },
+   "last": 810,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "2.17",
+   "number_from": "render",
+   "labels": [
+    "fact:CHneededForLocalCorrespondence"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 814
+   },
+   "last": 817,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "2.18",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 823
+   },
+   "last": 825,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.19",
+   "number_from": "render",
+   "labels": [
+    "lem:OneStep",
+    "item:MoveBasicParametersTheSameWay",
+    "item:SameBehaviorBelow",
+    "item:CorrectSupremum"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 829
+   },
+   "last": 853,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "def:MagicalSets"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 862
+   },
+   "last": 867,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "lem:MagicalSetsSpreadOutAboveKappa"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 871
+   },
+   "last": 874,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 876
+   },
+   "last": 893,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "lem:StronglyExactSimultaneousRP"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 897
+   },
+   "last": 905,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 907
+   },
+   "last": 913,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "thm:GettingeDSR"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 916
+   },
+   "last": 920,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 922
+   },
+   "last": 943,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "obs:Woodin"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 967
+   },
+   "last": 970,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 972
+   },
+   "last": 980,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "3.6",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 982
+   },
+   "last": 985,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 987
+   },
+   "last": 989,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "thm:SC-SRP+CHimpliesOSR"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 995
+   },
+   "last": 998,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1000
+   },
+   "last": 1002,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "3.8",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1006
+   },
+   "last": 1008,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "number": "3.9",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1013
+   },
+   "last": 1015,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.10",
+   "number_from": "render",
+   "labels": [
+    "def:GammaPrime"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1023
+   },
+   "last": 1027,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.11",
+   "number_from": "render",
+   "labels": [
+    "def:FAversionOfSRP"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1031
+   },
+   "last": 1034,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.12",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1038
+   },
+   "last": 1040,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.13",
+   "number_from": "render",
+   "labels": [
+    "lem:SRP++ImpliesExactDSR"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1042
+   },
+   "last": 1045,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Note",
+   "item": "remark",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1047
+   },
+   "last": 1047,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.17547v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "NC:BxiStationary"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1055
+   },
+   "last": 1080,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.17547v1#proof-7",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1066
+   },
+   "last": 1072,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.14",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1133
+   },
+   "last": 1138,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3.15",
+   "number_from": "render",
+   "labels": [
+    "thm:AddingDiamondGivesDiagonalReflection"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1144
+   },
+   "last": 1149,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Note",
+   "item": "remark",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1151
+   },
+   "last": 1151,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.17547v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1153
+   },
+   "last": 1177,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "thm:AbstractPreservation"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1193
+   },
+   "last": 1202,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1204
+   },
+   "last": 1221,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "def:KillingStationarySets"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1225
+   },
+   "last": 1229,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "lem:BasicsOnT_S",
+    "item:AddingAClub",
+    "item:TFAE",
+    "item:T_SpreservesTAlways",
+    "item:T_SpreservesTSometimes",
+    "item:TminusSstationary"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1233
+   },
+   "last": 1257,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "lem:WhenT_APreservesGenStationarity",
+    "item:SminusAisStationary",
+    "item:StationarityOfSisPreserved",
+    "item:SomebodyPreservesStationarityOfS"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1262
+   },
+   "last": 1276,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "lem:PreservationOfP_SbeingSSP"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1280
+   },
+   "last": 1284,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4.6",
+   "number_from": "render",
+   "labels": [
+    "thm:ALaLarson"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1288
+   },
+   "last": 1291,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1293
+   },
+   "last": 1303,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "4.7",
+   "number_from": "render",
+   "labels": [
+    "obs:MediatedProjectiveStationarity"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1313
+   },
+   "last": 1318,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1320
+   },
+   "last": 1322,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.8",
+   "number_from": "render",
+   "labels": [
+    "def:PotentialStationarity"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1326
+   },
+   "last": 1330,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.9",
+   "number_from": "render",
+   "labels": [
+    "lem:PreservationOfPotentialStationarity"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1334
+   },
+   "last": 1339,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "NC:OldT_ApreservesS"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1341
+   },
+   "last": 1356,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.10",
+   "number_from": "render",
+   "labels": [
+    "lem:PreservationOfMediatedProjectiveStationarity"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1376
+   },
+   "last": 1383,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1385
+   },
+   "last": 1404,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4.11",
+   "number_from": "render",
+   "labels": [
+    "thm:EnhancedSRPDoesntImplyuDSR"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1431
+   },
+   "last": 1435,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Note",
+   "item": "remark",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1437
+   },
+   "last": 1437,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.17547v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "NC:ThereAlwaysIsAnAlpha",
+    "NC:AFixedThetaAlwaysWorks",
+    "NC:SomeThetaPreservesProjectiveStationarity",
+    "NC:A*PS'IsSSP",
+    "NC:FAforA*PS'",
+    "NC:D'isDense"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1439
+   },
+   "last": 1556,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.17547v1#proof-15",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1451
+   },
+   "last": 1453,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.17547v1#proof-15",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1462
+   },
+   "last": 1466,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.17547v1#proof-15",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1477
+   },
+   "last": 1481,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.17547v1#proof-15",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1499
+   },
+   "last": 1510,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.17547v1#proof-15",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1531
+   },
+   "last": 1547,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.12",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1569
+   },
+   "last": 1577,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.13",
+   "number_from": "render",
+   "labels": [
+    "def:QM"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1579
+   },
+   "last": 1582,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4.14",
+   "number_from": "render",
+   "labels": [
+    "thm:Lietz"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1584
+   },
+   "last": 1587,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "4.15",
+   "number_from": "render",
+   "labels": [
+    "obs:QMpreservation"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1589
+   },
+   "last": 1592,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1594
+   },
+   "last": 1604,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "4.16",
+   "number_from": "render",
+   "labels": [
+    "obs:QMimpliesSRPFA"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1606
+   },
+   "last": 1609,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1611
+   },
+   "last": 1621,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "4.17",
+   "number_from": "render",
+   "labels": [
+    "cor:AssumptionConsistent"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1625
+   },
+   "last": 1628,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4.18",
+   "number_from": "render",
+   "labels": [
+    "thm:INSdenseuDSRfailsAtOmega2"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1632
+   },
+   "last": 1635,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#head-4",
+   "type": "head",
+   "k": 4,
+   "env": "head",
+   "title": "Note",
+   "item": "remark",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1637
+   },
+   "last": 1637,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.17547v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1639
+   },
+   "last": 1655,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "number": "4.19",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1659
+   },
+   "last": 1661,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "lem:whent_apreversesprojstationarity",
+    "item:SminusAisProjStationary",
+    "item:ProductIsSSP"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1668
+   },
+   "last": 1684,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1686
+   },
+   "last": 1708,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "thm:WhatWeGet",
+    "item:SpreadOutOffTheLiftingOfA",
+    "item:CompositionSC"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1712
+   },
+   "last": 1724,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1726
+   },
+   "last": 1740,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "thm",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "item:SRP",
+    "item:SRP-Strategy",
+    "item:infSCSRP-StrategyFails"
+   ],
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1747
+   },
+   "last": 1760,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1762
+   },
+   "last": 1767,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "number": "5.4",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1804
+   },
+   "last": 1806,
+   "result": "matched"
+  },
+  {
+   "id": "2610.17547v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "number": "5.5",
+   "number_from": "render",
+   "pos": {
+    "file": "SRPnonstatDSR.tex",
+    "line": 1810
+   },
+   "last": 1812,
+   "result": "matched"
+  }
+ ]
+}

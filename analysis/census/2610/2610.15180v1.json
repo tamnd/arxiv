@@ -1,0 +1,1899 @@
+{
+ "paper": "2610.15180",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "MS_determinant_v19_arxiv.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amssymb",
+  "amsfonts",
+  "amsmath",
+  "amsthm",
+  "mathtools",
+  "fontenc",
+  "mathpazo",
+  "eucal",
+  "inconsolata",
+  "titlesec",
+  "titletoc",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: MS_determinant_v19_arxiv.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 21 commands, 1 environments",
+  "tree: 313 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theo",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theo",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theo*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "propo",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "coro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hypothesis",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "hypothesis",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exa",
+   "title": "Example",
+   "item": "example",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exe",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "pro",
+   "title": "Property",
+   "item": "statement/fact",
+   "counter": "theo",
+   "shared": "theo",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "solu*",
+   "title": "Solution",
+   "item": "other/solution",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 52,
+  "label": 125,
+  "proof": 32,
+  "textref": 85
+ },
+ "matched": {
+  "env": 52,
+  "label": 125,
+  "proof": 32
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 52,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 52,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 85,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 52,
+  "proofs": 32,
+  "agree": true,
+  "source_theorems": 52,
+  "source_proofs": 32
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.15180v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theo",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "thm:intro-all-points",
+    "eq:intro-main"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 278
+   },
+   "last": 291,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theo",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "def:nondegenerate-regular"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 296
+   },
+   "last": 311,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theo",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "thm:intro-attainment"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 318
+   },
+   "last": 329,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theo",
+   "number": "1.4",
+   "number_from": "render",
+   "labels": [
+    "thm:intro-capacity",
+    "eq:intro-capacity"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 350
+   },
+   "last": 369,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theo",
+   "number": "1.5",
+   "number_from": "render",
+   "labels": [
+    "cor:intro-brown"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 381
+   },
+   "last": 405,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theo",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "thm:closed",
+    "eq:H-def",
+    "eq:H-logdet",
+    "eq:closed-boundary"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 752
+   },
+   "last": 793,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:H-prime-1",
+    "eq:H-prime"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 795
+   },
+   "last": 950,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theo",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "prop:action-identity",
+    "eq:normalized",
+    "eq:K-action"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1029
+   },
+   "last": 1041,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:normalization"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1043
+   },
+   "last": 1061,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theo",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "rem:extended-action"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1063
+   },
+   "last": 1133,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "lem:feasible-pf",
+    "eq:positive-Perron-eigenmatrix",
+    "eq:interior-feasible"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1181
+   },
+   "last": 1215,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:normalized-minus"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1217
+   },
+   "last": 1298,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theo",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "prop:indicator",
+    "eq:indicator",
+    "eq:three-variable-real"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1302
+   },
+   "last": 1319,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1321
+   },
+   "last": 1366,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "lem:radial-approximation",
+    "eq:radial-limit"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1377
+   },
+   "last": 1391,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1393
+   },
+   "last": 1467,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "lem:C-geodesic",
+    "eq:C-geodesic",
+    "eq:C-geodesic-equation"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1526
+   },
+   "last": 1554,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1556
+   },
+   "last": 1615,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "5.5",
+   "number_from": "render",
+   "labels": [
+    "lem:geodesic-feasible",
+    "eq:eta-geodesic-logconvex"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1617
+   },
+   "last": 1633,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:eta-quotient"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1635
+   },
+   "last": 1725,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "lem:resolvent-geodesic",
+    "eq:resolvent-hessian",
+    "eq:Cayley-factor"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1745
+   },
+   "last": 1771,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:resolvent-second-factor",
+    "eq:Cayley-factorization"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1773
+   },
+   "last": 1815,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theo",
+   "number": "5.7",
+   "number_from": "render",
+   "labels": [
+    "cor:two-inverse-geodesic",
+    "eq:two-inverse-hessian",
+    "eq:two-inverse-quadratic"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1817
+   },
+   "last": 1846,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1848
+   },
+   "last": 1865,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theo",
+   "number": "5.8",
+   "number_from": "render",
+   "labels": [
+    "prop:geodesic-hessian",
+    "eq:geodesic-hessian"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1867
+   },
+   "last": 1890,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1892
+   },
+   "last": 1934,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theo",
+   "number": "6.1",
+   "number_from": "render",
+   "labels": [
+    "def:unitary-normalizer",
+    "eq:unitary-normalizer"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1953
+   },
+   "last": 1961,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "6.2",
+   "number_from": "render",
+   "labels": [
+    "lem:pup",
+    "eq:pup-b",
+    "eq:pup"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 1988
+   },
+   "last": 2027,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2034
+   },
+   "last": 2115,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theo",
+   "number": "6.3",
+   "number_from": "render",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2117
+   },
+   "last": 2130,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "6.4",
+   "number_from": "render",
+   "labels": [
+    "lem:balanced-dyson-parts",
+    "eq:dyson-real-unbalanced",
+    "eq:dyson-imag-unbalanced"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2139
+   },
+   "last": 2172,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:normalizer-parts",
+    "eq:dyson-parts"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2174
+   },
+   "last": 2240,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theo",
+   "number": "6.5",
+   "number_from": "render",
+   "labels": [
+    "cor:balanced-dyson",
+    "eq:balanced-real",
+    "eq:balanced-imag"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2287
+   },
+   "last": 2300,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:PQ-ugamma"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2302
+   },
+   "last": 2353,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theo",
+   "number": "6.6",
+   "number_from": "render",
+   "labels": [
+    "rem:two-stability-operators"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2355
+   },
+   "last": 2375,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theo",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "prop:elimination",
+    "eq:maximizers",
+    "eq:partial-sup"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2424
+   },
+   "last": 2444,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:positive-inverse"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2446
+   },
+   "last": 2493,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "7.2",
+   "number_from": "render",
+   "labels": [
+    "lem:Dyson-scale",
+    "eq:balanced",
+    "eq:Dyson-auxiliary-identification"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2505
+   },
+   "last": 2528,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2530
+   },
+   "last": 2575,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theo",
+   "number": "7.3",
+   "number_from": "render",
+   "labels": [
+    "prop:regularized-first-variation",
+    "eq:regularized-first-variation",
+    "eq:Freg-gradient"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2585
+   },
+   "last": 2602,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2604
+   },
+   "last": 2625,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theo",
+   "number": "7.4",
+   "number_from": "render",
+   "labels": [
+    "cor:Freg-convex"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2629
+   },
+   "last": 2633,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2635
+   },
+   "last": 2646,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theo",
+   "number": "7.5",
+   "number_from": "render",
+   "labels": [
+    "thm:regularized",
+    "eq:regularized-theorem",
+    "eq:full-regularized"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2652
+   },
+   "last": 2669,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2672
+   },
+   "last": 2741,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theo",
+   "number": "7.6",
+   "number_from": "render",
+   "labels": [
+    "rem:yin-dictionary"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2743
+   },
+   "last": 2754,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theo",
+   "number": "8.1",
+   "number_from": "render",
+   "labels": [
+    "thm:real-axis",
+    "eq:real-theorem"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2763
+   },
+   "last": 2773,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:pointwise-limit",
+    "eq:inf-limit"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2775
+   },
+   "last": 2814,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theo",
+   "number": "8.2",
+   "number_from": "render",
+   "labels": [
+    "cor:minus-infinity-atoms"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2816
+   },
+   "last": 2828,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2830
+   },
+   "last": 2886,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theo",
+   "number": "9.1",
+   "number_from": "render",
+   "labels": [
+    "prop:attainment-cluster-point"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2893
+   },
+   "last": 2913,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:attainment-minimizing-family"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 2915
+   },
+   "last": 2997,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theo",
+   "number": "9.2",
+   "number_from": "render",
+   "labels": [
+    "prop:normalizer-limit",
+    "eq:gap-normalizer",
+    "eq:definite-normalizer"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3000
+   },
+   "last": 3046,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theo",
+   "number": "9.3",
+   "number_from": "render",
+   "labels": [
+    "cor:regularized-value-limit",
+    "eq:value-limiting-scale"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3051
+   },
+   "last": 3074,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3076
+   },
+   "last": 3089,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theo",
+   "number": "9.4",
+   "number_from": "render",
+   "labels": [
+    "prop:active-set",
+    "eq:gap-stability"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3095
+   },
+   "last": 3123,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:active-set-imag"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3125
+   },
+   "last": 3189,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theo",
+   "number": "9.5",
+   "number_from": "render",
+   "labels": [
+    "rem:active-set"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3191
+   },
+   "last": 3200,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "9.6",
+   "number_from": "render",
+   "labels": [
+    "lem:boundary-invertible"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3205
+   },
+   "last": 3210,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3212
+   },
+   "last": 3217,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theo",
+   "number": "9.7",
+   "number_from": "render",
+   "labels": [
+    "rem:attainment"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3223
+   },
+   "last": 3339,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "exa",
+   "title": "Example",
+   "item": "example",
+   "counter": "theo",
+   "number": "9.8",
+   "number_from": "render",
+   "labels": [
+    "exa:coupled"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3342
+   },
+   "last": 3368,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theo",
+   "number": "10.1",
+   "number_from": "render",
+   "labels": [
+    "cor:brown",
+    "eq:brown-variational"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3380
+   },
+   "last": 3420,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3422
+   },
+   "last": 3455,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "11.1",
+   "number_from": "render",
+   "labels": [
+    "lem:ds-capacity"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3514
+   },
+   "last": 3521,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3523
+   },
+   "last": 3555,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theo",
+   "number": "11.2",
+   "number_from": "render",
+   "labels": [
+    "thm:centered-capacity",
+    "eq:centered-capacity",
+    "eq:symmetric-DS"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3559
+   },
+   "last": 3580,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:capacity-scaled-b",
+    "eq:capacity-lower",
+    "eq:capacity-regularization",
+    "eq:capacity-upper-eps",
+    "eq:capacity-continuity"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3582
+   },
+   "last": 3908,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theo",
+   "number": "11.3",
+   "number_from": "render",
+   "labels": [
+    "cor:mai-speicher",
+    "eq:mai-speicher"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3911
+   },
+   "last": 3932,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3934
+   },
+   "last": 3951,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theo",
+   "number": "11.4",
+   "number_from": "render",
+   "labels": [
+    "rem:capacity-attainment"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 3953
+   },
+   "last": 3971,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "ques:active-set"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4006
+   },
+   "last": 4013,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "ques:brown-active"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4047
+   },
+   "last": 4056,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "ques:other-families"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4080
+   },
+   "last": 4086,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "ques:sdp"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4114
+   },
+   "last": 4120,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "ques:unconstrained"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4186
+   },
+   "last": 4194,
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:app-D",
+    "eq:app-X-expansion",
+    "eq:app-Y-expansion"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4236
+   },
+   "last": 4473,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theo",
+   "number": "A.1",
+   "number_from": "render",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4476
+   },
+   "last": 4492,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "B.1",
+   "number_from": "render",
+   "labels": [
+    "lem:local-puiseux-control",
+    "eq:local-puiseux",
+    "eq:local-G-bound"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4542
+   },
+   "last": 4581,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4583
+   },
+   "last": 4632,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theo",
+   "number": "B.2",
+   "number_from": "render",
+   "labels": [
+    "lem:theta-one-atom",
+    "eq:theta-one-iff-atom"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4640
+   },
+   "last": 4648,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4650
+   },
+   "last": 4723,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theo",
+   "number": "B.3",
+   "number_from": "render",
+   "labels": [
+    "thm:nonatomic-local-regularity",
+    "eq:local-ac",
+    "eq:rho-pointwise-bound"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4729
+   },
+   "last": 4769,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.15180v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:poisson-density",
+    "eq:poisson-domination",
+    "eq:measure-domination"
+   ],
+   "pos": {
+    "file": "MS_determinant_v19_arxiv.tex",
+    "line": 4771
+   },
+   "last": 4896,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

@@ -1,0 +1,780 @@
+{
+ "paper": "2610.16295",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "arxiv.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "natbib",
+  "tablefootnote",
+  "inputenc",
+  "fontenc",
+  "hyperref",
+  "url",
+  "booktabs",
+  "amsfonts",
+  "nicefrac",
+  "microtype",
+  "tikz",
+  "algorithm2e",
+  "verbatim",
+  "amsthm",
+  "amsmath",
+  "amssymb",
+  "sansmath",
+  "color",
+  "xcolor",
+  "bm",
+  "bbm",
+  "fullpage",
+  "footmisc",
+  "subfig",
+  "graphicx",
+  "listings",
+  "enumitem",
+  "tabularx",
+  "mathtools",
+  "threeparttable",
+  "todonotes",
+  "xspace",
+  "thm-restate",
+  "multirow",
+  "float",
+  "makecell",
+  "authblk"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: arxiv.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 101 commands, 1 environments",
+  "tree: 108 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "namedtheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 11,
+  "head": 3,
+  "label": 12,
+  "proof": 16,
+  "textref": 50
+ },
+ "matched": {
+  "env": 11,
+  "head": 3,
+  "label": 12,
+  "proof": 16
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 11,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 11,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 46,
+  "unresolved": 4
+ },
+ "render": {
+  "theorems": 11,
+  "proofs": 16,
+  "agree": true,
+  "source_theorems": 11,
+  "source_proofs": 16
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.16295v1#textref-13",
+   "message": "the text names Algorithm \\ref{alg:derivative-search} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.16295v1#textref-16",
+   "message": "the text names Algorithm \\ref{alg:derivative-search} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.16295v1#textref-17",
+   "message": "the text names Algorithm \\ref{alg:refine-bracket} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.16295v1#textref-27",
+   "message": "the text names Algorithm \\ref{alg:secant-search} and the census has no such item (not-an-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.16295v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Algorithms",
+   "item": "definition/algorithm",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 566
+   },
+   "last": 572,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.16295v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "lmm:normal"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 590
+   },
+   "last": 617,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "thm:randomized-derivative-lower-bound"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 696
+   },
+   "last": 714,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "lem:hard-family-properties"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 800
+   },
+   "last": 820,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 826
+   },
+   "last": 847,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "thm:deterministic-derivative-jet-lower"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1031
+   },
+   "last": 1049,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "lmm:derivative-hard-family"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1104
+   },
+   "last": 1120,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1126
+   },
+   "last": 1145,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "thm:randomized-derivative-upper-bound"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1166
+   },
+   "last": 1194,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1206
+   },
+   "last": 1206,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.16295v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "lmm:derivative-interpolation"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1221
+   },
+   "last": 1232,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1324
+   },
+   "last": 1341,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "render",
+   "labels": [
+    "thm:randomized-full-jet-lower-bound"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1500
+   },
+   "last": 1521,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "render",
+   "labels": [
+    "lmm:randomized-hard-family"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1575
+   },
+   "last": 1602,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1610
+   },
+   "last": 1633,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "thm:deterministic-zeroth-order-upper"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1655
+   },
+   "last": 1675,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1685
+   },
+   "last": 1690,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2610.16295v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "render",
+   "labels": [
+    "lmm:value-interpolation"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1692
+   },
+   "last": 1704,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1764
+   },
+   "last": 1786,
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1853
+   },
+   "last": 1893,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1900
+   },
+   "last": 1976,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 1980
+   },
+   "last": 2068,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 2080
+   },
+   "last": 2187,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 2194
+   },
+   "last": 2258,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:derivative-upper-integral"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 2290
+   },
+   "last": 2423,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 2430
+   },
+   "last": 2508,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 2520
+   },
+   "last": 2611,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 2615
+   },
+   "last": 2699,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 2705
+   },
+   "last": 2748,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.16295v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 2753
+   },
+   "last": 2866,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

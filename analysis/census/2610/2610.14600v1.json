@@ -1,0 +1,729 @@
+{
+ "paper": "2610.14600",
+ "version": 1,
+ "extractor": "ax/v0.5.28",
+ "main": [
+  "Projection.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "ems-journal",
+  "graphicx",
+  "sectsty",
+  "amsmath",
+  "tcolorbox",
+  "bbm",
+  "bigints",
+  "tikz",
+  "lipsum",
+  "subcaption",
+  "pythonhighlight",
+  "setspace",
+  "mathrsfs",
+  "amsthm",
+  "mathtools",
+  "cite",
+  "tabularx",
+  "fontenc",
+  "appendix",
+  "enumitem",
+  "wasysym",
+  "ifsym",
+  "xcolor",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: Projection.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 365 commands, 8 environments",
+  "tree: 118 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "s m o m o",
+   "title": "\\IfBooleanTF{#1}\n          { \\__mystyle_orig_newtheorem*{#2}{#4} }\n          {\n            \\IfValueTF{#3}\n              {\n                \\__mystyle_orig_newtheorem{#2}[#3]{#4}\n                \\AddToHook{env/#2/begin}\n                  { \\cs_if_exist:NT \\crefalias { \\crefalias{#3}{#2} } }\n              }\n              {\n                \\IfValueTF{#5}\n                  { \\__mystyle_orig_newtheorem{#2}{#4}[#5] }\n                  { \\__mystyle_orig_newtheorem{#2}{#4} }\n              }\n          }",
+   "item": "unknown",
+   "counter": "s m o m o",
+   "numbered": true,
+   "from": "local:ems-journal.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rep@theorem",
+   "title": "\\rep@title",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "within": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "result",
+   "title": "Result",
+   "item": "statement/theorem",
+   "counter": "lemma",
+   "shared": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "lemma",
+   "shared": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lemma",
+   "shared": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "within": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "within": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "note",
+   "within": "subsection",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xca",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  },
+  {
+   "env": "funding",
+   "title": "",
+   "item": "unknown",
+   "numbered": false,
+   "from": "wrapper",
+   "form": "titled",
+   "title_arg": true
+  },
+  {
+   "env": "ack",
+   "title": "",
+   "item": "unknown",
+   "numbered": false,
+   "from": "wrapper",
+   "form": "titled",
+   "title_arg": true
+  },
+  {
+   "env": "rep#1",
+   "title": "\\rep@title",
+   "item": "unknown",
+   "numbered": false,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 16,
+  "label": 34,
+  "proof": 9,
+  "textref": 13
+ },
+ "matched": {
+  "env": 16,
+  "label": 34,
+  "proof": 9
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 14,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 14,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 13,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 14,
+  "proofs": 9,
+  "agree": true,
+  "source_theorems": 14,
+  "source_proofs": 9
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.14600v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "3.2.1",
+   "number_from": "render",
+   "labels": [
+    "2.2.1"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 463
+   },
+   "last": 470,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "3.2.2",
+   "number_from": "render",
+   "labels": [
+    "2.2.2"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 471
+   },
+   "last": 477,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "3.2.3",
+   "number_from": "render",
+   "labels": [
+    "2.2.3"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 478
+   },
+   "last": 484,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.2.1",
+   "number_from": "render",
+   "pos": {
+    "file": "Projection.tex",
+    "line": 485
+   },
+   "last": 487,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Projection.tex",
+    "line": 488
+   },
+   "last": 491,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4.1.1",
+   "number_from": "render",
+   "labels": [
+    "Le 3.1.1"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 523
+   },
+   "last": 525,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "8",
+    "9",
+    "10",
+    "11"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 526
+   },
+   "last": 577,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4.1.2",
+   "number_from": "render",
+   "labels": [
+    "Le 3.1.2"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 578
+   },
+   "last": 584,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "12",
+    "13",
+    "14"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 585
+   },
+   "last": 637,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Projection.tex",
+    "line": 638
+   },
+   "last": 641,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lemma",
+   "number": "4.1.3",
+   "number_from": "render",
+   "labels": [
+    "Pr 3.1.3"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 643
+   },
+   "last": 647,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.2.1",
+   "number_from": "render",
+   "labels": [
+    "Th 3.2.1"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 675
+   },
+   "last": 677,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 678
+   },
+   "last": 773,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lemma",
+   "number": "5.0.1",
+   "number_from": "render",
+   "labels": [
+    "exampleProp"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 849
+   },
+   "last": 853,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "closedinequality"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 854
+   },
+   "last": 893,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "5.0.1",
+   "number_from": "render",
+   "labels": [
+    "formalRemark",
+    "conditionbound",
+    "conditionrate"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 894
+   },
+   "last": 915,
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lemma",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "Pr A.1"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 942
+   },
+   "last": 944,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Projection.tex",
+    "line": 945
+   },
+   "last": 972,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "A.1",
+   "number_from": "render",
+   "pos": {
+    "file": "Projection.tex",
+    "line": 973
+   },
+   "last": 977,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "Th A.1"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 978
+   },
+   "last": 984,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Projection.tex",
+    "line": 985
+   },
+   "last": 987,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "lemma",
+   "number": "A.2",
+   "number_from": "render",
+   "labels": [
+    "Pr A.2"
+   ],
+   "pos": {
+    "file": "Projection.tex",
+    "line": 988
+   },
+   "last": 990,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Projection.tex",
+    "line": 991
+   },
+   "last": 1009,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "ack",
+   "title": "\\ackname",
+   "item": "unknown",
+   "pos": {
+    "file": "Projection.tex",
+    "line": 1020
+   },
+   "last": 1022,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.14600v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "funding",
+   "title": "\\fundingname",
+   "item": "unknown",
+   "pos": {
+    "file": "Projection.tex",
+    "line": 1024
+   },
+   "last": 1026,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
