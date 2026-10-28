@@ -7,7 +7,7 @@
 #
 # Each run does at most $AX_REDO_LIMIT papers of the redo list, and then at most $AX_LIMIT new papers. The new papers come from the list $AX_LIST first (gold set X). When the list has fewer papers left, the scope $AX_SCOPE gives the rest in the order of AX2.6. Only one run can go at a time, and the pipeline must be the only process that fetches from arXiv.
 #
-# A run merges its pull request only when the checks pass and the branch rebases on main with no conflict. Otherwise it leaves the pull request open, writes the reason to $AX_PIPELINE/blocked, and the later runs do nothing until a person removes that file.
+# A run merges its pull request only when the checks pass and the branch rebases on main with no conflict. Otherwise it leaves the pull request open, writes the reason to $AX_PIPELINE/blocked, and the later runs do nothing until a person removes that file. A run with too little disk is skipped and blocks nothing.
 set -eu
 
 dir=${AX_PIPELINE:-$HOME/arxiv-pipeline}
@@ -150,8 +150,11 @@ clone math2
 start arxiv
 
 free=$(df -m "$dir" | tail -1 | awk '{print $4}')
+# Too little disk skips this run and does not block the later ones, because the
+# disk is shared with other jobs and its free space comes back.
 if [ "$free" -lt "$reserve" ]; then
-	block "the disk has $free MB free, and a run needs $reserve MB"
+	log "skipped: the disk has $free MB free, and a run needs $reserve MB"
+	exit 0
 fi
 
 # The batches: the redo list, then the new papers of the list and of the scope.
