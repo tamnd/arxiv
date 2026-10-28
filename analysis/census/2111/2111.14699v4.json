@@ -1,7 +1,7 @@
 {
  "paper": "2111.14699",
  "version": 4,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.27",
  "main": [
   "main.tex"
  ],
@@ -29,6 +29,7 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 355 commands, 15 environments",
+  "aliases: 74 uses of commands that stand for \\begin or \\end",
   "tree: 102 nodes"
  ],
  "declarations": [
@@ -163,7 +164,7 @@
   {
    "env": "acknowledgements",
    "title": "Acknowledgements",
-   "item": "unknown",
+   "item": "other/section",
    "numbered": false,
    "from": "paper",
    "form": "newtheorem"
@@ -206,7 +207,9 @@
  "render": {
   "theorems": 33,
   "proofs": 21,
-  "agree": true
+  "agree": true,
+  "source_theorems": 33,
+  "source_proofs": 21
  },
  "outside": {
   "theoremgraph": 32,
@@ -391,9 +394,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 265
+    "line": 275
    },
-   "last": 267,
+   "last": 277,
    "result": "matched"
   },
   {
@@ -411,9 +414,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 277
+    "line": 292
    },
-   "last": 279,
+   "last": 294,
    "result": "matched"
   },
   {
@@ -431,9 +434,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 297
+    "line": 317
    },
-   "last": 299,
+   "last": 319,
    "result": "matched"
   },
   {
@@ -442,14 +445,14 @@
    "k": 4,
    "env": "acknowledgements",
    "title": "Acknowledgements",
-   "item": "unknown",
+   "item": "other/section",
    "number": "Acknowledgements",
    "number_from": "render",
    "pos": {
     "file": "main.tex",
-    "line": 307
+    "line": 327
    },
-   "last": 309,
+   "last": 329,
    "result": "matched"
   },
   {
@@ -464,9 +467,9 @@
    "number_from": "render",
    "pos": {
     "file": "main.tex",
-    "line": 336
+    "line": 381
    },
-   "last": 338,
+   "last": 383,
    "result": "matched"
   },
   {
@@ -484,9 +487,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 342
+    "line": 387
    },
-   "last": 344,
+   "last": 389,
    "result": "matched"
   },
   {
@@ -504,9 +507,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 368
+    "line": 428
    },
-   "last": 370,
+   "last": 430,
    "result": "matched"
   },
   {
@@ -518,9 +521,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 371
+    "line": 431
    },
-   "last": 383,
+   "last": 453,
    "result": "matched"
   },
   {
@@ -535,9 +538,9 @@
    "number_from": "render",
    "pos": {
     "file": "main.tex",
-    "line": 387
+    "line": 457
    },
-   "last": 389,
+   "last": 459,
    "result": "matched"
   },
   {
@@ -555,9 +558,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 393
+    "line": 463
    },
-   "last": 395,
+   "last": 465,
    "result": "matched"
   },
   {
@@ -569,9 +572,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 397
+    "line": 467
    },
-   "last": 399,
+   "last": 469,
    "result": "matched"
   },
   {
@@ -583,9 +586,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 404
+    "line": 474
    },
-   "last": 412,
+   "last": 492,
    "result": "matched"
   },
   {
@@ -603,9 +606,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 455
+    "line": 555
    },
-   "last": 457,
+   "last": 557,
    "result": "matched"
   },
   {
@@ -624,9 +627,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 507
+    "line": 627
    },
-   "last": 513,
+   "last": 633,
    "result": "matched"
   },
   {
@@ -638,9 +641,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 514
+    "line": 634
    },
-   "last": 526,
+   "last": 656,
    "result": "matched"
   },
   {
@@ -658,9 +661,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 565
+    "line": 715
    },
-   "last": 568,
+   "last": 723,
    "result": "matched"
   },
   {
@@ -672,9 +675,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 569
+    "line": 724
    },
-   "last": 610,
+   "last": 800,
    "result": "matched"
   },
   {
@@ -689,9 +692,9 @@
    "number_from": "render",
    "pos": {
     "file": "main.tex",
-    "line": 612
+    "line": 802
    },
-   "last": 614,
+   "last": 804,
    "result": "matched"
   },
   {
@@ -709,9 +712,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 616
+    "line": 806
    },
-   "last": 621,
+   "last": 816,
    "result": "matched"
   },
   {
@@ -723,9 +726,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 622
+    "line": 817
    },
-   "last": 628,
+   "last": 828,
    "result": "matched"
   },
   {
@@ -737,9 +740,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 632
+    "line": 832
    },
-   "last": 634,
+   "last": 834,
    "result": "matched"
   },
   {
@@ -757,9 +760,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 643
+    "line": 843
    },
-   "last": 647,
+   "last": 847,
    "result": "matched"
   },
   {
@@ -774,9 +777,9 @@
    "number_from": "render",
    "pos": {
     "file": "main.tex",
-    "line": 652
+    "line": 852
    },
-   "last": 654,
+   "last": 854,
    "result": "matched"
   },
   {
@@ -791,9 +794,9 @@
    "number_from": "render",
    "pos": {
     "file": "main.tex",
-    "line": 658
+    "line": 858
    },
-   "last": 660,
+   "last": 860,
    "result": "matched"
   },
   {
@@ -811,9 +814,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 664
+    "line": 864
    },
-   "last": 666,
+   "last": 866,
    "result": "matched"
   },
   {
@@ -825,9 +828,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 667
+    "line": 867
    },
-   "last": 682,
+   "last": 887,
    "result": "matched"
   },
   {
@@ -845,9 +848,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 684
+    "line": 889
    },
-   "last": 689,
+   "last": 899,
    "result": "matched"
   },
   {
@@ -865,9 +868,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 700
+    "line": 910
    },
-   "last": 702,
+   "last": 912,
    "result": "matched"
   },
   {
@@ -885,9 +888,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 713
+    "line": 923
    },
-   "last": 715,
+   "last": 925,
    "result": "matched"
   },
   {
@@ -899,9 +902,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 717
+    "line": 927
    },
-   "last": 722,
+   "last": 937,
    "result": "matched"
   },
   {
@@ -919,9 +922,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 726
+    "line": 941
    },
-   "last": 728,
+   "last": 943,
    "result": "matched"
   },
   {
@@ -933,9 +936,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 729
+    "line": 944
    },
-   "last": 731,
+   "last": 946,
    "result": "matched"
   },
   {
@@ -953,9 +956,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 735
+    "line": 950
    },
-   "last": 737,
+   "last": 957,
    "result": "matched"
   },
   {
@@ -967,9 +970,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 738
+    "line": 958
    },
-   "last": 740,
+   "last": 960,
    "result": "matched"
   },
   {
@@ -987,9 +990,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 749
+    "line": 969
    },
-   "last": 751,
+   "last": 971,
    "result": "matched"
   },
   {
@@ -1007,9 +1010,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 753
+    "line": 973
    },
-   "last": 755,
+   "last": 975,
    "result": "matched"
   },
   {
@@ -1027,9 +1030,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 757
+    "line": 977
    },
-   "last": 759,
+   "last": 979,
    "result": "matched"
   },
   {
@@ -1041,9 +1044,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 762
+    "line": 982
    },
-   "last": 764,
+   "last": 984,
    "result": "matched"
   },
   {
@@ -1061,9 +1064,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 770
+    "line": 990
    },
-   "last": 776,
+   "last": 1001,
    "result": "matched"
   },
   {
@@ -1078,9 +1081,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 777
+    "line": 1002
    },
-   "last": 804,
+   "last": 1044,
    "result": "matched"
   },
   {
@@ -1092,9 +1095,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 826
+    "line": 1086
    },
-   "last": 844,
+   "last": 1114,
    "result": "matched"
   },
   {
@@ -1106,9 +1109,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 846
+    "line": 1116
    },
-   "last": 856,
+   "last": 1136,
    "result": "matched"
   },
   {
@@ -1126,9 +1129,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 860
+    "line": 1140
    },
-   "last": 866,
+   "last": 1151,
    "result": "matched"
   },
   {
@@ -1140,9 +1143,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 867
+    "line": 1152
    },
-   "last": 881,
+   "last": 1176,
    "result": "matched"
   },
   {
@@ -1154,9 +1157,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 885
+    "line": 1180
    },
-   "last": 899,
+   "last": 1204,
    "result": "matched"
   },
   {
@@ -1171,9 +1174,9 @@
    "number_from": "render",
    "pos": {
     "file": "main.tex",
-    "line": 922
+    "line": 1232
    },
-   "last": 924,
+   "last": 1234,
    "result": "matched"
   },
   {
@@ -1185,9 +1188,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 925
+    "line": 1235
    },
-   "last": 939,
+   "last": 1264,
    "result": "matched"
   },
   {
@@ -1205,9 +1208,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 945
+    "line": 1270
    },
-   "last": 947,
+   "last": 1272,
    "result": "matched"
   },
   {
@@ -1225,9 +1228,9 @@
    ],
    "pos": {
     "file": "main.tex",
-    "line": 987
+    "line": 1322
    },
-   "last": 989,
+   "last": 1324,
    "result": "matched"
   },
   {
@@ -1239,9 +1242,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 990
+    "line": 1325
    },
-   "last": 995,
+   "last": 1335,
    "result": "matched"
   },
   {
@@ -1256,9 +1259,9 @@
    "number_from": "render",
    "pos": {
     "file": "main.tex",
-    "line": 1001
+    "line": 1341
    },
-   "last": 1002,
+   "last": 1342,
    "result": "matched"
   },
   {
@@ -1270,9 +1273,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 1004
+    "line": 1344
    },
-   "last": 1061,
+   "last": 1421,
    "result": "matched"
   },
   {
@@ -1287,9 +1290,9 @@
    "number_from": "render",
    "pos": {
     "file": "main.tex",
-    "line": 1091
+    "line": 1461
    },
-   "last": 1093,
+   "last": 1463,
    "result": "matched"
   },
   {
@@ -1301,9 +1304,9 @@
    "item": "proof",
    "pos": {
     "file": "main.tex",
-    "line": 1094
+    "line": 1464
    },
-   "last": 1096,
+   "last": 1466,
    "result": "matched"
   }
  ]
