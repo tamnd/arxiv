@@ -1,7 +1,7 @@
 {
  "paper": "2311.01874",
  "version": 3,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.27",
  "main": [
   "sabbah_handbook_v3.tex"
  ],
@@ -55,6 +55,7 @@
    "item": "proof",
    "counter": "proof",
    "numbered": true,
+   "proof": true,
    "from": "local:svmult.cls",
    "form": "newtheorem"
   },
@@ -71,7 +72,7 @@
   {
    "env": "choice",
    "title": "Choice",
-   "item": "unknown",
+   "item": "context/hypothesis",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
@@ -184,23 +185,25 @@
   }
  ],
  "occurrences": {
-  "env": 89,
+  "env": 66,
   "label": 81,
+  "proof": 23,
   "textref": 82
  },
  "matched": {
-  "env": 89,
-  "label": 81
+  "env": 66,
+  "label": 81,
+  "proof": 23
  },
  "gaps": [],
  "waivers": [],
  "numbers": {
   "from_aux": 0,
-  "from_render": 89,
+  "from_render": 66,
   "from_counter": 0,
   "from_head": 0,
   "agree": 46,
-  "disagree": 43,
+  "disagree": 20,
   "contiguity_gaps": 0
  },
  "textrefs": {
@@ -208,9 +211,11 @@
   "unresolved": 0
  },
  "render": {
-  "theorems": 89,
-  "proofs": 0,
-  "agree": true
+  "theorems": 66,
+  "proofs": 23,
+  "agree": true,
+  "source_theorems": 66,
+  "source_proofs": 23
  },
  "outside": {
   "theoremsearch": 42
@@ -228,208 +233,93 @@
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-3",
-   "message": "the counter model gives Proof 1 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
    "occurrence": "2311.01874v3#env-5",
-   "message": "the counter model gives Proof 2 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-7",
-   "message": "the counter model gives Proof 3 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-8",
    "message": "the counter model gives Choice 0.3.1 and the second witness gives 5.3.1"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-10",
-   "message": "the counter model gives Proof 4 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-18",
-   "message": "the counter model gives Proof 5 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-19",
-   "message": "the counter model gives Proof 6 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-21",
-   "message": "the counter model gives Proof 7 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-23",
-   "message": "the counter model gives Proof 8 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-25",
+   "occurrence": "2311.01874v3#env-17",
    "message": "the counter model gives Theorem 0.3.2 and the second witness gives 5.3.2"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-26",
-   "message": "the counter model gives Proof 9 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-28",
+   "occurrence": "2311.01874v3#env-19",
    "message": "the counter model gives Theorem 0.3.3 and the second witness gives 5.3.3"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-30",
+   "occurrence": "2311.01874v3#env-21",
    "message": "the counter model gives Theorem 0.3.4 and the second witness gives 5.3.4"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-32",
+   "occurrence": "2311.01874v3#env-23",
    "message": "the counter model gives Theorem 0.3.5 and the second witness gives 5.3.5"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-34",
+   "occurrence": "2311.01874v3#env-25",
    "message": "the counter model gives Theorem 0.3.6 and the second witness gives 5.3.6"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-35",
+   "occurrence": "2311.01874v3#env-26",
    "message": "the counter model gives Theorem 0.3.7 and the second witness gives 5.3.7"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-40",
-   "message": "the counter model gives Proof 10 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-44",
-   "message": "the counter model gives Proof 11 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-46",
-   "message": "the counter model gives Proof 12 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-50",
-   "message": "the counter model gives Proof 13 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-51",
+   "occurrence": "2311.01874v3#env-38",
    "message": "the counter model gives Theorem 0.4.1 and the second witness gives 5.4.1"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-54",
-   "message": "the counter model gives Proof 14 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-57",
-   "message": "the counter model gives Proof 15 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-58",
-   "message": "the counter model gives Proof 16 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-59",
+   "occurrence": "2311.01874v3#env-43",
    "message": "the counter model gives Theorem 0.4.2 and the second witness gives 5.4.2"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-60",
-   "message": "the counter model gives Proof 17 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-62",
+   "occurrence": "2311.01874v3#env-45",
    "message": "the counter model gives Theorem 0.4.3 and the second witness gives 5.4.3"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-63",
+   "occurrence": "2311.01874v3#env-46",
    "message": "the counter model gives Theorem 0.4.4 and the second witness gives 5.4.4"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-64",
-   "message": "the counter model gives Proof 18 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-67",
+   "occurrence": "2311.01874v3#env-49",
    "message": "the counter model gives Theorem 0.4.5 and the second witness gives 5.4.5"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-69",
+   "occurrence": "2311.01874v3#env-51",
    "message": "the counter model gives Theorem 0.4.6 and the second witness gives 5.4.6"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-71",
+   "occurrence": "2311.01874v3#env-53",
    "message": "the counter model gives Theorem 0.4.7 and the second witness gives 5.4.7"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-73",
-   "message": "the counter model gives Proof 19 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-77",
-   "message": "the counter model gives Proof 20 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-79",
+   "occurrence": "2311.01874v3#env-59",
    "message": "the counter model gives Theorem 0.5.1 and the second witness gives 5.5.1"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-80",
-   "message": "the counter model gives Proof 21 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-81",
+   "occurrence": "2311.01874v3#env-60",
    "message": "the counter model gives Theorem 0.5.2 and the second witness gives 5.5.2"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-83",
-   "message": "the counter model gives Proof 22 and the second witness gives Proof"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-86",
+   "occurrence": "2311.01874v3#env-64",
    "message": "the counter model gives Theorem 0.5.3 and the second witness gives 5.5.3"
   },
   {
    "rule": "D07",
-   "occurrence": "2311.01874v3#env-88",
+   "occurrence": "2311.01874v3#env-66",
    "message": "the counter model gives Theorem 0.5.4 and the second witness gives 5.5.4"
-  },
-  {
-   "rule": "D07",
-   "occurrence": "2311.01874v3#env-89",
-   "message": "the counter model gives Proof 23 and the second witness gives Proof"
   }
  ],
  "strength": "normal",
@@ -477,15 +367,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-3",
-   "type": "env",
-   "k": 3,
+   "id": "2311.01874v3#proof-1",
+   "type": "proof",
+   "k": 1,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 286
@@ -494,9 +382,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-4",
+   "id": "2311.01874v3#env-3",
    "type": "env",
-   "k": 4,
+   "k": 3,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -514,15 +402,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-5",
-   "type": "env",
-   "k": 5,
+   "id": "2311.01874v3#proof-2",
+   "type": "proof",
+   "k": 2,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 345
@@ -531,9 +417,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-6",
+   "id": "2311.01874v3#env-4",
    "type": "env",
-   "k": 6,
+   "k": 4,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -551,15 +437,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-7",
-   "type": "env",
-   "k": 7,
+   "id": "2311.01874v3#proof-3",
+   "type": "proof",
+   "k": 3,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 384
@@ -568,12 +452,12 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-8",
+   "id": "2311.01874v3#env-5",
    "type": "env",
-   "k": 8,
+   "k": 5,
    "env": "choice",
    "title": "Choice",
-   "item": "unknown",
+   "item": "context/hypothesis",
    "counter": "theorem",
    "number": "5.3.1",
    "number_from": "render",
@@ -588,9 +472,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-9",
+   "id": "2311.01874v3#env-6",
    "type": "env",
-   "k": 9,
+   "k": 6,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -605,15 +489,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-10",
-   "type": "env",
-   "k": 10,
+   "id": "2311.01874v3#proof-4",
+   "type": "proof",
+   "k": 4,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 440
@@ -622,9 +504,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-11",
+   "id": "2311.01874v3#env-7",
    "type": "env",
-   "k": 11,
+   "k": 7,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -642,9 +524,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-12",
+   "id": "2311.01874v3#env-8",
    "type": "env",
-   "k": 12,
+   "k": 8,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -662,9 +544,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-13",
+   "id": "2311.01874v3#env-9",
    "type": "env",
-   "k": 13,
+   "k": 9,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -682,9 +564,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-14",
+   "id": "2311.01874v3#env-10",
    "type": "env",
-   "k": 14,
+   "k": 10,
    "env": "corollary",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -702,9 +584,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-15",
+   "id": "2311.01874v3#env-11",
    "type": "env",
-   "k": 15,
+   "k": 11,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
@@ -722,9 +604,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-16",
+   "id": "2311.01874v3#env-12",
    "type": "env",
-   "k": 16,
+   "k": 12,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -742,9 +624,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-17",
+   "id": "2311.01874v3#env-13",
    "type": "env",
-   "k": 17,
+   "k": 13,
    "env": "corollary",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -762,15 +644,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-18",
-   "type": "env",
-   "k": 18,
+   "id": "2311.01874v3#proof-5",
+   "type": "proof",
+   "k": 5,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 596
@@ -779,15 +659,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-19",
-   "type": "env",
-   "k": 19,
+   "id": "2311.01874v3#proof-6",
+   "type": "proof",
+   "k": 6,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "labels": [
     "eq:Ufpush"
    ],
@@ -799,9 +677,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-20",
+   "id": "2311.01874v3#env-14",
    "type": "env",
-   "k": 20,
+   "k": 14,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -819,15 +697,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-21",
-   "type": "env",
-   "k": 21,
+   "id": "2311.01874v3#proof-7",
+   "type": "proof",
+   "k": 7,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "labels": [
     "eq:graiH0",
     "eq:H0exact"
@@ -840,9 +716,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-22",
+   "id": "2311.01874v3#env-15",
    "type": "env",
-   "k": 22,
+   "k": 15,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -860,15 +736,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-23",
-   "type": "env",
-   "k": 23,
+   "id": "2311.01874v3#proof-8",
+   "type": "proof",
+   "k": 8,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 666
@@ -877,9 +751,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-24",
+   "id": "2311.01874v3#env-16",
    "type": "env",
-   "k": 24,
+   "k": 16,
    "env": "corollary",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -897,9 +771,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-25",
+   "id": "2311.01874v3#env-17",
    "type": "env",
-   "k": 25,
+   "k": 17,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -914,15 +788,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-26",
-   "type": "env",
-   "k": 26,
+   "id": "2311.01874v3#proof-9",
+   "type": "proof",
+   "k": 9,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 718
@@ -931,9 +803,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-27",
+   "id": "2311.01874v3#env-18",
    "type": "env",
-   "k": 27,
+   "k": 18,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -948,9 +820,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-28",
+   "id": "2311.01874v3#env-19",
    "type": "env",
-   "k": 28,
+   "k": 19,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -970,9 +842,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-29",
+   "id": "2311.01874v3#env-20",
    "type": "env",
-   "k": 29,
+   "k": 20,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
@@ -990,9 +862,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-30",
+   "id": "2311.01874v3#env-21",
    "type": "env",
-   "k": 30,
+   "k": 21,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1010,9 +882,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-31",
+   "id": "2311.01874v3#env-22",
    "type": "env",
-   "k": 31,
+   "k": 22,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
@@ -1027,9 +899,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-32",
+   "id": "2311.01874v3#env-23",
    "type": "env",
-   "k": 32,
+   "k": 23,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1047,9 +919,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-33",
+   "id": "2311.01874v3#env-24",
    "type": "env",
-   "k": 33,
+   "k": 24,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
@@ -1067,9 +939,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-34",
+   "id": "2311.01874v3#env-25",
    "type": "env",
-   "k": 34,
+   "k": 25,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1087,9 +959,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-35",
+   "id": "2311.01874v3#env-26",
    "type": "env",
-   "k": 35,
+   "k": 26,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1104,9 +976,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-36",
+   "id": "2311.01874v3#env-27",
    "type": "env",
-   "k": 36,
+   "k": 27,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -1121,9 +993,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-37",
+   "id": "2311.01874v3#env-28",
    "type": "env",
-   "k": 37,
+   "k": 28,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
@@ -1141,9 +1013,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-38",
+   "id": "2311.01874v3#env-29",
    "type": "env",
-   "k": 38,
+   "k": 29,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
@@ -1163,9 +1035,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-39",
+   "id": "2311.01874v3#env-30",
    "type": "env",
-   "k": 39,
+   "k": 30,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1183,15 +1055,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-40",
-   "type": "env",
-   "k": 40,
+   "id": "2311.01874v3#proof-10",
+   "type": "proof",
+   "k": 10,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "labels": [
     "fig:3",
     "eq:ZS",
@@ -1205,9 +1075,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-41",
+   "id": "2311.01874v3#env-31",
    "type": "env",
-   "k": 41,
+   "k": 31,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
@@ -1225,9 +1095,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-42",
+   "id": "2311.01874v3#env-32",
    "type": "env",
-   "k": 42,
+   "k": 32,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
@@ -1248,9 +1118,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-43",
+   "id": "2311.01874v3#env-33",
    "type": "env",
-   "k": 43,
+   "k": 33,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1271,15 +1141,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-44",
-   "type": "env",
-   "k": 44,
+   "id": "2311.01874v3#proof-11",
+   "type": "proof",
+   "k": 11,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1182
@@ -1288,9 +1156,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-45",
+   "id": "2311.01874v3#env-34",
    "type": "env",
-   "k": 45,
+   "k": 34,
    "env": "corollary",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -1308,15 +1176,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-46",
-   "type": "env",
-   "k": 46,
+   "id": "2311.01874v3#proof-12",
+   "type": "proof",
+   "k": 12,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1212
@@ -1325,9 +1191,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-47",
+   "id": "2311.01874v3#env-35",
    "type": "env",
-   "k": 47,
+   "k": 35,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
@@ -1342,9 +1208,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-48",
+   "id": "2311.01874v3#env-36",
    "type": "env",
-   "k": 48,
+   "k": 36,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
@@ -1359,9 +1225,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-49",
+   "id": "2311.01874v3#env-37",
    "type": "env",
-   "k": 49,
+   "k": 37,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1376,15 +1242,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-50",
-   "type": "env",
-   "k": 50,
+   "id": "2311.01874v3#proof-13",
+   "type": "proof",
+   "k": 13,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1300
@@ -1393,9 +1257,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-51",
+   "id": "2311.01874v3#env-38",
    "type": "env",
-   "k": 51,
+   "k": 38,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1413,9 +1277,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-52",
+   "id": "2311.01874v3#env-39",
    "type": "env",
-   "k": 52,
+   "k": 39,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
@@ -1430,9 +1294,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-53",
+   "id": "2311.01874v3#env-40",
    "type": "env",
-   "k": 53,
+   "k": 40,
    "env": "lemma",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -1453,15 +1317,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-54",
-   "type": "env",
-   "k": 54,
+   "id": "2311.01874v3#proof-14",
+   "type": "proof",
+   "k": 14,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1385
@@ -1470,9 +1332,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-55",
+   "id": "2311.01874v3#env-41",
    "type": "env",
-   "k": 55,
+   "k": 41,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1490,9 +1352,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-56",
+   "id": "2311.01874v3#env-42",
    "type": "env",
-   "k": 56,
+   "k": 42,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1513,15 +1375,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-57",
-   "type": "env",
-   "k": 57,
+   "id": "2311.01874v3#proof-15",
+   "type": "proof",
+   "k": 15,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1433
@@ -1530,15 +1390,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-58",
-   "type": "env",
-   "k": 58,
+   "id": "2311.01874v3#proof-16",
+   "type": "proof",
+   "k": 16,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1446
@@ -1547,9 +1405,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-59",
+   "id": "2311.01874v3#env-43",
    "type": "env",
-   "k": 59,
+   "k": 43,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1564,15 +1422,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-60",
-   "type": "env",
-   "k": 60,
+   "id": "2311.01874v3#proof-17",
+   "type": "proof",
+   "k": 17,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1473
@@ -1581,9 +1437,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-61",
+   "id": "2311.01874v3#env-44",
    "type": "env",
-   "k": 61,
+   "k": 44,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
@@ -1598,9 +1454,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-62",
+   "id": "2311.01874v3#env-45",
    "type": "env",
-   "k": 62,
+   "k": 45,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1620,9 +1476,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-63",
+   "id": "2311.01874v3#env-46",
    "type": "env",
-   "k": 63,
+   "k": 46,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1644,15 +1500,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-64",
-   "type": "env",
-   "k": 64,
+   "id": "2311.01874v3#proof-18",
+   "type": "proof",
+   "k": 18,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1569
@@ -1661,9 +1515,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-65",
+   "id": "2311.01874v3#env-47",
    "type": "env",
-   "k": 65,
+   "k": 47,
    "env": "example",
    "title": "Example",
    "item": "example",
@@ -1681,9 +1535,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-66",
+   "id": "2311.01874v3#env-48",
    "type": "env",
-   "k": 66,
+   "k": 48,
    "env": "example",
    "title": "Example",
    "item": "example",
@@ -1698,9 +1552,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-67",
+   "id": "2311.01874v3#env-49",
    "type": "env",
-   "k": 67,
+   "k": 49,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1718,9 +1572,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-68",
+   "id": "2311.01874v3#env-50",
    "type": "env",
-   "k": 68,
+   "k": 50,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
@@ -1735,9 +1589,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-69",
+   "id": "2311.01874v3#env-51",
    "type": "env",
-   "k": 69,
+   "k": 51,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1752,9 +1606,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-70",
+   "id": "2311.01874v3#env-52",
    "type": "env",
-   "k": 70,
+   "k": 52,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1772,9 +1626,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-71",
+   "id": "2311.01874v3#env-53",
    "type": "env",
-   "k": 71,
+   "k": 53,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1789,9 +1643,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-72",
+   "id": "2311.01874v3#env-54",
    "type": "env",
-   "k": 72,
+   "k": 54,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1809,15 +1663,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-73",
-   "type": "env",
-   "k": 73,
+   "id": "2311.01874v3#proof-19",
+   "type": "proof",
+   "k": 19,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1737
@@ -1826,9 +1678,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-74",
+   "id": "2311.01874v3#env-55",
    "type": "env",
-   "k": 74,
+   "k": 55,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
@@ -1846,9 +1698,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-75",
+   "id": "2311.01874v3#env-56",
    "type": "env",
-   "k": 75,
+   "k": 56,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1866,9 +1718,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-76",
+   "id": "2311.01874v3#env-57",
    "type": "env",
-   "k": 76,
+   "k": 57,
    "env": "proposition",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1889,15 +1741,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-77",
-   "type": "env",
-   "k": 77,
+   "id": "2311.01874v3#proof-20",
+   "type": "proof",
+   "k": 20,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1903
@@ -1906,9 +1756,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-78",
+   "id": "2311.01874v3#env-58",
    "type": "env",
-   "k": 78,
+   "k": 58,
    "env": "corollary",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -1926,9 +1776,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-79",
+   "id": "2311.01874v3#env-59",
    "type": "env",
-   "k": 79,
+   "k": 59,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1946,15 +1796,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-80",
-   "type": "env",
-   "k": 80,
+   "id": "2311.01874v3#proof-21",
+   "type": "proof",
+   "k": 21,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1929
@@ -1963,9 +1811,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-81",
+   "id": "2311.01874v3#env-60",
    "type": "env",
-   "k": 81,
+   "k": 60,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1980,9 +1828,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-82",
+   "id": "2311.01874v3#env-61",
    "type": "env",
-   "k": 82,
+   "k": 61,
    "env": "corollary",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -2000,15 +1848,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-83",
-   "type": "env",
-   "k": 83,
+   "id": "2311.01874v3#proof-22",
+   "type": "proof",
+   "k": 22,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 1979
@@ -2017,9 +1863,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-84",
+   "id": "2311.01874v3#env-62",
    "type": "env",
-   "k": 84,
+   "k": 62,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
@@ -2039,9 +1885,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-85",
+   "id": "2311.01874v3#env-63",
    "type": "env",
-   "k": 85,
+   "k": 63,
    "env": "definition",
    "title": "Definition",
    "item": "definition",
@@ -2056,9 +1902,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-86",
+   "id": "2311.01874v3#env-64",
    "type": "env",
-   "k": 86,
+   "k": 64,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -2076,9 +1922,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-87",
+   "id": "2311.01874v3#env-65",
    "type": "env",
-   "k": 87,
+   "k": 65,
    "env": "remark",
    "title": "Remark",
    "item": "remark",
@@ -2093,9 +1939,9 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-88",
+   "id": "2311.01874v3#env-66",
    "type": "env",
-   "k": 88,
+   "k": 66,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -2110,15 +1956,13 @@
    "result": "matched"
   },
   {
-   "id": "2311.01874v3#env-89",
-   "type": "env",
-   "k": 89,
+   "id": "2311.01874v3#proof-23",
+   "type": "proof",
+   "k": 23,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "counter": "proof",
-   "number": "Proof",
-   "number_from": "render",
    "pos": {
     "file": "sabbah_handbook_v3.tex",
     "line": 2054
