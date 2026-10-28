@@ -1,0 +1,3383 @@
+{
+ "paper": "2610.11545",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "fontenc",
+  "inputenc",
+  "babel",
+  "lmodern",
+  "array",
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "amsfonts",
+  "fancyhdr",
+  "enumitem",
+  "stmaryrd",
+  "dsfont",
+  "xcolor",
+  "csquotes",
+  "float",
+  "tikz",
+  "tikz-cd",
+  "geometry",
+  "hyperref",
+  "authblk",
+  "orcidlink"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 29 commands, 0 environments",
+  "tree: 293 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theoreme",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "nota",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "conjecture",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conv",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 136,
+  "label": 55,
+  "proof": 38,
+  "textref": 108
+ },
+ "matched": {
+  "env": 136,
+  "label": 55,
+  "proof": 38
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 136,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 134,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 87,
+  "unresolved": 21
+ },
+ "render": {
+  "theorems": 136,
+  "proofs": 38,
+  "agree": true,
+  "source_theorems": 136,
+  "source_proofs": 38
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-1",
+   "message": "the text names Theorem 1.5 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-26",
+   "message": "the text names Theorem 1.5 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-29",
+   "message": "the text names Theorem 8.15 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-31",
+   "message": "the text names Theorem 10.71 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-32",
+   "message": "the text names Theorem 10.17 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-36",
+   "message": "the text names Corollary 7.15 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-38",
+   "message": "the text names theorem 7.29 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-59",
+   "message": "the text names lemma \\ref{If f has no indifferent point, then Julia sets moves continuously} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-64",
+   "message": "the text names proposition \\ref{if classical julia set compact, then one attracting only} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-65",
+   "message": "the text names lemma \\ref{If f has no indifferent point, then Julia sets moves continuously} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-69",
+   "message": "the text names proposition \\ref{If moves continuously on X, then also on X_K} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-70",
+   "message": "the text names Proposition 1.3.5 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-71",
+   "message": "the text names proposition \\ref{If moves continuously on X_K, then also on X} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-72",
+   "message": "the text names Theorem 1.6 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-78",
+   "message": "the text names lemma \\ref{If f has no indifferent point, then Julia sets moves continuously} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-81",
+   "message": "the text names proposition \\ref{if no indifferent point, then julia set moves continuously in the hybrid setting} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-82",
+   "message": "the text names Theorem 8.15 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-85",
+   "message": "the text names Corollary 7.15 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-86",
+   "message": "the text names corollary 7.15 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-89",
+   "message": "the text names proposition \\ref{if no indifferent point, then julia set moves continuously in the hybrid setting} and the census has no such item (no-label)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.11545v1#textref-91",
+   "message": "the text names Theorem 7 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.11545v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theoreme",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "number": "Theorem",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 99
+   },
+   "last": 102,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theoreme",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "number": "Theorem",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 127
+   },
+   "last": 139,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "A",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 148
+   },
+   "last": 155,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "A",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 161
+   },
+   "last": 171,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "B",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 190
+   },
+   "last": 203,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "C",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 208
+   },
+   "last": 213,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.1",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 237
+   },
+   "last": 265,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "2.2",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 267
+   },
+   "last": 273,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.3",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 275
+   },
+   "last": 277,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.4",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 279
+   },
+   "last": 281,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.5",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 293
+   },
+   "last": 295,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "morphisme fini sur meme dimension est ouvert"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 306
+   },
+   "last": 309,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.7",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 311
+   },
+   "last": 313,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.8",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 327
+   },
+   "last": 339,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.9",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 341
+   },
+   "last": 347,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.10",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 351
+   },
+   "last": 363,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.11",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 365
+   },
+   "last": 373,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.12",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 377
+   },
+   "last": 389,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.13",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 391
+   },
+   "last": 393,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.14",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 398
+   },
+   "last": 403,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.15",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 405
+   },
+   "last": 407,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.16",
+   "number_from": "render",
+   "labels": [
+    "def trajectoire ensemble"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 412
+   },
+   "last": 421,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.17",
+   "number_from": "render",
+   "labels": [
+    "flowing k hyb -analytic space"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 423
+   },
+   "last": 427,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.18",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 451
+   },
+   "last": 457,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "2.19",
+   "number_from": "render",
+   "labels": [
+    "exemple de X infty"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 460
+   },
+   "last": 474,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.20",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 478
+   },
+   "last": 484,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.21",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 488
+   },
+   "last": 490,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.22",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 556
+   },
+   "last": 558,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.23",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 560
+   },
+   "last": 562,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.24",
+   "number_from": "render",
+   "labels": [
+    "immersion de Xan dans compactification"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 566
+   },
+   "last": 582,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.25",
+   "number_from": "render",
+   "labels": [
+    "prop section continue partie archi"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 584
+   },
+   "last": 589,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "2.26",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 591
+   },
+   "last": 593,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.27",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 596
+   },
+   "last": 602,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.28",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 609
+   },
+   "last": 627,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.29",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 633
+   },
+   "last": 643,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.30",
+   "number_from": "render",
+   "labels": [
+    "Definition chi_x"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 647
+   },
+   "last": 657,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.31",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 659
+   },
+   "last": 661,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.32",
+   "number_from": "render",
+   "labels": [
+    "lemma Temkin"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 664
+   },
+   "last": 666,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.33",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 671
+   },
+   "last": 675,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.34",
+   "number_from": "render",
+   "labels": [
+    "reduction is all of p when the point is in the interior"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 677
+   },
+   "last": 679,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 680
+   },
+   "last": 690,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.35",
+   "number_from": "render",
+   "labels": [
+    "elements dans tous les anneaux de valuation sont les inversibles"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 692
+   },
+   "last": 699,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 701
+   },
+   "last": 704,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2.36",
+   "number_from": "render",
+   "labels": [
+    "maximum modulus"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 707
+   },
+   "last": 709,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 711
+   },
+   "last": 720,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.37",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 722
+   },
+   "last": 724,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 735
+   },
+   "last": 762,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 764
+   },
+   "last": 768,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 772
+   },
+   "last": 774,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 777
+   },
+   "last": 779,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.5",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 782
+   },
+   "last": 806,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "Taking a field extension does not change the julia set"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 811
+   },
+   "last": 817,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 819
+   },
+   "last": 827,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "3.7",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 829
+   },
+   "last": 831,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.8",
+   "number_from": "render",
+   "labels": [
+    "classical Julia set is dense"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 845
+   },
+   "last": 847,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 848
+   },
+   "last": 853,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.9",
+   "number_from": "render",
+   "labels": [
+    "compact of k are compact in berkovich"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 858
+   },
+   "last": 864,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 865
+   },
+   "last": 877,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.10",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 879
+   },
+   "last": 885,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.11",
+   "number_from": "render",
+   "labels": [
+    "Repelling points are dense"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 889
+   },
+   "last": 892,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3.12",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 896
+   },
+   "last": 899,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.13",
+   "number_from": "render",
+   "labels": [
+    "repelling points of type I are dense in the Julia Set"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 903
+   },
+   "last": 905,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3.14",
+   "number_from": "render",
+   "labels": [
+    "NumberAttractingPointsBounded"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 914
+   },
+   "last": 917,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.15",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 921
+   },
+   "last": 930,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.16",
+   "number_from": "render",
+   "labels": [
+    "repelling in H_k implies infinitely many"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 936
+   },
+   "last": 939,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 941
+   },
+   "last": 947,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.17",
+   "number_from": "render",
+   "labels": [
+    "2 attracting points implies infinitely many"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 950
+   },
+   "last": 953,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3.18",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 957
+   },
+   "last": 967,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.19",
+   "number_from": "render",
+   "labels": [
+    "if classical julia set compact, then one attracting only"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 971
+   },
+   "last": 986,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 987
+   },
+   "last": 1005,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.20",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1010
+   },
+   "last": 1018,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.21",
+   "number_from": "render",
+   "labels": [
+    "Taking an algebraic field extension does not change the julia set"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1023
+   },
+   "last": 1029,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.22",
+   "number_from": "render",
+   "labels": [
+    "measure on the union of field extension has same support"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1033
+   },
+   "last": 1039,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1040
+   },
+   "last": 1064,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1067
+   },
+   "last": 1103,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.23",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1107
+   },
+   "last": 1109,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.24",
+   "number_from": "render",
+   "labels": [
+    "definition universal point and continuous section"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1112
+   },
+   "last": 1116,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.25",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1118
+   },
+   "last": 1121,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.26",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1123
+   },
+   "last": 1127,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.27",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1129
+   },
+   "last": 1134,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.28",
+   "number_from": "render",
+   "labels": [
+    "Taking the Julia set over a transcendental extension does not change it"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1138
+   },
+   "last": 1146,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1148
+   },
+   "last": 1163,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "3.29",
+   "number_from": "render",
+   "labels": [
+    "Taking the Julia set over any extension does not change it"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1166
+   },
+   "last": 1173,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.1",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1178
+   },
+   "last": 1182,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4.2",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1185
+   },
+   "last": 1191,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.3",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1199
+   },
+   "last": 1211,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "4.4",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1213
+   },
+   "last": 1215,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "Definition of the periodic point"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1217
+   },
+   "last": 1219,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-78",
+   "type": "env",
+   "k": 78,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.6",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1221
+   },
+   "last": 1227,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1229
+   },
+   "last": 1233,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-79",
+   "type": "env",
+   "k": 79,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.7",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1236
+   },
+   "last": 1238,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-80",
+   "type": "env",
+   "k": 80,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.8",
+   "number_from": "render",
+   "labels": [
+    "Definition of persistently indifferent"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1241
+   },
+   "last": 1247,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-81",
+   "type": "env",
+   "k": 81,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "4.9",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1249
+   },
+   "last": 1252,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-82",
+   "type": "env",
+   "k": 82,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "4.10",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1254
+   },
+   "last": 1258,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-83",
+   "type": "env",
+   "k": 83,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.11",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1260
+   },
+   "last": 1265,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-84",
+   "type": "env",
+   "k": 84,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.12",
+   "number_from": "render",
+   "labels": [
+    "Unstably and not persistently indifferent is the same in dimension one"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1267
+   },
+   "last": 1269,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1270
+   },
+   "last": 1277,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-85",
+   "type": "env",
+   "k": 85,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.13",
+   "number_from": "render",
+   "labels": [
+    "Unstably and not persistently indifferent is the same"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1281
+   },
+   "last": 1287,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1289
+   },
+   "last": 1295,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-86",
+   "type": "env",
+   "k": 86,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4.14",
+   "number_from": "render",
+   "labels": [
+    "JuliaSetMovesContinuouslyNonArchi"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1299
+   },
+   "last": 1305,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1307
+   },
+   "last": 1335,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-87",
+   "type": "env",
+   "k": 87,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.15",
+   "number_from": "render",
+   "labels": [
+    "JuliaSetsMovesContinuouslyIfAttractingBounded"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1339
+   },
+   "last": 1350,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1352
+   },
+   "last": 1368,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-88",
+   "type": "env",
+   "k": 88,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "4.16",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1370
+   },
+   "last": 1372,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-89",
+   "type": "env",
+   "k": 89,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.17",
+   "number_from": "render",
+   "labels": [
+    "z^2+ T has only repelling points"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1378
+   },
+   "last": 1381,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1382
+   },
+   "last": 1402,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-90",
+   "type": "env",
+   "k": 90,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.18",
+   "number_from": "render",
+   "labels": [
+    "Tz^3 + Z^2 moves continuously"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1404
+   },
+   "last": 1408,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1409
+   },
+   "last": 1418,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-91",
+   "type": "env",
+   "k": 91,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.19",
+   "number_from": "render",
+   "labels": [
+    "If f has no indifferent point, then Julia sets moves continuously"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1422
+   },
+   "last": 1424,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1425
+   },
+   "last": 1434,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-92",
+   "type": "env",
+   "k": 92,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "4.20",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1436
+   },
+   "last": 1440,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-93",
+   "type": "env",
+   "k": 93,
+   "env": "nota",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "thm",
+   "number": "4.21",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1446
+   },
+   "last": 1448,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-94",
+   "type": "env",
+   "k": 94,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.22",
+   "number_from": "render",
+   "labels": [
+    "If moves continuously on X, then also on X_K"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1450
+   },
+   "last": 1454,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1456
+   },
+   "last": 1462,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-95",
+   "type": "env",
+   "k": 95,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.23",
+   "number_from": "render",
+   "labels": [
+    "If moves continuously on X_K, then also on X"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1464
+   },
+   "last": 1468,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1470
+   },
+   "last": 1484,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-96",
+   "type": "env",
+   "k": 96,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.24",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1486
+   },
+   "last": 1493,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-97",
+   "type": "env",
+   "k": 97,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.25",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1497
+   },
+   "last": 1505,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1507
+   },
+   "last": 1515,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-98",
+   "type": "env",
+   "k": 98,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.26",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1517
+   },
+   "last": 1525,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1526
+   },
+   "last": 1540,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-99",
+   "type": "env",
+   "k": 99,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.27",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1542
+   },
+   "last": 1544,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1546
+   },
+   "last": 1553,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-100",
+   "type": "env",
+   "k": 100,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "4.28",
+   "number_from": "render",
+   "labels": [
+    "definition of continuous motion in M_d^an"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1559
+   },
+   "last": 1564,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-101",
+   "type": "env",
+   "k": 101,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4.29",
+   "number_from": "render",
+   "labels": [
+    "Theorem of Marco Maculan"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1568
+   },
+   "last": 1579,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-102",
+   "type": "env",
+   "k": 102,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.30",
+   "number_from": "render",
+   "labels": [
+    "Construction of SL2 invariant open"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1585
+   },
+   "last": 1593,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1595
+   },
+   "last": 1612,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-103",
+   "type": "env",
+   "k": 103,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.31",
+   "number_from": "render",
+   "labels": [
+    "Julia moves continuously on Rat_d is the same as in M_d"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1614
+   },
+   "last": 1621,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-104",
+   "type": "env",
+   "k": 104,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "4.32",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1623
+   },
+   "last": 1625,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1627
+   },
+   "last": 1631,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-105",
+   "type": "env",
+   "k": 105,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.1",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1638
+   },
+   "last": 1640,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-106",
+   "type": "env",
+   "k": 106,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "if no indifferent point, then julia set moves continuously in the hybrid setting"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1644
+   },
+   "last": 1650,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1652
+   },
+   "last": 1668,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-107",
+   "type": "env",
+   "k": 107,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "If infinitely many non repelling then no continuous motion"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1670
+   },
+   "last": 1674,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-108",
+   "type": "env",
+   "k": 108,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "5.4",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1676
+   },
+   "last": 1678,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1680
+   },
+   "last": 1682,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-109",
+   "type": "env",
+   "k": 109,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.5",
+   "number_from": "render",
+   "labels": [
+    "JuliaSetSemiContinuous"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1689
+   },
+   "last": 1696,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1698
+   },
+   "last": 1700,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-110",
+   "type": "env",
+   "k": 110,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "def filled julia set, escape radius"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1703
+   },
+   "last": 1716,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-111",
+   "type": "env",
+   "k": 111,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.7",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1718
+   },
+   "last": 1724,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-112",
+   "type": "env",
+   "k": 112,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.8",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1726
+   },
+   "last": 1728,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1730
+   },
+   "last": 1734,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-113",
+   "type": "env",
+   "k": 113,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "5.9",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1736
+   },
+   "last": 1738,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-114",
+   "type": "env",
+   "k": 114,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.10",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1740
+   },
+   "last": 1746,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-115",
+   "type": "env",
+   "k": 115,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.11",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1748
+   },
+   "last": 1751,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1753
+   },
+   "last": 1759,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-116",
+   "type": "env",
+   "k": 116,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "5.12",
+   "number_from": "render",
+   "labels": [
+    "continuity in hybrid is not continuity on U_0 and U_\u003e0"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1769
+   },
+   "last": 1773,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-117",
+   "type": "env",
+   "k": 117,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.13",
+   "number_from": "render",
+   "labels": [
+    "Julia set is invariant through the flow"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1777
+   },
+   "last": 1781,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1783
+   },
+   "last": 1791,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-118",
+   "type": "env",
+   "k": 118,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.14",
+   "number_from": "render",
+   "labels": [
+    "Julia set moves continously on neighborhood is the same as on a flowing neighborhood"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1793
+   },
+   "last": 1797,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1799
+   },
+   "last": 1809,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-119",
+   "type": "env",
+   "k": 119,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.15",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1814
+   },
+   "last": 1816,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1818
+   },
+   "last": 1820,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-120",
+   "type": "env",
+   "k": 120,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.16",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1822
+   },
+   "last": 1828,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-121",
+   "type": "env",
+   "k": 121,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.17",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1830
+   },
+   "last": 1832,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-122",
+   "type": "env",
+   "k": 122,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "5.18",
+   "number_from": "render",
+   "labels": [
+    "Julia set moves continuously hybrid setting"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1836
+   },
+   "last": 1848,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-123",
+   "type": "env",
+   "k": 123,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.19",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1850
+   },
+   "last": 1854,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1856
+   },
+   "last": 1905,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-124",
+   "type": "env",
+   "k": 124,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.20",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1907
+   },
+   "last": 1911,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-125",
+   "type": "env",
+   "k": 125,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.21",
+   "number_from": "render",
+   "labels": [
+    "definition of continuous motion in M_d^hyb"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1943
+   },
+   "last": 1949,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-126",
+   "type": "env",
+   "k": 126,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.22",
+   "number_from": "render",
+   "labels": [
+    "Construction of SL2 invariant open in hybrid setting"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1955
+   },
+   "last": 1964,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1966
+   },
+   "last": 1976,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-127",
+   "type": "env",
+   "k": 127,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.23",
+   "number_from": "render",
+   "labels": [
+    "pi^hyb is open under some conditions"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1982
+   },
+   "last": 1988,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-128",
+   "type": "env",
+   "k": 128,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.24",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1990
+   },
+   "last": 1992,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-129",
+   "type": "env",
+   "k": 129,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.25",
+   "number_from": "render",
+   "labels": [
+    "Julia moves continuously on Rat_d is the same as in M_d in hybrid setting"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 1996
+   },
+   "last": 2003,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-130",
+   "type": "env",
+   "k": 130,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.26",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 2005
+   },
+   "last": 2007,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 2009
+   },
+   "last": 2013,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-131",
+   "type": "env",
+   "k": 131,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "5.27",
+   "number_from": "render",
+   "labels": [
+    "homeomorphism between compactifications"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 2019
+   },
+   "last": 2026,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-132",
+   "type": "env",
+   "k": 132,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "5.28",
+   "number_from": "render",
+   "labels": [
+    "continuously on compactification of Ratd is the same as on compactification of Md"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 2028
+   },
+   "last": 2039,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-133",
+   "type": "env",
+   "k": 133,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.29",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 2049
+   },
+   "last": 2054,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-134",
+   "type": "env",
+   "k": 134,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.30",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 2056
+   },
+   "last": 2062,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-135",
+   "type": "env",
+   "k": 135,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "5.31",
+   "number_from": "render",
+   "labels": [
+    "InGoodHyperbolicComponentsJuliaSetContinuousIFFMulitpliersBlowUp"
+   ],
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 2068
+   },
+   "last": 2072,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 2074
+   },
+   "last": 2089,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11545v1#env-136",
+   "type": "env",
+   "k": 136,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.32",
+   "number_from": "render",
+   "pos": {
+    "file": "Continuity_Julia_Set_Non_archimedean_Hybrid_arxiv.tex",
+    "line": 2091
+   },
+   "last": 2093,
+   "result": "matched"
+  }
+ ]
+}

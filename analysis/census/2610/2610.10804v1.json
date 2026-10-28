@@ -1,0 +1,1399 @@
+{
+ "paper": "2610.10804",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "arXiv_v1.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "subfiles",
+  "comment",
+  "float",
+  "marginnote",
+  "tabu",
+  "euscript",
+  "xcolor",
+  "quiver",
+  "graphicx",
+  "amssymb",
+  "mathrsfs",
+  "amsthm",
+  "amsmath",
+  "stmaryrd",
+  "tikz",
+  "tikz-cd",
+  "accents",
+  "upgreek",
+  "enumerate",
+  "bm",
+  "mathtools",
+  "appendix",
+  "xy",
+  "caption",
+  "url",
+  "todonotes",
+  "colonequals",
+  "bbm",
+  "longtable",
+  "textcomp",
+  "mathalfa",
+  "xparse",
+  "cite",
+  "faktor",
+  "xfrac",
+  "derivative",
+  "tikz-3dplot",
+  "pgfplots",
+  "geometry",
+  "hyperref",
+  "cleveref"
+ ],
+ "steps": [
+  "unpack: 3 files",
+  "main: arXiv_v1.tex",
+  "include: 2 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 249 commands, 3 environments",
+  "tree: 107 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "innercustomthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innercustomthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innercustomcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innercustomcor",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innercustomprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innercustomprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "runningexample*",
+   "title": "Running example",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "aside",
+   "title": "Aside",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "aside*",
+   "title": "Aside",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "convention",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "exercise",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation*",
+   "title": "Notation",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition-definition",
+   "title": "Proposition-Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem-definition",
+   "title": "Theorem-Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "setting",
+   "title": "Setting",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem:main",
+   "title": "Theorem~\\ref{thm:legendrian motion group as pi_1 of embedding space}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem:map_on_legendrian_motions",
+   "title": "Theorem~\\ref{thm:map_on_legendrian_motions}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem:waldhausen_map",
+   "title": "Theorem~\\ref{thm:factoring_waldhausen_map}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  },
+  {
+   "env": "customthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innercustomthm",
+   "shared": "innercustomthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "customcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innercustomcor",
+   "shared": "innercustomcor",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "customprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innercustomprop",
+   "shared": "innercustomprop",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 36,
+  "label": 43,
+  "proof": 13,
+  "textref": 37
+ },
+ "matched": {
+  "env": 36,
+  "label": 43,
+  "proof": 13
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 35,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 30,
+  "disagree": 5,
+  "contiguity_gaps": 4
+ },
+ "textrefs": {
+  "resolved": 37,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 36,
+  "proofs": 10,
+  "agree": false,
+  "source_theorems": 36,
+  "source_proofs": 13,
+  "envs": [
+   {
+    "env": "claim",
+    "source": 0,
+    "render": 1
+   },
+   {
+    "env": "claim*",
+    "source": 1,
+    "render": 0
+   }
+  ]
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2610.10804v1#env-2",
+   "message": "Corollary B is the first in its scope of counter innercustomcor"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.10804v1#env-3",
+   "message": "Theorem C comes after A in counter innercustomthm"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.10804v1#env-4",
+   "message": "Proposition D is the first in its scope of counter innercustomprop"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.10804v1#env-28",
+   "message": "Theorem 3.7 is the first in its scope of counter innercustomthm"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.10804v1#env-1",
+   "message": "the counter model gives Theorem #1 and the second witness gives A"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.10804v1#env-2",
+   "message": "the counter model gives Corollary #1 and the second witness gives B"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.10804v1#env-3",
+   "message": "the counter model gives Theorem #1 and the second witness gives C"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.10804v1#env-4",
+   "message": "the counter model gives Proposition #1 and the second witness gives D"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.10804v1#env-28",
+   "message": "the counter model gives Theorem #1 and the second witness gives 3.7"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.10804v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "customthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innercustomthm",
+   "number": "A",
+   "number_from": "render",
+   "labels": [
+    "customthm:legendrian motion group as pi_1 of embedding space"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 48
+   },
+   "last": 50,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "customcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innercustomcor",
+   "number": "B",
+   "number_from": "render",
+   "labels": [
+    "customcor:legendrian isotopy implies isomorphism"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 54
+   },
+   "last": 56,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "customthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innercustomthm",
+   "number": "C",
+   "number_from": "render",
+   "labels": [
+    "customthm:legendrian motions as contactomorphisms of exterior"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 64
+   },
+   "last": 72,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "customprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innercustomprop",
+   "number": "D",
+   "number_from": "render",
+   "labels": [
+    "customprop:param to unparam"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 77
+   },
+   "last": 81,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "def:G-locally retractile"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 101
+   },
+   "last": 103,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "lem:properties of G-locally retractile spaces",
+    "lemitem:Cerf-Palais criterion",
+    "lemitem:equivariant map with local sections implies target is locally retractile"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 107
+   },
+   "last": 113,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "def:Legendrian-knot"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 124
+   },
+   "last": 126,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "prop:legendrian_approx"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 129
+   },
+   "last": 131,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "definition:contact_vector_field"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 144
+   },
+   "last": 146,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "def:contactomorphism"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 147
+   },
+   "last": 149,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "def:smooth motion"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 155
+   },
+   "last": 157,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.8",
+   "number_from": "render",
+   "labels": [
+    "def:stationary_motion"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 159
+   },
+   "last": 161,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.9",
+   "number_from": "render",
+   "labels": [
+    "def:equivalent_motions"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 175
+   },
+   "last": 177,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.10",
+   "number_from": "render",
+   "labels": [
+    "def:smooth motion group"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 181
+   },
+   "last": 184,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.11",
+   "number_from": "render",
+   "labels": [
+    "thm:smooth motion group is pi_1 of embedding space Wattenberg"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 195
+   },
+   "last": 197,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "def:Legendrian_motion"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 208
+   },
+   "last": 210,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "def:leg_stationary_motion"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 214
+   },
+   "last": 216,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "def:leg_equivalent_motions"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 227
+   },
+   "last": 229,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "def:legendrian motion group"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 232
+   },
+   "last": 235,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "proposition:homotopic_iff_equivalent"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 237
+   },
+   "last": 239,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 241
+   },
+   "last": 243,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "remark:orientation"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 253
+   },
+   "last": 255,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "thm:legendrian motion group as pi_1 of embedding space"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 259
+   },
+   "last": 261,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.8",
+   "number_from": "render",
+   "labels": [
+    "lem:local_contractibility"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 269
+   },
+   "last": 271,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 273
+   },
+   "last": 284,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.9",
+   "number_from": "render",
+   "labels": [
+    "thm:parametrised_fiber_bundle"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 286
+   },
+   "last": 295,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:time_dep_to_time_indept"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 297
+   },
+   "last": 383,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.10",
+   "number_from": "render",
+   "labels": [
+    "lem:prep for param_to_unparam prop in contact setting",
+    "lempart:Michor 13.5.2 in contact setting"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 403
+   },
+   "last": 411,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 413
+   },
+   "last": 423,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.11",
+   "number_from": "render",
+   "labels": [
+    "prop:param_to_unparam"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 425
+   },
+   "last": 432,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 434
+   },
+   "last": 471,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.10804v1#proof-5",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 449
+   },
+   "last": 456,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.10804v1#proof-5",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 458
+   },
+   "last": 460,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.10804v1#proof-5",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 463
+   },
+   "last": 467,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.12",
+   "number_from": "render",
+   "labels": [
+    "thm:unparametrised_fiber_bundle"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 473
+   },
+   "last": 481,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 483
+   },
+   "last": 491,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "customthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innercustomthm",
+   "number": "3.7",
+   "number_from": "render",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 495
+   },
+   "last": 497,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 499
+   },
+   "last": 526,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.13",
+   "number_from": "render",
+   "labels": [
+    "proposition:moving_around"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 532
+   },
+   "last": 534,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 535
+   },
+   "last": 539,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.14",
+   "number_from": "render",
+   "labels": [
+    "corollary:legendrian_isotopy_implies_isomorphism"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 541
+   },
+   "last": 543,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.15",
+   "number_from": "render",
+   "labels": [
+    "prop:commutative_diagram"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 549
+   },
+   "last": 559,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "thm:legendrian motions as contact mapping classes"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 569
+   },
+   "last": 577,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:param_to_unparam",
+    "eqn:htpy equiv with long embeddings times U(2)",
+    "eqn:fibration with long embeddings times U(2) as total space",
+    "eq:long_exact_sequence_fibration",
+    "eq:extracted exact sequence",
+    "eq:L motion group iso to pi1 of long embeddings",
+    "eq:homotopy_equivalence_loop_space_contactomorphism"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 579
+   },
+   "last": 665,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "parent": "2610.10804v1#proof-12",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 627
+   },
+   "last": 629,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2610.10804v1#proof-12",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 631
+   },
+   "last": 633,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 677
+   },
+   "last": 679,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 686
+   },
+   "last": 688,
+   "result": "matched"
+  },
+  {
+   "id": "2610.10804v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "cor:smooth noninvertible K all motions generated by complement diffeomorphisms"
+   ],
+   "pos": {
+    "file": "arXiv_v1.tex",
+    "line": 780
+   },
+   "last": 782,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

@@ -1,0 +1,850 @@
+{
+ "paper": "2610.11383",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "main.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amsmath",
+  "amssymb",
+  "amsfonts",
+  "xfrac",
+  "MnSymbol",
+  "amsthm",
+  "thmtools",
+  "cite",
+  "hyperref",
+  "todonotes",
+  "enumitem",
+  "graphicx",
+  "tikz-cd",
+  "tikz",
+  "color",
+  "import",
+  "cleveref",
+  "marginnote",
+  "geometry",
+  "subcaption"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: main.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 205 commands, 0 environments",
+  "tree: 62 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theoremA",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theoremA",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation*",
+   "title": "Observation",
+   "item": "statement/fact",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example*",
+   "title": "Example",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question*",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise*",
+   "title": "Exercise",
+   "item": "exercise",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact*",
+   "title": "Fact",
+   "item": "statement/fact",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation*",
+   "title": "Notation",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 19,
+  "label": 27,
+  "proof": 10,
+  "textref": 1
+ },
+ "matched": {
+  "env": 19,
+  "label": 27,
+  "proof": 10
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 19,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 19,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 1,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 19,
+  "proofs": 10,
+  "agree": true,
+  "source_theorems": 19,
+  "source_proofs": 10
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.11383v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theoremA",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theoremA",
+   "number": "A",
+   "number_from": "render",
+   "labels": [
+    "main thm"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 38
+   },
+   "last": 41,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theoremA",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theoremA",
+   "number": "B",
+   "number_from": "render",
+   "labels": [
+    "linearly growing are fir"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 52
+   },
+   "last": 56,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "reduction to normal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 102
+   },
+   "last": 109,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 110
+   },
+   "last": 119,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 125
+   },
+   "last": 132,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 136
+   },
+   "last": 138,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "fir to multiplicative"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 140
+   },
+   "last": 142,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 144
+   },
+   "last": 148,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 153
+   },
+   "last": 157,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "sum of indices"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 159
+   },
+   "last": 161,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 163
+   },
+   "last": 178,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "cor:gen Euler char"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 180
+   },
+   "last": 184,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 186
+   },
+   "last": 190,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.8",
+   "number_from": "render",
+   "labels": [
+    "reduction to UPG and normal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 201
+   },
+   "last": 207,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 209
+   },
+   "last": 214,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "canonical tree",
+    "T: vertex groups",
+    "T: finite index",
+    "T: commensurability invariance",
+    "T: edge groups linear",
+    "T: vertex groups linear",
+    "T: cylinders linear"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 221
+   },
+   "last": 238,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 244
+   },
+   "last": 276,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "eg:limiting tree",
+    "fig:Example1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 280
+   },
+   "last": 297,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 326
+   },
+   "last": 328,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 329
+   },
+   "last": 334,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 336
+   },
+   "last": 339,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "isomorphic covers"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 344
+   },
+   "last": 346,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "fig:Example2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 352
+   },
+   "last": 386,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "alpha of cover",
+    "desired equality"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 390
+   },
+   "last": 396,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq1",
+    "eq2",
+    "eq3",
+    "eq4",
+    "eq5"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 398
+   },
+   "last": 426,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.6",
+   "number_from": "render",
+   "labels": [
+    "prop:fir linear"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 430
+   },
+   "last": 434,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 436
+   },
+   "last": 468,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.7",
+   "number_from": "render",
+   "labels": [
+    "prop: multiplicative function for free-by-cyclic"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 477
+   },
+   "last": 479,
+   "result": "matched"
+  },
+  {
+   "id": "2610.11383v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 483
+   },
+   "last": 501,
+   "result": "matched"
+  }
+ ]
+}
