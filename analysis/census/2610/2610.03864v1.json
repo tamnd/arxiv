@@ -1,0 +1,690 @@
+{
+ "paper": "2610.03864",
+ "version": 1,
+ "extractor": "ax/v0.5.31",
+ "main": [
+  "arxiv.tex"
+ ],
+ "class": "revtex4-1",
+ "packages": [
+  "CJKutf8",
+  "amsthm",
+  "inputenc",
+  "amsmath",
+  "amssymb",
+  "amsfonts",
+  "stmaryrd",
+  "physics",
+  "dsfont",
+  "graphicx",
+  "xcolor",
+  "cancel",
+  "natbib",
+  "color",
+  "tikz",
+  "mathrsfs",
+  "relsize",
+  "multirow",
+  "hyperref",
+  "xy",
+  "ulem",
+  "float",
+  "bm",
+  "subfigure",
+  "environ",
+  "url",
+  "geometry",
+  "tikz-cd",
+  "adjustbox",
+  "mathtools"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: arxiv.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 69 commands, 0 environments",
+  "tree: 117 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hypothesis",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thmalpha",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thmalpha",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "coralpha",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thmalpha",
+   "shared": "thmalpha",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "defn",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ansatz",
+   "title": "Ansatz",
+   "item": "unknown",
+   "counter": "defn",
+   "shared": "defn",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation*",
+   "title": "Notation",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "trick*",
+   "title": "Trick",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "convention*",
+   "title": "Convention",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "defn",
+   "shared": "defn",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conclusion",
+   "title": "Conclusion",
+   "item": "other/section",
+   "counter": "conclusion",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:revtex4-1"
+  }
+ ],
+ "occurrences": {
+  "env": 18,
+  "label": 25,
+  "proof": 1,
+  "textref": 27
+ },
+ "matched": {
+  "env": 18,
+  "label": 25,
+  "proof": 1
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 15,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 27,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.03864v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "ansatz",
+   "title": "Ansatz",
+   "item": "unknown",
+   "counter": "defn",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "ansatz:mTO"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 485
+   },
+   "last": 488,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "notation*",
+   "title": "Notation",
+   "item": "definition/notation",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 490
+   },
+   "last": 492,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "defn",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "def:strongly"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 500
+   },
+   "last": 502,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "thm:mainA",
+    "item:A1",
+    "item:A2",
+    "item:A3",
+    "item:AmaptoPic",
+    "item:A5",
+    "Gaction"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 505
+   },
+   "last": 516,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "thm:mainB",
+    "item:B1",
+    "item:B2",
+    "item:BmaptoPic",
+    "item:groupH"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 521
+   },
+   "last": 531,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "lem:nonfaithful-crossed"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 571
+   },
+   "last": 583,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 584
+   },
+   "last": 586,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "eq:piPicbr",
+    "eq:picbr2svect"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 613
+   },
+   "last": 625,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5",
+   "number_from": "counter",
+   "labels": [
+    "cor:BFSF2C"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 631
+   },
+   "last": 634,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 664
+   },
+   "last": 667,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 669
+   },
+   "last": 672,
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "defn",
+   "number": "A1",
+   "number_from": "counter",
+   "labels": [
+    "def:BF2C",
+    "eq:braidingF2C"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 786
+   },
+   "last": 811,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "defn",
+   "number": "A2",
+   "number_from": "counter",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 814
+   },
+   "last": 818,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "defn",
+   "number": "A3",
+   "number_from": "counter",
+   "labels": [
+    "eq:cohobraided"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 820
+   },
+   "last": 826,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "defn",
+   "number": "A4",
+   "number_from": "counter",
+   "labels": [
+    "def:syllepticcenter"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 831
+   },
+   "last": 855,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "A1",
+   "number_from": "counter",
+   "labels": [
+    "thm:crossedextn"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 886
+   },
+   "last": 888,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "A2",
+   "number_from": "counter",
+   "labels": [
+    "prop:braidedextn"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 933
+   },
+   "last": 936,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "A3",
+   "number_from": "counter",
+   "labels": [
+    "thm:equiv"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 947
+   },
+   "last": 951,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.03864v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "defn",
+   "number": "A5",
+   "number_from": "counter",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 984
+   },
+   "last": 992,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

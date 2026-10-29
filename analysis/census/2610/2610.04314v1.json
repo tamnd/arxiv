@@ -1,0 +1,865 @@
+{
+ "paper": "2610.04314",
+ "version": 1,
+ "extractor": "ax/v0.5.31",
+ "main": [
+  "Aomoto_semi-simple.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "geometry",
+  "amsmath",
+  "amscd",
+  "amssymb",
+  "amsfonts",
+  "latexsym",
+  "wasysym",
+  "mathrsfs",
+  "mathtools",
+  "hhline",
+  "xcolor",
+  "xy",
+  "csquotes",
+  "url",
+  "centernot",
+  "hyperref",
+  "textcomp",
+  "tipa",
+  "tikz",
+  "graphicx",
+  "enumitem"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: Aomoto_semi-simple.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 160 commands, 0 environments",
+  "tree: 60 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lm",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "statement",
+   "title": "Statement",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thrm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "metatheorem",
+   "title": "Meta Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "alg",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ex*",
+   "title": "Example",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defprop",
+   "title": "Definition-Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture*",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 19,
+  "label": 21,
+  "proof": 14,
+  "textref": 22
+ },
+ "matched": {
+  "env": 19,
+  "label": 21,
+  "proof": 14
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 18,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 22,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.04314v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "thm:implications"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 355
+   },
+   "last": 361,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "counter",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 363
+   },
+   "last": 365,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "ex*",
+   "title": "Example",
+   "item": "example",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 373
+   },
+   "last": 375,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "thm:Aomoto-intro"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 379
+   },
+   "last": 381,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "thm:KP.rightway.thm",
+    "item:KP.rightway.thm.1",
+    "item:KP.rightway.thm.2",
+    "item:KP.rightway.thm.3",
+    "item:KP.rightway.thm.4"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 385
+   },
+   "last": 399,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5",
+   "number_from": "counter",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 401
+   },
+   "last": 413,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6",
+   "number_from": "counter",
+   "labels": [
+    "sub-Hodge"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 428
+   },
+   "last": 430,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:germ"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 431
+   },
+   "last": 447,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "7",
+   "number_from": "counter",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 449
+   },
+   "last": 451,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 452
+   },
+   "last": 467,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "8",
+   "number_from": "counter",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 469
+   },
+   "last": 471,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 472
+   },
+   "last": 475,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "9",
+   "number_from": "counter",
+   "labels": [
+    "prop:D-finite"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 486
+   },
+   "last": 489,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 491
+   },
+   "last": 518,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "10",
+   "number_from": "counter",
+   "labels": [
+    "lem:D-finite"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 521
+   },
+   "last": 530,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 532
+   },
+   "last": 637,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:claim:map:1",
+    "eq:claim:map:2"
+   ],
+   "parent": "2610.04314v1#proof-5",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 603
+   },
+   "last": 627,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 640
+   },
+   "last": 655,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "11",
+   "number_from": "counter",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 657
+   },
+   "last": 659,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "12",
+   "number_from": "counter",
+   "labels": [
+    "lem:derived-blow-up-formula",
+    "eq:derived-blow-up-formula"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 672
+   },
+   "last": 686,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 688
+   },
+   "last": 709,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "13",
+   "number_from": "counter",
+   "labels": [
+    "lem:relative-generic-projection"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 713
+   },
+   "last": 723,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 724
+   },
+   "last": 733,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "14",
+   "number_from": "counter",
+   "labels": [
+    "prop:vanishing"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 781
+   },
+   "last": 788,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "15",
+   "number_from": "counter",
+   "labels": [
+    "lemma:pushforward",
+    "eq:trivial LS"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 792
+   },
+   "last": 797,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 798
+   },
+   "last": 812,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "16",
+   "number_from": "counter",
+   "labels": [
+    "cor:sum"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 816
+   },
+   "last": 821,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 822
+   },
+   "last": 828,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 831
+   },
+   "last": 845,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 850
+   },
+   "last": 875,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "17",
+   "number_from": "counter",
+   "labels": [
+    "prop:foliated-geometry"
+   ],
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 896
+   },
+   "last": 912,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 914
+   },
+   "last": 937,
+   "result": "matched"
+  },
+  {
+   "id": "2610.04314v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "18",
+   "number_from": "counter",
+   "pos": {
+    "file": "Aomoto_semi-simple.tex",
+    "line": 940
+   },
+   "last": 946,
+   "result": "matched"
+  }
+ ]
+}
