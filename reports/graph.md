@@ -1,7 +1,7 @@
 # The graph of the analysis plane
 
 1,827 versions have edges, and the edges total 129,966. 82.1% of the statements have an incoming uses or proves edge, and 33.8% of the proofs use nothing. 113 versions have a cycle in the in-paper uses graph.
-Counted on 28 October 2026 from analysis/edges and analysis/objects. These are the checks of AX6.7.
+Counted on 29 October 2026 from analysis/edges and analysis/objects. These are the checks of AX6.7.
 
 ## The methods
 
