@@ -1,0 +1,723 @@
+{
+ "paper": "2610.05512",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "paper.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "jmlr2e",
+  "amsmath",
+  "amsfonts",
+  "dsfont",
+  "booktabs",
+  "multirow",
+  "lastpage"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: paper.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 72 commands, 3 environments",
+  "tree: 122 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "local:jmlr2e.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "local:jmlr2e.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:jmlr2e.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:jmlr2e.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:jmlr2e.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:jmlr2e.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:jmlr2e.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:jmlr2e.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:jmlr2e.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "",
+   "item": "unknown",
+   "counter": "assumption",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumptionalt",
+   "title": "",
+   "item": "unknown",
+   "counter": "assumptionalt",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof\\",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 19,
+  "label": 28,
+  "proof": 7,
+  "textref": 24
+ },
+ "matched": {
+  "env": 19,
+  "label": 28,
+  "proof": 7
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 19,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 13,
+  "disagree": 6,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 24,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 19,
+  "proofs": 7,
+  "agree": false,
+  "source_theorems": 19,
+  "source_proofs": 0
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2610.05512v1#env-1",
+   "message": "the counter model gives  (A1) and the second witness gives A1"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.05512v1#env-3",
+   "message": "the counter model gives  (A2) and the second witness gives A2"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.05512v1#env-4",
+   "message": "the counter model gives  (A3) and the second witness gives A3"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.05512v1#env-7",
+   "message": "the counter model gives  (A4) and the second witness gives A4"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.05512v1#env-10",
+   "message": "the counter model gives  (A4') and the second witness gives A4’"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.05512v1#env-13",
+   "message": "the counter model gives  (A5) and the second witness gives A5"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.05512v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "assumption",
+   "item": "unknown",
+   "counter": "assumption",
+   "number": "A1",
+   "number_from": "render",
+   "labels": [
+    "ass:continuous-paths"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 289
+   },
+   "last": 291,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "pos": {
+    "file": "paper.tex",
+    "line": 300
+   },
+   "last": 302,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "assumption",
+   "item": "unknown",
+   "counter": "assumption",
+   "number": "A2",
+   "number_from": "render",
+   "labels": [
+    "ass:compact-support-tau"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 306
+   },
+   "last": 308,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "assumption",
+   "item": "unknown",
+   "counter": "assumption",
+   "number": "A3",
+   "number_from": "render",
+   "labels": [
+    "ass:prior-p-finite"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 309
+   },
+   "last": 311,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "th:consistency-rates-h0"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 319
+   },
+   "last": 321,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "render",
+   "pos": {
+    "file": "paper.tex",
+    "line": 323
+   },
+   "last": 325,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "assumption",
+   "item": "unknown",
+   "counter": "assumption",
+   "number": "A4",
+   "number_from": "render",
+   "labels": [
+    "ass:positive-prior-mass"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 329
+   },
+   "last": 332,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "th:consistency-rates-h1"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 336
+   },
+   "last": 338,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5",
+   "number_from": "render",
+   "pos": {
+    "file": "paper.tex",
+    "line": 340
+   },
+   "last": 342,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "assumptionalt",
+   "item": "unknown",
+   "counter": "assumptionalt",
+   "number": "A4’",
+   "number_from": "render",
+   "labels": [
+    "ass:positive-prior-mass-alt"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 346
+   },
+   "last": 348,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "th:consistency-rates-h1-alt"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 358
+   },
+   "last": 360,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "7",
+   "number_from": "render",
+   "pos": {
+    "file": "paper.tex",
+    "line": 362
+   },
+   "last": 364,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "assumption",
+   "item": "unknown",
+   "counter": "assumption",
+   "number": "A5",
+   "number_from": "render",
+   "labels": [
+    "ass:uniform-consistency-plug-in"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 370
+   },
+   "last": 375,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "8",
+   "number_from": "render",
+   "labels": [
+    "prop:sample-cov-matrix-convergence"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 383
+   },
+   "last": 389,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "9",
+   "number_from": "render",
+   "labels": [
+    "th:consistency-rates-h0-plugin"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 393
+   },
+   "last": 395,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "10",
+   "number_from": "render",
+   "labels": [
+    "th:consistency-rates-h1-plugin"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 397
+   },
+   "last": 399,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "11",
+   "number_from": "render",
+   "labels": [
+    "prop:optimality-rates-h1"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 407
+   },
+   "last": 409,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof\\",
+   "item": "proof",
+   "labels": [
+    "eq:upper-bound-m-slab",
+    "eq:event-E-n-M",
+    "eq:deterministic-bound-sup-mslab"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 596
+   },
+   "last": 647,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof\\",
+   "item": "proof",
+   "labels": [
+    "eq:approximation-property-mu",
+    "eq:log-likelihood-H1",
+    "eq:lower-bound-m1"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 651
+   },
+   "last": 715,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof\\",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 719
+   },
+   "last": 733,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof\\",
+   "item": "proof",
+   "labels": [
+    "eq:rho-oas-denominator-convergence",
+    "eq:rho-frobenius-difference"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 745
+   },
+   "last": 794,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof\\",
+   "item": "proof",
+   "labels": [
+    "eq:upper-bound-m-slab-plugin"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 811
+   },
+   "last": 838,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof\\",
+   "item": "proof",
+   "labels": [
+    "eq:plugin-f-lower-bound",
+    "eq:log-likelihood-plugin",
+    "eq:cauchy-schwarz-plugin",
+    "eq:lower-bound-m1-plugin"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 842
+   },
+   "last": 888,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "12",
+   "number_from": "render",
+   "labels": [
+    "lem:expectation-identity"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 894
+   },
+   "last": 895,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof\\",
+   "item": "proof",
+   "labels": [
+    "eq:type-ii-error-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 899
+   },
+   "last": 925,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05512v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "13",
+   "number_from": "render",
+   "pos": {
+    "file": "paper.tex",
+    "line": 960
+   },
+   "last": 962,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

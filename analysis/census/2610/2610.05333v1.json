@@ -1,0 +1,1672 @@
+{
+ "paper": "2610.05333",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "iclr.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "iclr2027_conference",
+  "times",
+  "amsmath",
+  "amsfonts",
+  "bm",
+  "babel",
+  "enumitem",
+  "tcolorbox",
+  "xurl",
+  "xcolor",
+  "natbib",
+  "hyperref",
+  "amssymb",
+  "amsthm",
+  "amscd",
+  "mathrsfs",
+  "dsfont",
+  "graphicx",
+  "tikz",
+  "tabularx",
+  "array",
+  "booktabs",
+  "float",
+  "longtable",
+  "needspace",
+  "microtype",
+  "wasysym",
+  "comment",
+  "mathtools",
+  "multicol",
+  "multirow",
+  "diagbox",
+  "bbm",
+  "algorithm",
+  "algpseudocode",
+  "fancyhdr",
+  "subcaption",
+  "wrapfig",
+  "framed",
+  "color",
+  "cleveref",
+  "etoc"
+ ],
+ "steps": [
+  "unpack: 21 files",
+  "main: iclr.tex",
+  "include: 18 files read, 0 not found",
+  "local: 3 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 1060 commands, 1 environments",
+  "tree: 560 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "condition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "problem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 38,
+  "label": 124,
+  "proof": 29,
+  "textref": 11
+ },
+ "matched": {
+  "env": 38,
+  "label": 124,
+  "proof": 29
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 38,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 38,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 11,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 38,
+  "proofs": 29,
+  "agree": true,
+  "source_theorems": 38,
+  "source_proofs": 29
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.05333v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "def:main-prompt-generating-process"
+   ],
+   "pos": {
+    "file": "iclr_sections/2-prob.tex",
+    "line": 20
+   },
+   "last": 35,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "assump:smooth-latent-task"
+   ],
+   "pos": {
+    "file": "iclr_sections/3-rate.tex",
+    "line": 53
+   },
+   "last": 66,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "thm:main-generation-error",
+    "eq:main-predictive-generation-bound"
+   ],
+   "pos": {
+    "file": "iclr_sections/3-rate.tex",
+    "line": 94
+   },
+   "last": 106,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "thm:informal-task-uncertainty"
+   ],
+   "pos": {
+    "file": "iclr_sections/3-rate.tex",
+    "line": 248
+   },
+   "last": 266,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "cor:informal-task-generation",
+    "eq:informal-task-generation"
+   ],
+   "pos": {
+    "file": "iclr_sections/3-rate.tex",
+    "line": 280
+   },
+   "last": 289,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "C.1",
+   "number_from": "render",
+   "labels": [
+    "prop:balanced-dsm-identity",
+    "eq:balanced-dsm-excess-identity"
+   ],
+   "pos": {
+    "file": "iclr_sections/x2-diffusion.tex",
+    "line": 123
+   },
+   "last": 139,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x2-diffusion.tex",
+    "line": 141
+   },
+   "last": 153,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.1",
+   "number_from": "render",
+   "labels": [
+    "lem:balanced-score-truncation",
+    "eq:transformer-good-event-probability",
+    "eq:transformer-exceptional-score-energy",
+    "eq:derived-score-tail-bound"
+   ],
+   "pos": {
+    "file": "iclr_sections/x3-episode-kl.tex",
+    "line": 79
+   },
+   "last": 103,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x3-episode-kl.tex",
+    "line": 105
+   },
+   "last": 124,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.2",
+   "number_from": "render",
+   "labels": [
+    "lem:positive-smooth-latent-derived-regularity",
+    "eq:smooth-latent-derived-envelope",
+    "eq:smooth-latent-context-regularity",
+    "eq:smooth-latent-query-regularity",
+    "eq:smooth-latent-output-regularity"
+   ],
+   "pos": {
+    "file": "iclr_sections/x3-episode-kl.tex",
+    "line": 156
+   },
+   "last": 197,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:positive-smooth-latent-derived-constants",
+    "eq:positive-smooth-latent-derived-constants-sample"
+   ],
+   "pos": {
+    "file": "iclr_sections/x3-episode-kl.tex",
+    "line": 202
+   },
+   "last": 287,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.3",
+   "number_from": "render",
+   "labels": [
+    "lem:smooth-latent-normalized-basis-regularity",
+    "eq:smooth-latent-basis-regularity"
+   ],
+   "pos": {
+    "file": "iclr_sections/x3-episode-kl.tex",
+    "line": 423
+   },
+   "last": 469,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:appendix-smooth-latent-covariance-identity"
+   ],
+   "pos": {
+    "file": "iclr_sections/x3-episode-kl.tex",
+    "line": 471
+   },
+   "last": 546,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "D.4",
+   "number_from": "render",
+   "labels": [
+    "prop:episode-kl-score-approximation",
+    "eq:integrated-prior-weights",
+    "eq:integrated-episode-kl",
+    "eq:integrated-predictive-kl",
+    "eq:integrated-latent-score-bound"
+   ],
+   "pos": {
+    "file": "iclr_sections/x3-episode-kl.tex",
+    "line": 557
+   },
+   "last": 586,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:ou-relative-entropy-dissipation"
+   ],
+   "pos": {
+    "file": "iclr_sections/x3-episode-kl.tex",
+    "line": 588
+   },
+   "last": 636,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "E.1",
+   "number_from": "render",
+   "labels": [
+    "def:smooth-latent-score-class",
+    "eq:global-state-clipping-reduction",
+    "eq:smooth-latent-score-class-recursion",
+    "eq:smooth-latent-score-class-output",
+    "eq:smooth-latent-score-class-formal"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 49
+   },
+   "last": 182,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "E.1",
+   "number_from": "render",
+   "labels": [
+    "lem:smooth-latent-four-block-construction",
+    "eq:smooth-latent-four-block-output",
+    "eq:smooth-latent-posterior-logit-update"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 257
+   },
+   "last": 301,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:appendix-smooth-latent-binary-gate"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 339
+   },
+   "last": 366,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "E.2",
+   "number_from": "render",
+   "labels": [
+    "lem:attention-parameter-sensitivity"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 406
+   },
+   "last": 420,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 422
+   },
+   "last": 456,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "E.3",
+   "number_from": "render",
+   "labels": [
+    "lem:fixed-dimensional-holder-relu-approximation",
+    "eq:fixed-dimensional-holder-network-size",
+    "eq:fixed-dimensional-holder-parameter-stability"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 458
+   },
+   "last": 510,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 512
+   },
+   "last": 580,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "E.4",
+   "number_from": "render",
+   "labels": [
+    "lem:smooth-latent-time-local-basis",
+    "eq:smooth-latent-local-denominator-modulus",
+    "eq:smooth-latent-local-numerator-modulus",
+    "eq:smooth-latent-time-local-basis-size"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 589
+   },
+   "last": 657,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 659
+   },
+   "last": 704,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "E.5",
+   "number_from": "render",
+   "labels": [
+    "lem:smooth-latent-output-clipping",
+    "eq:smooth-latent-output-clipping-error",
+    "eq:smooth-latent-output-clipping-bias",
+    "eq:smooth-latent-output-clipping-tail"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 706
+   },
+   "last": 732,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:gaussian-radial-tail-moment"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 734
+   },
+   "last": 747,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "E.6",
+   "number_from": "render",
+   "labels": [
+    "prop:integrated-transformer-approximation",
+    "eq:integrated-transformer-approximation"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 924
+   },
+   "last": 940,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 942
+   },
+   "last": 957,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "E.7",
+   "number_from": "render",
+   "labels": [
+    "prop:smooth-latent-complexity",
+    "eq:smooth-latent-parameter-sensitivity",
+    "eq:smooth-latent-score-cover"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 971
+   },
+   "last": 1005,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "E.8",
+   "number_from": "render",
+   "labels": [
+    "lem:smooth-latent-four-block-sensitivity",
+    "eq:smooth-latent-initial-token-envelope",
+    "eq:smooth-latent-initial-token-sensitivity",
+    "eq:smooth-latent-recursion-envelope",
+    "eq:smooth-latent-recursion-sensitivity",
+    "eq:smooth-latent-token-envelope",
+    "eq:smooth-latent-token-sensitivity",
+    "eq:smooth-latent-four-block-final-sensitivity"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 1118
+   },
+   "last": 1163,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 1165
+   },
+   "last": 1200,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:smooth-latent-update-storage-bound",
+    "eq:smooth-latent-update-operation-bound",
+    "eq:smooth-latent-update-coefficient-bound"
+   ],
+   "pos": {
+    "file": "iclr_sections/x4-transformer.tex",
+    "line": 1202
+   },
+   "last": 1275,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "F.1",
+   "number_from": "render",
+   "labels": [
+    "prop:balanced-clipping-bias",
+    "eq:balanced-clipping-bias-gaussian",
+    "eq:balanced-clipping-bias"
+   ],
+   "pos": {
+    "file": "iclr_sections/x5-gener.tex",
+    "line": 65
+   },
+   "last": 80,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x5-gener.tex",
+    "line": 82
+   },
+   "last": 103,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "F.2",
+   "number_from": "render",
+   "labels": [
+    "thm:balanced-score-oracle",
+    "eq:score-class-envelope",
+    "eq:balanced-score-oracle"
+   ],
+   "pos": {
+    "file": "iclr_sections/x5-gener.tex",
+    "line": 201
+   },
+   "last": 229,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:appendix-bernstein-two-sided",
+    "eq:appendix-cover-transfer",
+    "eq:appendix-full-class-bernstein"
+   ],
+   "pos": {
+    "file": "iclr_sections/x5-gener.tex",
+    "line": 241
+   },
+   "last": 359,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "G.1",
+   "number_from": "render",
+   "labels": [
+    "lem:cube-holder-tv-stopping"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 147
+   },
+   "last": 157,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:appendix-zero-extension-translation",
+    "eq:appendix-zero-extension-dilation",
+    "eq:appendix-dilated-translation",
+    "eq:appendix-ou-holder-l1"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 159
+   },
+   "last": 210,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "G.2",
+   "number_from": "render",
+   "labels": [
+    "cor:conditional-tv-stopping",
+    "eq:posterior-predictive-tv-stopping"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 212
+   },
+   "last": 229,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 231
+   },
+   "last": 264,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "G.3",
+   "number_from": "render",
+   "labels": [
+    "lem:finite-energy-girsanov",
+    "eq:finite-energy-girsanov"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 277
+   },
+   "last": 311,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 313
+   },
+   "last": 362,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "G.4",
+   "number_from": "render",
+   "labels": [
+    "lem:exact-reverse-score-dynamics",
+    "eq:appendix-randomized-grid-score-identities",
+    "eq:appendix-randomized-grid-fisher-hessian",
+    "eq:appendix-randomized-grid-score-process"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 372
+   },
+   "last": 409,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 411
+   },
+   "last": 433,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "G.5",
+   "number_from": "render",
+   "labels": [
+    "prop:randomized-grid-discretization",
+    "eq:randomized-grid-discretization-bound",
+    "eq:randomized-grid-discretization-error"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 437
+   },
+   "last": 462,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:appendix-randomized-grid-cell-length",
+    "eq:appendix-randomized-grid-freezing-energy",
+    "eq:appendix-randomized-grid-quadrature"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 464
+   },
+   "last": 575,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "G.6",
+   "number_from": "render",
+   "labels": [
+    "cor:randomized-grid-update-bound",
+    "eq:randomized-grid-update-bound"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 590
+   },
+   "last": 624,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 626
+   },
+   "last": 647,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "G.7",
+   "number_from": "render",
+   "labels": [
+    "lem:smooth-latent-explicit-tail-bounds",
+    "eq:smooth-latent-tail-time-prefactors",
+    "eq:smooth-latent-tail-radius-probability",
+    "eq:smooth-latent-tail-energy-rate",
+    "eq:smooth-latent-tail-envelope-rate",
+    "eq:smooth-latent-label-tail-rate",
+    "eq:smooth-latent-tail-constant-condition",
+    "eq:smooth-latent-tail-total-rate"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 746
+   },
+   "last": 797,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 799
+   },
+   "last": 838,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "G.8",
+   "number_from": "render",
+   "labels": [
+    "thm:main-generation-error-formal"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 875
+   },
+   "last": 884,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:accuracy-cover-bound"
+   ],
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 885
+   },
+   "last": 936,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x6-sampling.tex",
+    "line": 957
+   },
+   "last": 993,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "H.1",
+   "number_from": "render",
+   "labels": [
+    "thm:main-task-uncertainty-and-minimax-rate",
+    "eq:main-predictive-information-bound",
+    "eq:main-task-uncertainty-bound"
+   ],
+   "pos": {
+    "file": "iclr_sections/x7-prompt.tex",
+    "line": 32
+   },
+   "last": 63,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "H.2",
+   "number_from": "render",
+   "labels": [
+    "lem:posterior-averaging"
+   ],
+   "pos": {
+    "file": "iclr_sections/x7-prompt.tex",
+    "line": 95
+   },
+   "last": 104,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x7-prompt.tex",
+    "line": 106
+   },
+   "last": 120,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "H.3",
+   "number_from": "render",
+   "labels": [
+    "lem:latent-predictive-information",
+    "eq:latent-kl-modulus",
+    "eq:latent-cumulative-information",
+    "eq:latent-one-step-kl"
+   ],
+   "pos": {
+    "file": "iclr_sections/x7-prompt.tex",
+    "line": 148
+   },
+   "last": 173,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:latent-reference-mixture-bound"
+   ],
+   "pos": {
+    "file": "iclr_sections/x7-prompt.tex",
+    "line": 175
+   },
+   "last": 233,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x7-prompt.tex",
+    "line": 235
+   },
+   "last": 276,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x7-prompt.tex",
+    "line": 287
+   },
+   "last": 389,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "H.4",
+   "number_from": "render",
+   "labels": [
+    "cor:task-conditional-prompt-rate",
+    "eq:main-smooth-latent-generation-rate",
+    "eq:main-latent-minimax-sandwich"
+   ],
+   "pos": {
+    "file": "iclr_sections/x7-prompt.tex",
+    "line": 413
+   },
+   "last": 437,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "iclr_sections/x7-prompt.tex",
+    "line": 444
+   },
+   "last": 463,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "I.1",
+   "number_from": "render",
+   "labels": [
+    "ex:smooth-latent-peak-shift"
+   ],
+   "pos": {
+    "file": "iclr_sections/x8-example.tex",
+    "line": 12
+   },
+   "last": 49,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "I.2",
+   "number_from": "render",
+   "labels": [
+    "ex:input-output-task-family"
+   ],
+   "pos": {
+    "file": "iclr_sections/x8-example.tex",
+    "line": 52
+   },
+   "last": 68,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "I.3",
+   "number_from": "render",
+   "labels": [
+    "ex:smooth-latent-families"
+   ],
+   "pos": {
+    "file": "iclr_sections/x8-example.tex",
+    "line": 72
+   },
+   "last": 79,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "I.4",
+   "number_from": "render",
+   "labels": [
+    "ex:smooth-latent-multimodal-mixtures"
+   ],
+   "pos": {
+    "file": "iclr_sections/x8-example.tex",
+    "line": 81
+   },
+   "last": 88,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.05333v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "number": "I.5",
+   "number_from": "render",
+   "labels": [
+    "ex:smooth-latent-exponential-families"
+   ],
+   "pos": {
+    "file": "iclr_sections/x8-example.tex",
+    "line": 90
+   },
+   "last": 97,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

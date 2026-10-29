@@ -1,0 +1,744 @@
+{
+ "paper": "2610.09998",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "arxiv.tex"
+ ],
+ "class": "IEEEtran",
+ "packages": [
+  "cite",
+  "amsmath",
+  "amssymb",
+  "amsfonts",
+  "algorithmic",
+  "graphicx",
+  "textcomp",
+  "xcolor",
+  "amsthm",
+  "comment",
+  "acronym",
+  "pgfplots"
+ ],
+ "steps": [
+  "unpack: 3 files",
+  "main: arxiv.tex",
+  "include: 3 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 4 commands, 0 environments",
+  "tree: 89 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "algorithm",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "algorithm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "construction",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "IEEEproof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:IEEEtran"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 21,
+  "label": 16,
+  "proof": 10,
+  "textref": 19
+ },
+ "matched": {
+  "env": 21,
+  "label": 16,
+  "proof": 10
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 21,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 21,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 16,
+  "unresolved": 3
+ },
+ "render": {
+  "theorems": 21,
+  "proofs": 10,
+  "agree": true,
+  "source_theorems": 21,
+  "source_proofs": 10
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.09998v1#textref-1",
+   "message": "the text names algorithm A and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.09998v1#textref-6",
+   "message": "the text names Algorithm \\ref{alg:encoder} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.09998v1#textref-17",
+   "message": "the text names Algorithm \\ref{alg:encoder} and the census has no such item (not-an-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.09998v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1",
+   "number_from": "render",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 129
+   },
+   "last": 135,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "def:binning"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 151
+   },
+   "last": 155,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "def:det_gc"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 178
+   },
+   "last": 187,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "definition",
+   "number": "4",
+   "number_from": "render",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 193
+   },
+   "last": 202,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "def:prob_gc"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 208
+   },
+   "last": 214,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "definition",
+   "number": "6",
+   "number_from": "render",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 216
+   },
+   "last": 218,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "7",
+   "number_from": "render",
+   "labels": [
+    "def:type"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 227
+   },
+   "last": 234,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definition",
+   "number": "8",
+   "number_from": "render",
+   "labels": [
+    "prop:exact_pmf"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 243
+   },
+   "last": 258,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definition",
+   "number": "9",
+   "number_from": "render",
+   "labels": [
+    "prop:type_compliance"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 264
+   },
+   "last": 267,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "10",
+   "number_from": "render",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 273
+   },
+   "last": 279,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definition",
+   "number": "11",
+   "number_from": "render",
+   "labels": [
+    "prop:class_cardinality"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 283
+   },
+   "last": 290,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "12",
+   "number_from": "render",
+   "labels": [
+    "def:global_GC_capacity"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 292
+   },
+   "last": 301,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definition",
+   "number": "13",
+   "number_from": "render",
+   "labels": [
+    "prop:global_capacity"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 307
+   },
+   "last": 323,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 325
+   },
+   "last": 327,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "definition",
+   "number": "14",
+   "number_from": "render",
+   "labels": [
+    "rem:eps_asymptotic"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 331
+   },
+   "last": 339,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definition",
+   "number": "15",
+   "number_from": "render",
+   "labels": [
+    "thm:window_prob_capacity"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 347
+   },
+   "last": 369,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 371
+   },
+   "last": 373,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "definition",
+   "number": "16",
+   "number_from": "render",
+   "labels": [
+    "rem:eps_window"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 375
+   },
+   "last": 378,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definition",
+   "number": "17",
+   "number_from": "render",
+   "labels": [
+    "prop:prefix_count"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 411
+   },
+   "last": 427,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 493
+   },
+   "last": 501,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 503
+   },
+   "last": 505,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 507
+   },
+   "last": 511,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 513
+   },
+   "last": 530,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 532
+   },
+   "last": 538,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 540
+   },
+   "last": 551,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 553
+   },
+   "last": 561,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "definition",
+   "number": "18",
+   "number_from": "render",
+   "labels": [
+    "cor:det_capacity",
+    "eq:def_G_deterministic"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 565
+   },
+   "last": 579,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 581
+   },
+   "last": 583,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "definition",
+   "number": "19",
+   "number_from": "render",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 587
+   },
+   "last": 589,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "definition",
+   "number": "20",
+   "number_from": "render",
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 597
+   },
+   "last": 599,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09998v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "definition",
+   "number": "21",
+   "number_from": "render",
+   "labels": [
+    "fig:worked_example"
+   ],
+   "pos": {
+    "file": "arxiv.tex",
+    "line": 618
+   },
+   "last": 654,
+   "result": "matched"
+  }
+ ]
+}

@@ -1,0 +1,461 @@
+{
+ "paper": "2610.07637",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "iclr2027_conference.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "iclr2027_conference",
+  "times",
+  "style/macros",
+  "amsthm",
+  "graphicx",
+  "placeins",
+  "xcolor",
+  "comment",
+  "titletoc",
+  "hyperref",
+  "url"
+ ],
+ "steps": [
+  "unpack: 20 files",
+  "main: iclr2027_conference.tex",
+  "include: 16 files read, 0 not found",
+  "local: 4 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 4 decided, 0 flag tests decided, 0 kept",
+  "macros: 143 commands, 1 environments",
+  "tree: 311 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "result",
+   "title": "Result",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 10,
+  "label": 42,
+  "proof": 4,
+  "textref": 31
+ },
+ "matched": {
+  "env": 10,
+  "label": 42,
+  "proof": 4
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 10,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 10,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 31,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 10,
+  "proofs": 4,
+  "agree": true,
+  "source_theorems": 10,
+  "source_proofs": 4
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.07637v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "asm:loss-regularity",
+    "eq:noise-averaged-training-loss"
+   ],
+   "pos": {
+    "file": "section/model.tex",
+    "line": 93
+   },
+   "last": 112,
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "prop:test-prediction-generalization",
+    "eq:limiting-stable-generalization-error"
+   ],
+   "pos": {
+    "file": "section/main_result.tex",
+    "line": 32
+   },
+   "last": 50,
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "result",
+   "title": "Result",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "res:learned-parameter-statistics",
+    "eq:learned-empirical-law-main",
+    "eq:learned-empirical-law-main_q"
+   ],
+   "pos": {
+    "file": "section/main_result.tex",
+    "line": 102
+   },
+   "last": 118,
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "prop:gaussian-universality",
+    "eq:gaussian-coefficient-error-universality"
+   ],
+   "pos": {
+    "file": "section/universality.tex",
+    "line": 8
+   },
+   "last": 21,
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "result",
+   "title": "Result",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5",
+   "number_from": "render",
+   "labels": [
+    "res:heavy-tail-universality",
+    "eq:stable-domain-universality-tail",
+    "eq:stable-coefficient-error-universality"
+   ],
+   "pos": {
+    "file": "section/universality.tex",
+    "line": 31
+   },
+   "last": 52,
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "result",
+   "title": "Result",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "res:data-rich-tail-reliability",
+    "eq:data-rich-coefficient-error",
+    "eq:data-rich-fixed-threshold-failure",
+    "eq:data-rich-fixed-threshold-failure-gauss"
+   ],
+   "pos": {
+    "file": "section/data_rich_scaling.tex",
+    "line": 9
+   },
+   "last": 58,
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "result",
+   "title": "Result",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7",
+   "number_from": "render",
+   "labels": [
+    "res:bayes-optimal-error",
+    "eq:bayes-optimal-alpha-error-fixed-point",
+    "eq:bayes-optimal-alpha-error"
+   ],
+   "pos": {
+    "file": "section/bayes_benchmark.tex",
+    "line": 78
+   },
+   "last": 124,
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "result",
+   "title": "Result",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "8",
+   "number_from": "render",
+   "labels": [
+    "res:iid-elliptical-bayes-comparison",
+    "eq:iid-elliptical-bayes-ordering",
+    "eq:iid-elliptical-bayes-leading-order"
+   ],
+   "pos": {
+    "file": "section/bayes_benchmark.tex",
+    "line": 192
+   },
+   "last": 212,
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "9",
+   "number_from": "render",
+   "labels": [
+    "prop:replica-stable-poisson-transformation",
+    "eq:replica-stable-poisson-transform"
+   ],
+   "pos": {
+    "file": "section/replica_derivation.tex",
+    "line": 655
+   },
+   "last": 671,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:replica-poisson-product-identity",
+    "eq:replica-marked-summability",
+    "eq:replica-conditional-gaussian-series"
+   ],
+   "pos": {
+    "file": "section/replica_derivation.tex",
+    "line": 674
+   },
+   "last": 717,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "10",
+   "number_from": "render",
+   "labels": [
+    "prop:replica-scalar-reduction",
+    "eq:replica-factor-duality"
+   ],
+   "pos": {
+    "file": "section/replica_derivation.tex",
+    "line": 1284
+   },
+   "last": 1300,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:replica-factor-dual-value"
+   ],
+   "pos": {
+    "file": "section/replica_derivation.tex",
+    "line": 1302
+   },
+   "last": 1325,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:universality-small-frequency-expansion",
+    "eq:universality-infinitesimal-replica-array",
+    "eq:universality-asymptotic-stable-feature-average",
+    "eq:universality-one-sample-factor-replacement",
+    "eq:universality-replica-action-replacement"
+   ],
+   "pos": {
+    "file": "section/universality_proof.tex",
+    "line": 13
+   },
+   "last": 92,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.07637v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:data-rich-rescaled-root",
+    "eq:data-rich-regularizer-vanishes",
+    "eq:data-rich-root-bracket",
+    "eq:data-rich-limiting-root",
+    "eq:data-rich-moment-chain",
+    "eq:data-rich-coefficient-scale-proof",
+    "eq:data-rich-diverging-stable-threshold"
+   ],
+   "pos": {
+    "file": "section/data_rich_scaling_proof.tex",
+    "line": 197
+   },
+   "last": 342,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
