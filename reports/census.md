@@ -1,6 +1,6 @@
 # The census of the analysis plane
 
-2,702 versions have a census record, and 39 are stopped. 0.0% of the papers with a census have a gap, and 100.0% are strong or normal.
+2,892 versions have a census record, and 40 are stopped. 0.0% of the papers with a census have a gap, and 100.0% are strong or normal.
 Counted on 29 October 2026 from analysis/census, analysis/objects and analysis/stopped.
 
 ## The open papers in scope
@@ -9,12 +9,189 @@ AX-M3 is done when each open and share-alike paper in scope has the state extrac
 
 | State | Papers | Share |
 | --- | ---: | ---: |
-| extracted | 2,700 | 1.9% |
+| extracted | 2,890 | 2.0% |
 | stopped | 26 | 0.0% |
-| not yet | 138,993 | 98.1% |
-| all | 141,719 | 100.0% |
+| not yet | 138,802 | 97.9% |
+| all | 141,718 | 100.0% |
 
-The other 653,168 papers in scope are verbatim or record, and the corpus does not read their text. TheoremGraph gives the structure of 433,731 of them (66.4%), which is way R1 of AX2.5. The rest are stopped with the reason licence until AQ01 is settled.
+## The verbatim and record papers in scope
+
+AQ01 allows way R2 of AX2.5: the e-print of a verbatim or record paper is read in memory, and the analysis plane keeps only its structure and fingerprints, with no text of the paper (rule D06). AX-M8 is done when each of them has the state extracted or stopped. TheoremGraph also gives the structure of 433,731 of them (66.4%), which is way R1.
+
+| State | Papers | Share |
+| --- | ---: | ---: |
+| extracted | 0 | 0.0% |
+| stopped | 14 | 0.0% |
+| not yet | 653,155 | 100.0% |
+| all | 653,169 | 100.0% |
+
+## The papers in scope of each area
+
+Each paper in scope of each MSC code at two digits, of each licence class. The research layer is complete when the papers with no state and the census gaps are zero for each code, and the open rows of math2 are zero too (AX1.5).
+
+| Code | Papers | Extracted | Stopped | No state | Census gaps |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| adap-org | 5 | 0 | 0 | 5 | 0 |
+| alg-geom | 1,209 | 2 | 0 | 1,207 | 0 |
+| astro-ph | 106 | 0 | 0 | 106 | 0 |
+| astro-ph.CO | 112 | 0 | 0 | 112 | 0 |
+| astro-ph.EP | 208 | 0 | 0 | 208 | 0 |
+| astro-ph.GA | 34 | 0 | 0 | 34 | 0 |
+| astro-ph.HE | 32 | 1 | 0 | 31 | 0 |
+| astro-ph.IM | 148 | 0 | 0 | 148 | 0 |
+| astro-ph.SR | 77 | 1 | 0 | 76 | 0 |
+| atom-ph | 1 | 0 | 0 | 1 | 0 |
+| chao-dyn | 33 | 0 | 0 | 33 | 0 |
+| chem-ph | 1 | 0 | 0 | 1 | 0 |
+| cond-mat | 102 | 0 | 0 | 102 | 0 |
+| cond-mat.dis-nn | 593 | 1 | 0 | 592 | 0 |
+| cond-mat.mes-hall | 574 | 2 | 0 | 572 | 0 |
+| cond-mat.mtrl-sci | 338 | 0 | 0 | 338 | 0 |
+| cond-mat.other | 91 | 0 | 0 | 91 | 0 |
+| cond-mat.quant-gas | 211 | 0 | 0 | 211 | 0 |
+| cond-mat.soft | 436 | 0 | 0 | 436 | 0 |
+| cond-mat.stat-mech | 3,885 | 8 | 0 | 3,877 | 0 |
+| cond-mat.str-el | 783 | 2 | 0 | 781 | 0 |
+| cond-mat.supr-con | 96 | 0 | 0 | 96 | 0 |
+| cs.AI | 1,017 | 10 | 0 | 1,007 | 0 |
+| cs.AR | 52 | 0 | 0 | 52 | 0 |
+| cs.CC | 1,278 | 7 | 0 | 1,271 | 0 |
+| cs.CE | 781 | 3 | 0 | 778 | 0 |
+| cs.CG | 988 | 5 | 0 | 983 | 0 |
+| cs.CL | 332 | 2 | 0 | 330 | 0 |
+| cs.CR | 1,209 | 5 | 0 | 1,204 | 0 |
+| cs.CV | 934 | 2 | 0 | 932 | 0 |
+| cs.CY | 121 | 0 | 0 | 121 | 0 |
+| cs.DB | 73 | 0 | 0 | 73 | 0 |
+| cs.DC | 599 | 2 | 0 | 597 | 0 |
+| cs.DL | 44 | 0 | 0 | 44 | 0 |
+| cs.DM | 2,484 | 8 | 0 | 2,476 | 0 |
+| cs.DS | 2,762 | 23 | 1 | 2,738 | 0 |
+| cs.ET | 106 | 0 | 0 | 106 | 0 |
+| cs.FL | 401 | 2 | 0 | 399 | 0 |
+| cs.GL | 4 | 0 | 0 | 4 | 0 |
+| cs.GR | 131 | 1 | 0 | 130 | 0 |
+| cs.GT | 960 | 2 | 0 | 958 | 0 |
+| cs.HC | 68 | 0 | 0 | 68 | 0 |
+| cs.IR | 103 | 0 | 0 | 103 | 0 |
+| cs.IT | 41,018 | 109 | 1 | 40,908 | 0 |
+| cs.LG | 11,701 | 85 | 2 | 11,614 | 0 |
+| cs.LO | 1,765 | 8 | 0 | 1,757 | 0 |
+| cs.MA | 208 | 0 | 0 | 208 | 0 |
+| cs.MM | 54 | 0 | 0 | 54 | 0 |
+| cs.MS | 351 | 1 | 0 | 350 | 0 |
+| cs.NE | 396 | 0 | 0 | 396 | 0 |
+| cs.NI | 1,234 | 0 | 0 | 1,234 | 0 |
+| cs.OH | 41 | 0 | 0 | 41 | 0 |
+| cs.OS | 3 | 0 | 0 | 3 | 0 |
+| cs.PF | 187 | 3 | 0 | 184 | 0 |
+| cs.PL | 115 | 1 | 0 | 114 | 0 |
+| cs.RO | 799 | 3 | 0 | 796 | 0 |
+| cs.SC | 471 | 0 | 0 | 471 | 0 |
+| cs.SD | 69 | 0 | 0 | 69 | 0 |
+| cs.SE | 54 | 0 | 0 | 54 | 0 |
+| cs.SI | 604 | 0 | 0 | 604 | 0 |
+| dg-ga | 562 | 1 | 0 | 561 | 0 |
+| econ.EM | 389 | 1 | 0 | 388 | 0 |
+| econ.GN | 123 | 1 | 0 | 122 | 0 |
+| econ.TH | 248 | 1 | 0 | 247 | 0 |
+| eess.AS | 18 | 0 | 0 | 18 | 0 |
+| eess.IV | 313 | 0 | 0 | 313 | 0 |
+| eess.SP | 2,836 | 6 | 0 | 2,830 | 0 |
+| eess.SY | 4,597 | 28 | 0 | 4,569 | 0 |
+| funct-an | 320 | 0 | 0 | 320 | 0 |
+| gr-qc | 4,646 | 4 | 0 | 4,642 | 0 |
+| hep-ex | 2 | 0 | 0 | 2 | 0 |
+| hep-lat | 169 | 0 | 0 | 169 | 0 |
+| hep-ph | 319 | 0 | 0 | 319 | 0 |
+| hep-th | 13,603 | 44 | 0 | 13,559 | 0 |
+| math-ph | 34,971 | 62 | 0 | 34,909 | 0 |
+| math.AC | 9,902 | 44 | 0 | 9,858 | 0 |
+| math.AG | 41,849 | 130 | 0 | 41,719 | 0 |
+| math.AP | 61,044 | 214 | 1 | 60,829 | 0 |
+| math.AT | 10,338 | 48 | 0 | 10,290 | 0 |
+| math.CA | 17,308 | 68 | 0 | 17,240 | 0 |
+| math.CO | 57,136 | 244 | 2 | 56,890 | 0 |
+| math.CT | 4,914 | 24 | 2 | 4,888 | 0 |
+| math.CV | 12,243 | 54 | 1 | 12,188 | 0 |
+| math.DG | 34,036 | 121 | 4 | 33,911 | 0 |
+| math.DS | 27,018 | 89 | 0 | 26,929 | 0 |
+| math.FA | 23,850 | 85 | 1 | 23,764 | 0 |
+| math.GM | 4,806 | 36 | 6 | 4,764 | 0 |
+| math.GN | 3,788 | 18 | 0 | 3,770 | 0 |
+| math.GR | 16,756 | 78 | 1 | 16,677 | 0 |
+| math.GT | 17,876 | 62 | 2 | 17,812 | 0 |
+| math.HO | 3,473 | 11 | 1 | 3,461 | 0 |
+| math.KT | 2,721 | 3 | 0 | 2,718 | 0 |
+| math.LO | 11,582 | 56 | 1 | 11,525 | 0 |
+| math.MG | 7,223 | 49 | 0 | 7,174 | 0 |
+| math.NA | 38,323 | 122 | 1 | 38,200 | 0 |
+| math.NT | 39,442 | 171 | 2 | 39,269 | 0 |
+| math.OA | 9,170 | 44 | 0 | 9,126 | 0 |
+| math.OC | 41,597 | 155 | 5 | 41,437 | 0 |
+| math.PR | 46,037 | 138 | 1 | 45,898 | 0 |
+| math.QA | 9,912 | 17 | 0 | 9,895 | 0 |
+| math.RA | 12,814 | 57 | 0 | 12,757 | 0 |
+| math.RT | 17,766 | 44 | 0 | 17,722 | 0 |
+| math.SG | 5,498 | 9 | 0 | 5,489 | 0 |
+| math.SP | 5,437 | 19 | 0 | 5,418 | 0 |
+| math.ST | 17,485 | 73 | 1 | 17,411 | 0 |
+| nlin.AO | 363 | 1 | 0 | 362 | 0 |
+| nlin.CD | 960 | 1 | 0 | 959 | 0 |
+| nlin.CG | 76 | 0 | 0 | 76 | 0 |
+| nlin.PS | 536 | 0 | 0 | 536 | 0 |
+| nlin.SI | 2,548 | 5 | 0 | 2,543 | 0 |
+| nucl-ex | 3 | 0 | 0 | 3 | 0 |
+| nucl-th | 134 | 0 | 0 | 134 | 0 |
+| patt-sol | 4 | 0 | 0 | 4 | 0 |
+| physics.acc-ph | 65 | 0 | 0 | 65 | 0 |
+| physics.ao-ph | 167 | 0 | 0 | 167 | 0 |
+| physics.app-ph | 72 | 1 | 0 | 71 | 0 |
+| physics.atm-clus | 5 | 0 | 0 | 5 | 0 |
+| physics.atom-ph | 48 | 0 | 0 | 48 | 0 |
+| physics.bio-ph | 137 | 0 | 0 | 137 | 0 |
+| physics.chem-ph | 205 | 0 | 0 | 205 | 0 |
+| physics.class-ph | 462 | 0 | 0 | 462 | 0 |
+| physics.comp-ph | 960 | 2 | 0 | 958 | 0 |
+| physics.data-an | 239 | 0 | 0 | 239 | 0 |
+| physics.ed-ph | 32 | 0 | 0 | 32 | 0 |
+| physics.flu-dyn | 1,717 | 7 | 0 | 1,710 | 0 |
+| physics.gen-ph | 57 | 0 | 0 | 57 | 0 |
+| physics.geo-ph | 166 | 0 | 0 | 166 | 0 |
+| physics.hist-ph | 156 | 0 | 0 | 156 | 0 |
+| physics.ins-det | 12 | 0 | 0 | 12 | 0 |
+| physics.med-ph | 199 | 0 | 0 | 199 | 0 |
+| physics.optics | 407 | 1 | 0 | 406 | 0 |
+| physics.plasm-ph | 298 | 0 | 0 | 298 | 0 |
+| physics.pop-ph | 29 | 0 | 0 | 29 | 0 |
+| physics.soc-ph | 779 | 1 | 0 | 778 | 0 |
+| physics.space-ph | 26 | 0 | 0 | 26 | 0 |
+| q-alg | 1,177 | 0 | 0 | 1,177 | 0 |
+| q-bio.BM | 75 | 0 | 0 | 75 | 0 |
+| q-bio.CB | 81 | 1 | 0 | 80 | 0 |
+| q-bio.GN | 72 | 0 | 0 | 72 | 0 |
+| q-bio.MN | 253 | 0 | 0 | 253 | 0 |
+| q-bio.NC | 428 | 3 | 0 | 425 | 0 |
+| q-bio.OT | 19 | 0 | 0 | 19 | 0 |
+| q-bio.PE | 1,349 | 6 | 0 | 1,343 | 0 |
+| q-bio.QM | 344 | 2 | 0 | 342 | 0 |
+| q-bio.SC | 35 | 0 | 0 | 35 | 0 |
+| q-bio.TO | 70 | 0 | 0 | 70 | 0 |
+| q-fin.CP | 318 | 1 | 0 | 317 | 0 |
+| q-fin.GN | 92 | 0 | 0 | 92 | 0 |
+| q-fin.MF | 566 | 0 | 0 | 566 | 0 |
+| q-fin.PM | 394 | 2 | 0 | 392 | 0 |
+| q-fin.PR | 425 | 0 | 0 | 425 | 0 |
+| q-fin.RM | 311 | 1 | 0 | 310 | 0 |
+| q-fin.ST | 135 | 0 | 0 | 135 | 0 |
+| q-fin.TR | 148 | 0 | 0 | 148 | 0 |
+| quant-ph | 11,455 | 71 | 2 | 11,382 | 0 |
+| solv-int | 108 | 0 | 0 | 108 | 0 |
+| stat.AP | 490 | 0 | 0 | 490 | 0 |
+| stat.CO | 726 | 3 | 0 | 723 | 0 |
+| stat.ME | 3,707 | 16 | 1 | 3,690 | 0 |
+| stat.ML | 4,110 | 35 | 1 | 4,074 | 0 |
+| stat.OT | 85 | 0 | 0 | 85 | 0 |
 
 ## The measures of each extractor version
 
@@ -32,15 +209,16 @@ These are the measures of AX11.4. A new extractor version may not raise any of t
 | ax/v0.5.28 | 548 | 0.0% | 0.0% | 6.8% | 3.8% | 24.8% | 21.0% | 6.0% | 0.3% |
 | ax/v0.5.29 | 1,017 | 0.0% | 0.0% | 6.2% | 2.7% | 25.7% | 19.3% | 6.0% | 1.0% |
 | ax/v0.5.31 | 224 | 0.0% | 0.0% | 0.9% | 0.0% | 23.2% | 21.3% | 6.0% | 0.0% |
-| ax/v0.5.8 | 302 | 0.0% | 0.0% | 0.0% | 0.0% | 17.9% | 33.8% | 7.4% | 0.7% |
-| ax/v0.5.9 | 32 | 0.0% | 0.0% | 3.1% | 0.0% | 18.8% | 39.6% | 0.6% | 2.2% |
+| ax/v0.5.32 | 215 | 0.0% | 0.0% | 0.9% | 0.0% | 23.7% | 17.8% | 5.9% | 0.0% |
+| ax/v0.5.8 | 279 | 0.0% | 0.0% | 0.0% | 0.0% | 19.0% | 32.5% | 5.5% | 0.6% |
+| ax/v0.5.9 | 30 | 0.0% | 0.0% | 3.3% | 0.0% | 16.7% | 40.4% | 0.7% | 2.4% |
 
 ## The strength
 
 | Strength | Papers | Share |
 | --- | ---: | ---: |
-| strong | 1,864 | 69.0% |
-| normal | 838 | 31.0% |
+| strong | 1,880 | 65.0% |
+| normal | 1,012 | 35.0% |
 | weak | 0 | 0.0% |
 | none | 0 | 0.0% |
 
@@ -48,10 +226,10 @@ These are the measures of AX11.4. A new extractor version may not raise any of t
 
 | Reason | Versions |
 | --- | ---: |
-| no-source | 22 |
-| withdrawn | 0 |
+| no-source | 30 |
+| withdrawn | 2 |
 | not-math | 0 |
-| licence | 13 |
+| licence | 4 |
 | failed | 4 |
 
 ## The outside witnesses
@@ -60,7 +238,7 @@ TheoremSearch and TheoremGraph are a third count (AX4.5). They are not ground tr
 
 | Index | Versions in both | Same count | Index has more | Index has fewer | Excess over 1 | Other version |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| theoremgraph | 551 | 44.8% | 3.4% | 51.7% | 14 | 0 |
+| theoremgraph | 551 | 45.0% | 3.4% | 51.5% | 14 | 0 |
 | theoremsearch | 489 | 7.2% | 1.0% | 91.8% | 3 | 31 |
 
 ### census-diff from theoremgraph
@@ -100,9 +278,9 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 
 | Part | Files | Bytes | Estimate for the open papers in scope |
 | --- | ---: | ---: | ---: |
-| census | 2,702 | 44.9 MB | 2.30 GB |
-| objects | 2,533 | 254.6 MB | 13.04 GB |
-| stopped | 39 | 7 KB | - |
+| census | 2,892 | 48.1 MB | 2.30 GB |
+| objects | 2,716 | 272.4 MB | 13.03 GB |
+| stopped | 40 | 9 KB | - |
 | witness | 669 | 242.8 MB | - |
 
 ## By month
@@ -217,10 +395,10 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | 2019-09 | 1 | 39 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | 2019-10 | 2 | 13 | 0 | 0 | 1 | 0 | 0 | 100.0% |
 | 2019-11 | 1 | 56 | 0 | 0 | 0 | 0 | 1 | 100.0% |
-| 2019-12 | 4 | 66 | 0 | 0 | 0 | 0 | 2 | 100.0% |
+| 2019-12 | 4 | 78 | 0 | 0 | 0 | 0 | 2 | 100.0% |
 | 2020-01 | 1 | 19 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | 2020-02 | 2 | 44 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| 2020-04 | 3 | 56 | 0 | 0 | 0 | 0 | 0 | 100.0% |
+| 2020-04 | 3 | 58 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | 2020-05 | 1 | 44 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | 2020-06 | 3 | 104 | 0 | 0 | 0 | 0 | 1 | 100.0% |
 | 2020-07 | 1 | 43 | 0 | 0 | 0 | 0 | 0 | 100.0% |
@@ -229,7 +407,7 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | 2020-10 | 2 | 25 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | 2020-11 | 9 | 337 | 0 | 0 | 1 | 0 | 2 | 100.0% |
 | 2020-12 | 6 | 93 | 0 | 0 | 0 | 0 | 1 | 100.0% |
-| 2021-01 | 5 | 30 | 0 | 0 | 0 | 0 | 0 | 100.0% |
+| 2021-01 | 5 | 38 | 0 | 0 | 0 | 0 | 1 | 100.0% |
 | 2021-02 | 4 | 265 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | 2021-03 | 7 | 283 | 0 | 0 | 0 | 0 | 2 | 100.0% |
 | 2021-04 | 7 | 242 | 0 | 0 | 0 | 0 | 0 | 100.0% |
@@ -298,7 +476,7 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | 2026-07 | 13 | 526 | 0 | 0 | 0 | 0 | 2 | 100.0% |
 | 2026-08 | 11 | 524 | 0 | 0 | 3 | 0 | 1 | 100.0% |
 | 2026-09 | 27 | 1,170 | 0 | 0 | 2 | 0 | 9 | 100.0% |
-| 2026-10 | 1,825 | 79,338 | 0 | 0 | 104 | 57 | 454 | 100.0% |
+| 2026-10 | 2,015 | 87,349 | 0 | 0 | 106 | 57 | 502 | 100.0% |
 
 ## By code
 
@@ -306,85 +484,89 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | alg-geom | 2 | 165 | 0 | 0 | 1 | 0 | 1 | 100.0% |
 | astro-ph.HE | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
+| astro-ph.SR | 1 | 23 | 0 | 0 | 0 | 0 | 1 | 100.0% |
 | cond-mat.dis-nn | 1 | 14 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cond-mat.mes-hall | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cond-mat.stat-mech | 8 | 214 | 0 | 0 | 1 | 0 | 1 | 100.0% |
 | cond-mat.str-el | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| cs.AI | 9 | 143 | 0 | 0 | 1 | 0 | 1 | 100.0% |
-| cs.CC | 6 | 286 | 0 | 0 | 3 | 0 | 2 | 100.0% |
-| cs.CE | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 100.0% |
+| cs.AI | 10 | 156 | 0 | 0 | 1 | 0 | 2 | 100.0% |
+| cs.CC | 7 | 547 | 0 | 0 | 3 | 0 | 2 | 100.0% |
+| cs.CE | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.CG | 5 | 122 | 0 | 0 | 0 | 0 | 3 | 100.0% |
+| cs.CL | 2 | 39 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.CR | 5 | 194 | 0 | 0 | 1 | 0 | 2 | 100.0% |
 | cs.CV | 2 | 87 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.DC | 2 | 359 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| cs.DM | 7 | 326 | 0 | 0 | 2 | 1 | 2 | 100.0% |
-| cs.DS | 22 | 1,021 | 0 | 0 | 3 | 1 | 8 | 100.0% |
+| cs.DM | 8 | 370 | 0 | 0 | 2 | 1 | 2 | 100.0% |
+| cs.DS | 23 | 1,049 | 0 | 0 | 3 | 1 | 9 | 100.0% |
 | cs.FL | 2 | 77 | 0 | 0 | 0 | 0 | 1 | 100.0% |
 | cs.GR | 1 | 47 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.GT | 2 | 99 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| cs.IT | 105 | 2,283 | 0 | 0 | 7 | 3 | 10 | 100.0% |
-| cs.LG | 78 | 2,689 | 0 | 0 | 6 | 4 | 16 | 100.0% |
-| cs.LO | 7 | 311 | 0 | 0 | 1 | 0 | 0 | 100.0% |
+| cs.IT | 109 | 2,328 | 0 | 0 | 7 | 3 | 10 | 100.0% |
+| cs.LG | 86 | 2,989 | 0 | 0 | 6 | 4 | 17 | 100.0% |
+| cs.LO | 8 | 315 | 0 | 0 | 1 | 0 | 1 | 100.0% |
 | cs.MS | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.PF | 3 | 65 | 0 | 0 | 0 | 1 | 0 | 100.0% |
 | cs.PL | 1 | 316 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | cs.RO | 3 | 20 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | dg-ga | 1 | 40 | 0 | 0 | 0 | 0 | 1 | 100.0% |
+| econ.EM | 1 | 19 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | econ.GN | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | econ.TH | 1 | 26 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| eess.SP | 5 | 38 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| eess.SY | 27 | 292 | 0 | 0 | 3 | 0 | 4 | 100.0% |
+| eess.SP | 6 | 65 | 0 | 0 | 0 | 0 | 0 | 100.0% |
+| eess.SY | 28 | 303 | 0 | 0 | 3 | 0 | 4 | 100.0% |
 | gr-qc | 4 | 70 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | hep-th | 44 | 501 | 0 | 0 | 0 | 1 | 3 | 100.0% |
-| math-ph | 61 | 1,994 | 0 | 0 | 2 | 3 | 13 | 100.0% |
-| math.AC | 43 | 1,832 | 0 | 0 | 4 | 2 | 3 | 100.0% |
-| math.AG | 121 | 6,955 | 0 | 0 | 10 | 3 | 38 | 100.0% |
-| math.AP | 193 | 8,329 | 0 | 0 | 4 | 0 | 40 | 100.0% |
-| math.AT | 46 | 3,509 | 0 | 0 | 7 | 0 | 17 | 100.0% |
-| math.CA | 67 | 2,510 | 0 | 0 | 3 | 1 | 22 | 100.0% |
-| math.CO | 220 | 9,464 | 0 | 0 | 9 | 5 | 50 | 100.0% |
-| math.CT | 24 | 2,227 | 0 | 0 | 2 | 0 | 7 | 100.0% |
-| math.CV | 51 | 1,883 | 0 | 0 | 5 | 0 | 20 | 100.0% |
-| math.DG | 118 | 5,183 | 0 | 0 | 6 | 1 | 30 | 100.0% |
-| math.DS | 85 | 3,847 | 0 | 0 | 2 | 2 | 20 | 100.0% |
-| math.FA | 81 | 3,134 | 0 | 0 | 6 | 1 | 19 | 100.0% |
+| math-ph | 62 | 2,002 | 0 | 0 | 2 | 3 | 13 | 100.0% |
+| math.AC | 44 | 1,890 | 0 | 0 | 4 | 2 | 3 | 100.0% |
+| math.AG | 130 | 7,485 | 0 | 0 | 10 | 3 | 41 | 100.0% |
+| math.AP | 214 | 9,355 | 0 | 0 | 4 | 0 | 44 | 100.0% |
+| math.AT | 48 | 3,637 | 0 | 0 | 7 | 0 | 18 | 100.0% |
+| math.CA | 68 | 2,516 | 0 | 0 | 3 | 1 | 22 | 100.0% |
+| math.CO | 244 | 10,287 | 0 | 0 | 9 | 5 | 56 | 100.0% |
+| math.CT | 24 | 2,239 | 0 | 0 | 2 | 0 | 7 | 100.0% |
+| math.CV | 54 | 2,036 | 0 | 0 | 5 | 0 | 21 | 100.0% |
+| math.DG | 121 | 5,404 | 0 | 0 | 6 | 1 | 31 | 100.0% |
+| math.DS | 89 | 3,913 | 0 | 0 | 2 | 2 | 21 | 100.0% |
+| math.FA | 85 | 3,349 | 0 | 0 | 6 | 1 | 21 | 100.0% |
 | math.GM | 36 | 1,018 | 0 | 0 | 1 | 0 | 11 | 100.0% |
-| math.GN | 17 | 828 | 0 | 0 | 0 | 0 | 5 | 100.0% |
-| math.GR | 73 | 3,985 | 0 | 0 | 4 | 2 | 25 | 100.0% |
-| math.GT | 59 | 3,057 | 0 | 0 | 4 | 1 | 24 | 100.0% |
+| math.GN | 18 | 865 | 0 | 0 | 0 | 0 | 6 | 100.0% |
+| math.GR | 78 | 4,202 | 0 | 0 | 5 | 2 | 27 | 100.0% |
+| math.GT | 62 | 3,130 | 0 | 0 | 4 | 1 | 25 | 100.0% |
 | math.HO | 11 | 175 | 0 | 0 | 0 | 0 | 2 | 100.0% |
 | math.KT | 3 | 305 | 0 | 0 | 1 | 0 | 0 | 100.0% |
-| math.LO | 53 | 4,066 | 0 | 0 | 1 | 2 | 19 | 100.0% |
-| math.MG | 45 | 1,684 | 0 | 0 | 1 | 0 | 9 | 100.0% |
-| math.NA | 111 | 2,349 | 0 | 0 | 7 | 2 | 19 | 100.0% |
-| math.NT | 157 | 6,801 | 0 | 0 | 3 | 2 | 54 | 100.0% |
-| math.OA | 39 | 2,454 | 0 | 0 | 3 | 0 | 13 | 100.0% |
-| math.OC | 141 | 4,142 | 0 | 0 | 15 | 2 | 29 | 100.0% |
-| math.PR | 127 | 6,711 | 0 | 0 | 7 | 8 | 42 | 100.0% |
+| math.LO | 56 | 4,250 | 0 | 0 | 1 | 2 | 20 | 100.0% |
+| math.MG | 49 | 1,922 | 0 | 0 | 1 | 0 | 11 | 100.0% |
+| math.NA | 122 | 2,496 | 0 | 0 | 7 | 2 | 20 | 100.0% |
+| math.NT | 171 | 7,312 | 0 | 0 | 3 | 2 | 58 | 100.0% |
+| math.OA | 44 | 2,852 | 0 | 0 | 3 | 0 | 15 | 100.0% |
+| math.OC | 155 | 4,657 | 0 | 0 | 15 | 2 | 32 | 100.0% |
+| math.PR | 138 | 7,296 | 0 | 0 | 7 | 8 | 45 | 100.0% |
 | math.QA | 17 | 831 | 0 | 0 | 4 | 0 | 3 | 100.0% |
-| math.RA | 54 | 2,669 | 0 | 0 | 4 | 2 | 12 | 100.0% |
-| math.RT | 43 | 2,373 | 0 | 0 | 2 | 1 | 7 | 100.0% |
+| math.RA | 57 | 2,843 | 0 | 0 | 4 | 2 | 12 | 100.0% |
+| math.RT | 44 | 2,440 | 0 | 0 | 2 | 1 | 8 | 100.0% |
 | math.SG | 9 | 471 | 0 | 0 | 3 | 3 | 4 | 100.0% |
-| math.SP | 18 | 607 | 0 | 0 | 1 | 0 | 4 | 100.0% |
-| math.ST | 71 | 2,721 | 0 | 0 | 4 | 3 | 24 | 100.0% |
+| math.SP | 19 | 653 | 0 | 0 | 1 | 0 | 5 | 100.0% |
+| math.ST | 73 | 2,809 | 0 | 0 | 4 | 3 | 24 | 100.0% |
 | nlin.AO | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | nlin.CD | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | nlin.SI | 5 | 45 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | physics.app-ph | 1 | 16 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | physics.comp-ph | 2 | 5 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| physics.flu-dyn | 6 | 53 | 0 | 0 | 0 | 0 | 1 | 100.0% |
+| physics.flu-dyn | 7 | 53 | 0 | 0 | 0 | 0 | 1 | 100.0% |
 | physics.optics | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | physics.soc-ph | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| q-bio.NC | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
+| q-bio.CB | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
+| q-bio.NC | 3 | 19 | 0 | 0 | 0 | 0 | 1 | 100.0% |
 | q-bio.PE | 6 | 93 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | q-bio.QM | 2 | 28 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | q-fin.CP | 1 | 35 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | q-fin.PM | 2 | 40 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | q-fin.RM | 1 | 62 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| quant-ph | 63 | 2,434 | 0 | 0 | 5 | 1 | 14 | 100.0% |
+| quant-ph | 71 | 2,975 | 0 | 0 | 5 | 1 | 14 | 100.0% |
 | stat.CO | 3 | 87 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| stat.ME | 14 | 442 | 0 | 0 | 2 | 1 | 2 | 100.0% |
-| stat.ML | 33 | 1,177 | 0 | 0 | 1 | 3 | 7 | 100.0% |
+| stat.ME | 16 | 527 | 0 | 0 | 3 | 1 | 3 | 100.0% |
+| stat.ML | 35 | 1,225 | 0 | 0 | 1 | 3 | 8 | 100.0% |
 | unknown | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 
 ## The gap patterns

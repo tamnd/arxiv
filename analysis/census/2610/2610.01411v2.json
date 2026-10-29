@@ -1,0 +1,2307 @@
+{
+ "paper": "2610.01411",
+ "version": 2,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "paper.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "fontenc",
+  "inputenc",
+  "babel",
+  "geometry",
+  "amsmath",
+  "amssymb",
+  "mathtools",
+  "amsthm",
+  "mathalfa",
+  "microtype",
+  "titlesec",
+  "enumitem",
+  "booktabs",
+  "array",
+  "etoolbox",
+  "needspace",
+  "natbib",
+  "xurl",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: paper.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 24 commands, 8 environments",
+  "tree: 420 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "innerthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innerlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innerprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innercor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innerassumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innerdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innerremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innerexample",
+   "title": "Example",
+   "item": "example",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "innerthm",
+   "shared": "innerthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 55,
+  "label": 168,
+  "proof": 50,
+  "textref": 67
+ },
+ "matched": {
+  "env": 55,
+  "label": 168,
+  "proof": 50
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 55,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 67,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.01411v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "innerthm",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "ass:interpolation",
+    "eq:averaged-M"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 329
+   },
+   "last": 336,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "innerthm",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "lem:Taylor",
+    "eq:Phi",
+    "eq:Phi-norm"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 338
+   },
+   "last": 351,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 352
+   },
+   "last": 380,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "innerthm",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "lem:convolution",
+    "eq:conv-bounds"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 381
+   },
+   "last": 389,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 390
+   },
+   "last": 416,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "innerthm",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "lem:interpolation",
+    "eq:interpolation-identity"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 417
+   },
+   "last": 424,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 425
+   },
+   "last": 449,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "5",
+   "number_from": "counter",
+   "labels": [
+    "thm:terminal",
+    "eq:terminal-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 451
+   },
+   "last": 458,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:calc-first-generator-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 459
+   },
+   "last": 496,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innerthm",
+   "number": "6",
+   "number_from": "counter",
+   "labels": [
+    "cor:joint",
+    "eq:joint"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 497
+   },
+   "last": 505,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 506
+   },
+   "last": 513,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innerthm",
+   "number": "7",
+   "number_from": "counter",
+   "labels": [
+    "cor:Gaussian",
+    "eq:intro-constants",
+    "eq:equal-Gaussian"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 540
+   },
+   "last": 558,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 559
+   },
+   "last": 579,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "innerthm",
+   "number": "8",
+   "number_from": "counter",
+   "labels": [
+    "ex:chronological"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 580
+   },
+   "last": 599,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "9",
+   "number_from": "counter",
+   "labels": [
+    "ex:replacement",
+    "eq:replacement-third",
+    "eq:replacement-fourth"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 600
+   },
+   "last": 615,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 616
+   },
+   "last": 644,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "10",
+   "number_from": "counter",
+   "labels": [
+    "thm:response",
+    "eq:response-definition",
+    "eq:response-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 653
+   },
+   "last": 673,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:second-interpolation",
+    "eq:calc-first-insertion-bound",
+    "eq:D2-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 674
+   },
+   "last": 747,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innerthm",
+   "number": "11",
+   "number_from": "counter",
+   "labels": [
+    "cor:metric-response",
+    "eq:response-cdf",
+    "eq:metric-response",
+    "eq:directional-response"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 748
+   },
+   "last": 774,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 775
+   },
+   "last": 793,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "12",
+   "number_from": "counter",
+   "labels": [
+    "thm:transport-response",
+    "eq:transport-cdf",
+    "eq:transport-L1",
+    "eq:transport-W1",
+    "eq:transport-constant"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 838
+   },
+   "last": 865,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:calc-first-displacement-Taylor"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 866
+   },
+   "last": 938,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "13",
+   "number_from": "counter",
+   "labels": [
+    "prop:tangent-quotient",
+    "eq:tangent-kernel",
+    "eq:observable-norm",
+    "eq:tangent-contraction"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 967
+   },
+   "last": 988,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tangent-Fourier"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 989
+   },
+   "last": 1037,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "14",
+   "number_from": "counter",
+   "labels": [
+    "prop:reference-continuity",
+    "eq:reference-continuity",
+    "eq:reference-W1"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1047
+   },
+   "last": 1061,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1062
+   },
+   "last": 1079,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "15",
+   "number_from": "counter",
+   "labels": [
+    "thm:atomic-geometry",
+    "eq:chart-bilip",
+    "eq:metric-length"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1099
+   },
+   "last": 1130,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1131
+   },
+   "last": 1204,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "16",
+   "number_from": "counter",
+   "labels": [
+    "thm:lift-length",
+    "eq:general-length"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1208
+   },
+   "last": 1237,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:calc-first-lift-increments"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1238
+   },
+   "last": 1338,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "17",
+   "number_from": "counter",
+   "labels": [
+    "thm:two-jet",
+    "eq:two-jet",
+    "eq:two-jet-L1",
+    "eq:two-jet-W1",
+    "eq:two-jet-constant"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1378
+   },
+   "last": 1417,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:calc-second-operator"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1418
+   },
+   "last": 1530,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "18",
+   "number_from": "counter",
+   "labels": [
+    "thm:scalar-second",
+    "eq:scalar-second",
+    "eq:scalar-sign-remainder"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1538
+   },
+   "last": 1553,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:L1-scalar"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1554
+   },
+   "last": 1590,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "19",
+   "number_from": "counter",
+   "labels": [
+    "thm:cancellation",
+    "eq:cancelled-expansion",
+    "eq:cancelled-third",
+    "eq:cancelled-fourth"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1596
+   },
+   "last": 1619,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:min-remainder",
+    "eq:calc-second-fourier"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1620
+   },
+   "last": 1694,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "20",
+   "number_from": "counter",
+   "labels": [
+    "thm:lindeberg",
+    "eq:lindeberg-condition",
+    "eq:lindeberg-remainder"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1701
+   },
+   "last": 1727,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1728
+   },
+   "last": 1789,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "21",
+   "number_from": "counter",
+   "labels": [
+    "prop:second-matching",
+    "eq:matched-response"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1808
+   },
+   "last": 1824,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1825
+   },
+   "last": 1852,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "22",
+   "number_from": "counter",
+   "labels": [
+    "prop:raw-atom",
+    "eq:raw-first",
+    "eq:raw-second",
+    "eq:raw-remainder"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1867
+   },
+   "last": 1885,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1886
+   },
+   "last": 1920,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "23",
+   "number_from": "counter",
+   "labels": [
+    "thm:barycentric",
+    "eq:barycentric",
+    "eq:barycentric-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1937
+   },
+   "last": 1955,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1956
+   },
+   "last": 1992,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "24",
+   "number_from": "counter",
+   "labels": [
+    "thm:sharp-grid",
+    "eq:sharp-grid",
+    "eq:grid-lower-constant"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2035
+   },
+   "last": 2049,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:calc-second-grid-cost",
+    "eq:calc-second-characteristic-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2050
+   },
+   "last": 2117,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "25",
+   "number_from": "counter",
+   "labels": [
+    "prop:split-order",
+    "eq:move-order",
+    "eq:split-order"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2158
+   },
+   "last": 2174,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2175
+   },
+   "last": 2182,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "26",
+   "number_from": "counter",
+   "labels": [
+    "thm:remeshing-oracle",
+    "eq:remeshing-remainder",
+    "eq:balanced-oracle-remainder",
+    "eq:oracle"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2217
+   },
+   "last": 2241,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2242
+   },
+   "last": 2291,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "27",
+   "number_from": "counter",
+   "labels": [
+    "prop:LP-consistency"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2321
+   },
+   "last": 2330,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:objective-quadrature",
+    "eq:uniform-LP-error"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2331
+   },
+   "last": 2376,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "innerthm",
+   "number": "28",
+   "number_from": "counter",
+   "labels": [
+    "lem:atoms",
+    "eq:atoms"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2411
+   },
+   "last": 2416,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2417
+   },
+   "last": 2426,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "29",
+   "number_from": "counter",
+   "labels": [
+    "prop:cubic",
+    "eq:cubic"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2427
+   },
+   "last": 2437,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2438
+   },
+   "last": 2449,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "innerthm",
+   "number": "30",
+   "number_from": "counter",
+   "labels": [
+    "lem:moments",
+    "eq:moment-remainder"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2452
+   },
+   "last": 2465,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2466
+   },
+   "last": 2493,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "31",
+   "number_from": "counter",
+   "labels": [
+    "thm:crossover",
+    "eq:sharp-limit",
+    "eq:crossover"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2494
+   },
+   "last": 2512,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2513
+   },
+   "last": 2549,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "32",
+   "number_from": "counter",
+   "labels": [
+    "thm:modulus",
+    "eq:modulus"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2568
+   },
+   "last": 2578,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:regularized-terminal"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2579
+   },
+   "last": 2623,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "33",
+   "number_from": "counter",
+   "labels": [
+    "thm:multi-tangent",
+    "eq:multi-response",
+    "eq:multi-two-jet",
+    "eq:multi-second"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2686
+   },
+   "last": 2712,
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "innerthm",
+   "number": "34",
+   "number_from": "counter",
+   "labels": [
+    "lem:approximation"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 2813
+   },
+   "last": 2817,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2818
+   },
+   "last": 2848,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 2876
+   },
+   "last": 3050,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "35",
+   "number_from": "counter",
+   "labels": [
+    "sup:thm:state-response",
+    "sup:eq:state-q1",
+    "sup:eq:state-q2",
+    "sup:eq:state-remainder",
+    "sup:eq:state-W1"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3078
+   },
+   "last": 3108,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3109
+   },
+   "last": 3233,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "innerthm",
+   "number": "36",
+   "number_from": "counter",
+   "labels": [
+    "sup:lem:comparison",
+    "sup:eq:comparison"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3314
+   },
+   "last": 3325,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3326
+   },
+   "last": 3339,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "37",
+   "number_from": "counter",
+   "labels": [
+    "sup:prop:external-regularization",
+    "sup:eq:derivative-transfer",
+    "sup:eq:external-rate"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3383
+   },
+   "last": 3397,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3398
+   },
+   "last": 3423,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "innerthm",
+   "number": "38",
+   "number_from": "counter",
+   "labels": [
+    "sup:ass:one-sided",
+    "sup:eq:one-sided-derivatives"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3430
+   },
+   "last": 3439,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "39",
+   "number_from": "counter",
+   "labels": [
+    "sup:prop:additive-comparison"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3440
+   },
+   "last": 3447,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3448
+   },
+   "last": 3487,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "40",
+   "number_from": "counter",
+   "labels": [
+    "sup:thm:master",
+    "sup:eq:master"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3488
+   },
+   "last": 3501,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3502
+   },
+   "last": 3515,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innerthm",
+   "number": "41",
+   "number_from": "counter",
+   "labels": [
+    "sup:cor:profile-rates",
+    "sup:eq:finite-q",
+    "sup:eq:gaussian-profile-log"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3516
+   },
+   "last": 3530,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3531
+   },
+   "last": 3571,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "innerthm",
+   "number": "42",
+   "number_from": "counter",
+   "labels": [
+    "sup:rem:operator-singularity"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3576
+   },
+   "last": 3590,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "43",
+   "number_from": "counter",
+   "labels": [
+    "sup:prop:TV-comparison"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3601
+   },
+   "last": 3610,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3611
+   },
+   "last": 3633,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "44",
+   "number_from": "counter",
+   "labels": [
+    "sup:thm:matrix",
+    "sup:eq:matrix-stability",
+    "sup:eq:matrix-joint",
+    "sup:eq:matrix-gaussian"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3691
+   },
+   "last": 3713,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3714
+   },
+   "last": 3812,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "innerthm",
+   "number": "45",
+   "number_from": "counter",
+   "labels": [
+    "sup:ass:factor-regularity",
+    "sup:eq:factor-backward",
+    "sup:eq:factor-forward"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3848
+   },
+   "last": 3866,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "innerthm",
+   "number": "46",
+   "number_from": "counter",
+   "labels": [
+    "sup:lem:factor-transfer",
+    "sup:eq:factor-transfer"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3869
+   },
+   "last": 3884,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3885
+   },
+   "last": 3913,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "47",
+   "number_from": "counter",
+   "labels": [
+    "sup:thm:factor-bound",
+    "sup:eq:factor-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3914
+   },
+   "last": 3926,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-42",
+   "type": "proof",
+   "k": 42,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "sup:eq:factor-pairing"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3927
+   },
+   "last": 3983,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innerthm",
+   "number": "48",
+   "number_from": "counter",
+   "labels": [
+    "sup:cor:factor-countable"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 3984
+   },
+   "last": 3989,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-43",
+   "type": "proof",
+   "k": 43,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 3990
+   },
+   "last": 4016,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "49",
+   "number_from": "counter",
+   "labels": [
+    "sup:thm:factor-intensity",
+    "sup:eq:factor-intensity-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 4047
+   },
+   "last": 4057,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-44",
+   "type": "proof",
+   "k": 44,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "sup:eq:factor-gradient-equation",
+    "sup:eq:factor-gradient-bounds",
+    "sup:eq:factor-semigroup-derivatives",
+    "sup:eq:factor-forward-mild",
+    "sup:eq:factor-adjoint-bounds"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 4058
+   },
+   "last": 4223,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "50",
+   "number_from": "counter",
+   "labels": [
+    "sup:prop:factor-atom",
+    "sup:eq:factor-atom-response",
+    "sup:eq:factor-atom-order"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 4258
+   },
+   "last": 4274,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-45",
+   "type": "proof",
+   "k": 45,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "sup:eq:factor-atom-operator"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 4275
+   },
+   "last": 4334,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "51",
+   "number_from": "counter",
+   "labels": [
+    "sup:thm:finite-split",
+    "sup:eq:finite-split-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 4375
+   },
+   "last": 4390,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-46",
+   "type": "proof",
+   "k": 46,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4391
+   },
+   "last": 4436,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "52",
+   "number_from": "counter",
+   "labels": [
+    "sup:thm:finite-continuous",
+    "sup:eq:finite-continuous-bound",
+    "sup:eq:finite-continuous-joint"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 4464
+   },
+   "last": 4481,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-47",
+   "type": "proof",
+   "k": 47,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "sup:eq:finite-continuous-test"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 4482
+   },
+   "last": 4545,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "innerthm",
+   "number": "53",
+   "number_from": "counter",
+   "labels": [
+    "sup:cor:stable-terminal",
+    "sup:eq:stable-terminal-constants"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 4575
+   },
+   "last": 4589,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-48",
+   "type": "proof",
+   "k": 48,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4590
+   },
+   "last": 4609,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innerthm",
+   "number": "54",
+   "number_from": "counter",
+   "labels": [
+    "sup:thm:stable-onesided",
+    "sup:eq:stable-onesided-bound"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 4676
+   },
+   "last": 4687,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-49",
+   "type": "proof",
+   "k": 49,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4688
+   },
+   "last": 4725,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "innerthm",
+   "number": "55",
+   "number_from": "counter",
+   "labels": [
+    "sup:prop:quantization",
+    "sup:eq:quantization-certificate",
+    "sup:eq:quantization-tail"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 4758
+   },
+   "last": 4771,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.01411v2#proof-50",
+   "type": "proof",
+   "k": 50,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper.tex",
+    "line": 4772
+   },
+   "last": 4802,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

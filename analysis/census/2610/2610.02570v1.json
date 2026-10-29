@@ -1,0 +1,904 @@
+{
+ "paper": "2610.02570",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "aihp-template.tex"
+ ],
+ "class": "imsart",
+ "packages": [
+  "amsthm",
+  "amsmath",
+  "amsfonts",
+  "amssymb",
+  "natbib",
+  "bm",
+  "enumitem",
+  "microtype",
+  "hyperref",
+  "cleveref",
+  "mathtools"
+ ],
+ "steps": [
+  "unpack: 3 files",
+  "main: aihp-template.tex",
+  "include: 1 files read, 0 not found",
+  "local: 2 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 640 commands, 10 environments",
+  "tree: 138 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:imsart"
+  }
+ ],
+ "occurrences": {
+  "env": 22,
+  "label": 78,
+  "proof": 17,
+  "textref": 11
+ },
+ "matched": {
+  "env": 22,
+  "label": 78,
+  "proof": 17
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 22,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 10,
+  "unresolved": 1
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.02570v1#textref-9",
+   "message": "the text names Theorem 4.4.1 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.02570v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:target-density-pmp"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 745
+   },
+   "last": 748,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:fermi-Delta"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 750
+   },
+   "last": 821,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:weak-smooth",
+    "eq:target-variational",
+    "eq:weak-kirchhoff"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 823
+   },
+   "last": 838,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:interior-pde",
+    "eq:local-uniform-ellipticity",
+    "eq:discrete-IBP",
+    "eq:DQ-product-B",
+    "eq:DQ-product-J",
+    "eq:DQ-product-G",
+    "eq:DQ-identity",
+    "eq:DQ-cutoff-error",
+    "eq:DQ-B-error",
+    "eq:DQ-J-error",
+    "eq:DQ-forcing-error",
+    "eq:tangential-DQ-estimate",
+    "eq:recover-rr"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 840
+   },
+   "last": 1188,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:target-resolvent",
+    "eq:resolvent-equation"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 1560
+   },
+   "last": 1572,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 1574
+   },
+   "last": 1591,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:target-mp"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 1593
+   },
+   "last": 1610,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:dissipative-sup"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 1612
+   },
+   "last": 1670,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "rem:target-literature"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 1672
+   },
+   "last": 1683,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:metric-comparison",
+    "eq:metric-uniform-equivalence",
+    "eq:tangential-metric-uniform-equivalence",
+    "eq:fermi-uniform-coefficients"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 1857
+   },
+   "last": 1903,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 1905
+   },
+   "last": 2004,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:Q-dissipation",
+    "eq:DQ-edge",
+    "eq:Q-gap"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 2290
+   },
+   "last": 2305,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 2307
+   },
+   "last": 2340,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:pointwise-DQ"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 2361
+   },
+   "last": 2368,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 2370
+   },
+   "last": 2380,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "ass:main-scaling"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 2386
+   },
+   "last": 2399,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "thm:micro-existence",
+    "eq:micro-generator"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 2661
+   },
+   "last": 2687,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 2689
+   },
+   "last": 2734,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:folded-generator"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 2762
+   },
+   "last": 2801,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:folded-generator"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 2832
+   },
+   "last": 2960,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:localtime-estimate",
+    "eq:global-radial-bounds",
+    "eq:unit-radial-qv",
+    "eq:occupation-interval",
+    "eq:occupation-L1"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 2969
+   },
+   "last": 3013,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:radial-modulus",
+    "eq:K-estimate",
+    "eq:local-time-bound"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3016
+   },
+   "last": 3258,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:C-tightness"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3262
+   },
+   "last": 3271,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:V-jump",
+    "eq:collapsed-radial-vector",
+    "eq:collapse-singular-drift",
+    "eq:tangential-decomposition"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3273
+   },
+   "last": 3487,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:corrector",
+    "eq:corrector-ode",
+    "eq:corrector-energy",
+    "eq:corrector-sup",
+    "eq:corrector-L1der"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3512
+   },
+   "last": 3547,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:averaging",
+    "eq:v0-estimate",
+    "eq:corrector-weak",
+    "eq:lhs-estimate"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3549
+   },
+   "last": 3616,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:corrector-operator",
+    "eq:Kop-der2",
+    "eq:Kop-der1",
+    "eq:Kop-sup",
+    "eq:Kop-jump",
+    "eq:v-uniform-der2",
+    "eq:v-uniform-der1",
+    "eq:v-uniform-jump"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3631
+   },
+   "last": 3674,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3676
+   },
+   "last": 3709,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "cor:corrector-parameter"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3711
+   },
+   "last": 3718,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3720
+   },
+   "last": 3724,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "6.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3726
+   },
+   "last": 3735,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:corrected-admissible"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3797
+   },
+   "last": 3804,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3806
+   },
+   "last": 3819,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:generator-convergence",
+    "eq:integrated-generator"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3846
+   },
+   "last": 3877,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:error-region-I",
+    "eq:metric-error-bounded",
+    "eq:taylor-rem-bound",
+    "eq:curvature-error-bound",
+    "eq:outer-corrector"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 3879
+   },
+   "last": 4372,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:main",
+    "eq:main-convergence"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 4376
+   },
+   "last": 4394,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:prelimit-martingale-identity"
+   ],
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 4396
+   },
+   "last": 4472,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "7.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 4489
+   },
+   "last": 4493,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02570v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "7.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "aihp-template.tex",
+    "line": 4497
+   },
+   "last": 4510,
+   "result": "matched"
+  }
+ ]
+}
