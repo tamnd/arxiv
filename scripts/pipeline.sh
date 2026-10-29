@@ -1,11 +1,15 @@
 #!/bin/sh
 # Run the arXiv pipeline on a build server: fetch and extract the next papers with ax, open a pull request on tamnd/arxiv and merge it, then import the mentions into tamnd/math2 with m2 and do the same there.
 #
-# Run it from cron, for example each hour: 7 * * * * $HOME/arxiv-pipeline/pipeline.sh >> $HOME/arxiv-pipeline/pipeline.log 2>&1; cp $HOME/arxiv-pipeline/arxiv/scripts/pipeline.sh $HOME/arxiv-pipeline/ 2>/dev/null
+# Run it from cron, for example each 10 minutes, so that a run starts soon after the last one ends: */10 * * * * $HOME/arxiv-pipeline/pipeline.sh >> $HOME/arxiv-pipeline/pipeline.log 2>&1; cp $HOME/arxiv-pipeline/arxiv/scripts/pipeline.sh $HOME/arxiv-pipeline/ 2>/dev/null
 #
 # The server needs git, Go, gh and flock, and an SSH key that can push to both repositories. The file $AX_PIPELINE/github.env must set GH_TOKEN for gh. Keep it at mode 600.
 #
 # Each run does at most $AX_REDO_LIMIT papers of the redo list, and then at most $AX_LIMIT new papers. The new papers come from the list $AX_LIST first (gold set X). When the list has fewer papers left, the scope $AX_SCOPE gives the rest in the order of AX2.6. Only one run can go at a time, and the pipeline must be the only process that fetches from arXiv.
+#
+# The new papers get the render, the second witness of the census, one in $AX_RENDER_EVERY, so that a paper takes two requests and not three. The papers of the redo list always get it.
+#
+# When every batch of a run fails and no paper is done, as when a manifest does not read, the run opens an issue on tamnd/arxiv with the error, or adds the error to the issue that is open. The first run that does papers again closes it.
 #
 # A run merges its pull request only when the checks pass and the branch rebases on main with no conflict. Otherwise it leaves the pull request open, writes the reason to $AX_PIPELINE/blocked, and the later runs do nothing until a person removes that file. A run with too little disk is skipped and blocks nothing.
 set -eu
@@ -15,6 +19,8 @@ limit=${AX_LIMIT:-100}
 # The papers of the redo list that one run does before the new papers.
 redolimit=${AX_REDO_LIMIT:-25}
 pace=${AX_PACE:-15s}
+# The new papers get the render one in this many.
+every=${AX_RENDER_EVERY:-10}
 list=${AX_LIST:-manifests/gold/x-v1.txt}
 scope=${AX_SCOPE:-math}
 # The run stops before the batch when the disk has less free space than this, in MB.
@@ -26,7 +32,8 @@ export GOCACHE="$dir/gocache"
 
 mkdir -p "$dir/bin" "$dir/run"
 exec 9>"$dir/lock"
-flock -n 9 || { echo "another run is going"; exit 0; }
+# A run takes hours and cron starts one each few minutes, so a start that finds a run going says nothing.
+flock -n 9 || exit 0
 if [ -f "$dir/blocked" ]; then
 	exit 0
 fi
@@ -166,13 +173,25 @@ out="$dir/run/batch-$stamp.out"
 count() { grep -Ec "^[0-9]+/[0-9]+ [^ ]+ $2" "$1" || true; }
 redo="$dir/redo.txt"
 done=0 stopped=0 from=""
+# failed has the last line of the error of each batch that exited with an error.
+failed=""
+fail() {
+	log "the batch of $1 exited with $2"
+	failed="$failed- the batch of $1: $(tail -n 1 "$3" 2>/dev/null)
+"
+}
+# The flag of the render sample, when the ax of the run has it.
+sample=""
+if ax census batch -h 2>&1 | grep -q -- -render-every; then
+	sample="-render-every $every"
+fi
 if [ -s "$redo" ]; then
 	head -n "$redolimit" "$redo" >"$dir/run/redo-$stamp.txt"
 	n=$(wc -l <"$dir/run/redo-$stamp.txt")
 	if ax census batch -redo -accept -keep -list "$dir/run/redo-$stamp.txt" -pace "$pace" >"$out.redo" 2>"$dir/run/batch-$stamp.err.redo"; then
 		sed -i "1,${n}d" "$redo"
 	else
-		log "the batch of the redo list exited with $?"
+		fail "the redo list" $? "$dir/run/batch-$stamp.err.redo"
 	fi
 	r=$(count "$out.redo" extracted)
 	s=$(count "$out.redo" stopped)
@@ -180,17 +199,53 @@ if [ -s "$redo" ]; then
 	done=$((done + r)) stopped=$((stopped + s)) from="the redo list, "
 fi
 # The new papers. The list gives at most $limit of them, and the scope gives the rest.
-ax census batch -list "$list" -limit "$limit" -pace "$pace" >"$out" 2>"$dir/run/batch-$stamp.err" || log "the batch of the list exited with $?"
+ax census batch -list "$list" -limit "$limit" -pace "$pace" $sample >"$out" 2>"$dir/run/batch-$stamp.err" || fail "the list" $? "$dir/run/batch-$stamp.err"
 r=$(count "$out" extracted)
 s=$(count "$out" stopped)
 log "the batch of the list $list: $r extracted, $s stopped"
 done=$((done + r)) stopped=$((stopped + s)) from="${from}the list $list"
 if [ $((r + s)) -lt "$limit" ]; then
-	ax census batch -scope "$scope" -limit $((limit - r - s)) -pace "$pace" >"$out.scope" 2>"$dir/run/batch-$stamp.err.scope" || log "the batch of the scope exited with $?"
+	ax census batch -scope "$scope" -limit $((limit - r - s)) -pace "$pace" $sample >"$out.scope" 2>"$dir/run/batch-$stamp.err.scope" || fail "the scope" $? "$dir/run/batch-$stamp.err.scope"
 	r=$(count "$out.scope" extracted)
 	s=$(count "$out.scope" stopped)
 	log "the batch of the scope $scope: $r extracted, $s stopped"
 	done=$((done + r)) stopped=$((stopped + s)) from="$from and the scope $scope"
+fi
+
+# alert opens the issue of a run that did no paper, or adds to it. When a run did papers, it closes that issue.
+alerttitle="The pipeline does no paper"
+alert() {
+	open=$(gh issue list -R tamnd/arxiv --state open --search "in:title \"$alerttitle\"" --json number -q '.[0].number' 2>/dev/null || true)
+	if [ $((done + stopped)) -gt 0 ]; then
+		if [ -n "$open" ]; then
+			gh issue close "$open" -R tamnd/arxiv --comment "The run $stamp did $done papers and stopped $stopped, so the pipeline works again." >/dev/null || true
+			log "closed the issue #$open"
+		fi
+		rm -f "$dir/alerted"
+		return 0
+	fi
+	[ -n "$failed" ] || return 0
+	msg="The run $stamp on the build server did no paper, and its batches failed:
+
+$failed
+The output is in $dir/run on the build server. The pipeline goes on each run, and the first run that does papers closes this issue."
+	# A run each few minutes with the same error adds nothing, so the issue gets a comment only when the error changes.
+	if [ -n "$open" ] && [ "$(printf '%s' "$failed")" = "$(cat "$dir/alerted" 2>/dev/null)" ]; then
+		return 0
+	fi
+	printf '%s' "$failed" >"$dir/alerted"
+	if [ -n "$open" ]; then
+		gh issue comment "$open" -R tamnd/arxiv --body "$msg" >/dev/null || true
+	else
+		url=$(gh issue create -R tamnd/arxiv --title "$alerttitle" --label "type: fix" --label "area: corpus" --body "$msg" || true)
+		log "opened the issue $url"
+	fi
+}
+alert
+# A run whose batches failed and did no paper has nothing to publish, so it opens no pull request.
+if [ $((done + stopped)) -eq 0 ] && [ -n "$failed" ]; then
+	log "the run is done, and it did no paper"
+	exit 0
 fi
 
 # The tags, the reports and the audits, as the CI of tamnd/arxiv runs them.
