@@ -1,0 +1,981 @@
+{
+ "paper": "2610.02106",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "scalar_bsde_densities_final_manuscript.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "amsfonts",
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "mathtools",
+  "geometry",
+  "enumitem",
+  "mystyle",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: scalar_bsde_densities_final_manuscript.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 20 commands, 0 environments",
+  "tree: 340 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 27,
+  "label": 114,
+  "proof": 14,
+  "textref": 154
+ },
+ "matched": {
+  "env": 27,
+  "label": 114,
+  "proof": 14
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 27,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 153,
+  "unresolved": 1
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.02106v1#textref-105",
+   "message": "the text names Lemma 7.16 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.02106v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "defn:markov_sol"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 236
+   },
+   "last": 253,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "ass:flow"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 269
+   },
+   "last": 275,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "rem:flow_consequences"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 277
+   },
+   "last": 285,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:jacobian_flow",
+    "eq:jacobian_sde",
+    "eq:flow_moments"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 287
+   },
+   "last": 305,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:inverse_jacobian_sde",
+    "eq:K_moments"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 307
+   },
+   "last": 352,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "ass:parabolic",
+    "it:P1",
+    "it:P2",
+    "it:P3"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 363
+   },
+   "last": 386,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.6",
+   "number_from": "counter",
+   "labels": [
+    "rem:forward_roles",
+    "eq:A_def"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 388
+   },
+   "last": 433,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "ass:backward",
+    "it:B1",
+    "it:B2",
+    "eq:holder_f_tx",
+    "eq:lip_fyz",
+    "it:B3",
+    "eq:struct_fx_zero",
+    "eq:struct_fx_lip"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 437
+   },
+   "last": 481,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.8",
+   "number_from": "counter",
+   "labels": [
+    "rem:CYCZ"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 483
+   },
+   "last": 516,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "number": "2.9",
+   "number_from": "counter",
+   "labels": [
+    "ass:extra_reg",
+    "it:R1",
+    "it:R2",
+    "eq:holder_R2"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 528
+   },
+   "last": 554,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "number": "2.10",
+   "number_from": "counter",
+   "labels": [
+    "ass:rigidity",
+    "it:U1",
+    "it:U2",
+    "it:U3"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 573
+   },
+   "last": 609,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.11",
+   "number_from": "counter",
+   "labels": [
+    "rem:struct_fx_necessary"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 611
+   },
+   "last": 655,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2.12",
+   "number_from": "counter",
+   "labels": [
+    "thm:main"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 668
+   },
+   "last": 672,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.13",
+   "number_from": "counter",
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 676
+   },
+   "last": 701,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:reg",
+    "eq:PDE_v"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 724
+   },
+   "last": 758,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:rhoZ_properties",
+    "eq:holder_tildef_tx",
+    "eq:tildef_x_control",
+    "eq:cont_v_split",
+    "eq:short_interval_driver",
+    "eq:cont_v_est",
+    "eq:terminal_term_cont",
+    "eq:generator_term_cont",
+    "eq:local_dirichlet_v"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 760
+   },
+   "last": 1189,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:extra_reg",
+    "eq:PDE_u",
+    "eq:struct_ineq"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 1217
+   },
+   "last": 1249,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:dq_equation",
+    "eq:dq_schauder_bound"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 1251
+   },
+   "last": 1438,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:bsde_diff",
+    "eq:bsde_diffquot_conv",
+    "eq:UV_integrability"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 1450
+   },
+   "last": 1492,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:diffquot_X",
+    "eq:diffquot_bsde",
+    "eq:Fh_bound",
+    "eq:f_x_stability",
+    "eq:YZ_state_stability",
+    "eq:diffquot_uniform",
+    "eq:Theta_h_measure",
+    "eq:Gamma_tail",
+    "eq:ac_convergence",
+    "eq:Ah_bound",
+    "eq:Bh_bound",
+    "eq:fxbar_convergence",
+    "eq:Fh_convergence",
+    "eq:Deltag_convergence"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 1494
+   },
+   "last": 1847,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:u_bound",
+    "eq:u_bound"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 1850
+   },
+   "last": 1860,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:var_FBSDE",
+    "eq:UV_moments",
+    "eq:identification",
+    "eq:path_along",
+    "eq:Ybar_moments",
+    "eq:G_bound",
+    "eq:stopped_submart",
+    "eq:submart"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 1862
+   },
+   "last": 2083,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:grad_slab_bound",
+    "eq:grad_slab_bound"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2085
+   },
+   "last": 2091,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:source_bound",
+    "eq:Lp_estimate",
+    "eq:Lp_uniform",
+    "eq:embedding",
+    "eq:grad_uniform_cyl"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2093
+   },
+   "last": 2229,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "cor:slab_bounds",
+    "eq:combined_slab_bound"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2231
+   },
+   "last": 2238,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2240
+   },
+   "last": 2246,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:malliavin_rep",
+    "eq:DY_formula"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2256
+   },
+   "last": 2265,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2267
+   },
+   "last": 2279,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:uc",
+    "eq:uc_ass"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2322
+   },
+   "last": 2329,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:uc_vector_source",
+    "eq:uc_density_point",
+    "eq:uc_density_estimate",
+    "eq:uc_holder",
+    "eq:uc_sobolev_component",
+    "eq:uc_sobolev_vector",
+    "eq:uc_pre_caccioppoli_highd",
+    "eq:uc_pre_caccioppoli_oned",
+    "eq:uc_pre_caccioppoli",
+    "eq:uc_caccioppoli",
+    "eq:uc_small_ball",
+    "eq:uc_iterated",
+    "eq:uc_iterated_log",
+    "eq:uc_two_sphere",
+    "eq:uc_ball_one_zero",
+    "eq:uc_propagation_step"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2331
+   },
+   "last": 2665,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:bu",
+    "eq:bu_ass"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2681
+   },
+   "last": 2694,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:bu_carleman"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2696
+   },
+   "last": 2854,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:mm_inv"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2875
+   },
+   "last": 2884,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2886
+   },
+   "last": 2946,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:grad_nonzero",
+    "eq:DX_flow_rep",
+    "eq:Ct_positive"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 2959
+   },
+   "last": 3054,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:example_finance"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 3130
+   },
+   "last": 3140,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 3142
+   },
+   "last": 3179,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "6.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 3181
+   },
+   "last": 3183,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:example_cardiac"
+   ],
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 3265
+   },
+   "last": 3272,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 3274
+   },
+   "last": 3342,
+   "result": "matched"
+  },
+  {
+   "id": "2610.02106v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "6.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "scalar_bsde_densities_final_manuscript.tex",
+    "line": 3344
+   },
+   "last": 3346,
+   "result": "matched"
+  }
+ ]
+}
