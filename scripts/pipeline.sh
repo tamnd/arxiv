@@ -261,6 +261,13 @@ ax audit -q -group D -report reports/audit-analysis.md >"$dir/run/audit-analysis
 ax audit -q -group D -rules "$gate" >"$dir/run/audit-gate-$stamp.out" 2>&1 || checks=fail
 quality=$(grep -E '^\| D[0-9]+ \| fail \|' reports/audit-analysis.md | awk -F'|' '{gsub(/ /, "", $2); gsub(/ /, "", $6); printf "%s%s %s", sep, $2, $6; sep=", "}')
 
+# The body is built from variables, because dash misreads a command substitution in a here-document that also has escaped backquotes.
+tick='`'
+if [ "$checks" = pass ]; then
+	verdict=pass
+else
+	verdict="have a hard finding, so this pull request stays open. The output is in $dir/run on the build server"
+fi
 body="$dir/run/arxiv-$stamp.md"
 cat >"$body" <<EOF
 The pipeline on the build server ran $axv on the next papers of $from.
@@ -269,7 +276,7 @@ The pipeline on the build server ran $axv on the next papers of $from.
 - Papers stopped: $stopped
 - The run: $stamp
 
-It also ran \`ax tags analysis -all\`, the census report, the graph report and the three audits of the CI. The metadata audit, the content audit and the rules $gate of the analysis plane $( [ "$checks" = pass ] && echo pass || echo "have a hard finding, so this pull request stays open. The output is in $dir/run on the build server" ).
+It also ran ${tick}ax tags analysis -all${tick}, the census report, the graph report and the three audits of the CI. The metadata audit, the content audit and the rules $gate of the analysis plane $verdict.
 
 The quality rules of the analysis plane with findings: ${quality:-none}. They are the work of AX-M3 and do not stop the pipeline. The full list is in reports/audit-analysis.md.
 EOF
