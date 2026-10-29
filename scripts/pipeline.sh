@@ -185,6 +185,11 @@ sample=""
 if ax census batch -h 2>&1 | grep -q -- -render-every; then
 	sample="-render-every $every"
 fi
+# The flag of way R2 of AX2.5, which AQ01 allows, when the ax of the run has it: the verbatim and record papers are read in memory, and only their structure is kept. The scope gives them after the open and share-alike papers.
+record=""
+if ax census batch -h 2>&1 | grep -q -- -record; then
+	record="-record"
+fi
 if [ -s "$redo" ]; then
 	head -n "$redolimit" "$redo" >"$dir/run/redo-$stamp.txt"
 	n=$(wc -l <"$dir/run/redo-$stamp.txt")
@@ -199,13 +204,13 @@ if [ -s "$redo" ]; then
 	done=$((done + r)) stopped=$((stopped + s)) from="the redo list, "
 fi
 # The new papers. The list gives at most $limit of them, and the scope gives the rest.
-ax census batch -list "$list" -limit "$limit" -pace "$pace" $sample >"$out" 2>"$dir/run/batch-$stamp.err" || fail "the list" $? "$dir/run/batch-$stamp.err"
+ax census batch -list "$list" -limit "$limit" -pace "$pace" $sample $record >"$out" 2>"$dir/run/batch-$stamp.err" || fail "the list" $? "$dir/run/batch-$stamp.err"
 r=$(count "$out" extracted)
 s=$(count "$out" stopped)
 log "the batch of the list $list: $r extracted, $s stopped"
 done=$((done + r)) stopped=$((stopped + s)) from="${from}the list $list"
 if [ $((r + s)) -lt "$limit" ]; then
-	ax census batch -scope "$scope" -limit $((limit - r - s)) -pace "$pace" $sample >"$out.scope" 2>"$dir/run/batch-$stamp.err.scope" || fail "the scope" $? "$dir/run/batch-$stamp.err.scope"
+	ax census batch -scope "$scope" -limit $((limit - r - s)) -pace "$pace" $sample $record >"$out.scope" 2>"$dir/run/batch-$stamp.err.scope" || fail "the scope" $? "$dir/run/batch-$stamp.err.scope"
 	r=$(count "$out.scope" extracted)
 	s=$(count "$out.scope" stopped)
 	log "the batch of the scope $scope: $r extracted, $s stopped"
