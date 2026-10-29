@@ -1,7 +1,7 @@
 {
  "paper": "2606.01011",
  "version": 2,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.29",
  "main": [
   "semi-ci-test.tex"
  ],
@@ -40,7 +40,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 127 commands, 0 environments",
-  "tree: 76 nodes"
+  "aliases: 252 uses of commands that stand for \\begin or \\end",
+  "tree: 202 nodes"
  ],
  "declarations": [
   {
@@ -82,7 +83,7 @@
   {
    "env": "Res",
    "title": "\\underline{\\bf Result}",
-   "item": "unknown",
+   "item": "statement/theorem",
    "counter": "Res",
    "numbered": true,
    "from": "paper",
@@ -130,6 +131,7 @@
    "item": "proof",
    "counter": "Proof",
    "numbered": true,
+   "proof": true,
    "from": "paper",
    "form": "newtheorem"
   },
@@ -180,7 +182,9 @@
  "render": {
   "theorems": 6,
   "proofs": 4,
-  "agree": true
+  "agree": true,
+  "source_theorems": 6,
+  "source_proofs": 4
  },
  "strength": "strong",
  "items": [

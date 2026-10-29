@@ -1,0 +1,2329 @@
+{
+ "paper": "2610.09882",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "main.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amsaddr",
+  "ifxetex",
+  "fontspec",
+  "tikz",
+  "amsmath",
+  "amsfonts",
+  "amssymb",
+  "amsthm",
+  "geometry",
+  "microtype",
+  "newtxmath",
+  "libertine",
+  "caption",
+  "tcolorbox",
+  "xspace",
+  "bbm",
+  "hyperref",
+  "algorithm2e",
+  "bm",
+  "natbib",
+  "soul",
+  "enumerate",
+  "enumitem",
+  "ragged2e",
+  "tabularx",
+  "array",
+  "longtable",
+  "hhline",
+  "multirow",
+  "booktabs",
+  "aliascnt",
+  "braket",
+  "cleveref",
+  "makecell",
+  "footnote",
+  "float",
+  "todonotes",
+  "xifthen"
+ ],
+ "steps": [
+  "unpack: 12 files",
+  "main: main.tex",
+  "include: 12 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 149 commands, 0 environments",
+  "tree: 643 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "observation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "claim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "condition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "example",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "fact",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "proposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "corollary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "restatedlemma",
+   "title": "Lemma \\restatedtheoremnumber",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "restatedcorollary",
+   "title": "Corollary \\restatedtheoremnumber",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "Condition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 60,
+  "label": 77,
+  "proof": 49,
+  "textref": 1
+ },
+ "matched": {
+  "env": 60,
+  "label": 77,
+  "proof": 49
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 60,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 58,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 1,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 60,
+  "proofs": 49,
+  "agree": true,
+  "source_theorems": 60,
+  "source_proofs": 49
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.09882v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "thm:app-wpi-poly"
+   ],
+   "pos": {
+    "file": "introduction.tex",
+    "line": 105
+   },
+   "last": 113,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "thm:app-wpi-annealing"
+   ],
+   "pos": {
+    "file": "introduction.tex",
+    "line": 117
+   },
+   "last": 122,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "cor:intro-counting"
+   ],
+   "pos": {
+    "file": "introduction.tex",
+    "line": 126
+   },
+   "last": 131,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "lem:app-wpi-branches"
+   ],
+   "pos": {
+    "file": "technical_overview.tex",
+    "line": 151
+   },
+   "last": 199,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "thm:polynomial-tap-residual"
+   ],
+   "pos": {
+    "file": "technical_overview_wpi.tex",
+    "line": 39
+   },
+   "last": 52,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "lem:gaussian-enlargement-boosting"
+   ],
+   "pos": {
+    "file": "technical_overview_wpi.tex",
+    "line": 212
+   },
+   "last": 225,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "def:original-matrix-law"
+   ],
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 25
+   },
+   "last": 34,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "def:tap-planted-model"
+   ],
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 36
+   },
+   "last": 44,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "lem:planting-likelihood"
+   ],
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 61
+   },
+   "last": 79,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "lem:gronwall-path-stability"
+   ],
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 102
+   },
+   "last": 118,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 120
+   },
+   "last": 125,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "lem:app-wpi-two-set-gaussian"
+   ],
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 131
+   },
+   "last": 141,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 143
+   },
+   "last": 148,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "lem:bdg-stochastic-integral"
+   ],
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 152
+   },
+   "last": 161,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 163
+   },
+   "last": 166,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "lem:app-wpi-observation-law"
+   ],
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 189
+   },
+   "last": 211,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 213
+   },
+   "last": 219,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.8",
+   "number_from": "render",
+   "labels": [
+    "lem:q-beta-regularity"
+   ],
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 243
+   },
+   "last": 252,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "preliminary.tex",
+    "line": 254
+   },
+   "last": 262,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "def:tap-cavity-pinning",
+    "eq:tap-empirical-residual"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 42
+   },
+   "last": 115,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-overlap-mgf"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 143
+   },
+   "last": 165,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tap-bayes-cancellation",
+    "eq:tap-gaussian-pair-derivative"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 167
+   },
+   "last": 588,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "cor:tap-covariance"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 590
+   },
+   "last": 614,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tap-covariance-rectangle"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 615
+   },
+   "last": 662,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-gaussian-cancellation"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 672
+   },
+   "last": 690,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-complete-row"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 695
+   },
+   "last": 716,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tap-complete-row-identity"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 718
+   },
+   "last": 805,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.6",
+   "number_from": "render",
+   "labels": [
+    "cor:tap-energy-mgf"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 809
+   },
+   "last": 816,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 818
+   },
+   "last": 835,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.7",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-parent-child"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 845
+   },
+   "last": 857,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tap-tail-transfer",
+    "eq:tap-energy-cutoff",
+    "eq:tap-threshold-recursion",
+    "eq:tap-restore-q"
+   ],
+   "pos": {
+    "file": "tap_residual_bounds.tex",
+    "line": 862
+   },
+   "last": 1002,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "def:amp-tap-geometry"
+   ],
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 23
+   },
+   "last": 47,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "lem:amp-good-events"
+   ],
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 56
+   },
+   "last": 87,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "lem:amp-spatial-lipschitz"
+   ],
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 98
+   },
+   "last": 108,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 110
+   },
+   "last": 190,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-stationary-point"
+   ],
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 194
+   },
+   "last": 223,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 225
+   },
+   "last": 309,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "render",
+   "labels": [
+    "lem:local-root-measurable-lipschitz"
+   ],
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 343
+   },
+   "last": 352,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 354
+   },
+   "last": 428,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "lem:local-root-lipschitz-with-costs"
+   ],
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 447
+   },
+   "last": 456,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 458
+   },
+   "last": 479,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.7",
+   "number_from": "render",
+   "labels": [
+    "lem:scalar-reference-path-error"
+   ],
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 491
+   },
+   "last": 505,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:fixed-time-raw-diagonal-cost",
+    "eq:fixed-time-averaged-diagonal-cost"
+   ],
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 507
+   },
+   "last": 603,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_geometry.tex",
+    "line": 611
+   },
+   "last": 615,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "render",
+   "labels": [
+    "lem:app-wpi-two-path-criterion"
+   ],
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 26
+   },
+   "last": 100,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "render",
+   "labels": [
+    "lem:app-wpi-path-distance"
+   ],
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 106
+   },
+   "last": 115,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 117
+   },
+   "last": 219,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.3",
+   "number_from": "render",
+   "labels": [
+    "lem:app-wpi-posterior-comparison"
+   ],
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 223
+   },
+   "last": 237,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 239
+   },
+   "last": 298,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 299
+   },
+   "last": 422,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.4",
+   "number_from": "render",
+   "labels": [
+    "lem:app-wpi-two-path-terminal"
+   ],
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 426
+   },
+   "last": 438,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 440
+   },
+   "last": 522,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6.5",
+   "number_from": "render",
+   "labels": [
+    "cor:app-wpi-schedule"
+   ],
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 529
+   },
+   "last": 543,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 545
+   },
+   "last": 572,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.6",
+   "number_from": "render",
+   "labels": [
+    "lem:app-wpi-warm-decay"
+   ],
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 582
+   },
+   "last": 593,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 595
+   },
+   "last": 629,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.7",
+   "number_from": "render",
+   "labels": [
+    "lem:app-wpi-annealing-composition"
+   ],
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 648
+   },
+   "last": 664,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 666
+   },
+   "last": 683,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 707
+   },
+   "last": 750,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "wpi_two_path.tex",
+    "line": 752
+   },
+   "last": 797,
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "planted_contiguity.tex",
+    "line": 4
+   },
+   "last": 62,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.1",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-gaussian-poincare-p"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 24
+   },
+   "last": 51,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 53
+   },
+   "last": 67,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.2",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-weak-tilt"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 74
+   },
+   "last": 82,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 83
+   },
+   "last": 135,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.3",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-tilted-mean-displacement"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 137
+   },
+   "last": 144,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tap-mean-derivative"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 146
+   },
+   "last": 274,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "restatedlemma",
+   "title": "Lemma \\restatedtheoremnumber",
+   "item": "statement/lemma",
+   "number": "4.4",
+   "number_from": "render",
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 278
+   },
+   "last": 295,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tap-divergence-cancellation",
+    "eq:tap-Delta-p"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 296
+   },
+   "last": 435,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "restatedlemma",
+   "title": "Lemma \\restatedtheoremnumber",
+   "item": "statement/lemma",
+   "number": "4.7",
+   "number_from": "render",
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 444
+   },
+   "last": 455,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.4",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-residual-sde"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 652
+   },
+   "last": 678,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 680
+   },
+   "last": 758,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.5",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-influence"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 786
+   },
+   "last": 806,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 807
+   },
+   "last": 872,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.6",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-residual-dynamics"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 874
+   },
+   "last": 888,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tap-path-planted-marginal"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 889
+   },
+   "last": 964,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.7",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-susceptibility"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 967
+   },
+   "last": 977,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tap-smoothing-residual-identity",
+    "eq:tap-smoothing-gradient",
+    "eq:tap-smoothing-kernel"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 978
+   },
+   "last": 1314,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.8",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-recombination-errors"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 1338
+   },
+   "last": 1348,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.9",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-mean-increments"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 1431
+   },
+   "last": 1442,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 1443
+   },
+   "last": 1488,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.10",
+   "number_from": "render",
+   "labels": [
+    "lem:tap-inverse-marginals"
+   ],
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 1493
+   },
+   "last": 1503,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 1504
+   },
+   "last": 1562,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 1564
+   },
+   "last": 1685,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "inverse_poly_residual.tex",
+    "line": 1687
+   },
+   "last": 1742,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.1",
+   "number_from": "render",
+   "labels": [
+    "prop:fixed-time-amp-tap-input"
+   ],
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 16
+   },
+   "last": 29,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.2",
+   "number_from": "render",
+   "labels": [
+    "lem:inverse-poly-planted-norm-tail"
+   ],
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 42
+   },
+   "last": 51,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 52
+   },
+   "last": 79,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.3",
+   "number_from": "render",
+   "labels": [
+    "lem:inverse-poly-fixed-depth-stability"
+   ],
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 84
+   },
+   "last": 127,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 129
+   },
+   "last": 350,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.4",
+   "number_from": "render",
+   "labels": [
+    "lem:inverse-poly-initial-geometry"
+   ],
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 356
+   },
+   "last": 367,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 368
+   },
+   "last": 385,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.5",
+   "number_from": "render",
+   "labels": [
+    "lem:inverse-poly-positive-geometry"
+   ],
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 396
+   },
+   "last": 414,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.6",
+   "number_from": "render",
+   "labels": [
+    "lem:inverse-poly-conditional-good-event"
+   ],
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 436
+   },
+   "last": 445,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-42",
+   "type": "proof",
+   "k": 42,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 446
+   },
+   "last": 552,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.7",
+   "number_from": "render",
+   "labels": [
+    "lem:inverse-poly-anchor-geometry"
+   ],
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 555
+   },
+   "last": 572,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-43",
+   "type": "proof",
+   "k": 43,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 574
+   },
+   "last": 696,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-44",
+   "type": "proof",
+   "k": 44,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 698
+   },
+   "last": 739,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.8",
+   "number_from": "render",
+   "labels": [
+    "lem:inverse-poly-positive-posterior"
+   ],
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 741
+   },
+   "last": 753,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.9",
+   "number_from": "render",
+   "labels": [
+    "lem:inverse-poly-fixed-depth-concentration"
+   ],
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 774
+   },
+   "last": 795,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-45",
+   "type": "proof",
+   "k": 45,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 797
+   },
+   "last": 944,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-46",
+   "type": "proof",
+   "k": 46,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:inverse-poly-three-scalars"
+   ],
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 948
+   },
+   "last": 1073,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-47",
+   "type": "proof",
+   "k": 47,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "amp_good_events.tex",
+    "line": 1076
+   },
+   "last": 1115,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.1",
+   "number_from": "render",
+   "labels": [
+    "lem:strong-field-correlation"
+   ],
+   "pos": {
+    "file": "strong_field_mixing.tex",
+    "line": 16
+   },
+   "last": 24,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.2",
+   "number_from": "render",
+   "labels": [
+    "lem:pinned-glauber-mixing"
+   ],
+   "pos": {
+    "file": "strong_field_mixing.tex",
+    "line": 38
+   },
+   "last": 51,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.3",
+   "number_from": "render",
+   "labels": [
+    "lem:terminal-disorder-tail"
+   ],
+   "pos": {
+    "file": "strong_field_mixing.tex",
+    "line": 80
+   },
+   "last": 87,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.4",
+   "number_from": "render",
+   "labels": [
+    "lem:terminal-field-poincare"
+   ],
+   "pos": {
+    "file": "strong_field_mixing.tex",
+    "line": 106
+   },
+   "last": 113,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-48",
+   "type": "proof",
+   "k": 48,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "strong_field_mixing.tex",
+    "line": 115
+   },
+   "last": 178,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.09882v1#proof-49",
+   "type": "proof",
+   "k": 49,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "strong_field_mixing.tex",
+    "line": 182
+   },
+   "last": 222,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

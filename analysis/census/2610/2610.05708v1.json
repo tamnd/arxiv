@@ -1,0 +1,1107 @@
+{
+ "paper": "2610.05708",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "finite_k_Robin_submitted.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amssymb",
+  "mathrsfs",
+  "color",
+  "esint",
+  "hyperref",
+  "todonotes",
+  "verbatim",
+  "enumerate",
+  "bbm",
+  "cite",
+  "amsrefs"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: finite_k_Robin_submitted.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 98 commands, 0 environments",
+  "drop: 22 uses of commands that print nothing",
+  "tree: 337 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "criterion",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "algorithm",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summary",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "acknowledgment",
+   "title": "Acknowledgment",
+   "item": "other/section",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conclusion",
+   "title": "Conclusion",
+   "item": "other/section",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 23,
+  "label": 126,
+  "proof": 14,
+  "textref": 76
+ },
+ "matched": {
+  "env": 23,
+  "label": 126,
+  "proof": 14
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 23,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 23,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 65,
+  "unresolved": 11
+ },
+ "render": {
+  "theorems": 23,
+  "proofs": 14,
+  "agree": true,
+  "source_theorems": 23,
+  "source_proofs": 14
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-24",
+   "message": "the text names Case 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-27",
+   "message": "the text names Case 2 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-28",
+   "message": "the text names case 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-35",
+   "message": "the text names Case 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-38",
+   "message": "the text names Case 2 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-39",
+   "message": "the text names Case 2 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-41",
+   "message": "the text names Case 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-42",
+   "message": "the text names Case 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-66",
+   "message": "the text names Case 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-74",
+   "message": "the text names Case 2 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.05708v1#textref-76",
+   "message": "the text names Case 3 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.05708v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "thm_upperbound",
+    "grad_u_upperbound1",
+    "grad_u_upperbound3",
+    "grad_u_upperbound2"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 403
+   },
+   "last": 420,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "main_thm",
+    "grad_u_lower_bound_new",
+    "grad_u_lower_bound"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 425
+   },
+   "last": 441,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "render",
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 443
+   },
+   "last": 446,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.4",
+   "number_from": "render",
+   "labels": [
+    "thm_upperbound_3"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 457
+   },
+   "last": 460,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.5",
+   "number_from": "render",
+   "labels": [
+    "thm_upperbound_2",
+    "grad_u_upperbound1_zero",
+    "grad_u_upperbound2_zero"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 463
+   },
+   "last": 476,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "lem:maximum_principle",
+    "subrobin"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 499
+   },
+   "last": 515,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "v_upper"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 517
+   },
+   "last": 543,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 547
+   },
+   "last": 549,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 551
+   },
+   "last": 574,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "u_C0",
+    "u_holder_inside",
+    "u_C1_outside"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 578
+   },
+   "last": 589,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 591
+   },
+   "last": 620,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "thm-1/2",
+    "gradient-1/2a",
+    "gradient-1/2"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 627
+   },
+   "last": 650,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "est:ab",
+    "main_problem_narrow_2",
+    "tilde_u_equation",
+    "est:a",
+    "ortho",
+    "F_bound",
+    "est:a2",
+    "tilde_v_equation",
+    "est:psi",
+    "tilde_v_equation_extend",
+    "tilde_v_equation_extend_new",
+    "eqn:extend",
+    "est:coefficient",
+    "est:2012a",
+    "est:f_bar",
+    "est:2012",
+    "est:mean-oscillation",
+    "eqn:extend_divide",
+    "est:interpolate",
+    "eq1.15"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 656
+   },
+   "last": 991,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "lemma_reduction",
+    "equation_v_bar",
+    "FG_bound"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1071
+   },
+   "last": 1085,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "prop_grad_v_bar_control",
+    "FG_bound3",
+    "v_bar_L2_sphere_old",
+    "v_bar_L2_sphere",
+    "v_bar_L2_sphere_new"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1119
+   },
+   "last": 1161,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "lemma_v1",
+    "equation_v1"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1166
+   },
+   "last": 1178,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "lemma_v2"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1181
+   },
+   "last": 1193,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "lemma_v1_zero_mode",
+    "v1_control_zero"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1195
+   },
+   "last": 1203,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "zero-mode",
+    "V0-lower",
+    "V0-upper"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1205
+   },
+   "last": 1251,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "v2_control",
+    "v1_control",
+    "v1_control_new",
+    "omega_iteration",
+    "omega_iteration_zero",
+    "w0_1",
+    "w0_2",
+    "w0_3"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1254
+   },
+   "last": 1363,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "render",
+   "labels": [
+    "lem:u_holder",
+    "u_holder",
+    "u-_1+holder"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1365
+   },
+   "last": 1375,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "subtr_0",
+    "main_problem_narrow_4",
+    "g12",
+    "grad_u_start",
+    "grad_v_bar_start",
+    "grad_n_v_bound",
+    "v-v_bar",
+    "F_G0",
+    "v_bar_decay_1",
+    "v_L2_control_1",
+    "Du-1st",
+    "holder1",
+    "holder2",
+    "holder3",
+    "holder4"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1376
+   },
+   "last": 1509,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "lemma_reduction_2",
+    "equation_v_bar_2",
+    "FG_bound_b"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1563
+   },
+   "last": 1578,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1580
+   },
+   "last": 1605,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "gi_c_beta",
+    "grad_v_bar_start_2",
+    "grad_n_v_bound_2",
+    "v-v_bar_2",
+    "F_G1",
+    "G2-1",
+    "G2-2",
+    "v_bar_decay",
+    "v_L2_control",
+    "F_G11",
+    "est:v1v2",
+    "est:Du_temp"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1609
+   },
+   "last": 1748,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "F_G1_zero",
+    "G2-1_zero",
+    "G2-2_zero",
+    "v_bar_decay_new",
+    "v_L2_control_1_zero"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1750
+   },
+   "last": 1809,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "render",
+   "labels": [
+    "lemma_v1_zero_mode_2d"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1816
+   },
+   "last": 1824,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "render",
+   "labels": [
+    "prop_grad_v_bar_control_2d"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1827
+   },
+   "last": 1859,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "ODE_lemma",
+    "Homogeneous_ODE",
+    "h_bounds"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1869
+   },
+   "last": 1883,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "render",
+   "labels": [
+    "lemma_subsolution",
+    "h_lowerbound",
+    "h_upper_lower"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1885
+   },
+   "last": 1894,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "low",
+    "up1",
+    "up2"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1895
+   },
+   "last": 1933,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.3",
+   "number_from": "render",
+   "labels": [
+    "linear_lower"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1937
+   },
+   "last": 1945,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1946
+   },
+   "last": 1978,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "prelim_estimate",
+    "FG_bound_2",
+    "v_bar_expansion",
+    "AB_bounds",
+    "V_11_formula",
+    "C_1_epsilon_lowerbound",
+    "V_11_lowerbound",
+    "h1_lowerbound",
+    "u_lower_bound"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 1998
+   },
+   "last": 2141,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "FG_bound_3",
+    "ABD_bounds",
+    "V11_lower_2"
+   ],
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 2144
+   },
+   "last": 2217,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "8.1",
+   "number_from": "render",
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 2249
+   },
+   "last": 2251,
+   "result": "matched"
+  },
+  {
+   "id": "2610.05708v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "8.2",
+   "number_from": "render",
+   "pos": {
+    "file": "finite_k_Robin_submitted.tex",
+    "line": 2302
+   },
+   "last": 2319,
+   "result": "matched"
+  }
+ ]
+}

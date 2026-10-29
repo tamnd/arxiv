@@ -1,0 +1,3188 @@
+{
+ "paper": "2610.06724",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "paper-v1.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "fontenc",
+  "inputenc",
+  "geometry",
+  "mathpazo",
+  "tgpagella",
+  "microtype",
+  "newunicodechar",
+  "macros",
+  "thmtools",
+  "thm-restate",
+  "xifthen",
+  "xparse"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: paper-v1.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 16 kept",
+  "macros: 189 commands, 0 environments",
+  "tree: 412 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theme",
+   "title": "Theme",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "conjecture",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "obstacle",
+   "title": "Obstacle",
+   "item": "unknown",
+   "counter": "obstacle",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "barrier",
+   "title": "Obstacle",
+   "item": "unknown",
+   "counter": "barrier",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "idea",
+   "title": "Idea",
+   "item": "unknown",
+   "counter": "idea",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "problem",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "openproblem",
+   "title": "Open Problem",
+   "item": "problem",
+   "counter": "openproblem",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "question",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "exercise",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "intuition",
+   "title": "Intuition",
+   "item": "unknown",
+   "counter": "intuition",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "solution",
+   "title": "Solution",
+   "item": "other/solution",
+   "counter": "solution",
+   "numbered": true,
+   "from": "local:macros.sty",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
+  }
+ ],
+ "occurrences": {
+  "env": 82,
+  "label": 96,
+  "proof": 39,
+  "restate": 1
+ },
+ "matched": {
+  "env": 82,
+  "label": 96,
+  "proof": 39,
+  "restate": 1
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 82,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 18,
+  "disagree": 64,
+  "contiguity_gaps": 40
+ },
+ "textrefs": {
+  "resolved": 0,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 82,
+  "proofs": 39,
+  "agree": true,
+  "source_theorems": 82,
+  "source_proofs": 39
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-2",
+   "message": "Theorem 1.2 is the first in its scope of counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-3",
+   "message": "Remark 1.3 is the first in its scope of counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-4",
+   "message": "Definition 1.4 comes after 1.1 in counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-6",
+   "message": "Theorem 1.6 comes after 1.2 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-7",
+   "message": "Definition 1.7 comes after 1.5 in counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-8",
+   "message": "Fact 1.8 comes after 1.6 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-9",
+   "message": "Remark 1.9 comes after 1.3 in counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-10",
+   "message": "Definition 1.10 comes after 1.7 in counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-11",
+   "message": "Remark 1.11 comes after 1.9 in counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-13",
+   "message": "Definition 1.13 comes after 1.10 in counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-14",
+   "message": "Theorem 1.14 comes after 1.8 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-15",
+   "message": "Remark 1.15 comes after 1.12 in counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-16",
+   "message": "Theorem 1.16 comes after 1.14 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-17",
+   "message": "Remark 1.17 comes after 1.15 in counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-19",
+   "message": "Definition 1.19 comes after 1.13 in counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-20",
+   "message": "Remark 1.20 comes after 1.18 in counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-21",
+   "message": "Definition 1.21 comes after 1.19 in counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-22",
+   "message": "Proposition 1.22 comes after 1.16 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-23",
+   "message": "Remark 1.23 comes after 1.20 in counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-24",
+   "message": "Proposition 1.24 comes after 1.22 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-27",
+   "message": "Remark 2.3 is the first in its scope of counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-28",
+   "message": "Definition 2.4 is the first in its scope of counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-29",
+   "message": "Lemma 2.5 comes after 2.2 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-30",
+   "message": "Remark 2.6 comes after 2.3 in counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-35",
+   "message": "Remark 3.3 is the first in its scope of counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-37",
+   "message": "Proposition 4.2 is the first in its scope of counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-40",
+   "message": "Definition 5.2 is the first in its scope of counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-41",
+   "message": "Remark 5.3 is the first in its scope of counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-42",
+   "message": "Definition 5.4 comes after 5.2 in counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-43",
+   "message": "Lemma 5.5 comes after 5.1 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-48",
+   "message": "Definition 5.10 comes after 5.4 in counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-49",
+   "message": "Proposition 5.11 comes after 5.9 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-54",
+   "message": "Remark A.4 is the first in its scope of counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-63",
+   "message": "Definition C.9 is the first in its scope of counter definition"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-64",
+   "message": "Corollary C.10 comes after C.8 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-65",
+   "message": "Remark C.11 is the first in its scope of counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-66",
+   "message": "Corollary C.12 comes after C.10 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-69",
+   "message": "Remark C.15 comes after C.11 in counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-70",
+   "message": "Corollary C.16 comes after C.14 in counter theorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-82",
+   "message": "Remark D.3 is the first in its scope of counter remark"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-1",
+   "message": "the counter model gives Definition 1 and the second witness gives 1.1"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-2",
+   "message": "the counter model gives Theorem 1.1 and the second witness gives 1.2"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-3",
+   "message": "the counter model gives Remark 1 and the second witness gives 1.3"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-4",
+   "message": "the counter model gives Definition 2 and the second witness gives 1.4"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-5",
+   "message": "the counter model gives Definition 3 and the second witness gives 1.5"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-6",
+   "message": "the counter model gives Theorem 1.2 and the second witness gives 1.6"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-7",
+   "message": "the counter model gives Definition 4 and the second witness gives 1.7"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-8",
+   "message": "the counter model gives Fact 1.3 and the second witness gives 1.8"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-9",
+   "message": "the counter model gives Remark 2 and the second witness gives 1.9"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-10",
+   "message": "the counter model gives Definition 5 and the second witness gives 1.10"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-11",
+   "message": "the counter model gives Remark 3 and the second witness gives 1.11"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-12",
+   "message": "the counter model gives Remark 4 and the second witness gives 1.12"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-13",
+   "message": "the counter model gives Definition 6 and the second witness gives 1.13"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-14",
+   "message": "the counter model gives Theorem 1.4 and the second witness gives 1.14"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-15",
+   "message": "the counter model gives Remark 5 and the second witness gives 1.15"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-16",
+   "message": "the counter model gives Theorem 1.5 and the second witness gives 1.16"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-17",
+   "message": "the counter model gives Remark 6 and the second witness gives 1.17"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-18",
+   "message": "the counter model gives Remark 7 and the second witness gives 1.18"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-19",
+   "message": "the counter model gives Definition 7 and the second witness gives 1.19"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-20",
+   "message": "the counter model gives Remark 8 and the second witness gives 1.20"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-21",
+   "message": "the counter model gives Definition 8 and the second witness gives 1.21"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-22",
+   "message": "the counter model gives Proposition 1.6 and the second witness gives 1.22"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-23",
+   "message": "the counter model gives Remark 9 and the second witness gives 1.23"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-24",
+   "message": "the counter model gives Proposition 1.7 and the second witness gives 1.24"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-27",
+   "message": "the counter model gives Remark 10 and the second witness gives 2.3"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-28",
+   "message": "the counter model gives Definition 9 and the second witness gives 2.4"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-29",
+   "message": "the counter model gives Lemma 2.3 and the second witness gives 2.5"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-30",
+   "message": "the counter model gives Remark 11 and the second witness gives 2.6"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-31",
+   "message": "the counter model gives Remark 12 and the second witness gives 2.7"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-32",
+   "message": "the counter model gives Remark 13 and the second witness gives 2.8"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-35",
+   "message": "the counter model gives Remark 14 and the second witness gives 3.3"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-36",
+   "message": "the counter model gives Definition 10 and the second witness gives 4.1"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-37",
+   "message": "the counter model gives Proposition 4.1 and the second witness gives 4.2"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-38",
+   "message": "the counter model gives Observation 4.2 and the second witness gives 4.3"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-40",
+   "message": "the counter model gives Definition 11 and the second witness gives 5.2"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-41",
+   "message": "the counter model gives Remark 15 and the second witness gives 5.3"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-42",
+   "message": "the counter model gives Definition 12 and the second witness gives 5.4"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-43",
+   "message": "the counter model gives Lemma 5.2 and the second witness gives 5.5"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-44",
+   "message": "the counter model gives Corollary 5.3 and the second witness gives 5.6"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-45",
+   "message": "the counter model gives Corollary 5.4 and the second witness gives 5.7"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-46",
+   "message": "the counter model gives Observation 5.5 and the second witness gives 5.8"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-47",
+   "message": "the counter model gives Observation 5.6 and the second witness gives 5.9"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-48",
+   "message": "the counter model gives Definition 13 and the second witness gives 5.10"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-49",
+   "message": "the counter model gives Proposition 5.7 and the second witness gives 5.11"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-50",
+   "message": "the counter model gives Corollary 5.8 and the second witness gives 5.12"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-54",
+   "message": "the counter model gives Remark 16 and the second witness gives A.4"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-63",
+   "message": "the counter model gives Definition 14 and the second witness gives C.9"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-64",
+   "message": "the counter model gives Corollary C.9 and the second witness gives C.10"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-65",
+   "message": "the counter model gives Remark 17 and the second witness gives C.11"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-66",
+   "message": "the counter model gives Corollary C.10 and the second witness gives C.12"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-67",
+   "message": "the counter model gives Corollary C.11 and the second witness gives C.13"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-68",
+   "message": "the counter model gives Proposition C.12 and the second witness gives C.14"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-69",
+   "message": "the counter model gives Remark 18 and the second witness gives C.15"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-70",
+   "message": "the counter model gives Corollary C.13 and the second witness gives C.16"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-71",
+   "message": "the counter model gives Corollary C.14 and the second witness gives C.17"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-72",
+   "message": "the counter model gives Corollary C.15 and the second witness gives C.18"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-73",
+   "message": "the counter model gives Corollary C.16 and the second witness gives C.19"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-74",
+   "message": "the counter model gives Proposition C.17 and the second witness gives C.20"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-75",
+   "message": "the counter model gives Corollary C.18 and the second witness gives C.21"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-76",
+   "message": "the counter model gives Corollary C.19 and the second witness gives C.22"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-77",
+   "message": "the counter model gives Corollary C.20 and the second witness gives C.23"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-78",
+   "message": "the counter model gives Corollary C.21 and the second witness gives C.24"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-79",
+   "message": "the counter model gives Corollary C.22 and the second witness gives C.25"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2610.06724v1#env-82",
+   "message": "the counter model gives Remark 19 and the second witness gives D.3"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.06724v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "def:fpras"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 157
+   },
+   "last": 167,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "cor:common-bases"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 169
+   },
+   "last": 171,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1.3",
+   "number_from": "render",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 172
+   },
+   "last": 174,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.4",
+   "number_from": "render",
+   "labels": [
+    "def:subset-convolution"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 195
+   },
+   "last": 202,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.5",
+   "number_from": "render",
+   "labels": [
+    "def:log-concave"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 204
+   },
+   "last": 210,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.6",
+   "number_from": "render",
+   "labels": [
+    "thm:log-concave-convolution"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 218
+   },
+   "last": 229,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 230
+   },
+   "last": 232,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.7",
+   "number_from": "render",
+   "labels": [
+    "def:hadamard"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 262
+   },
+   "last": 264,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "number": "1.8",
+   "number_from": "render",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 277
+   },
+   "last": 279,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1.9",
+   "number_from": "render",
+   "labels": [
+    "rem:discrete-chain"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 280
+   },
+   "last": 299,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.10",
+   "number_from": "render",
+   "labels": [
+    "def:spectral-curvature"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 303
+   },
+   "last": 313,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1.11",
+   "number_from": "render",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 314
+   },
+   "last": 316,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1.12",
+   "number_from": "render",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 317
+   },
+   "last": 319,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.13",
+   "number_from": "render",
+   "labels": [
+    "def:dual-measure"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 322
+   },
+   "last": 324,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.14",
+   "number_from": "render",
+   "labels": [
+    "thm:poincare"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 327
+   },
+   "last": 332,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1.15",
+   "number_from": "render",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 338
+   },
+   "last": 340,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.16",
+   "number_from": "render",
+   "labels": [
+    "thm:curvature-convolution"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 347
+   },
+   "last": 369,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1.17",
+   "number_from": "render",
+   "labels": [
+    "rmk:curvature-LC-generalization"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 371
+   },
+   "last": 392,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1.18",
+   "number_from": "render",
+   "labels": [
+    "rmk:curvature-threshold"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 395
+   },
+   "last": 404,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.19",
+   "number_from": "render",
+   "labels": [
+    "def:pairwise-dependency"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 439
+   },
+   "last": 450,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1.20",
+   "number_from": "render",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 468
+   },
+   "last": 474,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.21",
+   "number_from": "render",
+   "labels": [
+    "def:fractional-log-concavity"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 480
+   },
+   "last": 487,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "1.22",
+   "number_from": "render",
+   "labels": [
+    "prop:flc-curvature"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 491
+   },
+   "last": 498,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1.23",
+   "number_from": "render",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 502
+   },
+   "last": 508,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "1.24",
+   "number_from": "render",
+   "labels": [
+    "prop:zero-curvature-log-concavity"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 519
+   },
+   "last": 522,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "prop:bochner-criterion"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 695
+   },
+   "last": 705,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "thm:homogeneous-convolution-informal"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 726
+   },
+   "last": 738,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "rmk:penalty-alone"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 881
+   },
+   "last": 1032,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "def:Phi-program",
+    "eq:field-gradient",
+    "eq:Phi-program"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1042
+   },
+   "last": 1053,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "lem:field-concavity",
+    "eq:field-certificate"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1083
+   },
+   "last": 1095,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "rmk:partition-penalty"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1146
+   },
+   "last": 1157,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "rmk:gurvits-capacity"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1161
+   },
+   "last": 1251,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "2.8",
+   "number_from": "render",
+   "labels": [
+    "rmk:permanent-annealing"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1255
+   },
+   "last": 1265,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1456
+   },
+   "last": 1472,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "lem:sampling-to-counting"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1478
+   },
+   "last": 1495,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "thm:stochastic-coordinate-descent",
+    "eq:coordinate-smoothness",
+    "eq:coordinate-lower-bound",
+    "eq:scd-iterates",
+    "eq:scd-budget"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1508
+   },
+   "last": 1551,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "rem:approximate-sampling"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1558
+   },
+   "last": 1565,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "def:discrete-gradient"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1573
+   },
+   "last": 1583,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "prop:bochner-identity"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1596
+   },
+   "last": 1608,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1611
+   },
+   "last": 1620,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1623
+   },
+   "last": 1719,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "obs:bochner-coefficients"
+   ],
+   "parent": "2610.06724v1#proof-4",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1676
+   },
+   "last": 1683,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "thm:homogeneous-convolution",
+    "def:Z-cap",
+    "eq:main-cost"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1728
+   },
+   "last": 1749,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "def:independent-pair"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1756
+   },
+   "last": 1775,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "rmk:completion-weights"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1777
+   },
+   "last": 1786,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "def:pair-law"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1793
+   },
+   "last": 1805,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "render",
+   "labels": [
+    "lem:bases-pair-poincare",
+    "eq:pair-exchange-rates",
+    "eq:bases-pair-poincare"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1812
+   },
+   "last": 1829,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "render",
+   "labels": [
+    "cor:bases-pair-sampling"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1833
+   },
+   "last": 1845,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1846
+   },
+   "last": 1862,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.7",
+   "number_from": "render",
+   "labels": [
+    "cor:independent-pair-poincare",
+    "eq:independent-pair-poincare"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1886
+   },
+   "last": 1897,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "number": "5.8",
+   "number_from": "render",
+   "labels": [
+    "obs:w-0-curvature"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1901
+   },
+   "last": 1903,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1904
+   },
+   "last": 1920,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "number": "5.9",
+   "number_from": "render",
+   "labels": [
+    "obs:psi-star-1-curvature"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1921
+   },
+   "last": 1923,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1924
+   },
+   "last": 1948,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1951
+   },
+   "last": 1956,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "5.10",
+   "number_from": "render",
+   "labels": [
+    "def:induced-chain"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1960
+   },
+   "last": 1971,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.11",
+   "number_from": "render",
+   "labels": [
+    "prop:induced-poincare"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1973
+   },
+   "last": 1982,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 1989
+   },
+   "last": 2041,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#restate-1",
+   "type": "restate",
+   "k": 1,
+   "env": "restate",
+   "target": "fieldconcavitylemma",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2052
+   },
+   "last": 2052,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2054
+   },
+   "last": 2090,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.12",
+   "number_from": "render",
+   "labels": [
+    "cor:balanced-fields",
+    "eq:balancing-bounds"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2108
+   },
+   "last": 2129,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2130
+   },
+   "last": 2183,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:counting-factorization"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2187
+   },
+   "last": 2272,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "render",
+   "labels": [
+    "lem:positive-curvature-support"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2295
+   },
+   "last": 2302,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.2",
+   "number_from": "render",
+   "labels": [
+    "lem:lc-support-access"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2305
+   },
+   "last": 2316,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.3",
+   "number_from": "render",
+   "labels": [
+    "lem:lc-homogeneous-layers"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2319
+   },
+   "last": 2324,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2389
+   },
+   "last": 2412,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2414
+   },
+   "last": 2512,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2517
+   },
+   "last": 2554,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2556
+   },
+   "last": 2572,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2576
+   },
+   "last": 2630,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:scd-step",
+    "eq:balance-params",
+    "eq:scd-field-bound",
+    "eq:descent"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2633
+   },
+   "last": 2683,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "A.4",
+   "number_from": "render",
+   "labels": [
+    "rem:bit-complexity"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2699
+   },
+   "last": 2726,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2729
+   },
+   "last": 2759,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 2782
+   },
+   "last": 2845,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.1",
+   "number_from": "render",
+   "labels": [
+    "lem:matroid-constraint"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3140
+   },
+   "last": 3152,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3154
+   },
+   "last": 3161,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.2",
+   "number_from": "render",
+   "labels": [
+    "cor:weighted-common-bases"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3163
+   },
+   "last": 3170,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3172
+   },
+   "last": 3180,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "C.3",
+   "number_from": "render",
+   "labels": [
+    "thm:rado-matroid"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3185
+   },
+   "last": 3191,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.4",
+   "number_from": "render",
+   "labels": [
+    "lem:common-basis-availability"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3193
+   },
+   "last": 3198,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3200
+   },
+   "last": 3265,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.5",
+   "number_from": "render",
+   "labels": [
+    "cor:strong-orientations"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3283
+   },
+   "last": 3286,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.6",
+   "number_from": "render",
+   "labels": [
+    "lem:orientation-common-bases"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3295
+   },
+   "last": 3324,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3326
+   },
+   "last": 3362,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.7",
+   "number_from": "render",
+   "labels": [
+    "cor:weighted-euler-tours"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3394
+   },
+   "last": 3398,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3401
+   },
+   "last": 3455,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.8",
+   "number_from": "render",
+   "labels": [
+    "cor:euler-tours"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3496
+   },
+   "last": 3499,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "C.9",
+   "number_from": "render",
+   "labels": [
+    "def:st-linkage"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3503
+   },
+   "last": 3511,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.10",
+   "number_from": "render",
+   "labels": [
+    "cor:network-reliability",
+    "eq:linkage-reliability"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3513
+   },
+   "last": 3524,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "C.11",
+   "number_from": "render",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3525
+   },
+   "last": 3528,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3530
+   },
+   "last": 3579,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.12",
+   "number_from": "render",
+   "labels": [
+    "cor:rooted-reliability"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3603
+   },
+   "last": 3606,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3608
+   },
+   "last": 3650,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.13",
+   "number_from": "render",
+   "labels": [
+    "cor:determinantal-applications"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3661
+   },
+   "last": 3681,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "C.14",
+   "number_from": "render",
+   "labels": [
+    "prop:cauchy-binet"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3686
+   },
+   "last": 3696,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3699
+   },
+   "last": 3786,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "C.15",
+   "number_from": "render",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3917
+   },
+   "last": 3938,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.16",
+   "number_from": "render",
+   "labels": [
+    "cor:six-vertex"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3941
+   },
+   "last": 3949,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 3951
+   },
+   "last": 3976,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.17",
+   "number_from": "render",
+   "labels": [
+    "cor:quantum-values"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4058
+   },
+   "last": 4071,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:quantum-product-bound",
+    "fig:quantum-six-vertex"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4072
+   },
+   "last": 4478,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.18",
+   "number_from": "render",
+   "labels": [
+    "cor:congestion-tables"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4500
+   },
+   "last": 4504,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:congestion-exchange"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4506
+   },
+   "last": 4568,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.19",
+   "number_from": "render",
+   "labels": [
+    "cor:congestion-gibbs"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4609
+   },
+   "last": 4624,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4627
+   },
+   "last": 4686,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "C.20",
+   "number_from": "render",
+   "labels": [
+    "prop:integer-weight-intersection"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4712
+   },
+   "last": 4731,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:integer-clone-weights",
+    "eq:integer-convolution-identity"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4733
+   },
+   "last": 4829,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.21",
+   "number_from": "render",
+   "labels": [
+    "cor:weighted-contingency-tables"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4849
+   },
+   "last": 4873,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4875
+   },
+   "last": 4911,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.22",
+   "number_from": "render",
+   "labels": [
+    "cor:bounded-integer-flows"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4913
+   },
+   "last": 4934,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 4936
+   },
+   "last": 5003,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.23",
+   "number_from": "render",
+   "labels": [
+    "cor:network-polytope-vertices"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 5056
+   },
+   "last": 5062,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 5064
+   },
+   "last": 5131,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-78",
+   "type": "env",
+   "k": 78,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.24",
+   "number_from": "render",
+   "labels": [
+    "cor:rainbow-matchings"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 5143
+   },
+   "last": 5149,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-79",
+   "type": "env",
+   "k": 79,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "C.25",
+   "number_from": "render",
+   "labels": [
+    "cor:degree-constrained-forests"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 5155
+   },
+   "last": 5165,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 5168
+   },
+   "last": 5282,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-80",
+   "type": "env",
+   "k": 80,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "D.1",
+   "number_from": "render",
+   "labels": [
+    "thm:softintersect-heatbath"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 5299
+   },
+   "last": 5304,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-81",
+   "type": "env",
+   "k": 81,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "D.2",
+   "number_from": "render",
+   "labels": [
+    "lem:softintersect-poincare"
+   ],
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 5307
+   },
+   "last": 5316,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#env-82",
+   "type": "env",
+   "k": 82,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "D.3",
+   "number_from": "render",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 5317
+   },
+   "last": 5319,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 5320
+   },
+   "last": 5373,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2610.06724v1#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "paper-v1.tex",
+    "line": 5375
+   },
+   "last": 5444,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

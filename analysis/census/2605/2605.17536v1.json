@@ -1,7 +1,7 @@
 {
  "paper": "2605.17536",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.29",
  "main": [
   "main_3.tex"
  ],
@@ -90,7 +90,7 @@
   {
    "env": "goal",
    "title": "Goal",
-   "item": "unknown",
+   "item": "statement/claim",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
@@ -159,6 +159,16 @@
    "numbered": false,
    "proof": true,
    "from": "class:amsart"
+  },
+  {
+   "env": "maintheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "shared": "mainthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
   }
  ],
  "occurrences": {
@@ -190,7 +200,9 @@
  "render": {
   "theorems": 9,
   "proofs": 8,
-  "agree": true
+  "agree": true,
+  "source_theorems": 9,
+  "source_proofs": 8
  },
  "strength": "strong",
  "items": [

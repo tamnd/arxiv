@@ -1,0 +1,980 @@
+{
+ "paper": "2610.06441",
+ "version": 2,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "hsys-michael-simon.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "a4wide",
+  "scholax",
+  "amsmath",
+  "amsthm",
+  "newtxmath",
+  "microtype",
+  "stmaryrd",
+  "graphicx",
+  "enumitem",
+  "fontenc",
+  "inputenc",
+  "xcolor",
+  "url",
+  "hyperref",
+  "mathtools",
+  "dsfont",
+  "chngcntr"
+ ],
+ "steps": [
+  "unpack: 3 files",
+  "main: hsys-michael-simon.tex",
+  "include: 3 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 210 commands, 2 environments",
+  "tree: 110 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "citing",
+   "title": "",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "intro_problem",
+   "title": "Problem",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claimcount",
+   "shared": "claimcount",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "subclaim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "subclaim",
+   "within": "claimcount",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introcnt",
+   "shared": "introcnt",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "introcol",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "introcnt",
+   "shared": "introcnt",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "miniremark",
+   "title": "",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question*",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "step",
+   "title": "Step",
+   "item": "other/case",
+   "counter": "step",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  },
+  {
+   "env": "proofinsteps",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 28,
+  "label": 58,
+  "proof": 8
+ },
+ "matched": {
+  "env": 28,
+  "label": 58,
+  "proof": 8
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 28,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 28,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 0,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 28,
+  "proofs": 8,
+  "agree": true,
+  "source_theorems": 28,
+  "source_proofs": 8
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.06441v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 125
+   },
+   "last": 129,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "mr:notation",
+    "eq:notation:allard",
+    "eq:notation:rank-one",
+    "eq:notation:hodge"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 137
+   },
+   "last": 240,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "mr:separable"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 242
+   },
+   "last": 261,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "def:jacobian"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 263
+   },
+   "last": 271,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "def:hsys",
+    "eq:hsys"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 273
+   },
+   "last": 284,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "lem:hadamard",
+    "eq:hadamard:amgm",
+    "eq:hadamard:smallest"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 286
+   },
+   "last": 297,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 299
+   },
+   "last": 308,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "mr:distortion"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 310
+   },
+   "last": 317,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "def:K"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 319
+   },
+   "last": 329,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.8",
+   "number_from": "render",
+   "labels": [
+    "lem:K",
+    "eq:K"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 331
+   },
+   "last": 343,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:K:S"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 345
+   },
+   "last": 409,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "mr:stress"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 414
+   },
+   "last": 424,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "mr:push",
+    "eq:stress:polar",
+    "eq:stress:variation"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 426
+   },
+   "last": 471,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "def:push"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 473
+   },
+   "last": 488,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "mr:push:measure",
+    "eq:stress:borel",
+    "eq:stress:bounds"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 490
+   },
+   "last": 544,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "mr:sphere:strategy"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 546
+   },
+   "last": 555,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "lem:sphere",
+    "eq:sphere:test",
+    "eq:sphere"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 557
+   },
+   "last": 586,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:sphere:ae"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 588
+   },
+   "last": 693,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "def:regular"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 695
+   },
+   "last": 700,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "3.8",
+   "number_from": "render",
+   "labels": [
+    "mr:regular",
+    "eq:regular"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 702
+   },
+   "last": 715,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "3.9",
+   "number_from": "render",
+   "labels": [
+    "mr:structure:strategy"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 717
+   },
+   "last": 723,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.10",
+   "number_from": "render",
+   "labels": [
+    "lem:structure",
+    "eq:structure:hyp",
+    "eq:structure"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 725
+   },
+   "last": 745,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:structure:P",
+    "eq:structure:area",
+    "eq:structure:A"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 747
+   },
+   "last": 848,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "render",
+   "labels": [
+    "mr:DGPR",
+    "eq:DGPR:sup",
+    "eq:DGPR:div",
+    "eq:DGPR"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 853
+   },
+   "last": 903,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "mr:DGPR:language"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 905
+   },
+   "last": 920,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "mr:ode"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 922
+   },
+   "last": 938,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "lem:ode",
+    "eq:ode:hyp"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 940
+   },
+   "last": 952,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:ode:int",
+    "eq:ode:diff"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 954
+   },
+   "last": 981,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "miniremark",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "mr:lower-mass:strategy"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 983
+   },
+   "last": 990,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.6",
+   "number_from": "render",
+   "labels": [
+    "lem:lower-mass"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 992
+   },
+   "last": 1003,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:lower-mass:away",
+    "eq:lower-mass:grad",
+    "eq:lower-mass:rep"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 1005
+   },
+   "last": 1095,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.7",
+   "number_from": "render",
+   "labels": [
+    "thm:bounded"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 1097
+   },
+   "last": 1106,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:bounded:alt"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 1108
+   },
+   "last": 1151,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.8",
+   "number_from": "render",
+   "labels": [
+    "cor:continuity"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 1153
+   },
+   "last": 1162,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 1164
+   },
+   "last": 1172,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06441v2#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.9",
+   "number_from": "render",
+   "labels": [
+    "rem:direct"
+   ],
+   "pos": {
+    "file": "hsys-michael-simon.tex",
+    "line": 1174
+   },
+   "last": 1186,
+   "result": "matched"
+  }
+ ]
+}

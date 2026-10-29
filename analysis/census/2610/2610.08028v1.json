@@ -1,0 +1,931 @@
+{
+ "paper": "2610.08028",
+ "version": 1,
+ "extractor": "ax/v0.5.29",
+ "main": [
+  "Poinc_Dom_in_Ball_nd_end.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "geometry",
+  "times",
+  "amsfonts",
+  "amssymb",
+  "amsmath",
+  "tikz",
+  "pgfplots",
+  "tikz-3dplot",
+  "amsthm",
+  "graphicx",
+  "color",
+  "titlesec"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: Poinc_Dom_in_Ball_nd_end.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 61 commands, 0 environments",
+  "tree: 113 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "satz",
+   "title": "prop",
+   "item": "statement/proposition",
+   "counter": "satz",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "satz",
+   "shared": "satz",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "satz",
+   "shared": "satz",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "satz",
+   "shared": "satz",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "satz",
+   "shared": "satz",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "satz",
+   "shared": "satz",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "satz",
+   "shared": "satz",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "shared": "satz",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "problem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "satz",
+   "shared": "satz",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "satz",
+   "shared": "satz",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 31,
+  "label": 61,
+  "proof": 5,
+  "textref": 32
+ },
+ "matched": {
+  "env": 31,
+  "label": 61,
+  "proof": 5
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 31,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 31,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 28,
+  "unresolved": 4
+ },
+ "render": {
+  "theorems": 31,
+  "proofs": 5,
+  "agree": true,
+  "source_theorems": 31,
+  "source_proofs": 5
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2610.08028v1#textref-2",
+   "message": "the text names notation A and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.08028v1#textref-3",
+   "message": "the text names notation B and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.08028v1#textref-16",
+   "message": "the text names notation B and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2610.08028v1#textref-29",
+   "message": "the text names notation A and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2610.08028v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "satz",
+   "number": "1",
+   "number_from": "render",
+   "labels": [
+    "Nabla",
+    "nab_def"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 349
+   },
+   "last": 359,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "satz",
+   "number": "2",
+   "number_from": "render",
+   "labels": [
+    "N2",
+    "17..def:"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 360
+   },
+   "last": 371,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "satz",
+   "number": "3",
+   "number_from": "render",
+   "labels": [
+    "N3"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 433
+   },
+   "last": 466,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "satz",
+   "number": "4",
+   "number_from": "render",
+   "labels": [
+    "D4"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 501
+   },
+   "last": 517,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "number": "5",
+   "number_from": "render",
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 519
+   },
+   "last": 523,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "satz",
+   "number": "6",
+   "number_from": "render",
+   "labels": [
+    "D5"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 536
+   },
+   "last": 552,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "number": "7",
+   "number_from": "render",
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 554
+   },
+   "last": 570,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "satz",
+   "number": "8",
+   "number_from": "render",
+   "labels": [
+    "thmstok"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 574
+   },
+   "last": 577,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "satz",
+   "number": "9",
+   "number_from": "render",
+   "labels": [
+    "STOeiFU"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 584
+   },
+   "last": 609,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "number": "10",
+   "number_from": "render",
+   "labels": [
+    "StokesClass",
+    "Sto_Class"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 613
+   },
+   "last": 628,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "satz",
+   "number": "11",
+   "number_from": "render",
+   "labels": [
+    "Trieb_Laplace_1",
+    "Lapl_einheitskugel_EW",
+    "Lapl_einheitskugel_EF"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 638
+   },
+   "last": 664,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "satz",
+   "number": "12",
+   "number_from": "render",
+   "labels": [
+    "Stokes_Unit_ball",
+    "Stokes_einheitskugel_EW",
+    "Stokes_Allgem_Einsball_EF",
+    "Stokes_Allgem_Rho_Einsball"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 665
+   },
+   "last": 705,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "satz",
+   "number": "13",
+   "number_from": "render",
+   "labels": [
+    "thm_shift_Lapl_Stokes_n"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 708
+   },
+   "last": 723,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "number": "14",
+   "number_from": "render",
+   "labels": [
+    "Besselzeros"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 724
+   },
+   "last": 734,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "number": "15",
+   "number_from": "render",
+   "labels": [
+    "transformationR",
+    "TransfEigenv"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 742
+   },
+   "last": 765,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "satz",
+   "number": "16",
+   "number_from": "render",
+   "labels": [
+    "first_eigenv_R",
+    "Gucken",
+    "Transf_1st_Eigenv"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 770
+   },
+   "last": 809,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "satz",
+   "number": "17",
+   "number_from": "render",
+   "labels": [
+    "EW_Laplace_1",
+    "n_Lapl_Einskug",
+    "mon_Lapl_Einskug"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 844
+   },
+   "last": 880,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "subsetsL",
+    "proof_mon_Lapl_Einskug"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 882
+   },
+   "last": 937,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "satz",
+   "number": "18",
+   "number_from": "render",
+   "labels": [
+    "EW_Laplace_2",
+    "n_Lapl_DiaKug",
+    "mon_Lapl_Diakug"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 939
+   },
+   "last": 981,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "subsetsL"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 982
+   },
+   "last": 1008,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "satz",
+   "number": "19",
+   "number_from": "render",
+   "labels": [
+    "EW_Stokes_12",
+    "n_Stokes_alle",
+    "mon_Stokes__12"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1014
+   },
+   "last": 1049,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "subsetsSEinskugel",
+    "subsetsS",
+    "proof_mon_Stokes_Einskug"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1050
+   },
+   "last": 1123,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "satz",
+   "number": "20",
+   "number_from": "render",
+   "labels": [
+    "Poi_Eigv_Omega",
+    "R_estim_PC"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1135
+   },
+   "last": 1152,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "R-Absch_EW",
+    "R_absch__proof_PC"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1153
+   },
+   "last": 1210,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "number": "21",
+   "number_from": "render",
+   "labels": [
+    "Poi_Eigv_OmegaII",
+    "TransfEigenvOmega"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1211
+   },
+   "last": 1230,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "satz",
+   "number": "22",
+   "number_from": "render",
+   "labels": [
+    "RefGiTru"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1252
+   },
+   "last": 1264,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "satz",
+   "number": "23",
+   "number_from": "render",
+   "labels": [
+    "Poi_Encl_Omega",
+    "R_Ri_estim_PC",
+    "mon_Lapl_Kug_Diakug"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1336
+   },
+   "last": 1362,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1363
+   },
+   "last": 1367,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "satz",
+   "number": "24",
+   "number_from": "render",
+   "labels": [
+    "polarcoord",
+    "Pol1Sh"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1612
+   },
+   "last": 1628,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "satz",
+   "number": "25",
+   "number_from": "render",
+   "labels": [
+    "SurfHarm0+1",
+    "SphSurf0",
+    "SphSurf1"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1629
+   },
+   "last": 1656,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "number": "26",
+   "number_from": "render",
+   "labels": [
+    "JacobiMat"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1658
+   },
+   "last": 1685,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "number": "27",
+   "number_from": "render",
+   "labels": [
+    "R1",
+    "R1_T=n"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1686
+   },
+   "last": 1728,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "number": "28",
+   "number_from": "render",
+   "labels": [
+    "Lapldimn"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1730
+   },
+   "last": 1763,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "satz",
+   "number": "29",
+   "number_from": "render",
+   "labels": [
+    "DBeltr"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1767
+   },
+   "last": 1796,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "satz",
+   "number": "30",
+   "number_from": "render",
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1797
+   },
+   "last": 1799,
+   "result": "matched"
+  },
+  {
+   "id": "2610.08028v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "satz",
+   "number": "31",
+   "number_from": "render",
+   "labels": [
+    "thmsbeltr"
+   ],
+   "pos": {
+    "file": "Poinc_Dom_in_Ball_nd_end.tex",
+    "line": 1802
+   },
+   "last": 1808,
+   "result": "matched"
+  }
+ ]
+}
