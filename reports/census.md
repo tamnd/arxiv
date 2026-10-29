@@ -1,7 +1,7 @@
 # The census of the analysis plane
 
 2,009 versions have a census record, and 32 are stopped. 0.0% of the papers with a census have a gap, and 100.0% are strong or normal.
-Counted on 28 October 2026 from analysis/census, analysis/objects and analysis/stopped.
+Counted on 29 October 2026 from analysis/census, analysis/objects and analysis/stopped.
 
 ## The open papers in scope
 
