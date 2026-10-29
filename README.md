@@ -48,14 +48,14 @@ A v1 under CC BY and a v2 under the default licence are two different decisions,
 ## Layout
 
 ```
-metadata/2106.jsonl          every paper submitted in June 2021, CC0, no gate
+metadata/2106.md             every paper submitted in June 2021, CC0, no gate
 content/en/2106/2106.09685/  the extraction, per paper, per language
 content/vi/2106/2106.09685/
 figures/2106/2106.09685/     figures, for open and share-alike papers only
 tables/2106/2106.09685/      every table twice, as Markdown and as LaTeX
 tags/2106/2106.09685.tags    the permanent tag register for that paper
 tags/2106/2106.09685.runs    where one assignment stopped and the next began
-graph/2106.jsonl             edges whose source is a paper in that shard
+graph/2106.md                edges whose source is a paper in that shard
 manifests/                   languages, typesetting, selection, graph, glossaries
 manifests/sources.yaml       what was fetched, from which URL, and what it hashed to
 manifests/figures/2106.yaml  what was decided about every figure of that month
