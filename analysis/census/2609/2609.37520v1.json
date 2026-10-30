@@ -1,0 +1,8335 @@
+{
+ "paper": "2609.37520",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "preamble"
+ ],
+ "steps": [
+  "unpack: 4 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 3 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 142 commands, 0 environments",
+  "tree: 776 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem*",
+   "title": "Problem",
+   "item": "problem",
+   "numbered": false,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "subsection",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "slogan",
+   "title": "Slogan",
+   "item": "unknown",
+   "numbered": false,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "main",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "main",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark*",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "warning",
+   "title": "Warning",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "para",
+   "title": "",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:preamble.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
+  }
+ ],
+ "occurrences": {
+  "env": 296,
+  "label": 187,
+  "proof": 175,
+  "textref": 3
+ },
+ "matched": {
+  "env": 296,
+  "label": 187,
+  "proof": 175
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 296,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 2,
+  "unresolved": 1
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.37520v1#textref-1",
+   "message": "the text names Proposition 5.18 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.37520v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "number": "1.1.1",
+   "number_from": "counter",
+   "labels": [
+    "Mann_conjecture"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 86
+   },
+   "last": 91,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "main",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "main",
+   "number": "A",
+   "number_from": "counter",
+   "labels": [
+    "main_theorem:free_adjointed_2_cat"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 104
+   },
+   "last": 116,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "main",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "main",
+   "number": "B",
+   "number_from": "counter",
+   "labels": [
+    "main_theorem:lax_monoidal_free_adjointed_2_cat"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 120
+   },
+   "last": 132,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.3.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:equiv_between_2ff_and_E_monoidal_intro"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 220
+   },
+   "last": 229,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "main",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "main",
+   "number": "C",
+   "number_from": "counter",
+   "labels": [
+    "main_theorem:free_E_monoidal_semiadditive"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 263
+   },
+   "last": 274,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 330
+   },
+   "last": 332,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "para",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "2.1.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 442
+   },
+   "last": 451,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.1.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 455
+   },
+   "last": 457,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.1.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 461
+   },
+   "last": 463,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.1.4",
+   "number_from": "counter",
+   "labels": [
+    "def:adjointed_functors"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 469
+   },
+   "last": 503,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "number": "2.1.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 508
+   },
+   "last": 510,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.1.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 514
+   },
+   "last": 516,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.1.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 518
+   },
+   "last": 523,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1.8",
+   "number_from": "counter",
+   "labels": [
+    "lem:nat_of_norms"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 529
+   },
+   "last": 533,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 535
+   },
+   "last": 563,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.1.9",
+   "number_from": "counter",
+   "labels": [
+    "cor:upward_close_lemma"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 567
+   },
+   "last": 569,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 571
+   },
+   "last": 573,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.2.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:adjtd_preserves_nonempty_colimits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 586
+   },
+   "last": 594,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 596
+   },
+   "last": 602,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 604
+   },
+   "last": 606,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.2.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:adj_closed_under_limits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 612
+   },
+   "last": 614,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 616
+   },
+   "last": 629,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.2.4",
+   "number_from": "counter",
+   "labels": [
+    "cor:naively_adjbl_functors_are_closed_under_limits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 635
+   },
+   "last": 637,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 639
+   },
+   "last": 641,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.2.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:2_isos_closed_under_limits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 664
+   },
+   "last": 666,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 668
+   },
+   "last": 670,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.2.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:adjtd_preserves_limits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 672
+   },
+   "last": 680,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 682
+   },
+   "last": 698,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.2.7",
+   "number_from": "counter",
+   "labels": [
+    "prop:adjointed_reflection"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 704
+   },
+   "last": 712,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 714
+   },
+   "last": 718,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.2.8",
+   "number_from": "counter",
+   "labels": [
+    "cor:existence_of_universal_adjointed_functor"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 722
+   },
+   "last": 732,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 734
+   },
+   "last": 736,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.2.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:enriched_universal_property"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 744
+   },
+   "last": 750,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 752
+   },
+   "last": 772,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.3.1",
+   "number_from": "counter",
+   "labels": [
+    "def:free_adjointed_functor_on_an_object"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 780
+   },
+   "last": 787,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "number": "2.3.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 791
+   },
+   "last": 797,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.3.3",
+   "number_from": "counter",
+   "labels": [
+    "recognition_principle"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 801
+   },
+   "last": 807,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:universal_adjointed_representables_are_free"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 813
+   },
+   "last": 815,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 817
+   },
+   "last": 827,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:universal_adjointed_essentially_surjective"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 829
+   },
+   "last": 831,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 833
+   },
+   "last": 835,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 839
+   },
+   "last": 855,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 862
+   },
+   "last": 867,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.4.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 869
+   },
+   "last": 871,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.4.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 873
+   },
+   "last": 875,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 877
+   },
+   "last": 879,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.4.4",
+   "number_from": "counter",
+   "labels": [
+    "thm:red_of_main"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 885
+   },
+   "last": 891,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.4.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:reduction_of_main_theorem"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 895
+   },
+   "last": 897,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 899
+   },
+   "last": 913,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1.1",
+   "number_from": "counter",
+   "labels": [
+    "eq:pullback_square_of_left_along_right"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1001
+   },
+   "last": 1010,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1014
+   },
+   "last": 1021,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1025
+   },
+   "last": 1047,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1051
+   },
+   "last": 1055,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "theorem",
+   "number": "3.1.5",
+   "number_from": "counter",
+   "labels": [
+    "def:catsofspans:adjuncions"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1059
+   },
+   "last": 1078,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "theorem",
+   "number": "3.1.6",
+   "number_from": "counter",
+   "labels": [
+    "const:unfurling"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1082
+   },
+   "last": 1129,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1.7",
+   "number_from": "counter",
+   "labels": [
+    "def:internal_ad_triplet"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1135
+   },
+   "last": 1137,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1150
+   },
+   "last": 1159,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.1.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1174
+   },
+   "last": 1176,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "theorem",
+   "number": "3.1.10",
+   "number_from": "counter",
+   "labels": [
+    "const:internal_unfurling",
+    "const:unst_of_unf"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1180
+   },
+   "last": 1223,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.1.11",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1227
+   },
+   "last": 1238,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1239
+   },
+   "last": 1258,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1.12",
+   "number_from": "counter",
+   "labels": [
+    "thm:uniqueness_of_unfurling"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1275
+   },
+   "last": 1282,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1283
+   },
+   "last": 1285,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1.13",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1289
+   },
+   "last": 1293,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1.14",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1297
+   },
+   "last": 1303,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.1.15",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1305
+   },
+   "last": 1312,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1313
+   },
+   "last": 1315,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1.16",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1319
+   },
+   "last": 1332,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.1.17",
+   "number_from": "counter",
+   "labels": [
+    "lem:truncated_sheafify_to_locally_trancated"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1355
+   },
+   "last": 1366,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1367
+   },
+   "last": 1405,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1.18",
+   "number_from": "counter",
+   "labels": [
+    "thm:internal_uniqueness_of_unfurling"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1407
+   },
+   "last": 1413,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1414
+   },
+   "last": 1429,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.1.19",
+   "number_from": "counter",
+   "labels": [
+    "prop:cov_unfurling"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1435
+   },
+   "last": 1453,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1454
+   },
+   "last": 1456,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.2.1",
+   "number_from": "counter",
+   "labels": [
+    "def:storngly_regular_universe"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1472
+   },
+   "last": 1485,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "warning",
+   "title": "Warning",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1498
+   },
+   "last": 1500,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:from_local_class_to_subuniverse"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1502
+   },
+   "last": 1506,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1507
+   },
+   "last": 1520,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.2.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1522
+   },
+   "last": 1524,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "3.2.5",
+   "number_from": "counter",
+   "labels": [
+    "example:Fin_in_Ani"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1526
+   },
+   "last": 1528,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "3.2.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1530
+   },
+   "last": 1532,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.2.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1536
+   },
+   "last": 1538,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.2.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1540
+   },
+   "last": 1542,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1546
+   },
+   "last": 1548,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1549
+   },
+   "last": 1551,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.2.10",
+   "number_from": "counter",
+   "labels": [
+    "prop:S_is_free_with_S_colmitis"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1555
+   },
+   "last": 1562,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1563
+   },
+   "last": 1565,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.11",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1571
+   },
+   "last": 1573,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1574
+   },
+   "last": 1584,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.12",
+   "number_from": "counter",
+   "labels": [
+    "prop:limits_in_span_E"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1588
+   },
+   "last": 1594,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1595
+   },
+   "last": 1627,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "warning",
+   "title": "Warning",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.2.13",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1629
+   },
+   "last": 1631,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.14",
+   "number_from": "counter",
+   "labels": [
+    "prop:limits_in_span_E_are_computed_in_E_op"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1635
+   },
+   "last": 1641,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1642
+   },
+   "last": 1650,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.2.15",
+   "number_from": "counter",
+   "labels": [
+    "def:E_monoids"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1654
+   },
+   "last": 1674,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "3.2.16",
+   "number_from": "counter",
+   "labels": [
+    "example:Fin_monoids"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1676
+   },
+   "last": 1678,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.17",
+   "number_from": "counter",
+   "labels": [
+    "example:free_E_monoid"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1686
+   },
+   "last": 1688,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1689
+   },
+   "last": 1701,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.18",
+   "number_from": "counter",
+   "labels": [
+    "prop:cmon_is_presentable"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1705
+   },
+   "last": 1707,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1708
+   },
+   "last": 1733,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.2.19",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1739
+   },
+   "last": 1741,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.2.20",
+   "number_from": "counter",
+   "labels": [
+    "prop:groupoid_limits_span_universe_E"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1745
+   },
+   "last": 1757,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1758
+   },
+   "last": 1760,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.21",
+   "number_from": "counter",
+   "labels": [
+    "prop:extra_back_functoriality_for_E_monoidal_cats"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1764
+   },
+   "last": 1772,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1773
+   },
+   "last": 1791,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.2.22",
+   "number_from": "counter",
+   "labels": [
+    "def:free_on_A_with_E_colimits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1803
+   },
+   "last": 1805,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.2.23",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1819
+   },
+   "last": 1825,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.24",
+   "number_from": "counter",
+   "labels": [
+    "prop:free_on_A_with_E_colimits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1827
+   },
+   "last": 1833,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1834
+   },
+   "last": 1836,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-78",
+   "type": "env",
+   "k": 78,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.25",
+   "number_from": "counter",
+   "labels": [
+    "prop:the_underlying_groupoid_of_the_free_cat_with_colims_on_E"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1840
+   },
+   "last": 1847,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1848
+   },
+   "last": 1854,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-79",
+   "type": "env",
+   "k": 79,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2.26",
+   "number_from": "counter",
+   "labels": [
+    "prop:free_E_monoid_on_A"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1858
+   },
+   "last": 1865,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1866
+   },
+   "last": 1872,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-80",
+   "type": "env",
+   "k": 80,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "3.3.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1882
+   },
+   "last": 1884,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-81",
+   "type": "env",
+   "k": 81,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.3.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1888
+   },
+   "last": 1890,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-82",
+   "type": "env",
+   "k": 82,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.3.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:values_of_E_monoidal_categories"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1894
+   },
+   "last": 1901,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1902
+   },
+   "last": 1904,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-83",
+   "type": "env",
+   "k": 83,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "number": "3.3.4",
+   "number_from": "counter",
+   "labels": [
+    "notation:exponent_and_lower_otimes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1908
+   },
+   "last": 1935,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-84",
+   "type": "env",
+   "k": 84,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.3.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:cmon_is_cat_module_in_prl"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1941
+   },
+   "last": 1943,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1944
+   },
+   "last": 1961,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-85",
+   "type": "env",
+   "k": 85,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.3.6",
+   "number_from": "counter",
+   "labels": [
+    "cor:cmon_is_tensored_and_powered_by_cat"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1965
+   },
+   "last": 1992,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-86",
+   "type": "env",
+   "k": 86,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.3.7",
+   "number_from": "counter",
+   "labels": [
+    "example:free_E_monoidal_cat"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1996
+   },
+   "last": 2002,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2003
+   },
+   "last": 2005,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-87",
+   "type": "env",
+   "k": 87,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.3.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2011
+   },
+   "last": 2017,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-88",
+   "type": "env",
+   "k": 88,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.3.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:monoidal_subcategories_are_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2019
+   },
+   "last": 2023,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2024
+   },
+   "last": 2032,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-89",
+   "type": "env",
+   "k": 89,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.3.10",
+   "number_from": "counter",
+   "labels": [
+    "thm:monoidal_localization"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2036
+   },
+   "last": 2049,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2050
+   },
+   "last": 2064,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-90",
+   "type": "env",
+   "k": 90,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.4.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:categories_with_E_colimits_have_E_monoidal_structure"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2073
+   },
+   "last": 2079,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2080
+   },
+   "last": 2102,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-91",
+   "type": "env",
+   "k": 91,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.4.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2110
+   },
+   "last": 2112,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-92",
+   "type": "env",
+   "k": 92,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.4.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:categories_with_E_limits_have_E_monoidal_structure"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2116
+   },
+   "last": 2122,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2123
+   },
+   "last": 2125,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-93",
+   "type": "env",
+   "k": 93,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.5.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:every_morphism_in_I_is_locally_truncated_on_the_target"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2156
+   },
+   "last": 2158,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-42",
+   "type": "proof",
+   "k": 42,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2159
+   },
+   "last": 2161,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-94",
+   "type": "env",
+   "k": 94,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.5.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:uniqueness_of_cartesian_structures"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2165
+   },
+   "last": 2172,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-43",
+   "type": "proof",
+   "k": 43,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2173
+   },
+   "last": 2202,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-95",
+   "type": "env",
+   "k": 95,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.5.3",
+   "number_from": "counter",
+   "labels": [
+    "def:cartesian_S_monoidal_category"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2206
+   },
+   "last": 2244,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-96",
+   "type": "env",
+   "k": 96,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2246
+   },
+   "last": 2248,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-44",
+   "type": "proof",
+   "k": 44,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2249
+   },
+   "last": 2251,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-97",
+   "type": "env",
+   "k": 97,
+   "env": "para",
+   "item": "unknown",
+   "counter": "theorem",
+   "number": "3.5.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:op_is_also_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2255
+   },
+   "last": 2270,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-98",
+   "type": "env",
+   "k": 98,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:C_is_cartesian_iff_tensor_preserves_limits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2274
+   },
+   "last": 2280,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-45",
+   "type": "proof",
+   "k": 45,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2281
+   },
+   "last": 2283,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-99",
+   "type": "env",
+   "k": 99,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.5.7",
+   "number_from": "counter",
+   "labels": [
+    "Thm:CLL_amby"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2289
+   },
+   "last": 2296,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-100",
+   "type": "env",
+   "k": 100,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.5.8",
+   "number_from": "counter",
+   "labels": [
+    "cor:doubling"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2298
+   },
+   "last": 2313,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-101",
+   "type": "env",
+   "k": 101,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.5.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2315
+   },
+   "last": 2317,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-102",
+   "type": "env",
+   "k": 102,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.5.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2319
+   },
+   "last": 2325,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-103",
+   "type": "env",
+   "k": 103,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.5.11",
+   "number_from": "counter",
+   "labels": [
+    "lem:no_endomorphisms_of_CMon"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2329
+   },
+   "last": 2335,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-46",
+   "type": "proof",
+   "k": 46,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2336
+   },
+   "last": 2338,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-104",
+   "type": "env",
+   "k": 104,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "number": "3.5.12",
+   "number_from": "counter",
+   "labels": [
+    "question:no_endomorphism_of_cmon_without_iductiblity"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2340
+   },
+   "last": 2342,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-105",
+   "type": "env",
+   "k": 105,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.13",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2348
+   },
+   "last": 2350,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-47",
+   "type": "proof",
+   "k": 47,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2351
+   },
+   "last": 2353,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-106",
+   "type": "env",
+   "k": 106,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.5.14",
+   "number_from": "counter",
+   "labels": [
+    "def:E_algebras_and_coalgebras"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2357
+   },
+   "last": 2369,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-107",
+   "type": "env",
+   "k": 107,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.5.15",
+   "number_from": "counter",
+   "labels": [
+    "cor:cmon_is_self_enriched_if_inductible"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2375
+   },
+   "last": 2388,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-48",
+   "type": "proof",
+   "k": 48,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2389
+   },
+   "last": 2391,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-108",
+   "type": "env",
+   "k": 108,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "3.5.16",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2395
+   },
+   "last": 2412,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-109",
+   "type": "env",
+   "k": 109,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.17",
+   "number_from": "counter",
+   "labels": [
+    "prop:evaluation_is_I_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2414
+   },
+   "last": 2422,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-49",
+   "type": "proof",
+   "k": 49,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2423
+   },
+   "last": 2425,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-110",
+   "type": "env",
+   "k": 110,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.5.18",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2427
+   },
+   "last": 2429,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-111",
+   "type": "env",
+   "k": 111,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.19",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2433
+   },
+   "last": 2440,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-50",
+   "type": "proof",
+   "k": 50,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2441
+   },
+   "last": 2443,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-112",
+   "type": "env",
+   "k": 112,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.20",
+   "number_from": "counter",
+   "labels": [
+    "prop:forgetful_from_calg_is_internally_representable"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2447
+   },
+   "last": 2458,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-51",
+   "type": "proof",
+   "k": 51,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2459
+   },
+   "last": 2461,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-113",
+   "type": "env",
+   "k": 113,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.21",
+   "number_from": "counter",
+   "labels": [
+    "prop:calg_has_E_colimits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2472
+   },
+   "last": 2479,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-52",
+   "type": "proof",
+   "k": 52,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2480
+   },
+   "last": 2569,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-114",
+   "type": "env",
+   "k": 114,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.5.22",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2571
+   },
+   "last": 2573,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-115",
+   "type": "env",
+   "k": 115,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.23",
+   "number_from": "counter",
+   "labels": [
+    "prop:cocalg_has_E_limits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2577
+   },
+   "last": 2584,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-53",
+   "type": "proof",
+   "k": 53,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2585
+   },
+   "last": 2587,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-116",
+   "type": "env",
+   "k": 116,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.24",
+   "number_from": "counter",
+   "labels": [
+    "prop:calg_has_E_colimits_coherence"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2591
+   },
+   "last": 2598,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-54",
+   "type": "proof",
+   "k": 54,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2599
+   },
+   "last": 2605,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-117",
+   "type": "env",
+   "k": 117,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.25",
+   "number_from": "counter",
+   "labels": [
+    "prop:canonical_Calg_structure_for_cocartesian_categories"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2609
+   },
+   "last": 2623,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-55",
+   "type": "proof",
+   "k": 55,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2624
+   },
+   "last": 2628,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-118",
+   "type": "env",
+   "k": 118,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5.26",
+   "number_from": "counter",
+   "labels": [
+    "prop:forgetful_from_calg_is_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2632
+   },
+   "last": 2642,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-56",
+   "type": "proof",
+   "k": 56,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2643
+   },
+   "last": 2645,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-119",
+   "type": "env",
+   "k": 119,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.5.27",
+   "number_from": "counter",
+   "labels": [
+    "thm:calg_is_right_adjoint"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2647
+   },
+   "last": 2654,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-57",
+   "type": "proof",
+   "k": 57,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2655
+   },
+   "last": 2683,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-120",
+   "type": "env",
+   "k": 120,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.5.28",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2685
+   },
+   "last": 2687,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-121",
+   "type": "env",
+   "k": 121,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.5.29",
+   "number_from": "counter",
+   "labels": [
+    "thm:in_cocart_everything_is_alg"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2693
+   },
+   "last": 2700,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-58",
+   "type": "proof",
+   "k": 58,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2701
+   },
+   "last": 2703,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-122",
+   "type": "env",
+   "k": 122,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.5.30",
+   "number_from": "counter",
+   "labels": [
+    "thm:cocart_cats_are_localization_of_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2707
+   },
+   "last": 2714,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-59",
+   "type": "proof",
+   "k": 59,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2715
+   },
+   "last": 2723,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-123",
+   "type": "env",
+   "k": 123,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.5.31",
+   "number_from": "counter",
+   "labels": [
+    "cor:Icocart_iff_forgetful_colocal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2727
+   },
+   "last": 2734,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-60",
+   "type": "proof",
+   "k": 60,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2735
+   },
+   "last": 2739,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-124",
+   "type": "env",
+   "k": 124,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.6.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2759
+   },
+   "last": 2765,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-125",
+   "type": "env",
+   "k": 125,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.6.2",
+   "number_from": "counter",
+   "labels": [
+    "def:E_preoperads"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2769
+   },
+   "last": 2775,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-126",
+   "type": "env",
+   "k": 126,
+   "env": "warning",
+   "title": "Warning",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.6.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2777
+   },
+   "last": 2785,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-127",
+   "type": "env",
+   "k": 127,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.6.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2789
+   },
+   "last": 2796,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-128",
+   "type": "env",
+   "k": 128,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.6.5",
+   "number_from": "counter",
+   "labels": [
+    "def:E_full_1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2802
+   },
+   "last": 2820,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-129",
+   "type": "env",
+   "k": 129,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2822
+   },
+   "last": 2832,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-61",
+   "type": "proof",
+   "k": 61,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2833
+   },
+   "last": 2857,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-130",
+   "type": "env",
+   "k": 130,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.6.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:descript_of_E_tensor"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2859
+   },
+   "last": 2865,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-62",
+   "type": "proof",
+   "k": 62,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2866
+   },
+   "last": 2879,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-131",
+   "type": "env",
+   "k": 131,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.6.8",
+   "number_from": "counter",
+   "labels": [
+    "cor:description_of_the_env_of_triv"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2883
+   },
+   "last": 2893,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-132",
+   "type": "env",
+   "k": 132,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:source_target_identity_adjunctions"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2897
+   },
+   "last": 2907,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-63",
+   "type": "proof",
+   "k": 63,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2908
+   },
+   "last": 2926,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-133",
+   "type": "env",
+   "k": 133,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.6.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2932
+   },
+   "last": 2944,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-134",
+   "type": "env",
+   "k": 134,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6.11",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2946
+   },
+   "last": 2948,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-64",
+   "type": "proof",
+   "k": 64,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2949
+   },
+   "last": 2966,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-135",
+   "type": "env",
+   "k": 135,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.6.12",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2968
+   },
+   "last": 2975,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-136",
+   "type": "env",
+   "k": 136,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6.13",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2979
+   },
+   "last": 2987,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-65",
+   "type": "proof",
+   "k": 65,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2988
+   },
+   "last": 3002,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-137",
+   "type": "env",
+   "k": 137,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.6.14",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3004
+   },
+   "last": 3008,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-138",
+   "type": "env",
+   "k": 138,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6.15",
+   "number_from": "counter",
+   "labels": [
+    "prop:eta_is_a_morphism_of_preoperads"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3012
+   },
+   "last": 3025,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-66",
+   "type": "proof",
+   "k": 66,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3026
+   },
+   "last": 3028,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-139",
+   "type": "env",
+   "k": 139,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.6.16",
+   "number_from": "counter",
+   "labels": [
+    "lem:right_adj_are_stable_under_BC"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3032
+   },
+   "last": 3048,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-67",
+   "type": "proof",
+   "k": 67,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3049
+   },
+   "last": 3051,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-140",
+   "type": "env",
+   "k": 140,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6.17",
+   "number_from": "counter",
+   "labels": [
+    "prop:preoperad_premonoidal_adjunction"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3070
+   },
+   "last": 3076,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-68",
+   "type": "proof",
+   "k": 68,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3077
+   },
+   "last": 3160,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-141",
+   "type": "env",
+   "k": 141,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.6.18",
+   "number_from": "counter",
+   "labels": [
+    "def:E_operads"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3166
+   },
+   "last": 3176,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-142",
+   "type": "env",
+   "k": 142,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "3.6.19",
+   "number_from": "counter",
+   "labels": [
+    "ex:classical_E_operads"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3178
+   },
+   "last": 3180,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-69",
+   "type": "proof",
+   "k": 69,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3181
+   },
+   "last": 3204,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-143",
+   "type": "env",
+   "k": 143,
+   "env": "warning",
+   "title": "Warning",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.6.20",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3216
+   },
+   "last": 3224,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-144",
+   "type": "env",
+   "k": 144,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "number": "3.6.21",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3230
+   },
+   "last": 3239,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-145",
+   "type": "env",
+   "k": 145,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.6.22",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3241
+   },
+   "last": 3243,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-146",
+   "type": "env",
+   "k": 146,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.6.23",
+   "number_from": "counter",
+   "labels": [
+    "lem:limit_cone_cocartesian_fib_critirion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3247
+   },
+   "last": 3271,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-70",
+   "type": "proof",
+   "k": 70,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3272
+   },
+   "last": 3290,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-147",
+   "type": "env",
+   "k": 147,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.6.24",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3294
+   },
+   "last": 3309,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-148",
+   "type": "env",
+   "k": 148,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6.25",
+   "number_from": "counter",
+   "labels": [
+    "prop:canonical_span_limit_cones"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3311
+   },
+   "last": 3313,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-71",
+   "type": "proof",
+   "k": 71,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3314
+   },
+   "last": 3318,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-149",
+   "type": "env",
+   "k": 149,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6.26",
+   "number_from": "counter",
+   "labels": [
+    "prop:otimes_sends_monoidal_to_operads"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3322
+   },
+   "last": 3328,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-72",
+   "type": "proof",
+   "k": 72,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3329
+   },
+   "last": 3364,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-150",
+   "type": "env",
+   "k": 150,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.6.27",
+   "number_from": "counter",
+   "labels": [
+    "thm:env_associated_operad_adjunction"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3368
+   },
+   "last": 3374,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-73",
+   "type": "proof",
+   "k": 73,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3375
+   },
+   "last": 3381,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-151",
+   "type": "env",
+   "k": 151,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.6.28",
+   "number_from": "counter",
+   "labels": [
+    "def:lax_E_monoidal_functors"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3385
+   },
+   "last": 3390,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-152",
+   "type": "env",
+   "k": 152,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.7.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:forgetting_E_to_I_monoidal_in_prr"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3411
+   },
+   "last": 3417,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-74",
+   "type": "proof",
+   "k": 74,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3418
+   },
+   "last": 3422,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-153",
+   "type": "env",
+   "k": 153,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.7.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3426
+   },
+   "last": 3438,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-154",
+   "type": "env",
+   "k": 154,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.7.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:pushout_in_prl_defining_E_mon_I_cocart"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3442
+   },
+   "last": 3454,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-75",
+   "type": "proof",
+   "k": 75,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3455
+   },
+   "last": 3462,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-155",
+   "type": "env",
+   "k": 155,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.7.4",
+   "number_from": "counter",
+   "labels": [
+    "def:P_I_ambi_E_monoidal_cats"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3468
+   },
+   "last": 3474,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-156",
+   "type": "env",
+   "k": 156,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.7.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:localization_to_partial_ambidexterity"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3478
+   },
+   "last": 3484,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-76",
+   "type": "proof",
+   "k": 76,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3485
+   },
+   "last": 3493,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-157",
+   "type": "env",
+   "k": 157,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "3.7.6",
+   "number_from": "counter",
+   "labels": [
+    "cor:existance_of_free_ambi_monoidal_category"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3497
+   },
+   "last": 3507,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-158",
+   "type": "env",
+   "k": 158,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.7.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3511
+   },
+   "last": 3529,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-159",
+   "type": "env",
+   "k": 159,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.7.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3535
+   },
+   "last": 3545,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-160",
+   "type": "env",
+   "k": 160,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.7.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:inductive_amby_iff_ambi"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3547
+   },
+   "last": 3549,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-77",
+   "type": "proof",
+   "k": 77,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3550
+   },
+   "last": 3554,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-161",
+   "type": "env",
+   "k": 161,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.7.10",
+   "number_from": "counter",
+   "labels": [
+    "cor:critiria_for_amby"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3558
+   },
+   "last": 3572,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-78",
+   "type": "proof",
+   "k": 78,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3573
+   },
+   "last": 3575,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-162",
+   "type": "env",
+   "k": 162,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.8.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3606
+   },
+   "last": 3608,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-79",
+   "type": "proof",
+   "k": 79,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3609
+   },
+   "last": 3613,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-163",
+   "type": "env",
+   "k": 163,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.8.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3617
+   },
+   "last": 3623,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-80",
+   "type": "proof",
+   "k": 80,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3624
+   },
+   "last": 3626,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-164",
+   "type": "env",
+   "k": 164,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.8.3",
+   "number_from": "counter",
+   "labels": [
+    "cor:E_cmon_is_symmetric_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3630
+   },
+   "last": 3636,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-81",
+   "type": "proof",
+   "k": 81,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3637
+   },
+   "last": 3639,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-165",
+   "type": "env",
+   "k": 165,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.8.4",
+   "number_from": "counter",
+   "labels": [
+    "cor:E_monoidal_cats_are_symmetric_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3643
+   },
+   "last": 3649,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-82",
+   "type": "proof",
+   "k": 82,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3650
+   },
+   "last": 3656,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-166",
+   "type": "env",
+   "k": 166,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "number": "3.8.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3658
+   },
+   "last": 3662,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-167",
+   "type": "env",
+   "k": 167,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.8.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3664
+   },
+   "last": 3666,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-168",
+   "type": "env",
+   "k": 168,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.8.7",
+   "number_from": "counter",
+   "labels": [
+    "prop:I_cocart_loc_is_sym_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3672
+   },
+   "last": 3678,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-83",
+   "type": "proof",
+   "k": 83,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3679
+   },
+   "last": 3689,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-169",
+   "type": "env",
+   "k": 169,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.8.8",
+   "number_from": "counter",
+   "labels": [
+    "prop:rel_free_is_sym_mon"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3693
+   },
+   "last": 3699,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-84",
+   "type": "proof",
+   "k": 84,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3700
+   },
+   "last": 3704,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-170",
+   "type": "env",
+   "k": 170,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.8.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:pushout_in_prl_I_cocart"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3708
+   },
+   "last": 3718,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-85",
+   "type": "proof",
+   "k": 85,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3719
+   },
+   "last": 3721,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-171",
+   "type": "env",
+   "k": 171,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.8.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3725
+   },
+   "last": 3730,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-86",
+   "type": "proof",
+   "k": 86,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3731
+   },
+   "last": 3738,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-172",
+   "type": "env",
+   "k": 172,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.8.11",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3742
+   },
+   "last": 3748,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-87",
+   "type": "proof",
+   "k": 87,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3749
+   },
+   "last": 3755,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-173",
+   "type": "env",
+   "k": 173,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.8.12",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3757
+   },
+   "last": 3760,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-88",
+   "type": "proof",
+   "k": 88,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3761
+   },
+   "last": 3771,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-174",
+   "type": "env",
+   "k": 174,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.8.13",
+   "number_from": "counter",
+   "labels": [
+    "thm:cocart_is_a_mode"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3777
+   },
+   "last": 3784,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-89",
+   "type": "proof",
+   "k": 89,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3785
+   },
+   "last": 3800,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-175",
+   "type": "env",
+   "k": 175,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.8.14",
+   "number_from": "counter",
+   "labels": [
+    "cor:P_I_ambi_is_a_smashing_localization"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3804
+   },
+   "last": 3815,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-90",
+   "type": "proof",
+   "k": 90,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3816
+   },
+   "last": 3826,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-176",
+   "type": "env",
+   "k": 176,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1.1",
+   "number_from": "counter",
+   "labels": [
+    "def:internal_two_categories"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3867
+   },
+   "last": 3879,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-177",
+   "type": "env",
+   "k": 177,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.1.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3884
+   },
+   "last": 3887,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-178",
+   "type": "env",
+   "k": 178,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.1.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3889
+   },
+   "last": 3892,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-179",
+   "type": "env",
+   "k": 179,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3894
+   },
+   "last": 3900,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-180",
+   "type": "env",
+   "k": 180,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.1.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3902
+   },
+   "last": 3908,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-181",
+   "type": "env",
+   "k": 181,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.1.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3912
+   },
+   "last": 3916,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-91",
+   "type": "proof",
+   "k": 91,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3918
+   },
+   "last": 3920,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-182",
+   "type": "env",
+   "k": 182,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.1.7",
+   "number_from": "counter",
+   "labels": [
+    "prop:gray_module_structures"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3933
+   },
+   "last": 3935,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-92",
+   "type": "proof",
+   "k": 92,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3937
+   },
+   "last": 3939,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-183",
+   "type": "env",
+   "k": 183,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.1.8",
+   "number_from": "counter",
+   "labels": [
+    "prop:internal_gray_tensor_product"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3982
+   },
+   "last": 3984,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-93",
+   "type": "proof",
+   "k": 93,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3985
+   },
+   "last": 3988,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-184",
+   "type": "env",
+   "k": 184,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.1.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 3995
+   },
+   "last": 3997,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-185",
+   "type": "env",
+   "k": 185,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4030
+   },
+   "last": 4049,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-186",
+   "type": "env",
+   "k": 186,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1.11",
+   "number_from": "counter",
+   "labels": [
+    "def:one_cocartesian_fibration"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4053
+   },
+   "last": 4067,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-187",
+   "type": "env",
+   "k": 187,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1.12",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4077
+   },
+   "last": 4080,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-188",
+   "type": "env",
+   "k": 188,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.1.13",
+   "number_from": "counter",
+   "labels": [
+    "example:oplax_slice"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4082
+   },
+   "last": 4093,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-189",
+   "type": "env",
+   "k": 189,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1.14",
+   "number_from": "counter",
+   "labels": [
+    "def:internal_one_cocartesian_fibration"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4095
+   },
+   "last": 4104,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-190",
+   "type": "env",
+   "k": 190,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.1.15",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4108
+   },
+   "last": 4118,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-191",
+   "type": "env",
+   "k": 191,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.1.16",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4120
+   },
+   "last": 4127,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-94",
+   "type": "proof",
+   "k": 94,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4128
+   },
+   "last": 4130,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-192",
+   "type": "env",
+   "k": 192,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1.17",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4132
+   },
+   "last": 4134,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-95",
+   "type": "proof",
+   "k": 95,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4135
+   },
+   "last": 4139,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-193",
+   "type": "env",
+   "k": 193,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1.18",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4141
+   },
+   "last": 4149,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-96",
+   "type": "proof",
+   "k": 96,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4150
+   },
+   "last": 4152,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-194",
+   "type": "env",
+   "k": 194,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1.19",
+   "number_from": "counter",
+   "labels": [
+    "prop:univ_internal_2_cocart_fib"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4158
+   },
+   "last": 4160,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-97",
+   "type": "proof",
+   "k": 97,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4161
+   },
+   "last": 4169,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-195",
+   "type": "env",
+   "k": 195,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1.20",
+   "number_from": "counter",
+   "labels": [
+    "def:internal_two_unstraightening"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4174
+   },
+   "last": 4182,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-196",
+   "type": "env",
+   "k": 196,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1.21",
+   "number_from": "counter",
+   "labels": [
+    "thm:lax_unstraightening_external"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4191
+   },
+   "last": 4195,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-98",
+   "type": "proof",
+   "k": 98,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4196
+   },
+   "last": 4198,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-197",
+   "type": "env",
+   "k": 197,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1.22",
+   "number_from": "counter",
+   "labels": [
+    "thm:desc_of_the_unst_of_universal_lax_natural_transformation"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4245
+   },
+   "last": 4252,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-99",
+   "type": "proof",
+   "k": 99,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4253
+   },
+   "last": 4281,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-198",
+   "type": "env",
+   "k": 198,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1.23",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4290
+   },
+   "last": 4295,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-199",
+   "type": "env",
+   "k": 199,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.1.24",
+   "number_from": "counter",
+   "labels": [
+    "prop:extra_functoriality_of_unst_univ_case"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4298
+   },
+   "last": 4300,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-100",
+   "type": "proof",
+   "k": 100,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4302
+   },
+   "last": 4304,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-200",
+   "type": "env",
+   "k": 200,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.1.25",
+   "number_from": "counter",
+   "labels": [
+    "cor:extra_functoriality_of_unst"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4307
+   },
+   "last": 4314,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-101",
+   "type": "proof",
+   "k": 101,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4315
+   },
+   "last": 4323,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-201",
+   "type": "env",
+   "k": 201,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.2.1",
+   "number_from": "counter",
+   "labels": [
+    "def:internal_span_two_category"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4355
+   },
+   "last": 4361,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-202",
+   "type": "env",
+   "k": 202,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.2.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:univ_prop_of_span_half"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4370
+   },
+   "last": 4373,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-102",
+   "type": "proof",
+   "k": 102,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4375
+   },
+   "last": 4377,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-203",
+   "type": "env",
+   "k": 203,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4401
+   },
+   "last": 4403,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-204",
+   "type": "env",
+   "k": 204,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.2.4",
+   "number_from": "counter",
+   "labels": [
+    "def:E_two_complete"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4407
+   },
+   "last": 4409,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-205",
+   "type": "env",
+   "k": 205,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.2.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:E_two_complete_criterion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4415
+   },
+   "last": 4421,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-103",
+   "type": "proof",
+   "k": 103,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4423
+   },
+   "last": 4437,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-206",
+   "type": "env",
+   "k": 206,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.2.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4440
+   },
+   "last": 4442,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-104",
+   "type": "proof",
+   "k": 104,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4443
+   },
+   "last": 4449,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-207",
+   "type": "env",
+   "k": 207,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.2.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4451
+   },
+   "last": 4453,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-105",
+   "type": "proof",
+   "k": 105,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4454
+   },
+   "last": 4458,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-208",
+   "type": "env",
+   "k": 208,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.2.8",
+   "number_from": "counter",
+   "labels": [
+    "def:E_two_continuous"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4463
+   },
+   "last": 4475,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-209",
+   "type": "env",
+   "k": 209,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.2.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:E_two_continuous_criterion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4477
+   },
+   "last": 4490,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-106",
+   "type": "proof",
+   "k": 106,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4491
+   },
+   "last": 4493,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-210",
+   "type": "env",
+   "k": 210,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.2.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4497
+   },
+   "last": 4499,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-107",
+   "type": "proof",
+   "k": 107,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4500
+   },
+   "last": 4502,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-211",
+   "type": "env",
+   "k": 211,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.2.11",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4505
+   },
+   "last": 4508,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-108",
+   "type": "proof",
+   "k": 108,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4510
+   },
+   "last": 4519,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-212",
+   "type": "env",
+   "k": 212,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.2.12",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4521
+   },
+   "last": 4523,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-109",
+   "type": "proof",
+   "k": 109,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4524
+   },
+   "last": 4533,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-213",
+   "type": "env",
+   "k": 213,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.2.13",
+   "number_from": "counter",
+   "labels": [
+    "thm:univ_unst_is_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4542
+   },
+   "last": 4545,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-110",
+   "type": "proof",
+   "k": 110,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4546
+   },
+   "last": 4564,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-214",
+   "type": "env",
+   "k": 214,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.2.14",
+   "number_from": "counter",
+   "labels": [
+    "thm:univ_unst_of_lax_natural_transformation_is_E_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4566
+   },
+   "last": 4569,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-111",
+   "type": "proof",
+   "k": 111,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4571
+   },
+   "last": 4573,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-215",
+   "type": "env",
+   "k": 215,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.2.15",
+   "number_from": "counter",
+   "labels": [
+    "prop:E_cart_S_is_equivalent_to_span"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4638
+   },
+   "last": 4642,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-112",
+   "type": "proof",
+   "k": 112,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4643
+   },
+   "last": 4672,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-216",
+   "type": "env",
+   "k": 216,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.3.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:construction_of_iterated_spans"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4731
+   },
+   "last": 4735,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-113",
+   "type": "proof",
+   "k": 113,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4736
+   },
+   "last": 4740,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-217",
+   "type": "env",
+   "k": 217,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.3.2",
+   "number_from": "counter",
+   "labels": [
+    "construction_of_span_2_as_a_functor_on_span_pairs"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4750
+   },
+   "last": 4755,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-114",
+   "type": "proof",
+   "k": 114,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4757
+   },
+   "last": 4790,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-218",
+   "type": "env",
+   "k": 218,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.3.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:pullback_describing_span_EfE_times_using_span_2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4802
+   },
+   "last": 4812,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-115",
+   "type": "proof",
+   "k": 115,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4813
+   },
+   "last": 4833,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-219",
+   "type": "env",
+   "k": 219,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4857
+   },
+   "last": 4861,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-116",
+   "type": "proof",
+   "k": 116,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4862
+   },
+   "last": 4864,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-220",
+   "type": "env",
+   "k": 220,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.4.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4868
+   },
+   "last": 4879,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-117",
+   "type": "proof",
+   "k": 117,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4881
+   },
+   "last": 4883,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-221",
+   "type": "env",
+   "k": 221,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.4.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4887
+   },
+   "last": 4895,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-222",
+   "type": "env",
+   "k": 222,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.4.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:arrow_markings_stable_under_base_change"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4897
+   },
+   "last": 4899,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-118",
+   "type": "proof",
+   "k": 118,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4900
+   },
+   "last": 4902,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-223",
+   "type": "env",
+   "k": 223,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.4.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 4916
+   },
+   "last": 4920,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-119",
+   "type": "proof",
+   "k": 119,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4921
+   },
+   "last": 4945,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-224",
+   "type": "env",
+   "k": 224,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.4.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:description_of_oplax_slice"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4949
+   },
+   "last": 4952,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-120",
+   "type": "proof",
+   "k": 120,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4953
+   },
+   "last": 4967,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-225",
+   "type": "env",
+   "k": 225,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.4.7",
+   "number_from": "counter",
+   "labels": [
+    "cor:square_with_span_of_arrows_and_span_2_exists_for_presh",
+    "eq:diag_of_BC_comp"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5275
+   },
+   "last": 5283,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-121",
+   "type": "proof",
+   "k": 121,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5284
+   },
+   "last": 5286,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-226",
+   "type": "env",
+   "k": 226,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.4.8",
+   "number_from": "counter",
+   "labels": [
+    "def:span_of_arrows_E"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5301
+   },
+   "last": 5313,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-227",
+   "type": "env",
+   "k": 227,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.4.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 5315
+   },
+   "last": 5317,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-228",
+   "type": "env",
+   "k": 228,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.4.10",
+   "number_from": "counter",
+   "labels": [
+    "cor:square_with_span_of_arrows_and_span_2_exists",
+    "eq:diag_of_BC_comp_restricted"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5319
+   },
+   "last": 5327,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-122",
+   "type": "proof",
+   "k": 122,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:diag_of_morph_in_sp_1",
+    "eq:diag_of_morph_inlax_slice_of_sp_2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5328
+   },
+   "last": 5372,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-229",
+   "type": "env",
+   "k": 229,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.4.11",
+   "number_from": "counter",
+   "labels": [
+    "prop:span_operad_as_spans_of_arrows"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5376
+   },
+   "last": 5383,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-123",
+   "type": "proof",
+   "k": 123,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5384
+   },
+   "last": 5394,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-230",
+   "type": "env",
+   "k": 230,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.4.12",
+   "number_from": "counter",
+   "labels": [
+    "prop:description_of_mu_for_span"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5401
+   },
+   "last": 5407,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-124",
+   "type": "proof",
+   "k": 124,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5408
+   },
+   "last": 5410,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-231",
+   "type": "env",
+   "k": 231,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.4.13",
+   "number_from": "counter",
+   "labels": [
+    "cor:s_and_mu_compatibility_diagram"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5412
+   },
+   "last": 5420,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-125",
+   "type": "proof",
+   "k": 125,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5421
+   },
+   "last": 5436,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-232",
+   "type": "env",
+   "k": 232,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.5.1",
+   "number_from": "counter",
+   "labels": [
+    "cor:associated_operad_total_category_complete"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5455
+   },
+   "last": 5457,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-126",
+   "type": "proof",
+   "k": 126,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5458
+   },
+   "last": 5465,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-233",
+   "type": "env",
+   "k": 233,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.5.2",
+   "number_from": "counter",
+   "labels": [
+    "cor:unst_of_monoidal_functor_is_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5469
+   },
+   "last": 5471,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-127",
+   "type": "proof",
+   "k": 127,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5472
+   },
+   "last": 5474,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-234",
+   "type": "env",
+   "k": 234,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.5.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:mu_is_equifibed_for_univ_unst"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5489
+   },
+   "last": 5500,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-128",
+   "type": "proof",
+   "k": 128,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5501
+   },
+   "last": 5507,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-235",
+   "type": "env",
+   "k": 235,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.5.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 5514
+   },
+   "last": 5519,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-129",
+   "type": "proof",
+   "k": 129,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5520
+   },
+   "last": 5534,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-236",
+   "type": "env",
+   "k": 236,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.5.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:s_and_mu_compatibility_diagram"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5539
+   },
+   "last": 5547,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-237",
+   "type": "env",
+   "k": 237,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.5.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 5549
+   },
+   "last": 5553,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-130",
+   "type": "proof",
+   "k": 130,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5554
+   },
+   "last": 5557,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-238",
+   "type": "env",
+   "k": 238,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.5.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 5581
+   },
+   "last": 5590,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-131",
+   "type": "proof",
+   "k": 131,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5591
+   },
+   "last": 5616,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-239",
+   "type": "env",
+   "k": 239,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.5.8",
+   "number_from": "counter",
+   "labels": [
+    "thm:C_otimes_res_to_E_is_envelope"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5625
+   },
+   "last": 5633,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-132",
+   "type": "proof",
+   "k": 132,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5634
+   },
+   "last": 5665,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-240",
+   "type": "env",
+   "k": 240,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.5.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:lax_E_monoidal_unst"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5670
+   },
+   "last": 5674,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-133",
+   "type": "proof",
+   "k": 133,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5675
+   },
+   "last": 5686,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-241",
+   "type": "env",
+   "k": 241,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.5.10",
+   "number_from": "counter",
+   "labels": [
+    "ex:lax_unstraightening_recovers_monoidal_structure"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5688
+   },
+   "last": 5692,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-134",
+   "type": "proof",
+   "k": 134,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5693
+   },
+   "last": 5708,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-242",
+   "type": "env",
+   "k": 242,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.6.1",
+   "number_from": "counter",
+   "labels": [
+    "def:E_monoidal_two_categories"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5719
+   },
+   "last": 5727,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-243",
+   "type": "env",
+   "k": 243,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "4.6.2",
+   "number_from": "counter",
+   "labels": [
+    "ex:cartesian_monoidal_two_category"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5729
+   },
+   "last": 5743,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-244",
+   "type": "env",
+   "k": 244,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.6.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 5747
+   },
+   "last": 5749,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-135",
+   "type": "proof",
+   "k": 135,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5751
+   },
+   "last": 5759,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-245",
+   "type": "env",
+   "k": 245,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.6.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:monoidal_two_unstraightening"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5763
+   },
+   "last": 5767,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-136",
+   "type": "proof",
+   "k": 136,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5768
+   },
+   "last": 5775,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-246",
+   "type": "env",
+   "k": 246,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.6.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 5780
+   },
+   "last": 5783,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-137",
+   "type": "proof",
+   "k": 137,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5785
+   },
+   "last": 5789,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-247",
+   "type": "env",
+   "k": 247,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.6.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 5791
+   },
+   "last": 5793,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-248",
+   "type": "env",
+   "k": 248,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.6.7",
+   "number_from": "counter",
+   "labels": [
+    "prop:monoidal_unstraightening_of_lax_transformation"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5796
+   },
+   "last": 5798,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-138",
+   "type": "proof",
+   "k": 138,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5799
+   },
+   "last": 5801,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-249",
+   "type": "env",
+   "k": 249,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.6.8",
+   "number_from": "counter",
+   "labels": [
+    "def:lax_monoidal_lax_natural_transformation"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5810
+   },
+   "last": 5813,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-250",
+   "type": "env",
+   "k": 250,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.6.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:unst_of_lax_E_monoidal_lax_natural_transformation"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5818
+   },
+   "last": 5820,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-139",
+   "type": "proof",
+   "k": 139,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5821
+   },
+   "last": 5834,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-251",
+   "type": "env",
+   "k": 251,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.7.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 5849
+   },
+   "last": 5854,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-252",
+   "type": "env",
+   "k": 252,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.7.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 5872
+   },
+   "last": 5874,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-140",
+   "type": "proof",
+   "k": 140,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5875
+   },
+   "last": 5877,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-253",
+   "type": "env",
+   "k": 253,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.7.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:E_I_is_cocart"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5879
+   },
+   "last": 5882,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-141",
+   "type": "proof",
+   "k": 141,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5883
+   },
+   "last": 5885,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-254",
+   "type": "env",
+   "k": 254,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.7.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 5889
+   },
+   "last": 5892,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-255",
+   "type": "env",
+   "k": 255,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.7.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:E_monoidal_span_cats"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5895
+   },
+   "last": 5897,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-142",
+   "type": "proof",
+   "k": 142,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5899
+   },
+   "last": 5901,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-256",
+   "type": "env",
+   "k": 256,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.7.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:E_monoidal_span_subcats"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5904
+   },
+   "last": 5906,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-143",
+   "type": "proof",
+   "k": 143,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5908
+   },
+   "last": 5910,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-257",
+   "type": "env",
+   "k": 257,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.7.7",
+   "number_from": "counter",
+   "labels": [
+    "def:span_EPI_A"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5925
+   },
+   "last": 5927,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-258",
+   "type": "env",
+   "k": 258,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.7.8",
+   "number_from": "counter",
+   "labels": [
+    "prop:span_EPI_A_is_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5929
+   },
+   "last": 5932,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-144",
+   "type": "proof",
+   "k": 144,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5933
+   },
+   "last": 5935,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-259",
+   "type": "env",
+   "k": 259,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.7.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:span_EPI_A_is_ambidextrous"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5937
+   },
+   "last": 5939,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-145",
+   "type": "proof",
+   "k": 145,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5940
+   },
+   "last": 5944,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-260",
+   "type": "env",
+   "k": 260,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.7.10",
+   "number_from": "counter",
+   "labels": [
+    "prop:E_monoidal_span_two_cats"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5950
+   },
+   "last": 5952,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-146",
+   "type": "proof",
+   "k": 146,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5953
+   },
+   "last": 5955,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-261",
+   "type": "env",
+   "k": 261,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.7.11",
+   "number_from": "counter",
+   "labels": [
+    "prop:univ_prop_of_E_monoidal_span_half"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5962
+   },
+   "last": 5965,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-147",
+   "type": "proof",
+   "k": 147,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5967
+   },
+   "last": 5969,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-262",
+   "type": "env",
+   "k": 262,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "5.0.1",
+   "number_from": "counter",
+   "labels": [
+    "assumption:global_trunc_bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5980
+   },
+   "last": 5982,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-263",
+   "type": "env",
+   "k": 263,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.1.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6044
+   },
+   "last": 6046,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-148",
+   "type": "proof",
+   "k": 148,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6047
+   },
+   "last": 6049,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-264",
+   "type": "env",
+   "k": 264,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.1.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:core_of_unst_F_is_associated_operad"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6053
+   },
+   "last": 6055,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-149",
+   "type": "proof",
+   "k": 149,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6056
+   },
+   "last": 6073,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-265",
+   "type": "env",
+   "k": 265,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.1.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:lifting_of_adjunction_by_cocart_fibrations"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6080
+   },
+   "last": 6096,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-150",
+   "type": "proof",
+   "k": 150,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6097
+   },
+   "last": 6111,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-266",
+   "type": "env",
+   "k": 266,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.1.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6121
+   },
+   "last": 6127,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-151",
+   "type": "proof",
+   "k": 151,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6128
+   },
+   "last": 6143,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-267",
+   "type": "env",
+   "k": 267,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6489
+   },
+   "last": 6492,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-152",
+   "type": "proof",
+   "k": 152,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6493
+   },
+   "last": 6497,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-268",
+   "type": "env",
+   "k": 268,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.2.2",
+   "number_from": "counter",
+   "labels": [
+    "cor:extending_the_alg_structure_of_C_to_backwards_facing_morphisms"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6499
+   },
+   "last": 6505,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-153",
+   "type": "proof",
+   "k": 153,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6506
+   },
+   "last": 6508,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-269",
+   "type": "env",
+   "k": 269,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6543
+   },
+   "last": 6545,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-154",
+   "type": "proof",
+   "k": 154,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6546
+   },
+   "last": 6557,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-270",
+   "type": "env",
+   "k": 270,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:oplax_slice_source_is_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6593
+   },
+   "last": 6597,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-155",
+   "type": "proof",
+   "k": 155,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6598
+   },
+   "last": 6634,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-271",
+   "type": "env",
+   "k": 271,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:oplax_slice_S_is_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6639
+   },
+   "last": 6641,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-156",
+   "type": "proof",
+   "k": 156,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6642
+   },
+   "last": 6646,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-272",
+   "type": "env",
+   "k": 272,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6648
+   },
+   "last": 6653,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-157",
+   "type": "proof",
+   "k": 157,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6654
+   },
+   "last": 6658,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-273",
+   "type": "env",
+   "k": 273,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6676
+   },
+   "last": 6681,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-158",
+   "type": "proof",
+   "k": 158,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6682
+   },
+   "last": 6703,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-274",
+   "type": "env",
+   "k": 274,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6705
+   },
+   "last": 6710,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-159",
+   "type": "proof",
+   "k": 159,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6711
+   },
+   "last": 6728,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-275",
+   "type": "env",
+   "k": 275,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6754
+   },
+   "last": 6756,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-160",
+   "type": "proof",
+   "k": 160,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6757
+   },
+   "last": 6767,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-276",
+   "type": "env",
+   "k": 276,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "5.3.1",
+   "number_from": "counter",
+   "labels": [
+    "cor:xi_x_univ_is_id"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6866
+   },
+   "last": 6869,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-161",
+   "type": "proof",
+   "k": 161,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6870
+   },
+   "last": 6891,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-277",
+   "type": "env",
+   "k": 277,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.3.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6893
+   },
+   "last": 6895,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-278",
+   "type": "env",
+   "k": 278,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.3.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6902
+   },
+   "last": 6913,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-279",
+   "type": "env",
+   "k": 279,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.3.4",
+   "number_from": "counter",
+   "labels": [
+    "thm:generalized_main_C"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6917
+   },
+   "last": 6920,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-162",
+   "type": "proof",
+   "k": 162,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6921
+   },
+   "last": 6937,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-280",
+   "type": "env",
+   "k": 280,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.3.5",
+   "number_from": "counter",
+   "labels": [
+    "remark:colimit_of_n_truncated"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6944
+   },
+   "last": 6952,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-281",
+   "type": "env",
+   "k": 281,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.1.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:extension_of_formalisms_to_presheaves"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7377
+   },
+   "last": 7382,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-163",
+   "type": "proof",
+   "k": 163,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7383
+   },
+   "last": 7385,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-282",
+   "type": "env",
+   "k": 282,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.1.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:2FF_are_E_mon"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7391
+   },
+   "last": 7393,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-164",
+   "type": "proof",
+   "k": 164,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7395
+   },
+   "last": 7415,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-283",
+   "type": "env",
+   "k": 283,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.1.3",
+   "number_from": "counter",
+   "labels": [
+    "thm:equiv_between_2ff_and_E_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7419
+   },
+   "last": 7422,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-165",
+   "type": "proof",
+   "k": 165,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7423
+   },
+   "last": 7425,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-284",
+   "type": "env",
+   "k": 284,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.1.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:adjointed_is_just_ambi"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7430
+   },
+   "last": 7432,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-166",
+   "type": "proof",
+   "k": 166,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7433
+   },
+   "last": 7435,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-285",
+   "type": "env",
+   "k": 285,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.1.5",
+   "number_from": "counter",
+   "labels": [
+    "thm:red_of_main_globally_trunc"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7441
+   },
+   "last": 7447,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-167",
+   "type": "proof",
+   "k": 167,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7449
+   },
+   "last": 7451,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-286",
+   "type": "env",
+   "k": 286,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.1.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:main_thm_follows_from_truncated_case"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7456
+   },
+   "last": 7458,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-168",
+   "type": "proof",
+   "k": 168,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7459
+   },
+   "last": 7475,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-287",
+   "type": "env",
+   "k": 287,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "6.2.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 7526
+   },
+   "last": 7530,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-288",
+   "type": "env",
+   "k": 288,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 7533
+   },
+   "last": 7535,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-169",
+   "type": "proof",
+   "k": 169,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7536
+   },
+   "last": 7538,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-289",
+   "type": "env",
+   "k": 289,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.2.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:span_commutes_with_tensor"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7540
+   },
+   "last": 7545,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-170",
+   "type": "proof",
+   "k": 170,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7546
+   },
+   "last": 7556,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-290",
+   "type": "env",
+   "k": 290,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.2.4",
+   "number_from": "counter",
+   "labels": [
+    "lemma:characterization_of_P_tensor_I_tenso_adjointed"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7564
+   },
+   "last": 7573,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-171",
+   "type": "proof",
+   "k": 171,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7574
+   },
+   "last": 7578,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-291",
+   "type": "env",
+   "k": 291,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "6.2.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 7580
+   },
+   "last": 7582,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-292",
+   "type": "env",
+   "k": 292,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.2.6",
+   "number_from": "counter",
+   "labels": [
+    "thm:lax_monoidal_free_adjointed_2_cat"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7586
+   },
+   "last": 7592,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-172",
+   "type": "proof",
+   "k": 172,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7593
+   },
+   "last": 7602,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-293",
+   "type": "env",
+   "k": 293,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "6.2.7",
+   "number_from": "counter",
+   "labels": [
+    "cor:Mann_conj"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7605
+   },
+   "last": 7610,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-173",
+   "type": "proof",
+   "k": 173,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7612
+   },
+   "last": 7614,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-294",
+   "type": "env",
+   "k": 294,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.2.8",
+   "number_from": "counter",
+   "labels": [
+    "prop:formalisms_equivalence_is_symmetric_monoidal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7622
+   },
+   "last": 7626,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-174",
+   "type": "proof",
+   "k": 174,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7627
+   },
+   "last": 7634,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-295",
+   "type": "env",
+   "k": 295,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.2.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:adjointed_formalisms_as_modules"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7649
+   },
+   "last": 7654,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#proof-175",
+   "type": "proof",
+   "k": 175,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7655
+   },
+   "last": 7659,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37520v1#env-296",
+   "type": "env",
+   "k": 296,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "6.2.10",
+   "number_from": "counter",
+   "labels": [
+    "remark:presheaf_case_without_uniform_truncation"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7662
+   },
+   "last": 7664,
+   "result": "matched"
+  }
+ ]
+}

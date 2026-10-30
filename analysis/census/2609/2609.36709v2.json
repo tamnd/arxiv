@@ -1,0 +1,551 @@
+{
+ "paper": "2609.36709",
+ "version": 2,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "arxiv_main_renamed.tex"
+ ],
+ "class": "siamart251216",
+ "packages": [
+  "lipsum",
+  "amsfonts",
+  "graphicx",
+  "epstopdf",
+  "algorithmic",
+  "benstyle_siam",
+  "cite",
+  "enumitem",
+  "subcaption",
+  "amsopn"
+ ],
+ "steps": [
+  "unpack: 7 files",
+  "main: arxiv_main_renamed.tex",
+  "include: 2 files read, 0 not found",
+  "local: 3 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 356 commands, 25 environments",
+  "tree: 63 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:benstyle_siam.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:benstyle_siam.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "counter": "proof",
+   "numbered": true,
+   "proof": true,
+   "from": "local:siamonline250211.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "local:siamonline250211.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "macro:\\newsiamremark"
+  },
+  {
+   "env": "hypothesis",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "macro:\\newsiamremark"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "macro:\\newsiamremark"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "macro:\\newsiamthm"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:siamart251216.cls",
+   "form": "macro:\\newsiamthm"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:siamart251216.cls",
+   "form": "macro:\\newsiamthm"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:siamart251216.cls",
+   "form": "macro:\\newsiamthm"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:siamart251216.cls",
+   "form": "macro:\\newsiamthm"
+  }
+ ],
+ "occurrences": {
+  "env": 3,
+  "label": 3,
+  "textref": 79
+ },
+ "matched": {
+  "env": 3,
+  "label": 3
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 3,
+  "from_render": 0,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 17,
+  "unresolved": 62
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-1",
+   "message": "the text names Remark \\ref{rem:fin-dim} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-2",
+   "message": "the text names Definition \\ref{def:holo-op} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-4",
+   "message": "the text names Theorem \\ref{thm:informal-2} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-5",
+   "message": "the text names Remark \\ref{rem:blessing} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-6",
+   "message": "the text names Remark \\ref{rem:rate-optimality} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-7",
+   "message": "the text names Theorem \\ref{thm:main-opl-informal} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-8",
+   "message": "the text names Lemma \\ref{lem:multiplicative-OOD} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-9",
+   "message": "the text names Remark \\ref{rem:condition-number} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-10",
+   "message": "the text names Remark \\ref{rem:fin-dim} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-11",
+   "message": "the text names Remark \\ref{rem:fin-dim-funs} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-12",
+   "message": "the text names Definition \\ref{d:holomorphy} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-13",
+   "message": "the text names Remark \\ref{rem:fin-dim} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-14",
+   "message": "the text names Theorem \\ref{t:OOD-s-term} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-15",
+   "message": "the text names Theorem \\ref{t:OOD-s-term} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-16",
+   "message": "the text names Theorem \\ref{t:OOD-s-term} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-17",
+   "message": "the text names Remark \\ref{rem:unknown-anisotropy} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-18",
+   "message": "the text names Theorem \\ref{t:OOD-s-term} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-19",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-20",
+   "message": "the text names Remark \\ref{rem:rate-optimality} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-21",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-22",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-23",
+   "message": "the text names Theorem \\ref{t:OOD-s-term} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-24",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-25",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-26",
+   "message": "the text names Theorem \\ref{thm:deep-learning-extrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-27",
+   "message": "the text names Theorem \\ref{thm:deep-learning-extrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-28",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-29",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-30",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-31",
+   "message": "the text names Example \\ref{ex:const-side lengths} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-32",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-33",
+   "message": "the text names Example \\ref{ex:unbounded-side lengths} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-34",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-40",
+   "message": "the text names Definition \\ref{def:holo-op} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-44",
+   "message": "the text names Theorem \\ref{thm:deep-learning-extrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-45",
+   "message": "the text names Theorem \\ref{thm:deep-learning-extrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-48",
+   "message": "the text names Example \\ref{ex:unbounded-side lengths} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-52",
+   "message": "the text names Theorem \\ref{thm:operator-learning-extrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-54",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-55",
+   "message": "the text names Remark \\ref{rem:poly-thy-practce} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-56",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-57",
+   "message": "the text names Theorem \\ref{thm:poly-optimized-least-squares} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-58",
+   "message": "the text names Remark \\ref{rem:poly-est-impractical} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-59",
+   "message": "the text names Remark \\ref{rem:fin-dim} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-60",
+   "message": "the text names Example \\ref{ex:const-side lengths} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-61",
+   "message": "the text names Remark \\ref{rem:fin-dim-funs} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-62",
+   "message": "the text names Example \\ref{ex:unbounded-side lengths} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-63",
+   "message": "the text names Theorem \\ref{thm:deep-learning-extrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-64",
+   "message": "the text names Remark \\ref{rem:unknown-supports} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-65",
+   "message": "the text names Theorem \\ref{thm:deep-learning-extrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-66",
+   "message": "the text names Theorem \\ref{thm:deep-learning-extrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-67",
+   "message": "the text names Remark \\ref{rem:unknown-supports} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-68",
+   "message": "the text names Theorem \\ref{thm:operator-learning-extrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-69",
+   "message": "the text names Example \\ref{ex:opl-rougher-test} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-70",
+   "message": "the text names Example \\ref{ex:opl-arbitrarily-rough} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-71",
+   "message": "the text names Remark \\ref{rem:dnn-differences} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-72",
+   "message": "the text names Theorem \\ref{thm:operator-learning-extrap} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-74",
+   "message": "the text names Remark \\ref{rem:unknown-supports} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-75",
+   "message": "the text names Remark \\ref{rem:unknown-supports} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-76",
+   "message": "the text names Remark \\ref{rem:rate-optimality} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-77",
+   "message": "the text names Example \\ref{ex:unbounded-side lengths} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.36709v2#textref-79",
+   "message": "the text names Remark \\ref{rem:dnn-differences} and the census has no such item (not-an-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2609.36709v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "aux",
+   "labels": [
+    "ass:opl"
+   ],
+   "pos": {
+    "file": "arxiv_main_renamed.tex",
+    "line": 669
+   },
+   "last": 672,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36709v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "aux",
+   "labels": [
+    "ass:opl-2"
+   ],
+   "pos": {
+    "file": "arxiv_main_renamed.tex",
+    "line": 678
+   },
+   "last": 681,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36709v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "aux",
+   "labels": [
+    "ass:opl-ood"
+   ],
+   "pos": {
+    "file": "arxiv_main_renamed.tex",
+    "line": 687
+   },
+   "last": 690,
+   "result": "matched"
+  }
+ ]
+}
