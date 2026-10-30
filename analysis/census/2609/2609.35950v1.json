@@ -1,0 +1,943 @@
+{
+ "paper": "2609.35950",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "f-i_sp_9-26.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "latexsym",
+  "amsmath",
+  "amsfonts",
+  "epsfig",
+  "graphics",
+  "graphicx",
+  "amsthm",
+  "amssymb",
+  "dsfont",
+  "enumitem"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: f-i_sp_9-26.tex",
+  "include: 1 files read, 1 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 2 commands, 0 environments",
+  "tree: 122 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "identity",
+   "title": "Identity",
+   "item": "statement/formula",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "varthm1",
+   "title": "Main Theorem (i)",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "varthm2",
+   "title": "Main Theorem (ii)",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "varthm3",
+   "title": "Main Theorem (iii)",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjtd",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "conjtd",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "BTS",
+   "title": "Brun-Titchmarsh Theorem for Multiplicative Functions",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "BTSd",
+   "title": "Brun-Titchmarsh Theorem for Divisor Sums",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ques",
+   "title": "Question",
+   "item": "problem",
+   "counter": "ques",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "GRH",
+   "title": "Generalized Riemann Hypothesis",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Def",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Mo",
+   "title": "Motivating Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "STh",
+   "title": "Siegel Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Th",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ThST",
+   "title": "Theorem \\ref{Shiutriple}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "CorBT",
+   "title": "Corollary \\ref{BTforprimes}",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "LemFI",
+   "title": "Theorem \\ref{FI:2.6}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ThSh1",
+   "title": "Theorem \\ref{Shp:T1}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ThSh2",
+   "title": "Theorem \\ref{Shp:T2}",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 28,
+  "label": 30,
+  "proof": 9,
+  "textref": 23
+ },
+ "matched": {
+  "env": 28,
+  "label": 30,
+  "proof": 9
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 27,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 22,
+  "unresolved": 1
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.35950v1#textref-4",
+   "message": "the text names Lemma 5.1 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.35950v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "GRH",
+   "title": "Generalized Riemann Hypothesis",
+   "item": "context/hypothesis",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 62
+   },
+   "last": 64,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 67
+   },
+   "last": 70,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 72
+   },
+   "last": 75,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 77
+   },
+   "last": 81,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "FIFI"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 102
+   },
+   "last": 105,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "SachThm",
+    "thmas"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 114
+   },
+   "last": 120,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "SachCor"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 125
+   },
+   "last": 139,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "MainTheoremi"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 154
+   },
+   "last": 160,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "MainTheoremii"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 162
+   },
+   "last": 165,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 173
+   },
+   "last": 175,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "binarydivisor"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 239
+   },
+   "last": 242,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "binaryTdivisor"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 244
+   },
+   "last": 247,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "FIternary"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 251
+   },
+   "last": 254,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.4",
+   "number_from": "counter",
+   "labels": [
+    "FIternary2"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 256
+   },
+   "last": 261,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.5",
+   "number_from": "counter",
+   "labels": [
+    "MainSubThm1"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 265
+   },
+   "last": 268,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.6",
+   "number_from": "counter",
+   "labels": [
+    "MainSubThm2"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 269
+   },
+   "last": 272,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "counter",
+   "labels": [
+    "FI:2.6"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 287
+   },
+   "last": 292,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "counter",
+   "labels": [
+    "Shp:T1"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 300
+   },
+   "last": 302,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7.3",
+   "number_from": "counter",
+   "labels": [
+    "Shp:T2",
+    "goodq"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 304
+   },
+   "last": 308,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "11.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 408
+   },
+   "last": 412,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "3.3",
+    "HM1",
+    "Gbegin"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 419
+   },
+   "last": 455,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "11.2",
+   "number_from": "counter",
+   "labels": [
+    "G:FI"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 457
+   },
+   "last": 459,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 460
+   },
+   "last": 480,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "12.1",
+   "number_from": "counter",
+   "labels": [
+    "ternary",
+    "chbound"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 506
+   },
+   "last": 519,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 521
+   },
+   "last": 570,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "12.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 571
+   },
+   "last": 575,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 576
+   },
+   "last": 578,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "13.1",
+   "number_from": "counter",
+   "labels": [
+    "ShpApp1"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 582
+   },
+   "last": 585,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 586
+   },
+   "last": 604,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "13.2",
+   "number_from": "counter",
+   "labels": [
+    "ShpApp2"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 627
+   },
+   "last": 632,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 633
+   },
+   "last": 649,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "14.1",
+   "number_from": "counter",
+   "labels": [
+    "MainReprise1"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 654
+   },
+   "last": 658,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "q752"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 659
+   },
+   "last": 681,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "14.2",
+   "number_from": "counter",
+   "labels": [
+    "MainReprise2",
+    "Qkappa"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 683
+   },
+   "last": 687,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Q328"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 689
+   },
+   "last": 711,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "14.3",
+   "number_from": "counter",
+   "labels": [
+    "MainReprise3"
+   ],
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 713
+   },
+   "last": 717,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35950v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "f-i_sp_9-26.tex",
+    "line": 718
+   },
+   "last": 733,
+   "result": "matched"
+  }
+ ]
+}

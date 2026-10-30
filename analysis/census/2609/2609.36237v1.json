@@ -1,0 +1,941 @@
+{
+ "paper": "2609.36237",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "amssymb",
+  "amsfonts",
+  "amsthm",
+  "amsmath",
+  "amsbsy",
+  "latexsym",
+  "color",
+  "bbm",
+  "url",
+  "graphics",
+  "graphicx",
+  "hyperref",
+  "mathtools",
+  "caption",
+  "subcaption",
+  "xcolor",
+  "fullpage",
+  "pifont"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 1 kept",
+  "macros: 46 commands, 0 environments",
+  "tree: 148 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "open",
+   "title": "Open Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ex*",
+   "title": "Example",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "aside*",
+   "title": "Aside",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "nota*",
+   "title": "Notation",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 24,
+  "label": 45,
+  "proof": 11,
+  "textref": 80
+ },
+ "matched": {
+  "env": 24,
+  "label": 45,
+  "proof": 11
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 24,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 80,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.36237v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "1.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 265
+   },
+   "last": 274,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "prop: Psi Equivariant"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 508
+   },
+   "last": 515,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "prop: xi equivariance"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 545
+   },
+   "last": 550,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 554
+   },
+   "last": 562,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "prop: upsilon equivariance"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 573
+   },
+   "last": 578,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "cor: composition"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 620
+   },
+   "last": 624,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "rem: extend to complex"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 626
+   },
+   "last": 634,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:contest",
+    "eq: affine bound",
+    "eqn: CA",
+    "eqn: prop compact part"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 642
+   },
+   "last": 663,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "lem: semigroup bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 669
+   },
+   "last": 678,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 680
+   },
+   "last": 725,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: three components"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 727
+   },
+   "last": 790,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "thm: continuity of xi",
+    "eqn: theorem result compact case"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 795
+   },
+   "last": 810,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "lem: continuity simple"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 814
+   },
+   "last": 820,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 821
+   },
+   "last": 837,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "rem: Proof of Lemma Continuity Simple"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 838
+   },
+   "last": 841,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn: thoerem not nice",
+    "eqn: switch the Cs"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 844
+   },
+   "last": 871,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "lem:dillip"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 956
+   },
+   "last": 961,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 963
+   },
+   "last": 974,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "ex: cont rotations",
+    "eqn:schurrot",
+    "eqn:metSOd",
+    "eqn:Cpurerot",
+    "eqn: rotation bound examle from theorem"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 977
+   },
+   "last": 1025,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "rem: rotation better bound",
+    "eqn: 2drotation bound examle from theorem",
+    "eqn: rotation specific bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1027
+   },
+   "last": 1049,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "ex: cont trans",
+    "eqn:thm2trans"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1051
+   },
+   "last": 1066,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.10",
+   "number_from": "counter",
+   "labels": [
+    "ex: cont dilations"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1068
+   },
+   "last": 1095,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.11",
+   "number_from": "counter",
+   "labels": [
+    "ex:rot4",
+    "eqn:metse2",
+    "eqn:bdrot4"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1100
+   },
+   "last": 1140,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.12",
+   "number_from": "counter",
+   "labels": [
+    "ex:rot4to2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1144
+   },
+   "last": 1163,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.13",
+   "number_from": "counter",
+   "labels": [
+    "prop: xi equivariance2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1196
+   },
+   "last": 1201,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "3.14",
+   "number_from": "counter",
+   "labels": [
+    "prop: continuity of xiw",
+    "eqn: theorem result compact case w"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1208
+   },
+   "last": 1229,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.15",
+   "number_from": "counter",
+   "labels": [
+    "lem:similmet",
+    "eqn:simdisim"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1235
+   },
+   "last": 1250,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1252
+   },
+   "last": 1257,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.16",
+   "number_from": "counter",
+   "labels": [
+    "ex:dirsim",
+    "eqn:onesidesimil",
+    "eqn:Cbdsimil"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1259
+   },
+   "last": 1316,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "A.1",
+   "number_from": "counter",
+   "labels": [
+    "prop: Rotation special case"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2066
+   },
+   "last": 2079,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "A.2",
+   "number_from": "counter",
+   "labels": [
+    "lem: ell infinity diff for different group members"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2085
+   },
+   "last": 2099,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2102
+   },
+   "last": 2127,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2130
+   },
+   "last": 2155,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn: equiv lemma key inequality"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2164
+   },
+   "last": 2194,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.36237v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn: h tilde sub"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2199
+   },
+   "last": 2211,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

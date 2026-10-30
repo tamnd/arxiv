@@ -1,0 +1,884 @@
+{
+ "paper": "2609.36022",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "arXiv.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amsmath",
+  "amsthm",
+  "amscd",
+  "amsfonts",
+  "amssymb",
+  "bbm",
+  "graphicx",
+  "color",
+  "mathabx",
+  "tikz",
+  "caption",
+  "enumitem",
+  "mathtools",
+  "comment",
+  "pgfplots",
+  "geometry",
+  "amsrefs",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: arXiv.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 26 commands, 0 environments",
+  "tree: 183 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mainthm",
+   "shared": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "crlr",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "maincrlr",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "mainthm",
+   "shared": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defin",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hyp",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 19,
+  "label": 44,
+  "proof": 15,
+  "textref": 66
+ },
+ "matched": {
+  "env": 19,
+  "label": 44,
+  "proof": 15
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 19,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 12
+ },
+ "textrefs": {
+  "resolved": 66,
+  "unresolved": 0
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-2",
+   "message": "Corollary 1.5 is the first in its scope of counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-6",
+   "message": "Corollary 1.10 comes after 1.5 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-7",
+   "message": "Lemma 2.2 is the first in its scope of counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-8",
+   "message": "Proposition 2.4 comes after 2.2 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-10",
+   "message": "Remark 3.6 comes after 3.1 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-11",
+   "message": "Example 3.8 comes after 3.6 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-12",
+   "message": "Lemma 3.12 comes after 3.8 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-13",
+   "message": "Lemma 3.21 comes after 3.12 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-14",
+   "message": "Proposition 3.41 comes after 3.21 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-16",
+   "message": "Remark 4.16 comes after 4.1 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-18",
+   "message": "Lemma 4.20 comes after 4.17 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.36022v1#env-19",
+   "message": "Proposition 4.28 comes after 4.20 in counter equation"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.36022v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "number": "A",
+   "number_from": "counter",
+   "labels": [
+    "mainthm:multi-count",
+    "eq:thm-multi-count"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 137
+   },
+   "last": 158,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "crlr",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "1.5",
+   "number_from": "counter",
+   "labels": [
+    "maincrlr:multi-distances"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 160
+   },
+   "last": 169,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "mainprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mainthm",
+   "number": "B",
+   "number_from": "counter",
+   "labels": [
+    "prop:lower-sharp"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 173
+   },
+   "last": 179,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "number": "C",
+   "number_from": "counter",
+   "labels": [
+    "mainthm:sparse-random-patterns"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 186
+   },
+   "last": 191,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "number": "D",
+   "number_from": "counter",
+   "labels": [
+    "mainthm:sparse-random-aps"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 195
+   },
+   "last": 202,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "crlr",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "1.10",
+   "number_from": "counter",
+   "labels": [
+    "maincrlr:prevalent-dilation"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 206
+   },
+   "last": 218,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "lm:magyar"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 267
+   },
+   "last": 275,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:gvn"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 279
+   },
+   "last": 290,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:gvn-multiplier-bound"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 292
+   },
+   "last": 356,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:dense-lm",
+    "eq:dense-lm"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 365
+   },
+   "last": 376,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 378
+   },
+   "last": 402,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "3.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 404
+   },
+   "last": 406,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "ex:obstruction"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 419
+   },
+   "last": 450,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.12",
+   "number_from": "counter",
+   "labels": [
+    "lm:density-incr"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 455
+   },
+   "last": 465,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:fixed-scale-N-prime"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 467
+   },
+   "last": 537,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.21",
+   "number_from": "counter",
+   "labels": [
+    "lm:dense-lm-local",
+    "eq:dense-lm-local-count"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 542
+   },
+   "last": 553,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:dense-lm-local-lambda0",
+    "eq:dense-lm-local-induction",
+    "eq:dense-lm-local-terminal",
+    "eq:dense-lm-local-pullback"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 555
+   },
+   "last": 653,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.41",
+   "number_from": "counter",
+   "labels": [
+    "prop:dense-lm-supersat",
+    "eq:dense-lm-supersat"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 658
+   },
+   "last": 667,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:dense-lm-supersat-translates",
+    "eq:dense-lm-supersat-avg-density",
+    "eq:dense-lm-supersat-good-translates",
+    "eq:dense-lm-supersat-sum-local"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 669
+   },
+   "last": 781,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "lm:graph-bddness"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 791
+   },
+   "last": 809,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 811
+   },
+   "last": 879,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "4.16",
+   "number_from": "counter",
+   "labels": [
+    "rmk:prob-adjust"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 882
+   },
+   "last": 884,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "crlr",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "4.17",
+   "number_from": "counter",
+   "labels": [
+    "cor:graph-bddness-cnst"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 889
+   },
+   "last": 901,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 903
+   },
+   "last": 905,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.20",
+   "number_from": "counter",
+   "labels": [
+    "lm:quant-schacht-graphs",
+    "pt:quant-schacht-density",
+    "pt:quant-schacht-bddness",
+    "pt:quant-schacht-divergence"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 911
+   },
+   "last": 930,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 932
+   },
+   "last": 970,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "4.28",
+   "number_from": "counter",
+   "labels": [
+    "prop:sparse-rel"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 977
+   },
+   "last": 986,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:sparse-rel-dense-input",
+    "eq:sparse-rel-counting-identity",
+    "eq:sparse-rel-directed-undirected",
+    "eq:sparse-rel-M-comparison",
+    "eq:sparse-rel-common-range",
+    "eq:sparse-rel-individual-bddness",
+    "eq:sparse-rel-sphere-comparison",
+    "eq:sparse-rel-transferred-edges"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 988
+   },
+   "last": 1146,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 1154
+   },
+   "last": 1214,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 1217
+   },
+   "last": 1226,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 1229
+   },
+   "last": 1330,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 1334
+   },
+   "last": 1361,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:varnavides"
+   ],
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 1366
+   },
+   "last": 1465,
+   "result": "matched"
+  },
+  {
+   "id": "2609.36022v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arXiv.tex",
+    "line": 1468
+   },
+   "last": 1491,
+   "result": "matched"
+  }
+ ]
+}

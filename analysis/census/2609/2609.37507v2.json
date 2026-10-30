@@ -1,0 +1,119 @@
+{
+ "paper": "2609.37507",
+ "version": 2,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "fontenc",
+  "lmodern",
+  "amsmath",
+  "amssymb",
+  "geometry",
+  "microtype",
+  "xurl",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 1 commands, 0 environments",
+  "tree: 11 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 1,
+  "head": 1,
+  "label": 1,
+  "textref": 2
+ },
+ "matched": {
+  "env": 1,
+  "head": 1,
+  "label": 1
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 1,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 1,
+  "unresolved": 1
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.37507v2#textref-2",
+   "message": "the text names Theorem 1.6 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.37507v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "thm:main"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 67
+   },
+   "last": 74,
+   "result": "matched"
+  },
+  {
+   "id": "2609.37507v2#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Notation",
+   "item": "definition/notation",
+   "pos": {
+    "file": "main.tex",
+    "line": 76
+   },
+   "last": 86,
+   "result": "matched",
+   "confidence": "medium"
+  }
+ ]
+}

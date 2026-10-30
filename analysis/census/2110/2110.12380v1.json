@@ -1,7 +1,7 @@
 {
  "paper": "2110.12380",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.32",
  "main": [
   "paper.tex"
  ],
@@ -145,7 +145,7 @@
   {
    "env": "conclusion",
    "title": "Conclusion",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
@@ -175,7 +175,7 @@
   {
    "env": "summary",
    "title": "Summary",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
@@ -219,6 +219,16 @@
    "numbered": false,
    "proof": true,
    "from": "class:amsart"
+  },
+  {
+   "env": "customthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innercustomthm",
+   "shared": "innercustomthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
   }
  ],
  "occurrences": {
