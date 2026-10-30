@@ -1,7 +1,7 @@
 {
  "paper": "2211.04758",
  "version": 2,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.32",
  "main": [
   "universality_submit.tex"
  ],
@@ -40,7 +40,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 47 commands, 0 environments",
-  "tree: 117 nodes"
+  "aliases: 10 uses of commands that stand for \\begin or \\end",
+  "tree: 122 nodes"
  ],
  "declarations": [
   {
@@ -116,7 +117,7 @@
   {
    "env": "variant",
    "title": "Variant",
-   "item": "unknown",
+   "item": "remark",
    "counter": "thm",
    "shared": "thm",
    "numbered": true,
@@ -303,44 +304,35 @@
   }
  ],
  "occurrences": {
-  "env": 39,
-  "head": 1,
-  "label": 38,
-  "proof": 7,
+  "env": 40,
+  "label": 41,
+  "proof": 11,
   "textref": 90
  },
  "matched": {
-  "env": 39,
-  "head": 1,
-  "label": 38,
-  "proof": 7
+  "env": 40,
+  "label": 41,
+  "proof": 11
  },
  "gaps": [],
  "waivers": [],
  "numbers": {
   "from_aux": 0,
   "from_render": 0,
-  "from_counter": 39,
+  "from_counter": 40,
   "from_head": 0,
   "agree": 0,
   "disagree": 0,
   "contiguity_gaps": 0
  },
  "textrefs": {
-  "resolved": 89,
-  "unresolved": 1
+  "resolved": 90,
+  "unresolved": 0
  },
  "outside": {
   "theoremgraph": 38,
   "theoremsearch": 30
  },
- "findings": [
-  {
-   "rule": "D09",
-   "occurrence": "2211.04758v2#textref-80",
-   "message": "the text names Lemma \\ref{flexiblematching} and the census has no such item (not-an-item)"
-  }
- ],
  "strength": "normal",
  "items": [
   {
@@ -1157,20 +1149,20 @@
    "id": "2211.04758v2#env-38",
    "type": "env",
    "k": 38,
-   "env": "claim",
-   "title": "Claim",
-   "item": "statement/claim",
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
    "counter": "thm",
    "number": "6.2",
    "number_from": "counter",
    "labels": [
-    "absorbmany"
+    "flexiblematching"
    ],
    "pos": {
     "file": "universality_submit.tex",
-    "line": 1229
+    "line": 1203
    },
-   "last": 1230,
+   "last": 1205,
    "result": "matched"
   },
   {
@@ -1181,8 +1173,48 @@
    "title": "Proof",
    "item": "proof",
    "labels": [
+    "eq70",
+    "eq71"
+   ],
+   "pos": {
+    "file": "universality_submit.tex",
+    "line": 1208
+   },
+   "last": 1280,
+   "result": "matched"
+  },
+  {
+   "id": "2211.04758v2#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "thm",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "absorbmany"
+   ],
+   "parent": "2211.04758v2#proof-7",
+   "pos": {
+    "file": "universality_submit.tex",
+    "line": 1229
+   },
+   "last": 1230,
+   "result": "matched"
+  },
+  {
+   "id": "2211.04758v2#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
     "p20"
    ],
+   "parent": "2211.04758v2#proof-7",
    "pos": {
     "file": "universality_submit.tex",
     "line": 1231
@@ -1191,9 +1223,9 @@
    "result": "matched"
   },
   {
-   "id": "2211.04758v2#env-39",
+   "id": "2211.04758v2#env-40",
    "type": "env",
-   "k": 39,
+   "k": 40,
    "env": "theorem",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1214,22 +1246,56 @@
    "result": "matched"
   },
   {
-   "id": "2211.04758v2#head-1",
-   "type": "head",
-   "k": 1,
-   "env": "head",
-   "title": "Claim",
-   "item": "statement/claim",
+   "id": "2211.04758v2#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
    "pos": {
     "file": "universality_submit.tex",
-    "line": 1301
+    "line": 1297
    },
-   "last": 1310,
+   "last": 1319,
    "flags": [
     "appendix"
    ],
-   "result": "matched",
-   "confidence": "medium"
+   "result": "matched"
+  },
+  {
+   "id": "2211.04758v2#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2211.04758v2#proof-9",
+   "pos": {
+    "file": "universality_submit.tex",
+    "line": 1303
+   },
+   "last": 1308,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2211.04758v2#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "universality_submit.tex",
+    "line": 1322
+   },
+   "last": 1330,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
   }
  ]
 }

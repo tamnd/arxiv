@@ -1,0 +1,2174 @@
+{
+ "paper": "2609.33018",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "inputenc",
+  "geometry",
+  "amstext",
+  "amsthm",
+  "amssymb",
+  "hyperref",
+  "latexsym",
+  "amsfonts",
+  "enumerate",
+  "bbm",
+  "subfigure",
+  "appendix",
+  "multirow",
+  "tikz",
+  "tikz-3dplot",
+  "comment",
+  "xy",
+  "caption",
+  "epstopdf",
+  "color",
+  "dsfont",
+  "wrapfig",
+  "pgfplots",
+  "fp"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 194 commands, 0 environments",
+  "tree: 491 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "\\protect\\theoremname",
+   "item": "unknown",
+   "counter": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "\\protect\\factname",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "\\protect\\examplename",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "\\protect\\lemmaname",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "\\protect\\claimname",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "propasition",
+   "title": "propasition",
+   "item": "unknown",
+   "counter": "propasition",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "conjecture",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "counterexample",
+   "title": "Counterexample",
+   "item": "counterexample",
+   "counter": "counterexample",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 82,
+  "label": 153,
+  "proof": 14,
+  "textref": 57
+ },
+ "matched": {
+  "env": 82,
+  "label": 153,
+  "proof": 14
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 82,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 50,
+  "unresolved": 7
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.33018v1#textref-1",
+   "message": "the text names Remark 1.13 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.33018v1#textref-11",
+   "message": "the text names Lemma 2.2 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.33018v1#textref-31",
+   "message": "the text names Theorem 3.1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.33018v1#textref-50",
+   "message": "the text names Lemma 5.3 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.33018v1#textref-51",
+   "message": "the text names Lemma 5.3 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.33018v1#textref-52",
+   "message": "the text names Lemma 5.3 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.33018v1#textref-53",
+   "message": "the text names Lemma 5.3 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.33018v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "thm",
+   "title": "\\protect\\theoremname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "thm:(Tao-2019)"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 418
+   },
+   "last": 426,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "prop:decay of characteristic function",
+    "eq:Tao characteristic function bound"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 442
+   },
+   "last": 451,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "3",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 452
+   },
+   "last": 456,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "eq:minkowski norm"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 468
+   },
+   "last": 492,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "thm",
+   "title": "\\protect\\theoremname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "5",
+   "number_from": "counter",
+   "labels": [
+    "thm:almost boundedness",
+    "hyp:MH1",
+    "eq:geometric mean hypothesis",
+    "hyp:MH2",
+    "hyp:MH3",
+    "eq:MH3",
+    "hyp:MH4",
+    "eq:almost-boundedness result"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 519
+   },
+   "last": 575,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "6",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 576
+   },
+   "last": 584,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "7",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 586
+   },
+   "last": 592,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "8",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 616
+   },
+   "last": 645,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "fact",
+   "title": "\\protect\\factname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "9",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 649
+   },
+   "last": 654,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "fact",
+   "title": "\\protect\\factname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "10",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 657
+   },
+   "last": 687,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "11",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 691
+   },
+   "last": 697,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "12",
+   "number_from": "counter",
+   "labels": [
+    "eq:affine map"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 744
+   },
+   "last": 755,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "13",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 757
+   },
+   "last": 772,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "14",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 778
+   },
+   "last": 793,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "15",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 794
+   },
+   "last": 798,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "16",
+   "number_from": "counter",
+   "labels": [
+    "def:A--Hydra-(map)",
+    "eq:Hydra"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 799
+   },
+   "last": 816,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "17",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 817
+   },
+   "last": 826,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "18",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 828
+   },
+   "last": 835,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "19",
+   "number_from": "counter",
+   "labels": [
+    "def:definitions for Lambda hydras"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 839
+   },
+   "last": 854,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "20",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 856
+   },
+   "last": 884,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "21",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 886
+   },
+   "last": 896,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "22",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 905
+   },
+   "last": 920,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "23",
+   "number_from": "counter",
+   "labels": [
+    "eq:stringmap"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 922
+   },
+   "last": 944,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "24",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 947
+   },
+   "last": 955,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "25",
+   "number_from": "counter",
+   "labels": [
+    "eq:DigSum"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 956
+   },
+   "last": 982,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "26",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 983
+   },
+   "last": 991,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "example",
+   "title": "\\protect\\examplename",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "27",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 992
+   },
+   "last": 1003,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "28",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1010
+   },
+   "last": 1015,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "29",
+   "number_from": "counter",
+   "labels": [
+    "prop:equivalence-relation"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1017
+   },
+   "last": 1020,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "30",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1022
+   },
+   "last": 1029,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "31",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1030
+   },
+   "last": 1035,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "32",
+   "number_from": "counter",
+   "labels": [
+    "prop:functional equations",
+    "eq:X_H functional equation on N_0"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1039
+   },
+   "last": 1060,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "33",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1064
+   },
+   "last": 1073,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "34",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1074
+   },
+   "last": 1084,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lem",
+   "title": "\\protect\\lemmaname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "35",
+   "number_from": "counter",
+   "labels": [
+    "lem:extension and measurability of X_H",
+    "eq:extension of Chi_H",
+    "eq:convergence condition",
+    "eq:upper density of j",
+    "eq:X_H functional equation",
+    "eq:a.e.  ell-adic bound on X_H in NA case"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1106
+   },
+   "last": 1166,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1167
+   },
+   "last": 1214,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "36",
+   "number_from": "counter",
+   "parent": "2609.33018v1#proof-1",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1172
+   },
+   "last": 1180,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "37",
+   "number_from": "counter",
+   "parent": "2609.33018v1#proof-1",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1184
+   },
+   "last": 1212,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "38",
+   "number_from": "counter",
+   "labels": [
+    "eq:def of Log U",
+    "eq:def of logarithmic density"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1221
+   },
+   "last": 1245,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "39",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1247
+   },
+   "last": 1251,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "40",
+   "number_from": "counter",
+   "labels": [
+    "eq:def of TV distance"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1260
+   },
+   "last": 1269,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "lem",
+   "title": "\\protect\\lemmaname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "41",
+   "number_from": "counter",
+   "labels": [
+    "lem:Chernoff Bound",
+    "eq:tail decay hypothesis for chernoff bound",
+    "eq:Gaussian-type weights",
+    "eq:Chernoff I",
+    "eq:Chernoff II"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1274
+   },
+   "last": 1310,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "42",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1407
+   },
+   "last": 1421,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "43",
+   "number_from": "counter",
+   "labels": [
+    "prop:Tao geometric comparison",
+    "eq:Tao uniform condition",
+    "eq:Tao local normality lemma estimate"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1442
+   },
+   "last": 1462,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "example",
+   "title": "\\protect\\examplename",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "44",
+   "number_from": "counter",
+   "labels": [
+    "eq:sample path vector",
+    "eq:sample run length vector"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1489
+   },
+   "last": 1516,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "45",
+   "number_from": "counter",
+   "labels": [
+    "def:path and run vectors",
+    "eq:path vector",
+    "eq:nth run vector def",
+    "eq:j branch count"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1522
+   },
+   "last": 1588,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "46",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1593
+   },
+   "last": 1606,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "47",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1607
+   },
+   "last": 1610,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "48",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1617
+   },
+   "last": 1658,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "49",
+   "number_from": "counter",
+   "labels": [
+    "rem:PMF of run",
+    "eq:PMF of many Runs"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1659
+   },
+   "last": 1673,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "lem",
+   "title": "\\protect\\lemmaname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "50",
+   "number_from": "counter",
+   "labels": [
+    "lem:Geometric comparison",
+    "eq:uniformity hypothesis",
+    "eq:geometric comparison"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1682
+   },
+   "last": 1701,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "51",
+   "number_from": "counter",
+   "labels": [
+    "eq:def of Syr H"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1720
+   },
+   "last": 1732,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "52",
+   "number_from": "counter",
+   "labels": [
+    "eq:defining formula for nth iterate of Syr_H"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1733
+   },
+   "last": 1741,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "53",
+   "number_from": "counter",
+   "labels": [
+    "eq:def of firstpasstime",
+    "eq:def of firstpassloc"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1743
+   },
+   "last": 1757,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "lem",
+   "title": "\\protect\\lemmaname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "54",
+   "number_from": "counter",
+   "labels": [
+    "lem:stabilization of first passage",
+    "eq:passing time estimate",
+    "eq:passage location comparison"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1761
+   },
+   "last": 1789,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "55",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1790
+   },
+   "last": 1796,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "56",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1853
+   },
+   "last": 1864,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "assu:initial parameter assumptions",
+    "eq:def of n_0",
+    "eq:def of m_0",
+    "eq:C_0 A_0 inequality",
+    "eq:alpha A_0 inequality"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1868
+   },
+   "last": 1890,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "lem",
+   "title": "\\protect\\lemmaname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "57",
+   "number_from": "counter",
+   "labels": [
+    "lem:lattice sum asymptotic",
+    "eq:lattice sum asymptotic"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 1894
+   },
+   "last": 1915,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2046
+   },
+   "last": 2062,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "58",
+   "number_from": "counter",
+   "labels": [
+    "def:v-arrow formalism",
+    "eq:def of H_v-arrow",
+    "eq:def of X_v-arrow"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2063
+   },
+   "last": 2079,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "59",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2080
+   },
+   "last": 2088,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "60",
+   "number_from": "counter",
+   "labels": [
+    "eq:our syracuse random variables"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2093
+   },
+   "last": 2115,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "61",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2116
+   },
+   "last": 2121,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "62",
+   "number_from": "counter",
+   "labels": [
+    "eq:definition of B_x L",
+    "eq:approximate uniform behavior",
+    "eq:def of I_y"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2125
+   },
+   "last": 2148,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "63",
+   "number_from": "counter",
+   "labels": [
+    "eq:condition on sum of n-sum of v-arrow"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2149
+   },
+   "last": 2158,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "64",
+   "number_from": "counter",
+   "labels": [
+    "prop:gamma inequality proposition",
+    "eq:A_0 A_1 A_2 inequalities"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2161
+   },
+   "last": 2168,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2169
+   },
+   "last": 2250,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "65",
+   "number_from": "counter",
+   "labels": [
+    "prop:elementary properties of X_H of v-arrow",
+    "eq:explicit formula for X_H of v-arrow",
+    "eq:estimate for X_H-arrow",
+    "eq:selective estimate for X_H of v arrow",
+    "eq:selective estimate for M_H of v arrow"
+   ],
+   "parent": "2609.33018v1#proof-2",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2210
+   },
+   "last": 2233,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "66",
+   "number_from": "counter",
+   "parent": "2609.33018v1#proof-2",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2234
+   },
+   "last": 2250,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:sum of m_h inequality"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2251
+   },
+   "last": 2332,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "thm",
+   "title": "\\protect\\theoremname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "67",
+   "number_from": "counter",
+   "labels": [
+    "thm:alt form of main theorem",
+    "eq:alt form of main theorem"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2340
+   },
+   "last": 2354,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:fin"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2355
+   },
+   "last": 2484,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "68",
+   "number_from": "counter",
+   "labels": [
+    "prop:tail bound",
+    "eq:tail bound"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2493
+   },
+   "last": 2500,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tail bound goal",
+    "eq:rough",
+    "eq:local normality lemma congruence",
+    "eq:lambda valuation of the mu h product",
+    "eq:rough2",
+    "eq:fun-1"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2501
+   },
+   "last": 2658,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:second step of final part of comparison lemma proof",
+    "eq:m sum decomposition using L",
+    "eq:ready for break",
+    "eq:break into I and II",
+    "eq:scaling for comparison lemma",
+    "eq:almost done with geom comparison proof",
+    "eq:rough-1"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2659
+   },
+   "last": 2852,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "69",
+   "number_from": "counter",
+   "labels": [
+    "prop:equidistribution proposition",
+    "eq:confirmation of approx.  unif.  dist.  hypothesis"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2872
+   },
+   "last": 2881,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:CSI bound on d_TV",
+    "eq:N_y-hat simplified",
+    "eq:lattice sum lower bound"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 2882
+   },
+   "last": 3010,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:geometric comparison conclusion",
+    "eq: nth run vector with ith component",
+    "eq:number vector x to the -c bound",
+    "eq:head bound",
+    "eq:nu_n_0 affine H of N",
+    "eq:H nu_n absolute value estimate",
+    "eq:contracting branch count",
+    "eq:expanding branch count",
+    "eq:Need N_n_0 bound",
+    "eq:almost boundedness"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3011
+   },
+   "last": 3164,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "lem",
+   "title": "\\protect\\lemmaname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "70",
+   "number_from": "counter",
+   "labels": [
+    "lem:approximate formula for passage location",
+    "eq:approximate formula for passage location",
+    "eq:restrictions on z"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3175
+   },
+   "last": 3193,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "rem",
+   "title": "\\protect\\remarkname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "71",
+   "number_from": "counter",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3194
+   },
+   "last": 3198,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:consequence of chernoff bound",
+    "eq:Need 3",
+    "eq:Need 4",
+    "eq:syr estimate (rough)",
+    "eq:Tao 5.14 analogue",
+    "eq:upper and lower bound on N_y",
+    "eq:Tao 5.15 analogue",
+    "eq:Tao 5.15 analogue restated",
+    "eq:first passage time estimate",
+    "eq:Need 4 refined",
+    "eq:Our analogue of Tao 5.17",
+    "eq:Q expression for passage location",
+    "eq:our aff equals M event"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3199
+   },
+   "last": 3632,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "claim",
+   "title": "\\protect\\claimname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "72",
+   "number_from": "counter",
+   "labels": [
+    "eq:first passage time estimate refined"
+   ],
+   "parent": "2609.33018v1#proof-9",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3328
+   },
+   "last": 3376,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "claim",
+   "title": "\\protect\\claimname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "73",
+   "number_from": "counter",
+   "labels": [
+    "eq:first event",
+    "eq:def of B_n,y"
+   ],
+   "parent": "2609.33018v1#proof-9",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3386
+   },
+   "last": 3442,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "example",
+   "title": "\\protect\\examplename",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "74",
+   "number_from": "counter",
+   "labels": [
+    "eq:Tao 5.18",
+    "eq:Aff a N_y equals M event,  in our language",
+    "eq:H_j of N_y for Collatz example"
+   ],
+   "parent": "2609.33018v1#proof-9",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3525
+   },
+   "last": 3598,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "75",
+   "number_from": "counter",
+   "labels": [
+    "prop:approximate formula for passage,  archimedean case",
+    "eq:approximate formula for passage, ready for Fourier transferrence"
+   ],
+   "parent": "2609.33018v1#proof-9",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3612
+   },
+   "last": 3632,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:affine probability",
+    "eq:halfway done with refining the approximate formula",
+    "eq:X - z equals z times 1 plus O",
+    "eq:affine probability asymptotic"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3633
+   },
+   "last": 3756,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-78",
+   "type": "env",
+   "k": 78,
+   "env": "defn",
+   "title": "\\protect\\definitionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "76",
+   "number_from": "counter",
+   "labels": [
+    "eq:def of f_x",
+    "eq:def of omega_x weight"
+   ],
+   "parent": "2609.33018v1#proof-10",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3727
+   },
+   "last": 3742,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#env-79",
+   "type": "env",
+   "k": 79,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "77",
+   "number_from": "counter",
+   "labels": [
+    "eq:expectation identity",
+    "eq:Tao page 28 transformation"
+   ],
+   "parent": "2609.33018v1#proof-10",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3747
+   },
+   "last": 3756,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3757
+   },
+   "last": 3802,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-80",
+   "type": "env",
+   "k": 80,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "78",
+   "number_from": "counter",
+   "labels": [
+    "prop:Fourier transference step 1",
+    "eq:Fourier transference step 1"
+   ],
+   "parent": "2609.33018v1#proof-11",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3789
+   },
+   "last": 3802,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:expectation to be transformed",
+    "eq:big delta upper bound",
+    "eq:sandwich"
+   ],
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3803
+   },
+   "last": 3875,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-81",
+   "type": "env",
+   "k": 81,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "79",
+   "number_from": "counter",
+   "labels": [
+    "prop:boundedness of the omega_x sum",
+    "eq:Tao Lemma 5.3 analogue"
+   ],
+   "parent": "2609.33018v1#proof-12",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3865
+   },
+   "last": 3875,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3876
+   },
+   "last": 3909,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.33018v1#env-82",
+   "type": "env",
+   "k": 82,
+   "env": "prop",
+   "title": "\\protect\\propositionname",
+   "item": "unknown",
+   "counter": "thm",
+   "number": "80",
+   "number_from": "counter",
+   "labels": [
+    "prop:removing the indicator function from the expectation",
+    "eq:removing the indicator function from the expectation"
+   ],
+   "parent": "2609.33018v1#proof-13",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3901
+   },
+   "last": 3909,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33018v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Short_and_Cleaner_Notation_-_Almost-Boundedness_-_Archimedean_Case.tex",
+    "line": 3910
+   },
+   "last": 3987,
+   "result": "matched",
+   "confidence": "medium"
+  }
+ ]
+}
