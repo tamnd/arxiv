@@ -1,0 +1,766 @@
+{
+ "paper": "2609.34938",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "autosam.tex"
+ ],
+ "class": "autart",
+ "packages": [
+  "fontenc",
+  "amsmath",
+  "amsfonts",
+  "amssymb",
+  "lmodern",
+  "booktabs",
+  "systeme",
+  "graphicx"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: autosam.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 470 commands, 4 environments",
+  "aliases: 140 uses of commands that stand for \\begin or \\end",
+  "tree: 124 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hypo",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assum",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "crit",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exmp",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prob",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prin",
+   "title": "Principle",
+   "item": "statement/principle",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "alg",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "alg",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "note",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summ",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "summ",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "case",
+   "numbered": true,
+   "from": "local:autart.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defprop",
+   "title": "Definition--Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "titled",
+   "title_arg": true
+  }
+ ],
+ "occurrences": {
+  "env": 11,
+  "label": 48,
+  "proof": 11,
+  "textref": 15
+ },
+ "matched": {
+  "env": 11,
+  "label": 48,
+  "proof": 11
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 11,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 15,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.34938v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "lem:bounded_coupling"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 366
+   },
+   "last": 398,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "autosam.tex",
+    "line": 400
+   },
+   "last": 452,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "prop:sign-indefinite"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 465
+   },
+   "last": 476,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "autosam.tex",
+    "line": 478
+   },
+   "last": 530,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "prop:critical-controllability",
+    "eq:critical-exponential-decay"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 662
+   },
+   "last": 690,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:PBH-critical"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 692
+   },
+   "last": 777,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "thm:finite-infinite-lifting",
+    "eq:AF-lifting",
+    "eq:AF-exp-lifting"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 782
+   },
+   "last": 808,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "autosam.tex",
+    "line": 810
+   },
+   "last": 875,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5",
+   "number_from": "counter",
+   "labels": [
+    "prop:predictor-dynamics",
+    "eq:predictor-dynamics"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 937
+   },
+   "last": 948,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "autosam.tex",
+    "line": 950
+   },
+   "last": 1026,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6",
+   "number_from": "counter",
+   "labels": [
+    "thm:global-wellposedness",
+    "eq:closed-loop-finite-time-estimate"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1050
+   },
+   "last": 1104,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:closed-loop-variational-form",
+    "eq:garding-closed-loop",
+    "eq:prescribed-input-estimate",
+    "eq:feedback-volterra-equation",
+    "eq:feedback-L2-estimate"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1106
+   },
+   "last": 1264,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "7",
+   "number_from": "counter",
+   "labels": [
+    "prop:weighted-shoreline-gain",
+    "eq:predictor-weighted-estimate",
+    "eq:weighted-Y-H1",
+    "eq:weighted-ux-gain",
+    "eq:Gud",
+    "eq:GD"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1328
+   },
+   "last": 1412,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:u-predictor-weighted",
+    "eq:Sn-smoothing"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1414
+   },
+   "last": 1512,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "8",
+   "number_from": "counter",
+   "labels": [
+    "prop:bathymetric-weighted-gain",
+    "eq:bathymetric-coercivity",
+    "eq:bathymetric-energy-gain",
+    "eq:bv-definition",
+    "eq:weighted-bathymetric-gain",
+    "eq:bathymetric-weighted-constants"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1531
+   },
+   "last": 1590,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1592
+   },
+   "last": 1660,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "9",
+   "number_from": "counter",
+   "labels": [
+    "prop:weighted-residual-gain",
+    "eq:weighted-residual-gain",
+    "eq:Cd0",
+    "eq:Gdu"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1664
+   },
+   "last": 1700,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1702
+   },
+   "last": 1761,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "10",
+   "number_from": "counter",
+   "labels": [
+    "prop:small-gain-closure",
+    "eq:small-gain-condition",
+    "eq:small-gain-global-estimate"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1765
+   },
+   "last": 1804,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:initial-delay-interval",
+    "eq:Y0-initial-bound",
+    "eq:ux-complete-gain",
+    "eq:d-complete-gain"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1806
+   },
+   "last": 1862,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "11",
+   "number_from": "counter",
+   "labels": [
+    "thm:full-exponential-stability",
+    "eq:final-exponential-estimate"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1866
+   },
+   "last": 1900,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34938v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:global-weighted-estimate",
+    "eq:Y-pointwise-decay",
+    "eq:u-pointwise-decay",
+    "eq:v-pointwise-decay"
+   ],
+   "pos": {
+    "file": "autosam.tex",
+    "line": 1902
+   },
+   "last": 2058,
+   "result": "matched"
+  }
+ ]
+}

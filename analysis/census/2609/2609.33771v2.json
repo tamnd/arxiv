@@ -1,0 +1,2544 @@
+{
+ "paper": "2609.33771",
+ "version": 2,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "GPAM_NEW.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "ntrees",
+  "amssymb",
+  "amsmath",
+  "amsfonts",
+  "geometry",
+  "bbm",
+  "hyperref",
+  "tikz",
+  "enumitem",
+  "inputenc",
+  "xcolor",
+  "mathrsfs",
+  "multirow",
+  "verbatim",
+  "mathtools",
+  "pdfcomment"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: GPAM_NEW.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 23 commands, 0 environments",
+  "tree: 668 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "algorithm",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "criterion",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "solution",
+   "title": "Solution",
+   "item": "other/solution",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summary",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "acknowledgement",
+   "title": "Acknowledgement",
+   "item": "other/section",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conclusion",
+   "title": "Conclusion",
+   "item": "other/section",
+   "counter": "cprop",
+   "shared": "cprop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 77,
+  "label": 257,
+  "proof": 36,
+  "textref": 133
+ },
+ "matched": {
+  "env": 77,
+  "label": 257,
+  "proof": 36
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 77,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 131,
+  "unresolved": 2
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.33771v2#textref-11",
+   "message": "the text names Assumption 5.1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.33771v2#textref-86",
+   "message": "the text names Theorem A and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.33771v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "cprop",
+   "number": "0.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 172
+   },
+   "last": 174,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "TGsasa"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 1583
+   },
+   "last": 1598,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "cprop",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "UASassasa",
+    "MAIN"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 1610
+   },
+   "last": 1645,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "stat"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 1647
+   },
+   "last": 1654,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 1655
+   },
+   "last": 1681,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "BOUNDED"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 1682
+   },
+   "last": 1704,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "dfn",
+    "MAIN_1"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 1706
+   },
+   "last": 1754,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "2.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 1755
+   },
+   "last": 1768,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "2.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 1770
+   },
+   "last": 1773,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "global",
+    "ASASa"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 1783
+   },
+   "last": 1806,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Step1",
+    "Kmasas",
+    "2369",
+    "cond:A",
+    "BNasr",
+    "Kaiss",
+    "Oalss",
+    "BNasa",
+    "NMass",
+    "NMas1s",
+    "Step2",
+    "UJnasexs",
+    "I1",
+    "I2",
+    "Bnassa",
+    "I3",
+    "Nnasss",
+    "UJmss",
+    "NMAsse",
+    "Bnasz",
+    "Bnass",
+    "HNasda",
+    "NBN",
+    "Step3",
+    "Mkopass",
+    "NNMa",
+    "Step4",
+    "Bczxxxxz",
+    "MBM"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 1807
+   },
+   "last": 2385,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "2.8",
+   "number_from": "counter",
+   "labels": [
+    "Alex",
+    "SSAS78sasassss",
+    "ASasas78qw"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 2390
+   },
+   "last": 2414,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 2415
+   },
+   "last": 2417,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "2.9",
+   "number_from": "counter",
+   "labels": [
+    "ATGFRAs",
+    "TGBG"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 2424
+   },
+   "last": 2441,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "TYLOR"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 2442
+   },
+   "last": 2476,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "2.10",
+   "number_from": "counter",
+   "labels": [
+    "YHATSs"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 2478
+   },
+   "last": 2526,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "IAS78asaas"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 2527
+   },
+   "last": 2712,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "cprop",
+   "number": "2.11",
+   "number_from": "counter",
+   "labels": [
+    "kkkl",
+    "MAIN2",
+    "UIO"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 2714
+   },
+   "last": 2737,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "epsilon",
+    "Q0",
+    "UJNMa"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 2738
+   },
+   "last": 2915,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "cprop",
+   "number": "2.12",
+   "number_from": "counter",
+   "labels": [
+    "onwall",
+    "OL\u003c45",
+    "Atyasww"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 2919
+   },
+   "last": 2970,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Step10",
+    "P1a",
+    "JMssa",
+    "Jmma",
+    "HYAs",
+    "Step20",
+    "D0",
+    "kappa",
+    "OMaslsa",
+    "MAMSs",
+    "D00",
+    "IKmals",
+    "JMa",
+    "IK45",
+    "MAxAi",
+    "Bnas"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 2971
+   },
+   "last": 3312,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "2.13",
+   "number_from": "counter",
+   "labels": [
+    "MAIN222"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3313
+   },
+   "last": 3327,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "2.14",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3329
+   },
+   "last": 3331,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "cprop",
+   "number": "2.15",
+   "number_from": "counter",
+   "labels": [
+    "UJU"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3333
+   },
+   "last": 3395,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3427
+   },
+   "last": 3458,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "2.16",
+   "number_from": "counter",
+   "labels": [
+    "DCXSZ"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3460
+   },
+   "last": 3491,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3492
+   },
+   "last": 3494,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "2.17",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3495
+   },
+   "last": 3497,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "cprop",
+   "number": "2.18",
+   "number_from": "counter",
+   "labels": [
+    "SASewwewewewew",
+    "UASJewesdf"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3499
+   },
+   "last": 3541,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3542
+   },
+   "last": 3565,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "cprop",
+   "number": "2.19",
+   "number_from": "counter",
+   "labels": [
+    "UJUJUJU",
+    "I789s"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3567
+   },
+   "last": 3599,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "ASas7qwqwqwqc",
+    "Ausjadfwe"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3600
+   },
+   "last": 3633,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "3.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3658
+   },
+   "last": 3691,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "DEF_CO"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3693
+   },
+   "last": 3723,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "GGAHSs"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3732
+   },
+   "last": 3772,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "UAsjwew",
+    "I4766sd"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3775
+   },
+   "last": 3788,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "AYsHSsqq"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3806
+   },
+   "last": 3835,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3837
+   },
+   "last": 3894,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "cprop",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "asasww"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 3896
+   },
+   "last": 3935,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "Olasmudfa"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4008
+   },
+   "last": 4017,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "BNASSSSS"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4019
+   },
+   "last": 4028,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "cprop",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "ASAS78asaaa",
+    "asasaiasa",
+    "MAINAA"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4030
+   },
+   "last": 4070,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "3.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4071
+   },
+   "last": 4078,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "3.11",
+   "number_from": "counter",
+   "labels": [
+    "BASsdswsw"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4083
+   },
+   "last": 4130,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "3.12",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4150
+   },
+   "last": 4169,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "3.13",
+   "number_from": "counter",
+   "labels": [
+    "AISmfdsd"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4178
+   },
+   "last": 4186,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "3.14",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4187
+   },
+   "last": 4208,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "3.15",
+   "number_from": "counter",
+   "labels": [
+    "UYHNAss"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4214
+   },
+   "last": 4223,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4224
+   },
+   "last": 4286,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "3.16",
+   "number_from": "counter",
+   "labels": [
+    "polikks",
+    "Ik78965",
+    "Ik789655"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4289
+   },
+   "last": 4353,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4355
+   },
+   "last": 4377,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "3.17",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4378
+   },
+   "last": 4384,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "3.18",
+   "number_from": "counter",
+   "labels": [
+    "JMasss",
+    "I1479AS"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4385
+   },
+   "last": 4414,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4415
+   },
+   "last": 4486,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "3.19",
+   "number_from": "counter",
+   "labels": [
+    "Asaisada"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4487
+   },
+   "last": 4501,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "3.20",
+   "number_from": "counter",
+   "labels": [
+    "ASHyasas",
+    "Baxczxx"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4502
+   },
+   "last": 4528,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4529
+   },
+   "last": 4565,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "3.21",
+   "number_from": "counter",
+   "labels": [
+    "Aaasqwqwa",
+    "UAJsss",
+    "UAJsss1"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4567
+   },
+   "last": 4603,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4604
+   },
+   "last": 4667,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "3.22",
+   "number_from": "counter",
+   "labels": [
+    "REFRass"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4668
+   },
+   "last": 4731,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "cprop",
+   "number": "3.23",
+   "number_from": "counter",
+   "labels": [
+    "Ujasn785sw",
+    "Oaslnr",
+    "uniform-model-moments",
+    "sdKisd4ws"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4739
+   },
+   "last": 4762,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4763
+   },
+   "last": 4765,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "cprop",
+   "number": "3.24",
+   "number_from": "counter",
+   "labels": [
+    "HAYSda"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4766
+   },
+   "last": 4772,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4773
+   },
+   "last": 4775,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "3.25",
+   "number_from": "counter",
+   "labels": [
+    "BGAssss",
+    "Imasko74",
+    "asaas26",
+    "HYjas"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4787
+   },
+   "last": 4816,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Oams478",
+    "Km4785as",
+    "BBB47",
+    "UJMa"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4817
+   },
+   "last": 4863,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "cprop",
+   "number": "3.26",
+   "number_from": "counter",
+   "labels": [
+    "Ik78assq"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4866
+   },
+   "last": 4868,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Step001",
+    "Y11",
+    "ASasasasas",
+    "Y22",
+    "JMasssa",
+    "Assawqqw",
+    "Step002",
+    "Y33",
+    "X1",
+    "X2",
+    "NN12",
+    "LPoa",
+    "Step003",
+    "Yhanss",
+    "Iias78as",
+    "orthogonality",
+    "Im784aw",
+    "N1236as9",
+    "M1236",
+    "B12369",
+    "Ikassqq"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 4869
+   },
+   "last": 5206,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "3.27",
+   "number_from": "counter",
+   "labels": [
+    "IAskca1",
+    "IAskca"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5214
+   },
+   "last": 5228,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Ujkasawe",
+    "Ikasgfa",
+    "aksasq",
+    "Haks85a",
+    "T11",
+    "T111",
+    "JAsuas"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5230
+   },
+   "last": 5307,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "cprop",
+   "number": "3.28",
+   "number_from": "counter",
+   "labels": [
+    "Ujasm"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5309
+   },
+   "last": 5316,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Olaspsq",
+    "Olaspsq_shift",
+    "IAkslas8",
+    "Ol45as",
+    "Ikamsw25",
+    "Olas[sd]",
+    "IK478sd"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5317
+   },
+   "last": 5509,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "cprop",
+   "number": "3.29",
+   "number_from": "counter",
+   "labels": [
+    "ASA8eweaas",
+    "OLmasw",
+    "ASk85",
+    "Asaiqwq",
+    "AIknas"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5513
+   },
+   "last": 5568,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Lm78a"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5569
+   },
+   "last": 5584,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "cprop",
+   "number": "3.30",
+   "number_from": "counter",
+   "labels": [
+    "ASAsewe"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5588
+   },
+   "last": 5600,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5602
+   },
+   "last": 5620,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "3.31",
+   "number_from": "counter",
+   "labels": [
+    "ASyachadw"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5621
+   },
+   "last": 5659,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "cprop",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "zasdasdaz",
+    "MAINAAAA"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5725
+   },
+   "last": 5768,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "AS89asdxa"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5774
+   },
+   "last": 5788,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5790
+   },
+   "last": 5797,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "sds78asdaad"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5798
+   },
+   "last": 5829,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5831
+   },
+   "last": 5839,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "cprop",
+   "number": "4.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5842
+   },
+   "last": 5856,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "Asqwqw"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5859
+   },
+   "last": 5865,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5867
+   },
+   "last": 5875,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5876
+   },
+   "last": 5878,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "4.9",
+   "number_from": "counter",
+   "labels": [
+    "first-order-condition",
+    "A78aqwz",
+    "RTRTR"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5899
+   },
+   "last": 5952,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.10",
+   "number_from": "counter",
+   "labels": [
+    "IOpasasasas"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5953
+   },
+   "last": 5958,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.11",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5959
+   },
+   "last": 5961,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "4.12",
+   "number_from": "counter",
+   "labels": [
+    "ASasd78axx",
+    "A75qwewc",
+    "Asddadvse"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5965
+   },
+   "last": 5992,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "sadsdsdfsfs"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 5993
+   },
+   "last": 6017,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "cprop",
+   "number": "4.13",
+   "number_from": "counter",
+   "labels": [
+    "METT"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6020
+   },
+   "last": 6101,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "ASaickasda",
+    "TRT1",
+    "TRT2",
+    "TRT3"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6102
+   },
+   "last": 6159,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "cprop",
+   "number": "4.14",
+   "number_from": "counter",
+   "labels": [
+    "ASAqvfdg",
+    "linn"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6160
+   },
+   "last": 6175,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.15",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6177
+   },
+   "last": 6191,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.16",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6192
+   },
+   "last": 6194,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "cprop",
+   "number": "4.17",
+   "number_from": "counter",
+   "labels": [
+    "FIRTA"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6197
+   },
+   "last": 6234,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "I7895454s",
+    "TRT2aaa"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6235
+   },
+   "last": 6322,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "cprop",
+   "number": "4.18",
+   "number_from": "counter",
+   "labels": [
+    "stable_manifold",
+    "eqn:rho_temp",
+    "invari",
+    "aaaa",
+    "",
+    "78421215"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6324
+   },
+   "last": 6438,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6439
+   },
+   "last": 6441,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.19",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6442
+   },
+   "last": 6444,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "cprop",
+   "number": "4.20",
+   "number_from": "counter",
+   "labels": [
+    "unstable",
+    "eqn:contr_char_1"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6446
+   },
+   "last": 6610,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6611
+   },
+   "last": 6613,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.21",
+   "number_from": "counter",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6614
+   },
+   "last": 6616,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "cprop",
+   "number": "4.22",
+   "number_from": "counter",
+   "labels": [
+    "CISa",
+    "Ujmas89qwz",
+    "sdf9sfsad",
+    "Y78azswds"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6617
+   },
+   "last": 6712,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "cprop",
+   "number": "4.23",
+   "number_from": "counter",
+   "labels": [
+    "center"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6714
+   },
+   "last": 6797,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 6798
+   },
+   "last": 6800,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "cprop",
+   "number": "4.24",
+   "number_from": "counter",
+   "labels": [
+    "ASasxassas",
+    "eqn:rho_tempa",
+    "asaswqew",
+    "eqn:local_contraction",
+    "eqn:contr_char6"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 7018
+   },
+   "last": 7078,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 7080
+   },
+   "last": 7086,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "cprop",
+   "number": "4.25",
+   "number_from": "counter",
+   "labels": [
+    "stabi",
+    "MAINAAssAA"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 7089
+   },
+   "last": 7102,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Ikaswwe25",
+    "Kaser",
+    "MAINAAssAAsasd",
+    "MAINAAssAAsassdd",
+    "small-noise-Lyap"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 7103
+   },
+   "last": 7242,
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Alexi",
+    "CZ1",
+    "CZ22",
+    "BBBBB",
+    "Step1111",
+    "Bnassssw",
+    "NMasz",
+    "PLPLP",
+    "A11",
+    "ZZXZX",
+    "LLMOLPa",
+    "A33",
+    "BBNMNa",
+    "NNNNN",
+    "A44",
+    "Step2222",
+    "TTyyta",
+    "TTT0",
+    "TTT1",
+    "TTT2",
+    "A22",
+    "A6",
+    "Step3333",
+    "JMMAs",
+    "IAkwewe",
+    "NMaz",
+    "NMasas",
+    "ASSferg",
+    "SSAS78sasas"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 7246
+   },
+   "last": 8166,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.33771v2#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "AAzza1",
+    "Step11",
+    "NASBs",
+    "Z11",
+    "Step22",
+    "Aza41",
+    "LLm",
+    "LLMM",
+    "Z22",
+    "Step33",
+    "NNMass",
+    "Z33",
+    "Step44",
+    "Z44"
+   ],
+   "pos": {
+    "file": "GPAM_NEW.tex",
+    "line": 8180
+   },
+   "last": 8663,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

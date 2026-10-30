@@ -1,0 +1,1253 @@
+{
+ "paper": "2609.34946",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main_no_comments.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "geometry",
+  "amsfonts",
+  "amssymb",
+  "amsmath",
+  "verbatim",
+  "amsthm",
+  "mathrsfs",
+  "amscd",
+  "enumerate",
+  "ascmac",
+  "fancyhdr",
+  "caption",
+  "hyperref",
+  "framed",
+  "subfigure",
+  "bbm",
+  "eucal",
+  "tikz",
+  "tikz-cd",
+  "graphicx",
+  "pgf",
+  "pgfplots",
+  "float",
+  "pdfpages",
+  "tcolorbox",
+  "mathtools",
+  "mdframed",
+  "url",
+  "xcolor",
+  "stackengine",
+  "scalerel"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: main_no_comments.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 46 commands, 0 environments",
+  "tree: 387 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "conjecture",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture*",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "sublemma",
+   "title": "Sublemmaq",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "aim",
+   "title": "Aim",
+   "item": "unknown",
+   "counter": "section",
+   "shared": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "goal*",
+   "title": "Goal",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "job",
+   "title": "JOB",
+   "item": "unknown",
+   "counter": "job",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remarks",
+   "title": "Remarks",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "overview",
+   "title": "Overview",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "organisation",
+   "title": "Organisation",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 43,
+  "label": 88,
+  "proof": 5,
+  "textref": 82
+ },
+ "matched": {
+  "env": 43,
+  "label": 88,
+  "proof": 5
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 39,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 81,
+  "unresolved": 1
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.34946v1#textref-1",
+   "message": "the text names theorem A and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.34946v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "labels": [
+    "Becknerthm75"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 42
+   },
+   "last": 47,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "labels": [
+    "entropicUP-210526"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 50
+   },
+   "last": 54,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:PittpqFT",
+    "eqn:pitt2",
+    "assumptionPitt"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 69
+   },
+   "last": 83,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "labels": [
+    "sharp_Pitt",
+    "eqn:pitt",
+    "constant:sharp_Pitt"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 86
+   },
+   "last": 99,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "labels": [
+    "log_UP",
+    "eqn:logUP",
+    "constant:logUP"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 102
+   },
+   "last": 114,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:main1",
+    "entrop1-270526",
+    "entrop2-270526",
+    "entrop3-270526"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 272
+   },
+   "last": 290,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "counter",
+   "labels": [
+    "intro.def.corrective.term",
+    "intro.AddTerm"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 295
+   },
+   "last": 300,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.4",
+   "number_from": "counter",
+   "labels": [
+    "thm:main2",
+    "entropyUPS"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 302
+   },
+   "last": 308,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "1.5",
+   "number_from": "counter",
+   "labels": [
+    "intro.thm:Pittpq2",
+    "PittwithmatricesBinv"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 320
+   },
+   "last": 326,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "1.6",
+   "number_from": "counter",
+   "labels": [
+    "intro.logUP",
+    "LogUPforS"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 330
+   },
+   "last": 336,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "1.7",
+   "number_from": "counter",
+   "labels": [
+    "intro.defPittAdmissible",
+    "Pitt_admiss_i",
+    "Pitt_admiss_ii",
+    "Pitt_admiss_iii",
+    "NecCondSfglob",
+    "Pitt_admiss_iv"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 352
+   },
+   "last": 374,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.8",
+   "number_from": "counter",
+   "labels": [
+    "intro.thm:mainmetap"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 377
+   },
+   "last": 387,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.9",
+   "number_from": "counter",
+   "labels": [
+    "intro.thmHalpha"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 401
+   },
+   "last": 407,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "PropIsomorphisms"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 481
+   },
+   "last": 489,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "defSympInterchange",
+    "defPiJ"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 500
+   },
+   "last": 508,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "defQFT"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 541
+   },
+   "last": 543,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 545
+   },
+   "last": 552,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "defmus",
+    "repformulaBO",
+    "integralSf",
+    "integralSffree"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 562
+   },
+   "last": 583,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "counter",
+   "labels": [
+    "lemmaDecomp",
+    "defgxi2",
+    "Sfghat"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 587
+   },
+   "last": 603,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "remarkgBinvertible",
+    "compactSffree"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 604
+   },
+   "last": 613,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "remark:case2_immediate"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 702
+   },
+   "last": 709,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 710
+   },
+   "last": 720,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:PFT-necessary",
+    "eq:PFT-Pitt-necessary-assumption"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 779
+   },
+   "last": 793,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "Claim1-13082026"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 1677
+   },
+   "last": 1681,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "cond1-14082026",
+    "cond2-14082026",
+    "cond3-14082026",
+    "cond4-14082026",
+    "cond5-14082026",
+    "cond6-14082026"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 1682
+   },
+   "last": 1711,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "rem:constants"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2032
+   },
+   "last": 2034,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "Cor-Pitt-03082026",
+    "PittForMetaps3",
+    "wfeds"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2040
+   },
+   "last": 2050,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "refsd",
+    "3rewsdzd",
+    "ThesisForg",
+    "geds",
+    "eri",
+    "fromhere",
+    "presharp2",
+    "PittForMetaps2"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2056
+   },
+   "last": 2158,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "rem:Step344",
+    "estgg1",
+    "estgg2",
+    "eqn53"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2159
+   },
+   "last": 2180,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2182
+   },
+   "last": 2185,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2187
+   },
+   "last": 2188,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "counter",
+   "labels": [
+    "remarkmatrices",
+    "sharpnum",
+    "sharpden"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2190
+   },
+   "last": 2233,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2248
+   },
+   "last": 2250,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.8",
+   "number_from": "counter",
+   "labels": [
+    "thm:metaplecticSobolev",
+    "sob.CzeroIdentity",
+    "sob.CzeroNorm",
+    "sob.PittSobolev"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2273
+   },
+   "last": 2301,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2303
+   },
+   "last": 2305,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2307
+   },
+   "last": 2315,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:freeParticleEntropy"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2337
+   },
+   "last": 2342,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:freeParticleSobolev"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2344
+   },
+   "last": 2349,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:harmonicEntropy"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2365
+   },
+   "last": 2370,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:harmonicSobolev"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2372
+   },
+   "last": 2381,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:magneticEntropy"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2421
+   },
+   "last": 2426,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:magneticSobolev"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2428
+   },
+   "last": 2437,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.7",
+   "number_from": "counter",
+   "labels": [
+    "prop:anisotropicEntropy",
+    "AnisotHO"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2466
+   },
+   "last": 2471,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.8",
+   "number_from": "counter",
+   "labels": [
+    "prop:anisotropicSobolev"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2473
+   },
+   "last": 2482,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2483
+   },
+   "last": 2489,
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "counter",
+   "labels": [
+    "CV"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2529
+   },
+   "last": 2534,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.2",
+   "number_from": "counter",
+   "labels": [
+    "Lemma-COVar"
+   ],
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2537
+   },
+   "last": 2542,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.34946v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_no_comments.tex",
+    "line": 2543
+   },
+   "last": 2564,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
