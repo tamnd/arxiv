@@ -1,0 +1,5305 @@
+{
+ "paper": "2609.39293",
+ "version": 2,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "tikz-cd",
+  "tikz",
+  "amsmath",
+  "amssymb",
+  "geometry",
+  "setspace",
+  "fontenc",
+  "mathtools",
+  "leftindex",
+  "tensor",
+  "mhchem",
+  "mathrsfs",
+  "indentfirst",
+  "xypic",
+  "amsthm",
+  "graphicx",
+  "hyperref",
+  "cleveref",
+  "etoolbox",
+  "color",
+  "relsize",
+  "amsfonts",
+  "quiver",
+  "pict2e"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 1 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 62 commands, 0 environments",
+  "tree: 520 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "construction/proposition",
+   "title": "Construction/Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "convention",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "construction",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "variant",
+   "title": "Variant",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hypothesis",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "digression",
+   "title": "Digression",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "examples",
+   "title": "Examples",
+   "item": "example",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "situation",
+   "title": "Situation",
+   "item": "context/hypothesis",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "warning",
+   "title": "Warning",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "setup",
+   "title": "Setup",
+   "item": "context/hypothesis",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 166,
+  "label": 190,
+  "proof": 106,
+  "textref": 2
+ },
+ "matched": {
+  "env": 166,
+  "label": 190,
+  "proof": 106
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 166,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 14
+ },
+ "textrefs": {
+  "resolved": 0,
+  "unresolved": 2
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-17",
+   "message": "Lemma 1.2.6 comes after 1.2.2 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-18",
+   "message": "Remark 1.2.8 comes after 1.2.6 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-76",
+   "message": "Proposition 3.7.7 comes after 3.7.5 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-87",
+   "message": "Proposition 3.9.5 comes after 3.9.3 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-93",
+   "message": "Lemma 4.2.4 comes after 4.2.2 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-101",
+   "message": "Theorem 4.4.3 comes after 4.4.1 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-102",
+   "message": "Corollary 4.4.5 comes after 4.4.3 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-107",
+   "message": "Proposition 4.6.6 comes after 4.6.3 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-108",
+   "message": "Corollary 4.6.10 comes after 4.6.6 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-110",
+   "message": "Example 4.6.13 comes after 4.6.11 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-114",
+   "message": "Proposition 4.7.5 comes after 4.7.3 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-116",
+   "message": "Remark 4.8.4 comes after 4.8.1 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-119",
+   "message": "Remark 4.9.3 comes after 4.9.1 in counter equation"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.39293v2#env-150",
+   "message": "Lemma 5.4.12 comes after 5.4.10 in counter equation"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.39293v2#textref-1",
+   "message": "the text names Lemma 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.39293v2#textref-2",
+   "message": "the text names Proposition 18 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.39293v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "0.0.1",
+   "number_from": "counter",
+   "labels": [
+    "shifts of R-complexes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 436
+   },
+   "last": 448,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "0.0.2",
+   "number_from": "counter",
+   "labels": [
+    "reduction by R_n"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 450
+   },
+   "last": 483,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "0.0.3",
+   "number_from": "counter",
+   "labels": [
+    "Ekedahl completion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 487
+   },
+   "last": 500,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "0.0.4",
+   "number_from": "counter",
+   "labels": [
+    "R1 detects vanishing of complete complexes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 524
+   },
+   "last": 528,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 530
+   },
+   "last": 535,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "0.0.5",
+   "number_from": "counter",
+   "labels": [
+    "Nygaard modification"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 538
+   },
+   "last": 573,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "0.0.6",
+   "number_from": "counter",
+   "labels": [
+    "completion commutes with Nygaard modification"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 577
+   },
+   "last": 583,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 585
+   },
+   "last": 595,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "0.0.7",
+   "number_from": "counter",
+   "labels": [
+    "coherent R-modules"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 597
+   },
+   "last": 629,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "0.0.8",
+   "number_from": "counter",
+   "labels": [
+    "coherent derived categories of R"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 631
+   },
+   "last": 645,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "0.0.9",
+   "number_from": "counter",
+   "labels": [
+    "stable cycles boundaries and dominos"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 663
+   },
+   "last": 695,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "0.0.10",
+   "number_from": "counter",
+   "labels": [
+    "R-modules of level I"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 697
+   },
+   "last": 707,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "1.1.1",
+   "number_from": "counter",
+   "labels": [
+    "radical filtration"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 746
+   },
+   "last": 771,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "1.1.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 773
+   },
+   "last": 783,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "1.1.3",
+   "number_from": "counter",
+   "labels": [
+    "example:radical-filtration"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 792
+   },
+   "last": 811,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "1.1.4",
+   "number_from": "counter",
+   "labels": [
+    "diagonal t-structure"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 819
+   },
+   "last": 859,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 861
+   },
+   "last": 1080,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "1.2.1",
+   "number_from": "counter",
+   "labels": [
+    "graded Hom"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1094
+   },
+   "last": 1118,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "1.2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1120
+   },
+   "last": 1127,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "1.2.6",
+   "number_from": "counter",
+   "labels": [
+    "completed resolution of elementary domino",
+    "elementary domino completed resolution sequence"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1244
+   },
+   "last": 1269,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1271
+   },
+   "last": 1327,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "1.2.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1350
+   },
+   "last": 1358,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "1.2.9",
+   "number_from": "counter",
+   "labels": [
+    "cyclic devissage of Dieudonne modules"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1362
+   },
+   "last": 1368,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1370
+   },
+   "last": 1389,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "1.2.10",
+   "number_from": "counter",
+   "labels": [
+    "Ekedahl vanishing over any perfect field"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1393
+   },
+   "last": 1430,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1435
+   },
+   "last": 1459,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "1.2.11",
+   "number_from": "counter",
+   "labels": [
+    "diagonal t-structure on coherent R-complexes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1483
+   },
+   "last": 1517,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.1.1",
+   "number_from": "counter",
+   "labels": [
+    "Basic Vanishing"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1600
+   },
+   "last": 1611,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1616
+   },
+   "last": 1651,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "2.1.2",
+   "number_from": "counter",
+   "labels": [
+    "Totsubquo"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1655
+   },
+   "last": 1669,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1671
+   },
+   "last": 1688,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.1.3",
+   "number_from": "counter",
+   "labels": [
+    "subobjects of diagonal modules"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1692
+   },
+   "last": 1702,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1704
+   },
+   "last": 1722,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.1.4",
+   "number_from": "counter",
+   "labels": [
+    "homomorphism between U_i"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1738
+   },
+   "last": 1747,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1749
+   },
+   "last": 1777,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.1.5",
+   "number_from": "counter",
+   "labels": [
+    "diagonal category is Noetherian"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1779
+   },
+   "last": 1781,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1783
+   },
+   "last": 1808,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.1.6",
+   "number_from": "counter",
+   "labels": [
+    "dcDegen"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1810
+   },
+   "last": 1837,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1839
+   },
+   "last": 1850,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.1.7",
+   "number_from": "counter",
+   "labels": [
+    "dcamplitude"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1854
+   },
+   "last": 1871,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1873
+   },
+   "last": 1908,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.1.8",
+   "number_from": "counter",
+   "labels": [
+    "finite torsion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1948
+   },
+   "last": 1954,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.1.9",
+   "number_from": "counter",
+   "labels": [
+    "without finite torsion implies artinian"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1956
+   },
+   "last": 1970,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1977
+   },
+   "last": 2011,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.1.10",
+   "number_from": "counter",
+   "labels": [
+    "elementary finite-torsion objects"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2015
+   },
+   "last": 2025,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2027
+   },
+   "last": 2074,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "2.1.11",
+   "number_from": "counter",
+   "labels": [
+    "description of finite torsion object"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2076
+   },
+   "last": 2090,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2092
+   },
+   "last": 2195,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.2.1",
+   "number_from": "counter",
+   "labels": [
+    "R-modules cut at I"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2202
+   },
+   "last": 2214,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.2.2",
+   "number_from": "counter",
+   "labels": [
+    "D_c^b(R-Cut-I)"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2258
+   },
+   "last": 2265,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2267
+   },
+   "last": 2320,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "2.2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2322
+   },
+   "last": 2327,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.3.1",
+   "number_from": "counter",
+   "labels": [
+    "Hodge--Witt objects form a Serre subcategory"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2341
+   },
+   "last": 2344,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2346
+   },
+   "last": 2362,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.3.2",
+   "number_from": "counter",
+   "labels": [
+    "Hodge--Witt criterion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2366
+   },
+   "last": 2375,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2377
+   },
+   "last": 2430,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "2.3.3",
+   "number_from": "counter",
+   "labels": [
+    "derived Hodge--Witt criterion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2432
+   },
+   "last": 2436,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2438
+   },
+   "last": 2452,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.3.4",
+   "number_from": "counter",
+   "labels": [
+    "definition of HW"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2454
+   },
+   "last": 2460,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.3.5",
+   "number_from": "counter",
+   "labels": [
+    "HW of cohomology equals cohomology of HW"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2466
+   },
+   "last": 2474,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2476
+   },
+   "last": 2506,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.3.6",
+   "number_from": "counter",
+   "labels": [
+    "survie du coeur"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2510
+   },
+   "last": 2531,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.3.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2536
+   },
+   "last": 2541,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2543
+   },
+   "last": 2549,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2551
+   },
+   "last": 2638,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.3.8",
+   "number_from": "counter",
+   "labels": [
+    "Filtration of torsion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2640
+   },
+   "last": 2660,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "2.3.9",
+   "number_from": "counter",
+   "labels": [
+    "When one of the differential is zero"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2685
+   },
+   "last": 2698,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2700
+   },
+   "last": 2736,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.3.10",
+   "number_from": "counter",
+   "labels": [
+    "Hodge Witt in degree r"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2738
+   },
+   "last": 2741,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.3.11",
+   "number_from": "counter",
+   "labels": [
+    "Tot torsion definition"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2743
+   },
+   "last": 2756,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.3.12",
+   "number_from": "counter",
+   "labels": [
+    "sub and quotient object of Tot-torsion objects"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2758
+   },
+   "last": 2773,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2775
+   },
+   "last": 2795,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.4.1",
+   "number_from": "counter",
+   "labels": [
+    "Mazur-Ogus objects"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2806
+   },
+   "last": 2811,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.4.2",
+   "number_from": "counter",
+   "labels": [
+    "Mazur-Ogus vanishing"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2817
+   },
+   "last": 2824,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2826
+   },
+   "last": 2850,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.4.3",
+   "number_from": "counter",
+   "labels": [
+    "Hodge numbers in degree plus minus 1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2857
+   },
+   "last": 2874,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2878
+   },
+   "last": 2913,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "2.5.1",
+   "number_from": "counter",
+   "labels": [
+    "two fundamental filtrations"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2926
+   },
+   "last": 2959,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2961
+   },
+   "last": 3007,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "2.5.2",
+   "number_from": "counter",
+   "labels": [
+    "total cohomology of the two fundamental filtrations"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3013
+   },
+   "last": 3030,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.1.1",
+   "number_from": "counter",
+   "labels": [
+    "The t-structure: G"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3066
+   },
+   "last": 3078,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.1.2",
+   "number_from": "counter",
+   "labels": [
+    "criteria for G-amplitude [m n]"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3089
+   },
+   "last": 3096,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3098
+   },
+   "last": 3149,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.1.3",
+   "number_from": "counter",
+   "labels": [
+    "simple Tot acyclic objects are U_0^i"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3151
+   },
+   "last": 3154,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3158
+   },
+   "last": 3172,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.2.1",
+   "number_from": "counter",
+   "labels": [
+    "definition of F-gauge structure"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3182
+   },
+   "last": 3197,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.2.2",
+   "number_from": "counter",
+   "labels": [
+    "definition of G_r"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3289
+   },
+   "last": 3316,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.3.1",
+   "number_from": "counter",
+   "labels": [
+    "definition of FG"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3344
+   },
+   "last": 3435,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.3.2",
+   "number_from": "counter",
+   "labels": [
+    "definition of FG^Tot"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3470
+   },
+   "last": 3481,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.3.3",
+   "number_from": "counter",
+   "labels": [
+    "Nygaard filtration and Hodge filtration"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3500
+   },
+   "last": 3529,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3538
+   },
+   "last": 3691,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.4.1",
+   "number_from": "counter",
+   "labels": [
+    "rmt"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3738
+   },
+   "last": 3794,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.4.2",
+   "number_from": "counter",
+   "labels": [
+    "degree (n -n) component of t(M)"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3809
+   },
+   "last": 3812,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3814
+   },
+   "last": 3829,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.4.3",
+   "number_from": "counter",
+   "labels": [
+    "degree (n -n+1) component of t(M)"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3830
+   },
+   "last": 3833,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3835
+   },
+   "last": 3855,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.4.4",
+   "number_from": "counter",
+   "labels": [
+    "adjunction between FG and t"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3862
+   },
+   "last": 3872,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3876
+   },
+   "last": 3908,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.5.1",
+   "number_from": "counter",
+   "labels": [
+    "adjunction between FG^Tot and t^Tot"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3927
+   },
+   "last": 3933,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3937
+   },
+   "last": 3987,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.5.2",
+   "number_from": "counter",
+   "labels": [
+    "definition of (Lt)^Tot"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4012
+   },
+   "last": 4023,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "3.5.3",
+   "number_from": "counter",
+   "labels": [
+    "derived adjunction between FG^Tot and t^Tot"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4025
+   },
+   "last": 4032,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4037
+   },
+   "last": 4055,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.6.1",
+   "number_from": "counter",
+   "labels": [
+    "description of t(G_r)"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4091
+   },
+   "last": 4109,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4125
+   },
+   "last": 4357,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "3.6.2",
+   "number_from": "counter",
+   "labels": [
+    "M simeq FGLtM"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4362
+   },
+   "last": 4368,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4373
+   },
+   "last": 4401,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "3.6.3",
+   "number_from": "counter",
+   "labels": [
+    "The first example"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4407
+   },
+   "last": 4527,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.7.1",
+   "number_from": "counter",
+   "labels": [
+    "completion of F-gauge structure"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4541
+   },
+   "last": 4550,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.7.2",
+   "number_from": "counter",
+   "labels": [
+    "FG commutes with completion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4552
+   },
+   "last": 4567,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4569
+   },
+   "last": 4589,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.7.3",
+   "number_from": "counter",
+   "labels": [
+    "definition of completed derived rmt"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4607
+   },
+   "last": 4613,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.7.4",
+   "number_from": "counter",
+   "labels": [
+    "shifts and derived quotients of F-gauges"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4637
+   },
+   "last": 4653,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.7.5",
+   "number_from": "counter",
+   "labels": [
+    "distinguished triangle of M(F V)",
+    "derived mod p triangle for gauges"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4655
+   },
+   "last": 4699,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4703
+   },
+   "last": 4728,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.7.7",
+   "number_from": "counter",
+   "labels": [
+    "FG is conservative on complete objects"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4730
+   },
+   "last": 4734,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4738
+   },
+   "last": 4746,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.7.8",
+   "number_from": "counter",
+   "labels": [
+    "completed adjunction unit and counit are isomorphisms"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4752
+   },
+   "last": 4756,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-42",
+   "type": "proof",
+   "k": 42,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4758
+   },
+   "last": 4767,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-78",
+   "type": "env",
+   "k": 78,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.7.9",
+   "number_from": "counter",
+   "labels": [
+    "Ekedahl's equivalence theorem"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4769
+   },
+   "last": 4780,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-43",
+   "type": "proof",
+   "k": 43,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4782
+   },
+   "last": 4787,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-79",
+   "type": "env",
+   "k": 79,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.8.1",
+   "number_from": "counter",
+   "labels": [
+    "coherence of F-gauge complexes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4802
+   },
+   "last": 4820,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-80",
+   "type": "env",
+   "k": 80,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.8.2",
+   "number_from": "counter",
+   "labels": [
+    "criteria for coherent F-gauge complexes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4822
+   },
+   "last": 4837,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-44",
+   "type": "proof",
+   "k": 44,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4839
+   },
+   "last": 4908,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-81",
+   "type": "env",
+   "k": 81,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "3.8.3",
+   "number_from": "counter",
+   "labels": [
+    "Ekedahl equivalence for coherent complexes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4912
+   },
+   "last": 4921,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-45",
+   "type": "proof",
+   "k": 45,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4923
+   },
+   "last": 4941,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-82",
+   "type": "env",
+   "k": 82,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "3.8.4",
+   "number_from": "counter",
+   "labels": [
+    "coherent equivalence and boundedness"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4943
+   },
+   "last": 4952,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-83",
+   "type": "env",
+   "k": 83,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.8.5",
+   "number_from": "counter",
+   "labels": [
+    "Ekedahl equivalence and the G t-structure"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4962
+   },
+   "last": 4971,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-46",
+   "type": "proof",
+   "k": 46,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4973
+   },
+   "last": 5002,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-84",
+   "type": "env",
+   "k": 84,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.9.1",
+   "number_from": "counter",
+   "labels": [
+    "resolution of coherent complexes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5013
+   },
+   "last": 5017,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-47",
+   "type": "proof",
+   "k": 47,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5022
+   },
+   "last": 5476,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-85",
+   "type": "env",
+   "k": 85,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.9.2",
+   "number_from": "counter",
+   "labels": [
+    "two-out-of-three finite sums of G_r"
+   ],
+   "parent": "2609.39293v2#proof-47",
+   "pos": {
+    "file": "main.tex",
+    "line": 5034
+   },
+   "last": 5040,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-48",
+   "type": "proof",
+   "k": 48,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.39293v2#proof-47",
+   "pos": {
+    "file": "main.tex",
+    "line": 5042
+   },
+   "last": 5049,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-86",
+   "type": "env",
+   "k": 86,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.9.3",
+   "number_from": "counter",
+   "labels": [
+    "lowering the rank"
+   ],
+   "parent": "2609.39293v2#proof-47",
+   "pos": {
+    "file": "main.tex",
+    "line": 5052
+   },
+   "last": 5057,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-49",
+   "type": "proof",
+   "k": 49,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "lowering rank lattice kernel"
+   ],
+   "parent": "2609.39293v2#proof-47",
+   "pos": {
+    "file": "main.tex",
+    "line": 5059
+   },
+   "last": 5276,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-87",
+   "type": "env",
+   "k": 87,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "3.9.5",
+   "number_from": "counter",
+   "labels": [
+    "finite length F-gauge structures"
+   ],
+   "parent": "2609.39293v2#proof-47",
+   "pos": {
+    "file": "main.tex",
+    "line": 5359
+   },
+   "last": 5367,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-50",
+   "type": "proof",
+   "k": 50,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.39293v2#proof-47",
+   "pos": {
+    "file": "main.tex",
+    "line": 5369
+   },
+   "last": 5466,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-88",
+   "type": "env",
+   "k": 88,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "3.10.1",
+   "number_from": "counter",
+   "labels": [
+    "rmt-tensor-product",
+    "rmt-tensor-generators"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5614
+   },
+   "last": 5714,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-89",
+   "type": "env",
+   "k": 89,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.1.1",
+   "number_from": "counter",
+   "labels": [
+    "Exactness after completion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5786
+   },
+   "last": 5789,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-51",
+   "type": "proof",
+   "k": 51,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5791
+   },
+   "last": 5847,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-90",
+   "type": "env",
+   "k": 90,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.1.2",
+   "number_from": "counter",
+   "labels": [
+    "flatness of central completion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5852
+   },
+   "last": 5856,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-52",
+   "type": "proof",
+   "k": 52,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5858
+   },
+   "last": 5889,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-91",
+   "type": "env",
+   "k": 91,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.2.1",
+   "number_from": "counter",
+   "labels": [
+    "completed R-modules of level I"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5924
+   },
+   "last": 5937,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-92",
+   "type": "env",
+   "k": 92,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.2.2",
+   "number_from": "counter",
+   "labels": [
+    "definition of rho",
+    "coordinate characterization of rho"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5950
+   },
+   "last": 5970,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-93",
+   "type": "env",
+   "k": 93,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.2.4",
+   "number_from": "counter",
+   "labels": [
+    "relations satisfied by rho",
+    "rho relation in rmt"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5995
+   },
+   "last": 6008,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-53",
+   "type": "proof",
+   "k": 53,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6010
+   },
+   "last": 6012,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-94",
+   "type": "env",
+   "k": 94,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.3.1",
+   "number_from": "counter",
+   "labels": [
+    "definition of widehat rmt"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6063
+   },
+   "last": 6091,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-95",
+   "type": "env",
+   "k": 95,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "4.3.2",
+   "number_from": "counter",
+   "labels": [
+    "widehat-rmt-tensor-product"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6093
+   },
+   "last": 6133,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-96",
+   "type": "env",
+   "k": 96,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "4.3.3",
+   "number_from": "counter",
+   "labels": [
+    "adjunction between completed FG and t"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6135
+   },
+   "last": 6144,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-54",
+   "type": "proof",
+   "k": 54,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6146
+   },
+   "last": 6170,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-97",
+   "type": "env",
+   "k": 97,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.3.4",
+   "number_from": "counter",
+   "labels": [
+    "coherent gauges embed into completed algebra"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6211
+   },
+   "last": 6215,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-55",
+   "type": "proof",
+   "k": 55,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6217
+   },
+   "last": 6246,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-98",
+   "type": "env",
+   "k": 98,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "4.3.5",
+   "number_from": "counter",
+   "labels": [
+    "derived widehat t equals widehat derived t"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6248
+   },
+   "last": 6260,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-56",
+   "type": "proof",
+   "k": 56,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6262
+   },
+   "last": 6288,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-99",
+   "type": "env",
+   "k": 99,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.3.6",
+   "number_from": "counter",
+   "labels": [
+    "widehat t of FG(Hodge--Witt)"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6290
+   },
+   "last": 6301,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-57",
+   "type": "proof",
+   "k": 57,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "counit on a Hodge--Witt block",
+    "lower Hodge--Witt generators",
+    "upper Hodge--Witt generators"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6303
+   },
+   "last": 6442,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-100",
+   "type": "env",
+   "k": 100,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "4.4.1",
+   "number_from": "counter",
+   "labels": [
+    "completed rmt on diagonal heart"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6461
+   },
+   "last": 6470,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-58",
+   "type": "proof",
+   "k": 58,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "embedding-total-represents-N"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6475
+   },
+   "last": 6548,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-101",
+   "type": "env",
+   "k": 101,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "4.4.3",
+   "number_from": "counter",
+   "labels": [
+    "completed rmt and diagonal cohomology"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6553
+   },
+   "last": 6561,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-59",
+   "type": "proof",
+   "k": 59,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6566
+   },
+   "last": 6582,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-102",
+   "type": "env",
+   "k": 102,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "4.4.5",
+   "number_from": "counter",
+   "labels": [
+    "embedding-natural-representative"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6591
+   },
+   "last": 6596,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-60",
+   "type": "proof",
+   "k": 60,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6598
+   },
+   "last": 6605,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-103",
+   "type": "env",
+   "k": 103,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "4.4.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 6613
+   },
+   "last": 6630,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-104",
+   "type": "env",
+   "k": 104,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.6.1",
+   "number_from": "counter",
+   "labels": [
+    "interval-flat-completion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6866
+   },
+   "last": 6882,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-61",
+   "type": "proof",
+   "k": 61,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6884
+   },
+   "last": 6891,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-105",
+   "type": "env",
+   "k": 105,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.6.2",
+   "number_from": "counter",
+   "labels": [
+    "interval-series-injection"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6893
+   },
+   "last": 6902,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-62",
+   "type": "proof",
+   "k": 62,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 6904
+   },
+   "last": 6925,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-106",
+   "type": "env",
+   "k": 106,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "4.6.3",
+   "number_from": "counter",
+   "labels": [
+    "interval-right-flat-resolution",
+    "interval-right-resolution-sequence"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6927
+   },
+   "last": 6965,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-63",
+   "type": "proof",
+   "k": 63,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "interval-right-resolution-relations"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 6967
+   },
+   "last": 7072,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-107",
+   "type": "env",
+   "k": 107,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "4.6.6",
+   "number_from": "counter",
+   "labels": [
+    "interval-left-flat-resolution",
+    "interval-left-resolution-sequence"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7074
+   },
+   "last": 7112,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-64",
+   "type": "proof",
+   "k": 64,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "interval-left-resolution-relations"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7114
+   },
+   "last": 7166,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-108",
+   "type": "env",
+   "k": 108,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "4.6.10",
+   "number_from": "counter",
+   "labels": [
+    "interval-old-generators-acyclic"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7184
+   },
+   "last": 7197,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-65",
+   "type": "proof",
+   "k": 65,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7199
+   },
+   "last": 7246,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-109",
+   "type": "env",
+   "k": 109,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "4.6.11",
+   "number_from": "counter",
+   "labels": [
+    "interval-two-vertex-example",
+    "interval-two-vertex-flat-resolution"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7248
+   },
+   "last": 7279,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-110",
+   "type": "env",
+   "k": 110,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "4.6.13",
+   "number_from": "counter",
+   "labels": [
+    "interval-uncompleted-tensor-example"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7281
+   },
+   "last": 7436,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-111",
+   "type": "env",
+   "k": 111,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.7.1",
+   "number_from": "counter",
+   "labels": [
+    "interval-r1-completed-coefficients"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7456
+   },
+   "last": 7467,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-66",
+   "type": "proof",
+   "k": 66,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7469
+   },
+   "last": 7472,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-112",
+   "type": "env",
+   "k": 112,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.7.2",
+   "number_from": "counter",
+   "labels": [
+    "interval-r1-polynomial-operators"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7503
+   },
+   "last": 7515,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-67",
+   "type": "proof",
+   "k": 67,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7517
+   },
+   "last": 7531,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-113",
+   "type": "env",
+   "k": 113,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.7.3",
+   "number_from": "counter",
+   "labels": [
+    "interval-r1-polynomial-elimination",
+    "interval-r1-monic-matrix"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7533
+   },
+   "last": 7550,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-68",
+   "type": "proof",
+   "k": 68,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 7552
+   },
+   "last": 7575,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-114",
+   "type": "env",
+   "k": 114,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "4.7.5",
+   "number_from": "counter",
+   "labels": [
+    "interval-r1-generator-comparison"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7582
+   },
+   "last": 7606,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-69",
+   "type": "proof",
+   "k": 69,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "interval-r1-right-reduced-matrix",
+    "interval-r1-left-reduced-matrix"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7608
+   },
+   "last": 7753,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-115",
+   "type": "env",
+   "k": 115,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "4.8.1",
+   "number_from": "counter",
+   "labels": [
+    "interval-independence-derived",
+    "interval-derived-comparison"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7767
+   },
+   "last": 7789,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-70",
+   "type": "proof",
+   "k": 70,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "interval-cone-r1-vanishing"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7791
+   },
+   "last": 7857,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-116",
+   "type": "env",
+   "k": 116,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "4.8.4",
+   "number_from": "counter",
+   "labels": [
+    "interval-independence-scope"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7859
+   },
+   "last": 7870,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-117",
+   "type": "env",
+   "k": 117,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.8.5",
+   "number_from": "counter",
+   "labels": [
+    "embedding-row-completeness"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7883
+   },
+   "last": 7889,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-71",
+   "type": "proof",
+   "k": 71,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "embedding-rn-resolution"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7891
+   },
+   "last": 7935,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-118",
+   "type": "env",
+   "k": 118,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.9.1",
+   "number_from": "counter",
+   "labels": [
+    "embedding-hom-comparison"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7949
+   },
+   "last": 7966,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-72",
+   "type": "proof",
+   "k": 72,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "embedding-backward-ext-vanishing"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 7968
+   },
+   "last": 8024,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-119",
+   "type": "env",
+   "k": 119,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "4.9.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 8026
+   },
+   "last": 8036,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-120",
+   "type": "env",
+   "k": 120,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "4.9.4",
+   "number_from": "counter",
+   "labels": [
+    "embedding-diagonal-complexes",
+    "interval-embedding-goal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8040
+   },
+   "last": 8059,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-73",
+   "type": "proof",
+   "k": 73,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8061
+   },
+   "last": 8100,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-121",
+   "type": "env",
+   "k": 121,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "4.9.5",
+   "number_from": "counter",
+   "labels": [
+    "embedding-diagonal-cohomology"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8102
+   },
+   "last": 8116,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-74",
+   "type": "proof",
+   "k": 74,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8118
+   },
+   "last": 8141,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-122",
+   "type": "env",
+   "k": 122,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "5.1.1",
+   "number_from": "counter",
+   "labels": [
+    "acyclic diagonal complexes and boundary 0 F-gauge structures"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8156
+   },
+   "last": 8160,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-75",
+   "type": "proof",
+   "k": 75,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8162
+   },
+   "last": 8184,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-123",
+   "type": "env",
+   "k": 123,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.1.2",
+   "number_from": "counter",
+   "labels": [
+    "M(I J)"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8190
+   },
+   "last": 8200,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-124",
+   "type": "env",
+   "k": 124,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "5.1.3",
+   "number_from": "counter",
+   "labels": [
+    "indecomposable Tot acyclic objects are M(I J)"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8227
+   },
+   "last": 8231,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-76",
+   "type": "proof",
+   "k": 76,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8235
+   },
+   "last": 8290,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-125",
+   "type": "env",
+   "k": 125,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.2.1",
+   "number_from": "counter",
+   "labels": [
+    "definition of diagonal domino"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8300
+   },
+   "last": 8303,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-126",
+   "type": "env",
+   "k": 126,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.2.2",
+   "number_from": "counter",
+   "labels": [
+    "Tot 0 or Tot 1 of diagonal domino"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8322
+   },
+   "last": 8350,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-77",
+   "type": "proof",
+   "k": 77,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8352
+   },
+   "last": 8405,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-127",
+   "type": "env",
+   "k": 127,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 8407
+   },
+   "last": 8410,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-78",
+   "type": "proof",
+   "k": 78,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8412
+   },
+   "last": 8414,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-128",
+   "type": "env",
+   "k": 128,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "5.2.4",
+   "number_from": "counter",
+   "labels": [
+    "type filtration on diagonal domino"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8425
+   },
+   "last": 8447,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-79",
+   "type": "proof",
+   "k": 79,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8449
+   },
+   "last": 8530,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-129",
+   "type": "env",
+   "k": 129,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.2.5",
+   "number_from": "counter",
+   "labels": [
+    "type function"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8538
+   },
+   "last": 8545,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-130",
+   "type": "env",
+   "k": 130,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "5.2.6",
+   "number_from": "counter",
+   "labels": [
+    "when is a torsion object in G a type 1/2 diagonal domino"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8553
+   },
+   "last": 8561,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-80",
+   "type": "proof",
+   "k": 80,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8563
+   },
+   "last": 8606,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-131",
+   "type": "env",
+   "k": 131,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.2.7",
+   "number_from": "counter",
+   "parent": "2609.39293v2#proof-80",
+   "pos": {
+    "file": "main.tex",
+    "line": 8577
+   },
+   "last": 8583,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-81",
+   "type": "proof",
+   "k": 81,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.39293v2#proof-80",
+   "pos": {
+    "file": "main.tex",
+    "line": 8585
+   },
+   "last": 8599,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-132",
+   "type": "env",
+   "k": 132,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "5.2.8",
+   "number_from": "counter",
+   "labels": [
+    "type 1/2 F-gauge structures"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8608
+   },
+   "last": 8630,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-82",
+   "type": "proof",
+   "k": 82,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8635
+   },
+   "last": 8660,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-133",
+   "type": "env",
+   "k": 133,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.2.9",
+   "number_from": "counter",
+   "labels": [
+    "domino numbers of Tot acyclic diagonal dominos"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8726
+   },
+   "last": 8735,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-83",
+   "type": "proof",
+   "k": 83,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8737
+   },
+   "last": 8748,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-134",
+   "type": "env",
+   "k": 134,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "5.2.10",
+   "number_from": "counter",
+   "labels": [
+    "swap direction isomorphic"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8750
+   },
+   "last": 8758,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-84",
+   "type": "proof",
+   "k": 84,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8760
+   },
+   "last": 8831,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-135",
+   "type": "env",
+   "k": 135,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.2.11",
+   "number_from": "counter",
+   "labels": [
+    "type 1/2 pullback stability"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8841
+   },
+   "last": 8845,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-85",
+   "type": "proof",
+   "k": 85,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8846
+   },
+   "last": 8855,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-136",
+   "type": "env",
+   "k": 136,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.2.12",
+   "number_from": "counter",
+   "labels": [
+    "kernel reduction for weakly simple dominos"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8872
+   },
+   "last": 8881,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-86",
+   "type": "proof",
+   "k": 86,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8883
+   },
+   "last": 8934,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-137",
+   "type": "env",
+   "k": 137,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "5.2.13",
+   "number_from": "counter",
+   "labels": [
+    "weakly simple type 1/2 diagonal dominos"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 8936
+   },
+   "last": 8943,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-87",
+   "type": "proof",
+   "k": 87,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 8952
+   },
+   "last": 9074,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-138",
+   "type": "env",
+   "k": 138,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "5.2.14",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 9076
+   },
+   "last": 9086,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-139",
+   "type": "env",
+   "k": 139,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "5.3.1",
+   "number_from": "counter",
+   "labels": [
+    "virtual F crystal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9097
+   },
+   "last": 9154,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-140",
+   "type": "env",
+   "k": 140,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 9188
+   },
+   "last": 9192,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-141",
+   "type": "env",
+   "k": 141,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "5.4.2",
+   "number_from": "counter",
+   "labels": [
+    "Mazur--Ogus criterion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9194
+   },
+   "last": 9208,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-88",
+   "type": "proof",
+   "k": 88,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9210
+   },
+   "last": 9241,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-142",
+   "type": "env",
+   "k": 142,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "5.4.3",
+   "number_from": "counter",
+   "labels": [
+    "Mazur-Ogus object and the Hodge F-gauge structure of virtual F-crystal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9247
+   },
+   "last": 9265,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-89",
+   "type": "proof",
+   "k": 89,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9267
+   },
+   "last": 9313,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-143",
+   "type": "env",
+   "k": 143,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "5.4.4",
+   "number_from": "counter",
+   "labels": [
+    "Hodge filtration from the Nygaard gauge"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9322
+   },
+   "last": 9325,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-90",
+   "type": "proof",
+   "k": 90,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9327
+   },
+   "last": 9358,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-144",
+   "type": "env",
+   "k": 144,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "5.4.5",
+   "number_from": "counter",
+   "labels": [
+    "equivalence between Mazur-Ogus objects and virtual F-gauge structures."
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9360
+   },
+   "last": 9365,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-91",
+   "type": "proof",
+   "k": 91,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9367
+   },
+   "last": 9369,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-145",
+   "type": "env",
+   "k": 145,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.4.6",
+   "number_from": "counter",
+   "labels": [
+    "completeness for t'(M)^i"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9380
+   },
+   "last": 9384,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-92",
+   "type": "proof",
+   "k": 92,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9386
+   },
+   "last": 9441,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-146",
+   "type": "env",
+   "k": 146,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "5.4.7",
+   "number_from": "counter",
+   "labels": [
+    "F_iN=d_iN"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9465
+   },
+   "last": 9467,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-93",
+   "type": "proof",
+   "k": 93,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9469
+   },
+   "last": 9499,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-147",
+   "type": "env",
+   "k": 147,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "5.4.8",
+   "number_from": "counter",
+   "labels": [
+    "Structure of Mazur-Ogus object"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9506
+   },
+   "last": 9523,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-94",
+   "type": "proof",
+   "k": 94,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9525
+   },
+   "last": 9612,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-148",
+   "type": "env",
+   "k": 148,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "5.4.9",
+   "number_from": "counter",
+   "labels": [
+    "dual of Mazur-Ogus object"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9619
+   },
+   "last": 9646,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-95",
+   "type": "proof",
+   "k": 95,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9648
+   },
+   "last": 9718,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-149",
+   "type": "env",
+   "k": 149,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.4.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 9723
+   },
+   "last": 9731,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-150",
+   "type": "env",
+   "k": 150,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.4.12",
+   "number_from": "counter",
+   "labels": [
+    "level n Hodge--de Rham degenerate: first criterion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9754
+   },
+   "last": 9767,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-96",
+   "type": "proof",
+   "k": 96,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9769
+   },
+   "last": 9804,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-151",
+   "type": "env",
+   "k": 151,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "5.4.13",
+   "number_from": "counter",
+   "labels": [
+    "level n Hodge--de Rham degenerate: second criterion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9809
+   },
+   "last": 9817,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-97",
+   "type": "proof",
+   "k": 97,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9819
+   },
+   "last": 9838,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-152",
+   "type": "env",
+   "k": 152,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "5.4.14",
+   "number_from": "counter",
+   "labels": [
+    "Maximal n that Hodge--de Rham degenerate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9843
+   },
+   "last": 9855,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-98",
+   "type": "proof",
+   "k": 98,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9857
+   },
+   "last": 9883,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-153",
+   "type": "env",
+   "k": 153,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "5.4.15",
+   "number_from": "counter",
+   "labels": [
+    "Mazur-Ogus stable under tensor and Hom"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9888
+   },
+   "last": 9893,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-99",
+   "type": "proof",
+   "k": 99,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 9895
+   },
+   "last": 9911,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-154",
+   "type": "env",
+   "k": 154,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.5.1",
+   "number_from": "counter",
+   "labels": [
+    "Mazur--Ogus in degree n"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9921
+   },
+   "last": 9931,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-155",
+   "type": "env",
+   "k": 155,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "5.5.2",
+   "number_from": "counter",
+   "labels": [
+    "properties of Mazur--Ogus in degree n"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9933
+   },
+   "last": 9980,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-100",
+   "type": "proof",
+   "k": 100,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Hodge and widetilde H spectral sequence"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 9982
+   },
+   "last": 10123,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-156",
+   "type": "env",
+   "k": 156,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "6.0.1",
+   "number_from": "counter",
+   "labels": [
+    "three supergeneral examples"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 10172
+   },
+   "last": 10191,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-101",
+   "type": "proof",
+   "k": 101,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "supergeneral-uniform-T",
+    "supergeneral-lattice-congruences",
+    "supergeneral-lattice-stability-identities",
+    "supergeneral-lattice-first",
+    "supergeneral-lattice-second",
+    "supergeneral-fixed-gstar",
+    "supergeneral-lattice-third",
+    "supergeneral-quotient-gauge",
+    "supergeneral-p-layers",
+    "supergeneral-quotient-basis-notation",
+    "supergeneral-p-image-U2",
+    "supergeneral-domino-extension"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 10193
+   },
+   "last": 10666,
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-157",
+   "type": "env",
+   "k": 157,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "A.1.1",
+   "number_from": "counter",
+   "labels": [
+    "Ek2I.1.1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 10689
+   },
+   "last": 10714,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-158",
+   "type": "env",
+   "k": 158,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "A.1.2",
+   "number_from": "counter",
+   "labels": [
+    "Ek2I.1.1.1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 10772
+   },
+   "last": 10775,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-102",
+   "type": "proof",
+   "k": 102,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 10777
+   },
+   "last": 10787,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-159",
+   "type": "env",
+   "k": 159,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "A.1.3",
+   "number_from": "counter",
+   "labels": [
+    "Ek2I.1.1.2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 10789
+   },
+   "last": 10795,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-103",
+   "type": "proof",
+   "k": 103,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 10797
+   },
+   "last": 10810,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-104",
+   "type": "proof",
+   "k": 104,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 10812
+   },
+   "last": 10832,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-160",
+   "type": "env",
+   "k": 160,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "A.2.1",
+   "number_from": "counter",
+   "labels": [
+    "Hodge complex and its filtrations"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 10843
+   },
+   "last": 10877,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-161",
+   "type": "env",
+   "k": 161,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "A.3.1",
+   "number_from": "counter",
+   "labels": [
+    "definition of ringoid"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 10954
+   },
+   "last": 10960,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-162",
+   "type": "env",
+   "k": 162,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "A.3.2",
+   "number_from": "counter",
+   "labels": [
+    "modules over a ringoid"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 10967
+   },
+   "last": 10982,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-163",
+   "type": "env",
+   "k": 163,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "A.3.3",
+   "number_from": "counter",
+   "labels": [
+    "basic properties of ringoid modules"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 10996
+   },
+   "last": 11019,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-105",
+   "type": "proof",
+   "k": 105,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 11021
+   },
+   "last": 11038,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-164",
+   "type": "env",
+   "k": 164,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "A.3.4",
+   "number_from": "counter",
+   "labels": [
+    "tensor products over a ringoid"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 11050
+   },
+   "last": 11062,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-165",
+   "type": "env",
+   "k": 165,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "A.3.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 11120
+   },
+   "last": 11130,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#env-166",
+   "type": "env",
+   "k": 166,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "A.3.6",
+   "number_from": "counter",
+   "labels": [
+    "derived category of R-modules of level I"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 11132
+   },
+   "last": 11141,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.39293v2#proof-106",
+   "type": "proof",
+   "k": 106,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "level-I-homological-epimorphism"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 11146
+   },
+   "last": 11198,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

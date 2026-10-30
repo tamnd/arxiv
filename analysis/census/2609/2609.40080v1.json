@@ -1,0 +1,216 @@
+{
+ "paper": "2609.40080",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main.tex"
+ ],
+ "class": "revtex4-2",
+ "packages": [
+  "fontenc",
+  "inputenc",
+  "graphicx",
+  "xcolor",
+  "comment",
+  "amsthm",
+  "mathtools",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 4 files",
+  "main: main.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 18 commands, 0 environments",
+  "tree: 9 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:revtex4-2"
+  }
+ ],
+ "occurrences": {
+  "env": 4,
+  "label": 5,
+  "textref": 7
+ },
+ "matched": {
+  "env": 4,
+  "label": 5
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 4,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 7,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 14,
+  "proofs": 9,
+  "agree": false,
+  "source_theorems": 4,
+  "source_proofs": 0,
+  "envs": [
+   {
+    "env": "corollary",
+    "source": 0,
+    "render": 1
+   },
+   {
+    "env": "lemma",
+    "source": 1,
+    "render": 7
+   },
+   {
+    "env": "thm",
+    "source": 3,
+    "render": 6
+   }
+  ]
+ },
+ "findings": [
+  {
+   "rule": "D08",
+   "message": "the source has 4 theorem environments and the render has 14"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.40080v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "thm:estimate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 165
+   },
+   "last": 179,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40080v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "lemma:robustness",
+    "eq:local_robustness"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 185
+   },
+   "last": 196,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40080v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "thm:univ_rate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 209
+   },
+   "last": 213,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40080v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "thm:fament"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 226
+   },
+   "last": 232,
+   "result": "matched"
+  }
+ ]
+}

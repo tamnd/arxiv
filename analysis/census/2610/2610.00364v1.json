@@ -1,0 +1,782 @@
+{
+ "paper": "2610.00364",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "aa2.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "mathabx",
+  "mathtools",
+  "amsrefs",
+  "mathrsfs",
+  "math",
+  "lineno",
+  "geometry"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: aa2.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 57 commands, 1 environments",
+  "tree: 47 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "\\@numbering",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "scholium",
+   "title": "Scholium",
+   "item": "statement/scholium",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "plaindefn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "defn",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exple",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exse",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:math.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "maincor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "mainthm",
+   "shared": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mainthm",
+   "shared": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "maindefn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "mainthm",
+   "shared": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 20,
+  "label": 16,
+  "proof": 13,
+  "textref": 24
+ },
+ "matched": {
+  "env": 20,
+  "label": 16,
+  "proof": 13
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 6,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 24,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2610.00364v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "defn*",
+   "title": "Definition",
+   "item": "definition",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 58
+   },
+   "last": 65,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "maindefn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "mainthm",
+   "number": "A",
+   "number_from": "counter",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 70
+   },
+   "last": 72,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "mainprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mainthm",
+   "number": "B",
+   "number_from": "counter",
+   "labels": [
+    "prop:locally-finite"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 84
+   },
+   "last": 86,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 87
+   },
+   "last": 97,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "number": "C",
+   "number_from": "counter",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 100
+   },
+   "last": 102,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "number": "D",
+   "number_from": "counter",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 104
+   },
+   "last": 106,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "number": "E",
+   "number_from": "counter",
+   "labels": [
+    "mainthm:exact"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 108
+   },
+   "last": 113,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "number": "F",
+   "number_from": "counter",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 116
+   },
+   "last": 120,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "labels": [
+    "lem:tensor"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 148
+   },
+   "last": 158,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 159
+   },
+   "last": 209,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "labels": [
+    "cor:all-modules"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 211
+   },
+   "last": 215,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 216
+   },
+   "last": 229,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "labels": [
+    "lem:induction"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 235
+   },
+   "last": 245,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 246
+   },
+   "last": 270,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "labels": [
+    "thm:ext=\u003eamen"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 275
+   },
+   "last": 277,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 278
+   },
+   "last": 310,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "labels": [
+    "thm:amen=\u003ereg"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 312
+   },
+   "last": 315,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 316
+   },
+   "last": 326,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "labels": [
+    "thm:exact"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 350
+   },
+   "last": 356,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 357
+   },
+   "last": 390,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "labels": [
+    "cor:unions"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 392
+   },
+   "last": 396,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 397
+   },
+   "last": 403,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "labels": [
+    "thm:group"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 412
+   },
+   "last": 416,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:gradedkG",
+    "eq:operator-boundary"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 417
+   },
+   "last": 461,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "labels": [
+    "lem:pointed"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 498
+   },
+   "last": 509,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 510
+   },
+   "last": 610,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "labels": [
+    "thm:exterior"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 614
+   },
+   "last": 618,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 619
+   },
+   "last": 684,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "labels": [
+    "thm:comparison-perm"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 688
+   },
+   "last": 694,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 695
+   },
+   "last": 774,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "labels": [
+    "prop:char-two"
+   ],
+   "pos": {
+    "file": "aa2.tex",
+    "line": 787
+   },
+   "last": 789,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 790
+   },
+   "last": 812,
+   "result": "matched"
+  },
+  {
+   "id": "2610.00364v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "pos": {
+    "file": "aa2.tex",
+    "line": 814
+   },
+   "last": 818,
+   "result": "matched"
+  }
+ ]
+}

@@ -1,0 +1,1679 @@
+{
+ "paper": "2609.38772",
+ "version": 2,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main_arXiv_replacement.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "inputenc",
+  "ulem",
+  "mystyle",
+  "biblatex",
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "mathtools",
+  "xcolor",
+  "enumitem",
+  "cleveref",
+  "tikz",
+  "caption"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: main_arXiv_replacement.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 56 commands, 2 environments",
+  "tree: 242 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "quest",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "pf-step",
+   "title": "Step",
+   "item": "other/case",
+   "counter": "pf-step",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "con",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "notation",
+   "numbered": true,
+   "from": "local:mystyle.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prob",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  },
+  {
+   "env": "claimproof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 45,
+  "label": 145,
+  "proof": 27,
+  "textref": 175
+ },
+ "matched": {
+  "env": 45,
+  "label": 145,
+  "proof": 27
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 45,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 175,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.38772v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "quest",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "conj:enumeration result"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 286
+   },
+   "last": 293,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:Jiang-Longbrake"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 298
+   },
+   "last": 305,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "counter",
+   "labels": [
+    "thm:numberOfCycleFree"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 309
+   },
+   "last": 314,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:Entropy"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1079
+   },
+   "last": 1087,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:Graph with fixed degrees"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1091
+   },
+   "last": 1093,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:Harris"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1101
+   },
+   "last": 1109,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:full"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1115
+   },
+   "last": 1120,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:kOdd",
+    "itm: Odd Case linear",
+    "itm: Odd Case Codegree",
+    "itm: Odd Case Shadow"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1128
+   },
+   "last": 1142,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1147
+   },
+   "last": 1190,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:kEven",
+    "itm: Even Case Codegrees",
+    "itm: Even Case Shadow"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1192
+   },
+   "last": 1201,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1206
+   },
+   "last": 1216,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:graph-regularity"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1251
+   },
+   "last": 1266,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "lem:graph-counting"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1271
+   },
+   "last": 1290,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "lem:containers",
+    "itm: BMS property i",
+    "itm: BMS property ii"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1299
+   },
+   "last": 1310,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.10",
+   "number_from": "counter",
+   "labels": [
+    "cor:containers-balanced"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1318
+   },
+   "last": 1340,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1342
+   },
+   "last": 1376,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.11",
+   "number_from": "counter",
+   "labels": [
+    "thm:BNS",
+    "eq:countainerbound2.7",
+    "itm: BNS cond i",
+    "itm: BNS cond ii"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1382
+   },
+   "last": 1396,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.12",
+   "number_from": "counter",
+   "labels": [
+    "prop:Dense regime",
+    "itm: Dense regime cond 1",
+    "itm: Dense regime cond 2",
+    "itm: Dense regime cond 3"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1400
+   },
+   "last": 1410,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:dense-choice-A",
+    "eq:dense-choice-N",
+    "eq:dense-last-threshold",
+    "eq:dense-level-properties",
+    "eq:dense-level-count"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1411
+   },
+   "last": 1543,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.13",
+   "number_from": "counter",
+   "labels": [
+    "thm:MainContainer",
+    "itm: Main container 1",
+    "itm: Main container 2",
+    "itm: Main container 3"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1571
+   },
+   "last": 1585,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.14",
+   "number_from": "counter",
+   "labels": [
+    "thm:Erdos-complete-partite"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1608
+   },
+   "last": 1614,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.15",
+   "number_from": "counter",
+   "labels": [
+    "prop:many-complete-partite"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1617
+   },
+   "last": 1623,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:many-partite-good-N-element-sets"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1625
+   },
+   "last": 1680,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.16",
+   "number_from": "counter",
+   "labels": [
+    "prop: Many Ktt's"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1686
+   },
+   "last": 1695,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1697
+   },
+   "last": 1713,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.17",
+   "number_from": "counter",
+   "labels": [
+    "thm:C33-FF-extremal"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1747
+   },
+   "last": 1761,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.18",
+   "number_from": "counter",
+   "labels": [
+    "thm:C33-RS"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1767
+   },
+   "last": 1773,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.19",
+   "number_from": "counter",
+   "labels": [
+    "thm:C33-Brown-Harary"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1784
+   },
+   "last": 1791,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.20",
+   "number_from": "counter",
+   "labels": [
+    "thm:C33-multicolour-counting"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1826
+   },
+   "last": 1845,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "lem: A P_k^r from a path in the shadow"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1912
+   },
+   "last": 1915,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:KMV-cycle-from-shadow"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1924
+   },
+   "last": 1944,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:Large Shadow",
+    "itm: lemma Large shadow i",
+    "itm: lemma Large shadow ii",
+    "itm: lemma Large shadow iii"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1971
+   },
+   "last": 1987,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 1993
+   },
+   "last": 2018,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:triangle-from-shadow"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2039
+   },
+   "last": 2049,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2051
+   },
+   "last": 2128,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:cycle-from-shadow-standard"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2136
+   },
+   "last": 2150,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2152
+   },
+   "last": 2164,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "lem:Large Shadow odd",
+    "itm: lemma Large shadow odd i",
+    "itm: lemma Large shadow odd ii",
+    "itm: lemma Large shadow odd iii",
+    "itm: lemma Large shadow odd iv"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2174
+   },
+   "last": 2206,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:boundE",
+    "eq: defi alpha",
+    "ineq:LowerCodegreesFT",
+    "eq:large-shadow-F-lower-bound"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2208
+   },
+   "last": 2288,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "defi: Auxiliary graph large shadow"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2306
+   },
+   "last": 2324,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "lem:a copy of Ck from Ktt",
+    "itm: cycle from shadow 1",
+    "itm: cycle from shadow 2"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2424
+   },
+   "last": 2448,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: upper size LFi",
+    "eq:fixed-replacement-edge",
+    "fig:Odd Cycle"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2450
+   },
+   "last": 2687,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "lem: Supersat Large Linear subgraph",
+    "itm: supersat linear 1",
+    "itm: supersat linear 2"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2762
+   },
+   "last": 2771,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:lowerboundH0*",
+    "eq:definition delta",
+    "eq: removed edges",
+    "eq:counting lemma prerequisite",
+    "eq:lower K0 linear subgraph",
+    "eq:Lower K1 linear subgraph",
+    "eq:boundsatl-tuples",
+    "eq:boundsaturatedltuple"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2772
+   },
+   "last": 2999,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "claim2",
+    "eq:claim2"
+   ],
+   "parent": "2609.38772v2#proof-12",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2881
+   },
+   "last": 2887,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "claimproof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.38772v2#proof-12",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 2888
+   },
+   "last": 2947,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "lem: Supersat Large codegrees",
+    "M1firstitem",
+    "M2seconditem"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 3046
+   },
+   "last": 3064,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:number-switches"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 3066
+   },
+   "last": 3215,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "lem: Supersat Large shadow even",
+    "itm: supersat shadow even 1",
+    "itm: supersat shadow even 2"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 3255
+   },
+   "last": 3271,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Sec3:lowerF",
+    "defi: alpha Even case",
+    "eq:number of Ktts",
+    "eq:multipartite-completion-factor",
+    "eq:multipartite-completion-bound",
+    "eq: Lower bound T2",
+    "boundonsatltuplesinH1",
+    "ineq:lowerKstar",
+    "eq:shadow-even-fixed-tuple",
+    "boundsatcopies"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 3274
+   },
+   "last": 3446,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "lem: Supersat Large shadow odd",
+    "itm: supersat shadow odd 1",
+    "itm: supersat shadow odd 2"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 3471
+   },
+   "last": 3497,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: defi t odd case",
+    "defi alpha odd case",
+    "eq:number of Ktts2",
+    "boundonsatltuplesinH1Odd",
+    "lower K2 odd case case 1",
+    "eq:shadow-odd-fixed-tuple-case1",
+    "boundsatcopies3",
+    "ineq:lowerKstarOdd",
+    "ineq: lower bound K Odd case",
+    "subcase 1",
+    "subcase 2",
+    "subcase 3"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 3498
+   },
+   "last": 3808,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:initial-general-containers",
+    "eq:general-balanced-menu",
+    "eq:parameter-menu",
+    "eq:refinement-branching",
+    "eq:refinement-decrease",
+    "eq:number-refinements-row",
+    "eq:terminal-containers-one-initial",
+    "eq:all-container-costs"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 3828
+   },
+   "last": 4035,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:C33-enumeration"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4054
+   },
+   "last": 4060,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:C33-linear-count"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4123
+   },
+   "last": 4125,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:C33-linear-size"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4127
+   },
+   "last": 4164,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:C33-low-part-count"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4218
+   },
+   "last": 4222,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4224
+   },
+   "last": 4264,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:C33-induced-link-solution",
+    "eq:C33-induced-link"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4278
+   },
+   "last": 4284,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4286
+   },
+   "last": 4320,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:C33-mixed-triangle-high-pair"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4363
+   },
+   "last": 4366,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:C33-directed-cycle",
+    "eq:C33-cycle-pairs-low",
+    "eq:C33-three-witnesses",
+    "eq:C33-three-supported-edges",
+    "eq:C33-witness-inequalities",
+    "eq:C33-two-collisions"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4368
+   },
+   "last": 4436,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.6",
+   "number_from": "counter",
+   "labels": [
+    "lem:C33-mixed-digraph-count"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4482
+   },
+   "last": 4487,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:C33-binary-entropy",
+    "eq:C33-K-size",
+    "eq:C33-template-entropy-bound"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4489
+   },
+   "last": 4628,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "claim:C33-no-loose-triangle"
+   ],
+   "parent": "2609.38772v2#proof-22",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4515
+   },
+   "last": 4517,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "claimproof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.38772v2#proof-22",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4519
+   },
+   "last": 4527,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "claim:C33-local-palette-entropy",
+    "eq:C33-local-palette-entropy"
+   ],
+   "parent": "2609.38772v2#proof-22",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4543
+   },
+   "last": 4548,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "claimproof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.38772v2#proof-22",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4550
+   },
+   "last": 4563,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "claim:C33-K-triangle-free"
+   ],
+   "parent": "2609.38772v2#proof-22",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4574
+   },
+   "last": 4576,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "claimproof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.38772v2#proof-22",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4578
+   },
+   "last": 4599,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:C33-enumeration-lower",
+    "eq:C33-enumeration-upper"
+   ],
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4636
+   },
+   "last": 4680,
+   "result": "matched"
+  },
+  {
+   "id": "2609.38772v2#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main_arXiv_replacement.tex",
+    "line": 4685
+   },
+   "last": 4705,
+   "result": "matched"
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 {
  "paper": "2106.06387",
  "version": 3,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.32",
  "main": [
   "paper.tex"
  ],
@@ -23,7 +23,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 59 commands, 0 environments",
-  "tree: 44 nodes"
+  "aliases: 152 uses of commands that stand for \\begin or \\end",
+  "tree: 120 nodes"
  ],
  "declarations": [
   {
@@ -38,483 +39,883 @@
   }
  ],
  "occurrences": {
-  "head": 7,
-  "label": 8,
-  "proof": 20,
-  "textref": 6
+  "env": 45,
+  "label": 64
  },
  "matched": {
-  "head": 7,
-  "label": 8,
-  "proof": 20
+  "env": 45,
+  "label": 64
  },
  "gaps": [],
  "waivers": [],
  "numbers": {
   "from_aux": 0,
   "from_render": 0,
-  "from_counter": 0,
-  "from_head": 2,
+  "from_counter": 45,
+  "from_head": 0,
   "agree": 0,
   "disagree": 0,
   "contiguity_gaps": 0
  },
  "textrefs": {
-  "resolved": 2,
-  "unresolved": 4
+  "resolved": 0,
+  "unresolved": 0
  },
- "findings": [
-  {
-   "rule": "D09",
-   "occurrence": "2106.06387v3#textref-3",
-   "message": "the text names definition \\ref{definitionS} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2106.06387v3#textref-4",
-   "message": "the text names remark \\ref{2.5+} and the census has no such item (not-an-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2106.06387v3#textref-5",
-   "message": "the text names Definition 2.1 and the census has no such item (no-numbers)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2106.06387v3#textref-6",
-   "message": "the text names definition \\ref{specpointsapprox} and the census has no such item (not-an-item)"
-  }
- ],
  "strength": "normal",
  "items": [
   {
-   "id": "2106.06387v3#head-1",
-   "type": "head",
+   "id": "2106.06387v3#env-1",
+   "type": "env",
    "k": 1,
-   "env": "head",
-   "title": "Theorem",
-   "item": "statement/theorem",
-   "number": "A",
-   "number_from": "head",
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "1.1",
+   "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 140
+    "line": 102
    },
-   "last": 144,
-   "result": "matched",
-   "confidence": "medium"
+   "last": 121,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#head-2",
-   "type": "head",
+   "id": "2106.06387v3#env-2",
+   "type": "env",
    "k": 2,
-   "env": "head",
-   "title": "Theorem",
-   "item": "statement/theorem",
-   "number": "B",
-   "number_from": "head",
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "1.2",
+   "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 161
+    "line": 122
    },
-   "last": 161,
-   "result": "matched",
-   "confidence": "medium"
+   "last": 135,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#proof-1",
-   "type": "proof",
-   "k": 1,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 310
-   },
-   "last": 325,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "2106.06387v3#proof-2",
-   "type": "proof",
-   "k": 2,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 521
-   },
-   "last": 533,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "2106.06387v3#proof-3",
-   "type": "proof",
+   "id": "2106.06387v3#env-3",
+   "type": "env",
    "k": 3,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "1.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 138
+   },
+   "last": 185,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "1.4",
+   "number_from": "counter",
    "labels": [
+    "Intro1.5"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 187
+   },
+   "last": 192,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "1.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 193
+   },
+   "last": 200,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "2.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 202
+   },
+   "last": 211,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "introSh",
+    "gs",
+    "qs"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 212
+   },
+   "last": 240,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "SK",
+    "S",
+    "qak"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 243
+   },
+   "last": 253,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "Del"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 254
+   },
+   "last": 277,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "definitionS"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 280
+   },
+   "last": 297,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "2.6",
+   "number_from": "counter",
+   "labels": [
+    "Fact2.6"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 299
+   },
+   "last": 330,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "2.5+"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 332
+   },
+   "last": 338,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "defApprox",
+    "SKir",
+    "HinS"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 341
+   },
+   "last": 380,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "S0+",
+    "SY",
+    "Sapprox"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 381
+   },
+   "last": 397,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 398
+   },
+   "last": 402,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "S+"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 403
+   },
+   "last": 427,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "specpoints",
+    "fixg"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 428
+   },
+   "last": 502,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "autg"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 504
+   },
+   "last": 517,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "orbits"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 518
+   },
+   "last": 536,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "aut0",
+    "components"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 537
+   },
+   "last": 564,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "rtsProp",
+    "rsig",
+    "rsig2",
     "rts"
    ],
    "pos": {
     "file": "paper.tex",
-    "line": 580
+    "line": 565
    },
-   "last": 615,
-   "result": "matched",
-   "confidence": "high"
+   "last": 620,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#proof-4",
-   "type": "proof",
-   "k": 4,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
+   "id": "2106.06387v3#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.10",
+   "number_from": "counter",
    "labels": [
+    "12.8",
+    "AutC/F",
     "GT1"
    ],
    "pos": {
     "file": "paper.tex",
-    "line": 641
+    "line": 623
    },
-   "last": 668,
-   "result": "matched",
-   "confidence": "medium"
+   "last": 706,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#proof-5",
-   "type": "proof",
-   "k": 5,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 668
-   },
-   "last": 689,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "2106.06387v3#proof-6",
-   "type": "proof",
-   "k": 6,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 690
-   },
-   "last": 694,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "2106.06387v3#proof-7",
-   "type": "proof",
-   "k": 7,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 695
-   },
-   "last": 698,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "2106.06387v3#head-3",
-   "type": "head",
-   "k": 3,
-   "env": "head",
-   "title": "Remark",
-   "item": "remark",
+   "id": "2106.06387v3#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.11",
+   "number_from": "counter",
    "labels": [
+    "actHn",
+    "rbart",
+    "rbart2",
     "propE"
    ],
    "pos": {
     "file": "paper.tex",
-    "line": 742
+    "line": 713
    },
-   "last": 750,
-   "result": "matched",
-   "confidence": "medium"
+   "last": 746,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#proof-8",
-   "type": "proof",
-   "k": 8,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
+   "id": "2106.06387v3#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.12",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 747
+   },
+   "last": 765,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.13",
+   "number_from": "counter",
    "labels": [
+    "314"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 770
+   },
+   "last": 796,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.14",
+   "number_from": "counter",
+   "labels": [
+    "TT1",
+    "riri2",
     "q1",
     "q2"
    ],
    "pos": {
     "file": "paper.tex",
-    "line": 849
+    "line": 799
    },
-   "last": 906,
-   "result": "matched",
-   "confidence": "high"
+   "last": 907,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#proof-9",
-   "type": "proof",
-   "k": 9,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 949
-   },
-   "last": 959,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "2106.06387v3#proof-10",
-   "type": "proof",
-   "k": 10,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 969
-   },
-   "last": 1011,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "2106.06387v3#proof-11",
-   "type": "proof",
-   "k": 11,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 1023
-   },
-   "last": 1035,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "2106.06387v3#proof-12",
-   "type": "proof",
-   "k": 12,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 1044
-   },
-   "last": 1044,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "2106.06387v3#proof-13",
-   "type": "proof",
-   "k": 13,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 1052
-   },
-   "last": 1064,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "2106.06387v3#proof-14",
-   "type": "proof",
-   "k": 14,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 1137
-   },
-   "last": 1146,
-   "result": "matched",
-   "confidence": "high"
-  },
-  {
-   "id": "2106.06387v3#proof-15",
-   "type": "proof",
-   "k": 15,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
+   "id": "2106.06387v3#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.15",
+   "number_from": "counter",
    "labels": [
+    "Cor316"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 908
+   },
+   "last": 920,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.16",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 922
+   },
+   "last": 937,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.17",
+   "number_from": "counter",
+   "labels": [
+    "318-",
+    "318"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 941
+   },
+   "last": 960,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.18",
+   "number_from": "counter",
+   "labels": [
+    "(b)"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 964
+   },
+   "last": 1014,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.19",
+   "number_from": "counter",
+   "labels": [
+    "320"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1016
+   },
+   "last": 1037,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.20",
+   "number_from": "counter",
+   "labels": [
+    "Cor321"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1038
+   },
+   "last": 1045,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.21",
+   "number_from": "counter",
+   "labels": [
+    "N/T"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1046
+   },
+   "last": 1065,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.22",
+   "number_from": "counter",
+   "labels": [
+    "TT3"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1068
+   },
+   "last": 1101,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "3.23",
+   "number_from": "counter",
+   "labels": [
+    "MainGal",
+    "GalCM"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1103
+   },
+   "last": 1147,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "defSapprox",
+    "defSapproxFull"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 1149
+   },
+   "last": 1169,
+   "result": "matched"
+  },
+  {
+   "id": "2106.06387v3#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "Autapprox",
     "gD0",
     "gD"
    ],
    "pos": {
     "file": "paper.tex",
-    "line": 1173
+    "line": 1170
    },
-   "last": 1203,
-   "result": "matched",
-   "confidence": "high"
+   "last": 1205,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#proof-16",
-   "type": "proof",
-   "k": 16,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
+   "id": "2106.06387v3#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "specpointsapprox"
+   ],
    "pos": {
     "file": "paper.tex",
-    "line": 1287
+    "line": 1211
    },
-   "last": 1293,
-   "result": "matched",
-   "confidence": "high"
+   "last": 1271,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#head-4",
-   "type": "head",
-   "k": 4,
-   "env": "head",
-   "title": "Remark",
-   "item": "remark",
+   "id": "2106.06387v3#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "4.3(c)",
+    "srep",
+    "sact",
+    "dmatr"
+   ],
    "pos": {
     "file": "paper.tex",
-    "line": 1301
+    "line": 1272
    },
-   "last": 1301,
-   "result": "matched",
-   "confidence": "medium"
+   "last": 1327,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#head-5",
-   "type": "head",
-   "k": 5,
-   "env": "head",
-   "title": "Warning",
-   "item": "remark",
+   "id": "2106.06387v3#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "C"
+   ],
    "pos": {
     "file": "paper.tex",
-    "line": 1324
+    "line": 1333
    },
-   "last": 1325,
-   "result": "matched",
-   "confidence": "medium"
+   "last": 1410,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#proof-17",
-   "type": "proof",
-   "k": 17,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
+   "id": "2106.06387v3#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "4.6",
+   "number_from": "counter",
    "labels": [
     "Hpure"
    ],
    "pos": {
     "file": "paper.tex",
-    "line": 1403
+    "line": 1418
    },
-   "last": 1423,
-   "result": "matched",
-   "confidence": "medium"
+   "last": 1438,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#head-6",
-   "type": "head",
-   "k": 6,
-   "env": "head",
-   "title": "Definition",
-   "item": "definition",
+   "id": "2106.06387v3#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "Gapprox"
+   ],
    "pos": {
     "file": "paper.tex",
-    "line": 1424
+    "line": 1440
    },
-   "last": 1425,
-   "result": "matched",
-   "confidence": "medium"
+   "last": 1546,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#proof-18",
-   "type": "proof",
-   "k": 18,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
+   "id": "2106.06387v3#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "RemCor"
+   ],
    "pos": {
     "file": "paper.tex",
-    "line": 1449
+    "line": 1549
    },
-   "last": 1459,
-   "result": "matched",
-   "confidence": "medium"
+   "last": 1613,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#proof-19",
-   "type": "proof",
-   "k": 19,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
+   "id": "2106.06387v3#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "4.9",
+   "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 1460
+    "line": 1617
    },
-   "last": 1541,
-   "result": "matched",
-   "confidence": "high"
+   "last": 1628,
+   "result": "matched"
   },
   {
-   "id": "2106.06387v3#head-7",
-   "type": "head",
-   "k": 7,
-   "env": "head",
-   "title": "Definition",
-   "item": "definition",
+   "id": "2106.06387v3#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "pkt",
+   "item": "unknown",
+   "counter": "pkt",
+   "number": "4.10",
+   "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 1624
+    "line": 1629
    },
-   "last": 1626,
-   "result": "matched",
-   "confidence": "medium"
-  },
-  {
-   "id": "2106.06387v3#proof-20",
-   "type": "proof",
-   "k": 20,
-   "env": "head",
-   "title": "Proof",
-   "item": "proof",
-   "pos": {
-    "file": "paper.tex",
-    "line": 1638
-   },
-   "last": 1688,
-   "result": "matched",
-   "confidence": "medium"
+   "last": 1639,
+   "result": "matched"
   }
  ]
 }
