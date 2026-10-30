@@ -1,7 +1,7 @@
 {
  "paper": "2210.17066",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.32",
  "main": [
   "paper.tex"
  ],
@@ -34,7 +34,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 242 commands, 0 environments",
-  "tree: 163 nodes"
+  "drop: 8 uses of commands that print nothing",
+  "tree: 156 nodes"
  ],
  "declarations": [
   {
@@ -126,14 +127,14 @@
   }
  ],
  "occurrences": {
-  "env": 53,
-  "label": 64,
+  "env": 49,
+  "label": 63,
   "proof": 14,
   "textref": 19
  },
  "matched": {
-  "env": 53,
-  "label": 64,
+  "env": 49,
+  "label": 63,
   "proof": 14
  },
  "gaps": [],
@@ -141,7 +142,7 @@
  "numbers": {
   "from_aux": 0,
   "from_render": 0,
-  "from_counter": 51,
+  "from_counter": 47,
   "from_head": 0,
   "agree": 0,
   "disagree": 0,
@@ -221,54 +222,20 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 517
-   },
-   "last": 520,
-   "result": "matched"
-  },
-  {
-   "id": "2210.17066v1#env-5",
-   "type": "env",
-   "k": 5,
-   "env": "ex",
-   "title": "Example",
-   "item": "example",
-   "counter": "thm",
-   "number": "2.3",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
     "line": 524
    },
    "last": 532,
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-6",
+   "id": "2210.17066v1#env-5",
    "type": "env",
-   "k": 6,
+   "k": 5,
    "env": "defi",
    "title": "Definition",
    "item": "definition",
    "counter": "thm",
-   "number": "2.4",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 534
-   },
-   "last": 540,
-   "result": "matched"
-  },
-  {
-   "id": "2210.17066v1#env-7",
-   "type": "env",
-   "k": 7,
-   "env": "defi",
-   "title": "Definition",
-   "item": "definition",
-   "counter": "thm",
-   "number": "2.5",
+   "number": "2.3",
    "number_from": "counter",
    "labels": [
     "defi:representation",
@@ -287,34 +254,14 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-8",
+   "id": "2210.17066v1#env-6",
    "type": "env",
-   "k": 8,
-   "env": "rmk",
-   "title": "Remark",
-   "item": "remark",
-   "counter": "thm",
-   "number": "2.6",
-   "number_from": "counter",
-   "labels": [
-    "rmk:rep"
-   ],
-   "pos": {
-    "file": "paper.tex",
-    "line": 561
-   },
-   "last": 563,
-   "result": "matched"
-  },
-  {
-   "id": "2210.17066v1#env-9",
-   "type": "env",
-   "k": 9,
+   "k": 6,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
    "counter": "thm",
-   "number": "2.7",
+   "number": "2.4",
    "number_from": "counter",
    "labels": [
     "RLYc",
@@ -329,14 +276,14 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-10",
+   "id": "2210.17066v1#env-7",
    "type": "env",
-   "k": 10,
+   "k": 7,
    "env": "ex",
    "title": "Example",
    "item": "example",
    "counter": "thm",
-   "number": "2.8",
+   "number": "2.5",
    "number_from": "counter",
    "labels": [
     "ad"
@@ -349,14 +296,14 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-11",
+   "id": "2210.17066v1#env-8",
    "type": "env",
-   "k": 11,
+   "k": 8,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
    "counter": "thm",
-   "number": "2.9",
+   "number": "2.6",
    "number_from": "counter",
    "labels": [
     "dual"
@@ -366,6 +313,61 @@
     "line": 595
    },
    "last": 601,
+   "result": "matched"
+  },
+  {
+   "id": "2210.17066v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "ex",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "2.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 604
+   },
+   "last": 608,
+   "result": "matched"
+  },
+  {
+   "id": "2210.17066v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "pro",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.8",
+   "number_from": "counter",
+   "labels": [
+    "semi1",
+    "semi2"
+   ],
+   "pos": {
+    "file": "paper.tex",
+    "line": 612
+   },
+   "last": 619,
+   "result": "matched"
+  },
+  {
+   "id": "2210.17066v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "defi",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 665
+   },
+   "last": 671,
    "result": "matched"
   },
   {
@@ -380,70 +382,15 @@
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
-    "line": 604
-   },
-   "last": 608,
-   "result": "matched"
-  },
-  {
-   "id": "2210.17066v1#env-13",
-   "type": "env",
-   "k": 13,
-   "env": "pro",
-   "title": "Proposition",
-   "item": "statement/proposition",
-   "counter": "thm",
-   "number": "2.11",
-   "number_from": "counter",
-   "labels": [
-    "semi1",
-    "semi2"
-   ],
-   "pos": {
-    "file": "paper.tex",
-    "line": 612
-   },
-   "last": 619,
-   "result": "matched"
-  },
-  {
-   "id": "2210.17066v1#env-14",
-   "type": "env",
-   "k": 14,
-   "env": "defi",
-   "title": "Definition",
-   "item": "definition",
-   "counter": "thm",
-   "number": "2.12",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 665
-   },
-   "last": 671,
-   "result": "matched"
-  },
-  {
-   "id": "2210.17066v1#env-15",
-   "type": "env",
-   "k": 15,
-   "env": "ex",
-   "title": "Example",
-   "item": "example",
-   "counter": "thm",
-   "number": "2.13",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
     "line": 673
    },
    "last": 680,
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-16",
+   "id": "2210.17066v1#env-13",
    "type": "env",
-   "k": 16,
+   "k": 13,
    "env": "defi",
    "title": "Definition",
    "item": "definition",
@@ -458,9 +405,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-17",
+   "id": "2210.17066v1#env-14",
    "type": "env",
-   "k": 17,
+   "k": 14,
    "env": "defi",
    "title": "Definition",
    "item": "definition",
@@ -484,9 +431,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-18",
+   "id": "2210.17066v1#env-15",
    "type": "env",
-   "k": 18,
+   "k": 15,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -504,9 +451,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-19",
+   "id": "2210.17066v1#env-16",
    "type": "env",
-   "k": 19,
+   "k": 16,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -538,9 +485,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-20",
+   "id": "2210.17066v1#env-17",
    "type": "env",
-   "k": 20,
+   "k": 17,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -576,9 +523,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-21",
+   "id": "2210.17066v1#env-18",
    "type": "env",
-   "k": 21,
+   "k": 18,
    "env": "thm",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -611,9 +558,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-22",
+   "id": "2210.17066v1#env-19",
    "type": "env",
-   "k": 22,
+   "k": 19,
    "env": "defi",
    "title": "Definition",
    "item": "definition",
@@ -631,9 +578,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-23",
+   "id": "2210.17066v1#env-20",
    "type": "env",
-   "k": 23,
+   "k": 20,
    "env": "cor",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -648,9 +595,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-24",
+   "id": "2210.17066v1#env-21",
    "type": "env",
-   "k": 24,
+   "k": 21,
    "env": "ex",
    "title": "Example",
    "item": "example",
@@ -668,9 +615,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-25",
+   "id": "2210.17066v1#env-22",
    "type": "env",
-   "k": 25,
+   "k": 22,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -702,9 +649,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-26",
+   "id": "2210.17066v1#env-23",
    "type": "env",
-   "k": 26,
+   "k": 23,
    "env": "thm",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -736,9 +683,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-27",
+   "id": "2210.17066v1#env-24",
    "type": "env",
-   "k": 27,
+   "k": 24,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -767,9 +714,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-28",
+   "id": "2210.17066v1#env-25",
    "type": "env",
-   "k": 28,
+   "k": 25,
    "env": "defi",
    "title": "Definition",
    "item": "definition",
@@ -788,9 +735,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-29",
+   "id": "2210.17066v1#env-26",
    "type": "env",
-   "k": 29,
+   "k": 26,
    "env": "lem",
    "title": "Lemma",
    "item": "statement/lemma",
@@ -822,9 +769,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-30",
+   "id": "2210.17066v1#env-27",
    "type": "env",
-   "k": 30,
+   "k": 27,
    "env": "cor",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -853,9 +800,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-31",
+   "id": "2210.17066v1#env-28",
    "type": "env",
-   "k": 31,
+   "k": 28,
    "env": "thm",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -887,9 +834,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-32",
+   "id": "2210.17066v1#env-29",
    "type": "env",
-   "k": 32,
+   "k": 29,
    "env": "cor",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -904,9 +851,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-33",
+   "id": "2210.17066v1#env-30",
    "type": "env",
-   "k": 33,
+   "k": 30,
    "env": "defi",
    "title": "Definition",
    "item": "definition",
@@ -924,9 +871,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-34",
+   "id": "2210.17066v1#env-31",
    "type": "env",
-   "k": 34,
+   "k": 31,
    "env": "rmk",
    "title": "Remark",
    "item": "remark",
@@ -944,9 +891,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-35",
+   "id": "2210.17066v1#env-32",
    "type": "env",
-   "k": 35,
+   "k": 32,
    "env": "rmk",
    "title": "Remark",
    "item": "remark",
@@ -961,9 +908,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-36",
+   "id": "2210.17066v1#env-33",
    "type": "env",
-   "k": 36,
+   "k": 33,
    "env": "defi",
    "title": "Definition",
    "item": "definition",
@@ -981,9 +928,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-37",
+   "id": "2210.17066v1#env-34",
    "type": "env",
-   "k": 37,
+   "k": 34,
    "env": "rmk",
    "title": "Remark",
    "item": "remark",
@@ -998,9 +945,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-38",
+   "id": "2210.17066v1#env-35",
    "type": "env",
-   "k": 38,
+   "k": 35,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1032,9 +979,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-39",
+   "id": "2210.17066v1#env-36",
    "type": "env",
-   "k": 39,
+   "k": 36,
    "env": "rmk",
    "title": "Remark",
    "item": "remark",
@@ -1049,9 +996,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-40",
+   "id": "2210.17066v1#env-37",
    "type": "env",
-   "k": 40,
+   "k": 37,
    "env": "rmk",
    "title": "Remark",
    "item": "remark",
@@ -1066,9 +1013,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-41",
+   "id": "2210.17066v1#env-38",
    "type": "env",
-   "k": 41,
+   "k": 38,
    "env": "defi",
    "title": "Definition",
    "item": "definition",
@@ -1083,9 +1030,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-42",
+   "id": "2210.17066v1#env-39",
    "type": "env",
-   "k": 42,
+   "k": 39,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1128,9 +1075,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-43",
+   "id": "2210.17066v1#env-40",
    "type": "env",
-   "k": 43,
+   "k": 40,
    "env": "cor",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -1145,9 +1092,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-44",
+   "id": "2210.17066v1#env-41",
    "type": "env",
-   "k": 44,
+   "k": 41,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1179,9 +1126,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-45",
+   "id": "2210.17066v1#env-42",
    "type": "env",
-   "k": 45,
+   "k": 42,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
@@ -1217,9 +1164,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-46",
+   "id": "2210.17066v1#env-43",
    "type": "env",
-   "k": 46,
+   "k": 43,
    "env": "defi",
    "title": "Definition",
    "item": "definition",
@@ -1234,9 +1181,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-47",
+   "id": "2210.17066v1#env-44",
    "type": "env",
-   "k": 47,
+   "k": 44,
    "env": "cor",
    "title": "Corollary",
    "item": "statement/corollary",
@@ -1251,9 +1198,9 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-48",
+   "id": "2210.17066v1#env-45",
    "type": "env",
-   "k": 48,
+   "k": 45,
    "env": "thm",
    "title": "Theorem",
    "item": "statement/theorem",
@@ -1271,31 +1218,14 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-49",
+   "id": "2210.17066v1#env-46",
    "type": "env",
-   "k": 49,
-   "env": "rmk",
-   "title": "Remark",
-   "item": "remark",
-   "counter": "thm",
-   "number": "4.14",
-   "number_from": "counter",
-   "pos": {
-    "file": "paper.tex",
-    "line": 1393
-   },
-   "last": 1397,
-   "result": "matched"
-  },
-  {
-   "id": "2210.17066v1#env-50",
-   "type": "env",
-   "k": 50,
+   "k": 46,
    "env": "pro",
    "title": "Proposition",
    "item": "statement/proposition",
    "counter": "thm",
-   "number": "4.15",
+   "number": "4.14",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1319,14 +1249,14 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-51",
+   "id": "2210.17066v1#env-47",
    "type": "env",
-   "k": 51,
+   "k": 47,
    "env": "ex",
    "title": "Example",
    "item": "example",
    "counter": "thm",
-   "number": "4.16",
+   "number": "4.15",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1336,14 +1266,14 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-52",
+   "id": "2210.17066v1#env-48",
    "type": "env",
-   "k": 52,
+   "k": 48,
    "env": "ex",
    "title": "Example",
    "item": "example",
    "counter": "thm",
-   "number": "4.17",
+   "number": "4.16",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",
@@ -1353,14 +1283,14 @@
    "result": "matched"
   },
   {
-   "id": "2210.17066v1#env-53",
+   "id": "2210.17066v1#env-49",
    "type": "env",
-   "k": 53,
+   "k": 49,
    "env": "ex",
    "title": "Example",
    "item": "example",
    "counter": "thm",
-   "number": "4.18",
+   "number": "4.17",
    "number_from": "counter",
    "pos": {
     "file": "paper.tex",

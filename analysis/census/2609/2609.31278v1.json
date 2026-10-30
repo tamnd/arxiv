@@ -1,0 +1,2042 @@
+{
+ "paper": "2609.31278",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "Hexagons-and-WP-metric.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "xcolor",
+  "amsmath",
+  "amssymb",
+  "amsthm",
+  "mathrsfs",
+  "mathtools",
+  "graphicx",
+  "enumerate",
+  "enumitem",
+  "hyperref",
+  "fancyhdr",
+  "overpic",
+  "orcidlink",
+  "faktor",
+  "xfrac"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: Hexagons-and-WP-metric.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 253 commands, 4 environments",
+  "tree: 299 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "nonexample",
+   "title": "Counter-example",
+   "item": "counterexample",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem**",
+   "title": "Theorem\\theoremnum",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition**",
+   "title": "Proposition\\theoremnum",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "mainthm",
+   "shared": "mainthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "cor*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proposition*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proofclaim",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 59,
+  "label": 96,
+  "proof": 38,
+  "textref": 149
+ },
+ "matched": {
+  "env": 59,
+  "label": 96,
+  "proof": 38
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 58,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 149,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.31278v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 63
+   },
+   "last": 69,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 96
+   },
+   "last": 107,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "CollarThm"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 225
+   },
+   "last": 227,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 314
+   },
+   "last": 316,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "def:truncation_function"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 321
+   },
+   "last": 335,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 339
+   },
+   "last": 356,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 374
+   },
+   "last": 387,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "ShortHexagonDecomposition"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 409
+   },
+   "last": 416,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 422
+   },
+   "last": 426,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "ShortHexagonDecompositionExistence"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 440
+   },
+   "last": 442,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "BershearRmk2"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 446
+   },
+   "last": 452,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "Bershear"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 454
+   },
+   "last": 459,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "RmkBersIdealTriangulation"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 461
+   },
+   "last": 463,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "IdealBershear"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 465
+   },
+   "last": 470,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "lem:truncated_length_continuous"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 509
+   },
+   "last": 518,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "CtsTrunclength"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 519
+   },
+   "last": 660,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "HexagonalCoordinates"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 662
+   },
+   "last": 671,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 672
+   },
+   "last": 694,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "Shear0-HorocyclicSegments"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 736
+   },
+   "last": 747,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 749
+   },
+   "last": 771,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "LemmaBiLipBoundaryHex"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 784
+   },
+   "last": 817,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "delta-truncation"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 819
+   },
+   "last": 1060,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "parent": "2609.31278v1#proof-4",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 898
+   },
+   "last": 904,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proofclaim",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.31278v1#proof-4",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 905
+   },
+   "last": 919,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "parent": "2609.31278v1#proof-4",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1000
+   },
+   "last": 1005,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proofclaim",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq_g2_bound1",
+    "eq_g2_bound2"
+   ],
+   "parent": "2609.31278v1#proof-4",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1006
+   },
+   "last": 1030,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "LemmaBiLipHex"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1064
+   },
+   "last": 1101,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "FigureConstHexBiLipMap"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1103
+   },
+   "last": 1285,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "correction_lemma"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1293
+   },
+   "last": 1306,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1307
+   },
+   "last": 1390,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "claimA",
+    "claimB"
+   ],
+   "parent": "2609.31278v1#proof-8",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1325
+   },
+   "last": 1331,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proofclaim",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "point3"
+   ],
+   "parent": "2609.31278v1#proof-8",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1332
+   },
+   "last": 1359,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "PropTeichShear"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1392
+   },
+   "last": 1405,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1407
+   },
+   "last": 1554,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1556
+   },
+   "last": 1558,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "DiazKimLengthGr"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1612
+   },
+   "last": 1622,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "DiazKimLengthGr2"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1624
+   },
+   "last": 1634,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "WPgraftingPath"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1645
+   },
+   "last": 1651,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "quotientdefwp",
+    "eq0",
+    "eq1",
+    "eq2",
+    "eq5",
+    "eq3",
+    "eq4"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1653
+   },
+   "last": 1740,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "BoundStartGraftingRay"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1744
+   },
+   "last": 1749,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "WPbelowL2"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1751
+   },
+   "last": 1779,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "WPGraftingRay"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1783
+   },
+   "last": 1788,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1790
+   },
+   "last": 1797,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "GraftingShear"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1821
+   },
+   "last": 1830,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq_ortho-geod-arc2",
+    "length_horizontal_subarc",
+    "width_collar_comparison",
+    "width_std_collar_comparison"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1832
+   },
+   "last": 1914,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "TravellingToStratum"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1918
+   },
+   "last": 1931,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1933
+   },
+   "last": 1976,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "LemmaNiceHexDecomp"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1988
+   },
+   "last": 1995,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "bound_arc"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 1997
+   },
+   "last": 2034,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "LemmaStayThick"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2047
+   },
+   "last": 2063,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "defintion_K_delta"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2065
+   },
+   "last": 2174,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "claimC"
+   ],
+   "parent": "2609.31278v1#proof-17",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2104
+   },
+   "last": 2111,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proofclaim",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "bound_R_delta",
+    "defintion_K_delta"
+   ],
+   "parent": "2609.31278v1#proof-17",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2112
+   },
+   "last": 2154,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "PropProjectThickStartum"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2179
+   },
+   "last": 2186,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "length_horizontal_subarc2",
+    "width_collar_comparison2",
+    "width_std_collar_comparison2",
+    "boundArcTruncatedCVStratum"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2188
+   },
+   "last": 2267,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "WPshearingpath"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2282
+   },
+   "last": 2292,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "IMG_1708",
+    "eq:partial-sums2",
+    "eq:sigma-bound",
+    "eq:psi-bound",
+    "BoundMutInf",
+    "boundWPSHearpath",
+    "boundWPshear2"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2294
+   },
+   "last": 2501,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "parent": "2609.31278v1#proof-20",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2471
+   },
+   "last": 2473,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proofclaim",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.31278v1#proof-20",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2475
+   },
+   "last": 2490,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2513
+   },
+   "last": 2528,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "Shear0"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2542
+   },
+   "last": 2544,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2546
+   },
+   "last": 2556,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "WidthHexagonModel"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2558
+   },
+   "last": 2560,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "shear_0_local_center_N_H"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2562
+   },
+   "last": 2638,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "FlipMoveShear0"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2652
+   },
+   "last": 2672,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Flipmove"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2674
+   },
+   "last": 2739,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "FlipMoveWPDist"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2741
+   },
+   "last": 2743,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2745
+   },
+   "last": 2760,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "LIpschADdingcurve"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2764
+   },
+   "last": 2769,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "ort-geo-arc-bound",
+    "length_horizontal_subarc3",
+    "width_collar_comparison4",
+    "width_std_collar_comparison5",
+    "bound_shear_proof_LIpsh"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2771
+   },
+   "last": 2874,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "QLipschitz"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2879
+   },
+   "last": 2881,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "TruncOrthoSpectrum"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2886
+   },
+   "last": 2900,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2902
+   },
+   "last": 3002,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "claim:proof_truncated_length_spectrum_discrete"
+   ],
+   "parent": "2609.31278v1#proof-27",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2909
+   },
+   "last": 2915,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proofclaim",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.31278v1#proof-27",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 2916
+   },
+   "last": 2960,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "CountSHortHExagonDecomp"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3008
+   },
+   "last": 3010,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3012
+   },
+   "last": 3047,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "QILemma1"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3050
+   },
+   "last": 3059,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3061
+   },
+   "last": 3068,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "QILemma2"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3070
+   },
+   "last": 3072,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3074
+   },
+   "last": 3107,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "parent": "2609.31278v1#proof-31",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3077
+   },
+   "last": 3079,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proofclaim",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.31278v1#proof-31",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3081
+   },
+   "last": 3090,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "MainTheorem3"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3109
+   },
+   "last": 3111,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3112
+   },
+   "last": 3132,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "SysShearZero"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3144
+   },
+   "last": 3147,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3149
+   },
+   "last": 3157,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "TeichshearingIDEAL"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3159
+   },
+   "last": 3165,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3167
+   },
+   "last": 3176,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "Flip-Lipschitz"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3178
+   },
+   "last": 3181,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3182
+   },
+   "last": 3200,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "MainTheorem4",
+    "flip-cost",
+    "flip-width",
+    "flip-qi"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3208
+   },
+   "last": 3223,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "rem1"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3225
+   },
+   "last": 3262,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "bigCOR",
+    "end_cor_one",
+    "end_cor_one_bis",
+    "end_cor_two"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3264
+   },
+   "last": 3275,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3277
+   },
+   "last": 3279,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "MainTheorem",
+    "MainTheorem-step1",
+    "MainTheorem-step2"
+   ],
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3310
+   },
+   "last": 3333,
+   "result": "matched"
+  },
+  {
+   "id": "2609.31278v1#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Hexagons-and-WP-metric.tex",
+    "line": 3335
+   },
+   "last": 3360,
+   "result": "matched"
+  }
+ ]
+}
