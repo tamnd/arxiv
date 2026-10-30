@@ -1,27 +1,27 @@
 # The audit
 
-362338 records over 3096 papers of the analysis plane, 9317 findings.
+382912 records over 3284 papers of the analysis plane, 9667 findings.
 
 | Group | Rules | Pass | Fail | Not run | N/A | Findings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Analysis | 12 | 7 | 5 | 0 | 0 | 9317 |
+| Analysis | 12 | 7 | 5 | 0 | 0 | 9667 |
 
 ## The rules
 
 | ID | State | Checked | Skipped | Findings | Rule |
 | --- | --- | ---: | ---: | ---: | --- |
-| D01 | pass | 43 | 0 | 0 | each paper in scope (AX1.2) has a paper state: a stage of the ladder of 2166-04, or a reason why it stops |
-| D02 | pass | 6377 | 0 | 0 | each extracted version has a census record, and the census record names the extractor version |
-| D03 | pass | 3289 | 0 | 0 | each counted occurrence of a theorem-like environment, proof or manual head in the census has an object record, or a waiver with a reason |
-| D04 | pass | 61280 | 0 | 0 | each statement object has a proof_status, and a proof_status of here has a proves edge from a proof object |
-| D06 | pass | 137758 | 0 | 0 | no object record from a version of class record holds text of the paper, in any field |
-| D07 | fail | 3289 | 0 | 3215 | a counter whose numbers have a gap that the census does not explain |
-| D08 | fail | 3289 | 0 | 62 | a paper whose source and render counts differ by more than the threshold of AX4.5 |
-| D09 | fail | 3289 | 0 | 4343 | an in-paper reference to a theorem-like number or label that resolves to no object |
-| D10 | pass | 221248 | 0 | 0 | each edge has a method and a confidence from the closed lists of AX6.1, and no edge whose method is model has the confidence certain or high |
-| D13 | pass | 137758 | 0 | 0 | each object record names its path, its extractor version and its confidence |
-| D15 | fail | 3289 | 0 | 1488 | an environment name or title that manifests/environments.yaml does not map |
-| D19 | fail | 3023 | 0 | 209 | a cycle in the in-paper uses graph (AX6.3) |
+| D01 | pass | 45 | 0 | 0 | each paper in scope (AX1.2) has a paper state: a stage of the ladder of 2166-04, or a reason why it stops |
+| D02 | pass | 6763 | 0 | 0 | each extracted version has a census record, and the census record names the extractor version |
+| D03 | pass | 3487 | 0 | 0 | each counted occurrence of a theorem-like environment, proof or manual head in the census has an object record, or a waiver with a reason |
+| D04 | pass | 64820 | 0 | 0 | each statement object has a proof_status, and a proof_status of here has a proves edge from a proof object |
+| D06 | pass | 145575 | 0 | 0 | no object record from a version of class record holds text of the paper, in any field |
+| D07 | fail | 3487 | 0 | 3226 | a counter whose numbers have a gap that the census does not explain |
+| D08 | fail | 3487 | 0 | 62 | a paper whose source and render counts differ by more than the threshold of AX4.5 |
+| D09 | fail | 3487 | 0 | 4547 | an in-paper reference to a theorem-like number or label that resolves to no object |
+| D10 | pass | 233805 | 0 | 0 | each edge has a method and a confidence from the closed lists of AX6.1, and no edge whose method is model has the confidence certain or high |
+| D13 | pass | 145575 | 0 | 0 | each object record names its path, its extractor version and its confidence |
+| D15 | fail | 3487 | 0 | 1609 | an environment name or title that manifests/environments.yaml does not map |
+| D19 | fail | 3209 | 0 | 223 | a cycle in the in-paper uses graph (AX6.3) |
 
 ## The findings
 
@@ -82,7 +82,7 @@ analysis/census/1802/1802.02910v3.json: 1802.02910v3: 1802.02910v3#env-31: Fait 
 analysis/census/1802/1802.02910v3.json: 1802.02910v3: 1802.02910v3#env-32: Fait 013 comes after 011 in counter equation
 ```
 
-And 3165 more findings, not listed.
+And 3176 more findings, not listed.
 
 ### D08
 
@@ -200,7 +200,7 @@ analysis/census/0406/math-0406514v2.json: math/0406514v2: math/0406514v2#textref
 analysis/census/0406/math-0406514v2.json: math/0406514v2: math/0406514v2#textref-14: the text names Lemma \ref{dim-alg} and the census has no such item (no-label)
 ```
 
-And 4293 more findings, not listed.
+And 4497 more findings, not listed.
 
 ### D15
 
@@ -259,7 +259,7 @@ analysis/census/1806/1806.05002v2.json: 1806.05002v2: occurrence 1806.05002v2#en
 analysis/census/1806/1806.05002v2.json: 1806.05002v2: occurrence 1806.05002v2#env-37 of bl with the title "Bergelson--Leibman" has no item kind
 ```
 
-And 1438 more findings, not listed.
+And 1559 more findings, not listed.
 
 ### D19
 
@@ -301,23 +301,23 @@ analysis/edges/2601/2601.13782.md: 2601.13782v5: 2 uses edges are in a cycle
 analysis/edges/2609/2609.01324.md: 2609.01324v2: 12 uses edges are in a cycle
 analysis/edges/2609/2609.18777.md: 2609.18777v2: 2 uses edges are in a cycle
 analysis/edges/2609/2609.29326.md: 2609.29326v1: 9 uses edges are in a cycle
+analysis/edges/2609/2609.33154.md: 2609.33154v1: 2 uses edges are in a cycle
+analysis/edges/2609/2609.33327.md: 2609.33327v1: 2 uses edges are in a cycle
+analysis/edges/2609/2609.33529.md: 2609.33529v1: 3 uses edges are in a cycle
+analysis/edges/2609/2609.33578.md: 2609.33578v2: 5 uses edges are in a cycle
+analysis/edges/2609/2609.33733.md: 2609.33733v1: 2 uses edges are in a cycle
+analysis/edges/2609/2609.33775.md: 2609.33775v1: 3 uses edges are in a cycle
+analysis/edges/2609/2609.34081.md: 2609.34081v1: 3 uses edges are in a cycle
+analysis/edges/2609/2609.34193.md: 2609.34193v1: 2 uses edges are in a cycle
+analysis/edges/2609/2609.34852.md: 2609.34852v1: 2 uses edges are in a cycle
+analysis/edges/2609/2609.35030.md: 2609.35030v1: 2 uses edges are in a cycle
+analysis/edges/2609/2609.35204.md: 2609.35204v1: 9 uses edges are in a cycle
+analysis/edges/2609/2609.35339.md: 2609.35339v1: 2 uses edges are in a cycle
+analysis/edges/2609/2609.35360.md: 2609.35360v1: 6 uses edges are in a cycle
+analysis/edges/2609/2609.35600.md: 2609.35600v1: 2 uses edges are in a cycle
 analysis/edges/2609/2609.35762.md: 2609.35762v1: 47 uses edges are in a cycle
 analysis/edges/2609/2609.36204.md: 2609.36204v1: 2 uses edges are in a cycle
 analysis/edges/2609/2609.36411.md: 2609.36411v1: 3 uses edges are in a cycle
-analysis/edges/2609/2609.36412.md: 2609.36412v1: 19 uses edges are in a cycle
-analysis/edges/2609/2609.36594.md: 2609.36594v1: 10 uses edges are in a cycle
-analysis/edges/2609/2609.36668.md: 2609.36668v1: 2 uses edges are in a cycle
-analysis/edges/2609/2609.36827.md: 2609.36827v2: 3 uses edges are in a cycle
-analysis/edges/2609/2609.37026.md: 2609.37026v1: 2 uses edges are in a cycle
-analysis/edges/2609/2609.37368.md: 2609.37368v2: 20 uses edges are in a cycle
-analysis/edges/2609/2609.37593.md: 2609.37593v1: 13 uses edges are in a cycle
-analysis/edges/2609/2609.37615.md: 2609.37615v1: 3 uses edges are in a cycle
-analysis/edges/2609/2609.37897.md: 2609.37897v1: 4 uses edges are in a cycle
-analysis/edges/2609/2609.38041.md: 2609.38041v1: 5 uses edges are in a cycle
-analysis/edges/2609/2609.38118.md: 2609.38118v1: 4 uses edges are in a cycle
-analysis/edges/2609/2609.38228.md: 2609.38228v1: 2 uses edges are in a cycle
-analysis/edges/2609/2609.38453.md: 2609.38453v1: 3 uses edges are in a cycle
-analysis/edges/2609/2609.38567.md: 2609.38567v2: 2 uses edges are in a cycle
 ```
 
-And 159 more findings, not listed.
+And 173 more findings, not listed.

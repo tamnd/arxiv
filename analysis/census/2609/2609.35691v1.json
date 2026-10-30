@@ -1,0 +1,985 @@
+{
+ "paper": "2609.35691",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main.tex"
+ ],
+ "class": "lipics-v2021",
+ "packages": [
+  "amsmath",
+  "amsthm",
+  "amsfonts",
+  "mathtools",
+  "stmaryrd",
+  "cmll",
+  "mathpartir",
+  "tikz",
+  "tikz-cd",
+  "url",
+  "enumerate",
+  "xspace",
+  "comment",
+  "todonotes",
+  "xcolor",
+  "xy",
+  "braket",
+  "graphicx",
+  "bm",
+  "fixmath"
+ ],
+ "steps": [
+  "unpack: 10 files",
+  "main: main.tex",
+  "include: 9 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 1 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 288 commands, 6 environments",
+  "tree: 175 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note*",
+   "title": "Note",
+   "item": "remark",
+   "numbered": false,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "local:lipics-v2021.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 31,
+  "label": 26,
+  "proof": 9,
+  "textref": 25
+ },
+ "matched": {
+  "env": 31,
+  "label": 26,
+  "proof": 9
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 31,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 25,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.35691v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "def:paramMonads"
+   ],
+   "pos": {
+    "file": "param.tex",
+    "line": 5
+   },
+   "last": 16,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "counter",
+   "labels": [
+    "ex:paramStateMonad"
+   ],
+   "pos": {
+    "file": "param.tex",
+    "line": 20
+   },
+   "last": 30,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "def:strictParamExtension"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 32
+   },
+   "last": 38,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "def:laxextension"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 42
+   },
+   "last": 51,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 54
+   },
+   "last": 62,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "def:ParamLaxExtensionMonadSet"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 68
+   },
+   "last": 85,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "ex:statenostrictextension"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 88
+   },
+   "last": 93,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "def:weakpb"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 128
+   },
+   "last": 149,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "Barrtheorem"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 152
+   },
+   "last": 154,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "th:paramBarr"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 234
+   },
+   "last": 251,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:WeakPbkLastTwo"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 257
+   },
+   "last": 302,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:laxExtParam"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 307
+   },
+   "last": 325,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:laxExtParamWeak"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 327
+   },
+   "last": 334,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "def:laxextensionmonad"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 343
+   },
+   "last": 351,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "def:LaxParamExtensionMonad"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 357
+   },
+   "last": 378,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:LaxParamExtensionMonad"
+   ],
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 380
+   },
+   "last": 382,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "3.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "laxextension.tex",
+    "line": 385
+   },
+   "last": 387,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "bisim.tex",
+    "line": 44
+   },
+   "last": 46,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "bisim.tex",
+    "line": 48
+   },
+   "last": 50,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:AMsoundforLax"
+   ],
+   "pos": {
+    "file": "bisim.tex",
+    "line": 56
+   },
+   "last": 58,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "thm:LaxExtFullyAbstract"
+   ],
+   "pos": {
+    "file": "bisim.tex",
+    "line": 60
+   },
+   "last": 62,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "def:parambisim"
+   ],
+   "pos": {
+    "file": "bisim.tex",
+    "line": 69
+   },
+   "last": 71,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "lem:paramcond"
+   ],
+   "pos": {
+    "file": "bisim.tex",
+    "line": 78
+   },
+   "last": 80,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "bisim.tex",
+    "line": 85
+   },
+   "last": 87,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "lem:AMLaxExtSoundness"
+   ],
+   "pos": {
+    "file": "bisim.tex",
+    "line": 115
+   },
+   "last": 117,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.9",
+   "number_from": "counter",
+   "labels": [
+    "lem:paramBehEquivFinal"
+   ],
+   "pos": {
+    "file": "bisim.tex",
+    "line": 166
+   },
+   "last": 190,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.10",
+   "number_from": "counter",
+   "labels": [
+    "prop:AMBehEquivsoundness"
+   ],
+   "pos": {
+    "file": "bisim.tex",
+    "line": 191
+   },
+   "last": 193,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.11",
+   "number_from": "counter",
+   "labels": [
+    "lem:laxdblefunctor"
+   ],
+   "pos": {
+    "file": "bisim.tex",
+    "line": 196
+   },
+   "last": 236,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.12",
+   "number_from": "counter",
+   "labels": [
+    "th:BehEquivExtFullabstract"
+   ],
+   "pos": {
+    "file": "bisim.tex",
+    "line": 238
+   },
+   "last": 240,
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 8
+   },
+   "last": 10,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 12
+   },
+   "last": 52,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 57
+   },
+   "last": 243,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 244
+   },
+   "last": 283,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 285
+   },
+   "last": 322,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "ineq1",
+    "ineq2"
+   ],
+   "pos": {
+    "file": "appendix.tex",
+    "line": 324
+   },
+   "last": 401,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 407
+   },
+   "last": 418,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 420
+   },
+   "last": 443,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 445
+   },
+   "last": 576,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 580
+   },
+   "last": 594,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.35691v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "appendix.tex",
+    "line": 595
+   },
+   "last": 675,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
