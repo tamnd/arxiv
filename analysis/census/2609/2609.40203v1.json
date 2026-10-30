@@ -1,0 +1,595 @@
+{
+ "paper": "2609.40203",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main.tex"
+ ],
+ "class": "revtex4-2",
+ "packages": [
+  "iftex",
+  "inputenc",
+  "fontenc",
+  "babel",
+  "amsthm",
+  "mathtools",
+  "etoolbox",
+  "xcolor",
+  "graphicx",
+  "booktabs",
+  "tikz",
+  "hyperref"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 2 kept",
+  "macros: 59 commands, 0 environments",
+  "tree: 312 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:revtex4-2"
+  }
+ ],
+ "occurrences": {
+  "env": 12,
+  "label": 81,
+  "proof": 11,
+  "textref": 25
+ },
+ "matched": {
+  "env": 12,
+  "label": 81,
+  "proof": 11
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 12,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 25,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.40203v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "thm:jrf-rw",
+    "eq:jrf-seed",
+    "eq:jrf-block-diagonal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 331
+   },
+   "last": 341,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:jrf-block",
+    "eq:jrf-normalizer",
+    "eq:jrf-block-update"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 342
+   },
+   "last": 357,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "lem:ascent",
+    "eq:ascent-bounds",
+    "eq:original-ascent"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 565
+   },
+   "last": 579,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:ascent",
+    "eq:ascent-expansion",
+    "eq:ascent-polar",
+    "eq:ascent-gap",
+    "eq:cross-term",
+    "eq:gap-trace"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 580
+   },
+   "last": 611,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "lem:gradient-bound",
+    "eq:gradient-bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 615
+   },
+   "last": 622,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:gradient-step-identity",
+    "eq:gradient-step-estimate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 623
+   },
+   "last": 636,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "lem:finite-length",
+    "eq:normalizer-convergence",
+    "eq:normalizer-limits"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 646
+   },
+   "last": 656,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:lojasiewicz",
+    "eq:gap",
+    "eq:gap-decrement",
+    "eq:lojasiewicz-derivative",
+    "eq:tangent-line",
+    "eq:comparison-decrement",
+    "eq:finite-length"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 657
+   },
+   "last": 704,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5",
+   "number_from": "counter",
+   "labels": [
+    "lem:nonsingular",
+    "eq:nonsingular-conclusions",
+    "eq:z-positive",
+    "eq:h-convergence",
+    "eq:q-bounded"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 708
+   },
+   "last": 719,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:uniform-bounds",
+    "eq:uniform-bound-z",
+    "eq:uniform-bound-h",
+    "eq:pseudoinverse-w0",
+    "eq:compressed-trace-divergence",
+    "eq:compressed-determinant-divergence",
+    "eq:h-limit"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 720
+   },
+   "last": 760,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6",
+   "number_from": "counter",
+   "labels": [
+    "lem:cone"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 768
+   },
+   "last": 774,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:form-expansion",
+    "eq:form-perturbation-expansion",
+    "eq:form-perturbation-bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 775
+   },
+   "last": 808,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7",
+   "number_from": "counter",
+   "labels": [
+    "thm:global",
+    "eq:limit-certificate",
+    "eq:limit-normalized",
+    "eq:limit-dual-feasibility",
+    "eq:limit-primal-value",
+    "eq:limit-dual-value",
+    "eq:limit-complementarity"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 810
+   },
+   "last": 828,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:factor-reconstruction",
+    "eq:limit-contraction",
+    "eq:augmented-dual-feasible",
+    "eq:dual-block-identity",
+    "eq:sandwich",
+    "eq:original-objective-gap",
+    "eq:limit-trace-complementarity",
+    "eq:limit-trace-complementarity-primal",
+    "eq:limit-trace-complementarity-slack",
+    "eq:dual-uniqueness-kernels"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 829
+   },
+   "last": 881,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "8",
+   "number_from": "counter",
+   "labels": [
+    "cor:rw"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 887
+   },
+   "last": 891,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 892
+   },
+   "last": 895,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "9",
+   "number_from": "counter",
+   "labels": [
+    "cor:jrf"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 897
+   },
+   "last": 901,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 902
+   },
+   "last": 908,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "10",
+   "number_from": "counter",
+   "labels": [
+    "lem:certificate",
+    "eq:certificate-bounds"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 959
+   },
+   "last": 966,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:augmented-dual-slack",
+    "eq:slack-bound",
+    "eq:normalizer-squared-difference",
+    "eq:normalizer-squared-bound",
+    "eq:normalizer-sylvester-identity",
+    "eq:normalizer-root-bound",
+    "eq:certificate-shift-augmented",
+    "eq:certificate-constant"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 967
+   },
+   "last": 1011,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "11",
+   "number_from": "counter",
+   "labels": [
+    "lem:iteration-number"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1013
+   },
+   "last": 1016,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:rate-recurrence",
+    "eq:dyadic-iteration-count",
+    "eq:rate-tail",
+    "eq:matrix-error"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1017
+   },
+   "last": 1049,
+   "result": "matched"
+  },
+  {
+   "id": "2609.40203v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "number": "B.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:slow-family-rates",
+    "eq:circle-exponent-comparison"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1237
+   },
+   "last": 1248,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
