@@ -1,0 +1,1465 @@
+{
+ "paper": "2609.28893",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "Paper2.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "inputenc",
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "xcolor",
+  "enumerate",
+  "comment",
+  "multirow",
+  "parskip",
+  "dsfont",
+  "enumitem",
+  "mathtools",
+  "aliascnt",
+  "booktabs",
+  "longtable",
+  "array",
+  "needspace",
+  "tikz",
+  "hyperref",
+  "microtype",
+  "makecell",
+  "subcaption",
+  "todonotes",
+  "multicol",
+  "standalone",
+  "mdframed",
+  "adjustbox",
+  "geometry",
+  "ulem",
+  "cleveref",
+  "tabularx"
+ ],
+ "steps": [
+  "unpack: 5 files",
+  "main: Paper2.tex",
+  "include: 3 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 25 commands, 5 environments",
+  "tree: 147 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "unnumberedquestion",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "maintheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "maintheorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainlemma",
+   "title": "Key Lemma",
+   "item": "statement/lemma",
+   "counter": "mainlemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "keylemma*",
+   "title": "Key Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "backgroundtheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "corollary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "subclaim",
+   "title": "Subclaim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "subclaim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "conjecture",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "obs",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "problem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "fact",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "question",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "observation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "proposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "solution",
+   "title": "Solution",
+   "item": "other/solution",
+   "counter": "solution",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mainthm",
+   "title": "Main Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  },
+  {
+   "env": "certblock",
+   "title": "",
+   "item": "unknown",
+   "numbered": false,
+   "from": "wrapper",
+   "form": "titled",
+   "title_arg": true
+  },
+  {
+   "env": "claimproof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proofc",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proofI",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 43,
+  "label": 75,
+  "proof": 15,
+  "textref": 24
+ },
+ "matched": {
+  "env": 43,
+  "label": 75,
+  "proof": 15
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 21,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 24,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.28893v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "maintheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "maintheorem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "thm:YES"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 224
+   },
+   "last": 226,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "maintheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "maintheorem",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "thm:reductions",
+    "it:3colorable",
+    "it:C5recolor",
+    "it:H4wheel"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 232
+   },
+   "last": 239,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "mainlemma",
+   "title": "Key Lemma",
+   "item": "statement/lemma",
+   "counter": "mainlemma",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "lem:H4"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 243
+   },
+   "last": 245,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "mainlemma",
+   "title": "Key Lemma",
+   "item": "statement/lemma",
+   "counter": "mainlemma",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "lem:B10"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 251
+   },
+   "last": 253,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "mainlemma",
+   "title": "Key Lemma",
+   "item": "statement/lemma",
+   "counter": "mainlemma",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "lem:B11"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 255
+   },
+   "last": 257,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:reduced"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 268
+   },
+   "last": 270,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:hereditary"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 272
+   },
+   "last": 274,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "cor:mainrecolor"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 278
+   },
+   "last": 283,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 285
+   },
+   "last": 294,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:basic",
+    "it:indep",
+    "it:UF",
+    "it:FY",
+    "it:FF",
+    "it:YY",
+    "it:YY+2",
+    "it:RR",
+    "it:FR",
+    "it:ZR",
+    "itH4F",
+    "itH4RY"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 306
+   },
+   "last": 321,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:2"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 333
+   },
+   "last": 478,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "claim:triangled"
+   ],
+   "parent": "2609.28893v1#proof-2",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 342
+   },
+   "last": 344,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proofc",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.28893v1#proof-2",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 346
+   },
+   "last": 348,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "2",
+   "number_from": "counter",
+   "parent": "2609.28893v1#proof-2",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 366
+   },
+   "last": 368,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proofc",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.28893v1#proof-2",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 370
+   },
+   "last": 380,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "claim:nonrainbowC5"
+   ],
+   "parent": "2609.28893v1#proof-2",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 384
+   },
+   "last": 386,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proofc",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.28893v1#proof-2",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 388
+   },
+   "last": 432,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "claim:make-nonrainbow"
+   ],
+   "parent": "2609.28893v1#proof-2",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 434
+   },
+   "last": 436,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proofc",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.28893v1#proof-2",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 438
+   },
+   "last": 474,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:attachment-rules"
+   ],
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 523
+   },
+   "last": 547,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 549
+   },
+   "last": 560,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "keylemma*",
+   "title": "Key Lemma",
+   "item": "statement/lemma",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 690
+   },
+   "last": 692,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 694
+   },
+   "last": 883,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "5",
+   "number_from": "counter",
+   "labels": [
+    "clm:B10-admissible"
+   ],
+   "parent": "2609.28893v1#proof-8",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 697
+   },
+   "last": 713,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "keylemma*",
+   "title": "Key Lemma",
+   "item": "statement/lemma",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 886
+   },
+   "last": 888,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 890
+   },
+   "last": 980,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "6",
+   "number_from": "counter",
+   "labels": [
+    "clm:B11-admissible"
+   ],
+   "parent": "2609.28893v1#proof-9",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 893
+   },
+   "last": 909,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 985
+   },
+   "last": 1366,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "7",
+   "number_from": "counter",
+   "labels": [
+    "claim:min_rim"
+   ],
+   "parent": "2609.28893v1#proof-10",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 1015
+   },
+   "last": 1022,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proofc",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.28893v1#proof-10",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 1024
+   },
+   "last": 1036,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "8",
+   "number_from": "counter",
+   "labels": [
+    "claim:U"
+   ],
+   "parent": "2609.28893v1#proof-10",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 1038
+   },
+   "last": 1040,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proofc",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.28893v1#proof-10",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 1042
+   },
+   "last": 1129,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "9",
+   "number_from": "counter",
+   "labels": [
+    "claim:overlap"
+   ],
+   "parent": "2609.28893v1#proof-10",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 1132
+   },
+   "last": 1134,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proofc",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.28893v1#proof-10",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 1136
+   },
+   "last": 1148,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "10",
+   "number_from": "counter",
+   "labels": [
+    "claim:Y1"
+   ],
+   "parent": "2609.28893v1#proof-10",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 1150
+   },
+   "last": 1152,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proofc",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.28893v1#proof-10",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 1154
+   },
+   "last": 1229,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "number": "11",
+   "number_from": "counter",
+   "labels": [
+    "claim:F25"
+   ],
+   "parent": "2609.28893v1#proof-10",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 1233
+   },
+   "last": 1235,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proofc",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.28893v1#proof-10",
+   "pos": {
+    "file": "Paper2.tex",
+    "line": 1237
+   },
+   "last": 1342,
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "certblock",
+   "title": "A.1",
+   "item": "unknown",
+   "labels": [
+    "app:A1",
+    "app:B1"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 16
+   },
+   "last": 52,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "certblock",
+   "title": "A.2",
+   "item": "unknown",
+   "labels": [
+    "app:A2",
+    "app:B2"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 54
+   },
+   "last": 89,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "certblock",
+   "title": "A.3",
+   "item": "unknown",
+   "labels": [
+    "app:A3",
+    "app:B3"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 91
+   },
+   "last": 127,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "certblock",
+   "title": "A.4",
+   "item": "unknown",
+   "labels": [
+    "app:A4",
+    "app:B4"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 129
+   },
+   "last": 164,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "certblock",
+   "title": "A.5",
+   "item": "unknown",
+   "labels": [
+    "app:A5",
+    "app:B5"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 166
+   },
+   "last": 201,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "certblock",
+   "title": "A.6",
+   "item": "unknown",
+   "labels": [
+    "app:A6",
+    "app:B6"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 203
+   },
+   "last": 245,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "certblock",
+   "title": "A.7",
+   "item": "unknown",
+   "labels": [
+    "app:A7",
+    "app:B7"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 247
+   },
+   "last": 271,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "certblock",
+   "title": "A.8",
+   "item": "unknown",
+   "labels": [
+    "app:A8",
+    "app:B8"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 273
+   },
+   "last": 297,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "certblock",
+   "title": "A.9",
+   "item": "unknown",
+   "labels": [
+    "app:A9",
+    "app:B9"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 299
+   },
+   "last": 335,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "certblock",
+   "title": "A.10",
+   "item": "unknown",
+   "labels": [
+    "app:A10",
+    "app:B10"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 337
+   },
+   "last": 371,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "certblock",
+   "title": "A.11",
+   "item": "unknown",
+   "labels": [
+    "app:A11",
+    "app:B11"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 373
+   },
+   "last": 413,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "certblock",
+   "title": "A.12",
+   "item": "unknown",
+   "labels": [
+    "app:A12",
+    "app:B12"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 415
+   },
+   "last": 449,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "certblock",
+   "title": "A.13",
+   "item": "unknown",
+   "labels": [
+    "app:A13",
+    "app:B13"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 451
+   },
+   "last": 491,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "certblock",
+   "title": "A.14",
+   "item": "unknown",
+   "labels": [
+    "app:A14",
+    "app:B14"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 493
+   },
+   "last": 527,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "certblock",
+   "title": "A.15",
+   "item": "unknown",
+   "labels": [
+    "app:A15",
+    "app:B15"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 529
+   },
+   "last": 564,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "certblock",
+   "title": "A.16",
+   "item": "unknown",
+   "labels": [
+    "app:A16",
+    "app:B16"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 566
+   },
+   "last": 600,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "certblock",
+   "title": "A.17",
+   "item": "unknown",
+   "labels": [
+    "app:A17",
+    "app:B17"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 602
+   },
+   "last": 643,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "certblock",
+   "title": "A.18",
+   "item": "unknown",
+   "labels": [
+    "app:A18",
+    "app:B18"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 645
+   },
+   "last": 678,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "certblock",
+   "title": "A.19",
+   "item": "unknown",
+   "labels": [
+    "app:A19",
+    "app:B19"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 680
+   },
+   "last": 717,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.28893v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "certblock",
+   "title": "A.20",
+   "item": "unknown",
+   "labels": [
+    "app:A20",
+    "app:B20"
+   ],
+   "pos": {
+    "file": "AppendixMain3.tex",
+    "line": 719
+   },
+   "last": 760,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

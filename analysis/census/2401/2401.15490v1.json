@@ -1,7 +1,7 @@
 {
  "paper": "2401.15490",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.32",
  "main": [
   "main.tex"
  ],
@@ -73,7 +73,7 @@
   {
    "env": "conclusion",
    "title": "Conclusion",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
@@ -210,22 +210,32 @@
   {
    "env": "summary",
    "title": "Summary",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
    "from": "paper",
    "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
   }
  ],
  "occurrences": {
   "env": 18,
-  "label": 18,
+  "label": 43,
+  "proof": 10,
   "textref": 48
  },
  "matched": {
   "env": 18,
-  "label": 18
+  "label": 43,
+  "proof": 10
  },
  "gaps": [],
  "waivers": [],
@@ -245,12 +255,14 @@
  "render": {
   "theorems": 18,
   "proofs": 0,
-  "agree": true
+  "agree": false,
+  "source_theorems": 18,
+  "source_proofs": 10
  },
  "outside": {
   "theoremgraph": 13
  },
- "strength": "strong",
+ "strength": "normal",
  "items": [
   {
    "id": "2401.15490v1#env-1",
@@ -333,6 +345,20 @@
    "result": "matched"
   },
   {
+   "id": "2401.15490v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 195
+   },
+   "last": 202,
+   "result": "matched"
+  },
+  {
    "id": "2401.15490v1#env-5",
    "type": "env",
    "k": 5,
@@ -350,6 +376,25 @@
     "line": 206
    },
    "last": 208,
+   "result": "matched"
+  },
+  {
+   "id": "2401.15490v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "myequation23",
+    "myequation24",
+    "myequation25"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 209
+   },
+   "last": 272,
    "result": "matched"
   },
   {
@@ -393,6 +438,23 @@
    "result": "matched"
   },
   {
+   "id": "2401.15490v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "myequation1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 287
+   },
+   "last": 325,
+   "result": "matched"
+  },
+  {
    "id": "2401.15490v1#env-8",
    "type": "env",
    "k": 8,
@@ -410,6 +472,20 @@
     "line": 337
    },
    "last": 339,
+   "result": "matched"
+  },
+  {
+   "id": "2401.15490v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 340
+   },
+   "last": 342,
    "result": "matched"
   },
   {
@@ -453,6 +529,23 @@
    "result": "matched"
   },
   {
+   "id": "2401.15490v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "myequation2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 355
+   },
+   "last": 428,
+   "result": "matched"
+  },
+  {
    "id": "2401.15490v1#env-11",
    "type": "env",
    "k": 11,
@@ -470,6 +563,20 @@
     "line": 437
    },
    "last": 439,
+   "result": "matched"
+  },
+  {
+   "id": "2401.15490v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 440
+   },
+   "last": 451,
    "result": "matched"
   },
   {
@@ -493,6 +600,24 @@
    "result": "matched"
   },
   {
+   "id": "2401.15490v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "myequation3",
+    "myequation4"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 466
+   },
+   "last": 486,
+   "result": "matched"
+  },
+  {
    "id": "2401.15490v1#env-13",
    "type": "env",
    "k": 13,
@@ -510,6 +635,39 @@
     "line": 498
    },
    "last": 500,
+   "result": "matched"
+  },
+  {
+   "id": "2401.15490v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "myequation5",
+    "myequation6",
+    "myequation7",
+    "myequation8",
+    "myequation9",
+    "myequation10",
+    "myequation11",
+    "myequation12",
+    "myequation13",
+    "myequation14",
+    "myequation15",
+    "myequation16",
+    "myequation17",
+    "myequation18",
+    "myequation19",
+    "myequation20",
+    "myequation21"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 501
+   },
+   "last": 596,
    "result": "matched"
   },
   {
@@ -573,6 +731,20 @@
    "result": "matched"
   },
   {
+   "id": "2401.15490v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 615
+   },
+   "last": 674,
+   "result": "matched"
+  },
+  {
    "id": "2401.15490v1#env-17",
    "type": "env",
    "k": 17,
@@ -610,6 +782,23 @@
     "line": 695
    },
    "last": 697,
+   "result": "matched"
+  },
+  {
+   "id": "2401.15490v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "myequation22"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 698
+   },
+   "last": 789,
    "result": "matched"
   }
  ]
