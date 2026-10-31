@@ -1,6 +1,6 @@
 # The graph of the analysis plane
 
-3,429 versions have edges, and the edges total 249,158. 84.7% of the statements have an incoming uses or proves edge, and 33.8% of the proofs use nothing. 236 versions have a cycle in the in-paper uses graph.
+3,429 versions have edges, and the edges total 249,160. 84.7% of the statements have an incoming uses or proves edge, and 33.8% of the proofs use nothing. 236 versions have a cycle in the in-paper uses graph.
 Counted on 31 October 2026 from analysis/edges and analysis/objects. These are the checks of AX6.7.
 
 ## The methods
@@ -13,13 +13,13 @@ Counted on 31 October 2026 from analysis/edges and analysis/objects. These are t
 | cite | 40,306 | 16.2% |
 | position | 652 | 0.3% |
 | term | 28,441 | 11.4% |
-| attach | 52,022 | 20.9% |
+| attach | 52,024 | 20.9% |
 
 ## The confidences
 
 | Confidence | Edges | Share |
 | --- | ---: | ---: |
-| certain | 174,995 | 70.2% |
+| certain | 174,997 | 70.2% |
 | high | 25,421 | 10.2% |
 | medium | 48,742 | 19.6% |
 | low | 0 | 0.0% |
@@ -29,7 +29,7 @@ Counted on 31 October 2026 from analysis/edges and analysis/objects. These are t
 | Predicate | Edges | Share |
 | --- | ---: | ---: |
 | uses | 127,437 | 51.1% |
-| proves | 51,599 | 20.7% |
+| proves | 51,601 | 20.7% |
 | refers-to | 37,565 | 15.1% |
 | restates | 423 | 0.2% |
 | cites-result | 21,020 | 8.4% |
@@ -72,7 +72,7 @@ Counted on 31 October 2026 from analysis/edges and analysis/objects. These are t
 | econ.EM | 2 | 234 | 93.5% | 61.8% | 0 | 52.1% | 0.0% | 23.9% | 0.0% | 83.3% |
 | econ.TH | 1 | 21 | 73.3% | 44.4% | 0 | 33.3% | 0.0% | 9.5% | 14.3% | 85.7% |
 | eess.SP | 4 | 68 | 75.0% | 65.4% | 0 | 58.8% | 4.4% | 13.2% | 0.0% | 91.2% |
-| eess.SY | 27 | 1,355 | 80.0% | 22.1% | 0 | 32.9% | 0.1% | 11.7% | 43.2% | 48.2% |
+| eess.SY | 27 | 1,357 | 81.0% | 23.1% | 0 | 32.9% | 0.1% | 11.6% | 43.1% | 48.3% |
 | gr-qc | 3 | 165 | 79.2% | 18.2% | 0 | 63.6% | 0.0% | 17.6% | 0.0% | 83.6% |
 | hep-lat | 1 | 2 | 100.0% | 100.0% | 0 | 0.0% | 0.0% | 0.0% | 0.0% | 100.0% |
 | hep-th | 25 | 1,140 | 78.4% | 38.3% | 0 | 52.9% | 0.0% | 20.2% | 11.7% | 78.5% |
@@ -278,7 +278,7 @@ Counted on 31 October 2026 from analysis/edges and analysis/objects. These are t
 | 2023-10 | 11 | 767 | 80.2% | 32.0% | 0 | 35.6% | 0.8% | 35.9% | 7.6% | 75.2% |
 | 2023-11 | 8 | 317 | 47.9% | 36.8% | 0 | 42.0% | 0.0% | 29.3% | 9.8% | 63.1% |
 | 2023-12 | 7 | 599 | 80.0% | 43.6% | 1 | 40.1% | 0.0% | 12.7% | 30.1% | 61.9% |
-| 2024-01 | 12 | 667 | 72.4% | 34.7% | 0 | 32.4% | 0.7% | 13.5% | 40.5% | 53.2% |
+| 2024-01 | 12 | 669 | 73.8% | 36.1% | 0 | 32.3% | 0.7% | 13.5% | 40.4% | 53.4% |
 | 2024-02 | 6 | 185 | 86.2% | 41.2% | 0 | 54.1% | 0.0% | 13.5% | 3.2% | 87.6% |
 | 2024-03 | 9 | 589 | 71.6% | 38.5% | 1 | 48.2% | 0.0% | 25.6% | 9.0% | 83.0% |
 | 2024-04 | 10 | 576 | 81.1% | 26.1% | 1 | 57.1% | 2.4% | 17.0% | 1.9% | 89.4% |
