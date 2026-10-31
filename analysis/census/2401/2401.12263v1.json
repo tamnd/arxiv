@@ -1,7 +1,7 @@
 {
  "paper": "2401.12263",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.32",
  "main": [
   "ResubmissionV01.tex"
  ],
@@ -100,16 +100,26 @@
    "numbered": true,
    "from": "paper",
    "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
   }
  ],
  "occurrences": {
   "env": 4,
   "label": 5,
+  "proof": 2,
   "textref": 4
  },
  "matched": {
   "env": 4,
-  "label": 5
+  "label": 5,
+  "proof": 2
  },
  "gaps": [],
  "waivers": [],
@@ -129,7 +139,9 @@
  "render": {
   "theorems": 4,
   "proofs": 0,
-  "agree": true
+  "agree": false,
+  "source_theorems": 4,
+  "source_proofs": 2
  },
  "outside": {
   "theoremgraph": 3,
@@ -142,7 +154,7 @@
    "message": "the text names example A and the census has no such item (no-item)"
   }
  ],
- "strength": "strong",
+ "strength": "normal",
  "items": [
   {
    "id": "2401.12263v1#env-1",
@@ -186,6 +198,20 @@
    "result": "matched"
   },
   {
+   "id": "2401.12263v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "ResubmissionV01.tex",
+    "line": 231
+   },
+   "last": 253,
+   "result": "matched"
+  },
+  {
    "id": "2401.12263v1#env-3",
    "type": "env",
    "k": 3,
@@ -223,6 +249,20 @@
     "line": 424
    },
    "last": 429,
+   "result": "matched"
+  },
+  {
+   "id": "2401.12263v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "ResubmissionV01.tex",
+    "line": 430
+   },
+   "last": 440,
    "result": "matched"
   }
  ]

@@ -1,6 +1,6 @@
 # The census of the analysis plane
 
-3,730 versions have a census record, and 46 are stopped. 0.0% of the papers with a census have a gap, and 100.0% are strong or normal.
+3,730 versions have a census record, and 47 are stopped. 0.0% of the papers with a census have a gap, and 100.0% are strong or normal.
 Counted on 31 October 2026 from analysis/census, analysis/objects and analysis/stopped.
 
 ## The open papers in scope
@@ -10,8 +10,8 @@ AX-M3 is done when each open and share-alike paper in scope has the state extrac
 | State | Papers | Share |
 | --- | ---: | ---: |
 | extracted | 3,728 | 2.6% |
-| stopped | 31 | 0.0% |
-| not yet | 137,958 | 97.3% |
+| stopped | 32 | 0.0% |
+| not yet | 137,957 | 97.3% |
 | all | 141,717 | 100.0% |
 
 ## The verbatim and record papers in scope
@@ -124,7 +124,7 @@ Each paper in scope of each MSC code at two digits, of each licence class. The r
 | math.HO | 3,473 | 12 | 2 | 3,459 | 0 |
 | math.KT | 2,721 | 4 | 0 | 2,717 | 0 |
 | math.LO | 11,582 | 68 | 1 | 11,513 | 0 |
-| math.MG | 7,223 | 55 | 0 | 7,168 | 0 |
+| math.MG | 7,223 | 55 | 1 | 7,167 | 0 |
 | math.NA | 38,323 | 164 | 1 | 38,158 | 0 |
 | math.NT | 39,442 | 242 | 4 | 39,196 | 0 |
 | math.OA | 9,170 | 56 | 0 | 9,114 | 0 |
@@ -209,16 +209,16 @@ These are the measures of AX11.4. A new extractor version may not raise any of t
 | ax/v0.5.28 | 548 | 0.0% | 0.0% | 6.8% | 3.8% | 24.8% | 21.0% | 6.0% | 0.3% |
 | ax/v0.5.29 | 1,017 | 0.0% | 0.0% | 6.2% | 2.7% | 25.7% | 19.3% | 6.0% | 1.0% |
 | ax/v0.5.31 | 224 | 0.0% | 0.0% | 0.9% | 0.0% | 23.2% | 21.3% | 6.0% | 0.0% |
-| ax/v0.5.32 | 1,178 | 0.0% | 0.0% | 1.4% | 0.3% | 24.4% | 20.0% | 5.6% | 0.7% |
-| ax/v0.5.8 | 164 | 0.0% | 0.0% | 0.0% | 0.0% | 19.5% | 28.6% | 5.2% | 0.3% |
-| ax/v0.5.9 | 20 | 0.0% | 0.0% | 5.0% | 0.0% | 10.0% | 36.2% | 0.0% | 0.4% |
+| ax/v0.5.32 | 1,203 | 0.0% | 0.0% | 1.4% | 0.4% | 24.3% | 20.2% | 5.6% | 0.7% |
+| ax/v0.5.8 | 142 | 0.0% | 0.0% | 0.0% | 0.0% | 19.0% | 28.2% | 5.2% | 0.1% |
+| ax/v0.5.9 | 17 | 0.0% | 0.0% | 5.9% | 0.0% | 11.8% | 35.0% | 0.0% | 0.4% |
 
 ## The strength
 
 | Strength | Papers | Share |
 | --- | ---: | ---: |
-| strong | 1,946 | 52.2% |
-| normal | 1,784 | 47.8% |
+| strong | 1,945 | 52.1% |
+| normal | 1,785 | 47.9% |
 | weak | 0 | 0.0% |
 | none | 0 | 0.0% |
 
@@ -230,7 +230,7 @@ These are the measures of AX11.4. A new extractor version may not raise any of t
 | withdrawn | 2 |
 | not-math | 0 |
 | licence | 4 |
-| failed | 4 |
+| failed | 5 |
 
 ## The outside witnesses
 
@@ -280,7 +280,7 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | --- | ---: | ---: | ---: |
 | census | 3,730 | 61.9 MB | 2.29 GB |
 | objects | 3,510 | 346.7 MB | 12.86 GB |
-| stopped | 46 | 10 KB | - |
+| stopped | 47 | 11 KB | - |
 | witness | 669 | 242.8 MB | - |
 
 ## By month
@@ -443,7 +443,7 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | 2023-10 | 12 | 431 | 0 | 0 | 0 | 0 | 2 | 100.0% |
 | 2023-11 | 12 | 313 | 0 | 0 | 1 | 0 | 2 | 100.0% |
 | 2023-12 | 9 | 353 | 0 | 0 | 1 | 0 | 1 | 100.0% |
-| 2024-01 | 13 | 375 | 0 | 0 | 1 | 0 | 4 | 100.0% |
+| 2024-01 | 13 | 377 | 0 | 0 | 1 | 1 | 4 | 100.0% |
 | 2024-02 | 7 | 161 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | 2024-03 | 10 | 378 | 0 | 0 | 0 | 0 | 2 | 100.0% |
 | 2024-04 | 11 | 400 | 0 | 0 | 3 | 0 | 4 | 100.0% |
@@ -517,7 +517,7 @@ This is the measure of AQ10. The estimate for the open papers in scope scales th
 | econ.GN | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | econ.TH | 1 | 26 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | eess.SP | 6 | 65 | 0 | 0 | 0 | 0 | 0 | 100.0% |
-| eess.SY | 32 | 583 | 0 | 0 | 3 | 0 | 4 | 100.0% |
+| eess.SY | 32 | 585 | 0 | 0 | 3 | 1 | 4 | 100.0% |
 | gr-qc | 7 | 86 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | hep-lat | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 100.0% |
 | hep-th | 57 | 697 | 0 | 0 | 0 | 1 | 3 | 100.0% |

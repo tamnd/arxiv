@@ -1,26 +1,26 @@
 # The audit
 
-408109 records over 3510 papers of the analysis plane, 10169 findings.
+408114 records over 3510 papers of the analysis plane, 10165 findings.
 
 | Group | Rules | Pass | Fail | Not run | N/A | Findings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Analysis | 12 | 7 | 5 | 0 | 0 | 10169 |
+| Analysis | 12 | 7 | 5 | 0 | 0 | 10165 |
 
 ## The rules
 
 | ID | State | Checked | Skipped | Findings | Rule |
 | --- | --- | ---: | ---: | ---: | --- |
-| D01 | pass | 46 | 0 | 0 | each paper in scope (AX1.2) has a paper state: a stage of the ladder of 2166-04, or a reason why it stops |
+| D01 | pass | 47 | 0 | 0 | each paper in scope (AX1.2) has a paper state: a stage of the ladder of 2166-04, or a reason why it stops |
 | D02 | pass | 7232 | 0 | 0 | each extracted version has a census record, and the census record names the extractor version |
 | D03 | pass | 3730 | 0 | 0 | each counted occurrence of a theorem-like environment, proof or manual head in the census has an object record, or a waiver with a reason |
 | D04 | pass | 68960 | 0 | 0 | each statement object has a proof_status, and a proof_status of here has a proves edge from a proof object |
-| D06 | pass | 155175 | 0 | 0 | no object record from a version of class record holds text of the paper, in any field |
+| D06 | pass | 155177 | 0 | 0 | no object record from a version of class record holds text of the paper, in any field |
 | D07 | fail | 3730 | 0 | 3270 | a counter whose numbers have a gap that the census does not explain |
-| D08 | fail | 3730 | 0 | 63 | a paper whose source and render counts differ by more than the threshold of AX4.5 |
+| D08 | fail | 3730 | 0 | 64 | a paper whose source and render counts differ by more than the threshold of AX4.5 |
 | D09 | fail | 3730 | 0 | 4849 | an in-paper reference to a theorem-like number or label that resolves to no object |
-| D10 | pass | 249158 | 0 | 0 | each edge has a method and a confidence from the closed lists of AX6.1, and no edge whose method is model has the confidence certain or high |
-| D13 | pass | 155175 | 0 | 0 | each object record names its path, its extractor version and its confidence |
-| D15 | fail | 3730 | 0 | 1751 | an environment name or title that manifests/environments.yaml does not map |
+| D10 | pass | 249160 | 0 | 0 | each edge has a method and a confidence from the closed lists of AX6.1, and no edge whose method is model has the confidence certain or high |
+| D13 | pass | 155177 | 0 | 0 | each object record names its path, its extractor version and its confidence |
+| D15 | fail | 3730 | 0 | 1746 | an environment name or title that manifests/environments.yaml does not map |
 | D19 | fail | 3429 | 0 | 236 | a cycle in the in-paper uses graph (AX6.3) |
 
 ## The findings
@@ -89,6 +89,7 @@ And 3220 more findings, not listed.
 A paper whose source and render counts differ by more than the threshold of AX4.5.
 
 ```
+analysis/census/2401/2401.12263v1.json: 2401.12263v1: the render has 4 theorems and 0 proofs, and the source has 4 and 2
 analysis/census/2407/2407.06927v2.json: 2407.06927v2: the source has 11 theorem environments and the render has 13
 analysis/census/2411/2411.16022v1.json: 2411.16022v1: the source has 52 theorem environments and the render has 49
 analysis/census/2506/2506.21337v2.json: 2506.21337v2: the source has 39 theorem environments and the render has 33
@@ -138,10 +139,9 @@ analysis/census/2610/2610.16561v1.json: 2610.16561v1: the render has 17 theorems
 analysis/census/2610/2610.17317v1.json: 2610.17317v1: the source has 0 theorem environments and the render has 17
 analysis/census/2610/2610.17897v1.json: 2610.17897v1: the render has 15 theorems and 10 proofs, and the source has 15 and 0
 analysis/census/2610/2610.18312v2.json: 2610.18312v2: the render has 23 theorems and 0 proofs, and the source has 23 and 15
-analysis/census/2610/2610.18739v1.json: 2610.18739v1: the render has 18 theorems and 13 proofs, and the source has 18 and 2
 ```
 
-And 13 more findings, not listed.
+And 14 more findings, not listed.
 
 ### D09
 
@@ -259,7 +259,7 @@ analysis/census/1806/1806.05002v2.json: 1806.05002v2: occurrence 1806.05002v2#en
 analysis/census/1806/1806.05002v2.json: 1806.05002v2: occurrence 1806.05002v2#env-37 of bl with the title "Bergelson--Leibman" has no item kind
 ```
 
-And 1701 more findings, not listed.
+And 1696 more findings, not listed.
 
 ### D19
 
