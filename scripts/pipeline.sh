@@ -1,7 +1,8 @@
 #!/bin/sh
 # Run the arXiv pipeline on a build server: fetch and extract the next papers with ax, open a pull request on tamnd/arxiv and merge it, then import the mentions into tamnd/math2 with m2 and do the same there.
 #
-# Run it from cron, for example each 10 minutes, so that a run starts soon after the last one ends: */10 * * * * $HOME/arxiv-pipeline/pipeline.sh >> $HOME/arxiv-pipeline/pipeline.log 2>&1; cp $HOME/arxiv-pipeline/arxiv/scripts/pipeline.sh $HOME/arxiv-pipeline/ 2>/dev/null
+# Run it from cron, for example each 10 minutes, so that a run starts soon after the last one ends: */10 * * * * $HOME/arxiv-pipeline/pipeline.sh >> $HOME/arxiv-pipeline/pipeline.log 2>&1; install -m 755 $HOME/arxiv-pipeline/arxiv/scripts/pipeline.sh $HOME/arxiv-pipeline/pipeline.sh.new 2>/dev/null && mv $HOME/arxiv-pipeline/pipeline.sh.new $HOME/arxiv-pipeline/pipeline.sh
+# The copy goes to a new file and a rename, because sh reads a script while it runs it: a cp over the script of a run makes that run read the new text at the old offset and fail, as at line 348 on 2026-11-01.
 #
 # The server needs git, Go, gh and flock, and an SSH key that can push to both repositories. The file $AX_PIPELINE/github.env must set GH_TOKEN for gh. Keep it at mode 600.
 #
