@@ -1,0 +1,1848 @@
+{
+ "paper": "2609.24917",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "zonotopal-magic.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "geometry",
+  "amsmath",
+  "amsxtra",
+  "amsthm",
+  "amsfonts",
+  "amssymb",
+  "mathtools",
+  "mathrsfs",
+  "graphicx",
+  "float",
+  "url",
+  "xcolor",
+  "bbm",
+  "bm",
+  "tikz-cd",
+  "tikz",
+  "mathalfa",
+  "comment",
+  "enumitem",
+  "relsize",
+  "stmaryrd",
+  "xy",
+  "fontenc",
+  "ytableau",
+  "hyperref",
+  "cleveref",
+  "microtype",
+  "multirow",
+  "booktabs",
+  "array"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: zonotopal-magic.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 2 decided, 0 flag tests decided, 0 kept",
+  "macros: 183 commands, 0 environments",
+  "tree: 169 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "maintheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "deflemma",
+   "title": "Definition/Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "nonexample",
+   "title": "Non-example",
+   "item": "example/nonexample",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conditions",
+   "title": "Conditions",
+   "item": "context/hypothesis",
+   "counter": "conditions",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "convention",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "warning",
+   "title": "Warning",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "idea",
+   "title": "Idea",
+   "item": "unknown",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 62,
+  "label": 61,
+  "proof": 22,
+  "textref": 1
+ },
+ "matched": {
+  "env": 62,
+  "label": 61,
+  "proof": 22
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 62,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 0,
+  "unresolved": 1
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.24917v1#textref-1",
+   "message": "the text names Problem 14 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.24917v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:main"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 482
+   },
+   "last": 487,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:main-EC-independence"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 497
+   },
+   "last": 502,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.3",
+   "number_from": "counter",
+   "labels": [
+    "thm:main-m0n"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 537
+   },
+   "last": 544,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.4",
+   "number_from": "counter",
+   "labels": [
+    "thm:main-psi"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 550
+   },
+   "last": 559,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "1.5",
+   "number_from": "counter",
+   "labels": [
+    "def:classes"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 573
+   },
+   "last": 578,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 580
+   },
+   "last": 587,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "def:matroid-independent-sets"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 611
+   },
+   "last": 619,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:edmonds"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 640
+   },
+   "last": 649,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:dilworth-matroid"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 653
+   },
+   "last": 661,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "def:dilworth",
+    "eq:dilworth"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 663
+   },
+   "last": 675,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "ex:dilworth-boolean"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 683
+   },
+   "last": 696,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.6",
+   "number_from": "counter",
+   "labels": [
+    "thm:vd-shellability"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 716
+   },
+   "last": 718,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:weighted-h"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 767
+   },
+   "last": 774,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 776
+   },
+   "last": 786,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.8",
+   "number_from": "counter",
+   "labels": [
+    "lem:support-general"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 863
+   },
+   "last": 869,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 871
+   },
+   "last": 890,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "2.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 898
+   },
+   "last": 910,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2.10",
+   "number_from": "counter",
+   "labels": [
+    "thm:bes-intersection"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 929
+   },
+   "last": 940,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2.11",
+   "number_from": "counter",
+   "labels": [
+    "thm:dhr",
+    "eq:dhr"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 953
+   },
+   "last": 961,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "2.12",
+   "number_from": "counter",
+   "labels": [
+    "lem:magic-transform"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 975
+   },
+   "last": 987,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 989
+   },
+   "last": 996,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "2.13",
+   "number_from": "counter",
+   "labels": [
+    "cor:magic-f-to-h"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1000
+   },
+   "last": 1005,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "2.14",
+   "number_from": "counter",
+   "labels": [
+    "prop:halfopen"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1024
+   },
+   "last": 1029,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2.15",
+   "number_from": "counter",
+   "labels": [
+    "thm:magic-rr"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1042
+   },
+   "last": 1045,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "ex:permutohedron"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1084
+   },
+   "last": 1101,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "def:zonotopal-class"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1177
+   },
+   "last": 1179,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:zonotope-is-zonotopal"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1197
+   },
+   "last": 1199,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:wF"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1201
+   },
+   "last": 1215,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "ex:zonotopal-pair"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1217
+   },
+   "last": 1224,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "3.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1226
+   },
+   "last": 1241,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "thm:ec-zonotopal"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1249
+   },
+   "last": 1255,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1257
+   },
+   "last": 1278,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "thm:magic-zonotopal"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1282
+   },
+   "last": 1286,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1288
+   },
+   "last": 1309,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "cor:magic-extremes"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1311
+   },
+   "last": 1328,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1330
+   },
+   "last": 1341,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "ex:small"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1345
+   },
+   "last": 1373,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.10",
+   "number_from": "counter",
+   "labels": [
+    "ex:path"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1375
+   },
+   "last": 1392,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.11",
+   "number_from": "counter",
+   "labels": [
+    "ex:parallelohedra",
+    "tab:parallelohedra"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1402
+   },
+   "last": 1468,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "3.12",
+   "number_from": "counter",
+   "labels": [
+    "ex:specializations"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1470
+   },
+   "last": 1486,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "3.13",
+   "number_from": "counter",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1488
+   },
+   "last": 1503,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:pullback"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1553
+   },
+   "last": 1563,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1565
+   },
+   "last": 1608,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "cor:embedding"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1631
+   },
+   "last": 1636,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1638
+   },
+   "last": 1654,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "thm:li",
+    "eq:hilb"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1685
+   },
+   "last": 1697,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1700
+   },
+   "last": 1730,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "rem:degeneration"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1736
+   },
+   "last": 1745,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "4.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1747
+   },
+   "last": 1751,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "def:m0n-zonotopal"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1801
+   },
+   "last": 1807,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:LLPP-cerberus",
+    "eq:cerberus"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1856
+   },
+   "last": 1862,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:compute-EC-as-pullback"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1864
+   },
+   "last": 1883,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1885
+   },
+   "last": 1897,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "thm:m0n-triples"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1899
+   },
+   "last": 1907,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1909
+   },
+   "last": 1911,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "5.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1913
+   },
+   "last": 1916,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "5.6",
+   "number_from": "counter",
+   "labels": [
+    "ex:m0n-small"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1919
+   },
+   "last": 1950,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.7",
+   "number_from": "counter",
+   "labels": [
+    "prop:m0n-single"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1953
+   },
+   "last": 1962,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1965
+   },
+   "last": 1978,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "5.8",
+   "number_from": "counter",
+   "labels": [
+    "rem:building-sets"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1980
+   },
+   "last": 1984,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "5.9",
+   "number_from": "counter",
+   "labels": [
+    "thm:psi-two"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 1995
+   },
+   "last": 2004,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:llpp-psi"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2006
+   },
+   "last": 2030,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2032
+   },
+   "last": 2037,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2039
+   },
+   "last": 2060,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:polymatroid"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2072
+   },
+   "last": 2074,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2076
+   },
+   "last": 2081,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:single-flat"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2091
+   },
+   "last": 2100,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2102
+   },
+   "last": 2112,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "6.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2114
+   },
+   "last": 2126,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "6.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:lex-shelling"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2140
+   },
+   "last": 2152,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2154
+   },
+   "last": 2167,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "6.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:box-factors"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2175
+   },
+   "last": 2181,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "6.6",
+   "number_from": "counter",
+   "labels": [
+    "thm:sufficient",
+    "eq:box-formula"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2184
+   },
+   "last": 2192,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2194
+   },
+   "last": 2210,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "6.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:forced"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2217
+   },
+   "last": 2222,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2224
+   },
+   "last": 2226,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "6.8",
+   "number_from": "counter",
+   "labels": [
+    "thm:necessary"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2228
+   },
+   "last": 2231,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2233
+   },
+   "last": 2239,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "6.9",
+   "number_from": "counter",
+   "labels": [
+    "cor:box"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2241
+   },
+   "last": 2256,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "number": "6.10",
+   "number_from": "counter",
+   "labels": [
+    "ex:strict-implications"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2264
+   },
+   "last": 2277,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "6.11",
+   "number_from": "counter",
+   "labels": [
+    "cor:ygp"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2284
+   },
+   "last": 2288,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "6.12",
+   "number_from": "counter",
+   "labels": [
+    "thm:m0n-sufficient"
+   ],
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2294
+   },
+   "last": 2297,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2299
+   },
+   "last": 2301,
+   "result": "matched"
+  },
+  {
+   "id": "2609.24917v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "6.13",
+   "number_from": "counter",
+   "pos": {
+    "file": "zonotopal-magic.tex",
+    "line": 2303
+   },
+   "last": 2307,
+   "result": "matched"
+  }
+ ]
+}
