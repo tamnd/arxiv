@@ -1,0 +1,743 @@
+{
+ "paper": "2609.25345",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "order_n_expansion_model_risk.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "babel",
+  "ulem",
+  "inputenc",
+  "fontenc",
+  "fancybox",
+  "alltt",
+  "graphicx",
+  "float",
+  "bm",
+  "lmodern",
+  "geometry",
+  "appendix",
+  "bigints",
+  "pgf",
+  "tikz",
+  "pgfplots",
+  "mathrsfs",
+  "dsfont",
+  "amsmath",
+  "amssymb",
+  "mathtools",
+  "algorithm2e",
+  "physics",
+  "amsthm",
+  "empheq",
+  "tcolorbox",
+  "stmaryrd",
+  "enumitem",
+  "hyperref",
+  "wrapfig",
+  "epsf",
+  "biblatex"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: order_n_expansion_model_risk.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 152 commands, 0 environments",
+  "aliases: 2 uses of commands that stand for \\begin or \\end",
+  "tree: 134 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "Theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Theorem",
+   "shared": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Theorem",
+   "shared": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "Theorem",
+   "shared": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Theorem",
+   "shared": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Theorem",
+   "shared": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Theorem",
+   "shared": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Example",
+   "title": "Example",
+   "item": "example",
+   "counter": "Theorem",
+   "shared": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "Theorem",
+   "shared": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Proof",
+   "title": "Proof",
+   "item": "proof",
+   "counter": "Proof",
+   "numbered": true,
+   "proof": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Introduction",
+   "title": "Introduction",
+   "item": "unknown",
+   "counter": "Introduction",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "AssumptionA1",
+   "title": "Assumption $\\textbf{\\rm A}_{\\mathbb{W}_p}$",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "AssumptionA2",
+   "title": "Assumption $\\textbf{\\rm A}_{\\mathbb{W}^{\\rm ad}_p}$",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "AssumptionB1",
+   "title": "Assumption $\\textbf{\\rm B}_{\\mathbb{W}_p}$",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "AssumptionB2",
+   "title": "Assumption $\\textbf{\\rm B}_{\\mathbb{W}^{\\rm ad}_p}$",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "AssumptionC",
+   "title": "Assumption $\\textbf{\\rm C}_{\\mathbb{W}^{\\rm ad}_p}$",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "AssumptionD",
+   "title": "Assumption $\\textbf{\\rm D}_{\\mathbf{d}} $",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "AssumptionC1",
+   "title": "Assumption ${\\rm C}_{ \\mathbb{W}_p} $",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "AssumptionC2",
+   "title": "Assumption ${\\rm C}_{ \\mathbb{W}^{\\rm ad}_p}$",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "AssumptionD1",
+   "title": "Assumption ${\\rm D}_{ {\\rm M} }$",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 23,
+  "label": 32,
+  "proof": 2,
+  "textref": 26
+ },
+ "matched": {
+  "env": 23,
+  "label": 32,
+  "proof": 2
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 17,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 26,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.25345v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "Definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 373
+   },
+   "last": 386,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "Definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Theorem",
+   "number": "2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 411
+   },
+   "last": 421,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "Proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Theorem",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:Taylor expansion measure order n"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 440
+   },
+   "last": 462,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "Proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Theorem",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:symm k-th lin deriv"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 466
+   },
+   "last": 477,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "Definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "Theorem",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "def:gradient_frechet"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 482
+   },
+   "last": 484,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "AssumptionA1",
+   "title": "Assumption $\\textbf{\\rm A}_{\\mathbb{W}_p}$",
+   "item": "context/hypothesis",
+   "labels": [
+    "ass:reformulation 1 wasserstein"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 569
+   },
+   "last": 571,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "AssumptionA2",
+   "title": "Assumption $\\textbf{\\rm A}_{\\mathbb{W}^{\\rm ad}_p}$",
+   "item": "context/hypothesis",
+   "labels": [
+    "ass:reformulation 1 adapted wasserstein"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 573
+   },
+   "last": 575,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "AssumptionB1",
+   "title": "Assumption $\\textbf{\\rm B}_{\\mathbb{W}_p}$",
+   "item": "context/hypothesis",
+   "labels": [
+    "ass:reformulation 2 gen dist",
+    "cond:regularity on g dist",
+    "cond:estimate diff gen dist"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 578
+   },
+   "last": 585,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "AssumptionC1",
+   "title": "Assumption ${\\rm C}_{ \\mathbb{W}_p} $",
+   "item": "context/hypothesis",
+   "labels": [
+    "ass:exist approx saddle point wasserstein",
+    "cond:convexity wasserstein",
+    "cond:div by gradient wasserstein"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 587
+   },
+   "last": 601,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "AssumptionC2",
+   "title": "Assumption ${\\rm C}_{ \\mathbb{W}^{\\rm ad}_p}$",
+   "item": "context/hypothesis",
+   "labels": [
+    "ass:exist approx saddle point adapted wasserstein",
+    "cond:convexity adapted wasserstein",
+    "cond:div by gradient adapted wasserstein"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 603
+   },
+   "last": 615,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "Remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 617
+   },
+   "last": 631,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "Proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:approx 1",
+    "eq:first reform gen dist",
+    "eq:formulation 2 gen dist"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 676
+   },
+   "last": 692,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "Proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:expansion order n",
+    "eq:FOC gen dist T and lambd"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 694
+   },
+   "last": 721,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "Proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Theorem",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:order 2 expansion gen dist",
+    "eqdef:first order transport"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 728
+   },
+   "last": 742,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "Remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Theorem",
+   "number": "3.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 744
+   },
+   "last": 748,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "Remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Theorem",
+   "number": "3.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 750
+   },
+   "last": 754,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "AssumptionD1",
+   "title": "Assumption ${\\rm D}_{ {\\rm M} }$",
+   "item": "context/hypothesis",
+   "labels": [
+    "ass: existence approx sad-point Mart adapted",
+    "cond:saddle point mart adapt",
+    "cond: concavity martingale"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 787
+   },
+   "last": 822,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "Proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Theorem",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "prop:mart expansion"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 824
+   },
+   "last": 834,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "Proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "Theorem",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "prop:mart expansion order 2"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 838
+   },
+   "last": 868,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "Remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Theorem",
+   "number": "3.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 870
+   },
+   "last": 879,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "lemma: cont thm Lp"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 984
+   },
+   "last": 991,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 992
+   },
+   "last": 1005,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2609.25345v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "Corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "Theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "corr:cont map thm measure"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 1008
+   },
+   "last": 1017,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Theorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "Lemma: expansion wrt graph",
+    "eq:repres int graphe",
+    "eq:diff at 0 int graph",
+    "eq:estim at 0 int graph"
+   ],
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 1019
+   },
+   "last": 1082,
+   "result": "matched"
+  },
+  {
+   "id": "2609.25345v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "order_n_expansion_model_risk.tex",
+    "line": 1424
+   },
+   "last": 1698,
+   "result": "matched",
+   "confidence": "high"
+  }
+ ]
+}
