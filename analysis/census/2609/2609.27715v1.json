@@ -1,0 +1,1298 @@
+{
+ "paper": "2609.27715",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "cossaboomzde.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amssymb",
+  "amsfonts",
+  "mathtools",
+  "xy",
+  "enumerate",
+  "mathrsfs",
+  "amsmath",
+  "amsthm",
+  "tikz",
+  "tikz-cd",
+  "inputenc",
+  "lipsum",
+  "extpfeil",
+  "colonequals",
+  "graphicx",
+  "subfig",
+  "enumitem",
+  "array",
+  "xcolor",
+  "bm",
+  "bbm",
+  "float",
+  "geometry",
+  "comment"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: cossaboomzde.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 34 commands, 0 environments",
+  "tree: 141 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj*",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "quest",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proper",
+   "title": "Property",
+   "item": "statement/fact",
+   "counter": "proper",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ax",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "ax",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "sta",
+   "title": "Statement",
+   "item": "statement/claim",
+   "counter": "sta",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "fact",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defns",
+   "title": "Definitions",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exmp",
+   "title": "Example",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exmps",
+   "title": "Examples",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "alg",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "alg",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "con",
+   "title": "Construction",
+   "item": "definition/construction",
+   "counter": "con",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notn",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "notn",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notns",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "notns",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "addm",
+   "title": "Addendum",
+   "item": "statement/scholium",
+   "counter": "addm",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exer",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "exer",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prob",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "prob",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conv",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "conv",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmks",
+   "title": "Remarks",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "warn",
+   "title": "Warning",
+   "item": "remark",
+   "counter": "warn",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "sch",
+   "title": "Scholium",
+   "item": "statement/scholium",
+   "counter": "sch",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "obs",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "ass",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "ass",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "asses",
+   "title": "Assumptions",
+   "item": "context/hypothesis",
+   "counter": "asses",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  }
+ ],
+ "occurrences": {
+  "env": 33,
+  "label": 53,
+  "proof": 15,
+  "textref": 90
+ },
+ "matched": {
+  "env": 33,
+  "label": 53,
+  "proof": 15
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 33,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 33,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 90,
+  "unresolved": 0
+ },
+ "render": {
+  "theorems": 33,
+  "proofs": 15,
+  "agree": true,
+  "source_theorems": 33,
+  "source_proofs": 15
+ },
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2609.27715v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "mainautomorphic"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 143
+   },
+   "last": 145,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "momentGM"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 157
+   },
+   "last": 163,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "shortintervalcoefficients"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 174
+   },
+   "last": 178,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "1.4",
+   "number_from": "render",
+   "labels": [
+    "frobeniustraces"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 180
+   },
+   "last": 186,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "degoneZDE"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 343
+   },
+   "last": 348,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "4.1",
+   "number_from": "render",
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 371
+   },
+   "last": 374,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "4.2",
+   "number_from": "render",
+   "labels": [
+    "main",
+    "alpha"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 378
+   },
+   "last": 387,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.3",
+   "number_from": "render",
+   "labels": [
+    "polygrowth",
+    "halfbound"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 398
+   },
+   "last": 401,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 403
+   },
+   "last": 405,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.4",
+   "number_from": "render",
+   "labels": [
+    "standardzerocount",
+    "localzerocount",
+    "zerocount"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 407
+   },
+   "last": 416,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 418
+   },
+   "last": 420,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.5",
+   "number_from": "render",
+   "labels": [
+    "bn-properties",
+    "bnabsconv"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 429
+   },
+   "last": 433,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 435
+   },
+   "last": 441,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "4.6",
+   "number_from": "render",
+   "labels": [
+    "bn-bound"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 445
+   },
+   "last": 447,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "bnq"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 449
+   },
+   "last": 464,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "5.1",
+   "number_from": "render",
+   "labels": [
+    "n0"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 493
+   },
+   "last": 495,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.2",
+   "number_from": "render",
+   "labels": [
+    "n2"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 499
+   },
+   "last": 501,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.3",
+   "number_from": "render",
+   "labels": [
+    "n1"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 505
+   },
+   "last": 512,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "5.4",
+   "number_from": "render",
+   "labels": [
+    "original",
+    "ingham",
+    "huxley"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 516
+   },
+   "last": 522,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "6.1",
+   "number_from": "render",
+   "labels": [
+    "secondmoment"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 553
+   },
+   "last": 555,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "dyadic-second-moment",
+    "IK-afe",
+    "lower-coefficient-moments",
+    "V-rapid-decay"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 557
+   },
+   "last": 585,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "L1-lower",
+    "L2-lower"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 587
+   },
+   "last": 619,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "6.2",
+   "number_from": "render",
+   "labels": [
+    "Cn-bound"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 634
+   },
+   "last": 636,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 638
+   },
+   "last": 644,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "6.3",
+   "number_from": "render",
+   "labels": [
+    "typeI-tail"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 646
+   },
+   "last": 651,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 653
+   },
+   "last": 663,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "6.4",
+   "number_from": "render",
+   "labels": [
+    "n1intermediate"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 665
+   },
+   "last": 674,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 676
+   },
+   "last": 707,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "prevestimate"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 709
+   },
+   "last": 747,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "7.1",
+   "number_from": "render",
+   "labels": [
+    "momentGM-local"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 754
+   },
+   "last": 761,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 763
+   },
+   "last": 786,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "7.2",
+   "number_from": "render",
+   "labels": [
+    "initial"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 812
+   },
+   "last": 817,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 819
+   },
+   "last": 825,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "7.3",
+   "number_from": "render",
+   "labels": [
+    "keyWestimate"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 844
+   },
+   "last": 846,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "7.4",
+   "number_from": "render",
+   "labels": [
+    "s1"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 853
+   },
+   "last": 855,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "7.5",
+   "number_from": "render",
+   "labels": [
+    "s2"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 861
+   },
+   "last": 863,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "7.6",
+   "number_from": "render",
+   "labels": [
+    "S3"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 887
+   },
+   "last": 889,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "7.7",
+   "number_from": "render",
+   "labels": [
+    "EWprop"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 904
+   },
+   "last": 906,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "smallgcd",
+    "largegcd"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 908
+   },
+   "last": 917,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "7.8",
+   "number_from": "render",
+   "labels": [
+    "s3final"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 921
+   },
+   "last": 923,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "final-assembly",
+    "final-W-bound",
+    "GM-final-shape"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 925
+   },
+   "last": 953,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "7.9",
+   "number_from": "render",
+   "labels": [
+    "longrmk"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 955
+   },
+   "last": 968,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "8.1",
+   "number_from": "render",
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 1024
+   },
+   "last": 1025,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "number": "8.2",
+   "number_from": "render",
+   "labels": [
+    "qinterpolation"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 1027
+   },
+   "last": 1031,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "number": "9.1",
+   "number_from": "render",
+   "labels": [
+    "nearone"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 1041
+   },
+   "last": 1046,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "number": "9.2",
+   "number_from": "render",
+   "labels": [
+    "shortintervalLambda"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 1050
+   },
+   "last": 1054,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "explicit-formula-short"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 1056
+   },
+   "last": 1071,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27715v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "number": "10.1",
+   "number_from": "render",
+   "labels": [
+    "dedekind",
+    "lowdegreefactorization"
+   ],
+   "pos": {
+    "file": "cossaboomzde.tex",
+    "line": 1102
+   },
+   "last": 1111,
+   "result": "matched"
+  }
+ ]
+}
