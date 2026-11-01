@@ -1,0 +1,1269 @@
+{
+ "paper": "2609.27103",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "SB-quantum.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "fontenc",
+  "verbatim",
+  "amsmath",
+  "amsthm",
+  "xspace",
+  "pifont",
+  "amssymb",
+  "dsfont",
+  "makeidx",
+  "mathrsfs",
+  "xcolor",
+  "colortbl",
+  "subcaption",
+  "natbib",
+  "enumitem",
+  "afterpage",
+  "mathtools",
+  "graphics",
+  "adjustbox",
+  "tcolorbox",
+  "authblk",
+  "ulem",
+  "xurl",
+  "hyperref",
+  "centernot",
+  "algorithm",
+  "algpseudocode",
+  "tikz"
+ ],
+ "steps": [
+  "unpack: 3 files",
+  "main: SB-quantum.tex",
+  "include: 3 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 27 commands, 0 environments",
+  "aliases: 166 uses of commands that stand for \\begin or \\end",
+  "tree: 278 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "convention",
+   "title": "Convention",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "problem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "setup",
+   "title": "Setup",
+   "item": "context/hypothesis",
+   "counter": "setup",
+   "within": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "model",
+   "title": "Model",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "open",
+   "title": "Open Question",
+   "item": "problem",
+   "counter": "open",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "observation",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "observation",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "property",
+   "title": "Property",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 35,
+  "label": 107,
+  "proof": 15,
+  "textref": 109
+ },
+ "matched": {
+  "env": 35,
+  "label": 107,
+  "proof": 15
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 35,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 109,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.27103v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:static-potentials",
+    "eq:schrodinger-equation"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 400
+   },
+   "last": 438,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:dynamic-bridge-to-static-bridge",
+    "m-bridge"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 490
+   },
+   "last": 526,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "def:irreducible-and-ergodic"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 552
+   },
+   "last": 560,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "rk:inner-product"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 571
+   },
+   "last": 578,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "th:convergence-stationnary-distrib"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 584
+   },
+   "last": 589,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 591
+   },
+   "last": 597,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "thm-mix"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 614
+   },
+   "last": 622,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "assump-spec",
+    "om"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 645
+   },
+   "last": 654,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "prop-rev"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 714
+   },
+   "last": 724,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "cor:upper-bound-spectral-gap"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 733
+   },
+   "last": 739,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "def:PUE-and-SPUE"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 752
+   },
+   "last": 760,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 773
+   },
+   "last": 780,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "thm:SPUE-spectral",
+    "eig-ph"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 789
+   },
+   "last": 803,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "cor:SPUE-spectral",
+    "proj"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 905
+   },
+   "last": 935,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "lem-ol"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1052
+   },
+   "last": 1073,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:amplitude-amplification",
+    "l-psi"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1143
+   },
+   "last": 1158,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.7",
+   "number_from": "counter",
+   "labels": [
+    "rem-grov"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1161
+   },
+   "last": 1170,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.8",
+   "number_from": "counter",
+   "labels": [
+    "prop-poly",
+    "gm-w",
+    "v-op"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1213
+   },
+   "last": 1234,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.9",
+   "number_from": "counter",
+   "labels": [
+    "th:complexity-gibbs-sampler",
+    "comp-gibbs"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1262
+   },
+   "last": 1292,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.10",
+   "number_from": "counter",
+   "labels": [
+    "rem:classical-gibbs-comparison"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1297
+   },
+   "last": 1316,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "assump-box"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1397
+   },
+   "last": 1458,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:static-scaling-bound",
+    "eq:static-scaling-bound"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1482
+   },
+   "last": 1497,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "th:quantum-static-bridge",
+    "eq:approx-static-bridge",
+    "eq:static-bridge-TV-bound",
+    "eq:static-bridge-quantum-complexity-general"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1523
+   },
+   "last": 1550,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "6.4",
+   "number_from": "counter",
+   "labels": [
+    "rem:static-uniform-positivity",
+    "eq:static-uniform-positivity"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1552
+   },
+   "last": 1570,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "6.5",
+   "number_from": "counter",
+   "labels": [
+    "rem:static-speedup"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1572
+   },
+   "last": 1587,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "counter",
+   "labels": [
+    "cost-add"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1861
+   },
+   "last": 1869,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "counter",
+   "labels": [
+    "prop-costs",
+    "eq:definition-of-R",
+    "v-hat",
+    "eq:cost-entropy-identity"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 1872
+   },
+   "last": 1896,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "7.3",
+   "number_from": "counter",
+   "labels": [
+    "prop-rev-g"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2046
+   },
+   "last": 2051,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7.4",
+   "number_from": "counter",
+   "labels": [
+    "cor:upper-bound-spectral-gap-g",
+    "eq:cost-gibbs-gap"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2060
+   },
+   "last": 2065,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "7.5",
+   "number_from": "counter",
+   "labels": [
+    "th:complexity-gibbs-sampler-g"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2103
+   },
+   "last": 2124,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "7.6",
+   "number_from": "counter",
+   "labels": [
+    "rem:cost-classical-comparison"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2210
+   },
+   "last": 2233,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "kl-comp",
+    "bb1"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2240
+   },
+   "last": 2296,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "k-pf",
+    "k-l-bnd"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2300
+   },
+   "last": 2409,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "9.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:spectral-gap-notabsolute-to-absolute"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2470
+   },
+   "last": 2475,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "9.2",
+   "number_from": "counter",
+   "labels": [
+    "th:upper-bound-rho"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2495
+   },
+   "last": 2500,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "free-co",
+    "k-eq",
+    "g1",
+    "i-1",
+    "i-2",
+    "l-r",
+    "i1",
+    "i2",
+    "i3",
+    "i4",
+    "rho-i",
+    "f2",
+    "f3",
+    "inff",
+    "f4",
+    "f5"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2502
+   },
+   "last": 2663,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "lam-n-lbnd",
+    "lam-2-lbnd"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2666
+   },
+   "last": 2679,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:initial-domination"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2684
+   },
+   "last": 2714,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "11.1",
+   "number_from": "counter",
+   "labels": [
+    "th:amplitude-estimation"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2830
+   },
+   "last": 2843,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "m-k",
+    "n-choice",
+    "n-c",
+    "eve-s",
+    "d1",
+    "d22"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2862
+   },
+   "last": 2944,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "12.1",
+   "number_from": "counter",
+   "labels": [
+    "th:PUE-reflection-eigenspace",
+    "gam-cond"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2955
+   },
+   "last": 2975,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:filter-polynomial",
+    "dd1",
+    "dd2",
+    "dd3"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 2978
+   },
+   "last": 3034,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "c-dl-0",
+    "o-s",
+    "eq:projected-initial-state",
+    "sdfs",
+    "poly-deg",
+    "eq:full-filter-preparation",
+    "eq:Phi-decomposition",
+    "ggf",
+    "eq:success-amplitude",
+    "eq:rho-definition",
+    "gg8",
+    "eq:generic-quantum-sampling-cost"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 3038
+   },
+   "last": 3273,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "maxd",
+    "ii0",
+    "ii1"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 3276
+   },
+   "last": 3338,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:static-objective-error",
+    "eq:static-objective-KL-identity"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 3340
+   },
+   "last": 3409,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 3412
+   },
+   "last": 3442,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 3444
+   },
+   "last": 3481,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "rho-g",
+    "eq:weighted-prefix-suffix",
+    "hh1",
+    "eq:cost-congestion-bound",
+    "jkl"
+   ],
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 3483
+   },
+   "last": 3585,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 3587
+   },
+   "last": 3690,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27103v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "SB-quantum.tex",
+    "line": 3692
+   },
+   "last": 3722,
+   "result": "matched"
+  }
+ ]
+}

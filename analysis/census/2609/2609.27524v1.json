@@ -1,0 +1,830 @@
+{
+ "paper": "2609.27524",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "On_the_Tutte_polynomial_of_series_parallel_posets.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "amsfonts",
+  "amssymb",
+  "mathrsfs",
+  "amsmath",
+  "booktabs",
+  "epsf",
+  "epsfig",
+  "amsgen",
+  "indentfirst",
+  "amstext",
+  "amsbsy",
+  "amsopn",
+  "amsthm",
+  "bbding",
+  "wasysym",
+  "multicol",
+  "mathdots",
+  "subfigure",
+  "natbib"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 5 commands, 0 environments",
+  "tree: 78 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theoremA",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theoremA",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "fact",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "Conjecture",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "Lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Proof",
+   "title": "Proof",
+   "item": "proof",
+   "counter": "Proof",
+   "numbered": true,
+   "proof": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claimfact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "claim",
+   "shared": "claim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Discussion",
+   "title": "Disscussion",
+   "item": "unknown",
+   "counter": "Discussion",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "Problem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "Remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "Theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "case",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "example",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "subcase",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "subcase",
+   "within": "case",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemmaA",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lemmaA",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claimA",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "lemmaA",
+   "shared": "lemmaA",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "factA",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "lemmaA",
+   "shared": "lemmaA",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 16,
+  "label": 30,
+  "proof": 7,
+  "textref": 44
+ },
+ "matched": {
+  "env": 16,
+  "label": 30,
+  "proof": 7
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 16,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 16,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 35,
+  "unresolved": 9
+ },
+ "render": {
+  "theorems": 16,
+  "proofs": 7,
+  "agree": true,
+  "source_theorems": 16,
+  "source_proofs": 7
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.27524v1#textref-24",
+   "message": "the text names Case 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.27524v1#textref-25",
+   "message": "the text names Case 2 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.27524v1#textref-26",
+   "message": "the text names Case 3 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.27524v1#textref-27",
+   "message": "the text names Case 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.27524v1#textref-28",
+   "message": "the text names Case 2 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.27524v1#textref-29",
+   "message": "the text names Case 3 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.27524v1#textref-30",
+   "message": "the text names Case 4 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.27524v1#textref-33",
+   "message": "the text names Case 1 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.27524v1#textref-38",
+   "message": "the text names Case 2 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2609.27524v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "def:greedoid"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 127
+   },
+   "last": 135,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "def:poset-sums-dual"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 179
+   },
+   "last": 200,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "render",
+   "labels": [
+    "conj:reconstruction",
+    "eq:conj"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 243
+   },
+   "last": 248,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "render",
+   "labels": [
+    "thm:theorem33-43"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 269
+   },
+   "last": 274,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "def:poset-h"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 299
+   },
+   "last": 306,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "render",
+   "labels": [
+    "thm:main-sub"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 310
+   },
+   "last": 313,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.4",
+   "number_from": "render",
+   "labels": [
+    "thm:main"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 321
+   },
+   "last": 326,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "lem:graph-decomposition"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 400
+   },
+   "last": 418,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 420
+   },
+   "last": 528,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "lem:antichain",
+    "eq:antichain-expansion"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 554
+   },
+   "last": 560,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "lem:H-inheritance",
+    "eq:W-inheritance"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 562
+   },
+   "last": 580,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:W0"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 582
+   },
+   "last": 735,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "lem:leantichain"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 737
+   },
+   "last": 741,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "lem:unique-filter"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 746
+   },
+   "last": 750,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 752
+   },
+   "last": 775,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "render",
+   "labels": [
+    "lem:connectivity"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 784
+   },
+   "last": 791,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:b-coefficients",
+    "eq:normalization-degree"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 793
+   },
+   "last": 902,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.7",
+   "number_from": "render",
+   "labels": [
+    "lem:sum-formulas",
+    "eq:direct-sum"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 904
+   },
+   "last": 909,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.8",
+   "number_from": "render",
+   "labels": [
+    "lem:ordinal-recovery"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 911
+   },
+   "last": 916,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.9",
+   "number_from": "render",
+   "labels": [
+    "lem:no-grouping"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 918
+   },
+   "last": 924,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 926
+   },
+   "last": 956,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:cor3343-W-direct",
+    "eq:cor3343-W-ordinal"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 969
+   },
+   "last": 1291,
+   "result": "matched"
+  },
+  {
+   "id": "2609.27524v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:main-ordinal-matching",
+    "eq:main-direct-product",
+    "eq:main-factor-allocation",
+    "eq:main-factor-groups",
+    "eq:main-direct-matching"
+   ],
+   "pos": {
+    "file": "On_the_Tutte_polynomial_of_series_parallel_posets.tex",
+    "line": 1293
+   },
+   "last": 1485,
+   "result": "matched"
+  }
+ ]
+}

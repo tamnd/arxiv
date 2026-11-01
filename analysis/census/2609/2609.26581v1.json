@@ -1,0 +1,878 @@
+{
+ "paper": "2609.26581",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "arxiv_final.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "fullpage",
+  "amsmath",
+  "amssymb",
+  "mathtools",
+  "amsthm",
+  "nicefrac",
+  "multirow",
+  "tikz-cd",
+  "subcaption",
+  "multicol",
+  "caption",
+  "wrapfig",
+  "algorithm",
+  "threeparttable",
+  "colortbl",
+  "hyperref",
+  "pifont",
+  "thmtools",
+  "todonotes",
+  "cleveref",
+  "xspace",
+  "amsfonts",
+  "array",
+  "graphicx",
+  "booktabs",
+  "tabularx",
+  "float",
+  "enumitem",
+  "algorithmic",
+  "tikz",
+  "mdframed",
+  "natbib",
+  "sidecap"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: arxiv_final.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 48 commands, 2 environments",
+  "tree: 224 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "definition",
+   "shared": "definition",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "fact",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "con",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "que",
+   "title": "Question",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "rem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "cor",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exa",
+   "title": "Example",
+   "item": "example",
+   "counter": "exa",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 20,
+  "head": 1,
+  "label": 61,
+  "proof": 9,
+  "textref": 8
+ },
+ "matched": {
+  "env": 20,
+  "head": 1,
+  "label": 61,
+  "proof": 9
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 20,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 8,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.26581v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "assume:strong_monotone",
+    "eq:monotone",
+    "eq:strong_monotone"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 158
+   },
+   "last": 168,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.2",
+   "number_from": "counter",
+   "labels": [
+    "def:Lipschitz"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 247
+   },
+   "last": 250,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.3",
+   "number_from": "counter",
+   "labels": [
+    "def:Holder-continuity"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 262
+   },
+   "last": 268,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "1.4",
+   "number_from": "counter",
+   "labels": [
+    "def:L0L1-Lipschitz"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 274
+   },
+   "last": 287,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "def:critical-condition-deterministic",
+    "eqn:gamma-critical-condition"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 680
+   },
+   "last": 687,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definition",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "lemma:alpha-lower-bound"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 691
+   },
+   "last": 695,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definition",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:gamma-critical-condition-sufficient"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 748
+   },
+   "last": 763,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 765
+   },
+   "last": 807,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "rem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "rem:role-critical-condition"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 811
+   },
+   "last": 816,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "rem",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "rem:role-parameter-A"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 818
+   },
+   "last": 828,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "rem",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "rem:choice-nuA"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 830
+   },
+   "last": 837,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definition",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "theorem:deterministic-master-theorem",
+    "eq:deterministic-master-theorem_eq1",
+    "eq:deterministic-master-theorem_eq2",
+    "eq:deterministic-master-theorem_eq3"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 845
+   },
+   "last": 864,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:LS-proof-bound",
+    "eqn:monotone polyakeg bounded radius",
+    "eqn:monotone-bound-Fxk-Fhxk-combined",
+    "eqn:Fhxk-upper-bound-with-Fxk",
+    "eqn:Fhxk-lower-bound-with-Fxk"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 866
+   },
+   "last": 957,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definition",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "theorem:L0L1-linesearch-deterministic",
+    "eqn:linesearch-operator-call-bound"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1004
+   },
+   "last": 1045,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1058
+   },
+   "last": 1086,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definition",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "def:critical-condition-stochastic",
+    "eqn:gamma-critical-condition-stochastic"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1154
+   },
+   "last": 1162,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definition",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "lemma:PolyakSEG-LS-key-properties"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1171
+   },
+   "last": 1183,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1185
+   },
+   "last": 1233,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definition",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "theorem:PolyakSEG-convergence1",
+    "eq:PolyakSEG-sampled-residual-rate",
+    "eq:PolyakSEG-heterogeneous-expectation"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1242
+   },
+   "last": 1271,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:PolyakSEG-LS-monotone-first-bound",
+    "eqn:PolyakSEG-lemma-inner-product-bound",
+    "eqn:PolyakSEG-heterogeneous-first-bound",
+    "eqn:PolyakSEG-heterogeneous-second-bound"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1273
+   },
+   "last": 1446,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definition",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:PolyakSEG-noninterpolation"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1472
+   },
+   "last": 1475,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1477
+   },
+   "last": 1492,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "definition",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "assumption:bounded-iterates"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1514
+   },
+   "last": 1521,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definition",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "theorem:DecPolyakSEGLS_monotone",
+    "eq:DecPolyakSEG-direct-residual-bound"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1532
+   },
+   "last": 1561,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:DecPolyakSEG-residual-distance-expansion",
+    "eq:DecPolyakSEG-residual-sampled-comparison",
+    "eq:DecPolyakSEG-residual-comparison-start",
+    "eq:DecPolyakSEG-noise-exact-decomposition",
+    "eq:DecPolyakSEG-noise-vector-decomposition",
+    "eq:DecPolyakSEG-residual-noise-decomposition",
+    "eq:DecPolyakSEG-residual-comparison",
+    "eq:DecPolyakSEG-uK-distance",
+    "eq:DecPolyakSEG-weighted-telescoping-bound",
+    "eq:DecPolyakSEG-residual-summed",
+    "eq:DecPolyakSEG-martingale-sum",
+    "eq:DecPolyakSEG-centered-cross-term",
+    "eq:DecPolyakSEG-weighted-noise-bound",
+    "eq:DecPolyakSEG-residual-upper"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 1563
+   },
+   "last": 2117,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "definition",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "corollary:DecPolyakSEG-explicit-residual-rate",
+    "eq:DecPolyakSEG-lower-envelope",
+    "eq:DecPolyakSEG-direct-residual-rate"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 2150
+   },
+   "last": 2198,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 2200
+   },
+   "last": 2220,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definition",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "proposition:DecPolyakSEG_strong_monotone",
+    "eq:DecPolyakSEG-strong-monotone-stability"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 2227
+   },
+   "last": 2245,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:strong-monotone-localization-eq1",
+    "eq:DecPolyakSEG-strong-monotone-first-step",
+    "eq:DecPolyakSEG-strong-monotone-recursion",
+    "eqn:DecPolyakSEG-strong-monotone-and-critical-condition"
+   ],
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 2247
+   },
+   "last": 2412,
+   "result": "matched"
+  },
+  {
+   "id": "2609.26581v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "arxiv_final.tex",
+    "line": 2414
+   },
+   "last": 2414,
+   "result": "matched",
+   "confidence": "medium"
+  }
+ ]
+}
