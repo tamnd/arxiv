@@ -290,11 +290,32 @@ if commit arxiv "Add the census of $done papers of $from"; then
 	publish arxiv "Add the census of $done papers of $from" "$body" "$checks" "type: feature" "area: corpus"
 fi
 
+# mathchecks runs the checks of the CI of tamnd/math2 in its clone: m2 check, m2 pack -check of each volume and m2 audit -changed. It fails when one of them fails.
+mathchecks() {
+	rc=0
+	m2 check || rc=1
+	for v in volumes/*.yaml; do
+		m2 pack -check -q "$v" || rc=1
+	done
+	m2 audit -changed -base origin/main || rc=1
+	# The audit writes its report into the tree. The report of a run of -changed is not committed.
+	rm -f "$dir/math2/reports/audit/changed.txt" "$dir/math2/reports/audit/changed.json"
+	return $rc
+}
+
+# findings prints the findings of an output of mathchecks, as FILE:LINE:COL: RULE: TEXT, sorted.
+findings() {
+	grep -E '^[^ :]+:[0-9]+:[0-9]+: [A-Z]+[0-9]+: ' "$1" | sort -u
+}
+
 # The import into tamnd/math2. It is generated data, so when main changes under it, the run makes it again on the new main, at most two times.
 # importmath2 makes the commit and the body of the pull request. It fails when the import gives no change.
 importmath2() {
 	start math2
 	cd "$dir/math2"
+	# The checks of main, before the import. A finding that main already has comes from other work, so it does not stop the import (see mathchecks).
+	bchecks=pass
+	mathchecks >"$dir/run/check-main-$stamp.out" 2>&1 || bchecks=fail
 	m2 corpus import -source arxiv -corpus "$dir/arxiv" -root "$dir/math2" >"$dir/run/import-$stamp.out" 2>&1 || block "m2 corpus import failed, see $dir/run/import-$stamp.out"
 	m2 corpus cluster -source arxiv -root "$dir/math2" >"$dir/run/cluster-$stamp.out" 2>&1 || block "m2 corpus cluster failed, see $dir/run/cluster-$stamp.out"
 	# The report of the research layer (AX-M8). It does not stop the run when it fails.
@@ -305,13 +326,17 @@ importmath2() {
 	title="Import the arXiv mentions of tamnd/arxiv at $arxiv"
 	commit math2 "$title" || return 1
 	mchecks=pass
-	m2 check >"$dir/run/check-$stamp.out" 2>&1 || mchecks=fail
-	for v in volumes/*.yaml; do
-		m2 pack -check -q "$v" >>"$dir/run/check-$stamp.out" 2>&1 || mchecks=fail
-	done
-	m2 audit -changed -base origin/main >"$dir/run/audit-$stamp.out" 2>&1 || mchecks=fail
-	# The audit writes its report into the tree. The report of a run of -changed is not committed.
-	rm -f "$dir/math2/reports/audit/changed.txt" "$dir/math2/reports/audit/changed.json"
+	mathchecks >"$dir/run/check-$stamp.out" 2>&1 || mchecks=fail
+	# When main fails too, the import fails only with a finding that main does not have.
+	old=0
+	if [ "$mchecks" = fail ] && [ "$bchecks" = fail ]; then
+		findings "$dir/run/check-main-$stamp.out" >"$dir/run/findings-main-$stamp.txt"
+		findings "$dir/run/check-$stamp.out" | grep -vxF -f "$dir/run/findings-main-$stamp.txt" >"$dir/run/findings-new-$stamp.txt" || true
+		if [ ! -s "$dir/run/findings-new-$stamp.txt" ]; then
+			mchecks=pass
+			old=$(wc -l <"$dir/run/findings-main-$stamp.txt" | tr -d ' ')
+		fi
+	fi
 	body="$dir/run/math2-$stamp.md"
 	{
 		echo "The pipeline on the build server imported the arXiv mentions of tamnd/arxiv at $arxiv with $m2v, and grouped them into rows again."
@@ -320,7 +345,9 @@ importmath2() {
 		cat "$dir/run/import-$stamp.out" "$dir/run/cluster-$stamp.out"
 		echo '```'
 		echo
-		if [ "$mchecks" = pass ]; then
+		if [ "$mchecks" = pass ] && [ "$old" != 0 ]; then
+			echo "\`m2 check\`, \`m2 pack -check\` and \`m2 audit -changed\` have only the $old findings that main has before the import. They come from other work, so the pipeline merges. The output is in $dir/run on the build server."
+		elif [ "$mchecks" = pass ]; then
 			echo "\`m2 check\`, \`m2 pack -check\` and \`m2 audit -changed\` pass."
 		else
 			echo "\`m2 check\`, \`m2 pack -check\` or \`m2 audit -changed\` has a finding, so this pull request stays open. The output is in $dir/run on the build server."
