@@ -1,0 +1,1441 @@
+{
+ "paper": "2609.22551",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "localnom.tex"
+ ],
+ "class": "entics",
+ "packages": [
+  "enticsmacro",
+  "graphicx",
+  "xy"
+ ],
+ "steps": [
+  "unpack: 4 files",
+  "main: localnom.tex",
+  "include: 1 files read, 0 not found",
+  "local: 3 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 460 commands, 16 environments",
+  "aliases: 50 uses of commands that stand for \\begin or \\end",
+  "tree: 133 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "hypo",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assum",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "crit",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exmp",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prob",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prin",
+   "title": "Principle",
+   "item": "statement/principle",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "alg",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "alg",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "note",
+   "title": "Note",
+   "item": "remark",
+   "counter": "note",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "summ",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "summ",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "case",
+   "numbered": true,
+   "from": "local:entics.cls",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xtheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "xtheorem",
+   "within": "section",
+   "numbered": true,
+   "from": "local:localnom.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xcor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "xtheorem",
+   "shared": "xtheorem",
+   "numbered": true,
+   "from": "local:localnom.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "xtheorem",
+   "shared": "xtheorem",
+   "numbered": true,
+   "from": "local:localnom.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "xtheorem",
+   "shared": "xtheorem",
+   "numbered": true,
+   "from": "local:localnom.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xclaim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "xclaim",
+   "within": "xtheorem",
+   "numbered": true,
+   "from": "local:localnom.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xcon",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "xtheorem",
+   "shared": "xtheorem",
+   "numbered": true,
+   "from": "local:localnom.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "shared": "xtheorem",
+   "numbered": true,
+   "from": "local:localnom.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xex",
+   "title": "Example",
+   "item": "example",
+   "counter": "xtheorem",
+   "shared": "xtheorem",
+   "numbered": true,
+   "from": "local:localnom.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "xtheorem",
+   "shared": "xtheorem",
+   "numbered": true,
+   "from": "local:localnom.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xnotation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "xtheorem",
+   "shared": "xtheorem",
+   "numbered": true,
+   "from": "local:localnom.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "shared": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "criterion",
+   "title": "Criterion",
+   "item": "statement/criterion",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "thm",
+   "shared": "thm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "summary",
+   "title": "Summary",
+   "item": "other/section",
+   "counter": "summ",
+   "shared": "summ",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proof*",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 33,
+  "label": 29,
+  "proof": 20,
+  "textref": 45
+ },
+ "matched": {
+  "env": 33,
+  "label": 29,
+  "proof": 20
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 33,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 2
+ },
+ "textrefs": {
+  "resolved": 45,
+  "unresolved": 0
+ },
+ "findings": [
+  {
+   "rule": "D07",
+   "occurrence": "2609.22551v1#env-32",
+   "message": "Lemma 2.1 comes after 2.7 in counter xtheorem"
+  },
+  {
+   "rule": "D07",
+   "occurrence": "2609.22551v1#env-33",
+   "message": "Lemma 4.1 comes after 4.9 in counter xtheorem"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.22551v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 156
+   },
+   "last": 164,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "2.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 166
+   },
+   "last": 168,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 170
+   },
+   "last": 172,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "2.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 174
+   },
+   "last": 178,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "def:function-pi-action"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 180
+   },
+   "last": 184,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "2.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 193
+   },
+   "last": 201,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "2.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 203
+   },
+   "last": 206,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "xlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "xtheorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "LemSuppAct"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 292
+   },
+   "last": 297,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 299
+   },
+   "last": 308,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "xprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "xtheorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:pi-extension"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 313
+   },
+   "last": 317,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 319
+   },
+   "last": 321,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "def:PIA-iota"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 338
+   },
+   "last": 352,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 359
+   },
+   "last": 406,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "def:muhat"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 432
+   },
+   "last": 448,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "xremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "xtheorem",
+   "number": "4.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 450
+   },
+   "last": 464,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "xprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "xtheorem",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "DotBlankMapNatIsoProp"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 476
+   },
+   "last": 479,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 481
+   },
+   "last": 483,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "xlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "xtheorem",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "lem:mu1mu2"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 488
+   },
+   "last": 512,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 514
+   },
+   "last": 520,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "xlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "xtheorem",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:permutationconjugatemap"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 522
+   },
+   "last": 545,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 547
+   },
+   "last": 552,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "xnotation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "xtheorem",
+   "number": "4.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 558
+   },
+   "last": 561,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "xremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "xtheorem",
+   "number": "4.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 573
+   },
+   "last": 580,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "xdefinition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "xtheorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "def:nominal-family",
+    "b-b",
+    "b-c"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 628
+   },
+   "last": 640,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "xprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "xtheorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:nom-x-equivalent"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 662
+   },
+   "last": 664,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 666
+   },
+   "last": 678,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "xprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "xtheorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "PiEquivIsoLem"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 695
+   },
+   "last": 700,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 702
+   },
+   "last": 723,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "xremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "xtheorem",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "rk:NomFamPhiMap",
+    "ax-c",
+    "ax-d"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 725
+   },
+   "last": 763,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "xtheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "xtheorem",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:monoidal-nom-slash-x"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 772
+   },
+   "last": 775,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "xprop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "xtheorem",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "ISOProp"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 844
+   },
+   "last": 848,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 850
+   },
+   "last": 861,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "xremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "xtheorem",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "rem:EtaMap"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 863
+   },
+   "last": 901,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "xlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "xtheorem",
+   "number": "6.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:EtaCompose"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 909
+   },
+   "last": 915,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 917
+   },
+   "last": 919,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "xlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "xtheorem",
+   "number": "6.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:eta-pihat"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 921
+   },
+   "last": 946,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 948
+   },
+   "last": 950,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "xlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "xtheorem",
+   "number": "6.6",
+   "number_from": "counter",
+   "labels": [
+    "lem:mmapcompose"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1032
+   },
+   "last": 1058,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1060
+   },
+   "last": 1062,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "xlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "xtheorem",
+   "number": "6.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:m-pi"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1067
+   },
+   "last": 1088,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1090
+   },
+   "last": 1092,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "xtheorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "xtheorem",
+   "number": "7.1",
+   "number_from": "counter",
+   "labels": [
+    "NomXFuncSpcObjThm"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1293
+   },
+   "last": 1296,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "xremark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "xtheorem",
+   "number": "7.2",
+   "number_from": "counter",
+   "labels": [
+    "rmk:n-map-comp"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1334
+   },
+   "last": 1355,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof*",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:action-extend1",
+    "eqn:action-extend2"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1628
+   },
+   "last": 1691,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof*",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1693
+   },
+   "last": 1740,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof*",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1742
+   },
+   "last": 1809,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof*",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1811
+   },
+   "last": 1875,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof*",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1877
+   },
+   "last": 1936,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof*",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1938
+   },
+   "last": 1978,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "xlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "xtheorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:prop-a-and-b-1"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1984
+   },
+   "last": 1988,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 1990
+   },
+   "last": 2037,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "xlem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "xtheorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:prop-a-and-b-2"
+   ],
+   "pos": {
+    "file": "localnom.tex",
+    "line": 2134
+   },
+   "last": 2138,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22551v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "localnom.tex",
+    "line": 2140
+   },
+   "last": 2265,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

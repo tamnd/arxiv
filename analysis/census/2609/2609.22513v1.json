@@ -1,0 +1,2234 @@
+{
+ "paper": "2609.22513",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "3_draft.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amssymb",
+  "amsmath",
+  "amsfonts",
+  "amsthm",
+  "enumerate",
+  "enumitem",
+  "stmaryrd",
+  "tensor",
+  "mathtools",
+  "dsfont",
+  "upgreek",
+  "bbm",
+  "mathrsfs",
+  "nameref",
+  "xcolor",
+  "bm",
+  "tikz",
+  "todonotes",
+  "graphicx",
+  "thmtools",
+  "mdframed",
+  "geometry",
+  "anyfontsize",
+  "scrextend",
+  "hyperref",
+  "caption",
+  "subcaption"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: 3_draft.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 122 commands, 4 environments",
+  "aliases: 2 uses of commands that stand for \\begin or \\end",
+  "tree: 658 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "propC",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "propC",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "lemC",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "propC",
+   "shared": "propC",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "thmC",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "propC",
+   "shared": "propC",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "coroC",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "propC",
+   "shared": "propC",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "rmkC",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "propC",
+   "shared": "propC",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "defnC",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "propC",
+   "shared": "propC",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "introthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "introthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "introdefn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "introthm",
+   "shared": "introthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "introcoro",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "introthm",
+   "shared": "introthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "prop",
+   "title": "\\color{popblue}{Proposition}",
+   "item": "unknown",
+   "counter": "prop",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm",
+   "title": "\\color{popblue}{Theorem}",
+   "item": "unknown",
+   "counter": "prop",
+   "shared": "prop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "\\color{popblue}{Definition}",
+   "item": "unknown",
+   "counter": "prop",
+   "shared": "prop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "shared": "prop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "coro",
+   "title": "\\color{popblue}{Corollary}",
+   "item": "unknown",
+   "counter": "prop",
+   "shared": "prop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk",
+   "title": "\\color{popblue}{Remark}",
+   "item": "unknown",
+   "counter": "prop",
+   "shared": "prop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exa",
+   "title": "\\color{popblue}{Example}",
+   "item": "unknown",
+   "counter": "prop",
+   "shared": "prop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innercustomthm",
+   "title": "\\color{popblue}{Theorem}",
+   "item": "unknown",
+   "counter": "innercustomthm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innercustomcoro",
+   "title": "\\color{popblue}{Corollary}",
+   "item": "unknown",
+   "counter": "innercustomcoro",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innercustomrmk",
+   "title": "\\color{popblue}{Remark}",
+   "item": "unknown",
+   "counter": "innercustomrmk",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "innercustomdefn",
+   "title": "\\color{popblue}{Definition}",
+   "item": "unknown",
+   "counter": "innercustomdefn",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  },
+  {
+   "env": "customthm",
+   "title": "\\color{popblue}{Theorem}",
+   "item": "unknown",
+   "counter": "innercustomthm",
+   "shared": "innercustomthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "customcoro",
+   "title": "\\color{popblue}{Corollary}",
+   "item": "unknown",
+   "counter": "innercustomcoro",
+   "shared": "innercustomcoro",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "customrmk",
+   "title": "\\color{popblue}{Remark}",
+   "item": "unknown",
+   "counter": "innercustomrmk",
+   "shared": "innercustomrmk",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "customdefn",
+   "title": "\\color{popblue}{Definition}",
+   "item": "unknown",
+   "counter": "innercustomdefn",
+   "shared": "innercustomdefn",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 48,
+  "label": 308,
+  "proof": 38,
+  "textref": 204
+ },
+ "matched": {
+  "env": 48,
+  "label": 308,
+  "proof": 38
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 48,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 197,
+  "unresolved": 7
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.22513v1#textref-9",
+   "message": "the text names Theorem 2.16 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22513v1#textref-11",
+   "message": "the text names Theorem 3.2.12 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22513v1#textref-13",
+   "message": "the text names Corollary 3.2.20 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22513v1#textref-67",
+   "message": "the text names Theorem 3.13 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22513v1#textref-136",
+   "message": "the text names Theorem 8.19 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22513v1#textref-159",
+   "message": "the text names Theorem C.7 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22513v1#textref-190",
+   "message": "the text names Theorem 3.2.12 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.22513v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "defn",
+   "title": "\\color{popblue}{Definition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "defn on the Hill Norbury family",
+    "Hill_Norbury_Velocity",
+    "_UNFORTUNATELY_THIS_GETS_REFERENCED_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 541
+   },
+   "last": 553,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "customthm",
+   "title": "\\color{popblue}{Theorem}",
+   "item": "unknown",
+   "counter": "innercustomthm",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "main_thm_1_swirl_free",
+    "_CITE_ME_PLEASE_",
+    "_CITE_ME_TOO_PLEASE_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 602
+   },
+   "last": 621,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "customthm",
+   "title": "\\color{popblue}{Theorem}",
+   "item": "unknown",
+   "counter": "innercustomthm",
+   "number": "#1",
+   "number_from": "counter",
+   "labels": [
+    "main_thm_2_with_swirl",
+    "_CONSTRAINTS_ON_HELI_TOT_MER_VORT_SEQ_",
+    "NATURAL_DESING_TOPO",
+    "_LOCATION_OF_THE_SWIRL_AWAY_FROM_RING_BOUNDARY_",
+    "_THANKS_FOR_LOOKING_AT_THIS_LABEL_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 673
+   },
+   "last": 705,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "lem on simple observations",
+    "Hills_Integral_Equation",
+    "A crucial inclusion",
+    "an_important_positivity"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 796
+   },
+   "last": 814,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "thing_that_should_be_Hills",
+    "The equality of Laplacians"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 815
+   },
+   "last": 843,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "defn",
+   "title": "\\color{popblue}{Definition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "defn on spaces and mappings",
+    "the_special_subset_of_orthogonal_group",
+    "defn_principal_operator",
+    "defn_pert_op",
+    "defn_principal_part_operator"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 847
+   },
+   "last": 878,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "rmk",
+   "title": "\\color{popblue}{Remark}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "remark on symmetry preservation"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 881
+   },
+   "last": 883,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "prop",
+   "title": "\\color{popblue}{Proposition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "prop on basic smoothness",
+    "uniform LL1 esimate",
+    "the_extended_frechet_differential",
+    "the_bounds_right_here"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 885
+   },
+   "last": 907,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "cited_suprisingly"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 908
+   },
+   "last": 966,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "prop",
+   "title": "\\color{popblue}{Proposition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "prop on limit identification",
+    "convergence hypotheses",
+    "the limit that we would like to show"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 970
+   },
+   "last": 980,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "observation_1_",
+    "observation_2_",
+    "the_first_man",
+    "the level set diffeomorphism identity",
+    "intermediate_step_",
+    "joint_cont",
+    "_almost_there_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 981
+   },
+   "last": 1027,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "prop",
+   "title": "\\color{popblue}{Proposition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.6",
+   "number_from": "counter",
+   "labels": [
+    "prop on principal operator lipschitz estimate",
+    "the_claimed_bound_here"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1035
+   },
+   "last": 1047,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "int_no_1",
+    "int_no_2",
+    "int_no_3",
+    "FTC_IDENTITY"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1048
+   },
+   "last": 1070,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "coro",
+   "title": "\\color{popblue}{Corollary}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "coro on principal log-lip",
+    "an_important_continuity_estimate"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1074
+   },
+   "last": 1080,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "the interpolation estimate",
+    "the_devil_you_know"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1081
+   },
+   "last": 1093,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.8",
+   "number_from": "counter",
+   "labels": [
+    "lem on a decomposition and properties",
+    "the sets of the decomposition for N",
+    "the_good_estimates_",
+    "a_good_covering",
+    "some_good_estimates"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1102
+   },
+   "last": 1127,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "properties_of_the_set_tilde_E"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1128
+   },
+   "last": 1150,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "prop",
+   "title": "\\color{popblue}{Proposition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.9",
+   "number_from": "counter",
+   "labels": [
+    "prop on Lebesgue space estimates on the perturbative operator",
+    "defn_of_the_density",
+    "lebesgue_bounds_WTS"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1154
+   },
+   "last": 1163,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "series_decomposition",
+    "_L1_",
+    "_L2_",
+    "_L3_",
+    "_0th_",
+    "nth term after coarea",
+    "annoying_casework",
+    "nice_inclusion_",
+    "_LABEL_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1164
+   },
+   "last": 1219,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "coro",
+   "title": "\\color{popblue}{Corollary}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.10",
+   "number_from": "counter",
+   "labels": [
+    "coro on more estimates on the perturbative operator",
+    "the small estimate on the per_non"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1223
+   },
+   "last": 1229,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1230
+   },
+   "last": 1236,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.11",
+   "number_from": "counter",
+   "labels": [
+    "lem on bounds on interior stream lines",
+    "almost_hills_solution",
+    "some essential coffee flavorz",
+    "do_you_notice_my_labels"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1322
+   },
+   "last": 1344,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "thanks_to_you"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1345
+   },
+   "last": 1371,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "defn",
+   "title": "\\color{popblue}{Definition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.12",
+   "number_from": "counter",
+   "labels": [
+    "defn of swirl and helicity operators",
+    "_the_swirl_operator_",
+    "_the_p_par_heli_",
+    "_the_pe_par_heli_",
+    "total_meridional_vorticty"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1375
+   },
+   "last": 1395,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.13",
+   "number_from": "counter",
+   "labels": [
+    "lem on properties of the M I and J",
+    "the weird constant thing that we need to cite later",
+    "_the_induced_maps_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1400
+   },
+   "last": 1415,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "co_area_form_of_I"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1416
+   },
+   "last": 1436,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "prop",
+   "title": "\\color{popblue}{Proposition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "2.14",
+   "number_from": "counter",
+   "labels": [
+    "prop on fixing the total meridional vorticity",
+    "a_tortured_continuous_function",
+    "the_bold_varrho"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1440
+   },
+   "last": 1450,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "the real expression for the function f",
+    "two_sided_increasing_bound",
+    "two_sided_derivative_bound",
+    "totally_surjective"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1451
+   },
+   "last": 1480,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "lem on coefficient computation",
+    "kernel_function",
+    "diagonalization"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1532
+   },
+   "last": 1541,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "an_intermediate_identity",
+    "a_simple_identity",
+    "insane_identity",
+    "another_insane_identity"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1542
+   },
+   "last": 1562,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "prop",
+   "title": "\\color{popblue}{Proposition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "prop on nondegeneracy of Hills spherical vortex",
+    "the_formal_linearization_kernel_condition",
+    "delete_the_kernel_with_love"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1568
+   },
+   "last": 1584,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "it_is_now_immediate",
+    "structural form"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1585
+   },
+   "last": 1615,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "thm",
+   "title": "\\color{popblue}{Theorem}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "thm on quantitative closed range estimates",
+    "_all_hail_satan_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1623
+   },
+   "last": 1629,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "__sequences___",
+    "___absurd_things___",
+    "the_definition_of_capital_Phi",
+    "Ascoli-Arzela_is_life",
+    "convergence_from_compactness",
+    "_it_is_deduction_",
+    "R5_Newtonian_Potential",
+    "intermediate_integral_identity",
+    "the_important_integral_equation"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1630
+   },
+   "last": 1679,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "coro",
+   "title": "\\color{popblue}{Corollary}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "coro on uniform region of differential invertibility",
+    "inverse_operator_norm",
+    "inverse_lipschitz_norm"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1683
+   },
+   "last": 1693,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "_on_the_",
+    "_job_market_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1694
+   },
+   "last": 1722,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "coro",
+   "title": "\\color{popblue}{Corollary}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "coro on uniform reverse log Lipschitz estimates",
+    "rev_uni_cont_est"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1726
+   },
+   "last": 1731,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "FTC_is_not_your_theorem",
+    "as_a_result_there",
+    "FTC_is_not_your_friend",
+    "FTC_is_also_not_food"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1732
+   },
+   "last": 1752,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "thm",
+   "title": "\\color{popblue}{Theorem}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "thm on uniform existence of local inverse functions"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1756
+   },
+   "last": 1766,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1767
+   },
+   "last": 1769,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "lem on estimates on the source term",
+    "_defn_of_the_source_term_",
+    "_estimates_on_the_source_term_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1781
+   },
+   "last": 1795,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1796
+   },
+   "last": 1804,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "thm",
+   "title": "\\color{popblue}{Theorem}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "thm on existence of a fixed point",
+    "the_fixed_point_to_write_home_about"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1809
+   },
+   "last": 1819,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "need_to_make_a_small_source",
+    "has_to_be_about_this_small",
+    "_map_to_be_fixed",
+    "the_map_who_is_to_be_fixed",
+    "__00__",
+    "___00___"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1820
+   },
+   "last": 1868,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "coro",
+   "title": "\\color{popblue}{Corollary}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "coro on solutions to the Bragg-Hawthorne equation",
+    "circulation_and_head_derivative_functions_",
+    "extension_property_and_bounds",
+    "bragg_hawthorne_r5",
+    "known_helicity",
+    "known_total_meridional_vorticity",
+    "hill_deviation_estimates",
+    "_key_qualitative_properties_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1878
+   },
+   "last": 1914,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "definition_of_the_function_Phi",
+    "WE_ARE_HERE",
+    "an_intermediate fact",
+    "__OOOOO____",
+    "we_have_now_extended_omega_globally",
+    "support_away_from_axis",
+    "_the_initial_estimate_",
+    "_initial_bound_of_3_decay_",
+    "differentiated_mvf",
+    "final_bound_of_4_decay"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 1915
+   },
+   "last": 2025,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "rmk",
+   "title": "\\color{popblue}{Remark}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "4.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2027
+   },
+   "last": 2029,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "rmk",
+   "title": "\\color{popblue}{Remark}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "remark on instantiation of a solution map",
+    "defn_admissible_parameter_space",
+    "choice_of_solutions"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2031
+   },
+   "last": 2041,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "lem on the chandrasekhar transformation",
+    "chandrasekhar_transformation_identity",
+    "this_thing_we_care_about",
+    "THIS_THING_WE_CARE_ABOUT"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2066
+   },
+   "last": 2084,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "rmk",
+   "title": "\\color{popblue}{Remark}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2086
+   },
+   "last": 2088,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "prop",
+   "title": "\\color{popblue}{Proposition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "prop on Euler reconstruction",
+    "another_r5_hicks_eqn",
+    "two_types_of_stokes_stream_functions",
+    "velocity_from_stokes_stream_function",
+    "_TRAVELING_EULER_EQUATIONS_",
+    "_EXPRESSION_FOR_VORTICITY_",
+    "_VORTICITY_SUPPORT_CONSIDERATIONS_",
+    "_HELICITY_ID_",
+    "_TOTAL_MER_VORT_ID_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2092
+   },
+   "last": 2134,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "r3_hicks_equation",
+    "q_and_v_in_terms_mod_stream_func",
+    "_EER_1_",
+    "expression_for_vorticty_sub_hicks",
+    "_EER_2_",
+    "_HELICITY_DENSITY_",
+    "_MAGIC_IBP_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2135
+   },
+   "last": 2213,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "rmk",
+   "title": "\\color{popblue}{Remark}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "rmk_on_exact_prescribed_invariants"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2215
+   },
+   "last": 2223,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "lem_on_on_the_vortex_core",
+    "_HYPOTHERMIA_",
+    "the_positive_set_charged_up",
+    "_A_SET_FOR_YOU_",
+    "assertions_here_for_today",
+    "_PUMP_FOIL_",
+    "_swirl_inclusion_here_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2231
+   },
+   "last": 2261,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "_facts_about_function_g_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2262
+   },
+   "last": 2316,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "5.6",
+   "number_from": "counter",
+   "labels": [
+    "lem_on_azimuthal_velocity_estimates",
+    "SWIRL_SUPPORT",
+    "SWIRL_ESTIMATES"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2354
+   },
+   "last": 2364,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2365
+   },
+   "last": 2393,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "lem on Norbury uniqueness",
+    "R5_form_norbury",
+    "R5_form_vortex_core",
+    "uniqueness assertion"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2420
+   },
+   "last": 2435,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "the_key_transformation"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2436
+   },
+   "last": 2453,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "rmk",
+   "title": "\\color{popblue}{Remark}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "remark_on_restriction_of_solution_map",
+    "restricted_parameter_space"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2465
+   },
+   "last": 2477,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "prop",
+   "title": "\\color{popblue}{Proposition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "label prop on flexible desingularization of the hill norbury family",
+    "_the_parameter_relationships_",
+    "key_uniform_bounds",
+    "_key_cauchy_condition_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2486
+   },
+   "last": 2509,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "corrected_delta_selection",
+    "the_key_weak_identity",
+    "_reduction_estimate_",
+    "important_positivity",
+    "the_other_key_weak_identity",
+    "the-good-region",
+    "post_support_consideration",
+    "_more_analysis_",
+    "_napkin_on_a_sandwich_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2510
+   },
+   "last": 2604,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2612
+   },
+   "last": 2616,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2618
+   },
+   "last": 2630,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.1",
+   "number_from": "counter",
+   "labels": [
+    "lem on regularization of the unit normal",
+    "youre_on_the_internet",
+    "looking_at"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2663
+   },
+   "last": 2677,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "get_noted_later",
+    "initial_definition_of_the_vector_field_V",
+    "e_2",
+    "e_3",
+    "e_4"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2678
+   },
+   "last": 2727,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.2",
+   "number_from": "counter",
+   "labels": [
+    "lem on regularized distance to the manifold",
+    "complete_metric_spaces",
+    "occasionally_useful",
+    "projection_parametrization_identity",
+    "distance to the manifold bound",
+    "initial_lip_est"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2740
+   },
+   "last": 2768,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "e_6",
+    "sup_inf",
+    "e_8",
+    "key_difference_identity",
+    "estimates_in_turn"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2769
+   },
+   "last": 2820,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.3",
+   "number_from": "counter",
+   "labels": [
+    "lem on estimates on almost tangent vectors",
+    "the almost tangent vector estimate"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2824
+   },
+   "last": 2829,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2830
+   },
+   "last": 2836,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.4",
+   "number_from": "counter",
+   "labels": [
+    "lem on bilipschitz bounds",
+    "LIP_1",
+    "LIPO",
+    "LIP_2"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2840
+   },
+   "last": 2856,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "weve_been_here",
+    "marco",
+    "estimates_in_turn_again",
+    "key_almost_tangent",
+    "aguas_de"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2857
+   },
+   "last": 2897,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.5",
+   "number_from": "counter",
+   "labels": [
+    "lem on projection properties",
+    "proj_defn",
+    "the projection estimate_"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2901
+   },
+   "last": 2915,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2916
+   },
+   "last": 2926,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "thm",
+   "title": "\\color{popblue}{Theorem}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.6",
+   "number_from": "counter",
+   "labels": [
+    "thm on stable local level set coordinates",
+    "The coordinate maps",
+    "two_sided_lipschitz",
+    "local_surjectivity",
+    "level_set_covering"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2930
+   },
+   "last": 2951,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "estimate_on_t",
+    "map_to_be_fixed",
+    "step_on",
+    "kitty_",
+    "reverse_cauchy_schwarz",
+    "FTC_AGAIN"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 2952
+   },
+   "last": 3021,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.7",
+   "number_from": "counter",
+   "labels": [
+    "lem on reverse Lipschitz bound with projection",
+    "definition of the parameter kappa",
+    "wave_is_on_its_way",
+    "rev_lip_proj"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 3027
+   },
+   "last": 3042,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "the_almost_tangent_estimate_redux",
+    "estimate in the special case",
+    "__FiNaL__",
+    "_not_done_yet_",
+    "e_1__",
+    "e_2__",
+    "good_lippy_bound"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 3043
+   },
+   "last": 3102,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "lem",
+   "title": "\\color{popblue}{Lemma}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.8",
+   "number_from": "counter",
+   "labels": [
+    "lem on density estimates on a fixed manifold",
+    "density_estimate_1"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 3111
+   },
+   "last": 3117,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "flattening_identity",
+    "eq_1",
+    "eq_2"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 3118
+   },
+   "last": 3146,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "thm",
+   "title": "\\color{popblue}{Theorem}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.9",
+   "number_from": "counter",
+   "labels": [
+    "thm on uniform density estimates on families of hypersurfaces",
+    "hypotheses_are_here",
+    "INC_1",
+    "POS_1",
+    "POS_2",
+    "EST_1",
+    "EST_2",
+    "EST_3"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 3156
+   },
+   "last": 3195,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "fat_set",
+    "AI_SLOP",
+    "bi_lip",
+    "lev_par",
+    "some_inclusions",
+    "the_covering_condition",
+    "com_1",
+    "com_2",
+    "annulus_region",
+    "slighty"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 3196
+   },
+   "last": 3298,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "coro",
+   "title": "\\color{popblue}{Corollary}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.10",
+   "number_from": "counter",
+   "labels": [
+    "bounds for integral operators on thin domains",
+    "short_hand",
+    "thin_est_1",
+    "thin_est_2"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 3302
+   },
+   "last": 3325,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "coarea_equality",
+    "EE_1",
+    "EE_2",
+    "the_important_disk",
+    "observation_1",
+    "observation_2",
+    "part_1",
+    "diff_bou",
+    "part_2"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 3326
+   },
+   "last": 3386,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "prop",
+   "title": "\\color{popblue}{Proposition}",
+   "item": "unknown",
+   "counter": "prop",
+   "number": "A.11",
+   "number_from": "counter",
+   "labels": [
+    "prop on transverse cylinder density estimate",
+    "transverse intersection condition",
+    "cylindrical_density_estimate"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 3389
+   },
+   "last": 3399,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.22513v1#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "additional_condition",
+    "we_need_this",
+    "REV_rev_LIP",
+    "simple_auxiliary_fact",
+    "the condition on the",
+    "yet_another_compactness"
+   ],
+   "pos": {
+    "file": "3_draft.tex",
+    "line": 3400
+   },
+   "last": 3493,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
