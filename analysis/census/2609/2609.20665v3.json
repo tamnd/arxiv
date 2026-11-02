@@ -1,0 +1,566 @@
+{
+ "paper": "2609.20665",
+ "version": 3,
+ "extractor": "ax/v0.5.33",
+ "main": [
+  "stoic.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "geometry",
+  "tikz-cd",
+  "bussproofs",
+  "amssymb",
+  "amsmath",
+  "proof",
+  "psvectorian",
+  "CJKutf8",
+  "inputenc",
+  "graphicx",
+  "qtree",
+  "mathtools",
+  "hyperref",
+  "listings",
+  "indentfirst",
+  "titlesec"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: stoic.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 77 commands, 17 environments",
+  "tree: 38 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exm",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notat",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "newpar",
+   "title": "",
+   "item": "unknown",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xdefn",
+   "title": "Definition.",
+   "item": "definition",
+   "counter": "xdefn",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xproposition",
+   "title": "Proposition.",
+   "item": "statement/proposition",
+   "counter": "xproposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xcorollary",
+   "title": "Corollary.",
+   "item": "statement/corollary",
+   "counter": "xcorollary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xrem",
+   "title": "Remark.",
+   "item": "remark",
+   "counter": "xrem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xexm",
+   "title": "Example.",
+   "item": "example",
+   "counter": "xexm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xlemma",
+   "title": "Lemma.",
+   "item": "statement/lemma",
+   "counter": "xlemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xtheorem",
+   "title": "Theorem.",
+   "item": "statement/theorem",
+   "counter": "xtheorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xnotat",
+   "title": "Notation.",
+   "item": "definition/notation",
+   "counter": "xnotat",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xnewpar",
+   "title": "\\it",
+   "item": "unknown",
+   "counter": "xnewpar",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xproof",
+   "title": "{\\it Proof. }",
+   "item": "proof",
+   "counter": "xproof",
+   "numbered": true,
+   "proof": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "xproofof",
+   "title": "{\\it Proof}",
+   "item": "proof",
+   "counter": "xproofof",
+   "numbered": true,
+   "proof": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:proof"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proofof",
+   "title": "{\\it Proof}",
+   "item": "proof",
+   "counter": "xproofof",
+   "shared": "xproofof",
+   "numbered": true,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "newparagraph",
+   "title": "",
+   "item": "unknown",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "newparagraph*",
+   "title": "\\it",
+   "item": "unknown",
+   "counter": "xnewpar",
+   "shared": "xnewpar",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "definition*",
+   "title": "Definition.",
+   "item": "definition",
+   "counter": "xdefn",
+   "shared": "xdefn",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark.",
+   "item": "remark",
+   "counter": "xrem",
+   "shared": "xrem",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "example*",
+   "title": "Example.",
+   "item": "example",
+   "counter": "xexm",
+   "shared": "xexm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "notation*",
+   "title": "Notation.",
+   "item": "definition/notation",
+   "counter": "xnotat",
+   "shared": "xnotat",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proposition*",
+   "title": "Proposition.",
+   "item": "statement/proposition",
+   "counter": "xproposition",
+   "shared": "xproposition",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "corollary*",
+   "title": "Corollary.",
+   "item": "statement/corollary",
+   "counter": "xcorollary",
+   "shared": "xcorollary",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "lemma*",
+   "title": "Lemma.",
+   "item": "statement/lemma",
+   "counter": "xlemma",
+   "shared": "xlemma",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem.",
+   "item": "statement/theorem",
+   "counter": "xtheorem",
+   "shared": "xtheorem",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 9
+ },
+ "matched": {
+  "env": 9
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 9,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 0,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.20665v3#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "3.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "stoic.tex",
+    "line": 301
+   },
+   "last": 303,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20665v3#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "3.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "stoic.tex",
+    "line": 321
+   },
+   "last": 322,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20665v3#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "stoic.tex",
+    "line": 332
+   },
+   "last": 339,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20665v3#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "3.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "stoic.tex",
+    "line": 353
+   },
+   "last": 354,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20665v3#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "stoic.tex",
+    "line": 512
+   },
+   "last": 514,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20665v3#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "stoic.tex",
+    "line": 521
+   },
+   "last": 522,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20665v3#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "stoic.tex",
+    "line": 524
+   },
+   "last": 525,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20665v3#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "3.11",
+   "number_from": "counter",
+   "pos": {
+    "file": "stoic.tex",
+    "line": 526
+   },
+   "last": 528,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20665v3#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "3.12",
+   "number_from": "counter",
+   "pos": {
+    "file": "stoic.tex",
+    "line": 531
+   },
+   "last": 544,
+   "result": "matched"
+  }
+ ]
+}

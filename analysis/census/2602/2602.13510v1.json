@@ -1,7 +1,7 @@
 {
  "paper": "2602.13510",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.33",
  "main": [
   "SHVI_Main.tex"
  ],
@@ -125,7 +125,7 @@
   {
    "env": "hypotheses",
    "title": "Hypotheses",
-   "item": "unknown",
+   "item": "context/hypothesis",
    "counter": "hypotheses",
    "numbered": true,
    "from": "paper",
@@ -229,6 +229,7 @@
  ],
  "occurrences": {
   "env": 32,
+  "head": 1,
   "label": 42,
   "proof": 2,
   "textref": 50
@@ -239,7 +240,13 @@
   "proof": 2
  },
  "gaps": [],
- "waivers": [],
+ "waivers": [
+  {
+   "occurrence": "2602.13510v1#head-1",
+   "reason": "layout",
+   "by": "rule:section-head"
+  }
+ ],
  "numbers": {
   "from_aux": 0,
   "from_render": 32,
@@ -256,7 +263,9 @@
  "render": {
   "theorems": 32,
   "proofs": 2,
-  "agree": true
+  "agree": true,
+  "source_theorems": 32,
+  "source_proofs": 2
  },
  "outside": {
   "theoremgraph": 29
@@ -683,6 +692,22 @@
    },
    "last": 111,
    "result": "matched"
+  },
+  {
+   "id": "2602.13510v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Acknowledgements",
+   "item": "other/section",
+   "pos": {
+    "file": "SHVI_Main.tex",
+    "line": 457
+   },
+   "last": 457,
+   "result": "waived",
+   "waiver": "layout",
+   "confidence": "medium"
   },
   {
    "id": "2602.13510v1#env-22",
