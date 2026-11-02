@@ -1,0 +1,633 @@
+{
+ "paper": "2609.22011",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "hyperref",
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "graphicx",
+  "bbm",
+  "xcolor",
+  "geometry",
+  "enumerate",
+  "mathtools",
+  "mathrsfs",
+  "bm",
+  "natbib"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 34 commands, 1 environments",
+  "tree: 175 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "within": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "sublemma",
+   "title": "Sub-Lemma",
+   "item": "statement/lemma",
+   "counter": "corollary",
+   "shared": "corollary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  },
+  {
+   "env": "solution",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 13,
+  "label": 51,
+  "proof": 8,
+  "textref": 23
+ },
+ "matched": {
+  "env": 13,
+  "label": 51,
+  "proof": 8
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 13,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 13,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 15,
+  "unresolved": 8
+ },
+ "render": {
+  "theorems": 13,
+  "proofs": 8,
+  "agree": true,
+  "source_theorems": 13,
+  "source_proofs": 8
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.22011v1#textref-2",
+   "message": "the text names Lemma 2.7 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22011v1#textref-3",
+   "message": "the text names Theorem 4.36 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22011v1#textref-4",
+   "message": "the text names Proposition 4.3 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22011v1#textref-5",
+   "message": "the text names Theorem 4.2.5 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22011v1#textref-6",
+   "message": "the text names Lemma 5.3 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22011v1#textref-11",
+   "message": "the text names Theorem 5.4 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22011v1#textref-12",
+   "message": "the text names Proposition 4.7 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.22011v1#textref-14",
+   "message": "the text names Theorem 5.1 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2609.22011v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "labels": [
+    "lem:auxiliary-est",
+    "eq:ladyzh",
+    "aux-est2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 298
+   },
+   "last": 304,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 305
+   },
+   "last": 318,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "render",
+   "labels": [
+    "gronny",
+    "boundingronny"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 438
+   },
+   "last": 443,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "render",
+   "labels": [
+    "unnamed"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 450
+   },
+   "last": 463,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 465
+   },
+   "last": 470,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "render",
+   "labels": [
+    "bounds on split noise"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 482
+   },
+   "last": 492,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "render",
+   "labels": [
+    "bigbound1NEW",
+    "bigbound2NEW"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 496
+   },
+   "last": 503,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 505
+   },
+   "last": 516,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "definitionofspacetimeweakmartingale"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 527
+   },
+   "last": 533,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "definitionofstrongsolution2d"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 537
+   },
+   "last": 541,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "main result"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 545
+   },
+   "last": 553,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "strong existence for 2D NS"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 561
+   },
+   "last": 563,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 565
+   },
+   "last": 567,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "uniform bounds on w",
+    "Estimate1",
+    "Estimate2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 579
+   },
+   "last": 587,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "bigbound1",
+    "bigbound2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 589
+   },
+   "last": 643,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "damping convergence"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 647
+   },
+   "last": 649,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "ic convergence"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 651
+   },
+   "last": 653,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 655
+   },
+   "last": 705,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.8",
+   "number_from": "render",
+   "labels": [
+    "prop choosing spaces",
+    "item2",
+    "item2.5",
+    "item3"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 707
+   },
+   "last": 721,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 723
+   },
+   "last": 756,
+   "result": "matched"
+  },
+  {
+   "id": "2609.22011v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "in total",
+    "eq:dB",
+    "eq:exact",
+    "eq:galerkin-res-1",
+    "eq:rotation-exact",
+    "eq:ito-exact",
+    "eq:diffusion-split",
+    "eq:qv",
+    "eq:mart-split",
+    "eq:EE_to_est",
+    "eq:Bvw",
+    "eq:BBw",
+    "eq:BvB",
+    "eq:BwB",
+    "eq:BBB",
+    "eq:Bnonlinear",
+    "eq:Ekman-residual",
+    "halfstuff",
+    "eq:noise-total",
+    "eq:EE-last",
+    "eq:EE-pre-G",
+    "eq:R1",
+    "eq:R2",
+    "eq:R3",
+    "eq:R5",
+    "eq:EE-Gready",
+    "eq:gronny-bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 761
+   },
+   "last": 1284,
+   "result": "matched"
+  }
+ ]
+}

@@ -1,0 +1,449 @@
+{
+ "paper": "2609.21895",
+ "version": 1,
+ "extractor": "ax/v0.5.32",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "fontenc",
+  "inputenc",
+  "geometry",
+  "amsmath",
+  "amsfonts",
+  "amssymb",
+  "amsthm",
+  "keytheorems",
+  "hyperref",
+  "url",
+  "cleveref",
+  "tikz",
+  "xcolor",
+  "authblk"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: main.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 43 commands, 1 environments",
+  "tree: 37 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "within": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  },
+  {
+   "env": "proofclaim",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 11,
+  "label": 13,
+  "proof": 6,
+  "textref": 11
+ },
+ "matched": {
+  "env": 11,
+  "label": 13,
+  "proof": 6
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 11,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 10,
+  "unresolved": 1
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.21895v1#textref-1",
+   "message": "the text names conjecture R and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.21895v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "conj:EH"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 34
+   },
+   "last": 36,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "thm:main"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 51
+   },
+   "last": 53,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "conj:EHT"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 59
+   },
+   "last": 61,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "thm:bis"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 65
+   },
+   "last": 67,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5",
+   "number_from": "counter",
+   "labels": [
+    "thm:An_Dn"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 141
+   },
+   "last": 143,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6",
+   "number_from": "counter",
+   "labels": [
+    "lemma:An"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 154
+   },
+   "last": 156,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "fig:An"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 158
+   },
+   "last": 194,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7",
+   "number_from": "counter",
+   "labels": [
+    "lemma:Dn"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 198
+   },
+   "last": 200,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "fig:Dn"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 202
+   },
+   "last": 249,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "8",
+   "number_from": "counter",
+   "labels": [
+    "lemma:main"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 253
+   },
+   "last": 255,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 257
+   },
+   "last": 289,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 295
+   },
+   "last": 301,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "9",
+   "number_from": "counter",
+   "labels": [
+    "prop:ineq"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 309
+   },
+   "last": 314,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 318
+   },
+   "last": 324,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "10",
+   "number_from": "counter",
+   "labels": [
+    "thm:Lov"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 330
+   },
+   "last": 332,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "11",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 334
+   },
+   "last": 336,
+   "result": "matched"
+  },
+  {
+   "id": "2609.21895v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "fig:An_bis"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 338
+   },
+   "last": 388,
+   "result": "matched"
+  }
+ ]
+}
