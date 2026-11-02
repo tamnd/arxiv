@@ -1,7 +1,7 @@
 {
  "paper": "2601.15010",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.33",
  "main": [
   "RelEuler_v1.tex"
  ],
@@ -68,7 +68,7 @@
   {
    "env": "ack",
    "title": "Acknowledgement",
-   "item": "unknown",
+   "item": "other/section",
    "numbered": false,
    "from": "paper",
    "form": "newtheorem"
@@ -124,14 +124,16 @@
  ],
  "occurrences": {
   "env": 77,
-  "label": 259,
-  "proof": 35,
-  "textref": 180
+  "head": 12,
+  "label": 263,
+  "proof": 42,
+  "textref": 190
  },
  "matched": {
   "env": 77,
-  "label": 259,
-  "proof": 35
+  "head": 12,
+  "label": 263,
+  "proof": 42
  },
  "gaps": [],
  "waivers": [],
@@ -139,19 +141,21 @@
   "from_aux": 0,
   "from_render": 77,
   "from_counter": 0,
-  "from_head": 0,
+  "from_head": 12,
   "agree": 77,
   "disagree": 0,
   "contiguity_gaps": 0
  },
  "textrefs": {
-  "resolved": 178,
+  "resolved": 188,
   "unresolved": 2
  },
  "render": {
   "theorems": 77,
   "proofs": 35,
-  "agree": true
+  "agree": true,
+  "source_theorems": 77,
+  "source_proofs": 35
  },
  "findings": [
   {
@@ -368,6 +372,65 @@
    },
    "last": 754,
    "result": "matched"
+  },
+  {
+   "id": "2601.15010v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 778
+   },
+   "last": 779,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "labels": [
+    "f ansatz",
+    "eq:G0"
+   ],
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 791
+   },
+   "last": 802,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "3",
+   "number_from": "head",
+   "labels": [
+    "defn:barG",
+    "eq:barG"
+   ],
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 805
+   },
+   "last": 821,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2601.15010v1#env-10",
@@ -1034,15 +1097,127 @@
    "env": "proof",
    "title": "Proof",
    "item": "proof",
-   "labels": [
-    "pt2Theta bootstrap eq"
-   ],
    "pos": {
     "file": "RelEuler_v1.tex",
     "line": 1811
    },
    "last": 1870,
    "result": "matched"
+  },
+  {
+   "id": "2601.15010v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2601.15010v1#proof-13",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 1813
+   },
+   "last": 1815,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2601.15010v1#proof-13",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 1815
+   },
+   "last": 1821,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "pt2Theta bootstrap eq"
+   ],
+   "parent": "2601.15010v1#proof-13",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 1821
+   },
+   "last": 1835,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2601.15010v1#proof-13",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 1835
+   },
+   "last": 1846,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2601.15010v1#proof-13",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 1846
+   },
+   "last": 1857,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2601.15010v1#proof-13",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 1857
+   },
+   "last": 1864,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2601.15010v1#proof-13",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 1864
+   },
+   "last": 1869,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2601.15010v1#env-34",
@@ -1065,9 +1240,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-14",
+   "id": "2601.15010v1#proof-21",
    "type": "proof",
-   "k": 14,
+   "k": 21,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1100,9 +1275,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-15",
+   "id": "2601.15010v1#proof-22",
    "type": "proof",
-   "k": 15,
+   "k": 22,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1138,9 +1313,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-16",
+   "id": "2601.15010v1#proof-23",
    "type": "proof",
-   "k": 16,
+   "k": 23,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1235,9 +1410,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-17",
+   "id": "2601.15010v1#proof-24",
    "type": "proof",
-   "k": 17,
+   "k": 24,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1338,9 +1513,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-18",
+   "id": "2601.15010v1#proof-25",
    "type": "proof",
-   "k": 18,
+   "k": 25,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1483,9 +1658,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-19",
+   "id": "2601.15010v1#proof-26",
    "type": "proof",
-   "k": 19,
+   "k": 26,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1560,9 +1735,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-20",
+   "id": "2601.15010v1#proof-27",
    "type": "proof",
-   "k": 20,
+   "k": 27,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1612,9 +1787,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-21",
+   "id": "2601.15010v1#proof-28",
    "type": "proof",
-   "k": 21,
+   "k": 28,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1693,9 +1868,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-22",
+   "id": "2601.15010v1#proof-29",
    "type": "proof",
-   "k": 22,
+   "k": 29,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1825,9 +2000,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-23",
+   "id": "2601.15010v1#proof-30",
    "type": "proof",
-   "k": 23,
+   "k": 30,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1912,9 +2087,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-24",
+   "id": "2601.15010v1#proof-31",
    "type": "proof",
-   "k": 24,
+   "k": 31,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1962,9 +2137,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-25",
+   "id": "2601.15010v1#proof-32",
    "type": "proof",
-   "k": 25,
+   "k": 32,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2002,9 +2177,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-26",
+   "id": "2601.15010v1#proof-33",
    "type": "proof",
-   "k": 26,
+   "k": 33,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2044,9 +2219,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-27",
+   "id": "2601.15010v1#proof-34",
    "type": "proof",
-   "k": 27,
+   "k": 34,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2085,9 +2260,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-28",
+   "id": "2601.15010v1#proof-35",
    "type": "proof",
-   "k": 28,
+   "k": 35,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2127,9 +2302,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-29",
+   "id": "2601.15010v1#proof-36",
    "type": "proof",
-   "k": 29,
+   "k": 36,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2219,9 +2394,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-30",
+   "id": "2601.15010v1#proof-37",
    "type": "proof",
-   "k": 30,
+   "k": 37,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2262,9 +2437,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-31",
+   "id": "2601.15010v1#proof-38",
    "type": "proof",
-   "k": 31,
+   "k": 38,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2307,9 +2482,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-32",
+   "id": "2601.15010v1#proof-39",
    "type": "proof",
-   "k": 32,
+   "k": 39,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2347,9 +2522,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-33",
+   "id": "2601.15010v1#proof-40",
    "type": "proof",
-   "k": 33,
+   "k": 40,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2387,9 +2562,9 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-34",
+   "id": "2601.15010v1#proof-41",
    "type": "proof",
-   "k": 34,
+   "k": 41,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2408,25 +2583,15 @@
    "result": "matched"
   },
   {
-   "id": "2601.15010v1#proof-35",
+   "id": "2601.15010v1#proof-42",
    "type": "proof",
-   "k": 35,
+   "k": 42,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "labels": [
     "E:Moving_domain_spherically_symmetric_LWP",
     "E:k_DIT_LWP",
-    "E:Time_existence_Lagrangian",
-    "E:Regularity_rescaled_symmetric_variables",
-    "E:Regularity_rescaled_v",
-    "E:Regularity_rescaled_rho",
-    "E:Regularity_rescaled_sound_speed",
-    "E:Regularity_rescaled_v_at_zero",
-    "E:Regularity_rescaled_rho_at_zero",
-    "E:Mass_functions",
-    "E:Mass_function",
-    "E:Reference_mass_function",
     "E:Pre_gauge_identity_in_terms_of_masses",
     "E:Mass_function_near_zero",
     "E:Reference_mass_function_near_zero",
@@ -2451,6 +2616,211 @@
     "appendix"
    ],
    "result": "matched"
+  },
+  {
+   "id": "2601.15010v1#head-4",
+   "type": "head",
+   "k": 4,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "parent": "2601.15010v1#proof-42",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 4764
+   },
+   "last": 4764,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#head-5",
+   "type": "head",
+   "k": 5,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2601.15010v1#proof-42",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 4833
+   },
+   "last": 4834,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#head-6",
+   "type": "head",
+   "k": 6,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "3",
+   "number_from": "head",
+   "labels": [
+    "E:Time_existence_Lagrangian"
+   ],
+   "parent": "2601.15010v1#proof-42",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 4854
+   },
+   "last": 4859,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#head-7",
+   "type": "head",
+   "k": 7,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "4",
+   "number_from": "head",
+   "labels": [
+    "E:Regularity_rescaled_symmetric_variables",
+    "E:Regularity_rescaled_v",
+    "E:Regularity_rescaled_rho",
+    "E:Regularity_rescaled_sound_speed",
+    "E:Regularity_rescaled_v_at_zero",
+    "E:Regularity_rescaled_rho_at_zero"
+   ],
+   "parent": "2601.15010v1#proof-42",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 4866
+   },
+   "last": 4919,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#head-8",
+   "type": "head",
+   "k": 8,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "5",
+   "number_from": "head",
+   "labels": [
+    "E:Mass_functions",
+    "E:Mass_function",
+    "E:Reference_mass_function"
+   ],
+   "parent": "2601.15010v1#proof-42",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 4922
+   },
+   "last": 4939,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#head-9",
+   "type": "head",
+   "k": 9,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "6",
+   "number_from": "head",
+   "parent": "2601.15010v1#proof-42",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 5092
+   },
+   "last": 5094,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#head-10",
+   "type": "head",
+   "k": 10,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "7",
+   "number_from": "head",
+   "parent": "2601.15010v1#proof-42",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 5097
+   },
+   "last": 5102,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#head-11",
+   "type": "head",
+   "k": 11,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "8",
+   "number_from": "head",
+   "parent": "2601.15010v1#proof-42",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 5146
+   },
+   "last": 5147,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2601.15010v1#head-12",
+   "type": "head",
+   "k": 12,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "9",
+   "number_from": "head",
+   "parent": "2601.15010v1#proof-42",
+   "pos": {
+    "file": "RelEuler_v1.tex",
+    "line": 5193
+   },
+   "last": 5196,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
   }
  ]
 }

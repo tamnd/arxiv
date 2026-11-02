@@ -1,7 +1,7 @@
 {
  "paper": "2602.02346",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.33",
  "main": [
   "Process0202_2026.tex"
  ],
@@ -34,7 +34,7 @@
   {
    "env": "acknowledgement",
    "title": "Acknowledgement",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
@@ -84,7 +84,7 @@
   {
    "env": "conclusion",
    "title": "Conclusion",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
@@ -221,7 +221,7 @@
   {
    "env": "summary",
    "title": "Summary",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
@@ -231,8 +231,9 @@
   {
    "env": "proof",
    "title": "",
-   "item": "unknown",
+   "item": "proof",
    "numbered": false,
+   "proof": true,
    "from": "wrapper",
    "form": "titled",
    "title_arg": true
@@ -240,12 +241,14 @@
  ],
  "occurrences": {
   "env": 8,
-  "label": 16,
+  "label": 27,
+  "proof": 2,
   "textref": 24
  },
  "matched": {
   "env": 8,
-  "label": 16
+  "label": 27,
+  "proof": 2
  },
  "gaps": [],
  "waivers": [],
@@ -265,7 +268,9 @@
  "render": {
   "theorems": 8,
   "proofs": 0,
-  "agree": true
+  "agree": true,
+  "source_theorems": 8,
+  "source_proofs": 0
  },
  "outside": {
   "theoremgraph": 8
@@ -431,6 +436,29 @@
    "result": "matched"
   },
   {
+   "id": "2602.02346v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Term0",
+    "Term1",
+    "Def_t",
+    "Term2",
+    "Term3",
+    "Slowly"
+   ],
+   "pos": {
+    "file": "Process0202_2026.tex",
+    "line": 360
+   },
+   "last": 424,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
    "id": "2602.02346v1#env-8",
    "type": "env",
    "k": 8,
@@ -451,6 +479,28 @@
    },
    "last": 602,
    "result": "matched"
+  },
+  {
+   "id": "2602.02346v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Intermed",
+    "Assym_T",
+    "DEf_r",
+    "Asympt_r",
+    "Yagl2"
+   ],
+   "pos": {
+    "file": "Process0202_2026.tex",
+    "line": 604
+   },
+   "last": 759,
+   "result": "matched",
+   "confidence": "medium"
   }
  ]
 }

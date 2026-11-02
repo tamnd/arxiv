@@ -1,0 +1,1343 @@
+{
+ "paper": "2609.20772",
+ "version": 1,
+ "extractor": "ax/v0.5.33",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "array",
+  "amsmath",
+  "amsthm",
+  "amsfonts",
+  "enumerate",
+  "natbib",
+  "url",
+  "graphicx",
+  "psfrag",
+  "epsf",
+  "setspace",
+  "soul",
+  "color",
+  "booktabs",
+  "threeparttable",
+  "amssymb",
+  "newfloat",
+  "multirow",
+  "arydshln",
+  "xcolor",
+  "hyperref",
+  "algorithm",
+  "algpseudocode",
+  "tikz"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 1 kept",
+  "macros: 45 commands, 0 environments",
+  "tree: 351 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "within": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "condition",
+   "title": "Condition",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 29,
+  "head": 3,
+  "label": 134,
+  "proof": 20,
+  "textref": 75
+ },
+ "matched": {
+  "env": 29,
+  "head": 3,
+  "label": 134,
+  "proof": 20
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 29,
+  "from_counter": 0,
+  "from_head": 0,
+  "agree": 29,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 74,
+  "unresolved": 1
+ },
+ "render": {
+  "theorems": 29,
+  "proofs": 20,
+  "agree": true,
+  "source_theorems": 29,
+  "source_proofs": 20
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.20772v1#textref-1",
+   "message": "the text names condition A and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "strong",
+ "items": [
+  {
+   "id": "2609.20772v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 664
+   },
+   "last": 666,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "render",
+   "labels": [
+    "ass:errors",
+    "eq:Kmsemse",
+    "eq:residual-weighted-errors"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 685
+   },
+   "last": 712,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "render",
+   "labels": [
+    "ass:mixing",
+    "eq:epsilon-mixing",
+    "eq:xi-mixing",
+    "eq:oracle-unconditional-covariance-limit",
+    "eq:2-mixing"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 732
+   },
+   "last": 794,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "render",
+   "labels": [
+    "rem:example-mixing"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 798
+   },
+   "last": 805,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "render",
+   "labels": [
+    "ass:stability",
+    "eq:stability",
+    "eq:stability-moments"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 854
+   },
+   "last": 868,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "render",
+   "labels": [
+    "rem:example-stability"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 895
+   },
+   "last": 898,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "render",
+   "labels": [
+    "thm:vector_gtcm",
+    "eq:martingaleCLT",
+    "eq:martingaleCLT2",
+    "eq:gtcm_size"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 907
+   },
+   "last": 940,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "render",
+   "labels": [
+    "thm:local_power",
+    "eq:local_score_expansion",
+    "eq:local_score_limit",
+    "eq:local_chisq_limit",
+    "eq:local_power_curve"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1003
+   },
+   "last": 1062,
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Note",
+   "item": "remark",
+   "pos": {
+    "file": "main.tex",
+    "line": 1204
+   },
+   "last": 1214,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.20772v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "B.1",
+   "number_from": "render",
+   "labels": [
+    "ass:population_weights"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1379
+   },
+   "last": 1392,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "B.2",
+   "number_from": "render",
+   "labels": [
+    "ass:estimated_weights",
+    "eq:weight-stability-moments",
+    "eq:weight-consistency",
+    "eq:weight-weighted-second-moments"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1416
+   },
+   "last": 1456,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.1",
+   "number_from": "render",
+   "labels": [
+    "lem:leading-term",
+    "eq:leading-null"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1586
+   },
+   "last": 1600,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:oracle-conditional-covariance-stabilization",
+    "eq:oracle-conditional-covariance-limit"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1602
+   },
+   "last": 1704,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.2",
+   "number_from": "render",
+   "labels": [
+    "lem:exposure-remainder-moments"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1765
+   },
+   "last": 1771,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:exposure-first-deletion-bound",
+    "eq:exposure-square-expansion",
+    "eq:exposure-pair-expansion",
+    "eq:exposure-separated-bound",
+    "eq:exposure-mixed-bound",
+    "eq:termII-converge"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1773
+   },
+   "last": 2096,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.3",
+   "number_from": "render",
+   "labels": [
+    "lem:outcome-remainder-moments"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2098
+   },
+   "last": 2104,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:outcome-first-deletion-bound",
+    "eq:outcome-square-expansion",
+    "eq:outcome-pair-expansion",
+    "eq:outcome-separated-bound",
+    "eq:outcome-mixed-bound",
+    "eq:termIII-converge"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2106
+   },
+   "last": 2446,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.4",
+   "number_from": "render",
+   "pos": {
+    "file": "main.tex",
+    "line": 2448
+   },
+   "last": 2451,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:termIV-product-bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2453
+   },
+   "last": 2472,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.5",
+   "number_from": "render",
+   "labels": [
+    "lem:estimated-weight-remainder"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2477
+   },
+   "last": 2483,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:weight-V-probability-stability",
+    "eq:weight-V-first-deletion",
+    "eq:weight-V-exposure-moment",
+    "eq:weight-V-deleted-moment",
+    "eq:weight-V-square-expansion",
+    "eq:weight-V-pair-expansion",
+    "eq:weight-V-separated-bound",
+    "eq:weight-V-mixed-bound",
+    "eq:weight-V-double-deletion-probability",
+    "eq:weight-V-convergence"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2485
+   },
+   "last": 2764,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.6",
+   "number_from": "render",
+   "labels": [
+    "lem:weight-regression-remainders"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2767
+   },
+   "last": 2774,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:weight-interaction-first-deletion",
+    "eq:weight-interaction-first-weight-bound",
+    "eq:weight-interaction-first-nuisance-bound",
+    "eq:weight-interaction-second-deletion",
+    "eq:weight-interaction-separated-bound",
+    "eq:weight-interaction-double-difference-bound",
+    "eq:termVI-converge",
+    "eq:weight-outcome-interaction-bound",
+    "eq:termVII-converge"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2776
+   },
+   "last": 3083,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.7",
+   "number_from": "render",
+   "labels": [
+    "lem:weight-product-remainder"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3086
+   },
+   "last": 3091,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:termVIII-product-bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3093
+   },
+   "last": 3112,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "C.8",
+   "number_from": "render",
+   "labels": [
+    "lem:matrix-covariance-consistency"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3130
+   },
+   "last": 3136,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:oracle-realized-minus-conditional",
+    "eq:oracle-second-moment-limit",
+    "eq:feasible-oracle-second-moment",
+    "eq:feasible-oracle-second-moment-matrix"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3138
+   },
+   "last": 3236,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:local-centred-remainder",
+    "eq:local-expansion",
+    "eq:local-drift-martingale",
+    "eq:local-oracle-second-moment",
+    "eq:local-feasible-score-distance"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3250
+   },
+   "last": 3361,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "E.1",
+   "number_from": "render",
+   "labels": [
+    "lem:gaussian-ar-short-memory",
+    "eq:gap-rate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3385
+   },
+   "last": 3401,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:gaussian-covariance-bounds",
+    "eq:conditional-covariance-lower-bound",
+    "eq:response-rate",
+    "eq:source-blocks",
+    "eq:inverse-decay",
+    "eq:source-cross-covariance",
+    "eq:canonical-bound",
+    "eq:source-one-pair",
+    "eq:source-max-rate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3403
+   },
+   "last": 3549,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "E.2",
+   "number_from": "render",
+   "labels": [
+    "lem:gaussian-ma-short-memory"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3551
+   },
+   "last": 3564,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3566
+   },
+   "last": 3595,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "F.1",
+   "number_from": "render",
+   "labels": [
+    "lem:linear-regression-stability",
+    "eq:linear-moment",
+    "eq:linear-gram"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3674
+   },
+   "last": 3705,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:linear-max-bound",
+    "eq:linear-average-bound",
+    "eq:linear-deleted-inverse",
+    "eq:linear-coefficient-stability"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3707
+   },
+   "last": 3843,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "F.2",
+   "number_from": "render",
+   "labels": [
+    "prop:linear-weighted-stability",
+    "eq:linear-weighted-inverse",
+    "eq:linear-weighted-stability-rate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3845
+   },
+   "last": 3892,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:linear-weighted-max-moments",
+    "eq:linear-weighted-evaluation-moments",
+    "eq:linear-weighted-beta-bound",
+    "eq:linear-weighted-coefficient-bound",
+    "eq:linear-weighted-coefficient-moments",
+    "eq:linear-weighted-prediction-deletion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3894
+   },
+   "last": 4115,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "F.3",
+   "number_from": "render",
+   "labels": [
+    "lem:tvcm-kernel-stability",
+    "eq:tvcm-moment",
+    "eq:tvcm-bandwidth",
+    "eq:tvcm-local-conditions"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4159
+   },
+   "last": 4205,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tvcm-average-response-bound",
+    "eq:tvcm-deleted-inverse"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4207
+   },
+   "last": 4388,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "F.4",
+   "number_from": "render",
+   "labels": [
+    "lem:tvcm-weighted-stability",
+    "eq:tvcm-weighted-bandwidth",
+    "eq:tvcm-weighted-inverse",
+    "eq:tvcm-weighted-stability-rate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4392
+   },
+   "last": 4434,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:tvcm-weighted-local-response",
+    "eq:tvcm-weighted-evaluation-moments",
+    "eq:tvcm-weighted-beta-bound",
+    "eq:tvcm-weighted-coefficient-bound",
+    "eq:tvcm-weighted-coefficient-moments"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4436
+   },
+   "last": 4664,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "G.1",
+   "number_from": "render",
+   "labels": [
+    "prop:Sigma_xi",
+    "eq:local-drift-mean-limit"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4673
+   },
+   "last": 4685,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4687
+   },
+   "last": 4704,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "G.2",
+   "number_from": "render",
+   "labels": [
+    "prop:vector-precision-optimal",
+    "eq:variance-history-only",
+    "eq:Gamma-star",
+    "eq:alternative-weight-limits",
+    "eq:precision-loewner-bound",
+    "eq:optimal-precision-weight"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4722
+   },
+   "last": 4786,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4788
+   },
+   "last": 4853,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Note",
+   "item": "remark",
+   "pos": {
+    "file": "main.tex",
+    "line": 5062
+   },
+   "last": 5067,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.20772v1#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Note",
+   "item": "remark",
+   "pos": {
+    "file": "main.tex",
+    "line": 5170
+   },
+   "last": 5174,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.20772v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "J.1",
+   "number_from": "render",
+   "labels": [
+    "lem:conditional-second-moment"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5187
+   },
+   "last": 5212,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5214
+   },
+   "last": 5247,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "J.2",
+   "number_from": "render",
+   "labels": [
+    "lemma:WLLN-MS"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5251
+   },
+   "last": 5266,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5268
+   },
+   "last": 5305,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "J.3",
+   "number_from": "render",
+   "labels": [
+    "prop:adaptive_calibration",
+    "eq:adaptive_size_control"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5311
+   },
+   "last": 5333,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.20772v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 5335
+   },
+   "last": 5391,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
