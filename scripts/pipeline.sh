@@ -24,6 +24,7 @@ pace=${AX_PACE:-15s}
 every=${AX_RENDER_EVERY:-10}
 list=${AX_LIST:-manifests/gold/x-v1.txt}
 scope=${AX_SCOPE:-math}
+recordpilot=${AX_RECORD_PILOT:-manifests/scope/record-pilot.txt}
 # The run stops before the batch when the disk has less free space than this, in MB.
 reserve=${AX_RESERVE_MB:-3000}
 # Cron gives a short PATH, and gh is in /usr/local/bin.
@@ -211,6 +212,14 @@ r=$(count "$out" extracted)
 s=$(count "$out" stopped)
 log "the batch of the list $list: $r extracted, $s stopped"
 done=$((done + r)) stopped=$((stopped + s)) from="${from}the list $list"
+# The record pilot: a few record papers of the pilot area, read by way R2, so that the importer and rule D06 of math2 see the class record before the scope reaches it. A paper of the list that has a state needs no work, so the batch does nothing when the list is done.
+if [ -n "$record" ] && [ -s "$recordpilot" ]; then
+	ax census batch -list "$recordpilot" -limit 10 -pace "$pace" $sample $record >"$out.record" 2>"$dir/run/batch-$stamp.err.record" || fail "the record pilot" $? "$dir/run/batch-$stamp.err.record"
+	rr=$(count "$out.record" extracted)
+	rs=$(count "$out.record" stopped)
+	log "the batch of the record pilot: $rr extracted, $rs stopped"
+	done=$((done + rr)) stopped=$((stopped + rs))
+fi
 if [ $((r + s)) -lt "$limit" ]; then
 	ax census batch -scope "$scope" -limit $((limit - r - s)) -pace "$pace" $sample $record >"$out.scope" 2>"$dir/run/batch-$stamp.err.scope" || fail "the scope" $? "$dir/run/batch-$stamp.err.scope"
 	r=$(count "$out.scope" extracted)
