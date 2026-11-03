@@ -358,8 +358,11 @@ importmath2() {
 	mathchecks >"$dir/run/check-main-$stamp.out" 2>&1 || bchecks=fail
 	m2 corpus import -source arxiv -corpus "$dir/arxiv" -root "$dir/math2" >"$dir/run/import-$stamp.out" 2>&1 || block "m2 corpus import failed, see $dir/run/import-$stamp.out"
 	m2 corpus cluster -source arxiv -root "$dir/math2" >"$dir/run/cluster-$stamp.out" 2>&1 || block "m2 corpus cluster failed, see $dir/run/cluster-$stamp.out"
-	# The report of the research layer (AX-M8). It does not stop the run when it fails.
-	m2 corpus status -layer research -corpus "$dir/arxiv" -root "$dir/math2" -write >"$dir/run/research-$stamp.out" 2>&1 || log "m2 corpus status -layer research failed, see $dir/run/research-$stamp.out"
+	# The report of the research layer (AX-M8). It reads the writing levels and the formal outcomes from build/, which is not committed, so the steps that write them run first. They need no Lean. It does not stop the run when it fails.
+	for step in status writing formal; do
+		m2 build -only "$step" -root "$dir/math2" >>"$dir/run/research-$stamp.out" 2>&1 || log "m2 build -only $step failed, see $dir/run/research-$stamp.out"
+	done
+	m2 corpus status -layer research -corpus "$dir/arxiv" -root "$dir/math2" -write >>"$dir/run/research-$stamp.out" 2>&1 || log "m2 corpus status -layer research failed, see $dir/run/research-$stamp.out"
 	# Rule D05 of AX-M5: each item object of tamnd/arxiv has a mention. The audit below has no checkout of tamnd/arxiv, so D05 skips there. It does not stop the run when it fails.
 	m2 audit -rule D05 -arxiv "$dir/arxiv" -root "$dir/math2" >"$dir/run/d05-$stamp.out" 2>&1 || log "rule D05 has findings, see $dir/run/d05-$stamp.out"
 	arxiv=$(git -C "$dir/arxiv" rev-parse --short HEAD)
