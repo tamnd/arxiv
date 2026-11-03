@@ -1,7 +1,7 @@
 {
  "paper": "2608.26046",
  "version": 1,
- "extractor": "ax/v0.5.9",
+ "extractor": "ax/v0.5.33",
  "main": [
   "CHNS_final.tex"
  ],
@@ -28,7 +28,7 @@
   "local: 3 style files",
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
-  "macros: 200 commands, 19 environments",
+  "macros: 199 commands, 19 environments",
   "tree: 142 nodes"
  ],
  "declarations": [
@@ -95,7 +95,7 @@
   {
    "env": "acknowledgement",
    "title": "Acknowledgement",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
@@ -145,7 +145,7 @@
   {
    "env": "conclusion",
    "title": "Conclusion",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
@@ -245,22 +245,32 @@
   {
    "env": "summary",
    "title": "Summary",
-   "item": "unknown",
+   "item": "other/section",
    "counter": "theorem",
    "shared": "theorem",
    "numbered": true,
    "from": "paper",
    "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:siamltex"
   }
  ],
  "occurrences": {
   "env": 3,
-  "label": 11,
+  "label": 19,
+  "proof": 1,
   "textref": 3
  },
  "matched": {
   "env": 3,
-  "label": 11
+  "label": 19,
+  "proof": 1
  },
  "gaps": [],
  "waivers": [],
@@ -280,23 +290,25 @@
  "render": {
   "theorems": 3,
   "proofs": 1,
-  "agree": true
+  "agree": true,
+  "source_theorems": 3,
+  "source_proofs": 1
  },
  "findings": [
   {
    "rule": "D07",
    "occurrence": "2608.26046v1#env-1",
-   "message": "the counter model gives Algorithm B.1 and the second witness gives 1"
+   "message": "the counter model gives Algorithm 2.1 and the second witness gives 1"
   },
   {
    "rule": "D07",
    "occurrence": "2608.26046v1#env-2",
-   "message": "the counter model gives Lemma C.1 and the second witness gives 2"
+   "message": "the counter model gives Lemma 3.1 and the second witness gives 2"
   },
   {
    "rule": "D07",
    "occurrence": "2608.26046v1#env-3",
-   "message": "the counter model gives Theorem C.2 and the second witness gives 3"
+   "message": "the counter model gives Theorem 3.2 and the second witness gives 3"
   }
  ],
  "strength": "normal",
@@ -367,6 +379,30 @@
     "line": 303
    },
    "last": 330,
+   "result": "matched"
+  },
+  {
+   "id": "2608.26046v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "cpf1",
+    "cpf2",
+    "cpf2a",
+    "cpf20",
+    "cpf3",
+    "cpf6",
+    "cpf7",
+    "cpf8"
+   ],
+   "pos": {
+    "file": "CHNS_final.tex",
+    "line": 331
+   },
+   "last": 471,
    "result": "matched"
   }
  ]

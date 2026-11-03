@@ -1,7 +1,7 @@
 {
  "paper": "2607.25960",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.33",
  "main": [
   "main.tex"
  ],
@@ -35,7 +35,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 1 decided, 0 flag tests decided, 0 kept",
   "macros: 169 commands, 1 environments",
-  "tree: 349 nodes"
+  "aliases: 972 uses of commands that stand for \\begin or \\end",
+  "tree: 835 nodes"
  ],
  "declarations": [
   {
@@ -161,14 +162,16 @@
  ],
  "occurrences": {
   "env": 95,
+  "head": 6,
   "label": 92,
-  "proof": 48,
-  "textref": 269
+  "proof": 52,
+  "textref": 261
  },
  "matched": {
   "env": 95,
+  "head": 6,
   "label": 92,
-  "proof": 48
+  "proof": 52
  },
  "gaps": [],
  "waivers": [],
@@ -176,19 +179,21 @@
   "from_aux": 0,
   "from_render": 95,
   "from_counter": 0,
-  "from_head": 0,
+  "from_head": 5,
   "agree": 95,
   "disagree": 0,
   "contiguity_gaps": 0
  },
  "textrefs": {
-  "resolved": 246,
-  "unresolved": 23
+  "resolved": 259,
+  "unresolved": 2
  },
  "render": {
   "theorems": 95,
   "proofs": 48,
-  "agree": true
+  "agree": true,
+  "source_theorems": 95,
+  "source_proofs": 48
  },
  "findings": [
   {
@@ -200,111 +205,6 @@
    "rule": "D09",
    "occurrence": "2607.25960v1#textref-2",
    "message": "the text names conjecture 3 and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-15",
-   "message": "the text names problem A and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-95",
-   "message": "the text names Claim A and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-96",
-   "message": "the text names Claim A and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-97",
-   "message": "the text names Claim A and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-98",
-   "message": "the text names Claim B and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-99",
-   "message": "the text names Claim B and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-100",
-   "message": "the text names Claim A and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-101",
-   "message": "the text names Claim B and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-102",
-   "message": "the text names Claim B and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-103",
-   "message": "the text names Claim C and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-105",
-   "message": "the text names Claim C and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-107",
-   "message": "the text names Claim D and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-108",
-   "message": "the text names Claim D and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-109",
-   "message": "the text names Claim D and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-110",
-   "message": "the text names Claim C and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-111",
-   "message": "the text names Claim D and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-113",
-   "message": "the text names Claim A and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-114",
-   "message": "the text names Claim C and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-149",
-   "message": "the text names Claim A and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-151",
-   "message": "the text names Claim A and the census has no such item (no-item)"
-  },
-  {
-   "rule": "D09",
-   "occurrence": "2607.25960v1#textref-152",
-   "message": "the text names Claim B and the census has no such item (no-item)"
   }
  ],
  "strength": "strong",
@@ -1396,15 +1296,47 @@
    "env": "proof",
    "title": "Proof",
    "item": "proof",
-   "labels": [
-    "eqn25"
-   ],
    "pos": {
     "file": "main.tex",
     "line": 2316
    },
    "last": 2427,
    "result": "matched"
+  },
+  {
+   "id": "2607.25960v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "parent": "2607.25960v1#proof-13",
+   "pos": {
+    "file": "main.tex",
+    "line": 2361
+   },
+   "last": 2368,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2607.25960v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn25"
+   ],
+   "parent": "2607.25960v1#proof-13",
+   "pos": {
+    "file": "main.tex",
+    "line": 2370
+   },
+   "last": 2426,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2607.25960v1#env-48",
@@ -1428,9 +1360,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-14",
+   "id": "2607.25960v1#proof-15",
    "type": "proof",
-   "k": 14,
+   "k": 15,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1462,9 +1394,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-15",
+   "id": "2607.25960v1#proof-16",
    "type": "proof",
-   "k": 15,
+   "k": 16,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1536,9 +1468,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-16",
+   "id": "2607.25960v1#proof-17",
    "type": "proof",
-   "k": 16,
+   "k": 17,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1550,17 +1482,15 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-17",
+   "id": "2607.25960v1#proof-18",
    "type": "proof",
-   "k": 17,
+   "k": 18,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
    "labels": [
     "eqn27",
     "equivariant_decomposition",
-    "eqn_local_growth",
-    "carrier_iteration",
     "eqn28"
    ],
    "pos": {
@@ -1571,9 +1501,135 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-18",
+   "id": "2607.25960v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "number": "A",
+   "number_from": "head",
+   "parent": "2607.25960v1#proof-18",
+   "pos": {
+    "file": "main.tex",
+    "line": 2538
+   },
+   "last": 2538,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2607.25960v1#proof-19",
    "type": "proof",
-   "k": 18,
+   "k": 19,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2607.25960v1#proof-18",
+   "pos": {
+    "file": "main.tex",
+    "line": 2540
+   },
+   "last": 2547,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2607.25960v1#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "number": "B",
+   "number_from": "head",
+   "parent": "2607.25960v1#proof-18",
+   "pos": {
+    "file": "main.tex",
+    "line": 2548
+   },
+   "last": 2551,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2607.25960v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn_local_growth"
+   ],
+   "parent": "2607.25960v1#proof-18",
+   "pos": {
+    "file": "main.tex",
+    "line": 2553
+   },
+   "last": 2575,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2607.25960v1#head-4",
+   "type": "head",
+   "k": 4,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "number": "C",
+   "number_from": "head",
+   "labels": [
+    "carrier_iteration"
+   ],
+   "parent": "2607.25960v1#proof-18",
+   "pos": {
+    "file": "main.tex",
+    "line": 2586
+   },
+   "last": 2589,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2607.25960v1#head-5",
+   "type": "head",
+   "k": 5,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "number": "D",
+   "number_from": "head",
+   "parent": "2607.25960v1#proof-18",
+   "pos": {
+    "file": "main.tex",
+    "line": 2646
+   },
+   "last": 2649,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2607.25960v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2607.25960v1#proof-18",
+   "pos": {
+    "file": "main.tex",
+    "line": 2651
+   },
+   "last": 2699,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2607.25960v1#proof-22",
+   "type": "proof",
+   "k": 22,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1585,9 +1641,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-19",
+   "id": "2607.25960v1#proof-23",
    "type": "proof",
-   "k": 19,
+   "k": 23,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1599,9 +1655,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-20",
+   "id": "2607.25960v1#proof-24",
    "type": "proof",
-   "k": 20,
+   "k": 24,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1613,9 +1669,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-21",
+   "id": "2607.25960v1#proof-25",
    "type": "proof",
-   "k": 21,
+   "k": 25,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1651,9 +1707,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-22",
+   "id": "2607.25960v1#proof-26",
    "type": "proof",
-   "k": 22,
+   "k": 26,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1685,9 +1741,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-23",
+   "id": "2607.25960v1#proof-27",
    "type": "proof",
-   "k": 23,
+   "k": 27,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1697,6 +1753,24 @@
    },
    "last": 2954,
    "result": "matched"
+  },
+  {
+   "id": "2607.25960v1#head-6",
+   "type": "head",
+   "k": 6,
+   "env": "head",
+   "title": "Claim",
+   "item": "statement/claim",
+   "number": "A",
+   "number_from": "head",
+   "parent": "2607.25960v1#proof-27",
+   "pos": {
+    "file": "main.tex",
+    "line": 2938
+   },
+   "last": 2938,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2607.25960v1#env-55",
@@ -1753,9 +1827,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-24",
+   "id": "2607.25960v1#proof-28",
    "type": "proof",
-   "k": 24,
+   "k": 28,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1767,9 +1841,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-25",
+   "id": "2607.25960v1#proof-29",
    "type": "proof",
-   "k": 25,
+   "k": 29,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1798,9 +1872,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-26",
+   "id": "2607.25960v1#proof-30",
    "type": "proof",
-   "k": 26,
+   "k": 30,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1869,9 +1943,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-27",
+   "id": "2607.25960v1#proof-31",
    "type": "proof",
-   "k": 27,
+   "k": 31,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1943,9 +2017,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-28",
+   "id": "2607.25960v1#proof-32",
    "type": "proof",
-   "k": 28,
+   "k": 32,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -1980,9 +2054,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-29",
+   "id": "2607.25960v1#proof-33",
    "type": "proof",
-   "k": 29,
+   "k": 33,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2063,9 +2137,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-30",
+   "id": "2607.25960v1#proof-34",
    "type": "proof",
-   "k": 30,
+   "k": 34,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2080,9 +2154,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-31",
+   "id": "2607.25960v1#proof-35",
    "type": "proof",
-   "k": 31,
+   "k": 35,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2189,9 +2263,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-32",
+   "id": "2607.25960v1#proof-36",
    "type": "proof",
-   "k": 32,
+   "k": 36,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2229,9 +2303,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-33",
+   "id": "2607.25960v1#proof-37",
    "type": "proof",
-   "k": 33,
+   "k": 37,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2271,9 +2345,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-34",
+   "id": "2607.25960v1#proof-38",
    "type": "proof",
-   "k": 34,
+   "k": 38,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2311,9 +2385,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-35",
+   "id": "2607.25960v1#proof-39",
    "type": "proof",
-   "k": 35,
+   "k": 39,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2351,9 +2425,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-36",
+   "id": "2607.25960v1#proof-40",
    "type": "proof",
-   "k": 36,
+   "k": 40,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2388,9 +2462,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-37",
+   "id": "2607.25960v1#proof-41",
    "type": "proof",
-   "k": 37,
+   "k": 41,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2425,9 +2499,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-38",
+   "id": "2607.25960v1#proof-42",
    "type": "proof",
-   "k": 38,
+   "k": 42,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2531,9 +2605,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-39",
+   "id": "2607.25960v1#proof-43",
    "type": "proof",
-   "k": 39,
+   "k": 43,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2571,9 +2645,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-40",
+   "id": "2607.25960v1#proof-44",
    "type": "proof",
-   "k": 40,
+   "k": 44,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2611,9 +2685,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-41",
+   "id": "2607.25960v1#proof-45",
    "type": "proof",
-   "k": 41,
+   "k": 45,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2694,9 +2768,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-42",
+   "id": "2607.25960v1#proof-46",
    "type": "proof",
-   "k": 42,
+   "k": 46,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2754,9 +2828,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-43",
+   "id": "2607.25960v1#proof-47",
    "type": "proof",
-   "k": 43,
+   "k": 47,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2814,9 +2888,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-44",
+   "id": "2607.25960v1#proof-48",
    "type": "proof",
-   "k": 44,
+   "k": 48,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2857,9 +2931,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-45",
+   "id": "2607.25960v1#proof-49",
    "type": "proof",
-   "k": 45,
+   "k": 49,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2897,9 +2971,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-46",
+   "id": "2607.25960v1#proof-50",
    "type": "proof",
-   "k": 46,
+   "k": 50,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2937,9 +3011,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-47",
+   "id": "2607.25960v1#proof-51",
    "type": "proof",
-   "k": 47,
+   "k": 51,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -2977,9 +3051,9 @@
    "result": "matched"
   },
   {
-   "id": "2607.25960v1#proof-48",
+   "id": "2607.25960v1#proof-52",
    "type": "proof",
-   "k": 48,
+   "k": 52,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
