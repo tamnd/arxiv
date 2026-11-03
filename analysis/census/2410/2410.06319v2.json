@@ -1,7 +1,7 @@
 {
  "paper": "2410.06319",
  "version": 2,
- "extractor": "ax/v0.5.17",
+ "extractor": "ax/v0.5.33",
  "main": [
   "main_final.tex"
  ],
@@ -38,7 +38,7 @@
   "local: 3 style files",
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
-  "macros: 198 commands, 21 environments",
+  "macros: 197 commands, 21 environments",
   "tree: 160 nodes"
  ],
  "declarations": [
@@ -121,16 +121,26 @@
    "numbered": true,
    "from": "paper",
    "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:siamltex"
   }
  ],
  "occurrences": {
   "env": 5,
-  "label": 12,
+  "label": 17,
+  "proof": 1,
   "textref": 7
  },
  "matched": {
   "env": 5,
-  "label": 12
+  "label": 17,
+  "proof": 1
  },
  "gaps": [],
  "waivers": [],
@@ -152,7 +162,7 @@
   "proofs": 1,
   "agree": true,
   "source_theorems": 5,
-  "source_proofs": 0
+  "source_proofs": 1
  },
  "outside": {
   "theoremgraph": 5,
@@ -162,27 +172,27 @@
   {
    "rule": "D07",
    "occurrence": "2410.06319v2#env-1",
-   "message": "the counter model gives Definition B.1 and the second witness gives 1"
+   "message": "the counter model gives Definition 2.1 and the second witness gives 1"
   },
   {
    "rule": "D07",
    "occurrence": "2410.06319v2#env-2",
-   "message": "the counter model gives Definition B.2 and the second witness gives 2"
+   "message": "the counter model gives Definition 2.2 and the second witness gives 2"
   },
   {
    "rule": "D07",
    "occurrence": "2410.06319v2#env-3",
-   "message": "the counter model gives Theorem C.1 and the second witness gives 3"
+   "message": "the counter model gives Theorem 3.1 and the second witness gives 3"
   },
   {
    "rule": "D07",
    "occurrence": "2410.06319v2#env-4",
-   "message": "the counter model gives Corollary C.2 and the second witness gives 4"
+   "message": "the counter model gives Corollary 3.2 and the second witness gives 4"
   },
   {
    "rule": "D07",
    "occurrence": "2410.06319v2#env-5",
-   "message": "the counter model gives Theorem D.1 and the second witness gives 5"
+   "message": "the counter model gives Theorem 4.1 and the second witness gives 5"
   }
  ],
  "strength": "normal",
@@ -247,6 +257,27 @@
     "line": 261
    },
    "last": 281,
+   "result": "matched"
+  },
+  {
+   "id": "2410.06319v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:Rhat_R_Y",
+    "eq:R_Y_R",
+    "eq:delta_H_bound",
+    "eq:gamma1_bound",
+    "eq:gamma2_bound"
+   ],
+   "pos": {
+    "file": "main_final.tex",
+    "line": 283
+   },
+   "last": 371,
    "result": "matched"
   },
   {

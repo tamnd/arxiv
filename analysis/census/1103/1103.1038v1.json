@@ -1,7 +1,7 @@
 {
  "paper": "1103.1038",
  "version": 1,
- "extractor": "ax/v0.5.17",
+ "extractor": "ax/v0.5.33",
  "main": [
   "paper.tex"
  ],
@@ -127,12 +127,14 @@
  ],
  "occurrences": {
   "env": 33,
+  "head": 9,
   "label": 61,
   "proof": 14,
-  "textref": 60
+  "textref": 65
  },
  "matched": {
   "env": 33,
+  "head": 9,
   "label": 61,
   "proof": 14
  },
@@ -141,15 +143,15 @@
  "numbers": {
   "from_aux": 0,
   "from_render": 0,
-  "from_counter": 33,
-  "from_head": 0,
+  "from_counter": 35,
+  "from_head": 7,
   "agree": 0,
   "disagree": 0,
   "contiguity_gaps": 0
  },
  "textrefs": {
-  "resolved": 59,
-  "unresolved": 1
+  "resolved": 63,
+  "unresolved": 2
  },
  "outside": {
   "theoremsearch": 19
@@ -157,8 +159,13 @@
  "findings": [
   {
    "rule": "D09",
-   "occurrence": "1103.1038v1#textref-39",
-   "message": "the text names Lemma \\ref{lem\r\nito foumul} and the census has no such item (no-label)"
+   "occurrence": "1103.1038v1#textref-30",
+   "message": "the text names Step 4 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "1103.1038v1#textref-43",
+   "message": "the text names Lemma \\ref{lem \nito foumul} and the census has no such item (no-label)"
   }
  ],
  "strength": "normal",
@@ -374,9 +381,7 @@
    "title": "Proof",
    "item": "proof",
    "labels": [
-    "eq 2 in ito formula",
-    "eq N in ito lemma",
-    "eq step2 in ito thm"
+    "eq N in ito lemma"
    ],
    "pos": {
     "file": "paper.tex",
@@ -384,6 +389,48 @@
    },
    "last": 793,
    "result": "matched"
+  },
+  {
+   "id": "1103.1038v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "labels": [
+    "eq 2 in ito formula"
+   ],
+   "parent": "1103.1038v1#proof-3",
+   "pos": {
+    "file": "paper.tex",
+    "line": 588
+   },
+   "last": 613,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "1103.1038v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "labels": [
+    "eq step2 in ito thm"
+   ],
+   "parent": "1103.1038v1#proof-3",
+   "pos": {
+    "file": "paper.tex",
+    "line": 727
+   },
+   "last": 744,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "1103.1038v1#env-10",
@@ -470,7 +517,6 @@
    "title": "Proof",
    "item": "proof",
    "labels": [
-    "*",
     "eq 1 in lem non null bdary ito",
     "Eq step1"
    ],
@@ -480,6 +526,45 @@
    },
    "last": 972,
    "result": "matched"
+  },
+  {
+   "id": "1103.1038v1#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "labels": [
+    "*"
+   ],
+   "parent": "1103.1038v1#proof-4",
+   "pos": {
+    "file": "paper.tex",
+    "line": 852
+   },
+   "last": 863,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "1103.1038v1#head-4",
+   "type": "head",
+   "k": 4,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "1103.1038v1#proof-4",
+   "pos": {
+    "file": "paper.tex",
+    "line": 935
+   },
+   "last": 971,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "1103.1038v1#env-14",
@@ -535,8 +620,7 @@
     "eq est linear part",
     "eq est principle part",
     "eq gronwall in solve",
-    "estim 1 in thm solv (1.1)",
-    "eq in thm solve (1.1) appxim g"
+    "estim 1 in thm solv (1.1)"
    ],
    "pos": {
     "file": "paper.tex",
@@ -544,6 +628,63 @@
    },
    "last": 1375,
    "result": "matched"
+  },
+  {
+   "id": "1103.1038v1#head-5",
+   "type": "head",
+   "k": 5,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "parent": "1103.1038v1#proof-5",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1004
+   },
+   "last": 1006,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "1103.1038v1#head-6",
+   "type": "head",
+   "k": 6,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "1103.1038v1#proof-5",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1189
+   },
+   "last": 1265,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "1103.1038v1#head-7",
+   "type": "head",
+   "k": 7,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "3",
+   "number_from": "head",
+   "labels": [
+    "eq in thm solve (1.1) appxim g"
+   ],
+   "parent": "1103.1038v1#proof-5",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1267
+   },
+   "last": 1362,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "1103.1038v1#env-16",
@@ -640,6 +781,26 @@
    "result": "matched"
   },
   {
+   "id": "1103.1038v1#head-8",
+   "type": "head",
+   "k": 8,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1506
+   },
+   "last": 1926,
+   "flags": [
+    "section"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
    "id": "1103.1038v1#env-20",
    "type": "env",
    "k": 20,
@@ -653,6 +814,7 @@
     "thm max princip global 1",
     "estim thm max principle global 1"
    ],
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1507
@@ -670,6 +832,7 @@
    "counter": "rmk",
    "number": "5.1",
    "number_from": "counter",
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1519
@@ -690,6 +853,7 @@
    "labels": [
     "estim rmk max principle global 1"
    ],
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1527
@@ -710,6 +874,7 @@
    "labels": [
     "lem degiorgi iteration"
    ],
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1543
@@ -727,6 +892,7 @@
    "labels": [
     "eq in lem degiorgi iteration"
    ],
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1551
@@ -747,6 +913,7 @@
    "labels": [
     "cor degiorgi iteration"
    ],
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1565
@@ -761,6 +928,7 @@
    "env": "proof",
    "title": "Proof",
    "item": "proof",
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1577
@@ -785,6 +953,7 @@
     "eq estim 1  thm glob max",
     "eq 5 in thm glob max"
    ],
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1596
@@ -807,6 +976,7 @@
     "condition in thm max princip 2",
     "estim in thm max princip global 2"
    ],
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1824
@@ -825,6 +995,7 @@
     "eq 1 in thm glob max 2",
     "eq 2 in thm glob max 2"
    ],
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1847
@@ -842,6 +1013,7 @@
    "counter": "rmk",
    "number": "5.3",
    "number_from": "counter",
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1900
@@ -859,6 +1031,7 @@
    "counter": "thm",
    "number": "5.5",
    "number_from": "counter",
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1906
@@ -873,12 +1046,33 @@
    "env": "proof",
    "title": "Proof",
    "item": "proof",
+   "parent": "1103.1038v1#head-8",
    "pos": {
     "file": "paper.tex",
     "line": 1913
    },
    "last": 1924,
    "result": "matched"
+  },
+  {
+   "id": "1103.1038v1#head-9",
+   "type": "head",
+   "k": 9,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "paper.tex",
+    "line": 1927
+   },
+   "last": 2512,
+   "flags": [
+    "section"
+   ],
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "1103.1038v1#env-28",
@@ -890,6 +1084,7 @@
    "counter": "defn",
    "number": "5.1",
    "number_from": "counter",
+   "parent": "1103.1038v1#head-9",
    "pos": {
     "file": "paper.tex",
     "line": 1930
@@ -907,6 +1102,7 @@
    "counter": "defn",
    "number": "5.2",
    "number_from": "counter",
+   "parent": "1103.1038v1#head-9",
    "pos": {
     "file": "paper.tex",
     "line": 1965
@@ -927,6 +1123,7 @@
    "labels": [
     "prop verifying BSPDG"
    ],
+   "parent": "1103.1038v1#head-9",
    "pos": {
     "file": "paper.tex",
     "line": 1989
@@ -944,6 +1141,7 @@
    "counter": "rmk",
    "number": "5.4",
    "number_from": "counter",
+   "parent": "1103.1038v1#head-9",
    "pos": {
     "file": "paper.tex",
     "line": 1996
@@ -965,6 +1163,7 @@
     "lem cor of prop ito non null bdary",
     "eq ito cutoff func"
    ],
+   "parent": "1103.1038v1#head-9",
    "pos": {
     "file": "paper.tex",
     "line": 2002
@@ -979,6 +1178,7 @@
    "env": "proof",
    "title": "Proof",
    "item": "proof",
+   "parent": "1103.1038v1#head-9",
    "pos": {
     "file": "paper.tex",
     "line": 2032
@@ -996,6 +1196,7 @@
    "labels": [
     "eq 1 in prop verifying"
    ],
+   "parent": "1103.1038v1#head-9",
    "pos": {
     "file": "paper.tex",
     "line": 2067
@@ -1017,6 +1218,7 @@
     "thm max princip local",
     "estim in thm max princip local"
    ],
+   "parent": "1103.1038v1#head-9",
    "pos": {
     "file": "paper.tex",
     "line": 2229
@@ -1036,6 +1238,7 @@
     "eq b in thm max princip local",
     "eq c in thm max princip local"
    ],
+   "parent": "1103.1038v1#head-9",
    "pos": {
     "file": "paper.tex",
     "line": 2241

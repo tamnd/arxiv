@@ -1,7 +1,7 @@
 {
  "paper": "2512.08487",
  "version": 2,
- "extractor": "ax/v0.5.17",
+ "extractor": "ax/v0.5.33",
  "main": [
   "Dirichlet8.tex"
  ],
@@ -132,13 +132,15 @@
  ],
  "occurrences": {
   "env": 49,
-  "label": 117,
+  "head": 9,
+  "label": 121,
   "proof": 23,
-  "textref": 73
+  "textref": 74
  },
  "matched": {
   "env": 49,
-  "label": 117,
+  "head": 9,
+  "label": 121,
   "proof": 23
  },
  "gaps": [],
@@ -147,14 +149,14 @@
   "from_aux": 0,
   "from_render": 49,
   "from_counter": 0,
-  "from_head": 0,
+  "from_head": 9,
   "agree": 40,
   "disagree": 0,
   "contiguity_gaps": 0
  },
  "textrefs": {
   "resolved": 73,
-  "unresolved": 0
+  "unresolved": 1
  },
  "render": {
   "theorems": 49,
@@ -163,6 +165,13 @@
   "source_theorems": 49,
   "source_proofs": 23
  },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2512.08487v2#textref-68",
+   "message": "the text names step 2.2 and the census has no such item (no-item)"
+  }
+ ],
  "strength": "strong",
  "items": [
   {
@@ -1274,7 +1283,6 @@
    "title": "Proof",
    "item": "proof",
    "labels": [
-    "eq:claim1",
     "eq:x",
     "eq:weakz",
     "eq:tracelayer",
@@ -1286,6 +1294,45 @@
    },
    "last": 1870,
    "result": "matched"
+  },
+  {
+   "id": "2512.08487v2#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "labels": [
+    "eq:claim1"
+   ],
+   "parent": "2512.08487v2#proof-17",
+   "pos": {
+    "file": "Dirichlet8.tex",
+    "line": 1762
+   },
+   "last": 1770,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2512.08487v2#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2512.08487v2#proof-17",
+   "pos": {
+    "file": "Dirichlet8.tex",
+    "line": 1842
+   },
+   "last": 1842,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2512.08487v2#env-42",
@@ -1309,6 +1356,31 @@
     "appendix"
    ],
    "result": "matched"
+  },
+  {
+   "id": "2512.08487v2#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "labels": [
+    "eq:fonction_Laplace_Green_T",
+    "eq:GreenT2d",
+    "eq:VT_intrep"
+   ],
+   "pos": {
+    "file": "Dirichlet8.tex",
+    "line": 2075
+   },
+   "last": 2093,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2512.08487v2#env-43",
@@ -1373,6 +1445,29 @@
     "appendix"
    ],
    "result": "matched"
+  },
+  {
+   "id": "2512.08487v2#head-4",
+   "type": "head",
+   "k": 4,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "labels": [
+    "eq:halfspaceD"
+   ],
+   "pos": {
+    "file": "Dirichlet8.tex",
+    "line": 2158
+   },
+   "last": 2167,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2512.08487v2#env-45",
@@ -1508,9 +1603,7 @@
    "title": "Proof",
    "item": "proof",
    "labels": [
-    "eq:upperpf",
-    "eq:upperp",
-    "eq:vfuh"
+    "eq:upperp"
    ],
    "pos": {
     "file": "Dirichlet8.tex",
@@ -1521,6 +1614,75 @@
     "appendix"
    ],
    "result": "matched"
+  },
+  {
+   "id": "2512.08487v2#head-5",
+   "type": "head",
+   "k": 5,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "labels": [
+    "eq:upperpf"
+   ],
+   "parent": "2512.08487v2#proof-21",
+   "pos": {
+    "file": "Dirichlet8.tex",
+    "line": 2250
+   },
+   "last": 2253,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2512.08487v2#head-6",
+   "type": "head",
+   "k": 6,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2512.08487v2#proof-21",
+   "pos": {
+    "file": "Dirichlet8.tex",
+    "line": 2299
+   },
+   "last": 2335,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2512.08487v2#head-7",
+   "type": "head",
+   "k": 7,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "3",
+   "number_from": "head",
+   "labels": [
+    "eq:vfuh"
+   ],
+   "parent": "2512.08487v2#proof-21",
+   "pos": {
+    "file": "Dirichlet8.tex",
+    "line": 2337
+   },
+   "last": 2341,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2512.08487v2#env-49",
@@ -1553,13 +1715,8 @@
    "title": "Proof",
    "item": "proof",
    "labels": [
-    "eq:oscg",
     "eq:weakugbis",
-    "eq:dugn",
-    "eq:f1",
-    "eq:aver",
-    "eq:statw1",
-    "eq:f2"
+    "eq:dugn"
    ],
    "pos": {
     "file": "Dirichlet8.tex",
@@ -1570,6 +1727,57 @@
     "appendix"
    ],
    "result": "matched"
+  },
+  {
+   "id": "2512.08487v2#head-8",
+   "type": "head",
+   "k": 8,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "labels": [
+    "eq:oscg"
+   ],
+   "parent": "2512.08487v2#proof-22",
+   "pos": {
+    "file": "Dirichlet8.tex",
+    "line": 2359
+   },
+   "last": 2359,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2512.08487v2#head-9",
+   "type": "head",
+   "k": 9,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "labels": [
+    "eq:f1",
+    "eq:aver",
+    "eq:statw1",
+    "eq:f2"
+   ],
+   "parent": "2512.08487v2#proof-22",
+   "pos": {
+    "file": "Dirichlet8.tex",
+    "line": 2377
+   },
+   "last": 2422,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2512.08487v2#proof-23",
