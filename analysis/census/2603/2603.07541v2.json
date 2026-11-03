@@ -1,7 +1,7 @@
 {
  "paper": "2603.07541",
  "version": 2,
- "extractor": "ax/v0.5.17",
+ "extractor": "ax/v0.5.33",
  "main": [
   "main.tex"
  ],
@@ -39,7 +39,8 @@
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
   "macros: 137 commands, 0 environments",
-  "tree: 209 nodes"
+  "aliases: 212 uses of commands that stand for \\begin or \\end",
+  "tree: 315 nodes"
  ],
  "declarations": [
   {
@@ -162,6 +163,7 @@
  ],
  "occurrences": {
   "env": 60,
+  "head": 1,
   "label": 97,
   "proof": 35,
   "textref": 99
@@ -172,7 +174,13 @@
   "proof": 35
  },
  "gaps": [],
- "waivers": [],
+ "waivers": [
+  {
+   "occurrence": "2603.07541v2#head-1",
+   "reason": "layout",
+   "by": "rule:section-head"
+  }
+ ],
  "numbers": {
   "from_aux": 0,
   "from_render": 60,
@@ -274,6 +282,22 @@
    },
    "last": 373,
    "result": "matched"
+  },
+  {
+   "id": "2603.07541v2#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Acknowledgements",
+   "item": "other/section",
+   "pos": {
+    "file": "main.tex",
+    "line": 385
+   },
+   "last": 386,
+   "result": "waived",
+   "waiver": "layout",
+   "confidence": "medium"
   },
   {
    "id": "2603.07541v2#env-5",

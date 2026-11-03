@@ -1,0 +1,727 @@
+{
+ "paper": "2609.15934",
+ "version": 1,
+ "extractor": "ax/v0.5.33",
+ "main": [
+  "main.tex"
+ ],
+ "class": "cmslatex",
+ "packages": [
+  "geometry",
+  "hyperref",
+  "amsfonts",
+  "amssymb",
+  "amsmath",
+  "graphicx",
+  "cite",
+  "enumerate",
+  "multirow",
+  "etex",
+  "inputenc",
+  "fontenc",
+  "paralist",
+  "lscape",
+  "babel",
+  "ifthen",
+  "bbm",
+  "lmodern",
+  "algorithmic",
+  "float",
+  "wrapfig",
+  "textcomp",
+  "cancel",
+  "mathrsfs",
+  "upgreek",
+  "url",
+  "tikz",
+  "textpos",
+  "mathtools",
+  "ragged2e",
+  "tabularx",
+  "nicefrac",
+  "soul",
+  "yhmath"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 1 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 180 commands, 18 environments",
+  "tree: 172 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "\\noindent Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm",
+   "title": "\\noindent Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "\\noindent Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "\\noindent Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "\\noindent Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "\\noindent Corollary",
+   "item": "statement/corollary",
+   "counter": "cor",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "\\noindent Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "\\noindent Proposition",
+   "item": "statement/proposition",
+   "counter": "prop",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "\\noindent Definition",
+   "item": "definition",
+   "counter": "definition",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "\\noindent Definition",
+   "item": "definition",
+   "counter": "defn",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "\\noindent Remark",
+   "item": "remark",
+   "counter": "remark",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "\\noindent Remark",
+   "item": "remark",
+   "counter": "rem",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "\\noindent Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "\\noindent Example",
+   "item": "example",
+   "counter": "example",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "\\noindent Notation",
+   "item": "definition/notation",
+   "counter": "notation",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "nota",
+   "title": "\\noindent Notation",
+   "item": "definition/notation",
+   "counter": "nota",
+   "within": "section",
+   "numbered": true,
+   "from": "local:CMSLATEX.CLS",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
+  }
+ ],
+ "occurrences": {
+  "env": 18,
+  "label": 24,
+  "proof": 8
+ },
+ "matched": {
+  "env": 18,
+  "label": 24,
+  "proof": 8
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 18,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 0,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.15934v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "lemma",
+   "title": "\\noindent Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "LemmaConservative"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 501
+   },
+   "last": 508,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 515
+   },
+   "last": 553,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "\\noindent Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "TheoremRP"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 582
+   },
+   "last": 718,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "ProofHL"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 722
+   },
+   "last": 823,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "remark",
+   "title": "\\noindent Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "RemarkARZandLWR",
+    "CondARZ",
+    "DensityOrdering",
+    "Hchoice"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 827
+   },
+   "last": 935,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "\\noindent Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "LemmaEntropy"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 943
+   },
+   "last": 969,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 972
+   },
+   "last": 1022,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "lemma",
+   "title": "\\noindent Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "Oldpaper"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1091
+   },
+   "last": 1126,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "hChapman",
+    "Taylor"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1128
+   },
+   "last": 1268,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "\\noindent Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "TheoremAwRascle1",
+    "SystemRelaxAwRascle"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1279
+   },
+   "last": 1408,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1412
+   },
+   "last": 1484,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "remark",
+   "title": "\\noindent Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "RemarkDiffusion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1493
+   },
+   "last": 1540,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "remark",
+   "title": "\\noindent Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "4.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1627
+   },
+   "last": 1653,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "\\noindent Lemma",
+   "item": "statement/lemma",
+   "counter": "lemma",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "LemmaSecondOrder"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1758
+   },
+   "last": 1779,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Lemmah2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1784
+   },
+   "last": 1866,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "theorem",
+   "title": "\\noindent Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "TheoremAwRascle2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1875
+   },
+   "last": 1924,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "alpha-v"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1929
+   },
+   "last": 2095,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "corollary",
+   "title": "\\noindent Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "CorollaryStable"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2104
+   },
+   "last": 2111,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "corollary",
+   "title": "\\noindent Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "CorollaryCpos",
+    "LemmaCpos1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2221
+   },
+   "last": 2264,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2270
+   },
+   "last": 2295,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "example",
+   "title": "\\noindent Example",
+   "item": "example",
+   "counter": "example",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2331
+   },
+   "last": 2375,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "example",
+   "title": "\\noindent Example",
+   "item": "example",
+   "counter": "example",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2380
+   },
+   "last": 2416,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "example",
+   "title": "\\noindent Example",
+   "item": "example",
+   "counter": "example",
+   "number": "5.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2422
+   },
+   "last": 2497,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "example",
+   "title": "\\noindent Example",
+   "item": "example",
+   "counter": "example",
+   "number": "5.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2501
+   },
+   "last": 2630,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "example",
+   "title": "\\noindent Example",
+   "item": "example",
+   "counter": "example",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "ConditionsMATTEO",
+    "TableExampleI",
+    "TableExampleII"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2638
+   },
+   "last": 2895,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15934v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "remark",
+   "title": "\\noindent Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 2899
+   },
+   "last": 2915,
+   "result": "matched"
+  }
+ ]
+}

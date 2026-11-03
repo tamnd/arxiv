@@ -1,7 +1,7 @@
 {
  "paper": "2610.02049",
  "version": 1,
- "extractor": "ax/v0.5.32",
+ "extractor": "ax/v0.5.33",
  "main": [
   "main.tex"
  ],
@@ -129,11 +129,59 @@
   "resolved": 0,
   "unresolved": 1
  },
+ "render": {
+  "theorems": 55,
+  "proofs": 26,
+  "agree": false,
+  "source_theorems": 0,
+  "source_proofs": 26,
+  "envs": [
+   {
+    "env": "corollary",
+    "source": 0,
+    "render": 4
+   },
+   {
+    "env": "definition",
+    "source": 0,
+    "render": 4
+   },
+   {
+    "env": "example",
+    "source": 0,
+    "render": 6
+   },
+   {
+    "env": "lemma",
+    "source": 0,
+    "render": 15
+   },
+   {
+    "env": "proposition",
+    "source": 0,
+    "render": 2
+   },
+   {
+    "env": "remark",
+    "source": 0,
+    "render": 14
+   },
+   {
+    "env": "theorem",
+    "source": 0,
+    "render": 10
+   }
+  ]
+ },
  "findings": [
   {
    "rule": "D09",
    "occurrence": "2610.02049v1#textref-1",
    "message": "the text names Theorem \\ref{CTT} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D08",
+   "message": "the source has 0 theorem environments and the render has 55"
   }
  ],
  "strength": "normal",
