@@ -155,6 +155,7 @@ m2v=$(m2 version | head -1)
 
 clone arxiv
 clone math2
+clone math2-records
 start arxiv
 
 free=$(df -m "$dir" | tail -1 | awk '{print $4}')
@@ -308,11 +309,50 @@ findings() {
 	grep -E '^[^ :]+:[0-9]+:[0-9]+: [A-Z]+[0-9]+: ' "$1" | sort -u
 }
 
+# The arXiv records of the record plane live in tamnd/math2-records (corpus arxiv AQ11): the mentions of arXiv, the records of understand and the rows of the research layer. manifests/records-arxiv.yaml of tamnd/math2 pins the commit that has them.
+# unpackrecords puts the records of the pinned commit back in the clone of tamnd/math2, so that the import and the clustering keep the ids of the rows. A tree with no pin has its records, and it gets nothing.
+unpackrecords() {
+	recpin=$(sed -n 's/^commit: *//p' "$dir/math2/manifests/records-arxiv.yaml" 2>/dev/null || true)
+	[ -n "$recpin" ] || return 0
+	git -C "$dir/math2-records" fetch -q origin main
+	git -C "$dir/math2-records" checkout -q --detach "$recpin" || block "math2-records has no commit $recpin, which manifests/records-arxiv.yaml pins"
+	m2 corpus records unpack -root "$dir/math2" -out "$dir/math2-records" >"$dir/run/unpack-$stamp.out" 2>&1 || block "m2 corpus records unpack failed, see $dir/run/unpack-$stamp.out"
+}
+
+# exportrecords writes the arXiv records of the clone of tamnd/math2 to tamnd/math2-records, merges them there with a pull request, and pins the merged commit in tamnd/math2. The records then leave the tree of tamnd/math2, which keeps the pin.
+exportrecords() {
+	r="$dir/math2-records"
+	git -C "$r" fetch -q origin main
+	git -C "$r" checkout -q -B pipeline origin/main
+	m2 corpus records export -root "$dir/math2" -out "$r" >"$dir/run/records-$stamp.out" 2>&1 || block "m2 corpus records export failed, see $dir/run/records-$stamp.out"
+	git -C "$r" add -A records/arxiv
+	if ! git -C "$r" diff --cached --quiet; then
+		git -C "$r" commit -q -m "Export the arXiv records of tamnd/arxiv at $arxiv"
+		branch="pipeline/$stamp"
+		git -C "$r" push -q -f origin "HEAD:refs/heads/$branch"
+		rbody="$dir/run/records-$stamp.md"
+		{
+			echo "The pipeline on the build server exported the arXiv records of tamnd/math2 after the import of tamnd/arxiv at $arxiv, with $m2v (corpus arxiv AQ11)."
+			echo
+			echo '```'
+			cat "$dir/run/records-$stamp.out"
+			echo '```'
+		} >"$rbody"
+		url=$(gh pr create -R tamnd/math2-records --head "$branch" --base main --title "Export the arXiv records of tamnd/arxiv at $arxiv" --body-file "$rbody")
+		gh pr merge "$url" --squash --delete-branch --admin >/dev/null || block "math2-records: the merge of $url failed"
+		log "math2-records: merged $url"
+		git -C "$r" fetch -q origin main
+		git -C "$r" checkout -q -B pipeline origin/main
+	fi
+	m2 corpus records pin -root "$dir/math2" -out "$r" -commit "$(git -C "$r" rev-parse HEAD)" >>"$dir/run/records-$stamp.out" 2>&1 || block "m2 corpus records pin failed, see $dir/run/records-$stamp.out"
+}
+
 # The import into tamnd/math2. It is generated data, so when main changes under it, the run makes it again on the new main, at most two times.
 # importmath2 makes the commit and the body of the pull request. It fails when the import gives no change.
 importmath2() {
 	start math2
 	cd "$dir/math2"
+	unpackrecords
 	# The checks of main, before the import. A finding that main already has comes from other work, so it does not stop the import (see mathchecks).
 	bchecks=pass
 	mathchecks >"$dir/run/check-main-$stamp.out" 2>&1 || bchecks=fail
@@ -324,9 +364,15 @@ importmath2() {
 	m2 audit -rule D05 -arxiv "$dir/arxiv" -root "$dir/math2" >"$dir/run/d05-$stamp.out" 2>&1 || log "rule D05 has findings, see $dir/run/d05-$stamp.out"
 	arxiv=$(git -C "$dir/arxiv" rev-parse --short HEAD)
 	title="Import the arXiv mentions of tamnd/arxiv at $arxiv"
-	commit math2 "$title" || return 1
+	# The checks run on the tree with its arXiv records, as the checks of main did. The new files go in the index, so that m2 audit -changed sees them.
+	git -C "$dir/math2" add -A
 	mchecks=pass
 	mathchecks >"$dir/run/check-$stamp.out" 2>&1 || mchecks=fail
+	if [ -n "$recpin" ]; then
+		exportrecords
+		m2 corpus records keep -root "$dir/math2" >>"$dir/run/records-$stamp.out" 2>&1 || block "m2 corpus records keep failed, see $dir/run/records-$stamp.out"
+	fi
+	commit math2 "$title" || return 1
 	# When main fails too, the import fails only with a finding that main does not have.
 	old=0
 	if [ "$mchecks" = fail ] && [ "$bchecks" = fail ]; then
@@ -344,6 +390,14 @@ importmath2() {
 		echo '```'
 		cat "$dir/run/import-$stamp.out" "$dir/run/cluster-$stamp.out"
 		echo '```'
+		if [ -n "$recpin" ]; then
+			echo
+			echo "The arXiv records are in tamnd/math2-records (corpus arxiv AQ11), and manifests/records-arxiv.yaml pins them:"
+			echo
+			echo '```'
+			cat "$dir/run/records-$stamp.out"
+			echo '```'
+		fi
 		echo
 		if [ "$mchecks" = pass ] && [ "$old" != 0 ]; then
 			echo "\`m2 check\`, \`m2 pack -check\` and \`m2 audit -changed\` have only the $old findings that main has before the import. They come from other work, so the pipeline merges. The output is in $dir/run on the build server."
