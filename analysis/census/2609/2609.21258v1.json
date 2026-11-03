@@ -1,7 +1,7 @@
 {
  "paper": "2609.21258",
  "version": 1,
- "extractor": "ax/v0.5.9",
+ "extractor": "ax/v0.5.33",
  "main": [
   "QCLT-SWE-drift11.tex"
  ],
@@ -129,14 +129,16 @@
  ],
  "occurrences": {
   "env": 17,
-  "label": 31,
-  "proof": 7,
-  "textref": 40
+  "head": 6,
+  "label": 34,
+  "proof": 9,
+  "textref": 41
  },
  "matched": {
   "env": 17,
-  "label": 31,
-  "proof": 7
+  "head": 6,
+  "label": 34,
+  "proof": 9
  },
  "gaps": [],
  "waivers": [],
@@ -144,24 +146,31 @@
   "from_aux": 0,
   "from_render": 17,
   "from_counter": 0,
-  "from_head": 0,
+  "from_head": 5,
   "agree": 17,
   "disagree": 0,
   "contiguity_gaps": 0
  },
  "textrefs": {
   "resolved": 39,
-  "unresolved": 1
+  "unresolved": 2
  },
  "render": {
   "theorems": 17,
   "proofs": 7,
-  "agree": true
+  "agree": true,
+  "source_theorems": 17,
+  "source_proofs": 7
  },
  "findings": [
   {
    "rule": "D09",
-   "occurrence": "2609.21258v1#textref-37",
+   "occurrence": "2609.21258v1#textref-7",
+   "message": "the text names Step 3 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.21258v1#textref-38",
    "message": "the text names Theorem 1.5 and the census has no such item (no-item)"
   }
  ],
@@ -248,6 +257,21 @@
    },
    "last": 281,
    "result": "matched"
+  },
+  {
+   "id": "2609.21258v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Notation",
+   "item": "definition/notation",
+   "pos": {
+    "file": "QCLT-SWE-drift11.tex",
+    "line": 289
+   },
+   "last": 289,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2609.21258v1#env-5",
@@ -412,7 +436,6 @@
     "rec-Dun",
     "recD1",
     "key-un",
-    "def-Ik",
     "theta-G",
     "bound-I",
     "bound-II",
@@ -424,6 +447,45 @@
    },
    "last": 702,
    "result": "matched"
+  },
+  {
+   "id": "2609.21258v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "labels": [
+    "def-Ik"
+   ],
+   "parent": "2609.21258v1#proof-3",
+   "pos": {
+    "file": "QCLT-SWE-drift11.tex",
+    "line": 581
+   },
+   "last": 616,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.21258v1#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2609.21258v1#proof-3",
+   "pos": {
+    "file": "QCLT-SWE-drift11.tex",
+    "line": 620
+   },
+   "last": 624,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2609.21258v1#env-11",
@@ -535,6 +597,41 @@
    "result": "matched"
   },
   {
+   "id": "2609.21258v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "rho-int"
+   ],
+   "pos": {
+    "file": "QCLT-SWE-drift11.tex",
+    "line": 963
+   },
+   "last": 991,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.21258v1#head-4",
+   "type": "head",
+   "k": 4,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "pos": {
+    "file": "QCLT-SWE-drift11.tex",
+    "line": 992
+   },
+   "last": 1002,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
    "id": "2609.21258v1#env-15",
    "type": "env",
    "k": 15,
@@ -553,6 +650,61 @@
    },
    "last": 1090,
    "result": "matched"
+  },
+  {
+   "id": "2609.21258v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "bound-AR"
+   ],
+   "pos": {
+    "file": "QCLT-SWE-drift11.tex",
+    "line": 1096
+   },
+   "last": 1176,
+   "result": "matched",
+   "confidence": "high"
+  },
+  {
+   "id": "2609.21258v1#head-5",
+   "type": "head",
+   "k": 5,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "labels": [
+    "bound-BR"
+   ],
+   "pos": {
+    "file": "QCLT-SWE-drift11.tex",
+    "line": 1183
+   },
+   "last": 1202,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.21258v1#head-6",
+   "type": "head",
+   "k": 6,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "pos": {
+    "file": "QCLT-SWE-drift11.tex",
+    "line": 1225
+   },
+   "last": 1225,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2609.21258v1#env-16",
@@ -578,9 +730,9 @@
    "result": "matched"
   },
   {
-   "id": "2609.21258v1#proof-6",
+   "id": "2609.21258v1#proof-8",
    "type": "proof",
-   "k": 6,
+   "k": 8,
    "env": "proof",
    "title": "Proof",
    "item": "proof",
@@ -618,9 +770,9 @@
    "result": "matched"
   },
   {
-   "id": "2609.21258v1#proof-7",
+   "id": "2609.21258v1#proof-9",
    "type": "proof",
-   "k": 7,
+   "k": 9,
    "env": "proof",
    "title": "Proof",
    "item": "proof",

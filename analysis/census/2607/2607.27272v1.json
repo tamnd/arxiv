@@ -1,7 +1,7 @@
 {
  "paper": "2607.27272",
  "version": 1,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.33",
  "main": [
   "Majumder+Banerjee+Panja+Pramanik.tex"
  ],
@@ -375,6 +375,7 @@
  ],
  "occurrences": {
   "env": 15,
+  "head": 1,
   "label": 59,
   "proof": 5,
   "textref": 21
@@ -385,7 +386,13 @@
   "proof": 5
  },
  "gaps": [],
- "waivers": [],
+ "waivers": [
+  {
+   "occurrence": "2607.27272v1#head-1",
+   "reason": "layout",
+   "by": "rule:section-head"
+  }
+ ],
  "numbers": {
   "from_aux": 0,
   "from_render": 15,
@@ -402,7 +409,9 @@
  "render": {
   "theorems": 15,
   "proofs": 5,
-  "agree": true
+  "agree": true,
+  "source_theorems": 15,
+  "source_proofs": 5
  },
  "findings": [
   {
@@ -818,6 +827,22 @@
    },
    "last": 1564,
    "result": "matched"
+  },
+  {
+   "id": "2607.27272v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Funding",
+   "item": "other/section",
+   "pos": {
+    "file": "Majumder+Banerjee+Panja+Pramanik.tex",
+    "line": 1570
+   },
+   "last": 1570,
+   "result": "waived",
+   "waiver": "layout",
+   "confidence": "medium"
   }
  ]
 }

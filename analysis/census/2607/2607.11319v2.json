@@ -1,7 +1,7 @@
 {
  "paper": "2607.11319",
  "version": 2,
- "extractor": "ax/v0.5.8",
+ "extractor": "ax/v0.5.33",
  "main": [
   "d36_dual_bound.tex"
  ],
@@ -86,6 +86,7 @@
  ],
  "occurrences": {
   "env": 3,
+  "head": 1,
   "label": 2,
   "proof": 1,
   "textref": 10
@@ -96,7 +97,13 @@
   "proof": 1
  },
  "gaps": [],
- "waivers": [],
+ "waivers": [
+  {
+   "occurrence": "2607.11319v2#head-1",
+   "reason": "layout",
+   "by": "rule:section-head"
+  }
+ ],
  "numbers": {
   "from_aux": 0,
   "from_render": 3,
@@ -113,7 +120,9 @@
  "render": {
   "theorems": 3,
   "proofs": 1,
-  "agree": true
+  "agree": true,
+  "source_theorems": 3,
+  "source_proofs": 1
  },
  "strength": "strong",
  "items": [
@@ -187,6 +196,22 @@
    },
    "last": 550,
    "result": "matched"
+  },
+  {
+   "id": "2607.11319v2#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Acknowledgements",
+   "item": "other/section",
+   "pos": {
+    "file": "d36_dual_bound.tex",
+    "line": 823
+   },
+   "last": 834,
+   "result": "waived",
+   "waiver": "layout",
+   "confidence": "medium"
   }
  ]
 }
