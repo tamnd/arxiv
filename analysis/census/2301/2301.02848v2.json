@@ -1,7 +1,7 @@
 {
  "paper": "2301.02848",
  "version": 2,
- "extractor": "ax/v0.5.17",
+ "extractor": "ax/v0.5.34",
  "main": [
   "manuscript.tex"
  ],
@@ -155,17 +155,25 @@
  ],
  "occurrences": {
   "env": 37,
+  "head": 2,
   "label": 116,
   "proof": 28,
   "textref": 102
  },
  "matched": {
   "env": 37,
+  "head": 1,
   "label": 116,
   "proof": 28
  },
  "gaps": [],
- "waivers": [],
+ "waivers": [
+  {
+   "occurrence": "2301.02848v2#head-2",
+   "reason": "layout",
+   "by": "rule:section-head"
+  }
+ ],
  "numbers": {
   "from_aux": 0,
   "from_render": 37,
@@ -225,6 +233,21 @@
    },
    "last": 649,
    "result": "matched"
+  },
+  {
+   "id": "2301.02848v2#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Notation",
+   "item": "definition/notation",
+   "pos": {
+    "file": "manuscript.tex",
+    "line": 660
+   },
+   "last": 660,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2301.02848v2#env-3",
@@ -1437,6 +1460,25 @@
     "appendix"
    ],
    "result": "matched"
+  },
+  {
+   "id": "2301.02848v2#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Acknowledgments",
+   "item": "other/section",
+   "pos": {
+    "file": "manuscript.tex",
+    "line": 2721
+   },
+   "last": 2721,
+   "flags": [
+    "appendix"
+   ],
+   "result": "waived",
+   "waiver": "layout",
+   "confidence": "medium"
   }
  ]
 }

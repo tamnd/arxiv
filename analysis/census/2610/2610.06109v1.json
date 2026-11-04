@@ -1,7 +1,7 @@
 {
  "paper": "2610.06109",
  "version": 1,
- "extractor": "ax/v0.5.33",
+ "extractor": "ax/v0.5.34",
  "main": [
   "siblings.tex"
  ],
@@ -32,14 +32,32 @@
    "numbered": false,
    "proof": true,
    "from": "class:amsart"
+  },
+  {
+   "env": "thm",
+   "title": "thm",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "numbered": true,
+   "from": "used"
+  },
+  {
+   "env": "prop",
+   "title": "prop",
+   "item": "statement/proposition",
+   "counter": "prop",
+   "numbered": true,
+   "from": "used"
   }
  ],
  "occurrences": {
+  "env": 2,
   "head": 1,
   "label": 1,
   "proof": 4
  },
  "matched": {
+  "env": 2,
   "head": 1,
   "label": 1,
   "proof": 4
@@ -49,7 +67,7 @@
  "numbers": {
   "from_aux": 0,
   "from_render": 0,
-  "from_counter": 1,
+  "from_counter": 3,
   "from_head": 0,
   "agree": 0,
   "disagree": 0,
@@ -62,12 +80,47 @@
  "render": {
   "theorems": 0,
   "proofs": 4,
-  "agree": true,
-  "source_theorems": 0,
-  "source_proofs": 4
+  "agree": false,
+  "source_theorems": 2,
+  "source_proofs": 4,
+  "envs": [
+   {
+    "env": "prop",
+    "source": 1,
+    "render": 0
+   },
+   {
+    "env": "thm",
+    "source": 1,
+    "render": 0
+   }
+  ]
  },
- "strength": "strong",
+ "findings": [
+  {
+   "rule": "D08",
+   "message": "the source has 2 theorem environments and the render has 0"
+  }
+ ],
+ "strength": "normal",
  "items": [
+  {
+   "id": "2610.06109v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "thm",
+   "title": "thm",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1",
+   "number_from": "counter",
+   "pos": {
+    "file": "siblings.tex",
+    "line": 778
+   },
+   "last": 799,
+   "result": "matched"
+  },
   {
    "id": "2610.06109v1#proof-1",
    "type": "proof",
@@ -97,6 +150,23 @@
     "line": 906
    },
    "last": 956,
+   "result": "matched"
+  },
+  {
+   "id": "2610.06109v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "prop",
+   "title": "prop",
+   "item": "statement/proposition",
+   "counter": "prop",
+   "number": "1",
+   "number_from": "counter",
+   "pos": {
+    "file": "siblings.tex",
+    "line": 1114
+   },
+   "last": 1128,
    "result": "matched"
   },
   {

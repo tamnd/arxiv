@@ -1,0 +1,543 @@
+{
+ "paper": "2609.12486",
+ "version": 1,
+ "extractor": "ax/v0.5.34",
+ "main": [
+  "arxiv_template_CDC.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "amsmath",
+  "amssymb",
+  "amsfonts",
+  "mathrsfs",
+  "mathtools",
+  "dsfont",
+  "amsthm",
+  "bm",
+  "bbm",
+  "epsfig",
+  "rotating",
+  "setspace",
+  "latexsym",
+  "epsf",
+  "epstopdf",
+  "graphicx",
+  "cite",
+  "authblk",
+  "xcolor",
+  "ulem",
+  "comment",
+  "caption",
+  "subfig",
+  "url",
+  "hyperref",
+  "subcaption",
+  "array",
+  "enumerate",
+  "enumitem",
+  "csvsimple",
+  "booktabs",
+  "float",
+  "multirow",
+  "fullpage",
+  "ebgaramond",
+  "fontenc",
+  "inputenc",
+  "thmtools",
+  "algorithm",
+  "algpseudocode"
+ ],
+ "steps": [
+  "unpack: 2 files",
+  "main: arxiv_template_CDC.tex",
+  "include: 2 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 271 commands, 0 environments",
+  "tree: 90 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "proposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "corollary",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "claim",
+   "numbered": true,
+   "from": "paper",
+   "form": "declaretheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 13,
+  "label": 18,
+  "proof": 8,
+  "textref": 34
+ },
+ "matched": {
+  "env": 13,
+  "label": 18,
+  "proof": 8
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 13,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 34,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.12486v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "ass:compact"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 256
+   },
+   "last": 259,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "ass:smooth_kernel"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 261
+   },
+   "last": 265,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "ass:ergodic"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 267
+   },
+   "last": 272,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "thm:softq_convergence",
+    "eq:rbar",
+    "eq:Pbar",
+    "eq:softq_update",
+    "eq:soft_bellman"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 417
+   },
+   "last": 451,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 453
+   },
+   "last": 508,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remark",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "rem:nearopt"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 510
+   },
+   "last": 541,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assumption",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "ass:pomdp"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 565
+   },
+   "last": 575,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "lem:surrogate_bounds"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 594
+   },
+   "last": 605,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 607
+   },
+   "last": 662,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "lem:joint_bounds"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 671
+   },
+   "last": 688,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 690
+   },
+   "last": 738,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "thm:lipschitz"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 742
+   },
+   "last": 745,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq: lipschitz_bound"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 747
+   },
+   "last": 794,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5",
+   "number_from": "counter",
+   "labels": [
+    "lem:mc_variance"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 806
+   },
+   "last": 821,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 823
+   },
+   "last": 831,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "6",
+   "number_from": "counter",
+   "labels": [
+    "thm:zoo_convergence"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 852
+   },
+   "last": 870,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 871
+   },
+   "last": 898,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7",
+   "number_from": "counter",
+   "labels": [
+    "lem:convex_kernel"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 917
+   },
+   "last": 928,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 930
+   },
+   "last": 950,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "8",
+   "number_from": "counter",
+   "labels": [
+    "thm:bo_convergence"
+   ],
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 952
+   },
+   "last": 970,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12486v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "arxiv_template_CDC.tex",
+    "line": 972
+   },
+   "last": 1002,
+   "result": "matched"
+  }
+ ]
+}

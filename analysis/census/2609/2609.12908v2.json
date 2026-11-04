@@ -1,0 +1,2567 @@
+{
+ "paper": "2609.12908",
+ "version": 2,
+ "extractor": "ax/v0.5.34",
+ "main": [
+  "main.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "geometry",
+  "hyperref",
+  "calc",
+  "blindtext",
+  "color",
+  "url",
+  "comment",
+  "float",
+  "enumerate",
+  "enumitem",
+  "cancel",
+  "mathrsfs",
+  "colonequals",
+  "pdfpages",
+  "amsmath",
+  "amsfonts",
+  "amsthm",
+  "bm",
+  "xcolor",
+  "amssymb",
+  "mathtools",
+  "appendix",
+  "tikz-cd",
+  "scalerel",
+  "stackengine"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 18 commands, 10 environments",
+  "tree: 412 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "definicao",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definicao",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "definicao",
+   "shared": "definicao",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notacao",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "definicao",
+   "shared": "definicao",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "examplo",
+   "title": "Example",
+   "item": "example",
+   "counter": "definicao",
+   "shared": "definicao",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "shared": "definicao",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "suposicao",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "suposicao",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Hypothesis",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "Hypothesis",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "shared": "definicao",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "shared": "definicao",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corolario",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "definicao",
+   "shared": "definicao",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mtheorem",
+   "title": "\\bf Theorem",
+   "item": "statement/theorem",
+   "counter": "mtheorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "manualtheoreminnera",
+   "title": "\\bf Assumption",
+   "item": "context/hypothesis",
+   "counter": "manualtheoreminnera",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "manualtheoreminner",
+   "title": "\\bf Claim",
+   "item": "statement/claim",
+   "counter": "manualtheoreminner",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "manualtheoreminnerb",
+   "title": "\\bf Step",
+   "item": "other/case",
+   "counter": "manualtheoreminnerb",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  },
+  {
+   "env": "claim",
+   "title": "\\bf Claim",
+   "item": "statement/claim",
+   "counter": "manualtheoreminner",
+   "shared": "manualtheoreminner",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "claimstep",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "claimproof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "TheoremproofA",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "TheoremproofB",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "TheoremproofC",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "TheoremproofD",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "TheoremproofE",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 57,
+  "head": 26,
+  "label": 215,
+  "proof": 32,
+  "textref": 116
+ },
+ "matched": {
+  "env": 57,
+  "head": 26,
+  "label": 215,
+  "proof": 32
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 57,
+  "from_head": 26,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 116,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.12908v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "blubluaverage",
+    "exponavg"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 304
+   },
+   "last": 316,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "blublumixing",
+    "basemixing",
+    "baseexpmixing"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 338
+   },
+   "last": 361,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "mixingpm",
+    "projmixing"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 400
+   },
+   "last": 417,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "mixingtwopointmotion",
+    "VLdefinition",
+    "2pmmixing"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 482
+   },
+   "last": 514,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "thm:large_deviations",
+    "eq:projective_large_deviations",
+    "eq:two_point_large_deviations"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 565
+   },
+   "last": 602,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "2.6",
+   "number_from": "counter",
+   "labels": [
+    "lyapunov_large_deviations",
+    "lyapunov_ld_third_iterate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 606
+   },
+   "last": 618,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definicao",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definicao",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "def:horseshoe-position"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 660
+   },
+   "last": 683,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "definicao",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definicao",
+   "number": "2.8",
+   "number_from": "counter",
+   "labels": [
+    "def:typical-horseshoe",
+    "posdensstm",
+    "formula1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 714
+   },
+   "last": 775,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "2.9",
+   "number_from": "counter",
+   "labels": [
+    "thm:typical-horseshoes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 793
+   },
+   "last": 795,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "mixing_proj_motion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 817
+   },
+   "last": 834,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "reductionLemma",
+    "i1",
+    "i2",
+    "i3"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 879
+   },
+   "last": 934,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 936
+   },
+   "last": 1015,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "finalmixinglema",
+    "i2final",
+    "i3final"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1023
+   },
+   "last": 1035,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "fromrmtogoodset"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1049
+   },
+   "last": 1095,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "from_normalized_to_others"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1099
+   },
+   "last": 1149,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "four-step-trans",
+    "omegax0y0xy",
+    "ax0y0xy",
+    "bixoyoxy",
+    "measurethesitmates"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1155
+   },
+   "last": 1214,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "inversemapF",
+    "hacca1xy",
+    "actualkeyinclusion",
+    "key_set"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1216
+   },
+   "last": 1518,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "lemma_minor"
+   ],
+   "parent": "2609.12908v2#proof-2",
+   "pos": {
+    "file": "main.tex",
+    "line": 1338
+   },
+   "last": 1349,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "displacement"
+   ],
+   "parent": "2609.12908v2#proof-2",
+   "pos": {
+    "file": "main.tex",
+    "line": 1351
+   },
+   "last": 1517,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "labels": [
+    "cardinality"
+   ],
+   "parent": "2609.12908v2#proof-3",
+   "pos": {
+    "file": "main.tex",
+    "line": 1352
+   },
+   "last": 1373,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "labels": [
+    "proofdisplacement"
+   ],
+   "parent": "2609.12908v2#proof-3",
+   "pos": {
+    "file": "main.tex",
+    "line": 1419
+   },
+   "last": 1456,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "3",
+   "number_from": "head",
+   "labels": [
+    "lastclaim"
+   ],
+   "parent": "2609.12908v2#proof-3",
+   "pos": {
+    "file": "main.tex",
+    "line": 1459
+   },
+   "last": 1470,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "uniform_goodness",
+    "aug"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1527
+   },
+   "last": 1583,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1585
+   },
+   "last": 1604,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "marginals",
+    "biiiiii"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1639
+   },
+   "last": 1653,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 1655
+   },
+   "last": 1701,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "corolario",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "definicao",
+   "number": "3.10",
+   "number_from": "counter",
+   "labels": [
+    "Density_is_pos"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1707
+   },
+   "last": 1716,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "3.11",
+   "number_from": "counter",
+   "labels": [
+    "Llarge"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2002
+   },
+   "last": 2021,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "newgoal",
+    "pgpb",
+    "pigpigiprime",
+    "p1minusp1prime",
+    "densities"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2023
+   },
+   "last": 2278,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#head-4",
+   "type": "head",
+   "k": 4,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-6",
+   "pos": {
+    "file": "main.tex",
+    "line": 2025
+   },
+   "last": 2025,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-5",
+   "type": "head",
+   "k": 5,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-6",
+   "pos": {
+    "file": "main.tex",
+    "line": 2123
+   },
+   "last": 2123,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-6",
+   "type": "head",
+   "k": 6,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "3",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-6",
+   "pos": {
+    "file": "main.tex",
+    "line": 2196
+   },
+   "last": 2196,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "HM_theorem",
+    "harris_threshold",
+    "harris_drift",
+    "harris_minorization",
+    "normoperator",
+    "integrability",
+    "harris_mixing"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2287
+   },
+   "last": 2328,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "what_harier_wants",
+    "two_point_threshold",
+    "two_point_drift",
+    "two_point_sublevel",
+    "two_point_minorization",
+    "two_point_minorizing_measure"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2335
+   },
+   "last": 2370,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "two_point_harris_identification",
+    "two_point_operator_bound"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2382
+   },
+   "last": 2429,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "Lyapunov function",
+    "first_lyapunov",
+    "concoutsidediagonal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2455
+   },
+   "last": 2473,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "smalldev",
+    "distancedev"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2518
+   },
+   "last": 2532,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "inequality1",
+    "inequalitytwo"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2534
+   },
+   "last": 2613,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "pielgpt",
+    "jel",
+    "jeielminusp",
+    "step 1",
+    "step 2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2615
+   },
+   "last": 2852,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#head-7",
+   "type": "head",
+   "k": 7,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-9",
+   "pos": {
+    "file": "main.tex",
+    "line": 2619
+   },
+   "last": 2619,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-8",
+   "type": "head",
+   "k": 8,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-9",
+   "pos": {
+    "file": "main.tex",
+    "line": 2712
+   },
+   "last": 2712,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "small_set_on_C",
+    "two_point_smallset_estimate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2894
+   },
+   "last": 2902,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "First_step_small_set",
+    "foundlowerdense",
+    "two_point_local_minorization"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2954
+   },
+   "last": 2973,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "forward_small",
+    "normofxi"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2995
+   },
+   "last": 3012,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "inverse_small",
+    "normofxi_inverse"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3035
+   },
+   "last": 3054,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "piiiiii111",
+    "pp111112222",
+    "Weclaimppp"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3056
+   },
+   "last": 3260,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#head-9",
+   "type": "head",
+   "k": 9,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-10",
+   "pos": {
+    "file": "main.tex",
+    "line": 3060
+   },
+   "last": 3060,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "4.9",
+   "number_from": "counter",
+   "labels": [
+    "two_point_cardinality"
+   ],
+   "parent": "2609.12908v2#proof-10",
+   "pos": {
+    "file": "main.tex",
+    "line": 3064
+   },
+   "last": 3073,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "two_point_inverse_noise_order"
+   ],
+   "parent": "2609.12908v2#proof-10",
+   "pos": {
+    "file": "main.tex",
+    "line": 3075
+   },
+   "last": 3135,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#head-10",
+   "type": "head",
+   "k": 10,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-10",
+   "pos": {
+    "file": "main.tex",
+    "line": 3137
+   },
+   "last": 3137,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "4.10",
+   "number_from": "counter",
+   "labels": [
+    "uniform_bound_on_T",
+    "prop18"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3272
+   },
+   "last": 3279,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "4.11",
+   "number_from": "counter",
+   "labels": [
+    "thm:twostep_smallset",
+    "lemma3"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3281
+   },
+   "last": 3287,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "4.12",
+   "number_from": "counter",
+   "labels": [
+    "lem:S_to_eta_one_step",
+    "odd number"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3289
+   },
+   "last": 3302,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:return_to_S",
+    "two_point_minorization_composition",
+    "stupidinclusion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3307
+   },
+   "last": 3384,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#head-11",
+   "type": "head",
+   "k": 11,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-12",
+   "pos": {
+    "file": "main.tex",
+    "line": 3329
+   },
+   "last": 3329,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-12",
+   "type": "head",
+   "k": 12,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-12",
+   "pos": {
+    "file": "main.tex",
+    "line": 3340
+   },
+   "last": 3341,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-13",
+   "type": "head",
+   "k": 13,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "3",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-12",
+   "pos": {
+    "file": "main.tex",
+    "line": 3351
+   },
+   "last": 3351,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-14",
+   "type": "head",
+   "k": 14,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "4",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-12",
+   "pos": {
+    "file": "main.tex",
+    "line": 3372
+   },
+   "last": 3373,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "goingaroung",
+    "largeincusion"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3386
+   },
+   "last": 3425,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "distortioncoolness",
+    "mathbbg1",
+    "distortionisamaizng"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3427
+   },
+   "last": 3533,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3535
+   },
+   "last": 3551,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 3553
+   },
+   "last": 3567,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "i1i2",
+    "largeinterval",
+    "admissibleset",
+    "sizeofnumbers",
+    "x2equalsu",
+    "bigG"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3576
+   },
+   "last": 3912,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#head-15",
+   "type": "head",
+   "k": 15,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 3580
+   },
+   "last": 3580,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-16",
+   "type": "head",
+   "k": 16,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 3626
+   },
+   "last": 3626,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-17",
+   "type": "head",
+   "k": 17,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "3",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 3670
+   },
+   "last": 3670,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-18",
+   "type": "head",
+   "k": 18,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "4",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 3727
+   },
+   "last": 3727,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "4.13",
+   "number_from": "counter",
+   "labels": [
+    "topology"
+   ],
+   "parent": "2609.12908v2#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 3784
+   },
+   "last": 3787,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.12908v2#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 3789
+   },
+   "last": 3816,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#head-19",
+   "type": "head",
+   "k": 19,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "5",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 3819
+   },
+   "last": 3819,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "4.14",
+   "number_from": "counter",
+   "labels": [
+    "functional estimate",
+    "contraction"
+   ],
+   "parent": "2609.12908v2#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 3838
+   },
+   "last": 3844,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.12908v2#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 3846
+   },
+   "last": 3909,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "tiltedop"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3917
+   },
+   "last": 3959,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "elementary",
+    "smallbutstrung",
+    "decompxiixix"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 3961
+   },
+   "last": 4049,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "proposition1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4061
+   },
+   "last": 4072,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "inverseone",
+    "hacca",
+    "density"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4095
+   },
+   "last": 4122,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4124
+   },
+   "last": 4172,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "vertconc",
+    "invfinal"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4178
+   },
+   "last": 4188,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "6.4",
+   "number_from": "counter",
+   "labels": [
+    "corr",
+    "nuesse"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4199
+   },
+   "last": 4210,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "corolario",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "definicao",
+   "number": "6.5",
+   "number_from": "counter",
+   "labels": [
+    "Stabledef",
+    "jesus",
+    "christ"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4216
+   },
+   "last": 4247,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4249
+   },
+   "last": 4252,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "definicao",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definicao",
+   "number": "7.1",
+   "number_from": "counter",
+   "labels": [
+    "reversetemperedness",
+    "eq:reverse-temperedness"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4285
+   },
+   "last": 4297,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "definicao",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definicao",
+   "number": "7.2",
+   "number_from": "counter",
+   "labels": [
+    "def:reverse-tempered-splitting",
+    "eq:stable-splitting",
+    "eq:unstable-splitting",
+    "eq:angle-splitting"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4299
+   },
+   "last": 4320,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "7.3",
+   "number_from": "counter",
+   "labels": [
+    "thm1"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4325
+   },
+   "last": 4334,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "7.4",
+   "number_from": "counter",
+   "labels": [
+    "hyperbolict_times"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4342
+   },
+   "last": 4368,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "teorema",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "definicao",
+   "number": "7.5",
+   "number_from": "counter",
+   "labels": [
+    "thmgrowth",
+    "putafkcnformula"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4391
+   },
+   "last": 4405,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "7.6",
+   "number_from": "counter",
+   "labels": [
+    "lem:concat-rev-temp",
+    "eq:singleton-c",
+    "eq:concat-recursion-simple"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4436
+   },
+   "last": 4458,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "definicao",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definicao",
+   "number": "7.7",
+   "number_from": "counter",
+   "labels": [
+    "def:net-good-time"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4467
+   },
+   "last": 4487,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "7.8",
+   "number_from": "counter",
+   "labels": [
+    "lem:net-implies-rev-temp"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4492
+   },
+   "last": 4496,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "7.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:first-net-tail",
+    "admissibleparams",
+    "vindipldev"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4509
+   },
+   "last": 4531,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:good-step",
+    "eq:good-recursion",
+    "eq:bad-step",
+    "eq:bad-recursion-simple",
+    "preelementary",
+    "eq:defect-bound",
+    "eq:bad-count-threshold"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4532
+   },
+   "last": 4596,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "7.10",
+   "number_from": "counter",
+   "labels": [
+    "prop:strong-direction",
+    "eq:strong-direction-bad"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4605
+   },
+   "last": 4617,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "7.11",
+   "number_from": "counter",
+   "labels": [
+    "lem:S-j-tail",
+    "eq:delta-condition-final",
+    "eq:S1-tail",
+    "eq:S-j-tail"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4635
+   },
+   "last": 4656,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:sij-tail",
+    "eq:union-bound-ball-expansion",
+    "tbf"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4675
+   },
+   "last": 4837,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 4839
+   },
+   "last": 4865,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "8.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:hyperbolic-times-density",
+    "hyptimes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4934
+   },
+   "last": 4946,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "firsth",
+    "nowforeta"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 4948
+   },
+   "last": 5001,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "8.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:young-times",
+    "cardinalityyoungtimes"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5074
+   },
+   "last": 5096,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:young-success-probability",
+    "consequently"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5098
+   },
+   "last": 5187,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "definicao",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definicao",
+   "number": "8.3",
+   "number_from": "counter",
+   "labels": [
+    "def:tempered-norms"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5203
+   },
+   "last": 5214,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "definicao",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "definicao",
+   "number": "8.4",
+   "number_from": "counter",
+   "labels": [
+    "def:stable-times",
+    "eq:stable-times"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5264
+   },
+   "last": 5271,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "proposicao",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "definicao",
+   "number": "8.5",
+   "number_from": "counter",
+   "labels": [
+    "stableprop",
+    "eq:stable-configurations-measure",
+    "densitystabledire"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5273
+   },
+   "last": 5294,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:stable-norms-probability"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5296
+   },
+   "last": 5331,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "firstcardinality",
+    "gammatj",
+    "pairwisestable",
+    "horseshoestime",
+    "horseshoetimesdensity",
+    "eq:restricted-reverse-stable",
+    "eq:restricted-reverse-unstable",
+    "eq:restricted-reverse-angle",
+    "eq:long-forward-splitting",
+    "twosidedsplitting",
+    "eq:long-endpoint-comparison",
+    "eq:long-chart-diagonal",
+    "giii",
+    "eq:lb-second-derivative",
+    "eq:lb-radii",
+    "eq:lb-final-chart-slope",
+    "eq:lb-capped-length-solution",
+    "eq:lb-projection-expansion",
+    "eq:lb-capped-length-recurrence",
+    "eq:lb-terminal-unstable-cone",
+    "eq:lb-reference-contraction",
+    "eq:lb-final-physical-length",
+    "eq:lb-final-physical-angle"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 5333
+   },
+   "last": 5897,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#head-20",
+   "type": "head",
+   "k": 20,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-30",
+   "pos": {
+    "file": "main.tex",
+    "line": 5512
+   },
+   "last": 5512,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "8.6",
+   "number_from": "counter",
+   "labels": [
+    "lem:long-splitting-comparison",
+    "eq:long-unstable-comparison",
+    "eq:long-stable-comparison"
+   ],
+   "parent": "2609.12908v2#proof-30",
+   "pos": {
+    "file": "main.tex",
+    "line": 5516
+   },
+   "last": 5526,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.12908v2#proof-30",
+   "pos": {
+    "file": "main.tex",
+    "line": 5528
+   },
+   "last": 5546,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "lema",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "definicao",
+   "number": "8.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:long-common-splitting",
+    "eq:long-block-length-condition",
+    "eq:long-common-angle",
+    "eq:long-common-stable",
+    "eq:long-common-unstable"
+   ],
+   "parent": "2609.12908v2#proof-30",
+   "pos": {
+    "file": "main.tex",
+    "line": 5554
+   },
+   "last": 5573,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:long-area-ratios"
+   ],
+   "parent": "2609.12908v2#proof-30",
+   "pos": {
+    "file": "main.tex",
+    "line": 5574
+   },
+   "last": 5601,
+   "result": "matched"
+  },
+  {
+   "id": "2609.12908v2#head-21",
+   "type": "head",
+   "k": 21,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-30",
+   "pos": {
+    "file": "main.tex",
+    "line": 5609
+   },
+   "last": 5609,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-22",
+   "type": "head",
+   "k": 22,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "3",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-30",
+   "pos": {
+    "file": "main.tex",
+    "line": 5670
+   },
+   "last": 5670,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-23",
+   "type": "head",
+   "k": 23,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "4",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-30",
+   "pos": {
+    "file": "main.tex",
+    "line": 5774
+   },
+   "last": 5774,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-24",
+   "type": "head",
+   "k": 24,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "5",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-30",
+   "pos": {
+    "file": "main.tex",
+    "line": 5819
+   },
+   "last": 5819,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-25",
+   "type": "head",
+   "k": 25,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "6",
+   "number_from": "head",
+   "parent": "2609.12908v2#proof-30",
+   "pos": {
+    "file": "main.tex",
+    "line": 5867
+   },
+   "last": 5867,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.12908v2#head-26",
+   "type": "head",
+   "k": 26,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "7",
+   "number_from": "head",
+   "pos": {
+    "file": "main.tex",
+    "line": 5899
+   },
+   "last": 5899,
+   "result": "matched",
+   "confidence": "medium"
+  }
+ ]
+}
