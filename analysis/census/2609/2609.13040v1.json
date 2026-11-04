@@ -1,0 +1,678 @@
+{
+ "paper": "2609.13040",
+ "version": 1,
+ "extractor": "ax/v0.5.34",
+ "main": [
+  "main-arxiv.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "geometry",
+  "inputenc",
+  "amsmath",
+  "amsfonts",
+  "amssymb",
+  "amsthm",
+  "graphicx",
+  "natbib",
+  "algorithm",
+  "algorithmic",
+  "xcolor",
+  "pifont",
+  "hyperref",
+  "float",
+  "placeins",
+  "ulem",
+  "multirow",
+  "enumitem",
+  "tabularx",
+  "booktabs",
+  "array",
+  "subcaption"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main-arxiv.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 6 commands, 1 environments",
+  "tree: 149 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "assump",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assump",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "qu",
+   "title": "Question",
+   "item": "problem",
+   "counter": "qu",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "prop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "cor",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "conj",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "dfn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "dfn",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prob",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "prob",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "rem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 16,
+  "head": 3,
+  "label": 27,
+  "proof": 8,
+  "textref": 73
+ },
+ "matched": {
+  "env": 16,
+  "head": 3,
+  "label": 27,
+  "proof": 8
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 16,
+  "from_head": 3,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 72,
+  "unresolved": 1
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.13040v1#textref-3",
+   "message": "the text names assumption Q and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.13040v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "assump",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assump",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "eq:tau-nu",
+    "assump:samplesize"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 478
+   },
+   "last": 500,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "assump",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assump",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "assump:sgd",
+    "ass:good_set_regularity",
+    "ass:outlier_nonnegativity",
+    "eq:lmax",
+    "ass:component_smoothness",
+    "ass:subset_strong_convexity"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 505
+   },
+   "last": 578,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "thm:main",
+    "eq:mu-star"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 637
+   },
+   "last": 677,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "lem:quantilebound-sgd"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 682
+   },
+   "last": 690,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:gamma-quant",
+    "eq:est-1",
+    "eq:est-2"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 692
+   },
+   "last": 751,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "lem:gradbound"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 756
+   },
+   "last": 772,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "lem:corruptProjection-sgd"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 777
+   },
+   "last": 795,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 797
+   },
+   "last": 834,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lem",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "lem",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "lem:noncorruptProjection-sgd"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 838
+   },
+   "last": 860,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 862
+   },
+   "last": 974,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 992
+   },
+   "last": 1140,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "labels": [
+    "eq:eta-standard"
+   ],
+   "parent": "2609.13040v1#proof-4",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 994
+   },
+   "last": 1030,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.13040v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2609.13040v1#proof-4",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1033
+   },
+   "last": 1095,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.13040v1#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "Step",
+   "item": "other/case",
+   "number": "3",
+   "number_from": "head",
+   "parent": "2609.13040v1#proof-4",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1097
+   },
+   "last": 1139,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.13040v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "assump",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assump",
+   "number": "3",
+   "number_from": "counter",
+   "labels": [
+    "assump:small-sample-prob"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1169
+   },
+   "last": 1225,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "thm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "thm",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "thm:small-sample-prob"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1230
+   },
+   "last": 1272,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1275
+   },
+   "last": 1417,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "rem",
+   "number": "1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1419
+   },
+   "last": 1436,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "prop",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "prop:subset-curvature-small-sample"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1447
+   },
+   "last": 1480,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1481
+   },
+   "last": 1547,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "rem",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "rem",
+   "number": "2",
+   "number_from": "counter",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1549
+   },
+   "last": 1577,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "assump",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "assump",
+   "number": "4",
+   "number_from": "counter",
+   "labels": [
+    "eq:hard-separation",
+    "assump:hard-separation"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1587
+   },
+   "last": 1595,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "prop",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "prop:hard-pi",
+    "eq:pg"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1599
+   },
+   "last": 1622,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1624
+   },
+   "last": 1663,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "cor",
+   "number": "1",
+   "number_from": "counter",
+   "labels": [
+    "cor:mu-lower-hard"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1670
+   },
+   "last": 1682,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1685
+   },
+   "last": 1734,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13040v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "cor",
+   "number": "2",
+   "number_from": "counter",
+   "labels": [
+    "cor:hard-separation-rate"
+   ],
+   "pos": {
+    "file": "main-arxiv.tex",
+    "line": 1739
+   },
+   "last": 1796,
+   "result": "matched"
+  }
+ ]
+}
