@@ -1,7 +1,7 @@
 {
  "paper": "2609.29326",
  "version": 1,
- "extractor": "ax/v0.5.17",
+ "extractor": "ax/v0.5.33",
  "main": [
   "main.tex"
  ],
@@ -146,22 +146,30 @@
  ],
  "occurrences": {
   "env": 27,
+  "head": 4,
   "label": 79,
   "proof": 21,
   "textref": 24
  },
  "matched": {
   "env": 27,
+  "head": 3,
   "label": 79,
   "proof": 21
  },
  "gaps": [],
- "waivers": [],
+ "waivers": [
+  {
+   "occurrence": "2609.29326v1#head-4",
+   "reason": "layout",
+   "by": "rule:section-head"
+  }
+ ],
  "numbers": {
   "from_aux": 0,
   "from_render": 27,
   "from_counter": 0,
-  "from_head": 0,
+  "from_head": 2,
   "agree": 27,
   "disagree": 0,
   "contiguity_gaps": 0
@@ -1040,6 +1048,42 @@
    "result": "matched"
   },
   {
+   "id": "2609.29326v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "1",
+   "number_from": "head",
+   "parent": "2609.29326v1#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 2415
+   },
+   "last": 2420,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.29326v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "2",
+   "number_from": "head",
+   "parent": "2609.29326v1#proof-17",
+   "pos": {
+    "file": "main.tex",
+    "line": 2422
+   },
+   "last": 2432,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
    "id": "2609.29326v1#env-24",
    "type": "env",
    "k": 24,
@@ -1138,6 +1182,22 @@
    "result": "matched"
   },
   {
+   "id": "2609.29326v1#head-3",
+   "type": "head",
+   "k": 3,
+   "env": "head",
+   "title": "inequality",
+   "item": "statement/formula",
+   "parent": "2609.29326v1#env-26",
+   "pos": {
+    "file": "main.tex",
+    "line": 2991
+   },
+   "last": 3012,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
    "id": "2609.29326v1#proof-20",
    "type": "proof",
    "k": 20,
@@ -1209,6 +1269,25 @@
     "appendix"
    ],
    "result": "matched"
+  },
+  {
+   "id": "2609.29326v1#head-4",
+   "type": "head",
+   "k": 4,
+   "env": "head",
+   "title": "Acknowledgement",
+   "item": "other/section",
+   "pos": {
+    "file": "main.tex",
+    "line": 3643
+   },
+   "last": 3645,
+   "flags": [
+    "appendix"
+   ],
+   "result": "waived",
+   "waiver": "layout",
+   "confidence": "medium"
   }
  ]
 }

@@ -1,0 +1,1747 @@
+{
+ "paper": "2609.15222",
+ "version": 1,
+ "extractor": "ax/v0.5.33",
+ "main": [
+  "paper.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "fancyhdr",
+  "babel",
+  "amssymb",
+  "amsmath",
+  "amsthm",
+  "amsfonts",
+  "enumerate",
+  "setspace",
+  "scalefnt",
+  "xcolor",
+  "graphicx",
+  "tikz",
+  "caption",
+  "subcaption",
+  "fullpage",
+  "hyperref",
+  "enumitem",
+  "verbatim",
+  "array",
+  "booktabs",
+  "longtable",
+  "multicol",
+  "float",
+  "aliascnt",
+  "cleveref",
+  "ulem",
+  "tikz-cd",
+  "xparse",
+  "authblk",
+  "geometry"
+ ],
+ "steps": [
+  "unpack: 21 files",
+  "main: paper.tex",
+  "include: 21 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 27 commands, 3 environments",
+  "tree: 313 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "lemma",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "cor",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "cor",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "conj",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "question",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "subclaim",
+   "title": "Subclaim",
+   "item": "statement/claim",
+   "counter": "subclaim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "claim",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "op",
+   "title": "Open Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "op",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prob",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "prob",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "prop",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "prop",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "proposition",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "corollary",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "rmk",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "rmk",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "remark",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "intp",
+   "title": "Interpretation",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "intp",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "kn",
+   "title": "Known",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "kn",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "defn",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "defn",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "expl",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "expl",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "obs",
+   "title": "Observation",
+   "item": "statement/fact",
+   "counter": "theorem",
+   "shared": "obs",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  },
+  {
+   "env": "poc",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "posc",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 39,
+  "head": 1,
+  "label": 134,
+  "proof": 33,
+  "textref": 20
+ },
+ "matched": {
+  "env": 39,
+  "label": 134,
+  "proof": 33
+ },
+ "gaps": [],
+ "waivers": [
+  {
+   "occurrence": "2609.15222v1#head-1",
+   "reason": "layout",
+   "by": "rule:section-head"
+  }
+ ],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 39,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 20,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.15222v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:lz-criterion-informal"
+   ],
+   "pos": {
+    "file": "sections/intro.tex",
+    "line": 98
+   },
+   "last": 100,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:main-results-informal",
+    "thm:main-results-informal-a",
+    "thm:main-results-informal-b"
+   ],
+   "pos": {
+    "file": "sections/intro.tex",
+    "line": 130
+   },
+   "last": 173,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "counter",
+   "labels": [
+    "thm:graphon-large-deviations"
+   ],
+   "pos": {
+    "file": "sections/intro.tex",
+    "line": 222
+   },
+   "last": 238,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.4",
+   "number_from": "counter",
+   "labels": [
+    "thm:lz-criterion"
+   ],
+   "pos": {
+    "file": "sections/intro.tex",
+    "line": 245
+   },
+   "last": 248,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.5",
+   "number_from": "counter",
+   "labels": [
+    "thm:nonexceptional-optimizers"
+   ],
+   "pos": {
+    "file": "sections/intro.tex",
+    "line": 256
+   },
+   "last": 272,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.6",
+   "number_from": "counter",
+   "labels": [
+    "thm:endpoint-optimizers"
+   ],
+   "pos": {
+    "file": "sections/intro.tex",
+    "line": 310
+   },
+   "last": 332,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:krrs-analytic-extension"
+   ],
+   "pos": {
+    "file": "sections/preliminaries.tex",
+    "line": 166
+   },
+   "last": 205,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:scalar-lz-boundary",
+    "eq:contact-quadratic-separation"
+   ],
+   "pos": {
+    "file": "sections/lz_boundary.tex",
+    "line": 21
+   },
+   "last": 48,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:convexity-defect"
+   ],
+   "pos": {
+    "file": "sections/lz_boundary.tex",
+    "line": 65
+   },
+   "last": 88,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:contact-points",
+    "eq:contact-equal-slopes",
+    "eq:contact-chord-identity"
+   ],
+   "pos": {
+    "file": "sections/lz_boundary.tex",
+    "line": 95
+   },
+   "last": 111,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:contact-point-limits"
+   ],
+   "pos": {
+    "file": "sections/lz_boundary.tex",
+    "line": 113
+   },
+   "last": 117,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/lz_boundary.tex",
+    "line": 121
+   },
+   "last": 305,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.15222v1#proof-1",
+   "pos": {
+    "file": "sections/lz_boundary.tex",
+    "line": 158
+   },
+   "last": 249,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.15222v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "head",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.15222v1#proof-1",
+   "pos": {
+    "file": "sections/lz_boundary.tex",
+    "line": 252
+   },
+   "last": 304,
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.15222v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:nonexceptional-endpoint",
+    "eq:optimizer-expansion"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional.tex",
+    "line": 23
+   },
+   "last": 50,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:active-constraint"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_local_reduction.tex",
+    "line": 12
+   },
+   "last": 15,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/nonexceptional_local_reduction.tex",
+    "line": 17
+   },
+   "last": 52,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:edge-density-deficit"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_local_reduction.tex",
+    "line": 54
+   },
+   "last": 57,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/nonexceptional_local_reduction.tex",
+    "line": 59
+   },
+   "last": 73,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:boundary-convergence"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_local_reduction.tex",
+    "line": 75
+   },
+   "last": 89,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:fixed-density-bipodality",
+    "eq:reduced-objective-attainment"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_local_reduction.tex",
+    "line": 128
+   },
+   "last": 147,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:edge-density-localization"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_local_reduction.tex",
+    "line": 149
+   },
+   "last": 187,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "cor:scalar-reduction",
+    "eq:edge-density-minimization"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_local_reduction.tex",
+    "line": 189
+   },
+   "last": 207,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:scalar-quadratic-bound",
+    "eq:scalar-quadratic-bound"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_quadratic_growth.tex",
+    "line": 64
+   },
+   "last": 74,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/nonexceptional_quadratic_growth.tex",
+    "line": 76
+   },
+   "last": 120,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "prop:graphon-quadratic-bound",
+    "eq:graphon-quadratic-bound"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_quadratic_growth.tex",
+    "line": 122
+   },
+   "last": 131,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/nonexceptional_quadratic_growth.tex",
+    "line": 133
+   },
+   "last": 141,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.9",
+   "number_from": "counter",
+   "labels": [
+    "lem:bipodal-quadratic-bound",
+    "eq:bipodal-quadratic-bound"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_quadratic_growth.tex",
+    "line": 151
+   },
+   "last": 161,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:comparison-graphon-constraints",
+    "eq:comparison-block-size",
+    "eq:comparison-block-density"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_quadratic_growth.tex",
+    "line": 163
+   },
+   "last": 237,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.10",
+   "number_from": "counter",
+   "labels": [
+    "thm:positive-second-variation",
+    "eq:boundary-excess-extension",
+    "eq:boundary-excess-curvature",
+    "eq:boundary-excess-expansion"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_quadratic_growth.tex",
+    "line": 247
+   },
+   "last": 272,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/nonexceptional_quadratic_growth.tex",
+    "line": 274
+   },
+   "last": 318,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:edge-deficit-minimization",
+    "eq:optimal-deficit-expansion"
+   ],
+   "pos": {
+    "file": "sections/nonexceptional_proof.tex",
+    "line": 3
+   },
+   "last": 138,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:singular-endpoint"
+   ],
+   "pos": {
+    "file": "sections/singular.tex",
+    "line": 36
+   },
+   "last": 68,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:stationary-rank-one-bipodality"
+   ],
+   "pos": {
+    "file": "sections/singular_stationary_family.tex",
+    "line": 84
+   },
+   "last": 99,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:rank-one-kkt"
+   ],
+   "pos": {
+    "file": "sections/singular_stationary_family.tex",
+    "line": 101
+   },
+   "last": 173,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:rank-one-kkt-family"
+   ],
+   "pos": {
+    "file": "sections/singular_stationary_family.tex",
+    "line": 203
+   },
+   "last": 258,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:three-value-kkt",
+    "eq:block-proportion-formula",
+    "eq:mh-derivative-factorization"
+   ],
+   "pos": {
+    "file": "sections/singular_stationary_family.tex",
+    "line": 295
+   },
+   "last": 411,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "rmk:rank-one-family-universality"
+   ],
+   "pos": {
+    "file": "sections/singular_stationary_family.tex",
+    "line": 413
+   },
+   "last": 420,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:rank-one-parameter-expansions",
+    "eq:rank-one-parameter-expansions"
+   ],
+   "pos": {
+    "file": "sections/singular_constant_comparison.tex",
+    "line": 30
+   },
+   "last": 44,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/singular_constant_comparison.tex",
+    "line": 51
+   },
+   "last": 79,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "counter",
+   "labels": [
+    "lem:constant-graphon-comparison"
+   ],
+   "pos": {
+    "file": "sections/singular_constant_comparison.tex",
+    "line": 83
+   },
+   "last": 94,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:endpoint-gap-expansion",
+    "eq:family-gap-expansion"
+   ],
+   "pos": {
+    "file": "sections/singular_constant_comparison.tex",
+    "line": 156
+   },
+   "last": 194,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.7",
+   "number_from": "counter",
+   "labels": [
+    "lem:localization-rank-one",
+    "eq:graphon-quartic-localization",
+    "eq:rank-one-orthogonality",
+    "eq:rank-one-reduction-bounds"
+   ],
+   "pos": {
+    "file": "sections/singular_localization.tex",
+    "line": 81
+   },
+   "last": 115,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:moment-and-cost-gap-bounds"
+   ],
+   "pos": {
+    "file": "sections/singular_localization.tex",
+    "line": 117
+   },
+   "last": 351,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.8",
+   "number_from": "counter",
+   "labels": [
+    "lem:continuation-kernel-bounds",
+    "eq:continuation-kernel-bounds"
+   ],
+   "pos": {
+    "file": "sections/singular_auxiliary_lagrangian.tex",
+    "line": 132
+   },
+   "last": 147,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/singular_auxiliary_lagrangian.tex",
+    "line": 149
+   },
+   "last": 193,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.9",
+   "number_from": "counter",
+   "labels": [
+    "lem:first-variation-bound"
+   ],
+   "pos": {
+    "file": "sections/singular_auxiliary_lagrangian.tex",
+    "line": 319
+   },
+   "last": 331,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:endpoint-first-variation"
+   ],
+   "pos": {
+    "file": "sections/singular_auxiliary_lagrangian.tex",
+    "line": 333
+   },
+   "last": 407,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.10",
+   "number_from": "counter",
+   "labels": [
+    "lem:central-kernel-bound",
+    "eq:central-kernel-bound"
+   ],
+   "pos": {
+    "file": "sections/singular_auxiliary_lagrangian.tex",
+    "line": 416
+   },
+   "last": 429,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:moment-interpolation"
+   ],
+   "pos": {
+    "file": "sections/singular_auxiliary_lagrangian.tex",
+    "line": 431
+   },
+   "last": 619,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.11",
+   "number_from": "counter",
+   "labels": [
+    "lem:auxiliary-lagrangian-bound",
+    "eq:auxiliary-lagrangian-bound"
+   ],
+   "pos": {
+    "file": "sections/singular_auxiliary_lagrangian.tex",
+    "line": 626
+   },
+   "last": 644,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/singular_auxiliary_lagrangian.tex",
+    "line": 646
+   },
+   "last": 735,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.12",
+   "number_from": "counter",
+   "labels": [
+    "lem:graphon-lagrangian-bound",
+    "eq:graphon-lagrangian-bound"
+   ],
+   "pos": {
+    "file": "sections/singular_graphon_comparison.tex",
+    "line": 13
+   },
+   "last": 31,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:graphon-comparison-estimates"
+   ],
+   "pos": {
+    "file": "sections/singular_graphon_comparison.tex",
+    "line": 33
+   },
+   "last": 226,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/singular_proof.tex",
+    "line": 8
+   },
+   "last": 94,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "conj",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "counter",
+   "labels": [
+    "conj:symmetry-breaking-optimizers"
+   ],
+   "pos": {
+    "file": "sections/conclusion.tex",
+    "line": 94
+   },
+   "last": 120,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Acknowledgments",
+   "item": "other/section",
+   "pos": {
+    "file": "paper.tex",
+    "line": 286
+   },
+   "last": 290,
+   "result": "waived",
+   "waiver": "layout",
+   "confidence": "medium"
+  },
+  {
+   "id": "2609.15222v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:krrs-bipodality"
+   ],
+   "pos": {
+    "file": "sections/appendix_preliminaries.tex",
+    "line": 11
+   },
+   "last": 43,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "A.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:krrs-cross-density"
+   ],
+   "pos": {
+    "file": "sections/appendix_preliminaries.tex",
+    "line": 45
+   },
+   "last": 52,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "A.3",
+   "number_from": "counter",
+   "labels": [
+    "rmk:krrs-omitted-identity"
+   ],
+   "pos": {
+    "file": "sections/appendix_preliminaries.tex",
+    "line": 54
+   },
+   "last": 61,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:krrs-parameter-limits",
+    "eq:krrs-entropy-remainder",
+    "eq:krrs-moment-remainder",
+    "eq:krrs-scalar-nondegeneracy",
+    "eq:krrs-ratio-derivatives",
+    "eq:krrs-edge-constraint",
+    "eq:krrs-large-block-expansion",
+    "eq:krrs-density-derivative",
+    "eq:krrs-density-coefficient",
+    "eq:krrs-density-constraint",
+    "eq:krrs-constrained-entropy",
+    "eq:krrs-entropy-quotient",
+    "eq:krrs-entropy-derivative",
+    "eq:krrs-quotient-boundary",
+    "eq:krrs-density-expansion",
+    "eq:krrs-entropy-expansion",
+    "eq:krrs-block-size-expansion",
+    "eq:krrs-quotient-expansion",
+    "eq:krrs-second-coefficient",
+    "eq:krrs-coefficient-concavity",
+    "eq:krrs-small-block-stationarity",
+    "eq:krrs-cross-block-stationarity",
+    "eq:krrs-boundary-stationarity",
+    "eq:krrs-jacobian-aa",
+    "eq:krrs-jacobian-ba",
+    "eq:krrs-jacobian-bb",
+    "eq:krrs-stationary-densities",
+    "eq:krrs-block-size-map",
+    "eq:krrs-large-block-map",
+    "eq:krrs-cross-block-limit",
+    "eq:krrs-domain-fibres",
+    "eq:krrs-uniform-domain",
+    "eq:krrs-optimizer-map",
+    "eq:krrs-map-agreement",
+    "eq:krrs-block-size-derivative"
+   ],
+   "pos": {
+    "file": "sections/appendix_preliminaries.tex",
+    "line": 74
+   },
+   "last": 663,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:two-point-convex-minorant"
+   ],
+   "pos": {
+    "file": "sections/appendix_lz_boundary.tex",
+    "line": 13
+   },
+   "last": 27,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/appendix_lz_boundary.tex",
+    "line": 28
+   },
+   "last": 34,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/appendix_lz_boundary.tex",
+    "line": 36
+   },
+   "last": 103,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:contact-derivative-system"
+   ],
+   "pos": {
+    "file": "sections/appendix_lz_boundary.tex",
+    "line": 105
+   },
+   "last": 437,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/appendix_lz_boundary.tex",
+    "line": 439
+   },
+   "last": 504,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/appendix_lz_boundary.tex",
+    "line": 509
+   },
+   "last": 534,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/appendix_lz_boundary.tex",
+    "line": 536
+   },
+   "last": 558,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:boundary-limit-feasibility",
+    "eq:entropy-parameter-continuity",
+    "eq:entropy-moving-parameter-lsc",
+    "eq:boundary-cost-limsup"
+   ],
+   "pos": {
+    "file": "sections/appendix_nonexceptional_endpoint.tex",
+    "line": 7
+   },
+   "last": 122,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "sections/appendix_nonexceptional_endpoint.tex",
+    "line": 124
+   },
+   "last": 175,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "C.1",
+   "number_from": "counter",
+   "labels": [
+    "rmk:bipodal-parameter-expansions",
+    "eq:edge-deficit-coefficient",
+    "eq:optimizer-block-size",
+    "eq:optimizer-block-density",
+    "eq:bipodal-edge-linearization",
+    "eq:bipodal-density-linearization"
+   ],
+   "pos": {
+    "file": "sections/appendix_nonexceptional_endpoint.tex",
+    "line": 180
+   },
+   "last": 327,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:rank-one-kkt-proof",
+    "eq:three-value-kkt-proof",
+    "eq:kkt-divided-slopes",
+    "eq:endpoint-entropy-derivatives",
+    "eq:mh-cubic-derivative",
+    "eq:block-stationarity-proof",
+    "eq:block-moment-identity",
+    "eq:block-proportion-balance",
+    "eq:block-proportion-formula-proof",
+    "eq:mh-factorization-proof"
+   ],
+   "pos": {
+    "file": "sections/appendix_singular_endpoint.tex",
+    "line": 12
+   },
+   "last": 420,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15222v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:kkt-quartic-expansion",
+    "eq:kkt-parameter-shift"
+   ],
+   "pos": {
+    "file": "sections/appendix_singular_endpoint.tex",
+    "line": 425
+   },
+   "last": 559,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}
