@@ -1,0 +1,810 @@
+{
+ "paper": "2609.13989",
+ "version": 2,
+ "extractor": "ax/v0.5.33",
+ "main": [
+  "main.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "srcltx",
+  "eurosym",
+  "mathtools",
+  "amsmath",
+  "amsfonts",
+  "amssymb",
+  "amsthm",
+  "bm",
+  "graphicx",
+  "mathrsfs",
+  "xcolor",
+  "exscale",
+  "color",
+  "soul",
+  "latexsym",
+  "authblk",
+  "comment",
+  "hyperref",
+  "enumerate",
+  "enumitem",
+  "bookmark",
+  "wasysym",
+  "esint",
+  "datetime",
+  "geometry",
+  "cleveref",
+  "setspace",
+  "appendix",
+  "pgf",
+  "tikz",
+  "xpatch",
+  "scalerel",
+  "subcaption",
+  "caption",
+  "inputenc"
+ ],
+ "steps": [
+  "unpack: 1 files",
+  "main: main.tex",
+  "include: 1 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 152 commands, 2 environments",
+  "tree: 162 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remarka",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "remarka",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "counter example",
+   "title": "Counter Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "parametrization",
+   "title": "Parametrization",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "mypar",
+   "title": "{\\elevensf}",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Hypothesis",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "Hypothesis",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumptions",
+   "title": "Assumptions",
+   "item": "context/hypothesis",
+   "counter": "assumptions",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "Assumption",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "Assumption",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "t1",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "t1",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "l1",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "l1",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "c1",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "c1",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "r1",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "r1",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  },
+  {
+   "env": "ManualHypo",
+   "title": "Hypothesis",
+   "item": "context/hypothesis",
+   "counter": "Assumption",
+   "shared": "Assumption",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 14,
+  "label": 95,
+  "proof": 8,
+  "textref": 48
+ },
+ "matched": {
+  "env": 14,
+  "label": 95,
+  "proof": 8
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 14,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 46,
+  "unresolved": 2
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.13989v2#textref-27",
+   "message": "the text names Lemma 2.8 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.13989v2#textref-28",
+   "message": "the text names Proposition 2.10 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.13989v2#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "assumption_state_space",
+    "eq:velocity_homogeneity"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 516
+   },
+   "last": 537,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "counter",
+   "labels": [
+    "weak_soln"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 680
+   },
+   "last": 690,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:eigenstructure_homogeneous_system",
+    "eq:linearly_degenerate_eigenvalue",
+    "eq:genuinely_nonlinear_eigenvalue",
+    "eq:tangential_eigenspace",
+    "eq:radial_eigenspace",
+    "eq:explicit_right_eigenvectors",
+    "eq:directional_ld_eigenvalue",
+    "eq:directional_g_eigenvalue"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 804
+   },
+   "last": 869,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:A_action"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 870
+   },
+   "last": 921,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:decoupled_system",
+    "eq:scalar_velocity_equation_main",
+    "eq:ratio_transport_equation_main"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 971
+   },
+   "last": 999,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:expanded_approximate_system",
+    "V_first",
+    "V_second"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1001
+   },
+   "last": 1126,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:global_viscous",
+    "eq: U0bound",
+    "eq:constantm_0M_0",
+    "invariant_domain"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1128
+   },
+   "last": 1170,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:V_initial_data",
+    "eq:xi_initial_data",
+    "eq: VtoQ",
+    "eq:Q_epsilon_initial_data",
+    "W_equation",
+    "eq:Q_epsilon",
+    "eq:global_ratio_bounds"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1172
+   },
+   "last": 1475,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "lemma: L1_compact",
+    "eq:initial_bound_V",
+    "eq:initial_variation_V"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1481
+   },
+   "last": 1502,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:W_epsilon",
+    "eq:initialdatafor_W",
+    "eq:Bprime_bounds",
+    "vartheta_bounds",
+    "W_updated",
+    "eq:difference_W",
+    "a_b_bounds",
+    "eq:absolute_value_W",
+    "eq:absolute_value_W_integral",
+    "eq:absolute_value_W_integral_updated",
+    "space_continuity_with_vartheta",
+    "space_continuity_h_division",
+    "eq:initial_difference_BV",
+    "eq:initial_variation_W",
+    "space_continuity_derivative_bound",
+    "space_continuity_global_BV",
+    "space_continuity_local_BV",
+    "eq:mollification_space_error",
+    "eq:mollification_BV_error",
+    "eq:mollified_time_derivative",
+    "eq:time_translation_interpolation",
+    "eq:local_time_translation_W"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1503
+   },
+   "last": 1852,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:power_entropy_V",
+    "eq:power_entropy_identity",
+    "eq:local_gradient_estimate"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1854
+   },
+   "last": 1912,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:entropy_multiplied",
+    "eq: V_laplacian",
+    "eq:localized_entropy"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1914
+   },
+   "last": 2040,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "main_theorem_1",
+    "initial_invariant",
+    "eq:initial_variation_V_main"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2043
+   },
+   "last": 2059,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "W_continuity",
+    "eq:weighted_xi_epsilon",
+    "eq:weighted_xi_cauchy",
+    "eq:weighted_xi_cauchy_limit",
+    "stronglimit",
+    "weak_form_smooth"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2060
+   },
+   "last": 2125,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "assumption2"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2156
+   },
+   "last": 2158,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "main_theorem_2",
+    "eq:decayforu_i"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2161
+   },
+   "last": 2174,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:existenceofviscouswave",
+    "eq:viscouseqforW"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2178
+   },
+   "last": 2187,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "main.tex",
+    "line": 2188
+   },
+   "last": 2190,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "eq: poincare_type_inequality"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2192
+   },
+   "last": 2197,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:forW",
+    "eq:contractionforW",
+    "eq:decayinW"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2223
+   },
+   "last": 2236,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:timegrowthofE",
+    "eq:entropyestimate",
+    "eq:forY",
+    "eq:forB",
+    "eq:forG",
+    "eq:transformation",
+    "eq:transformation2",
+    "eq:estimateY",
+    "eq:estimateB_1",
+    "eq:estimateB_21",
+    "eq:fordz",
+    "eq:estimateB_2",
+    "eq:estimateofdzdxi",
+    "eq:estimateG",
+    "eq:estimateofall1",
+    "eq:R2r"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2237
+   },
+   "last": 2498,
+   "result": "matched"
+  },
+  {
+   "id": "2609.13989v2#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "counter",
+   "labels": [
+    "rem:forviscousshock"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 2499
+   },
+   "last": 2501,
+   "result": "matched"
+  }
+ ]
+}

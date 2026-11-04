@@ -1,7 +1,7 @@
 {
  "paper": "2607.00323",
  "version": 1,
- "extractor": "ax/v0.5.17",
+ "extractor": "ax/v0.5.33",
  "main": [
   "Jin-Hong-3-7-1-Final.tex"
  ],
@@ -34,7 +34,8 @@
   "local: 0 style files",
   "clean: comments, verbatim and 0 comment environments",
   "conditionals: 0 decided, 0 flag tests decided, 0 kept",
-  "macros: 20 commands, 0 environments",
+  "macros: 198 commands, 0 environments",
+  "drop: 2 uses of commands that print nothing",
   "tree: 86 nodes"
  ],
  "declarations": [
@@ -111,7 +112,7 @@
   {
    "env": "pdef",
    "title": "Proposition-Definition",
-   "item": "definition",
+   "item": "statement/proposition",
    "counter": "thm",
    "shared": "thm",
    "numbered": true,
@@ -139,7 +140,7 @@
  ],
  "occurrences": {
   "env": 28,
-  "head": 1,
+  "head": 2,
   "label": 26,
   "proof": 19,
   "textref": 21
@@ -151,7 +152,13 @@
   "proof": 19
  },
  "gaps": [],
- "waivers": [],
+ "waivers": [
+  {
+   "occurrence": "2607.00323v1#head-2",
+   "reason": "layout",
+   "by": "rule:section-head"
+  }
+ ],
  "numbers": {
   "from_aux": 0,
   "from_render": 28,
@@ -994,6 +1001,22 @@
    },
    "last": 724,
    "result": "matched"
+  },
+  {
+   "id": "2607.00323v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Acknowledgments",
+   "item": "other/section",
+   "pos": {
+    "file": "Jin-Hong-3-7-1-Final.tex",
+    "line": 727
+   },
+   "last": 730,
+   "result": "waived",
+   "waiver": "layout",
+   "confidence": "medium"
   }
  ]
 }

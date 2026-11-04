@@ -1,7 +1,7 @@
 {
  "paper": "2201.10697",
  "version": 1,
- "extractor": "ax/v0.5.17",
+ "extractor": "ax/v0.5.33",
  "main": [
   "main.tex"
  ],
@@ -174,12 +174,14 @@
  ],
  "occurrences": {
   "env": 29,
-  "label": 48,
+  "head": 2,
+  "label": 49,
   "proof": 12
  },
  "matched": {
   "env": 29,
-  "label": 48,
+  "head": 2,
+  "label": 49,
   "proof": 12
  },
  "gaps": [],
@@ -187,7 +189,7 @@
  "numbers": {
   "from_aux": 0,
   "from_render": 0,
-  "from_counter": 27,
+  "from_counter": 29,
   "from_head": 0,
   "agree": 0,
   "disagree": 0,
@@ -224,6 +226,8 @@
    "env": "conjrecall",
    "title": "\\bf Conjecture \\ref{conj:gens}",
    "item": "conjecture",
+   "number": "7.2",
+   "number_from": "ref",
    "pos": {
     "file": "main.tex",
     "line": 159
@@ -919,6 +923,49 @@
    "result": "matched"
   },
   {
+   "id": "2201.10697v1#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "7.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "main.tex",
+    "line": 1020
+   },
+   "last": 1029,
+   "flags": [
+    "section"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
+   "id": "2201.10697v1#head-2",
+   "type": "head",
+   "k": 2,
+   "env": "head",
+   "title": "Case",
+   "item": "other/case",
+   "number": "7.2",
+   "number_from": "counter",
+   "labels": [
+    "sec:planecubics"
+   ],
+   "pos": {
+    "file": "main.tex",
+    "line": 1030
+   },
+   "last": 1111,
+   "flags": [
+    "section"
+   ],
+   "result": "matched",
+   "confidence": "medium"
+  },
+  {
    "id": "2201.10697v1#env-28",
    "type": "env",
    "k": 28,
@@ -931,6 +978,7 @@
    "labels": [
     "thm.r2.d3"
    ],
+   "parent": "2201.10697v1#head-2",
    "pos": {
     "file": "main.tex",
     "line": 1089
@@ -951,6 +999,7 @@
    "labels": [
     "conj:gens"
    ],
+   "parent": "2201.10697v1#head-2",
    "pos": {
     "file": "main.tex",
     "line": 1098

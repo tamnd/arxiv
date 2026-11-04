@@ -1,0 +1,2204 @@
+{
+ "paper": "2609.14186",
+ "version": 1,
+ "extractor": "ax/v0.5.33",
+ "main": [
+  "positive_orthogonally_decomposable_tensor_290912.tex"
+ ],
+ "class": "article",
+ "packages": [
+  "placeins",
+  "geometry",
+  "natbib",
+  "MathEnv",
+  "bbm",
+  "MathShorthand",
+  "breakcites",
+  "tikz",
+  "blkarray",
+  "mathtools"
+ ],
+ "steps": [
+  "unpack: 4 files",
+  "main: positive_orthogonally_decomposable_tensor_290912.tex",
+  "include: 2 files read, 0 not found",
+  "local: 2 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 68 commands, 0 environments",
+  "tree: 268 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example*",
+   "title": "Example",
+   "item": "example",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise*",
+   "title": "Exercise",
+   "item": "exercise",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question*",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem*",
+   "title": "Problem",
+   "item": "problem",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption*",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture*",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "postulate",
+   "title": "Postulate",
+   "item": "statement/axiom",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "postulate*",
+   "title": "Postulate",
+   "item": "statement/axiom",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "concept",
+   "title": "Concept",
+   "item": "unknown",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "concept*",
+   "title": "Concept",
+   "item": "unknown",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "principle",
+   "title": "Principle",
+   "item": "statement/principle",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "principle*",
+   "title": "Principle",
+   "item": "statement/principle",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "answer",
+   "title": "Answer",
+   "item": "other/solution",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "solution",
+   "title": "Solution",
+   "item": "other/solution",
+   "numbered": false,
+   "from": "local:MathEnv.sty",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
+  }
+ ],
+ "occurrences": {
+  "env": 73,
+  "label": 48,
+  "proof": 28,
+  "textref": 2
+ },
+ "matched": {
+  "env": 73,
+  "label": 48,
+  "proof": 28
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 64,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 1,
+  "unresolved": 1
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.14186v1#textref-1",
+   "message": "the text names Theorem 2.8 and the census has no such item (no-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.14186v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:persistence_diagram_sublevel_even"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 278
+   },
+   "last": 293,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "cor:persistence_diagram_superlevel_even"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 299
+   },
+   "last": 314,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "thm:persistence_diagram_sublevel_odd"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 320
+   },
+   "last": 335,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:components_sublevel_even"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 351
+   },
+   "last": 354,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:components_superlevel_even"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 356
+   },
+   "last": 358,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "prop:components_sublevel_odd"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 360
+   },
+   "last": 362,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "def:wishart"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 366
+   },
+   "last": 372,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "def:weak_convergence"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 375
+   },
+   "last": 377,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "prop:LLN_sublevel_persistence_dim_0_even"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 387
+   },
+   "last": 392,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.10",
+   "number_from": "counter",
+   "labels": [
+    "prop:LLN_superlevel_persistence_dim_0_even"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 396
+   },
+   "last": 404,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 408
+   },
+   "last": 410,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 488
+   },
+   "last": 490,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 492
+   },
+   "last": 496,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 499
+   },
+   "last": 505,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 507
+   },
+   "last": 509,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "def:persistence_diagram"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 527
+   },
+   "last": 531,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 532
+   },
+   "last": 538,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "5.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 540
+   },
+   "last": 554,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "5.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 558
+   },
+   "last": 572,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "5.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 574
+   },
+   "last": 577,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "number": "5.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 579
+   },
+   "last": 581,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.10",
+   "number_from": "counter",
+   "labels": [
+    "def:morse_complex_mod_2"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 602
+   },
+   "last": 607,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 608
+   },
+   "last": 610,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.11",
+   "number_from": "counter",
+   "labels": [
+    "thm:morse_homology_naturally_isomorphic_to_singular_homology"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 612
+   },
+   "last": 623,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 625
+   },
+   "last": 631,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "5.12",
+   "number_from": "counter",
+   "labels": [
+    "prop:persistent_homology_of_morse_function_is_interval_decomposable"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 635
+   },
+   "last": 637,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 639
+   },
+   "last": 642,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.13",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 648
+   },
+   "last": 651,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.14",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 653
+   },
+   "last": 660,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.15",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 662
+   },
+   "last": 664,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "5.16",
+   "number_from": "counter",
+   "labels": [
+    "eqn:column_reduced"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 666
+   },
+   "last": 677,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "5.17",
+   "number_from": "counter",
+   "labels": [
+    "thm:persistence_diagram_from_reduced_matrix"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 679
+   },
+   "last": 686,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 688
+   },
+   "last": 690,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 692
+   },
+   "last": 694,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.18",
+   "number_from": "counter",
+   "labels": [
+    "lem:R_of_lowest_one_must_vanish"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 697
+   },
+   "last": 699,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 701
+   },
+   "last": 712,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:critical_points_of_tensor"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 729
+   },
+   "last": 751,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 753
+   },
+   "last": 755,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 757
+   },
+   "last": 775,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:critical_values_and_ordering"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 779
+   },
+   "last": 785,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:morse_differential_tensor",
+    "eqn:morse_differential_odd"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 791
+   },
+   "last": 812,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:never_descent_to_zero"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 815
+   },
+   "last": 825,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 827
+   },
+   "last": 841,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 868
+   },
+   "last": 885,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:morse_differential_block_structure"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 898
+   },
+   "last": 913,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 915
+   },
+   "last": 938,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "counter",
+   "labels": [
+    "def:order_on_chain_group"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 942
+   },
+   "last": 949,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 952
+   },
+   "last": 959,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 961
+   },
+   "last": 963,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:low_boundary"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 965
+   },
+   "last": 968,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 969
+   },
+   "last": 971,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "7.5",
+   "number_from": "counter",
+   "labels": [
+    "prop:column_reduce_boundary",
+    "eqn:finite_PD_recursion_critical_points"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1065
+   },
+   "last": 1092,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:RD_BD-1"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1094
+   },
+   "last": 1146,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "9.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:alexander_duality"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1491
+   },
+   "last": 1501,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1503
+   },
+   "last": 1505,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "9.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:persistent_duality"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1524
+   },
+   "last": 1526,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "9.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:strict_sublevel_homologous_to_sublevel"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1528
+   },
+   "last": 1530,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1531
+   },
+   "last": 1534,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "9.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:persistence_diagram_reduced_homology"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1536
+   },
+   "last": 1539,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "9.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1543
+   },
+   "last": 1545,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1547
+   },
+   "last": 1549,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "tab:homology_superlevel_even"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1551
+   },
+   "last": 1585,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "10.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:morse_differential_block_structure_odd"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1628
+   },
+   "last": 1638,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1640
+   },
+   "last": 1644,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "10.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:column_reduction_odd"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1687
+   },
+   "last": 1689,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:zero_column_R_odd_first_block"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1691
+   },
+   "last": 1723,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1725
+   },
+   "last": 1741,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1745
+   },
+   "last": 1753,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1755
+   },
+   "last": 1757,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1759
+   },
+   "last": 1761,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1766
+   },
+   "last": 1797,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:superlevel_LLN_proof_line"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 1837
+   },
+   "last": 1848,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "counter",
+   "labels": [
+    "def:chain_complex",
+    "eqn:boundary_squared"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2008
+   },
+   "last": 2013,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2015
+   },
+   "last": 2021,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2025
+   },
+   "last": 2031,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2033
+   },
+   "last": 2035,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.3",
+   "number_from": "counter",
+   "labels": [
+    "def:singular_homology"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2039
+   },
+   "last": 2050,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2052
+   },
+   "last": 2057,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2059
+   },
+   "last": 2061,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2074
+   },
+   "last": 2076,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.6",
+   "number_from": "counter",
+   "labels": [
+    "def:reduced_homology"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2098
+   },
+   "last": 2107,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2118
+   },
+   "last": 2124,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "A.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2126
+   },
+   "last": 2127,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.9",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2129
+   },
+   "last": 2131,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.10",
+   "number_from": "counter",
+   "labels": [
+    "def:cohomology"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2133
+   },
+   "last": 2135,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.11",
+   "number_from": "counter",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2137
+   },
+   "last": 2139,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "A.12",
+   "number_from": "counter",
+   "labels": [
+    "def:filtered_chain_complex"
+   ],
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2144
+   },
+   "last": 2146,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "positive_orthogonally_decomposable_tensor_290912.tex",
+    "line": 2148
+   },
+   "last": 2171,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "B.1",
+   "number_from": "counter",
+   "labels": [
+    "def:smale_condition"
+   ],
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 15
+   },
+   "last": 17,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "B.2",
+   "number_from": "counter",
+   "labels": [
+    "prop:stable_unstable_manifold_identification"
+   ],
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 36
+   },
+   "last": 42,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:sign_preservation"
+   ],
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 46
+   },
+   "last": 54,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 56
+   },
+   "last": 68,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:absolute_coordinates_decreases"
+   ],
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 70
+   },
+   "last": 72,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 74
+   },
+   "last": 85,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 87
+   },
+   "last": 108,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "B.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 110
+   },
+   "last": 116,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 118
+   },
+   "last": 184,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "B.6",
+   "number_from": "counter",
+   "parent": "2609.14186v1#proof-27",
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 121
+   },
+   "last": 123,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "B.7",
+   "number_from": "counter",
+   "parent": "2609.14186v1#proof-27",
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 125
+   },
+   "last": 127,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "B.8",
+   "number_from": "counter",
+   "labels": [
+    "thm:f_is_smale"
+   ],
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 186
+   },
+   "last": 188,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14186v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "smale_condition_appendix.tex",
+    "line": 190
+   },
+   "last": 222,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

@@ -1,0 +1,5723 @@
+{
+ "paper": "2609.14598",
+ "version": 1,
+ "extractor": "ax/v0.5.33",
+ "main": [
+  "veering_to_convergence.tex"
+ ],
+ "class": "amsart",
+ "packages": [
+  "amsmath",
+  "amsthm",
+  "amssymb",
+  "microtype",
+  "pinlabel",
+  "sourcecodepro",
+  "enumitem",
+  "color",
+  "subfig",
+  "caption",
+  "wrapfig",
+  "pdflscape",
+  "array",
+  "tikz-cd",
+  "longtable",
+  "booktabs",
+  "hyperref",
+  "xpatch",
+  "cite",
+  "xcolor",
+  "graphicx",
+  "capt-of"
+ ],
+ "steps": [
+  "unpack: 4 files",
+  "main: veering_to_convergence.tex",
+  "include: 4 files read, 0 not found",
+  "local: 0 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 232 commands, 9 environments",
+  "tree: 432 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "principle",
+   "title": "Principle",
+   "item": "statement/principle",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "axiom",
+   "title": "Axiom",
+   "item": "statement/axiom",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "property",
+   "title": "Property",
+   "item": "statement/fact",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "subclaim",
+   "title": "Subclaim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "subclaim*",
+   "title": "Subclaim",
+   "item": "statement/claim",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition/",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "problem",
+   "title": "Problem",
+   "item": "problem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "solution",
+   "title": "Solution",
+   "item": "other/solution",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "exercise",
+   "title": "Exercise",
+   "item": "exercise",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example/",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation/",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "fact",
+   "title": "Fact",
+   "item": "statement/fact",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question/",
+   "title": "Question",
+   "item": "problem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "question*",
+   "title": "Question",
+   "item": "problem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "answer*",
+   "title": "Answer",
+   "item": "other/solution",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "application*",
+   "title": "Application",
+   "item": "unknown",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "algorithm/",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "objective",
+   "title": "Objective",
+   "item": "unknown",
+   "counter": "objective",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark/",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remarks",
+   "title": "Remarks",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case",
+   "title": "Case",
+   "item": "other/case",
+   "counter": "case",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "case*",
+   "title": "Case",
+   "item": "other/case",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "XXXtheoremQED",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "class:amsart"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "algorithm",
+   "title": "Algorithm",
+   "item": "definition/algorithm",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "theoremQED",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "shared": "equation",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  }
+ ],
+ "occurrences": {
+  "env": 196,
+  "label": 212,
+  "proof": 92,
+  "textref": 17
+ },
+ "matched": {
+  "env": 196,
+  "label": 212,
+  "proof": 92
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 190,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 14,
+  "unresolved": 3
+ },
+ "findings": [
+  {
+   "rule": "D09",
+   "occurrence": "2609.14598v1#textref-1",
+   "message": "the text names Lemma 7.15 and the census has no such item (no-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.14598v1#textref-14",
+   "message": "the text names case \\ref{Fig:Case1} and the census has no such item (not-an-item)"
+  },
+  {
+   "rule": "D09",
+   "occurrence": "2609.14598v1#textref-15",
+   "message": "the text names case \\ref{Fig:Case0} and the census has no such item (not-an-item)"
+  }
+ ],
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.14598v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "Def:IdealTriangulation"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 328
+   },
+   "last": 336,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "Def:Taut"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 349
+   },
+   "last": 359,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.3",
+   "number_from": "counter",
+   "labels": [
+    "Def:Layered"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 369
+   },
+   "last": 373,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "Lem:CommensurablePreservesLayered"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 380
+   },
+   "last": 384,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 386
+   },
+   "last": 395,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "2.5",
+   "number_from": "counter",
+   "labels": [
+    "Def:Veering"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 403
+   },
+   "last": 415,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "2.6",
+   "number_from": "counter",
+   "labels": [
+    "Rem:LocallyVeering"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 417
+   },
+   "last": 424,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "Lem:VeeringHyperbolic"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 431
+   },
+   "last": 435,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 437
+   },
+   "last": 442,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "2.8",
+   "number_from": "counter",
+   "labels": [
+    "Rem:VeeringHyperbolic"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 444
+   },
+   "last": 448,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "2.9",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Laminations",
+    "Itm:CrownZZ",
+    "Itm:NoCusps",
+    "Itm:Adjacent",
+    "Itm:Approach",
+    "Itm:NoEndpoints",
+    "Itm:Interleave"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 496
+   },
+   "last": 523,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "Def:DecompositionElementsCircle"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 530
+   },
+   "last": 546,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "Cor:CircleDecomposition"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 550
+   },
+   "last": 553,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "3.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 555
+   },
+   "last": 558,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.4",
+   "number_from": "counter",
+   "labels": [
+    "Def:VeeringSphere"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 560
+   },
+   "last": 565,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "3.5",
+   "number_from": "counter",
+   "labels": [
+    "Thm:Sphere"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 570
+   },
+   "last": 575,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.6",
+   "number_from": "counter",
+   "labels": [
+    "Def:PreSphere"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 582
+   },
+   "last": 591,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "3.7",
+   "number_from": "counter",
+   "labels": [
+    "Def:DecompositionElementsSphere"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 622
+   },
+   "last": 637,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.8",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Slice"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 641
+   },
+   "last": 646,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.9",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Equiv"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 651
+   },
+   "last": 654,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 656
+   },
+   "last": 747,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "parent": "2609.14598v1#proof-3",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 704
+   },
+   "last": 706,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-3",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 708
+   },
+   "last": 725,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.10",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Homeo"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 749
+   },
+   "last": 752,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 754
+   },
+   "last": 782,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.11",
+   "number_from": "counter",
+   "labels": [
+    "Lem:ConnNonSep"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 784
+   },
+   "last": 787,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 789
+   },
+   "last": 791,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 793
+   },
+   "last": 821,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "3.12",
+   "number_from": "counter",
+   "labels": [
+    "Lem:DecompositionElementsRecover"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 825
+   },
+   "last": 828,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 830
+   },
+   "last": 844,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "Def:Rectangle"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 861
+   },
+   "last": 865,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "Def:CuspRect"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 891
+   },
+   "last": 900,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "Def:TetRect"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 902
+   },
+   "last": 908,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "Def:Loom",
+    "Itm:Cusp",
+    "Itm:Tet"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 914
+   },
+   "last": 926,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.5",
+   "number_from": "counter",
+   "labels": [
+    "Def:Cusp"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 938
+   },
+   "last": 942,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.6",
+   "number_from": "counter",
+   "labels": [
+    "Def:CuspNonCuspLeaves"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 944
+   },
+   "last": 948,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.7",
+   "number_from": "counter",
+   "labels": [
+    "Lem:NoTriangles"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 952
+   },
+   "last": 956,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 958
+   },
+   "last": 968,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.8",
+   "number_from": "counter",
+   "labels": [
+    "Def:BiLeaf"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 973
+   },
+   "last": 987,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "4.9",
+   "number_from": "counter",
+   "labels": [
+    "Rem:NonCuspLeavesDense"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1049
+   },
+   "last": 1055,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "4.10",
+   "number_from": "counter",
+   "labels": [
+    "Thm:LinkIsLoom"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1059
+   },
+   "last": 1066,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.11",
+   "number_from": "counter",
+   "labels": [
+    "Def:IdealPoints"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1068
+   },
+   "last": 1076,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "4.12",
+   "number_from": "counter",
+   "labels": [
+    "Cor:OnlyAsymptotics"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1080
+   },
+   "last": 1086,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.13",
+   "number_from": "counter",
+   "labels": [
+    "Def:Polygonal"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1135
+   },
+   "last": 1148,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "4.14",
+   "number_from": "counter",
+   "labels": [
+    "Cor:TransverseOmnibus",
+    "Itm:PreCompactBasis",
+    "Itm:PreCompactBoundary",
+    "Itm:Ascending",
+    "Itm:Proper",
+    "Itm:DiscUnion"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1163
+   },
+   "last": 1185,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "4.15",
+   "number_from": "counter",
+   "labels": [
+    "Def:Ideal"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1217
+   },
+   "last": 1224,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.16",
+   "number_from": "counter",
+   "labels": [
+    "Lem:LeftIsLeft",
+    "Itm:TwoEndpoints",
+    "Itm:CrossIFFLinked",
+    "Itm:LeftIsLeft"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1244
+   },
+   "last": 1260,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1262
+   },
+   "last": 1281,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "4.17",
+   "number_from": "counter",
+   "labels": [
+    "Lem:NoDoubleCusps"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1285
+   },
+   "last": 1288,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "Rem:Fenley"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1303
+   },
+   "last": 1316,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-41",
+   "type": "env",
+   "k": 41,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "5.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1318
+   },
+   "last": 1341,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-42",
+   "type": "env",
+   "k": 42,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "Def:Set"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1347
+   },
+   "last": 1350,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-43",
+   "type": "env",
+   "k": 43,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "Def:Action"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1352
+   },
+   "last": 1355,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-44",
+   "type": "env",
+   "k": 44,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "Def:HalfDisc"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1357
+   },
+   "last": 1387,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-45",
+   "type": "env",
+   "k": 45,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "5.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1389
+   },
+   "last": 1391,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-46",
+   "type": "env",
+   "k": 46,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.7",
+   "number_from": "counter",
+   "labels": [
+    "Def:Topology"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1393
+   },
+   "last": 1396,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-47",
+   "type": "env",
+   "k": 47,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "5.8",
+   "number_from": "counter",
+   "labels": [
+    "Rem:SubBasis"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1398
+   },
+   "last": 1401,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-48",
+   "type": "env",
+   "k": 48,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.9",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Action"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1403
+   },
+   "last": 1406,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1408
+   },
+   "last": 1411,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-49",
+   "type": "env",
+   "k": 49,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.10",
+   "number_from": "counter",
+   "labels": [
+    "Lem:LeafHalfDisc"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1413
+   },
+   "last": 1417,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1419
+   },
+   "last": 1433,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-50",
+   "type": "env",
+   "k": 50,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.11",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Rectangle"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1449
+   },
+   "last": 1453,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1455
+   },
+   "last": 1466,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-51",
+   "type": "env",
+   "k": 51,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.12",
+   "number_from": "counter",
+   "labels": [
+    "Lem:SubspaceL",
+    "Itm:Sub",
+    "Itm:Open",
+    "Itm:Arc"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1468
+   },
+   "last": 1483,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1485
+   },
+   "last": 1503,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-52",
+   "type": "env",
+   "k": 52,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.13",
+   "number_from": "counter",
+   "labels": [
+    "Lem:HalfDiscOpen"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1508
+   },
+   "last": 1512,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-53",
+   "type": "env",
+   "k": 53,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.14",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Span"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1581
+   },
+   "last": 1586,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1588
+   },
+   "last": 1593,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-54",
+   "type": "env",
+   "k": 54,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.15",
+   "number_from": "counter",
+   "labels": [
+    "Lem:SubspaceS"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1595
+   },
+   "last": 1598,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1600
+   },
+   "last": 1605,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-55",
+   "type": "env",
+   "k": 55,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "5.16",
+   "number_from": "counter",
+   "labels": [
+    "Def:Basic"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1609
+   },
+   "last": 1615,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-56",
+   "type": "env",
+   "k": 56,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "5.17",
+   "number_from": "counter",
+   "labels": [
+    "Rem:Basis"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1617
+   },
+   "last": 1620,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-57",
+   "type": "env",
+   "k": 57,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.18",
+   "number_from": "counter",
+   "labels": [
+    "Lem:BasicOmnibus",
+    "Itm:TurnsLeft",
+    "Itm:Loop",
+    "Itm:PathConnected"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1624
+   },
+   "last": 1640,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1642
+   },
+   "last": 1668,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-58",
+   "type": "env",
+   "k": 58,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.19",
+   "number_from": "counter",
+   "labels": [
+    "Lem:HalfDiscNeighBasis"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1670
+   },
+   "last": 1674,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1676
+   },
+   "last": 1698,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-59",
+   "type": "env",
+   "k": 59,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.20",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Triple"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1703
+   },
+   "last": 1709,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1711
+   },
+   "last": 1767,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-60",
+   "type": "env",
+   "k": 60,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.21",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Extension"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1769
+   },
+   "last": 1774,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1776
+   },
+   "last": 1817,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-61",
+   "type": "env",
+   "k": 61,
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "parent": "2609.14598v1#proof-20",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1793
+   },
+   "last": 1795,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-20",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1797
+   },
+   "last": 1814,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-62",
+   "type": "env",
+   "k": 62,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "5.22",
+   "number_from": "counter",
+   "labels": [
+    "Cor:HalfDiscPathConnected"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1822
+   },
+   "last": 1826,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-63",
+   "type": "env",
+   "k": 63,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.23",
+   "number_from": "counter",
+   "labels": [
+    "Lem:ConnectedImpliesConnected"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1837
+   },
+   "last": 1841,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-22",
+   "type": "proof",
+   "k": 22,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1843
+   },
+   "last": 1851,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-64",
+   "type": "env",
+   "k": 64,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.24",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Hausdorff"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1857
+   },
+   "last": 1860,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-23",
+   "type": "proof",
+   "k": 23,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1862
+   },
+   "last": 1884,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-65",
+   "type": "env",
+   "k": 65,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.25",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Compact"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1886
+   },
+   "last": 1889,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-24",
+   "type": "proof",
+   "k": 24,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1891
+   },
+   "last": 1935,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-66",
+   "type": "env",
+   "k": 66,
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "parent": "2609.14598v1#proof-24",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1905
+   },
+   "last": 1907,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-25",
+   "type": "proof",
+   "k": 25,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-24",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1909
+   },
+   "last": 1930,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-67",
+   "type": "env",
+   "k": 67,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "5.26",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Continuum"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1937
+   },
+   "last": 1940,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-26",
+   "type": "proof",
+   "k": 26,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1942
+   },
+   "last": 1978,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-68",
+   "type": "env",
+   "k": 68,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "5.27",
+   "number_from": "counter",
+   "labels": [
+    "Thm:Disc",
+    "Itm:Disc",
+    "Itm:Ends",
+    "Itm:Dense",
+    "Itm:Unique",
+    "Itm:Action"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 1982
+   },
+   "last": 2003,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-69",
+   "type": "env",
+   "k": 69,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "5.28",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2005
+   },
+   "last": 2007,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-27",
+   "type": "proof",
+   "k": 27,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2009
+   },
+   "last": 2135,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-70",
+   "type": "env",
+   "k": 70,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "5.29",
+   "number_from": "counter",
+   "parent": "2609.14598v1#proof-27",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2028
+   },
+   "last": 2030,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-28",
+   "type": "proof",
+   "k": 28,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-27",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2032
+   },
+   "last": 2034,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-71",
+   "type": "env",
+   "k": 71,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "5.30",
+   "number_from": "counter",
+   "labels": [
+    "Clm:DinD"
+   ],
+   "parent": "2609.14598v1#proof-27",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2045
+   },
+   "last": 2050,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-29",
+   "type": "proof",
+   "k": 29,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-27",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2052
+   },
+   "last": 2060,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-72",
+   "type": "env",
+   "k": 72,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "5.31",
+   "number_from": "counter",
+   "labels": [
+    "Clm:EinE"
+   ],
+   "parent": "2609.14598v1#proof-27",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2063
+   },
+   "last": 2068,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-30",
+   "type": "proof",
+   "k": 30,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-27",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2070
+   },
+   "last": 2094,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-73",
+   "type": "env",
+   "k": 73,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "Prop:LimitOfLeaves"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2173
+   },
+   "last": 2189,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-74",
+   "type": "env",
+   "k": 74,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "Lem:TwoImpliesLeaf"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2193
+   },
+   "last": 2201,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-31",
+   "type": "proof",
+   "k": 31,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2203
+   },
+   "last": 2253,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-75",
+   "type": "env",
+   "k": 75,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "Lem:OneInteriorImpliesLeaf"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2255
+   },
+   "last": 2259,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-32",
+   "type": "proof",
+   "k": 32,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2261
+   },
+   "last": 2266,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-76",
+   "type": "env",
+   "k": 76,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "6.4",
+   "number_from": "counter",
+   "labels": [
+    "Lem:CuspLeafImpliesBiLeaf"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2284
+   },
+   "last": 2288,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-33",
+   "type": "proof",
+   "k": 33,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2290
+   },
+   "last": 2329,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-34",
+   "type": "proof",
+   "k": 34,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2333
+   },
+   "last": 2352,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-77",
+   "type": "env",
+   "k": 77,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.5",
+   "number_from": "counter",
+   "labels": [
+    "Prop:SingleLeaf"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2360
+   },
+   "last": 2365,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-35",
+   "type": "proof",
+   "k": 35,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2367
+   },
+   "last": 2403,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-78",
+   "type": "env",
+   "k": 78,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "6.6",
+   "number_from": "counter",
+   "labels": [
+    "Def:Sector"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2405
+   },
+   "last": 2411,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-79",
+   "type": "env",
+   "k": 79,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "6.7",
+   "number_from": "counter",
+   "labels": [
+    "Lem:NoneShallPass",
+    "Itm:MeetsOne",
+    "Itm:NoBoundary"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2413
+   },
+   "last": 2427,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-36",
+   "type": "proof",
+   "k": 36,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2429
+   },
+   "last": 2436,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-80",
+   "type": "env",
+   "k": 80,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "6.8",
+   "number_from": "counter",
+   "labels": [
+    "Lem:IVT"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2438
+   },
+   "last": 2452,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-37",
+   "type": "proof",
+   "k": 37,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2454
+   },
+   "last": 2468,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-81",
+   "type": "env",
+   "k": 81,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "6.9",
+   "number_from": "counter",
+   "labels": [
+    "Cor:SingletonSingleLeaf"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2472
+   },
+   "last": 2475,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-38",
+   "type": "proof",
+   "k": 38,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2477
+   },
+   "last": 2488,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-82",
+   "type": "env",
+   "k": 82,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "6.10",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Perturb"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2490
+   },
+   "last": 2494,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-39",
+   "type": "proof",
+   "k": 39,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2496
+   },
+   "last": 2503,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-83",
+   "type": "env",
+   "k": 83,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "6.11",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2505
+   },
+   "last": 2509,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-84",
+   "type": "env",
+   "k": 84,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "6.12",
+   "number_from": "counter",
+   "labels": [
+    "Prop:LimitOfRectangles"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2515
+   },
+   "last": 2531,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-85",
+   "type": "env",
+   "k": 85,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "6.13",
+   "number_from": "counter",
+   "labels": [
+    "Def:Spans"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2535
+   },
+   "last": 2540,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-40",
+   "type": "proof",
+   "k": 40,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Fig:SneakyRectangles"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2542
+   },
+   "last": 2638,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-86",
+   "type": "env",
+   "k": 86,
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "parent": "2609.14598v1#proof-40",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2546
+   },
+   "last": 2549,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-41",
+   "type": "proof",
+   "k": 41,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-40",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2551
+   },
+   "last": 2561,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-87",
+   "type": "env",
+   "k": 87,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "7.1",
+   "number_from": "counter",
+   "labels": [
+    "Def:Collapsing"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2655
+   },
+   "last": 2663,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-88",
+   "type": "env",
+   "k": 88,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "7.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2665
+   },
+   "last": 2667,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-89",
+   "type": "env",
+   "k": 89,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "7.3",
+   "number_from": "counter",
+   "labels": [
+    "Def:Convergence"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2687
+   },
+   "last": 2693,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-90",
+   "type": "env",
+   "k": 90,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "7.4",
+   "number_from": "counter",
+   "labels": [
+    "Rem:FiniteIndex"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2695
+   },
+   "last": 2707,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-91",
+   "type": "env",
+   "k": 91,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "7.5",
+   "number_from": "counter",
+   "labels": [
+    "Def:CLP"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2709
+   },
+   "last": 2716,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-92",
+   "type": "env",
+   "k": 92,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "7.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2718
+   },
+   "last": 2721,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-93",
+   "type": "env",
+   "k": 93,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "7.7",
+   "number_from": "counter",
+   "labels": [
+    "Def:Parabolic"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2723
+   },
+   "last": 2733,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-94",
+   "type": "env",
+   "k": 94,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "7.8",
+   "number_from": "counter",
+   "labels": [
+    "Def:GeoFinConv"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2735
+   },
+   "last": 2740,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-95",
+   "type": "env",
+   "k": 95,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "7.9",
+   "number_from": "counter",
+   "labels": [
+    "Thm:HyperbolicGeomFinite"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2746
+   },
+   "last": 2750,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-96",
+   "type": "env",
+   "k": 96,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "7.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2757
+   },
+   "last": 2777,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-97",
+   "type": "env",
+   "k": 97,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "7.11",
+   "number_from": "counter",
+   "labels": [
+    "Thm:Yaman"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2791
+   },
+   "last": 2805,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-98",
+   "type": "env",
+   "k": 98,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "8.1",
+   "number_from": "counter",
+   "labels": [
+    "Prop:Convergence"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2814
+   },
+   "last": 2819,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-99",
+   "type": "env",
+   "k": 99,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "8.2",
+   "number_from": "counter",
+   "labels": [
+    "Rem:Cover"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2823
+   },
+   "last": 2827,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-100",
+   "type": "env",
+   "k": 100,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.3",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Diagonal"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2834
+   },
+   "last": 2845,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-42",
+   "type": "proof",
+   "k": 42,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2847
+   },
+   "last": 2851,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-101",
+   "type": "env",
+   "k": 101,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.4",
+   "number_from": "counter",
+   "labels": [
+    "Lem:WellDef"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2857
+   },
+   "last": 2860,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-43",
+   "type": "proof",
+   "k": 43,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2864
+   },
+   "last": 2886,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-102",
+   "type": "env",
+   "k": 102,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.5",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Direction"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2893
+   },
+   "last": 2901,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-103",
+   "type": "env",
+   "k": 103,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "8.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2911
+   },
+   "last": 2914,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-104",
+   "type": "env",
+   "k": 104,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "8.7",
+   "number_from": "counter",
+   "labels": [
+    "Rem:AttractorPartition"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2916
+   },
+   "last": 2919,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-105",
+   "type": "env",
+   "k": 105,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "8.8",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2921
+   },
+   "last": 2924,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-106",
+   "type": "env",
+   "k": 106,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.9",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Union"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2926
+   },
+   "last": 2931,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-44",
+   "type": "proof",
+   "k": 44,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2933
+   },
+   "last": 2944,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-107",
+   "type": "env",
+   "k": 107,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.10",
+   "number_from": "counter",
+   "labels": [
+    "Lem:a_interval"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2946
+   },
+   "last": 2950,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-45",
+   "type": "proof",
+   "k": 45,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2952
+   },
+   "last": 2960,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-108",
+   "type": "env",
+   "k": 108,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "8.11",
+   "number_from": "counter",
+   "labels": [
+    "Cor:ConnectedI(a)"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2962
+   },
+   "last": 2964,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-109",
+   "type": "env",
+   "k": 109,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "8.12",
+   "number_from": "counter",
+   "labels": [
+    "Def:Parting"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2967
+   },
+   "last": 2971,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-110",
+   "type": "env",
+   "k": 110,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.13",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Parting"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2973
+   },
+   "last": 2976,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-46",
+   "type": "proof",
+   "k": 46,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2978
+   },
+   "last": 2983,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-111",
+   "type": "env",
+   "k": 111,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.14",
+   "number_from": "counter",
+   "labels": [
+    "Lem:AtMostTwo"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2985
+   },
+   "last": 2988,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-47",
+   "type": "proof",
+   "k": 47,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2990
+   },
+   "last": 2996,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-112",
+   "type": "env",
+   "k": 112,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.15",
+   "number_from": "counter",
+   "labels": [
+    "Lem:ClosedSubIntervals"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 2998
+   },
+   "last": 3002,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-48",
+   "type": "proof",
+   "k": 48,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3004
+   },
+   "last": 3009,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-113",
+   "type": "env",
+   "k": 113,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.16",
+   "number_from": "counter",
+   "labels": [
+    "Lem:I(a)Component"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3011
+   },
+   "last": 3017,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-49",
+   "type": "proof",
+   "k": 49,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3019
+   },
+   "last": 3028,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-114",
+   "type": "env",
+   "k": 114,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.17",
+   "number_from": "counter",
+   "labels": [
+    "Lem:AlmostCollapsing"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3034
+   },
+   "last": 3037,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-50",
+   "type": "proof",
+   "k": 50,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3039
+   },
+   "last": 3048,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-115",
+   "type": "env",
+   "k": 115,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.18",
+   "number_from": "counter",
+   "labels": [
+    "Lem:OrdersAgree"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3058
+   },
+   "last": 3062,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-51",
+   "type": "proof",
+   "k": 51,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3064
+   },
+   "last": 3067,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-116",
+   "type": "env",
+   "k": 116,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.19",
+   "number_from": "counter",
+   "labels": [
+    "Lem:InaccessibleCusps"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3069
+   },
+   "last": 3078,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-52",
+   "type": "proof",
+   "k": 52,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Fig:CuspAtEndOfInterval"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3079
+   },
+   "last": 3115,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-117",
+   "type": "env",
+   "k": 117,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.20",
+   "number_from": "counter",
+   "labels": [
+    "Lem:PartingsDecomposeDeltaM"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3119
+   },
+   "last": 3123,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-53",
+   "type": "proof",
+   "k": 53,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3125
+   },
+   "last": 3145,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-118",
+   "type": "env",
+   "k": 118,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "8.21",
+   "number_from": "counter",
+   "labels": [
+    "Cor:NotCuspBefore"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3147
+   },
+   "last": 3152,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-54",
+   "type": "proof",
+   "k": 54,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3154
+   },
+   "last": 3163,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-119",
+   "type": "env",
+   "k": 119,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.22",
+   "number_from": "counter",
+   "labels": [
+    "Lem:SingletonGoesToCusp"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3165
+   },
+   "last": 3169,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-55",
+   "type": "proof",
+   "k": 55,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3171
+   },
+   "last": 3196,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-120",
+   "type": "env",
+   "k": 120,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "8.23",
+   "number_from": "counter",
+   "labels": [
+    "Cor:OneSingleton"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3199
+   },
+   "last": 3202,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-121",
+   "type": "env",
+   "k": 121,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.24",
+   "number_from": "counter",
+   "labels": [
+    "Lem:Case2"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3207
+   },
+   "last": 3212,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-56",
+   "type": "proof",
+   "k": 56,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3214
+   },
+   "last": 3231,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-122",
+   "type": "env",
+   "k": 122,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.25",
+   "number_from": "counter",
+   "labels": [
+    "Lem:NoCuspsAfter"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3233
+   },
+   "last": 3236,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-57",
+   "type": "proof",
+   "k": 57,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Fig:NoCuspsxNotCusp",
+    "Fig:NoCuspsLimit",
+    "Fig:NoCuspsxCusp",
+    "Fig:NoCusps"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3238
+   },
+   "last": 3324,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-123",
+   "type": "env",
+   "k": 123,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.26",
+   "number_from": "counter",
+   "labels": [
+    "Lem:FiniteImpliesTwo"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3326
+   },
+   "last": 3330,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-58",
+   "type": "proof",
+   "k": 58,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3370
+   },
+   "last": 3390,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-124",
+   "type": "env",
+   "k": 124,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "8.27",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3395
+   },
+   "last": 3399,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-125",
+   "type": "env",
+   "k": 125,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.28",
+   "number_from": "counter",
+   "labels": [
+    "Lem:AccumulatingPartings"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3403
+   },
+   "last": 3406,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-59",
+   "type": "proof",
+   "k": 59,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3430
+   },
+   "last": 3445,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-126",
+   "type": "env",
+   "k": 126,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.29",
+   "number_from": "counter",
+   "labels": [
+    "Lem:AccumulationCusp"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3450
+   },
+   "last": 3454,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-60",
+   "type": "proof",
+   "k": 60,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3456
+   },
+   "last": 3483,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-127",
+   "type": "env",
+   "k": 127,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "8.30",
+   "number_from": "counter",
+   "labels": [
+    "Lem:InfiniteCase"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3485
+   },
+   "last": 3490,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-61",
+   "type": "proof",
+   "k": 61,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3492
+   },
+   "last": 3603,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-128",
+   "type": "env",
+   "k": 128,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "8.31",
+   "number_from": "counter",
+   "labels": [
+    "Clm:GreenThorns"
+   ],
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3509
+   },
+   "last": 3513,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-62",
+   "type": "proof",
+   "k": 62,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3515
+   },
+   "last": 3517,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-129",
+   "type": "env",
+   "k": 129,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "8.32",
+   "number_from": "counter",
+   "labels": [
+    "Clm:AccumulatedBothSides"
+   ],
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3519
+   },
+   "last": 3522,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-63",
+   "type": "proof",
+   "k": 63,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3524
+   },
+   "last": 3536,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-130",
+   "type": "env",
+   "k": 130,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "8.33",
+   "number_from": "counter",
+   "labels": [
+    "Clm:ForeverAlone"
+   ],
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3540
+   },
+   "last": 3543,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-64",
+   "type": "proof",
+   "k": 64,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3545
+   },
+   "last": 3549,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-131",
+   "type": "env",
+   "k": 131,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "8.34",
+   "number_from": "counter",
+   "labels": [
+    "Clm:PurpleThorns"
+   ],
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3551
+   },
+   "last": 3555,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-65",
+   "type": "proof",
+   "k": 65,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3557
+   },
+   "last": 3564,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-132",
+   "type": "env",
+   "k": 132,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "8.35",
+   "number_from": "counter",
+   "labels": [
+    "Clm:CuspLeaves"
+   ],
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3566
+   },
+   "last": 3569,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-66",
+   "type": "proof",
+   "k": 66,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3571
+   },
+   "last": 3590,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-133",
+   "type": "env",
+   "k": 133,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "8.36",
+   "number_from": "counter",
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3592
+   },
+   "last": 3594,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-67",
+   "type": "proof",
+   "k": 67,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-61",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3596
+   },
+   "last": 3599,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-134",
+   "type": "env",
+   "k": 134,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "8.37",
+   "number_from": "counter",
+   "labels": [
+    "Prop:FindingB"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3609
+   },
+   "last": 3613,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-135",
+   "type": "env",
+   "k": 135,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "8.38",
+   "number_from": "counter",
+   "labels": [
+    "Cor:Collapsing"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3615
+   },
+   "last": 3618,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-136",
+   "type": "env",
+   "k": 136,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "9.1",
+   "number_from": "counter",
+   "labels": [
+    "Prop:Parabolic"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3630
+   },
+   "last": 3634,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-137",
+   "type": "env",
+   "k": 137,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "9.2",
+   "number_from": "counter",
+   "labels": [
+    "Prop:ParabolicFacts",
+    "Itm:ZZ^2",
+    "Itm:beta",
+    "Itm:gamma"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3639
+   },
+   "last": 3658,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-68",
+   "type": "proof",
+   "k": 68,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3660
+   },
+   "last": 3665,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-138",
+   "type": "env",
+   "k": 138,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "9.3",
+   "number_from": "counter",
+   "labels": [
+    "Lem:StabC"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3667
+   },
+   "last": 3670,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-69",
+   "type": "proof",
+   "k": 69,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3672
+   },
+   "last": 3678,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-70",
+   "type": "proof",
+   "k": 70,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3680
+   },
+   "last": 3717,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-139",
+   "type": "env",
+   "k": 139,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "10.1",
+   "number_from": "counter",
+   "labels": [
+    "Prop:LeafConical"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3726
+   },
+   "last": 3731,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-140",
+   "type": "env",
+   "k": 140,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "10.2",
+   "number_from": "counter",
+   "labels": [
+    "Def:BoxAnatomy"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3768
+   },
+   "last": 3795,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-141",
+   "type": "env",
+   "k": 141,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "10.3",
+   "number_from": "counter",
+   "labels": [
+    "Lem:RectangleBox"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3802
+   },
+   "last": 3806,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-142",
+   "type": "env",
+   "k": 142,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "10.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3818
+   },
+   "last": 3821,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-143",
+   "type": "env",
+   "k": 143,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "10.5",
+   "number_from": "counter",
+   "labels": [
+    "Lem:BoxPairsForLeaf",
+    "Itm:NoCommonCusp",
+    "Itm:SNSpan",
+    "Itm:StrictlyNested",
+    "Itm:NeighbourhoodBasis"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3849
+   },
+   "last": 3870,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-71",
+   "type": "proof",
+   "k": 71,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3872
+   },
+   "last": 3934,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-144",
+   "type": "env",
+   "k": 144,
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "parent": "2609.14598v1#proof-71",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3898
+   },
+   "last": 3900,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-72",
+   "type": "proof",
+   "k": 72,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-71",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3902
+   },
+   "last": 3912,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-145",
+   "type": "env",
+   "k": 145,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "11.1",
+   "number_from": "counter",
+   "labels": [
+    "Prop:SingletonConical"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3944
+   },
+   "last": 3948,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-146",
+   "type": "env",
+   "k": 146,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "11.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3956
+   },
+   "last": 3961,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-147",
+   "type": "env",
+   "k": 147,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "11.3",
+   "number_from": "counter",
+   "labels": [
+    "Lem:BetweenTransitive"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3965
+   },
+   "last": 3972,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-148",
+   "type": "env",
+   "k": 148,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "11.4",
+   "number_from": "counter",
+   "labels": [
+    "Lem:CuspBetween"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3974
+   },
+   "last": 3981,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-149",
+   "type": "env",
+   "k": 149,
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "counter": "equation",
+   "number": "11.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3985
+   },
+   "last": 3988,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-150",
+   "type": "env",
+   "k": 150,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "11.6",
+   "number_from": "counter",
+   "labels": [
+    "Lem:NestedSectors"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3990
+   },
+   "last": 3995,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-73",
+   "type": "proof",
+   "k": 73,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 3997
+   },
+   "last": 4011,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-151",
+   "type": "env",
+   "k": 151,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "11.7",
+   "number_from": "counter",
+   "labels": [
+    "Def:Hull"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4013
+   },
+   "last": 4017,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-152",
+   "type": "env",
+   "k": 152,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "11.8",
+   "number_from": "counter",
+   "labels": [
+    "Cor:CuspBetween"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4021
+   },
+   "last": 4025,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-153",
+   "type": "env",
+   "k": 153,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "11.9",
+   "number_from": "counter",
+   "labels": [
+    "Def:RectangleTowards"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4037
+   },
+   "last": 4046,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-154",
+   "type": "env",
+   "k": 154,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "11.10",
+   "number_from": "counter",
+   "labels": [
+    "Lem:RectangleTowards"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4048
+   },
+   "last": 4051,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-74",
+   "type": "proof",
+   "k": 74,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4053
+   },
+   "last": 4069,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-155",
+   "type": "env",
+   "k": 155,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "11.11",
+   "number_from": "counter",
+   "labels": [
+    "Lem:InHull"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4134
+   },
+   "last": 4139,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-75",
+   "type": "proof",
+   "k": 75,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4141
+   },
+   "last": 4151,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-156",
+   "type": "env",
+   "k": 156,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "11.12",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4155
+   },
+   "last": 4157,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-157",
+   "type": "env",
+   "k": 157,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "11.13",
+   "number_from": "counter",
+   "labels": [
+    "Lem:ConstructSpanning"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4159
+   },
+   "last": 4170,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-76",
+   "type": "proof",
+   "k": 76,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4172
+   },
+   "last": 4212,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-158",
+   "type": "env",
+   "k": 158,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "11.14",
+   "number_from": "counter",
+   "labels": [
+    "Lem:EdgeSpanningInHalfDisc"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4214
+   },
+   "last": 4218,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-77",
+   "type": "proof",
+   "k": 77,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Fig:IVT"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4220
+   },
+   "last": 4268,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-159",
+   "type": "env",
+   "k": 159,
+   "env": "claim*",
+   "title": "Claim",
+   "item": "statement/claim",
+   "parent": "2609.14598v1#proof-77",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4247
+   },
+   "last": 4249,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-78",
+   "type": "proof",
+   "k": 78,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-77",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4251
+   },
+   "last": 4264,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-160",
+   "type": "env",
+   "k": 160,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "11.15",
+   "number_from": "counter",
+   "labels": [
+    "Lem:SpanningEdgeRectangles"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4270
+   },
+   "last": 4274,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-79",
+   "type": "proof",
+   "k": 79,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4276
+   },
+   "last": 4280,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-161",
+   "type": "env",
+   "k": 161,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "11.16",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4282
+   },
+   "last": 4289,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-162",
+   "type": "env",
+   "k": 162,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "11.17",
+   "number_from": "counter",
+   "labels": [
+    "Def:SeparatingSectors"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4298
+   },
+   "last": 4306,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-163",
+   "type": "env",
+   "k": 163,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "11.18",
+   "number_from": "counter",
+   "labels": [
+    "Lem:SeparatingSectorProperties"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4362
+   },
+   "last": 4369,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-80",
+   "type": "proof",
+   "k": 80,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4371
+   },
+   "last": 4387,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-81",
+   "type": "proof",
+   "k": 81,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4389
+   },
+   "last": 4459,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-164",
+   "type": "env",
+   "k": 164,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "11.19",
+   "number_from": "counter",
+   "parent": "2609.14598v1#proof-81",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4413
+   },
+   "last": 4415,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-82",
+   "type": "proof",
+   "k": 82,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-81",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4417
+   },
+   "last": 4448,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-165",
+   "type": "env",
+   "k": 165,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "12.1",
+   "number_from": "counter",
+   "labels": [
+    "Thm:Convergence"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4467
+   },
+   "last": 4472,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-83",
+   "type": "proof",
+   "k": 83,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4474
+   },
+   "last": 4481,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-166",
+   "type": "env",
+   "k": 166,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "12.2",
+   "number_from": "counter",
+   "labels": [
+    "Cor:Yaman"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4485
+   },
+   "last": 4489,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-167",
+   "type": "env",
+   "k": 167,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "13.1",
+   "number_from": "counter",
+   "labels": [
+    "Def:CT"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4499
+   },
+   "last": 4508,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-168",
+   "type": "env",
+   "k": 168,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "13.2",
+   "number_from": "counter",
+   "labels": [
+    "Def:Equivalence"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4518
+   },
+   "last": 4525,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-169",
+   "type": "env",
+   "k": 169,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "13.3",
+   "number_from": "counter",
+   "labels": [
+    "Rem:CommensurableEquivalent"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4527
+   },
+   "last": 4533,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-170",
+   "type": "env",
+   "k": 170,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "13.4",
+   "number_from": "counter",
+   "labels": [
+    "Thm:VeeringCT"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4537
+   },
+   "last": 4541,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-84",
+   "type": "proof",
+   "k": 84,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4543
+   },
+   "last": 4551,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-171",
+   "type": "env",
+   "k": 171,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "13.5",
+   "number_from": "counter",
+   "labels": [
+    "Thm:Equivalence"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4555
+   },
+   "last": 4564,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-172",
+   "type": "env",
+   "k": 172,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "13.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4566
+   },
+   "last": 4568,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-85",
+   "type": "proof",
+   "k": 85,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4570
+   },
+   "last": 4690,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-173",
+   "type": "env",
+   "k": 173,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "13.7",
+   "number_from": "counter",
+   "labels": [
+    "Clm:Faithful"
+   ],
+   "parent": "2609.14598v1#proof-85",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4594
+   },
+   "last": 4597,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-86",
+   "type": "proof",
+   "k": 86,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-85",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4599
+   },
+   "last": 4613,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-174",
+   "type": "env",
+   "k": 174,
+   "env": "claim",
+   "title": "Claim",
+   "item": "statement/claim",
+   "counter": "equation",
+   "number": "13.8",
+   "number_from": "counter",
+   "labels": [
+    "Clm:Finite"
+   ],
+   "parent": "2609.14598v1#proof-85",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4626
+   },
+   "last": 4629,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-87",
+   "type": "proof",
+   "k": 87,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "parent": "2609.14598v1#proof-85",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4639
+   },
+   "last": 4682,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-175",
+   "type": "env",
+   "k": 175,
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "equation",
+   "number": "13.9",
+   "number_from": "counter",
+   "labels": [
+    "Cor:NotMadeThere"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4696
+   },
+   "last": 4704,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-176",
+   "type": "env",
+   "k": 176,
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "equation",
+   "number": "13.10",
+   "number_from": "counter",
+   "labels": [
+    "Exa:s227"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4706
+   },
+   "last": 4712,
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-177",
+   "type": "env",
+   "k": 177,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "A.1",
+   "number_from": "counter",
+   "labels": [
+    "Thm:Isomorphism"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4727
+   },
+   "last": 4735,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-178",
+   "type": "env",
+   "k": 178,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "A.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4742
+   },
+   "last": 4746,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-179",
+   "type": "env",
+   "k": 179,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "equation",
+   "number": "A.3",
+   "number_from": "counter",
+   "labels": [
+    "Prop:FixedPoints",
+    "Itm:Peripheral",
+    "Itm:NS",
+    "Itm:NSNS"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4751
+   },
+   "last": 4772,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-88",
+   "type": "proof",
+   "k": 88,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4774
+   },
+   "last": 4829,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-89",
+   "type": "proof",
+   "k": 89,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4835
+   },
+   "last": 4852,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-180",
+   "type": "env",
+   "k": 180,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "B.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4879
+   },
+   "last": 4884,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-90",
+   "type": "proof",
+   "k": 90,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4886
+   },
+   "last": 4905,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-181",
+   "type": "env",
+   "k": 181,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "C.1",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 4965
+   },
+   "last": 4970,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-182",
+   "type": "env",
+   "k": 182,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "C.2",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5063
+   },
+   "last": 5069,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-183",
+   "type": "env",
+   "k": 183,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "C.3",
+   "number_from": "counter",
+   "labels": [
+    "Thm:Terminates"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5126
+   },
+   "last": 5129,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-91",
+   "type": "proof",
+   "k": 91,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5131
+   },
+   "last": 5137,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-184",
+   "type": "env",
+   "k": 184,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "equation",
+   "number": "C.4",
+   "number_from": "counter",
+   "labels": [
+    "Rem:DiscVsContinent"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5150
+   },
+   "last": 5159,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-185",
+   "type": "env",
+   "k": 185,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "equation",
+   "number": "C.5",
+   "number_from": "counter",
+   "labels": [
+    "Lem:InjectivityRadius"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5161
+   },
+   "last": 5167,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#proof-92",
+   "type": "proof",
+   "k": 92,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5169
+   },
+   "last": 5203,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-186",
+   "type": "env",
+   "k": 186,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "equation",
+   "number": "C.6",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5241
+   },
+   "last": 5245,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-187",
+   "type": "env",
+   "k": 187,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "equation",
+   "number": "C.7",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5252
+   },
+   "last": 5255,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-188",
+   "type": "env",
+   "k": 188,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "equation",
+   "number": "C.8",
+   "number_from": "counter",
+   "labels": [
+    "Que:ThurstonWork"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5260
+   },
+   "last": 5264,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-189",
+   "type": "env",
+   "k": 189,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "equation",
+   "number": "C.9",
+   "number_from": "counter",
+   "labels": [
+    "Que:OurWork"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5266
+   },
+   "last": 5270,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-190",
+   "type": "env",
+   "k": 190,
+   "env": "question",
+   "title": "Question",
+   "item": "problem",
+   "counter": "equation",
+   "number": "C.10",
+   "number_from": "counter",
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5282
+   },
+   "last": 5284,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-191",
+   "type": "env",
+   "k": 191,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "D.1",
+   "number_from": "counter",
+   "labels": [
+    "Thm:Schoenflies"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5313
+   },
+   "last": 5318,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-192",
+   "type": "env",
+   "k": 192,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "D.2",
+   "number_from": "counter",
+   "labels": [
+    "Def:PeanoSpace"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5329
+   },
+   "last": 5332,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-193",
+   "type": "env",
+   "k": 193,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "D.3",
+   "number_from": "counter",
+   "labels": [
+    "Def:PeanoContinuum"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5338
+   },
+   "last": 5341,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-194",
+   "type": "env",
+   "k": 194,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "D.4",
+   "number_from": "counter",
+   "labels": [
+    "Thm:Zippin",
+    "Itm:Exists",
+    "Itm:All",
+    "Itm:None"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5354
+   },
+   "last": 5370,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-195",
+   "type": "env",
+   "k": 195,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "equation",
+   "number": "D.5",
+   "number_from": "counter",
+   "labels": [
+    "Def:ClosedEquiv"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5378
+   },
+   "last": 5381,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.14598v1#env-196",
+   "type": "env",
+   "k": 196,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "equation",
+   "number": "D.6",
+   "number_from": "counter",
+   "labels": [
+    "Thm:Moore"
+   ],
+   "pos": {
+    "file": "veering_to_convergence.tex",
+    "line": 5384
+   },
+   "last": 5389,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

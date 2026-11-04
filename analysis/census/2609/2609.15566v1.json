@@ -1,0 +1,1478 @@
+{
+ "paper": "2609.15566",
+ "version": 1,
+ "extractor": "ax/v0.5.33",
+ "main": [
+  "Bernoulli_flow.tex"
+ ],
+ "class": "aart",
+ "packages": [
+  "geometry",
+  "titlesec",
+  "fontenc",
+  "inputenc",
+  "mlmodern",
+  "caption",
+  "microtype",
+  "amsmath",
+  "amssymb",
+  "amsfonts",
+  "latexsym",
+  "amsthm",
+  "amsxtra",
+  "amscd",
+  "bbm",
+  "mathrsfs",
+  "bm",
+  "mathtools",
+  "graphicx",
+  "color",
+  "hyperref",
+  "cleveref",
+  "booktabs",
+  "tocbibind",
+  "cite",
+  "enumitem"
+ ],
+ "steps": [
+  "unpack: 3 files",
+  "main: Bernoulli_flow.tex",
+  "include: 1 files read, 1 not found",
+  "local: 2 style files",
+  "clean: comments, verbatim and 0 comment environments",
+  "conditionals: 0 decided, 0 flag tests decided, 0 kept",
+  "macros: 326 commands, 13 environments",
+  "tree: 512 nodes"
+ ],
+ "declarations": [
+  {
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "within": "section",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "theorem*",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "lemma*",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "corollary*",
+   "title": "Corollary",
+   "item": "statement/corollary",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proposition*",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "conjecture*",
+   "title": "Conjecture",
+   "item": "conjecture",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "definition*",
+   "title": "Definition",
+   "item": "definition",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example",
+   "title": "Example",
+   "item": "example",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "example*",
+   "title": "Example",
+   "item": "example",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "remark*",
+   "title": "Remark",
+   "item": "remark",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "counter": "theorem",
+   "shared": "theorem",
+   "numbered": true,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "assumption*",
+   "title": "Assumption",
+   "item": "context/hypothesis",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "notation",
+   "title": "Notation",
+   "item": "definition/notation",
+   "numbered": false,
+   "from": "paper",
+   "form": "newtheorem"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "package:amsthm"
+  }
+ ],
+ "occurrences": {
+  "env": 40,
+  "label": 112,
+  "proof": 21,
+  "textref": 197
+ },
+ "matched": {
+  "env": 40,
+  "label": 112,
+  "proof": 21
+ },
+ "gaps": [],
+ "waivers": [],
+ "numbers": {
+  "from_aux": 0,
+  "from_render": 0,
+  "from_counter": 40,
+  "from_head": 0,
+  "agree": 0,
+  "disagree": 0,
+  "contiguity_gaps": 0
+ },
+ "textrefs": {
+  "resolved": 197,
+  "unresolved": 0
+ },
+ "strength": "normal",
+ "items": [
+  {
+   "id": "2609.15566v1#env-1",
+   "type": "env",
+   "k": 1,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.1",
+   "number_from": "counter",
+   "labels": [
+    "thm:deloc",
+    "deloc_main"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 415
+   },
+   "last": 421,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-2",
+   "type": "env",
+   "k": 2,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "1.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:GOE"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 433
+   },
+   "last": 435,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-3",
+   "type": "env",
+   "k": 3,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.3",
+   "number_from": "counter",
+   "labels": [
+    "rem:deloc_optimal"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 441
+   },
+   "last": 447,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-4",
+   "type": "env",
+   "k": 4,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.4",
+   "number_from": "counter",
+   "labels": [
+    "rem:digraphs",
+    "eq:directed_deloc"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 449
+   },
+   "last": 459,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-5",
+   "type": "env",
+   "k": 5,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.5",
+   "number_from": "counter",
+   "labels": [
+    "rem:p_range"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 462
+   },
+   "last": 470,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-6",
+   "type": "env",
+   "k": 6,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "1.6",
+   "number_from": "counter",
+   "labels": [
+    "rmk:edge"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 473
+   },
+   "last": 475,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-7",
+   "type": "env",
+   "k": 7,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "2.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:Mprop",
+    "eq:Mprop",
+    "eq:ImMprop"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 687
+   },
+   "last": 696,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-8",
+   "type": "env",
+   "k": 8,
+   "env": "theorem",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "theorem",
+   "number": "2.2",
+   "number_from": "counter",
+   "labels": [
+    "thm:lolaw",
+    "eq:avLL",
+    "eq:isoLL"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 708
+   },
+   "last": 722,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-9",
+   "type": "env",
+   "k": 9,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.3",
+   "number_from": "counter",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 724
+   },
+   "last": 726,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-10",
+   "type": "env",
+   "k": 10,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.4",
+   "number_from": "counter",
+   "labels": [
+    "rmk:offdiag",
+    "eq:offidag"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 730
+   },
+   "last": 736,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-11",
+   "type": "env",
+   "k": 11,
+   "env": "definition",
+   "title": "Definition",
+   "item": "definition",
+   "counter": "theorem",
+   "number": "2.5",
+   "number_from": "counter",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 744
+   },
+   "last": 753,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-12",
+   "type": "env",
+   "k": 12,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.6",
+   "number_from": "counter",
+   "labels": [
+    "rem:simplified_sc",
+    "def_m_sc"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 759
+   },
+   "last": 784,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 788
+   },
+   "last": 803,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-13",
+   "type": "env",
+   "k": 13,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "2.7",
+   "number_from": "counter",
+   "labels": [
+    "rem:digraphs_proof"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 806
+   },
+   "last": 841,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-14",
+   "type": "env",
+   "k": 14,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:BerProp",
+    "eq:etaexplicit",
+    "eq:logint",
+    "eq:intrule"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 965
+   },
+   "last": 981,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-15",
+   "type": "env",
+   "k": 15,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "3.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:martingales",
+    "eq:QVformula"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1056
+   },
+   "last": 1065,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-16",
+   "type": "env",
+   "k": 16,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "3.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:Gron",
+    "eq:avGron",
+    "eq:avGron1",
+    "eq:avGron2",
+    "eq:entGron",
+    "eq:entGron1",
+    "eq:entGron2"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1068
+   },
+   "last": 1096,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-2",
+   "type": "proof",
+   "k": 2,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:Cchoice"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1099
+   },
+   "last": 1126,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-17",
+   "type": "env",
+   "k": 17,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:martest"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1137
+   },
+   "last": 1142,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-18",
+   "type": "env",
+   "k": 18,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:jump",
+    "jump_sizes"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1144
+   },
+   "last": 1149,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-19",
+   "type": "env",
+   "k": 19,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "4.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:generate"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1151
+   },
+   "last": 1162,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-3",
+   "type": "proof",
+   "k": 3,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:Mavbound",
+    "eq:Mentbound"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1166
+   },
+   "last": 1174,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-20",
+   "type": "env",
+   "k": 20,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "4.4",
+   "number_from": "counter",
+   "labels": [
+    "rem:lowerbound_p"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1178
+   },
+   "last": 1180,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-21",
+   "type": "env",
+   "k": 21,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:entforG"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1191
+   },
+   "last": 1198,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-22",
+   "type": "env",
+   "k": 22,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:resolventexpand"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1211
+   },
+   "last": 1223,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-23",
+   "type": "env",
+   "k": 23,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:M2bound"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1438
+   },
+   "last": 1444,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-24",
+   "type": "env",
+   "k": 24,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:Mt'"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1607
+   },
+   "last": 1612,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-25",
+   "type": "env",
+   "k": 25,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "5.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:av2errors"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1640
+   },
+   "last": 1646,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-4",
+   "type": "proof",
+   "k": 4,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:errordefav2",
+    "eq:E1av2",
+    "eq:E2av2",
+    "eq:E3av2",
+    "eq:E4av2",
+    "eq:E5av2",
+    "eq:E2nd",
+    "eq:E3rd",
+    "eq:E3rdfinal",
+    "eq:E4thfinal"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1647
+   },
+   "last": 1697,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-26",
+   "type": "env",
+   "k": 26,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "6.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:Groniso",
+    "eq:isocond"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1915
+   },
+   "last": 1927,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-5",
+   "type": "proof",
+   "k": 5,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:derivident",
+    "eq:partialest",
+    "eq:IXxy",
+    "eq:Gubound"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1929
+   },
+   "last": 1962,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-27",
+   "type": "env",
+   "k": 27,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:martestiso"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1966
+   },
+   "last": 1971,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-28",
+   "type": "env",
+   "k": 28,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:jumpiso"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1973
+   },
+   "last": 1978,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-29",
+   "type": "env",
+   "k": 29,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "6.4",
+   "number_from": "counter",
+   "labels": [
+    "lem:generateiso"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1980
+   },
+   "last": 1986,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-6",
+   "type": "proof",
+   "k": 6,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1992
+   },
+   "last": 1995,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-7",
+   "type": "proof",
+   "k": 7,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 1997
+   },
+   "last": 2009,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-8",
+   "type": "proof",
+   "k": 8,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2011
+   },
+   "last": 2024,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-30",
+   "type": "env",
+   "k": 30,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:monotone"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2111
+   },
+   "last": 2117,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-9",
+   "type": "proof",
+   "k": 9,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2118
+   },
+   "last": 2120,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-31",
+   "type": "env",
+   "k": 31,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:cumexp"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2126
+   },
+   "last": 2139,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-32",
+   "type": "env",
+   "k": 32,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.3",
+   "number_from": "counter",
+   "labels": [
+    "lem:stability",
+    "eq:singlediff",
+    "eq:offdiag",
+    "eq:diag",
+    "eq:trace"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2158
+   },
+   "last": 2177,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-10",
+   "type": "proof",
+   "k": 10,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2178
+   },
+   "last": 2180,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-33",
+   "type": "env",
+   "k": 33,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "7.4",
+   "number_from": "counter",
+   "labels": [
+    "prop:loop",
+    "eq:sdef",
+    "eq:loopeqmicro"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2186
+   },
+   "last": 2201,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-11",
+   "type": "proof",
+   "k": 11,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2202
+   },
+   "last": 2204,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-34",
+   "type": "env",
+   "k": 34,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "7.5",
+   "number_from": "counter",
+   "labels": [
+    "lem:cumexperror",
+    "eq:zscale",
+    "eq:thirdorder",
+    "eq:eecontrol",
+    "eq:diagonal"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2206
+   },
+   "last": 2225,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-12",
+   "type": "proof",
+   "k": 12,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2232
+   },
+   "last": 2234,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-13",
+   "type": "proof",
+   "k": 13,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:CK",
+    "eq:resolventbound",
+    "eq:caseia",
+    "eq:Gxxest",
+    "eq:imim",
+    "eq:loglog",
+    "eq:imimimim",
+    "eq:caseib"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2236
+   },
+   "last": 2351,
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-35",
+   "type": "env",
+   "k": 35,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "A.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:Bennett"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2360
+   },
+   "last": 2366,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-14",
+   "type": "proof",
+   "k": 14,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:abbreviate",
+    "eq:Mderiv",
+    "eq:partialmusigma",
+    "eq:ImpartMDE",
+    "eq:trivbound"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2382
+   },
+   "last": 2424,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-15",
+   "type": "proof",
+   "k": 15,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:M'",
+    "eq:partialMt'"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2427
+   },
+   "last": 2444,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-16",
+   "type": "proof",
+   "k": 16,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "M_MDE",
+    "eq:Mspecdec",
+    "eq:Mmsc"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2450
+   },
+   "last": 2474,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-17",
+   "type": "proof",
+   "k": 17,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2476
+   },
+   "last": 2497,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-36",
+   "type": "env",
+   "k": 36,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.1",
+   "number_from": "counter",
+   "labels": [
+    "lem:dynkin_mart",
+    "dynkin"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2525
+   },
+   "last": 2531,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-18",
+   "type": "proof",
+   "k": 18,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2532
+   },
+   "last": 2540,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-37",
+   "type": "env",
+   "k": 37,
+   "env": "lemma",
+   "title": "Lemma",
+   "item": "statement/lemma",
+   "counter": "theorem",
+   "number": "B.2",
+   "number_from": "counter",
+   "labels": [
+    "lem:quadr_var"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2544
+   },
+   "last": 2549,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-19",
+   "type": "proof",
+   "k": 19,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2550
+   },
+   "last": 2571,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-38",
+   "type": "env",
+   "k": 38,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "B.3",
+   "number_from": "counter",
+   "labels": [
+    "prop:DBG",
+    "BDG"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2575
+   },
+   "last": 2580,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-20",
+   "type": "proof",
+   "k": 20,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "Z_t_rho",
+    "tau_infty_estimate"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2582
+   },
+   "last": 2643,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-39",
+   "type": "env",
+   "k": 39,
+   "env": "remark",
+   "title": "Remark",
+   "item": "remark",
+   "counter": "theorem",
+   "number": "B.4",
+   "number_from": "counter",
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2646
+   },
+   "last": 2648,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#env-40",
+   "type": "env",
+   "k": 40,
+   "env": "proposition",
+   "title": "Proposition",
+   "item": "statement/proposition",
+   "counter": "theorem",
+   "number": "C.1",
+   "number_from": "counter",
+   "labels": [
+    "prop:Gauss"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2665
+   },
+   "last": 2670,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  },
+  {
+   "id": "2609.15566v1#proof-21",
+   "type": "proof",
+   "k": 21,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eq:flow",
+    "eq:stoptime2",
+    "eq:flows",
+    "eq:martest",
+    "eq:gen1",
+    "eq:gen2"
+   ],
+   "pos": {
+    "file": "Bernoulli_flow.tex",
+    "line": 2671
+   },
+   "last": 2733,
+   "flags": [
+    "appendix"
+   ],
+   "result": "matched"
+  }
+ ]
+}

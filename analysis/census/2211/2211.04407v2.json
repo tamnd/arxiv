@@ -1,7 +1,7 @@
 {
  "paper": "2211.04407",
  "version": 2,
- "extractor": "ax/v0.5.17",
+ "extractor": "ax/v0.5.33",
  "main": [
   "multipack-ppp-journal-mod2.tex"
  ],
@@ -321,15 +321,37 @@
    "numbered": false,
    "proof": true,
    "from": "class:IEEEtran"
+  },
+  {
+   "env": "customthm",
+   "title": "Theorem",
+   "item": "statement/theorem",
+   "counter": "innercustomthm",
+   "shared": "innercustomthm",
+   "numbered": true,
+   "from": "wrapper",
+   "form": "newenvironment"
+  },
+  {
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "numbered": false,
+   "proof": true,
+   "from": "used"
   }
  ],
  "occurrences": {
   "env": 19,
-  "label": 26
+  "head": 1,
+  "label": 31,
+  "proof": 1
  },
  "matched": {
   "env": 19,
-  "label": 26
+  "head": 1,
+  "label": 31,
+  "proof": 1
  },
  "gaps": [],
  "waivers": [],
@@ -391,6 +413,21 @@
    },
    "last": 278,
    "result": "matched"
+  },
+  {
+   "id": "2211.04407v2#head-1",
+   "type": "head",
+   "k": 1,
+   "env": "head",
+   "title": "Conventions",
+   "item": "definition/notation",
+   "pos": {
+    "file": "multipack-ppp-journal-mod2.tex",
+    "line": 368
+   },
+   "last": 372,
+   "result": "matched",
+   "confidence": "medium"
   },
   {
    "id": "2211.04407v2#env-3",
@@ -631,6 +668,27 @@
     "line": 905
    },
    "last": 910,
+   "result": "matched"
+  },
+  {
+   "id": "2211.04407v2#proof-1",
+   "type": "proof",
+   "k": 1,
+   "env": "proof",
+   "title": "Proof",
+   "item": "proof",
+   "labels": [
+    "eqn:density-ub",
+    "eqn:vol-relation",
+    "eqn:density-lb",
+    "eqn:vol-relation-1",
+    "eqn:vol-relation-2"
+   ],
+   "pos": {
+    "file": "multipack-ppp-journal-mod2.tex",
+    "line": 913
+   },
+   "last": 977,
    "result": "matched"
   },
   {
